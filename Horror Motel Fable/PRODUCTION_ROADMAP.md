@@ -124,3 +124,7 @@ Current compare: 44 commits ahead / 87 behind main, diverged; open draft, mergea
 
 ### Explicit ownership
 ChatGPT produces the exact task packets, checks documentation and reviews evidence. Claude performs all UEFN editor actions, imports, Verse compilation, playtests, QA, profiling and island validation. The project owner approves structural changes and purchases. No PASS/ENGINE-VERIFIED status may be assigned without actual UEFN evidence.
+
+
+### PR #1 metadata correction
+GitHub currently reports the PR as technically mergeable, but it remains OPEN/DRAFT, 49 commits ahead / 94 behind main, with no review/comments/status checks. Do not equate mergeability with acceptance: its R2.0 plan/placements must be reauthored for R2.1, and malformed source/query CSVs and out-of-bounds placements must be corrected before review and merge.
