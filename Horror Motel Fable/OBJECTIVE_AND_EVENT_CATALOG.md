@@ -54,14 +54,14 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 
 | EvidenceId | Location | Flag | Mandatory for core escape? | Truth role |
 |---|---|---|---|---|
-| EV-ROOM06-ARCHIVE | ROOM 06 | MissingGuestEvidenceFound | No | Candidate END-A02 clue |
-| EV-ROOM09-DIARY | ROOM 09 | DiaryFound | No | Candidate END-A02 clue |
-| EV-ROOM11-DRAWING | ROOM 11 | ChildRoomClueFound | No | Candidate END-A02 clue |
+| EV-ROOM06-ARCHIVE | ROOM 06 | MissingGuestEvidenceFound | No | Approved END-A02 evidence; THE_TRUTH only |
+| EV-ROOM09-DIARY | ROOM 09 | DiaryFound | No | Approved END-A02 evidence; THE_TRUTH only |
+| EV-ROOM11-DRAWING | ROOM 11 | ChildRoomClueFound | No | Approved END-A02 evidence; THE_TRUTH only |
 | EV-ROOM01-CRT | ROOM 01 | CRTFeedSeen | No | Supporting atmosphere |
 | EV-ROOM04-PHONE | ROOM 04 | Room04RecordingHeard / Room04TranscriptRead | No | Fuse guidance; Fuse locations remain labelled in world |
 | EV-ROOM13-PHOTOS | ROOM 13 | PhotoSequenceSolved | Yes, for ROOM 13 reveal progression | Puzzle/reveal gate, not a separate optional evidence pickup |
 
-**END-A02 pending:** the recommended formula is `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. Do not implement as a mandatory truth gate until the owner approves OWNER_DECISION_PACKET_R1.md. SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed/Room13RevealComplete are separate progression/reveal states and are not part of that evidence formula.
+**END-A02 APPROVED:** `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. Mandatory only for THE_TRUTH; optional for ESCAPE/core progression. SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed/Room13RevealComplete are separate progression/reveal states and are not part of that evidence formula.
 
 ## 5. State flag ownership and exact event mapping
 
@@ -89,9 +89,10 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | FinaleReady | GameManager | Derived state | PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete; unlocks final choice point without requiring CarKeys |
 | CoreEscapeReady | GameManager | IN-019 | FinaleReady AND CarKeys; vehicle ignition succeeds |
 | MissingGuestEvidenceFound | EvidenceManager/GameManager | IN-029 | Room 06 archive inspected |
-| TruthChainComplete | GameManager | derived state only | END-A02 formula, only after owner approval |
+| TruthChainComplete | GameManager | derived state only | END-A02 approved formula; recompute whenever one of the three evidence flags changes |
 | NewGuestAccepted | EndingManager | explicit invitation interaction and END-A01 team confirmation | Every currently connected eligible player explicitly accepts |
 | EndingSelected | GameManager | IN-020 / ending resolver | Eligibility + quorum + atomic lock |
+| NightAuditActivated | EndingManager/GameManager | IN-032 | EndingSelected=THE_TRUTH; dedicated breaker commits one-shot ending beat |
 
 ## 6. Ending selector predicates
 
@@ -134,3 +135,9 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 ## 9. Implementation note
 
 The catalog defines logical predicates and event ownership only. Claude must map each interaction to the actual supported UEFN/Verse events and compile/test against the target release. If an event is not available, return a technical alternative without changing player-facing progression or state ownership.
+
+
+### THE_TRUTH ending interaction
+- IN-032 is the dedicated `NIGHT AUDIT — END CYCLE` breaker. It is available only after THE_TRUTH has been atomically committed by IN-020; it cannot select or change an ending.
+- The service-room evidence rail automatically presents the already-solved four ROOM 13 photographs in chronological order. They are not removed from the ROOM 13 board, not carried in inventory, and do not form a second puzzle.
+- IN-032 commits NightAuditActivated once, then starts the blackout/register-print/title-card sequence. If the physical breaker actor is unavailable, invoke the same event through the service-control proxy; never skip the ending consequence.
