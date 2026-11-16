@@ -72,19 +72,23 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - Door clear widths, headroom, stair ascent/descent, balcony fall protection, NPC capsule and navmesh remain EDITOR-TEST REQUIRED.
 
 ## 6. Owner approval checklist
-1. Ground room orientation (E1/R2.1 vs original EBD mirror).
-2. Ground room Y bands and 2 m transverse connector bays.
-3. Upper side-room 8.70 m width and side-wing placement.
-4. Electrical room ending X72.90 and east link retained.
-5. North-west lobby, storage/service bay and upper service reserves.
-6. ROOM 13 exact 14.70×8.60 m footprint.
-7. Stair dimensions, handedness and exact position within north reservation.
-8. Wall thicknesses: 0.30 m exterior; 0.15 m room partitions; 0.30 m selected connector partitions.
-9. Vertical stack Z0/3.00/3.35/3.60/6.40/6.65/7.10.
-10. Balcony 2.50 m minimum clear and corner turning pads.
-11. Ground courtyard-facing windows and upper outer-facing windows.
-12. Secret-route vestibule and exact opening centres.
 
+The following are still unapproved numerical/layout proposals. The five high-level choices already supplied by the owner (north stair, continuous balcony, ROOM 13 north, flat roof, THE GUEST on both floors) are treated as approved intent and are not repeated as open decisions.
+
+1. Ground-floor room orientation: confirm E1/R2.2 (rooms courtyard-facing, corridors outer side) rather than the mirrored EBD layout.
+2. Ground-floor room Y bands and both 2.00 m cross-bays, including the 1.50 m clear openings on corridor and courtyard sides.
+3. Upper rooms 07–12 in side wings at 8.70 m nominal width, including the two 2.00 m cross-bays per wing and their 1.50 m openings to the balcony.
+4. Ground-floor 1.55 m south-end buffer zones and their open connections to the side corridors; upper-floor equivalent buffers and connections to the balcony.
+5. Ground north connector allocation: west lobby/NW link, reception, office, storage, service bay, electrical room ending X72.90 and retained NE link X73.20–75.70.
+6. Upper north connector allocation: ROOM 13 footprint 14.70×8.60 m, U-service zone and both non-playable service reserves.
+7. Stair exact footprint, U-turn handedness, flight offsets, landing arrangement, 0.18 m riser / 0.28 m going targets, guardrails and 1.20 m approaches. North location is approved; these dimensions are not.
+8. Wall thicknesses: 0.30 m exterior, 0.15 m standard partitions and 0.30 m selected connector partitions; confirm corner/junction construction.
+9. Slab thicknesses: GF 0.20 m; UF and roof 0.25 m. Confirm the complete vertical stack Z=0.00/3.00/3.35/3.60/6.40/6.65/7.10.
+10. Continuous balcony clear width (2.50 m minimum), 2.55 m side legs, corner turning pads, rail placement and 1.10 m rail height.
+11. Flat roof parapet thickness 0.20 m, height 0.45 m, exact corner joins, roof drainage/falls and outlet locations.
+12. Ground courtyard-facing windows and upper exterior-facing windows: confirm placement, sizes and sill heights.
+13. ROOM 12 → ROOM 13 secret-route vestibule, door/panel centres, concealment treatment and clearances.
+14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
 
 ## 8. R2.2 document-level integrity checks (performed after schedule updates)
 - ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows match the 16-column header. U-NORTH-HALL is explicitly a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
