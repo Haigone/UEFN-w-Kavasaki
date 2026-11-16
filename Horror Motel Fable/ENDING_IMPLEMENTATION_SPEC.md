@@ -10,14 +10,14 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 
 ## 2. Eligibility
 **ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. CoreEscapeReady is committed only after the service gate is powered and CarKeys are used at the vehicle ignition. This is available even when optional truth evidence was missed.  
-**THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects the truth route. It does not require CarKeys or vehicle ignition.  
+**THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects THE_TRUTH. It does not require CarKeys, CoreEscapeReady or vehicle ignition.  
 **THE_NEW_GUEST:** FinaleReady=true makes the invitation option available. The resolver presents the invitation and requires unanimous explicit affirmative confirmation from every currently connected eligible player. Set NewGuestAccepted=true only after that quorum succeeds, then commit THE_NEW_GUEST. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
-## 3. Truth evidence — END-A02 PENDING OWNER APPROVAL
+## 3. Truth evidence — END-A02 APPROVED 2026-11-16
 
-No mandatory truth-evidence list is currently owner-approved. The recommended three-clue gate is documented in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md.
+The three-clue evidence gate is approved and binding. See END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_GATE_R2.2.md.
 
-**Proposed formula (NOT AUTHORIZED FOR IMPLEMENTATION UNTIL APPROVED):**
+**Canonical formula:**
 `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`
 - `DiaryFound`: ROOM 09 night manager diary.
 - `ChildRoomClueFound`: ROOM 11 child's drawing.
@@ -25,7 +25,7 @@ No mandatory truth-evidence list is currently owner-approved. The recommended th
 
 Keep `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` as separate route, puzzle and identity-reveal progression gates. Do not add them as duplicate evidence pickups inside `TruthChainComplete`.
 
-Until explicit owner approval, do not implement a mandatory truth-evidence gate. ESCAPE remains available when any optional investigation clue is missed. If approved, each required clue must be recoverable, team-shared, idempotent and have readable/journal fallback. Other optional lore remains excluded.
+ESCAPE remains available when any or all investigation clues are missed. Each required clue must be recoverable, team-shared, idempotent and have readable/journal fallback. Other optional lore remains excluded.
 
 ## 4. Co-op choice — OWNER APPROVED 2026-11-16
 Ending selection is team-wide. Present only eligible options.
@@ -43,7 +43,7 @@ GameManager validates eligibility; acquire ending lock; if Ending==NONE set Endi
 
 ## 6. Sequences
 ESCAPE: reach vehicle, gate route, final chase, radio line “Thank you for staying at the Raven Motel. We hope to see you again soon.”, rear-seat/rear-view silhouette, cut to black, title card.
-THE_TRUTH: service route confrontation/revelation; show owner identity as THE GUEST; distinct final resolution and title card; do not reuse generic vehicle escape as the sole ending.
+THE_TRUTH: after the session commits THE_TRUTH, use the Service Key to enter the service control room. The four ROOM 13 photographs are displayed automatically on the evidence rail in their solved 1968/1974/1981/1986 order (they are not inventory items and no second photo puzzle is required). Play the night manager's 02:13 recorder entry with subtitles; reveal THE GUEST at the opposite corridor end; align the owner portrait and THE GUEST in the reflection; the team activates the dedicated `NIGHT AUDIT — END CYCLE` breaker through IN-032. The motel powers down room by room while the neon remains at 02:13; the register prints `NO VACANCY. NO OWNER. NO GUEST.`; cut to black and show THE TRUTH title card. Outcome: the current night-loop is stopped and exposed, but the motel remains physically present and its source is not proven destroyed. No vehicle, car key, vehicle ignition or chase is required.
 THE_NEW_GUEST: explicit acceptance; motel cycle resets; neon lights at 02:13; team-wide shared result and title card. Do not arbitrarily select one co-op player as keeper.
 
 ## 7. Recovery and edge cases
@@ -53,8 +53,8 @@ If ending cinematic fails, preserve Ending and show fallback title card/complete
 All three endings solo; all three in co-op; truth evidence incomplete; acceptance without consent; tie vote; no vote; simultaneous trigger volumes; disconnect during vote; disconnect during cinematic; repeat activation; invalid eligibility.
 
 
-## 9. Owner approval gate — co-op quorum and truth evidence
+## 9. Approval record
 
-**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver after validating it against the current UEFN/Verse API.
+**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum.
 
-**END-A02 PENDING:** Do not implement a mandatory truth-evidence gate until the owner explicitly approves it in OWNER_DECISION_PACKET_R1.md and the approval is recorded in OWNER_DECISION_GATE_R2.2.md. The three-clue formula in Section 3 is recommendation only.
+**END-A02 APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16:** Section 3 is the canonical three-clue evidence gate. Implement it exactly. It is mandatory only for THE_TRUTH, never for ESCAPE or core progression.
