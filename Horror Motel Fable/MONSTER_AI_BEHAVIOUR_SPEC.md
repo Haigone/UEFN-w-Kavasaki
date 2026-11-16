@@ -277,3 +277,52 @@ If a conflict exists:
 5. Tuning values marked PROPOSED remain adjustable only through recorded change control.
 
 No AI acceptance test is PASS until executed in the actual target UEFN build with reproducible evidence.
+
+
+## 11. R3 spawn and patrol anchor implementation
+
+The exact proposed waypoint and spawn coordinates are in AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv. This schedule is subordinate to R2.3 geometry; it never creates access through sealed areas.
+
+### Spawn contract
+
+- One THE GUEST NPC only.
+- Spawn point: AI-SPAWN-01 at X=42.50, Y=55.50, Z=0.00 in OWNER-OFFICE.
+- Spawn condition: PowerRestored=true and CurrentAct >= ACT III.
+- No NPC spawn at game start; no timer-based spawning; no infinite respawn; total spawn limit 1 per session.
+- Proposed NPC Spawner options: Spawn Count=1; Spawn Character at Game Start=False; Spawn Through Walls=False; Allow Infinite Spawn=False; Total Spawn Limit=1; Spawn On Timer=False. Confirm the exact fields/options in the target editor because NPC Spawner is Beta.
+- Assign one Custom NPC Character Definition using the imported THE GUEST mesh, and attach the custom Verse behavior. DEV_GUEST_AI is the behavior component for DEV_NPC_GUEST, not a second NPC Spawner.
+- If the spawn actor is missing, recovery is allowed only at the same authored point after the spawn condition is true; never create a second live Guest.
+
+### Patrol groups
+
+Use the route groups and points in AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv:
+- GF_WEST: four waypoints in the west ground-floor corridor.
+- GF_EAST: four waypoints in the east ground-floor corridor.
+- GF_CORE: reception, storage, electrical and Service Control Bay; the Service Control Bay waypoint is disabled during ending selection/finale.
+- STAIR: lower approach, U-turn landing and upper exit. This is the only authorized floor transition route.
+- UF_WEST / UF_NORTH / UF_EAST: upper balcony patrol waypoints.
+- UF_SECRET: VEST-13 waypoint only after the ROOM 12 secret panel is opened.
+- REVEAL: ROOM 13 reveal mark is scripted-only, not a patrol waypoint and has no capture authority.
+
+Waypoint coordinates are destinations, not teleport points. Use NavigateTo and inspect navigation_result. If a point is unreachable, mark it unavailable for that run, use the next valid point in the same group, and emit a QA diagnostic. Never teleport a visible NPC.
+
+### Navigation clearance and sealed zones
+
+- Test NPC capsule radius 0.45 m / height 2.60 m against corridor, door and stair clearances. These are target dimensions, not proof of the actual NPC capsule.
+- Stair waypoint Z values are 0.10, 1.80 and 3.60 m, matching the approved stair rise/landing design. Validate each step/landing with the actual NPC.
+- U-SERVICE, sealed reserves, roof and courtyard slab void are never waypoint destinations. Do not enable navmesh in those areas.
+- VEST-13 is unavailable until IN-015 commits SecretPanelOpened/Room13Unlocked.
+- GF-SERVICE-BAY is not an AI camping zone; disable AI and clear the bay when the ending resolver opens.
+
+### Route proof sequence
+
+1. Spawn one Guest at AI-SPAWN-01 after PowerRestored.
+2. Navigate each GF_WEST and GF_EAST point in order.
+3. Navigate from GF_CORE to each ground corridor and back without clipping doors.
+4. Navigate the full stair sequence bottom → landing → upper exit and reverse; no teleport or stuck state.
+5. Navigate all upper balcony points; verify guardrails and turns.
+6. Open ROOM 12 panel, then test VEST-13 route; before panel open it must be unavailable.
+7. Verify no path request enters U-SERVICE, sealed reserves or courtyard void.
+8. Run solo, duo and four-player chase/reacquisition tests; record path failures and time-to-destination.
+9. If stair traversal fails after one path refresh, abort chase to last valid point and switch to Search/Retreat as specified. Do not increase speed or teleport to mask the failure.
+
