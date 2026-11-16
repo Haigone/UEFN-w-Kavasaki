@@ -135,7 +135,7 @@ Re-inspection opens the same entry without duplicate flags, rewards or events. E
 ### 5.3 Evidence categories
 - Mandatory progression clue: required for access/puzzle; readable in-world and in journal.
 - Optional lore: never blocks ESCAPE.
-- Truth evidence: the recommended ROOM 09 diary, ROOM 11 drawing and ROOM 06 archive may gate THE_TRUTH through TruthChainComplete under approved END-A02. They are mandatory for THE_TRUTH only and remain optional for ESCAPE/core progression.
+- Truth evidence: the ROOM 09 diary, ROOM 11 drawing and ROOM 06 archive gate THE_TRUTH through the owner-approved TruthChainComplete formula. They are mandatory for THE_TRUTH only and remain optional for ESCAPE/core progression.
 - Structural states (SecretPanelOpened, PhotoSequenceSolved, OwnerIdentityRevealed) are not evidence pickups and must not be double-counted.
 
 ### 5.4 Known evidence entries to reconcile
