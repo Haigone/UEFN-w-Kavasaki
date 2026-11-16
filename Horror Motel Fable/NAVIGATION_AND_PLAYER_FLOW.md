@@ -15,13 +15,13 @@ The Guest is allowed a designed route on ground and upper floors. The primary ve
 - G-GF-03 West corridor (9.55,33.0,0.0)
 - G-GF-04 East corridor (74.45,33.0,0.0)
 - G-GF-05 Electrical approach (60.0,50.0,0.0)
-- G-UF-01 Stair landing (24.0,55.0,3.6)
+- G-UF-01 Upper stair approach (24.0,51.70,3.6)
 - G-UF-02 West balcony (18.45,33.0,3.6)
 - G-UF-03 North balcony (42.0,49.55,3.6)
 - G-UF-04 East balcony (65.55,33.0,3.6)
 - G-UF-05 Room 12 approach (69.95,46.0,3.6)
 - G-UF-06 Room 13 reveal approach (56.35,52.0,3.6)
-These are nav-marker proposals, not confirmed reachable points. Keep patrol points at least 0.60 m from wall collision and outside rail edge/door swing. THE GUEST may enter both side corridors and balcony; entry into bedrooms, electrical, ROOM 13 or hidden passage is gated by story state. Roof is a no-go volume.
+These are nav-marker proposals, not confirmed reachable points. G-UF-01 is deliberately south of the UF stairwell void (X22.50–25.50,Y52.30–56.32); do not place an NPC/player nav target inside the slab opening. Keep patrol points at least 0.60 m from wall collision and outside rail edge/door swing. THE GUEST may enter both side corridors and balcony; entry into bedrooms, electrical, ROOM 13 or hidden passage is gated by story state. Roof is a no-go volume.
 
 ## Chase and recovery
 Use a connected loop with at least two player continuation options on each floor. Stair is the only vertical transition; test bidirectional NPC movement and prevent stair landing bottlenecks. Chase termination requires line-of-sight loss or scripted reset; no wall vision, no clipping, no permanent dead-end. Solo capture recovery must exist. 1P, 2P, 3P and 4P tests required.
