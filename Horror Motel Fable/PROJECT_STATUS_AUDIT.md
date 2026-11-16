@@ -134,3 +134,59 @@ This audit reads the GitHub repository contents available on branch main. Binary
 This repository is a specification/reference package for Claude, not proof of an implemented island. ChatGPT's role is limited to preparing detailed, ordered execution packets, specifications, acceptance criteria and evidence checklists. **Claude is the designated executor** for all UEFN editor operations, asset imports, device configuration, Verse implementation/compilation, playtests, QA, profiling and island validation. The project owner approves design decisions and publication. ChatGPT must not claim or certify any editor test it did not perform. See `CLAUDE_EXECUTION_PROTOCOL.md`.
 
 The statuses in this audit describe repository evidence only. Any editor-dependent item remains PRESENTE MA NON VERIFICATO / INCOMPLETO / BLOCCATO until Claude returns reproducible evidence tied to the project and UEFN version.
+
+
+## 13. RE-AUDIT ADDENDUM — CURRENT REPOSITORY AND OPEN WORK
+
+**Re-audit date:** 2026-11-16. This section supersedes earlier inventory counts and adds checks not covered by the first snapshot. Main was inspected at commit `c9dc01f9be3a6ef94fc06270917319ad24e0d305`; recursive tree returned 65 files in `Horror Motel Fable/` plus 1 root README (66 file blobs total): 46 Markdown, 14 CSV and 5 SVG. No other file types were present.
+
+### 13.1 Updated source inventory and geometry authority
+
+The current main branch now includes `CLAUDE_EXECUTION_PLAN.md`, `CLAUDE_EXECUTION_PROTOCOL.md`, `FINAL_GROUND_FLOOR_PLAN.md`, `FINAL_UPPER_FLOOR_PLAN.md`, `LEVEL_SECTIONS.md`, `UEFN_BLOCKOUT_BUILD_GUIDE.md`, `GROUND_FLOOR_PLAN_R2.svg` and `UPPER_FLOOR_PLAN_R2.svg`, in addition to the earlier design package.
+
+`LEVEL_DESIGN_GEOMETRY.md` identifies itself as the candidate single geometry authority and selects the E1 side-wing allocation for rooms 07–12 and the north-connector pocket for ROOM 13. This materially improves the written source-of-truth situation compared with the earlier dossier/CSV/SVG conflict. It is still labelled PROPOSED TARGET / NOT UEFN-VERIFIED, and `GEOMETRY_VALIDATION_REPORT.md` explicitly concludes: document audit complete, geometry not approved. `FINAL_GROUND_FLOOR_PLAN.md` and `FINAL_UPPER_FLOOR_PLAN.md` also state NOT APPROVED FOR FINAL ART. Their filenames must not be interpreted as acceptance.
+
+The current geometry package still lacks a complete wall plan and finished construction sections. `LEVEL_SECTIONS.md` specifies an E–E courtyard/balcony section, but the available `sections_AA_CC_DD.svg` does not contain it. The older `floorplan_upper.svg` and section SVG do not depict the new ROOM 12 vestibule. The R2 upper SVG depicts it schematically, not as editor-verified construction geometry. The vertical slab/ceiling/roof stack, stair flight/tread count, balcony edge polygon and ROOM 12 junction remain open.
+
+### 13.2 Main-branch CSV integrity checks
+
+All 14 CSV files in main were parsed for consistent row widths. The following defects were confirmed:
+
+| File | Finding | Consequence |
+|---|---|---|
+| `INTERACTION_MASTER_REGISTER.csv` | IN-021, IN-022 and IN-023 each have 12 fields against a 13-column header; the action/prerequisite fields are shifted or absent | These rows cannot be consumed reliably as structured interaction data |
+| `PUZZLE_MASTER_REGISTER.csv` | PZ-03 has 14 fields against a 15-column header | Electrical puzzle field alignment is incomplete |
+| `coordinate_schedule.csv` | UPPER_ROOM11 has 13 fields against a 14-column header; the expected 8.6 m width value is missing and later columns shift | Do not import or use this legacy row as a valid dimension record |
+| `lighting_audio_schedule.csv` | Contains two different tables and two headers in one file: a 14-column lighting table and an 11-column audio table | Split into separate files or define a documented multi-table format before automated ingestion |
+
+Other CSVs had consistent row widths in this check. This does not certify semantic correctness, coordinate alignment, collisions or completeness. `ROOM_COORDINATE_REGISTER.csv` (34 data rows) and `DOOR_WINDOW_SCHEDULE.csv` (32 data rows) are the newer detailed uppercase schedules; the lower-case `coordinate_schedule.csv` and `door_window_schedule.csv` remain legacy alternatives. README still points primarily to the lower-case schedules, so the authoritative CSV naming/hierarchy must be stated explicitly.
+
+### 13.3 Wall/opening register integrity
+
+`wall_schedule.csv` contains 23 data rows and is a partial structural list, not a complete wall/floor/ceiling model. Its opening identifiers (for example `D_W01`, `D_OFFICE`, `D_ROOM12_PANEL`, `D_ROOM13_SECRET`) do not match the IDs in `DOOR_WINDOW_SCHEDULE.csv` (for example `D-G01`, `D-G08`, `D-13A`, `D-13B`). The D-13C vestibule-to-hall passage is not represented in the wall schedule. This prevents dependable cross-reference from an opening to its host wall.
+
+### 13.4 Environment Art Pull Request #1
+
+The repository has two branches: `main` and `environment-art/room13-v1`. Pull Request #1, “Add Environment Art production package for THE MOTEL: ROOM 13”, is OPEN and DRAFT. It adds eight files: an art bible, modular asset specification, room-by-room art specification, asset/material/prop registers, import pipeline and acceptance checklist. The PR description correctly says these are specifications/proposed placements, not created assets or UEFN imports.
+
+At re-audit, the PR branch was 11 commits ahead and 42 commits behind current main (diverged). It had no submitted reviews, no discussion comments and no status checks registered on its head commit. GitHub's mergeable flag alone is not acceptance. Rebase/synchronisation, fresh comparison, review and data corrections are required before integration. No merge was performed.
+
+The PR package contains 43 asset rows, 20 material rows and 195 placement rows. All 43 asset IDs and 20 material IDs are unique; all material references resolve. One placement row, `EXT_SIGN_TRIGGER`, references `GAMEPLAY_SIGN_TRIGGER`, which is not an asset ID in the asset register; it should be represented as a gameplay/device reference rather than silently treated as a mesh asset.
+
+A footprint check against the proposed room bounds found six wardrobe placements entirely outside their assigned west-wing room bounds: `F01_WARDROBE`, `F02_WARDROBE`, `F03_WARDROBE`, `F07_WARDROBE`, `F08_WARDROBE`, `F09_WARDROBE`. Their rotated footprint lies at approximately X=10.10–10.70 m, while the assigned room minimum X is 11.10 m. These positions intrude into the corridor/outside the room envelope and must be corrected before placement. The check found no other room-boundary footprint violations among the tested room-assigned rows; it did not test door swings, bathrooms, player capsules or editor collision.
+
+The `F12_SECRET_PANEL` placement is at Y=47.25 m, while opening `D-13A` is centred at Y=47.55 m, a 0.30 m mismatch. Reconcile against the approved wall centre-line and pivot convention before use. The asset/material rows remain NOT STARTED / NOT VERIFIED; no source meshes, textures, license evidence or UEFN import evidence are included.
+
+### 13.5 Execution-order and index issues
+
+`CLAUDE_EXECUTION_PROTOCOL.md` and `CLAUDE_EXECUTION_PLAN.md` correctly establish that ChatGPT prepares plans/specifications only and Claude performs all UEFN implementation, compilation, playtests, QA, profiling and validation. No editor test has been claimed in this audit.
+
+A sequencing conflict remains: `PRODUCTION_ROADMAP.md` and `MASTER_TASK_REGISTER.md` put geometry resolution on the critical path, while `CLAUDE_EXECUTION_PLAN.md` labels Narrative Lock as Phase 1 / first priority before geometry Phase 2. Narrative document work can run in parallel, but the project owner/production lead must clarify that it does not delay the geometry gate.
+
+README is not a current complete index: it omits several R2.0 and Claude governance files and continues to present legacy lower-case schedules as primary outputs. Update the index after the canonical file hierarchy is approved.
+
+### 13.6 Updated evidence conclusion
+
+The repository remains a documentation/specification package, not an evidenced UEFN project. The re-audit found no native UEFN project/map/content files, no `.verse` source, no binary asset production, no editor screenshots, no compile logs, no playtest evidence, no performance profile and no island validation/publication record. The repository tree also contains no `.github/workflows/` CI workflow files; the PR head has no registered status checks in the inspected commit status response.
+
+**Current production state remains DOCUMENTATION / PRE-PRODUCTION.** The new R2.0 geometry candidate and Environment Art package improve planning completeness but do not change implementation status. Claude remains the designated executor/tester; ChatGPT remains limited to detailed plans, documentation, review of returned evidence and corrective instructions.
