@@ -399,3 +399,29 @@ Read `CLAUDE_EXECUTION_PROTOCOL.md` before starting. This repository is your pro
 ChatGPT prepares the detailed execution packets for you: atomic ordered actions, exact verified values, clearly labelled unknowns, expected results, test procedures, recovery paths, acceptance criteria and evidence requirements. ChatGPT does not operate UEFN or claim to have performed your tests. The project owner approves creative/structural decisions and publication.
 
 For every assigned task, follow the packet format and Claude response contract in `CLAUDE_EXECUTION_PROTOCOL.md`. Return PASS / FAIL / BLOCKED per test, actual observed results, UEFN version, project/build identity, changed assets/files, screenshots/logs/recordings and reproducible defects. If an editor capability is unavailable, stop and report it; never fabricate evidence. A task requiring editor evidence remains unverified until that evidence is reviewed. Do not silently resolve owner-level design conflicts.
+
+
+---
+
+# 19. CURRENT R2.2 HANDOFF OVERRIDE — 2026-11-16
+
+This section supersedes older geometry hierarchy and execution ordering wherever they conflict.
+
+Before any UEFN/editor work, read:
+1. CLAUDE_EXECUTION_PROTOCOL.md
+2. OWNER_DECISION_GATE_R2.2.md
+3. CLAUDE_R2.2_EXECUTION_PACKET.md
+4. LEVEL_DESIGN_R2.2_INDEX.md
+5. LEVEL_DESIGN_GEOMETRY.md
+6. GEOMETRY_VALIDATION_REPORT.md
+
+R2.2 is the only candidate geometry proposal. It is NOT owner-approved and NOT UEFN-verified. The R2.1 geometry execution brief is superseded. Do not use old dossier/E1/R1/R2.0/R2.1 coordinates where they conflict with R2.2.
+
+The narrative draft package is NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. It is proposal-only until the owner approves NCP-A01–A10. Do not improvise replacements or implement draft text as canon.
+
+**Authorized before owner approval:** CLD-001 read-only project/editor baseline and CLD-002 read-only document/data integrity audit.
+**Blocked before owner approval:** final greybox construction, final placements, geometry-dependent gameplay/AI/lighting/audio placement, Environment Art PR merge and any claim of geometry freeze.
+**Claude only:** actual UEFN construction, Verse implementation/compilation, asset import, playtests, multiplayer QA, performance/memory profiling and island validation.
+**Owner only:** creative/structural approval and publication authorization.
+
+Current PR #1 is OPEN/DRAFT, unmerged, and latest GitHub metadata reports mergeable=false. Do not merge it. Reauthor the package only after approved and editor-verified geometry.
