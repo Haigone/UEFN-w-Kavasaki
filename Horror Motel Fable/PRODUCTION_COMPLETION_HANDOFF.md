@@ -239,3 +239,27 @@ This is a structural row-width check only. It does not establish semantic correc
 - The geometry validation report lists **14 numbered owner-approval items**. The owner must approve or request revisions before geometry is frozen.
 - R2.2 includes document-level corrections such as the UPPER_ROOM11 row and aligned opening/host-wall references. These corrections do not make the layout owner-approved or editor-verified.
 - Do not assign Environment Art final placements against R2.2 until owner approval and Claude's editor traversal/collision evidence are obtained.
+
+
+## 14. R2.2 and narrative closure refresh — 2026-11-16
+
+This is the latest documentary handoff override for this pass.
+
+### New current documents
+- `OWNER_DECISION_GATE_R2.2.md` — owner approval items GEO-A01–A15, ending quorum END-A01 and truth evidence END-A02.
+- `CLAUDE_R2.2_EXECUTION_PACKET.md` — restricted current Claude work packet. It authorizes read-only baseline/integrity work now; greybox is conditional on approval.
+- `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md` — complete proposal-level draft of missing clue texts, puzzle content and ending sequences.
+
+### Documentary repairs committed
+- Corrected semantic column mapping for SITE, BLDG-UNION and COURTYARD in ROOM_COORDINATE_REGISTER.csv.
+- Completed the PZ-03 AcceptanceTest field in PUZZLE_MASTER_REGISTER.csv.
+- Verified current INTERACTION_MASTER_REGISTER.csv rows IN-021/022/023 are already aligned; the earlier claim that these three rows were shifted is withdrawn.
+- Updated the R2.2 index, README, roadmap, master task register, missing deliverables register, status audit and ending implementation spec with the current authority and approval boundaries.
+
+### Still not completed
+- Owner has not yet approved R2.2 geometry or narrative proposals.
+- Claude has not yet returned the actual UEFN project/editor baseline or R2.2 cross-register integrity report.
+- No final greybox build, Verse compilation, asset import, gameplay QA, multiplayer tests, performance/memory profile or island validation has been evidenced in this pass.
+- Environment Art PR #1 remains unmerged and must be reauthored against approved/editor-verified geometry.
+
+**Current state:** documentation and proposal drafting advanced; production remains DOCUMENTATION / PRE-PRODUCTION. The next executable work is CLD-001 and CLD-002 from CLAUDE_R2.2_EXECUTION_PACKET.md. The next owner action is to approve or revise the decision gate. No publication is authorized.
