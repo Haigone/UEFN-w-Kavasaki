@@ -201,6 +201,7 @@ Current execution entry point: CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. It supers
 
 Additional controlling documents:
 - Room fit-out: ROOM_INTERIOR_FITOUT_SPEC_R1.md; exact proposed placement coordinates remain in room_furnishing_schedule.csv. R2.3 structural envelope always wins.
+- Service control location: SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md. GF-SERVICE-BAY is the playable Service Control Bay; U-SERVICE remains sealed/no-access/no-navmesh.
 - Asset production: ASSET_PRODUCTION_BACKLOG_R1.csv plus ASSET_PRODUCTION_PIPELINE_SPEC.md. No source/license/import status is accepted without evidence.
 - UEFN capability references: UEFN_VERIFIED_REFERENCE_REGISTER_R1.md plus UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md. Officially documented feature does not equal project verified.
 - Device binding: UEFN_DEVICE_BINDINGS.csv is expanded to all 32 interactions and supporting session/system devices; every row remains editor-test required unless explicitly marked official capability documented/project test required.
