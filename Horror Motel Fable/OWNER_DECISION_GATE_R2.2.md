@@ -4,7 +4,7 @@ Revision: 1.0 — 2026-11-16
 Status: **GEOMETRY APPROVED BY PROJECT OWNER ON 2026-11-16 — UEFN VERIFICATION PENDING**
 
 ## Purpose
-This document records the owner's approval of geometry decisions GEO-A01–GEO-A21 and the END-A01 co-op quorum. END-A02 truth-evidence gating was approved under the owner's express delegation on 2026-11-16; see Sections C and D. Claude may implement the approved geometry baseline LD-GEO R2.3, subject to editor verification.
+This document records the owner's approval of geometry decisions GEO-A01–GEO-A21, the END-A01 co-op quorum and the END-A02 truth-evidence gate. The owner explicitly approved END-A02 in this conversation on 2026-11-16; see Sections C and D. Claude may implement the approved geometry baseline LD-GEO R2.3, subject to editor verification.
 
 ## Decision method
 The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner replied **APPROVO TUTTO, PROCEDI** on 2026-11-16, approving the R2.2 geometry proposal and recommendations for GEO-A01–GEO-A21. The approved and synchronized geometry baseline is LD-GEO R2.3. The VEST-13 correction and approved reserve/pad/stair/roof clarifications have been applied. These design approvals do not constitute UEFN verification. END-A01 co-op quorum was separately approved by the owner on 2026-11-16 and is recorded in Section B.
@@ -77,7 +77,7 @@ Claude may implement this resolver after verifying the target UEFN/Verse API. Do
 
 ## C. Truth-ending evidence gate
 
-**END-A02 — APPROVED UNDER EXPRESS OWNER DELEGATION ON 2026-11-16.** TruthChainComplete requires exactly three session-shared discoveries: `DiaryFound` (ROOM 09 diary) AND `ChildRoomClueFound` (ROOM 11 drawing) AND `MissingGuestEvidenceFound` (ROOM 06 missing-guest archive). No fourth clue is required. `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` remain separate progression/reveal gates and must not be duplicated inside TruthChainComplete. All three clues remain optional for core progression and ESCAPE; they are mandatory only for THE_TRUTH eligibility. Each clue is recoverable, team-shared, idempotent, readable in-world and preserved in the journal after discovery. Capture, checkpoint restore, disconnection and another player's inspection cannot permanently remove access.
+**END-A02 — EXPLICITLY APPROVED BY OWNER ON 2026-11-16.** TruthChainComplete requires exactly three session-shared discoveries: `DiaryFound` (ROOM 09 diary) AND `ChildRoomClueFound` (ROOM 11 drawing) AND `MissingGuestEvidenceFound` (ROOM 06 missing-guest archive). No fourth clue is required. `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` remain separate progression/reveal gates and must not be duplicated inside TruthChainComplete. All three clues remain optional for core progression and ESCAPE; they are mandatory only for THE_TRUTH eligibility. Each clue is recoverable, team-shared, idempotent, readable in-world and preserved in the journal after discovery. Capture, checkpoint restore, disconnection and another player's inspection cannot permanently remove access.
 
 **Narrative package NCP-A01–A09 is also approved under the same delegation** as the English player-facing text/puzzle baseline in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. Exact text, clue identities, puzzle solutions, THE_TRUTH sequence/consequence and THE_NEW_GUEST invitation are now canonical. END-A01 remains unchanged. No geometry or engine capability is approved by this decision.
 
@@ -86,12 +86,12 @@ Claude may implement this resolver after verifying the target UEFN/Verse API. Do
 Owner response: APPROVED — “APPROVO TUTTO, PROCEDI” — 2026-11-16  
 Approved geometry revision: LD-GEO R2.3  
 Approved co-op quorum: MAJORITY for ESCAPE/THE TRUTH; UNANIMOUS explicit confirmation for THE NEW GUEST; timeout/tie defaults to ESCAPE only when eligible; disconnect removes voter and recalculates/reconfirms  
-END-A02 truth evidence gate: APPROVED under express owner delegation; exactly three clues (ROOM 06 archive, ROOM 09 diary, ROOM 11 drawing), mandatory only for THE_TRUTH
+END-A02 truth evidence gate: EXPLICIT OWNER APPROVAL; exactly three clues (ROOM 06 archive, ROOM 09 diary, ROOM 11 drawing), mandatory only for THE_TRUTH
 Narrative content NCP-A01–A09: APPROVED under express owner delegation; NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md is canonical English content baseline
-Approval authority: owner instruction on 2026-11-16 — “prendi tu le decisione”; ChatGPT acting as delegated Creative/Narrative Director  
+Approval authority: explicit owner approval in this conversation on 2026-11-16; separate NCP-A01–A09 creative approvals remain recorded under delegated Creative/Narrative Director authority  
 Approval date: 2026-11-16
 
-Geometry and END-A01 approvals are recorded above. END-A02 and NCP-A01–A09 are now approved under express owner delegation; ending, gameplay, puzzle, UI, QA and Claude execution documents must follow the canonical narrative pack.
+Geometry, END-A01 and END-A02 approvals are recorded above. END-A02 is explicitly approved by the owner; the separately recorded NCP-A01–A09 approvals remain binding. ending, gameplay, puzzle, UI, QA and Claude execution documents must follow the canonical narrative pack.
 
 ## E. Stop conditions
 - Geometry decisions GEO-A01–GEO-A21 are approved and synchronized as LD-GEO R2.3. No editor-dependent item may be marked complete without Claude's UEFN evidence.
