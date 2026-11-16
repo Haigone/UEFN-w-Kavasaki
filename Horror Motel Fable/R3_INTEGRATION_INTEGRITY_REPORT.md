@@ -82,10 +82,10 @@ Repeated audio/light IDs in cue sheets are intentional when one asset is used by
 
 ## 5. Asset inventory and rights readiness
 
-- asset_manifest.csv and ASSET_MANIFEST_EXECUTIVE.csv have been expanded and synchronized to 94 unique Asset_ID rows.
+- asset_manifest.csv and ASSET_MANIFEST_EXECUTIVE.csv have been expanded and synchronized to 99 unique Asset_ID rows.
 - ASSET_PRODUCTION_BACKLOG_R1.csv contains 65 production packages with priority, deliverable, dependency and import/source status.
 - ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv contains 99 rows, one per master Asset_ID.
-- All 94 rights rows currently remain NOT SOURCED; source URL, license proof and commercial/UEFN publishing rights are intentionally blank until actual sourcing occurs.
+- All 99 rights rows currently remain NOT SOURCED; source URL, license proof and commercial/UEFN publishing rights are intentionally blank until actual sourcing occurs.
 - No asset is claimed to have been acquired, licensed, created or imported by this audit.
 
 ## 6. Official UEFN capability evidence reviewed
@@ -107,7 +107,7 @@ References and implementation consequences are recorded in UEFN_VERIFIED_REFEREN
 | P0 | Exact Verse API/device compatibility for this project | Minimal proofs and compile logs on target editor |
 | P0 | THE GUEST route/navigation feasibility | NPC route tests across both floors, stair, balcony and secret passage |
 | P1 | Furniture mesh pivot/door swing/player clearance | Editor placement and traversal evidence for all 183 rows |
-| P1 | Asset source/licensing | 94 per-asset source/rights records completed with archived license proof |
+| P1 | Asset source/licensing | 99 per-asset source/rights records completed with archived license proof |
 | P1 | Asset creation/import | Accepted imported assets with UEFN version and measured properties |
 | P1 | Verse implementation | Source modules, compile output and runtime state tests |
 | P0 final | Solo/2P/4P gameplay QA | Full runs, edge-case recordings, test logs |
