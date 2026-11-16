@@ -1,0 +1,24 @@
+Placement_ID,Asset_ID,Floor,Room_or_Area,X_m,Y_m,Z_m,Yaw_deg,Width_m,Depth_m,Height_m,Wall_Clearance_m,Collision,Interactable,Interaction_Range_m,Material_ID,Gameplay_Role,Placement_Status,Geometry_Validation,Source_Schedule
+EXT_BROKEN_CAR,PROP_BROKEN_CAR,0,SouthParking,37,8,0,90,4.8,1.9,1.45,,Yes,No,,MAT_ASPHALT_WET,Opening setpiece,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_NEON_SIGN,PROP_NEON_SIGN,0,SouthApproach,42,15,2.2,0,3.8,0.35,1.6,,Yes,No,,MAT_NEON_RED;MAT_NEON_BLUE,Raven Motel landmark,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_GATE,ARCH_DOOR_SECRET,0,SouthDrive,42,18,0,0,4,0.25,2.2,,Yes,Yes,2.0,MAT_METAL_RUST,Final escape gate,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_VENDING,PROP_VENDING,0,WestCourtyard,22.5,27,0,90,1.2,0.8,1.9,,Yes,Yes,2.0,MAT_PAINT_PEEL,Optional supplies/story prop,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_DUMPSTER,PROP_DUMPSTER,0,EastService,72,22,0,0,2,1,1.4,,Yes,No,,MAT_METAL_RUST,Environmental dressing,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_LAMP_01,PROP_NEON_SIGN,0,SouthParking,25,12,0,0,0.25,0.25,4,,Yes,No,,MAT_NEON_BLUE,Cold blue pool,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_LAMP_02,PROP_NEON_SIGN,0,SouthParking,59,12,0,0,0.25,0.25,4,,Yes,No,,MAT_NEON_BLUE,Cold blue pool,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_LAMP_03,PROP_NEON_SIGN,0,Courtyard,25,43,0,0,0.25,0.25,4,,Yes,No,,MAT_NEON_BLUE,Courtyard fill,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_LAMP_04,PROP_NEON_SIGN,0,Courtyard,59,43,0,0,0.25,0.25,4,,Yes,No,,MAT_NEON_BLUE,Courtyard fill,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+EXT_CAR_KEYS,PROP_TELEPHONE,0,FinalEscape,37,8,0.8,0,0.1,0.05,0.03,,No,Yes,2.0,MAT_PLASTIC_AGED,Final escape item,PROPOSED TARGET,NOT VERIFIED,exterior_prop_schedule.csv
+F02_BATTERY,PROP_TELEPHONE,0,ROOM 02,17.2,30.2,0.8,35,0.08,0.05,0.14,0.2,No,Yes,2.0,MAT_PLASTIC_AGED,Flashlight battery,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F02_SUITCASE,PROP_DIARY,0,ROOM 02,16.8,34.2,0,25,0.7,0.45,0.25,0.2,Yes,Yes,2.0,MAT_WOOD_DARK,Clue container,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F06_PHOTO_WALL,PROP_PHOTO_SET,0,ROOM 06,64.45,41.5,1.65,90,2.8,0.05,1.2,0.05,No,Yes,2.0,MAT_PAPER_PHOTO,Missing guest evidence,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F09_DIARY,PROP_DIARY,1,ROOM 09,16,43.2,4.35,0,0.24,0.18,0.04,0,No,Yes,2.0,MAT_PAPER_PHOTO,Narrative clue,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F11_CHILD_BED,PROP_GUEST_BED,1,ROOM 11,68.4,32,3.6,180,0.9,1.9,0.45,0.5,Yes,No,,MAT_FABRIC_MOTEL,Child story,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F11_TOYBOX,PROP_CHILD_TOYS,1,ROOM 11,71.2,34.1,3.6,0,0.8,0.45,0.5,0.15,Yes,Yes,2.0,MAT_WOOD_DARK,Environmental clue,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F12_SECRET_PANEL,ARCH_DOOR_SECRET,1,ROOM 12,68.6,47.25,4.65,0,0.9,0.12,2.1,0.05,Yes,Yes,2.0,MAT_WALLPAPER,Secret passage,PROPOSED TARGET,EDITOR TEST REQUIRED,room_furnishing_schedule.csv
+F13_PHOTO_1,PROP_PHOTO_SET,1,ROOM 13,51,59.55,5,180,0.3,0.05,0.4,0,No,Yes,2.0,MAT_PAPER_PHOTO,Chronology puzzle,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F13_PHOTO_2,PROP_PHOTO_SET,1,ROOM 13,52,59.55,5,180,0.3,0.05,0.4,0,No,Yes,2.0,MAT_PAPER_PHOTO,Chronology puzzle,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F13_PHOTO_3,PROP_PHOTO_SET,1,ROOM 13,53,59.55,5,180,0.3,0.05,0.4,0,No,Yes,2.0,MAT_PAPER_PHOTO,Chronology puzzle,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F13_PHOTO_4,PROP_PHOTO_SET,1,ROOM 13,54,59.55,5,180,0.3,0.05,0.4,0,No,Yes,2.0,MAT_PAPER_PHOTO,Chronology puzzle,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F13_CLOCK,PROP_ROOM13_CLOCK,1,ROOM 13,61.5,59.5,5.3,180,0.35,0.05,0.35,0,No,Yes,2.0,MAT_BRASS_WORN,Clock fixed at 02:13,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
+F13_OWNER_PORTRAIT,PROP_PHOTO_SET,1,ROOM 13,59,59.5,5,180,0.6,0.05,0.8,0,No,Yes,2.0,MAT_PAPER_PHOTO,Owner reveal,PROPOSED TARGET,NOT VERIFIED,room_furnishing_schedule.csv
