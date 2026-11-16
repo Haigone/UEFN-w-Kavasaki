@@ -70,3 +70,7 @@ The PR's asset/material specifications do not close MD-009/011/012/016: no sourc
 | MD-042 | Current production index | README omits R2.1 source hierarchy and geometry handoff documents | INCOMPLETO | README points to LEVEL_DESIGN_R2.1_INDEX.md and current Claude protocols | R2.1 baseline | Production |
 
 The current R2.1 design has corrected several earlier ambiguities, but it remains a proposed greybox baseline. No native UEFN build, imported asset, editor test or engine-verified evidence is present in the repository.
+
+
+### MD-036 status clarification
+PR #1 is technically reported `mergeable=true` by GitHub at the latest check, but remains OPEN/DRAFT, 49 ahead / 94 behind, unreviewed and stale against R2.1. Its block is production/data/geometry readiness, not a reported merge conflict. The PR description's 119 asset / 20 material / 286 placement counts are current; its “CSV schemas normalized” claim is not supported by the source-register and GQ-007 parsing results.
