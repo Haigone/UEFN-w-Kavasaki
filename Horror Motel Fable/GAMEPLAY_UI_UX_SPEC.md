@@ -252,7 +252,7 @@ Before implementation, reconcile/create:
 - UI acceptance suite: resolutions/input modes, solo/2P/4P sync, reconnect, modal close, no duplicate notifications, clue readability, subtitles and safe-area clipping.
 
 ## 13. Open issues — do not silently assume
-1. END-A02 truth evidence formula remains PENDING OWNER APPROVAL. Proposed formula: DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. Do not implement as release gate until approved.
+1. END-A02 is APPROVED: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. The gate is optional for core progression/ESCAPE and required only for THE_TRUTH.
 2. Exact Act II objective completion predicate is not aligned across all docs. Confirm if all rooms 01–06 must be inspected.
 3. Room 04 phone and Room 01 CRT need stable DocumentId/discovery-flag mapping; reuse existing flags where possible.
 4. Journal binding and final control glyphs must be selected/verified in UEFN.
