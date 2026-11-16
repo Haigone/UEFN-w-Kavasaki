@@ -55,3 +55,18 @@ See `CLAUDE_EXECUTION_PROTOCOL.md` for task packet requirements, Claude's eviden
 | DEC-018 | 2026-11-16 | Claude remains sole designated operator for UEFN implementation and tests; ChatGPT prepares plans and reviews returned evidence | Confirmed by CLAUDE_EXECUTION_PROTOCOL.md and CLAUDE_EXECUTION_PLAN.md | All UEFN/editor/QA work | Project Owner | COMPLETATO CON EVIDENZA |
 
 These entries record audit findings and recommendations. DEC-013, DEC-015 and DEC-017 require owner/discipline action; they do not authorise a merge, placement change or creative geometry change.
+
+
+## R2.1 and revised asset intake decisions/observations — 2026-11-16
+
+| Decision ID | Date | Decision / observation | Rationale | Scope | Authority | Status |
+|---|---|---|---|---|---|---|
+| DEC-019 | 2026-11-16 | R2.1 supersedes R2.0 and E1 wherever geometry values conflict; it remains a candidate, not final approval | Current R2.1 index and geometry validation report define this hierarchy and explicitly withhold final approval | Geometry source of truth | Project Owner | COMPLETATO CON EVIDENZA |
+| DEC-020 | 2026-11-16 | Owner-locked R2.1 decisions are north stair at reception, continuous U balcony, ROOM 13 north connector, flat non-playable roof and THE GUEST both floors | Recorded in R2.1 geometry and Claude geometry brief | Level Design | Project Owner | COMPLETATO CON EVIDENZA |
+| DEC-021 | 2026-11-16 | Do not merge Environment Art PR #1 in current state; it must be reauthored against R2.1, not merely rebased | Branch diverged 44 ahead / 87 behind; PR is draft, non-mergeable and based on R2.0 | Environment Art | Project Owner / Production | BLOCCATO |
+| DEC-022 | 2026-11-16 | R2.1 placement review supersedes earlier six-wardrobe/panel-Y findings: nine wardrobes are out of bounds and F12 panel is 1.35 m offset in X from D-13A | R2.1 room strips narrow to 5.90 m and D-13A moves to X=69.95 | Environment Art | Art Lead / Level Design | BLOCCATO |
+| DEC-023 | 2026-11-16 | Only Fab listings explicitly marked UEFN Source are treated as direct editable-source candidates; UEFN Reference is a different category | Epic's import documentation distinguishes Source from Reference; UE-only formats do not prove UEFN source compatibility | Asset acquisition | Project Owner | PRESENTE MA NON VERIFICATO |
+| DEC-024 | 2026-11-16 | Use separate AUDIO_REGISTER.csv and LIGHTING_REGISTER.csv for future edits; keep lighting_audio_schedule.csv historical | Current README identifies separate registers as normalized sources | Audio / Lighting | Production Director | COMPLETATO CON EVIDENZA |
+| DEC-025 | 2026-11-16 | Claude may propose a gate-anchor correction but must not change the R2.1 authority until owner approval | Gate conflict remains unresolved and structural changes require owner authority | Exterior geometry | Project Owner | BLOCCATO |
+
+These entries do not authorize asset purchases, PR merge, geometry edits or engine acceptance.
