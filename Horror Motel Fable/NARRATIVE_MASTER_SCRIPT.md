@@ -39,5 +39,18 @@ Explicitly accept invitation or enter separately authored cycle branch. Motel re
 ## Suggested environmental fragments (not final approved text)
 “NO CHECK-OUT RECORDED.” / “If the sign is lit, do not answer the desk phone.” / “MAIN POWER — STAFF ONLY.” / “The room was never built. It was always here.” / “HE WAITS OUTSIDE THE DOOR.” / “02:13”.
 
-## Script gaps
-Exact register entries/code; office photo captions/solution; Room 04 recording; Room 06 photo identities/dates; full diary; Room 11 drawing text; ROOM 13 photo captions/dates/order; THE TRUTH final script; THE NEW GUEST choice text and team rule.
+## Script and approval status
+
+Complete draft player-facing text and puzzle logic now exist in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md, including:
+- Guest Register and 02-13-86 deduction.
+- Office photo captions and chronology.
+- Fuse A/B/C labels and ROOM 04 transcript.
+- ROOM 06 missing-guest photo archive.
+- ROOM 09 diary.
+- ROOM 11 drawing/caption.
+- ROOM 13 four-photo captions, chronology and reveal.
+- THE TRUTH sequence/consequence proposal.
+- THE NEW GUEST invitation and consent copy.
+
+These items are proposal-only, not approved canon. The remaining owner-facing narrative approval is consolidated in OWNER_DECISION_PACKET_R1.md (NCP-A01–A09 plus END-A02). END-A01 co-op quorum is already owner-approved and must not be reopened. Geometry route feasibility and all runtime behaviours remain subject to R2.3/editor validation; this script does not claim implementation or test completion.
+
