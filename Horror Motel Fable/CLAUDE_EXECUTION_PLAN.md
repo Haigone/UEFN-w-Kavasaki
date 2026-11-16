@@ -417,3 +417,19 @@ Stop and report BLOCKED if:
 - the actual project/editor access is unavailable.
 
 Every stop report must identify the task ID, exact source lines/IDs, consequence, required owner action, and evidence needed to resume.
+
+
+## 20. CURRENT EXECUTION AUTHORITY — R2.3 (2026-11-16)
+
+This section supersedes Section 19 and all earlier R2.0/R2.1/R2.2 handoff text where they conflict.
+
+- Geometry authority: LD_GEO_R2.3_APPROVAL_RECORD.md + LEVEL_DESIGN_R2.3_INDEX.md + R2.3 controlled schedules.
+- GEO-A01–GEO-A21: OWNER-APPROVED DESIGN, not editor-verified.
+- END-A01: owner-approved co-op quorum; implement exactly as in ENDING_IMPLEMENTATION_SPEC.md.
+- END-A02: PENDING owner approval; do not implement mandatory truth evidence until OWNER_DECISION_PACKET_R1.md is approved.
+- NCP-A01–A09: complete draft package; not canon until owner approval.
+- Immediate gates: CLD-001 read-only UEFN environment baseline/backup and CLD-002 read-only R2.3 document/register audit.
+- CLD-003 greybox is blocked until CLD-001 backup/baseline and CLD-002 PASS.
+- Environment Art PR #1 is not a build authority and must not be merged as-is.
+- Use OBJECTIVE_AND_EVENT_CATALOG.md, INTERACTION_EXECUTION_SPEC.md and MONSTER_AI_BEHAVIOUR_SPEC.md for current gameplay contracts.
+- No implementation, compile, playtest, performance or publication claim without target-editor evidence.
