@@ -2,7 +2,7 @@
 ## THE MOTEL: ROOM 13
 **Date:** 2026-11-16
 **Status:** Design decisions selected and synchronized to main.
-**Scope:** Resolves open gameplay/narrative dependency decisions; does not approve exact draft dialogue, prose, photographs or cinematic assets.
+**Scope:** Resolves gameplay/narrative dependency decisions. The original D-06 text below is historical and superseded by the later express owner delegation approving NCP-A01–A09 as canonical content in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
 
 ## D-01 — THE TRUTH evidence gate
 **Decision:** Approve the three-clue formula:
@@ -43,7 +43,7 @@ Both entries are optional and never gate an act, puzzle, item grant or ending.
 **Reason:** Keep the motel exploratory and frightening without allowing navigation UI to reveal undiscovered content or THE GUEST.
 
 ## D-06 — Narrative canon boundary
-These decisions approve gameplay dependencies and presentation rules only. The exact text and assets in `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md` remain draft until separately approved. Claude may implement the approved state/flag dependencies, but must not treat proposed prose, photographs or cinematic dialogue as final canon without an explicit approval record.
+This was the status at the time of the original R1 decision record. It was superseded on 2026-11-16 by express owner delegation: NCP-A01–A09 are approved canonical English content in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md and must be implemented exactly. Approval of narrative copy does not create/acquire visual assets, VO recordings or prove UEFN implementation.
 
 ## Files synchronized
 - `GAMEPLAY_UI_UX_SPEC.md`
