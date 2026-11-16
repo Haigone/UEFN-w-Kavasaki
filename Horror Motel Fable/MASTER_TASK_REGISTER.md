@@ -51,3 +51,7 @@
 
 ## Workstream rule
 No task may move to COMPLETATO CON EVIDENZA because a document was authored. The status applies to the concrete deliverable named in that task, and acceptance requires the evidence stated in its criterion.
+
+
+## Execution ownership rule (binding)
+The Owner column identifies the discipline responsible for the work, not a separate executor. For all UEFN/editor-dependent work, **Claude is the sole designated execution and test operator**; ChatGPT prepares the exact task packet, steps, values, expected outcomes, recovery path and evidence checklist. The project owner approves design decisions and publication. Do not interpret a task assignment to QA, Level Design, Verse or UEFN as a request for ChatGPT to operate the editor. A task requiring editor evidence cannot be marked complete until Claude returns that evidence. See `CLAUDE_EXECUTION_PROTOCOL.md`.
