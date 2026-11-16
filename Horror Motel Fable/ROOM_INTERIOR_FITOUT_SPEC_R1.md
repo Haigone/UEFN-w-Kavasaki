@@ -70,3 +70,18 @@ Maintain 1.20 m clear in front of the photo board, 1.00 m around the player insp
 ## 7. Acceptance status
 
 This is the selected fit-out design baseline, not editor proof. The existing schedule remains PROPOSED TARGET until bounds, collision, interaction reach, door access and AI traversal are tested in UEFN. Furniture-only corrections are schedule revisions. Structural geometry changes require an R2.4 proposal and explicit owner approval.
+
+## 8. R3 schedule correction log
+
+Static bounding-box review of all 183 scheduled furnishing rows against their assigned R2.3 room envelopes found six wardrobe placements outside the room bounds. The six X coordinates have been corrected in room_furnishing_schedule.csv without changing any room/wall/opening geometry:
+
+| FURN_ID | Old X | New X | Room |
+|---|---:|---:|---|
+| F01_WARDROBE | 10.40 | 11.70 | ROOM 01 |
+| F02_WARDROBE | 10.40 | 11.70 | ROOM 02 |
+| F03_WARDROBE | 10.40 | 11.70 | ROOM 03 |
+| F10_WARDROBE | 66.00 | 67.30 | ROOM 10 |
+| F11_WARDROBE | 66.00 | 67.30 | ROOM 11 |
+| F12_WARDROBE | 66.00 | 67.30 | ROOM 12 |
+
+After these changes, all 183 furnishing footprints fit within their assigned room's axis-aligned envelope under the schedule's centre-origin assumption and yaw-aware footprint calculation. This is a static bounds check only; it does not prove mesh pivot correctness, door swing clearance, wall collision, player path width or THE GUEST navigation. Those remain editor tests.
