@@ -31,8 +31,13 @@
 - Reception phone: “Welcome. We've been expecting you.”
 - ESCAPE radio: “Thank you for staying at the Raven Motel. We hope to see you again soon.”
 
-## Authoring gaps
-Register entries/code; office-photo captions/solution; Room 04 transcript and mandatory status; Room 06 photo identities/dates; full Room 09 diary; Room 11 drawing; Room 13 photo dates/captions/order; THE TRUTH cinematic/dialogue/consequence; THE NEW GUEST choice text and co-op rule; complete subtitle/VO cue sheet.
+## Current content and approval status
+
+The complete draft content for NAR-001, NAR-005, NAR-009, NAR-011, NAR-012, NAR-013, NAR-015, NAR-020 and NAR-021 is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. It includes the register code, office photo order, Room 04 transcript, Room 06 archive, Room 09 diary, Room 11 drawing, ROOM 13 chronology, THE TRUTH finale and THE NEW GUEST invitation.
+
+The content is draft-only until the owner approves NCP-A01–A09 in OWNER_DECISION_PACKET_R1.md. NAR-003 reception phone line and NAR-019 ESCAPE radio line remain exact approved lines. END-A01 co-op quorum is separately approved and closed. END-A02 evidence gating remains pending.
+
+Remaining production deliverables (not missing narrative concepts): final subtitle/VO cue sheet, approved localization/string IDs, final asset/image/audio sourcing and runtime readability tests.
 
 
 ## Narrative proposal status — 2026-11-16
