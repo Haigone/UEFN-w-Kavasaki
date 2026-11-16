@@ -207,3 +207,39 @@ Status: OPEN — documentation crosswalk still required before implementation ca
 
 
 | DOC-015 | Gameplay architecture | Crosswalk all 32 interaction IDs to event IDs and Verse manager ownership | P0 | EVENT_INTERACTION_VERSE_CROSSWALK_R1.md + EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | DOCUMENTATION CROSSWALK COMPLETE | Target-version Verse implementation, compile, multiplayer race/disconnect/checkpoint tests remain open |
+
+
+## R3 current task override — 2026-11-16
+
+This table supersedes stale task rows above where they still label approved R2.3 geometry or approved narrative decisions as pending. It does not mark any editor-dependent task complete.
+
+| ID | Task | Priority | Current status | Controlling deliverable | Acceptance still required |
+|---|---|---|---|---|---|
+| GEO-001 | Select canonical geometry | P0 | DESIGN COMPLETE — R2.3 OWNER APPROVED | LD_GEO_R2.3_APPROVAL_RECORD.md | Editor geometry proof |
+| GEO-002 | ROOM 12–13 route definition | P0 | DESIGN COMPLETE | R2.3 geometry schedules and route plan | Playable editor traversal both directions |
+| GEO-003 | Floor/wall/slab/opening reconciliation | P0 | DOCUMENTARY R2.3 RECONCILED | GEOMETRY_VALIDATION_REPORT.md | Greybox collision and structural traversal |
+| GEO-004 | Stair/balcony/roof design | P0 | DESIGN COMPLETE | STAIR_PLAN_R2.md / ROOF_PLAN_R2.md | Editor headroom, collision, guardrail and traversal |
+| GEO-005/006 | Opening and structural schedules | P0 | DOCUMENTARY R2.3 RECONCILED | DOOR_WINDOW_SCHEDULE.csv / wall_schedule.csv / SLAB_SCHEDULE.csv | Editor placement and collision |
+| GEO-007 | Solo/NPC route | P0 | DESIGN ROUTE DEFINED; ENGINE TEST OPEN | NAVIGATION_AND_PLAYER_FLOW.md / AI specs | Solo traversal and NPC route proof |
+| BLK-001 | Native UEFN project baseline | P0 | NOT EVIDENCED | CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md | Open project, exact version, backup and inventory |
+| BLK-002 | R2.3 greybox | P0 | NOT EVIDENCED | UEFN_BLOCKOUT_BUILD_GUIDE.md | Playable greybox and evidence |
+| DOC-009–015 | Puzzle, UI, tuning, compatibility, event crosswalk documentation | P0 | DOCUMENTATION PRESENT | R2/R3 specs and registers | Cross-system semantic audit and implementation |
+| DOC-016 | Room interior fit-out | P1 | DESIGN BASELINE PRESENT | ROOM_INTERIOR_FITOUT_SPEC_R1.md / room_furnishing_schedule.csv | 183 placement rows validated in editor |
+| DOC-017 | Asset production backlog | P1 | DOCUMENTATION PRESENT | ASSET_PRODUCTION_BACKLOG_R1.csv | Rights/source evidence, production and import |
+| VER-001 | UEFN API/device feasibility | P0 | OFFICIAL REFERENCE REVIEW PRESENT; PROJECT PROOF OPEN | UEFN_VERIFIED_REFERENCE_REGISTER_R1.md | Minimal proofs on target editor build |
+| DEV-001 | Device placement/binding | P1 | REGISTER EXPANDED; EDITOR NOT VERIFIED | UEFN_DEVICE_BINDINGS.csv | 49 device/system rows mapped to real placed actors and tested |
+| AS-001 | Asset source/license/import | P1 | BACKLOG PRESENT; ASSETS NOT SOURCED | ASSET_PRODUCTION_PIPELINE_SPEC.md / backlog | License archive and accepted import per Asset_ID |
+| AS-002/003 | THE GUEST model/rig/animation | P1 | PRODUCTION SPEC COMPLETE; ASSETS NOT CREATED | GUEST_MODEL_SPEC.md | Art package, mesh, rig, LOD, import and NPC tests |
+| VER-002/003 | Verse systems | P1 | LOGICAL DESIGN ONLY; NO SOURCE EVIDENCED | VERSE_SYSTEM_DESIGN.md and event crosswalk | Compilable source and runtime evidence |
+| QA-001 | Gameplay QA | P0 final | TESTS NOT RUN | QA_ACCEPTANCE_MATRIX.md | Solo/2P/4P pass evidence |
+| REL-001/002 | Performance, validation and release | P0 final | NOT RUN | Root performance baseline and release gates | Measured profile, island validation, explicit owner authorization |
+
+### Next executable sequence
+
+1. Establish actual UEFN project/editor baseline and recoverable backup.
+2. Run R3 integration integrity audit; return exception report.
+3. Build R2.3 greybox and capture geometry/traversal evidence.
+4. Prove target-version NPC, UI, Verse and device capabilities.
+5. Implement authoritative state, interactions, puzzles and endings.
+6. Produce/import assets and integrate room fit-out.
+7. Run full QA, profile performance/memory and island validation.
