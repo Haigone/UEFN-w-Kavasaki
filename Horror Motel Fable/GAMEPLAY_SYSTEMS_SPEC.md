@@ -93,7 +93,7 @@ Initial tuning anchors (playtest targets): patrol interval 35 s at DORMANT to 18
 - Solo: direct choice.
 - Commit one session-wide ending atomically; disable all competing triggers after commit.
 
-**Truth evidence END-A02 — OWNER APPROVED 2026-11-16:** `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. The flags are set by inspection of the ROOM 09 diary, ROOM 11 child's drawing and ROOM 06 missing-guest photo archive. They are team/session-authoritative, idempotent, recoverable and have readable/journal fallbacks. `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` remain separate progression/reveal gates, not evidence pickups.
+**Truth evidence END-A02 — APPROVED UNDER EXPRESS OWNER DELEGATION 2026-11-16:** `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. The flags are set by inspection of the ROOM 09 diary, ROOM 11 child's drawing and ROOM 06 missing-guest photo archive. They are team/session-authoritative, idempotent, recoverable and have readable/journal fallbacks. `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` remain separate progression/reveal gates, not evidence pickups.
 
 ## 11. Accessibility and recovery
 - All essential clues have readable text.
@@ -125,3 +125,6 @@ All six acts playable in solo and 2–4 player co-op; all mandatory items recove
 
 ## 16. UI/UX, quest tracker and evidence journal
 The authoritative player-facing presentation contract is defined in [GAMEPLAY_UI_UX_SPEC.md](./GAMEPLAY_UI_UX_SPEC.md). It specifies the persistent HUD, objective tracker, team status, flashlight feedback, Journal/Evidence lifecycle, interaction and pickup feedback, puzzle interfaces, capture/rescue UI, checkpoint/ending presentation, accessibility and UI acceptance tests. UI remains presentation-only; GameManager/session flags remain authoritative.
+
+
+**THE_TRUTH Night Audit:** IN-032 is the sole player interaction for the final `NIGHT AUDIT — END CYCLE` breaker. It is enabled only after THE_TRUTH has been committed. The event sets NightAuditActivated once; it does not participate in ending eligibility or vote resolution.
