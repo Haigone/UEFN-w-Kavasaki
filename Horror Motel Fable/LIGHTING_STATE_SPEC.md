@@ -52,3 +52,7 @@ Use a relative visual scale from 0.0 (off) to 1.0 (full authored key) for design
 7. Record UEFN version, light properties, screenshots and performance/memory impact.
 
 No numerical value in this document is an editor-verified light setting.
+
+
+## THE_TRUTH Night Audit lighting override
+When `NightAuditActivated` commits, use LCS-009 to fade corridor and public-room practicals out sequentially, preserving route/edge readability until each authored blackout beat. Keep the exterior neon sign emissive and fixed at the 02:13 motif through the register print and THE TRUTH title card. Do not use strobe, random flicker or a full-screen flash. After title-card completion, the ending world-state remains dark except for the authored neon hold; do not restore normal lighting during the committed ending.
