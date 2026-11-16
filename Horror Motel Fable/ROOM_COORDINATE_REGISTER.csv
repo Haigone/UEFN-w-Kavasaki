@@ -1,7 +1,7 @@
 ID,Floor,Element_Type,X_Min_m,X_Max_m,Y_Min_m,Y_Max_m,Z_Floor_m,Width_m,Length_m,Height_m,Rotation_deg,Material_Asset_ID,Collision,Gameplay_Function,Verification_Status
 SITE,ALL,Site_Boundary,0,84,0,72,0,84,72,NA,0,NA,No_Geometry_Envelope,Site envelope 84x72 m,FIXED REQUIREMENT
 BLDG-UNION,ALL,U_Footprint_Envelope,8,76,18,60,0,68,42,NA,0,NA,No_Geometry_Envelope,U-shaped footprint envelope; courtyard void excluded,PROPOSED CORRECTION
-COURTYARD,ALL,Open_Courtyard,20,64,18,48,0,44,30,NA,0,No_Floor_Slab,Open to sky; excluded from floor and roof slabs,FIXED REQUIREMENT
+COURTYARD,ALL,Open_Courtyard,20,64,18,48,0,44,30,NA,0,NA,No_Floor_Slab,Open to sky; excluded from floor and roof slabs,FIXED REQUIREMENT
 ROOM-01,GF,Room,11.1,19.7,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 ROOM-02,GF,Room,11.1,19.7,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 ROOM-03,GF,Room,11.1,19.7,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
