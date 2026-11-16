@@ -83,8 +83,8 @@ Repeated audio/light IDs in cue sheets are intentional when one asset is used by
 ## 5. Asset inventory and rights readiness
 
 - asset_manifest.csv and ASSET_MANIFEST_EXECUTIVE.csv have been expanded and synchronized to 94 unique Asset_ID rows.
-- ASSET_PRODUCTION_BACKLOG_R1.csv contains 60 production packages with priority, deliverable, dependency and import/source status.
-- ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv contains 94 rows, one per master Asset_ID.
+- ASSET_PRODUCTION_BACKLOG_R1.csv contains 65 production packages with priority, deliverable, dependency and import/source status.
+- ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv contains 99 rows, one per master Asset_ID.
 - All 94 rights rows currently remain NOT SOURCED; source URL, license proof and commercial/UEFN publishing rights are intentionally blank until actual sourcing occurs.
 - No asset is claimed to have been acquired, licensed, created or imported by this audit.
 
