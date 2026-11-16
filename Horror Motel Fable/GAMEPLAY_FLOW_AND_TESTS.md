@@ -81,8 +81,8 @@ Checkpoint CP04: photo puzzle solved and reveal state retained.
 
 ### ACT VI — NO VACANCY (43–50 min)
 1. Reach service route.
-2. Recover Car Keys if not already team-owned.
-3. Activate generator/gate mechanism using Service Key.
+2. If pursuing ESCAPE, recover Car Keys; CarKeys are not required for THE_TRUTH or THE_NEW_GUEST.
+3. Unlock and activate the service gate mechanism using Service Key; this commits GatePowered, ServiceRouteReady and derived FinaleReady.
 4. Trigger final pursuit with readable wayfinding.
 5. Evaluate explicit ending eligibility and selected branch.
 6. Play one of the three ending sequences.
@@ -156,6 +156,7 @@ The authoritative objective state is team-owned. If the picker disconnects, requ
 
 ## 7. Three endings: exact flag guidance
 Recommended flags:
+- FinaleReady
 - CoreEscapeReady
 - TruthChainComplete
 - Room13RevealComplete
@@ -164,7 +165,7 @@ Recommended flags:
 - EndingSelected
 
 ESCAPE:
-- CoreEscapeReady = true.
+- CoreEscapeReady = true (set only after GatePowered and CarKeys vehicle ignition).
 - TruthChainComplete = false OR player/team chooses the standard exit path.
 - Car Keys + gate mechanism completed.
 - Trigger vehicle escape.
