@@ -109,3 +109,22 @@ The latest live PR check returned `mergeable=false` (earlier check returned true
 
 ## Latest placement/branch delta — final snapshot
 The Environment Art branch advanced to `75013155a21717c02ad094c9c9d4238f0f9596e0`; compare is now 52 ahead / 106 behind main, DIVERGED. PR #1 remains OPEN/DRAFT, latest mergeable=false, with no reviews/comments/status checks. Its asset register is now 120 rows, not 119 as stated in the PR description. Placement status counts: 186 PROPOSED TARGET, 7 BLOCKED, 2 EDITOR-TEST REQUIRED, 91 UNPLACED. Six west wardrobes are now BLOCKED with no coordinates; three upper-east wardrobes F10/F11/F12 remain proposed outside R2.1 bounds (X=66.00 vs room minimum X=67.00). F12_SECRET_PANEL remains 1.35 m east/west misaligned from D-13A (X=68.60 vs 69.95). All placement asset/material references resolve. Source register and GQ-007 remain malformed; the plan still cites R2.0. This supersedes the earlier nine-active-wardrobe/119-row count; keep CR-033/034 blocked.
+
+## R2.2 / current-main final audit addendum — 2026-11-16
+
+### Previously recorded issues with changed status
+- **CR-036 — RISOLTO DOCUMENTALMENTE:** IN-021/022/023 now have distinct Target and Action fields and all 29 interaction rows match the 13-column header. PZ-03 has a solution and acceptance-test field. Commit 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5. This is not UEFN verification.
+- **CR-042 — RISOLTO DOCUMENTALMENTE:** README now points to the current production handoff, R2.2 index, geometry proposal, binding protocol and Claude execution plan. Commit 4a008bae46a4482424d8cc96febed8a1720b286f.
+
+### New findings / current statuses
+| ID | Type | Finding | Evidence / location | Impact | Status | Required resolution | Owner |
+|---|---|---|---|---|---|---|---|
+| CR-043 | Geometry approval | LD-GEO R2.2 is a coherent candidate but its 11-item owner approval checklist is not signed | LEVEL_DESIGN_GEOMETRY.md §11; GEOMETRY_VALIDATION_REPORT.md §9 | Critical: final blockout and environment art cannot be frozen | BLOCCATO | Owner approves R2.2 or supplies a replacement; Claude then verifies in editor | Project Owner |
+| CR-044 | Geometry data | U-NORTH-BALCONY and U-NORTH-HALL have identical XY bounds | ROOM_COORDINATE_REGISTER.csv | Duplicate slab/collision risk if treated as separate physical surfaces | INCOMPLETO | Mark one as functional alias of the same walkable polygon; instantiate one floor/collision | Level Design |
+| CR-045 | Ending design conflict | THE_NEW_GUEST co-op quorum differs: unanimous proposal vs majority implementation rule | ENDING_DESIGN_SPEC.md; ENDING_IMPLEMENTATION_SPEC.md; GAMEPLAY_SYSTEMS_SPEC.md | Different ending outcome in multiplayer | BLOCCATO | Owner selects one rule and all documents/tests align | Project Owner |
+| CR-046 | Narrative completeness | Mandatory clue copy and THE_TRUTH / THE_NEW_GUEST scripts remain incomplete | NARRATIVE_MASTER_SCRIPT.md; STORY_DOCUMENT_REGISTER.md; ENDING_DESIGN_SPEC.md | Narrative gates cannot be implemented unambiguously | INCOMPLETO | Approve complete English text, clue assets and ending scripts | Narrative |
+| CR-047 | Environment Art branch | PR #1 is OPEN/DRAFT, mergeable=false and diverged 61 ahead / 226 behind main | Live PR #1 and compare main...environment-art/room13-v1 | Stale geometry assumptions and unsafe merge | BLOCCATO | Reauthor against approved R2.2/frozen geometry and request fresh review | Environment Art / Production |
+| CR-048 | Geometry document discrepancy | FINAL_GROUND_FLOOR_PLAN.md stair assembly Y bounds conflicted with R2.2 stair/coordinate records | FINAL_GROUND_FLOOR_PLAN.md vs STAIR_PLAN_R2.md / ROOM_COORDINATE_REGISTER.csv | Could place stair outside slab opening | RISOLTO DOCUMENTALMENTE | Corrected to X22.65–25.35, Y52.45–56.17; still requires UEFN test | Production |
+| CR-049 | Gameplay transaction ambiguity | PZ-01/PZ-04 success text previously granted keys while IN-006/IN-017 also granted them; Screwdriver use was inconsistent | PUZZLE_MASTER_REGISTER.csv; PUZZLE_IMPLEMENTATION_SHEETS.md; ITEM_AND_INVENTORY_SPEC.md | Duplicate rewards or ROOM 12 softlock | RISOLTO DOCUMENTALMENTE | Puzzle opens drawer/compartment; only IN-006/IN-017 grant keys; Screwdriver is reusable for both documented uses | Gameplay |
+
+Live Environment Art PR metadata at this audit: OPEN/DRAFT, mergeable=false, 61 commits ahead and 226 behind main. This replaces older branch deltas recorded in previous addenda.
