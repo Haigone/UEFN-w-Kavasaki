@@ -116,3 +116,8 @@ A Fab listing saying "Unreal Engine" is not proof of UEFN compatibility. Prefer 
 
 ### Geometry decision
 Owner selected geometry status UNKNOWN. Treat LD-GEO R2.0 as the current candidate design reference only, not as approved geometry. No final-fit architecture, door/window opening, stair, balcony, bathroom partition, gate or ROOM 12/13 secret-route asset may be frozen or placed. Generic modular samples can be sourced/tested independently, but their final quantities, lengths and positions remain blocked pending geometry approval. Keep every schedule coordinate as PROPOSED TARGET until approved by the geometry authority and verified by Claude in UEFN.
+
+## Revision 3.0 — owner-approved stylized realism / existing assets first
+Visual target is **stylized realism**: grounded proportions and believable 1986 motel construction, with medium-detail silhouettes, broad readable forms, restrained texture frequency and unified material response. It is neither low-poly/toon nor photoreal micro-detail. Keep surface wear visible at first-person camera distance; avoid procedural noise that overwhelms silhouettes and clue readability.
+Existing licensed assets are the preferred source for common motel architecture and props. `ENVIRONMENT_ASSET_SOURCE_REGISTER.csv` is a shortlist only. No candidate is acquired or cleared by being listed. Confirm acquisition, license scope, modification rights and UEFN compatibility before use. Use original project-side assets only for documented gaps or unique narrative content, and only after checking third-party license restrictions.
+
