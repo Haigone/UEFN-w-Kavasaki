@@ -117,3 +117,7 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-066 | Repeated checkpoint restore | Same flags/actors/objectives; no duplicate inventory, audio or one-shot events |
 
 **END-A02 test gate:** before owner approval, verify that no unapproved truth clue is treated as mandatory. After explicit approval, add/enable the three-clue truth-chain tests from END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
+| GAT-067 | THE_TRUTH and THE_NEW_GUEST without CarKeys | FinaleReady is true and branch-specific gates are met; both endings remain selectable without CarKeys/vehicle ignition; ESCAPE remains ineligible until CoreEscapeReady |
+| GAT-068 | Checkpoint restore after flashlight use | Each player's charge returns to the exact checkpoint snapshot; no free refill or duplicate battery claim |
+| GAT-069 | Battery pickup in co-op | Each player can claim the same authored spawn once where supported; one player's claim does not remove access for others |
+| GAT-070 | Vote timer | Co-op ending vote resolves immediately on valid quorum or applies END-A01 after max 20 seconds; solo never waits for timer |
