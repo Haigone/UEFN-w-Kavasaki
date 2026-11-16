@@ -28,7 +28,7 @@ U-EAST-BALCONY,UF,Balcony_Corridor,64.3,66.8,18.3,48.3,3.6,2.5,30,2.8,0,FLOOR-UP
 U-STAIR,UF,Stair_Landing_Zone,20.3,28.7,51.1,59.7,3.6,8.4,8.6,2.8,0,FLOOR-UPPER-01,Walkable,North stair arrival,EDITOR-TEST REQUIRED
 U-SERVICE,UF,Service_Dressing,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Non-mandatory dressing,PROPOSED TARGET
 ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room,EDITOR-TEST REQUIRED
-STAIR-01,GF-UF,Stair_U_Turn,21,27,51.2,59,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,20 risers, 2 flights, 9 goings each, landing Z1.80,EDITOR-TEST REQUIRED
+STAIR-01,GF-UF,Stair_U_Turn,21,27,51.2,59,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,"20 risers; 2 flights; 9 goings each; landing Z1.80",EDITOR-TEST REQUIRED
 VEST-13,UF,Secret_Vestibule,67,72.9,47.7,49.2,3.6,5.9,1.5,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 panel to east balcony,EDITOR-TEST REQUIRED
 ROOF-SLAB,ROOF,Flat_Roof,8,76,18,60,6.4,68,42,0.25,0,ROOF-SLAB-01,Solid,Flat roof; courtyard excluded by polygon union,PROPOSED TARGET
 CAR-01,EXT,Vehicle_Prop,34,40,5,10,0,6,5,NA,180,CAR-BROKEN-01,Static,Parking landmark,PROPOSED TARGET
