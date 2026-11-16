@@ -157,7 +157,7 @@ Suggested short environmental fragments:
 - Diary fragment: “The room was never built. It was always here.”
 - Child's drawing caption: “HE WAITS OUTSIDE THE DOOR.”
 - ROOM 13 clock label: “02:13”.
-These are proposed authored lines and should be reviewed for consistency before implementation.
+These are proposal-pack authored lines; treat them as draft until the owner approves OWNER_DECISION_PACKET_R1.md.
 
 Keep notes concise and legible in first-person view. Provide subtitles for voice and radio. No required clue should rely only on audio.
 
@@ -173,7 +173,7 @@ Sequence: reveal the owner's identity as THE GUEST. Resolve the mystery with a d
 
 ### Ending 3 — THE NEW GUEST
 Condition: explicit choice to accept the motel's invitation, or a carefully authored failure/cycle branch. Avoid triggering this ending accidentally from an ordinary capture.
-Sequence: the motel resets; one player becomes the next keeper/guest and the neon sign lights at 02:13. In co-op, define a fair team-wide result (e.g. group choice/vote or shared cycle) rather than randomly selecting a player without consent.
+Sequence: the motel resets as a session-wide shared outcome; the register gains a blank NEXT GUEST line, the ROOM 13 key returns to the rack, and the neon sign lights at 02:13. Do not select one player as keeper/guest. In co-op require the owner-approved unanimous explicit affirmative confirmation of every currently connected eligible player. Declining, inactivity, timeout, capture and disconnect never count as acceptance.
 
 ## 11. Emotional and visual pacing
 - Arrival: uncertainty, distance, storm and a brief silhouette.
