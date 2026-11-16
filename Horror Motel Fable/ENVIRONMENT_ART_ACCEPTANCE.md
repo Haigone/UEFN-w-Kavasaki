@@ -95,3 +95,29 @@ Geometry reference is `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0. It remains PROPOSE
 Update the previous blocker list: use R2 values (upper FFL 3.60m, clear heights 3.00m/2.80m, balcony 2.50m, secret vestibule route); do not carry forward the stale E1 1.50m balcony or the earlier conflicting secret-door wall descriptions.
 Acceptance evidence must include exact UEFN version/project revision, test steps, expected/observed result, screenshots/video/logs, reviewer and date. The documentation package can be READY FOR CLAUDE EXECUTION while physical assets remain NOT STARTED and UEFN verification remains NOT TESTED.
 
+
+
+## Revision 3.0 — owner decision gates: existing assets / stylized realism / geometry unknown
+
+### Source acquisition gate
+- [ ] Candidate product and publisher match the source register.
+- [ ] Asset actually appears in the acquired library/package.
+- [ ] License tier, EULA version, attribution and UEFN scope recorded.
+- [ ] Modification and redistribution permissions checked.
+- [ ] No asset accepted from a screenshot, demo video or unverified listing claim.
+- [ ] UEFN Source/reference availability checked; Unreal Engine format alone is not compatibility proof.
+- [ ] Candidate source inventory mapped to stable project Asset_IDs.
+
+### Stylized-realism gate
+- [ ] Common palette matches the 1986 motel art bible.
+- [ ] Silhouette and material readability work in first-person low light.
+- [ ] Modern/anachronistic items are removed or excluded.
+- [ ] Roughness, normal intensity, wear and material slots are unified.
+- [ ] No unlicensed modification or derivative redistribution.
+
+### Geometry UNKNOWN gate
+- [ ] LD-GEO R2.0 remains explicitly candidate/proposed, not approved.
+- [ ] Final-fit openings, stair, balcony, roof stack, bathrooms, gate and secret route remain BLOCKED.
+- [ ] Loose assets can be source-audited without committing final placement.
+- [ ] Every placement coordinate remains PROPOSED TARGET until geometry approval.
+- [ ] Shared-space placement gaps are recorded, not filled with invented coordinates.
