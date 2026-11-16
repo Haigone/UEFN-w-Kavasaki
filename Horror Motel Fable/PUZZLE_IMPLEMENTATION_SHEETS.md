@@ -10,11 +10,11 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 **Clue design:** three highlighted guest entries show the date fragments 02, 13 and 86. The reception wall clock is frozen at 02:13 and the motel's year is 1986. A short readable note states “Use the dates that appear more than once.”  
 **Interaction:** inspect each register entry; enter three-part code at desk lock.  
 **Solution:** 02-13-86.  
-**Success:** mechanical click; drawer opens; RegisterSolved=true; OfficeKey added to shared inventory exactly once.  
+**Success:** mechanical click; drawer opens; RegisterSolved=true; OfficeKey pickup becomes available. IN-006 is the sole grant transaction and adds OfficeKey to shared inventory exactly once.  
 **Failure:** soft reject sound and brief “That combination is incorrect” prompt; clear entered digits; unlimited retries with no tension penalty.  
 **Fallback:** after repeated failed attempts, the register UI offers a magnified clue view (not the answer); if the lock actor is missing, an office-key recovery interactable becomes available only after RegisterSolved is validated by the clue-completion fallback.  
 **Multiplayer:** any active player can inspect/enter; lock transaction prevents concurrent commits.  
-**Completion:** team flag and OfficeKey are both present.  
+**Completion:** RegisterSolved is committed and the drawer pickup is enabled; OfficeKey is present only after IN-006 commits.  
 **Tests:** solo solve; wrong code/retry; two players submit simultaneously; drawer actor reload; picker disconnects immediately after success.
 
 ## PZ-02 — OWNER PHOTOGRAPHS
@@ -34,7 +34,7 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 ## PZ-03 — ELECTRICAL RESTORATION
 **Act:** III. **Position:** electrical room / service storage.  
 **Prerequisites:** electrical panel discovered.  
-**Required objects:** Fuse A, Fuse B, Fuse C. **Tool:** Screwdriver opens the maintenance cover; it is reusable and not consumed.  
+**Required objects:** Fuse A, Fuse B, Fuse C. **Tool:** Screwdriver opens the maintenance cover and is reused for the ROOM 12 concealed panel in Act IV; it is not consumed.  
 **Fuse placement:** Fuse A in Room 02 suitcase (retain the documented battery there as a separate pickup); Fuse B in storage shelving beside the wet-floor sign; Fuse C in the Room 06 maintenance cabinet. Each fuse has a large letter label and a readable matching socket. These placements are proposed canonical placements and must be mirrored in the level layout.  
 **Interaction:** open cover with Screwdriver; install each fuse into its matching labelled socket; activate breaker.  
 **Solution:** A→A, B→B, C→C; close cover; pull breaker. No hidden sequence.  
@@ -52,11 +52,11 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 **Clue design:** four images show: first motel construction / owner at opening (1968); first recorded disappearance (1974); child drawing/guest disappearance (1981); current night and owner portrait (1986). Each has a visible date or date-linked caption. A diary fragment states “The room was never built. It was always here.”  
 **Interaction:** place/select four photos in chronological order.  
 **Solution:** 1968 → 1974 → 1981 → 1986.  
-**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; ServiceKey granted; TruthChainComplete set only when all mandatory truth evidence flags are true.  
+**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; Service Key pickup becomes available. IN-017 is the sole grant transaction and adds ServiceKey exactly once. TruthChainComplete is set only when all mandatory truth evidence flags are true.  
 **Failure:** board indicates whether the earliest/latest relation is wrong without exposing the full answer; reset all slots; no item loss.  
 **Fallback:** journal chronology view; substitute photo cards if a prop is missing; solved flag can restore compartment and ServiceKey.  
 **Multiplayer:** shared state, one logical lock; any active player can operate; no individual vote required.  
-**Completion:** solved flag, reveal flag, ServiceKey team-owned.  
+**Completion:** solved flag and reveal flag committed; ServiceKey becomes team-owned only after IN-017 commits.  
 **Tests:** solo; all permutations; wrong/retry; concurrent players; disconnect; checkpoint restore; repeated completion.
 
 ## PZ-05 — FINAL ESCAPE MECHANISM
