@@ -57,4 +57,4 @@ All three endings solo; all three in co-op; truth evidence incomplete; acceptanc
 
 **END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum.
 
-**END-A02 APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16:** Section 3 is the canonical three-clue evidence gate. Implement it exactly. It is mandatory only for THE_TRUTH, never for ESCAPE or core progression.
+**END-A02 EXPLICITLY APPROVED BY OWNER — 2026-11-16:** Section 3 is the canonical three-clue evidence gate. Implement it exactly. It is mandatory only for THE_TRUTH, never for ESCAPE or core progression.
