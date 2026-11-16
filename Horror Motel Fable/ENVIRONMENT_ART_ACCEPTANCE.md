@@ -125,3 +125,8 @@ Acceptance evidence must include exact UEFN version/project revision, test steps
 - [ ] Loose assets can be source-audited without committing final placement.
 - [ ] Every placement coordinate remains PROPOSED TARGET until geometry approval.
 - [ ] Shared-space placement gaps are recorded, not filled with invented coordinates.
+
+
+## Revision 4.0 — register audit acceptance gate (2026-11-16)
+
+This addendum supersedes any prior language that treats LD-GEO R2.0 as approved/canonical. Geometry remains UNKNOWN / NOT ACCEPTED pending CHAT 02. The register audit is a documentation correction, not production acceptance. Six wardrobes, EXT_GATE and EXT_SIGN_TRIGGER must remain BLOCKED with blank coordinates. All other schedule coordinates are PROPOSED_SOURCE_SCHEDULE_NOT_CANONICAL. Every placement must pass canonical polygon containment, actual mesh bounds, rotation, vertical interval, wall/door/bathroom/player-route clearance, collision-profile and interaction-proxy review before placement acceptance. The schedule-level potential-overlap flags must each receive an intentional-stack or corrective disposition. All 120 asset rows remain NOT IMPORTED / NOT VERIFIED; no material is UEFN-verified. A final ACCEPTED state requires source/license evidence, DCC evidence, actual UEFN import/collision/LOD/performance evidence, reviewer and date. This audit performed no UEFN tests.
