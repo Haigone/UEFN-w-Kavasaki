@@ -69,7 +69,7 @@ FINAL_GROUND_FLOOR_PLAN.md previously placed the stair assembly at Y=52.00–55.
 Live GitHub comparison at audit time:
 - PR #1: OPEN and DRAFT.
 - mergeable: false.
-- environment-art/room13-v1: 66 commits ahead and 290 behind main.
+- environment-art/room13-v1 is diverged from main and GitHub reports mergeable=false; exact ahead/behind counts are volatile and must be re-read before any merge.
 - The branch contains 13 added files, but its execution plan and register audit still use older R2.0/R2.1 geometry assumptions.
 
 The branch's own audit reports:
