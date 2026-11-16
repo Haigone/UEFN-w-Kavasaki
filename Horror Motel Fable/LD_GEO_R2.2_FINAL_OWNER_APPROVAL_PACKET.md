@@ -49,6 +49,7 @@ Le dimensioni delle camere, la forma esatta dei turning pad, le quote verticali,
 - Le verifiche sono matematiche e documentali. Non verificano collisioni reali, navmesh, capsule del giocatore, supporti strutturali, mesh, comportamento del Guest o attraversamento della scala in UEFN.
 - SECTIONS_R2.2.svg dichiara correttamente di essere schematico e non in scala. Per le quote fa fede LEVEL_SECTIONS.md e lo schedule; il disegno non può essere usato come sezione CAD dimensionale.
 - I due SVG di piano sono elaborati di zoning e percorso; non rappresentano ogni giunto, spessore e apertura come un disegno costruttivo completo. Per aperture e pareti fanno fede i CSV.
+- I 70 centre-lines delle pareti non presentano ID duplicati e i principali bounds si raccordano; i nodi a T e gli incroci devono però essere uniti o rifilati senza sovrapporre mesh/collisioni. R2.2 contiene la regola generale, ma non un junction schedule con priorità di taglio per ogni nodo: la pulizia dei giunti resta un requisito di esecuzione e verifica.
 - Le suddivisioni interne dei bagni e il fit-out interno delle camere non sono definiti in R2.2. Le camere sono verificate come envelope FIF, non come layout interno completo.
 
 ## 4. Anomalie da correggere prima del freeze
