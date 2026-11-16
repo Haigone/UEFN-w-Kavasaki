@@ -159,4 +159,25 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 
 ## 10. What is complete in ChatGPT's assigned scope
 
-<|>
+### Completed by ChatGPT in this documentary handoff
+- Inspected the current main tree and key design, geometry, gameplay, narrative, Verse, QA and governance documents.
+- Reconciled duplicate reward ownership for OfficeKey and ServiceKey.
+- Reconciled Screwdriver's two documented uses.
+- Added missing FuseA/FuseB/FuseC, Screwdriver, CarKeys and Room 06 evidence interaction records.
+- Added corresponding gameplay regression tests GAT-048–GAT-052.
+- Corrected the R2.2 stair footprint mismatch in FINAL_GROUND_FLOOR_PLAN.md.
+- Updated CLAUDE_EXECUTION_PLAN.md with the current R2.2 source hierarchy, geometry-first critical path, PR #1 restriction and stop conditions.
+- Consolidated the remaining blockers and owner decisions in this handoff document.
+
+### Not completed — and why
+- **Owner decisions:** the 11 geometry approval items, truth-evidence gate, THE_NEW_GUEST quorum and unresolved finale content require owner approval. I have not invented approvals.
+- **UEFN implementation:** no native project/editor session was available to this documentary audit; Claude must perform it.
+- **Verse compilation/device setup/NPC verification:** these require the actual target UEFN release and editor evidence from Claude.
+- **Asset creation/import/licensing:** no model/texture/audio/animation source assets or license evidence were present in main. The Environment Art PR contains registers/specifications, not imported production assets.
+- **Playtests/QA/performance/island validation:** these have not been run and must remain NOT RUN until Claude returns real evidence.
+- **Environment Art PR #1:** not merged because it is draft, diverged and based on obsolete geometry.
+
+## 11. Immediate resume conditions
+The next work can proceed without further clarification only on non-destructive preflight and document-only tasks. Before final geometry-dependent production, the owner must approve the R2.2 checklist or provide a replacement. Claude must then return the actual UEFN project path/identity, editor version, initial screenshots and the first geometry feasibility report.
+
+**Final status:** ChatGPT's documentation audit and correction package is complete for this pass. The overall game production is not complete. Remaining items are explicitly listed above and are owned by the project owner or Claude according to the execution protocol.
