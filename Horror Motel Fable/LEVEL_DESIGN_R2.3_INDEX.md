@@ -16,7 +16,7 @@ Approval: 2026-11-16 — owner response “approvo tutto, procedi”.
 - SLAB_SCHEDULE.csv — GF/UF/roof polygons, courtyard void and stair opening.
 - FINAL_GROUND_FLOOR_PLAN.md / FINAL_UPPER_FLOOR_PLAN.md — level plans.
 - GROUND_FLOOR_PLAN_R2.svg / UPPER_FLOOR_PLAN_R2.svg — visual plans, updated to R2.3.
-- LEVEL_SECTIONS.md / SECTIONS_R2.2.svg — vertical sections and limits.
+- LEVEL_SECTIONS.md / SECTIONS_R2.2.svg — vertical sections and limits (drawing title updated to R2.3).
 - STAIR_PLAN_R2.md — approved stair handedness and dimensions.
 - ROOF_PLAN_R2.md — flat roof, no-access rule and concealed drainage concept.
 - GEOMETRY_VALIDATION_REPORT.md — final documentary audit and editor verification boundary.
