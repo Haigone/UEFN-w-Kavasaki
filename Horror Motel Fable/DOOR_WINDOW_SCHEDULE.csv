@@ -1,33 +1,42 @@
-Opening_ID,Floor,Parent_Zone,Wall_Orientation,Center_X_m,Center_Y_m,Sill_Z_m,Clear_Width_m,Clear_Height_m,Rough_Width_m,Rough_Height_m,Swing_or_Operation,Collision_Behaviour,Gameplay_Function,Verification_Status
-D-G01,GF,ROOM-01,West,11.10,23.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Room access from west corridor,PROPOSED TARGET
-D-G02,GF,ROOM-02,West,11.10,32.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Battery room access,PROPOSED TARGET
-D-G03,GF,ROOM-03,West,11.10,41.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Mirror room access,PROPOSED TARGET
-D-G04,GF,ROOM-04,East,72.90,23.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Room access from east corridor,PROPOSED TARGET
-D-G05,GF,ROOM-05,East,72.90,32.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Sparse room access,PROPOSED TARGET
-D-G06,GF,ROOM-06,East,72.90,41.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Photo room access,PROPOSED TARGET
-D-G07,GF,RECEPTION,South,29.00,48.30,0,1.60,2.30,1.90,2.45,Double_or_sliding,State-controlled,Main entry,PROPOSED TARGET
-D-G08,GF,OWNER OFFICE,West,38.00,51.00,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Office access from reception,PROPOSED TARGET
-D-G09,GF,STORAGE,West,47.30,51.00,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Storage access,PROPOSED TARGET
-D-G10,GF,ELECTRICAL,West,57.30,51.00,0,1.00,2.10,1.30,2.25,Outward_or_sliding,Blocks_when_closed,Service access,PROPOSED TARGET
-D-U07,UF,ROOM-07,East,17.00,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U08,UF,ROOM-08,East,17.00,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U09,UF,ROOM-09,East,17.00,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Diary room access,PROPOSED TARGET
-D-U10,UF,ROOM-10,West,67.00,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U11,UF,ROOM-11,West,67.00,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Child room access,PROPOSED TARGET
-D-U12,UF,ROOM-12,West,67.00,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Secret panel room access,PROPOSED TARGET
-D-13A,UF,ROOM-12,North,69.95,47.55,3.60,0.90,2.10,1.20,2.25,Concealed_panel_north,State-controlled,Secret entry,EDITOR-TEST REQUIRED
-D-13B,UF,ROOM-13,South,56.35,50.80,3.60,0.90,2.10,1.20,2.25,Concealed_inward,State-controlled,Secret room entry and return,EDITOR-TEST REQUIRED
-D-13C,UF,EAST_VESTIBULE,West,64.30,49.55,3.60,0.90,2.10,1.20,2.25,Open_passage,No collision threshold,Connects vestibule to hall,EDITOR-TEST REQUIRED
-W-G01,GF,ROOM-01,East,19.70,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G02,GF,ROOM-02,East,19.70,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G03,GF,ROOM-03,East,19.70,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G04,GF,ROOM-04,West,64.30,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G05,GF,ROOM-05,West,64.30,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G06,GF,ROOM-06,West,64.30,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-U07,UF,ROOM-07,West,11.10,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U08,UF,ROOM-08,West,11.10,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U09,UF,ROOM-09,West,11.10,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U10,UF,ROOM-10,East,72.90,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U11,UF,ROOM-11,East,72.90,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U12,UF,ROOM-12,East,72.90,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Confirm clearance from concealed panel,EDITOR-TEST REQUIRED
-W-G-RCP,GF,RECEPTION,South,33.00,48.30,1.00,2.40,1.50,2.60,1.70,Fixed_glazing,Glass collision,Reception courtyard visibility,PROPOSED TARGET
+Opening_ID,Floor,Host_Area,Wall_ID,Wall_Axis,Center_X_m,Center_Y_m,Bottom_Z_m,Clear_Width_m,Clear_Height_m,Rough_Width_m,Rough_Height_m,Operation_or_Facing,Collision_Behaviour,Geometry_Status,Notes
+D-G01,GF,ROOM-01,GF-W-ROOM-CORRIDOR,X_CONST,10.95,23.5,0,0.9,2.1,1.05,2.25,East into room,Blocks when closed,PROPOSED CORRECTION,Access from west corridor
+W-G01,GF,ROOM-01,GF-W-COURTYARD-FACADE,X_CONST,19.85,23.5,0.9,1.6,1.2,1.8,1.4,East facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G02,GF,ROOM-02,GF-W-ROOM-CORRIDOR,X_CONST,10.95,32.5,0,0.9,2.1,1.05,2.25,East into room,Blocks when closed,PROPOSED CORRECTION,Access from west corridor
+W-G02,GF,ROOM-02,GF-W-COURTYARD-FACADE,X_CONST,19.85,32.5,0.9,1.6,1.2,1.8,1.4,East facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G03,GF,ROOM-03,GF-W-ROOM-CORRIDOR,X_CONST,10.95,41.5,0,0.9,2.1,1.05,2.25,East into room,Blocks when closed,PROPOSED CORRECTION,Access from west corridor
+W-G03,GF,ROOM-03,GF-W-COURTYARD-FACADE,X_CONST,19.85,41.5,0.9,1.6,1.2,1.8,1.4,East facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G04,GF,ROOM-04,GF-E-ROOM-CORRIDOR,X_CONST,73.05,23.5,0,0.9,2.1,1.05,2.25,West into room,Blocks when closed,PROPOSED CORRECTION,Access from east corridor
+W-G04,GF,ROOM-04,GF-E-COURTYARD-FACADE,X_CONST,64.15,23.5,0.9,1.6,1.2,1.8,1.4,West facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G05,GF,ROOM-05,GF-E-ROOM-CORRIDOR,X_CONST,73.05,32.5,0,0.9,2.1,1.05,2.25,West into room,Blocks when closed,PROPOSED CORRECTION,Access from east corridor
+W-G05,GF,ROOM-05,GF-E-COURTYARD-FACADE,X_CONST,64.15,32.5,0.9,1.6,1.2,1.8,1.4,West facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G06,GF,ROOM-06,GF-E-ROOM-CORRIDOR,X_CONST,73.05,41.5,0,0.9,2.1,1.05,2.25,West into room,Blocks when closed,PROPOSED CORRECTION,Access from east corridor
+W-G06,GF,ROOM-06,GF-E-COURTYARD-FACADE,X_CONST,64.15,41.5,0.9,1.6,1.2,1.8,1.4,West facing courtyard,Fixed glazing,PROPOSED CORRECTION,Courtyard-facing window
+D-G07,GF,RECEPTION,GF-NORTH-SOUTH-FACADE,Y_CONST,29,48.15,0,1.6,2.3,1.9,2.45,North into reception,State controlled,PROPOSED CORRECTION,Main courtyard entry
+W-G-RCP,GF,RECEPTION,GF-NORTH-SOUTH-FACADE,Y_CONST,33,48.15,1,2.4,1.5,2.6,1.7,Fixed glazing south,Fixed glazing,PROPOSED CORRECTION,Reception window; 4 m from entry centre
+D-G08,GF,OWNER-OFFICE,GF-RECEPTION-OFFICE,X_CONST,37.85,54,0,0.9,2.1,1.05,2.25,East into office,Blocks when closed,PROPOSED CORRECTION,Shared wall door
+D-G09,GF,STORAGE,GF-OFFICE-STORAGE,X_CONST,47.15,51,0,0.9,2.1,1.05,2.25,East into storage,Blocks when closed,PROPOSED CORRECTION,Shared wall door
+D-G10,GF,ELECTRICAL,GF-STORAGE-ELECTRICAL,X_CONST,57.15,51,0,1,2.1,1.15,2.25,East into electrical,Blocks when closed,PROPOSED CORRECTION,Shared wall door
+D-G11,GF,GF-WEST-LOBBY,GF-WEST-LOBBY-RECEPTION,X_CONST,20,54,0,1.2,2.1,1.35,2.25,East into reception,Open passage,PROPOSED CORRECTION,Connects west lobby to reception
+D-G12,GF,GF-NORTH-WEST-LINK,GF-NORTH-SOUTH-FACADE,Y_CONST,9.55,48.15,0,1.2,2.1,1.35,2.25,North into link,Open passage,PROPOSED CORRECTION,Connects west corridor to north link
+D-G13,GF,GF-NORTH-EAST-LINK,GF-NORTH-SOUTH-FACADE,Y_CONST,74.45,48.15,0,1.2,2.1,1.35,2.25,North into link,Open passage,PROPOSED CORRECTION,Connects east corridor to north link
+D-G14,GF,ELECTRICAL,GF-ELECTRICAL-EAST-LINK,X_CONST,73.05,54,0,0.9,2.1,1.05,2.25,West into electrical,Blocks when closed,PROPOSED CORRECTION,Service access from east link
+D-U07,UF,ROOM-07,UF-W-ROOM-BALCONY,X_CONST,17.1,23.5,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U07,UF,ROOM-07,UF-W-EXTERIOR,X_CONST,8.15,23.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-U08,UF,ROOM-08,UF-W-ROOM-BALCONY,X_CONST,17.1,32.5,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U08,UF,ROOM-08,UF-W-EXTERIOR,X_CONST,8.15,32.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-U09,UF,ROOM-09,UF-W-ROOM-BALCONY,X_CONST,17.1,42.7,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U09,UF,ROOM-09,UF-W-EXTERIOR,X_CONST,8.15,42.7,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-U10,UF,ROOM-10,UF-E-ROOM-BALCONY,X_CONST,66.9,23.5,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U10,UF,ROOM-10,UF-E-EXTERIOR,X_CONST,75.85,23.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-U11,UF,ROOM-11,UF-E-ROOM-BALCONY,X_CONST,66.9,32.5,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U11,UF,ROOM-11,UF-E-EXTERIOR,X_CONST,75.85,32.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-U12,UF,ROOM-12,UF-E-ROOM-BALCONY,X_CONST,66.9,42.7,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
+W-U12,UF,ROOM-12,UF-E-EXTERIOR,X_CONST,75.85,42.7,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+D-13A,UF,ROOM-12,UF-ROOM12-NORTH,Y_CONST,69.95,47.55,3.6,0.9,2.1,1.05,2.25,North concealed panel,State controlled,OWNER DECISION location; dimensions proposed,ROOM 12 into vestibule
+D-13C,UF,VEST-13,UF-VEST13-WEST,X_CONST,66.9,48.45,3.6,0.9,2.1,1.05,2.25,West open passage,No threshold collision,PROPOSED CORRECTION,Vestibule to east balcony
+D-13B,UF,ROOM-13,UF-ROOM13-SOUTH,Y_CONST,56.35,50.95,3.6,0.9,2.1,1.05,2.25,North concealed inward,State controlled,OWNER DECISION location; dimensions proposed,North balcony hall into ROOM 13
+D-U-STAIR,UF,U-STAIR-LANDING,UF-NORTH-LANDING-EDGE,Y_CONST,24,50.95,3.6,1.2,2.1,1.35,2.25,North from balcony hall,Open passage,PROPOSED CORRECTION,Upper stair landing access
+P-G-W-CROSS-01,GF,WEST-CROSS-BAY-01,GF-W-COURTYARD-FACADE,X_CONST,19.85,28,0,1.5,2.4,1.65,2.55,East open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
+P-G-W-CROSS-02,GF,WEST-CROSS-BAY-02,GF-W-COURTYARD-FACADE,X_CONST,19.85,37,0,1.5,2.4,1.65,2.55,East open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
+P-G-E-CROSS-01,GF,EAST-CROSS-BAY-01,GF-E-COURTYARD-FACADE,X_CONST,64.15,28,0,1.5,2.4,1.65,2.55,West open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
+P-G-E-CROSS-02,GF,EAST-CROSS-BAY-02,GF-E-COURTYARD-FACADE,X_CONST,64.15,37,0,1.5,2.4,1.65,2.55,West open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
