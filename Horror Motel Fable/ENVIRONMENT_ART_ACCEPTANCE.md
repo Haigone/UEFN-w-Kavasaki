@@ -87,3 +87,11 @@ Test date:
 Evidence path:
 Open issues:
 Decision: ACCEPTED / REJECTED / BLOCKED
+
+
+## Revision 2.0 — authority and acceptance ownership
+Claude is the sole owner of UEFN editor/import/playtest verification. The documentation author has not opened UEFN, imported assets, run collision tests, profiled performance or verified editor results. Do not infer these from this checklist.
+Geometry reference is `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0. It remains PROPOSED TARGET / NOT UEFN-VERIFIED. The geometry validation report explicitly records NOT APPROVED and no ENGINE-VERIFIED items. Therefore final-fit stair, balcony, secret passage, door/window openings, bathroom partitions, vertical stack and gate remain blocked until Claude resolves them and captures evidence.
+Update the previous blocker list: use R2 values (upper FFL 3.60m, clear heights 3.00m/2.80m, balcony 2.50m, secret vestibule route); do not carry forward the stale E1 1.50m balcony or the earlier conflicting secret-door wall descriptions.
+Acceptance evidence must include exact UEFN version/project revision, test steps, expected/observed result, screenshots/video/logs, reviewer and date. The documentation package can be READY FOR CLAUDE EXECUTION while physical assets remain NOT STARTED and UEFN verification remains NOT TESTED.
+
