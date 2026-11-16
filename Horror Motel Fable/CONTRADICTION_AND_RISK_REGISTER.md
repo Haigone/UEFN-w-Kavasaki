@@ -128,3 +128,15 @@ The Environment Art branch advanced to `75013155a21717c02ad094c9c9d4238f0f9596e0
 | CR-049 | Gameplay transaction ambiguity | PZ-01/PZ-04 success text previously granted keys while IN-006/IN-017 also granted them; Screwdriver use was inconsistent | PUZZLE_MASTER_REGISTER.csv; PUZZLE_IMPLEMENTATION_SHEETS.md; ITEM_AND_INVENTORY_SPEC.md | Duplicate rewards or ROOM 12 softlock | RISOLTO DOCUMENTALMENTE | Puzzle opens drawer/compartment; only IN-006/IN-017 grant keys; Screwdriver is reusable for both documented uses | Gameplay |
 
 Live Environment Art PR metadata at this audit: OPEN/DRAFT, mergeable=false, 61 commits ahead and 226 behind main. This replaces older branch deltas recorded in previous addenda.
+
+
+## R2.2 final correction — current decision gate and PR state
+
+This addendum supersedes the older 11-item approval count and narrative-completeness wording in CR-043/CR-046.
+
+- R2.2 owner approval is now itemized as GEO-A01–GEO-A15 in OWNER_DECISION_GATE_R2.2.md. The 14 geometry report items have been decomposed and one separate room-interior fit-out decision added. No approval has been received.
+- NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md now contains proposal-level draft text and puzzle logic for the register, office photographs, fuses/Room 04 recording, Room 06 photos, Room 09 diary, Room 11 drawing, ROOM 13 photo sequence and both unresolved ending scripts. CR-046 is therefore **draft authored / owner approval pending**, not text absent. END-A01 co-op quorum and END-A02 truth evidence gate remain blocked.
+- Current live PR #1 metadata: OPEN, DRAFT, not merged, mergeable=false, 13 changed files, updated 2026-11-16 14:16:10Z. Do not merge.
+- CSV structural correction: current ROOM_COORDINATE_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and INTERACTION_MASTER_REGISTER.csv have zero row-width errors. The combined lighting_audio_schedule.csv remains a historical malformed-width file; use LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv.
+
+The next executable work is CLD-001/CLD-002 from CLAUDE_R2.2_EXECUTION_PACKET.md. Geometry-dependent build remains blocked by owner approval.
