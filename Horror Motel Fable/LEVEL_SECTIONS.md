@@ -15,7 +15,7 @@ Graphic sections: `SECTIONS_R2.2.svg`. Slab polygons: `SLAB_SCHEDULE.csv`. All c
 | Roof slab top | 6.65 |
 | Parapet top | 7.10 |
 
-Ground slab target 0.20 m thickness (EBD-derived proposal); upper and roof slabs target 0.25 m thickness (E1-derived proposal). Owner approval required for all slab thicknesses. Ground ceiling void between Z3.00 and Z3.35 is 0.35 m. Upper clear height is 2.80 m. These values reconcile the EBD and E1 vertical conflicts as one proposed stack; owner approval is required.
+Ground slab thickness 0.20 m; upper and roof slab thicknesses 0.25 m. All slab thicknesses and the vertical stack are owner-approved R2.3 design values. Ground ceiling void between Z3.00 and Z3.35 is 0.35 m. Upper clear height is 2.80 m. These values reconcile the EBD and E1 vertical conflicts as one proposed stack; owner approval is required.
 
 ## A–A — West wing and courtyard-facing balcony
 Section line X=14.00, looking east. Show ground ROOM 01/02/03 below upper ROOM 07/08/09. Outer wall centreline X=8.15, room outer FIF X=8.30. Upper balcony is not intersected by X=14; its courtyard-facing edge is at X=19.70. The upper room doors are on wall centreline X=17.075 and open east to balcony. The Y27–29 and Y36–38 gaps are proposed cross-bays with 1.50 m openings through the balcony partition at X=17.075 and X=66.925. Ground room windows face courtyard at wall centreline X=19.85. Show upper slab Z3.35–3.60 and roof slab Z6.40–6.65.
