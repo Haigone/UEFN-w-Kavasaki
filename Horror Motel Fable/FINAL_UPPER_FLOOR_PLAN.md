@@ -38,7 +38,7 @@ The legs, crossbar and pads must be merged into one connected walkable polygon; 
 The two service reserves are non-playable placeholders for upper-level geometry closure; they have no assumed access. Owner approval required.
 
 ## ROOM 12 → ROOM 13
-D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule X67.00–72.90,Y47.55–49.20. D-13C in vestibule west wall centre (66.925,48.45), clear 0.90×2.10 m, opens west to east balcony. Follow east balcony to corner pad, west along north crossbar. D-13B in ROOM 13 south wall centre (56.35,50.95), clear 0.90×2.10 m, opens north. Route is two-way; no teleport.
+D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m clear); wall centre-lines west X66.925, east X72.975, north Y49.275, south shared at Y47.475. D-13C in vestibule west wall centre (66.925,48.45), clear 0.90×2.10 m, opens west to east balcony. Follow east balcony to corner pad, west along north crossbar. D-13B in ROOM 13 south wall centre (56.35,50.95), clear 0.90×2.10 m, opens north. Route is two-way; no teleport.
 
 ## Stair and roof
 North stair connects GF reception to UF landing. Upper slab cut X22.50–25.50,Y52.30–56.32; guardrail west/east/north and south approach open. See STAIR_PLAN_R2.md, SLAB_SCHEDULE.csv and LEVEL_SECTIONS.md. Roof is flat and non-playable, covers the U-shaped footprint union only; courtyard remains open to sky.
