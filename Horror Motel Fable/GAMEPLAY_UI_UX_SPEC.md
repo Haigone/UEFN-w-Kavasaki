@@ -285,7 +285,7 @@ Before implementation, reconcile/create:
 | UI-018 | Solo capture | Self-rescue appears without teammate dependency |
 | UI-019 | Checkpoint restore | UI rehydrates; no duplicate rewards |
 | UI-020 | Disconnect/rejoin | Team objective/evidence/inventory remain synchronized |
-| UI-021 | Ending vote tie/timeout | ESCAPE fallback; one ending commits |
+| UI-021 | Ending vote tie/timeout | ESCAPE commits only if eligible; otherwise selector reopens for a new vote; THE_TRUTH is never implicit |
 | UI-022 | Overlapping ending triggers | Selector/result commits once |
 | UI-023 | Large text/subtitles/controller | Readable; no safe-area clipping |
 | UI-024 | No navigation aids | No marker reveals undiscovered clues/items or THE GUEST |
