@@ -1,4 +1,4 @@
-Cue_ID,Light_IDs,Trigger_Event,Area,State_Behaviour,Animation_Rule,Readability_Safety,Status
+"Cue_ID","Light_IDs","Trigger_Event","Area","State_Behaviour","Animation_Rule","Readability_Safety","Status"
 "LCS-001","L_EXT_PARK_01;L_EXT_PARK_02","SessionStarted","Exterior base","Always on during arrival/exploration; no gameplay gate","Static/low flicker only if authored","Do not obscure silhouettes or routes","EDITOR-TEST REQUIRED"
 "LCS-002","L_COURTYARD_01;L_COURTYARD_02","SessionStarted","Courtyard base","Low-intensity exterior fill","No rapid flashing","Maintain safe navigation/readability","EDITOR-TEST REQUIRED"
 "LCS-003","L_RECEPTION_MAIN","ReceptionEntered","Reception","Warm practical key light; remains readable","No strobe","Register and key must be legible without flashlight","EDITOR-TEST REQUIRED"
@@ -7,3 +7,4 @@ Cue_ID,Light_IDs,Trigger_Event,Area,State_Behaviour,Animation_Rule,Readability_S
 "LCS-006","L_ROOM13_RED","Room13Entered","ROOM 13","Localized red practical; preserve face/photo readability","Subtle slow pulse only","Do not obscure dates, portrait or puzzle clues","EDITOR-TEST REQUIRED"
 "LCS-007","L_ESCAPE_RED","FinalChaseStarted","Final route","Emergency red accents only during final chase","Stable with mild intensity variation","Maintain path and hazard readability","EDITOR-TEST REQUIRED"
 "LCS-008","L_NEON_SIGN","WorldClock_02_13","Exterior sign / cycle beat","Neon 02:13 motif event; do not run a real-time clock unless authored","Single authored pulse sequence","Coordinate with AUC-002; no repeated event spam","EDITOR-TEST REQUIRED"
+"LCS-009","L_CORRIDOR_W;L_CORRIDOR_E;L_NEON_SIGN","NightAuditActivated","Service route / motel-wide ending","Black out corridor and public room lighting sequentially; preserve exterior neon emissive at 02:13 until title-card transition","One authored room-by-room sequence; no random flicker or strobe","Keep evacuation silhouettes/edges visible until blackout beat; neon remains legible; no flashing","EDITOR-TEST REQUIRED"
