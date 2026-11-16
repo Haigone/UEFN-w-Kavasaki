@@ -38,7 +38,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 | G05 | Electrical allocation overlaps the full NORTH LINK EAST area | ELECTRICAL ends at X72.90; east link is X73.20–75.70 | DERIVED partition gap; OWNER APPROVAL REQUIRED |
 | G06 | West lobby, reception and stair connector boundaries leave ambiguous offsets | Lobby ends X19.85, reception starts X20.15, with 0.30 m partition at X20.00; north-west link/lobby split by 0.30 m partition | PROPOSED CORRECTION |
 | G07 | ROOM 13 originally in east wing; later decision moves it to north connector | ROOM 13 upper north connector X49.00–63.70,Y51.10–59.70 | OWNER DECISION fixes location; dimensions require approval |
-| G08 | ROOM 12 route coordinates used boundary points rather than host wall centre-lines; east vestibule opening was misplaced | D-13A (69.95,47.475); vestibule Y47.55–49.20; D-13C (66.925,48.45); D-13B (56.35,50.95) | PROPOSED CORRECTION; EDITOR VERIFICATION REQUIRED |
+| G08 | ROOM 12 route coordinates used boundary points rather than host wall centre-lines; vestibule wall extents were not aligned to FIF bounds | D-13A (69.95,47.475); vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m); west/east wall centre-lines X66.925/72.975; north Y49.275; D-13C (66.925,48.45); D-13B (56.35,50.95) | PROPOSED CORRECTION; EDITOR VERIFICATION REQUIRED |
 | G09 | Door schedules disagree on room orientation, wall host and opening centre | Uppercase DOOR_WINDOW_SCHEDULE.csv is canonical; lowercase file is a compatibility mirror | PROPOSED CORRECTION |
 | G10 | Wall schedule only contains a partial subset of perimeter and partitions | wall_schedule.csv rebuilt as centre-line schedule with unique wall IDs and opening references | PROPOSED CORRECTION; review all physical joins in UEFN |
 | G11 | EBD/E1 vertical heights conflict with R2.1 | Z0.00 GF; ceiling3.00; slab underside3.35/top3.60; upper ceiling/roof underside6.40; roof top6.65; parapet7.10 | DERIVED internally consistent stack from proposed slab/clearance values; OWNER APPROVAL REQUIRED |
@@ -102,6 +102,8 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 - No duplicate Wall_ID values found.
 
 Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps. The section graphic's lower slab label was corrected from roof slab to ground slab (0.20 m), and the roof slab (0.25 m) is now labelled at the upper roof datum. The THE GUEST upper stair marker was moved to the clear south landing approach (24.00,51.70,3.60), outside the stairwell slab void.
+
+The side-room partition ends now meet the adjacent corridor/outer wall centre-lines; the ROOM 12 vestibule walls are offset from its FIF bounds by half their 0.15 m thickness. Opening spans and vertical extents were rechecked after these changes.
 
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
