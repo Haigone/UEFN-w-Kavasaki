@@ -23,7 +23,7 @@ No mandatory truth-evidence list is currently owner-approved. The recommended EN
 
 Keep `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` as separate route, puzzle and identity-reveal progression gates. Do not add them as duplicate evidence pickups inside `TruthChainComplete`.
 
-Until explicit owner approval of END-A02, do not implement any mandatory truth-evidence pickup gate. If approved, each clue must be recoverable, team-shared, idempotent and have readable/journal fallback; see the proposal's acceptance criteria. Optional lore notes remain excluded.
+The three clues are optional to the core game and ESCAPE ending, but mandatory for THE_TRUTH eligibility. Each must be recoverable, team-shared, idempotent and have readable/journal fallback; see END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. Other optional lore remains excluded.
 
 ## 4. Co-op choice — OWNER APPROVED 2026-11-16
 Ending selection is team-wide. Present only eligible options.
@@ -53,6 +53,6 @@ All three endings solo; all three in co-op; truth evidence incomplete; acceptanc
 
 ## 9. Owner approval gate — co-op quorum and truth evidence
 
-**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver, including timeout/tie and disconnect handling, after validating it against the current UEFN/Verse API. Keep END-A02 as a hard stop for mandatory truth-evidence gating.
+**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver, including timeout/tie and disconnect handling, after validating it against the current UEFN/Verse API. END-A02 is approved; Claude may implement the three-clue truth gate subject to clue accessibility/recovery validation.
 
 **Truth evidence gate:** The six flags in Section 3 remain a proposed mandatory list until the owner approves END-A02. Do not make a clue mandatory unless its placement, readability, fallback and progression role are confirmed in the approved narrative pack.
