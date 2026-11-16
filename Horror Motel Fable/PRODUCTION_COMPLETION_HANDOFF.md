@@ -106,6 +106,19 @@ Commits:
 
 These changes repair documentation ownership and missing interaction definitions. They do not establish that actors, devices or Verse handlers exist.
 
+### 5.1 CSV schema verification performed in this pass
+A row-width check was run against the following current main registers. Every data row matched its header field count:
+- INTERACTION_MASTER_REGISTER.csv: 13 columns, 29 rows.
+- PUZZLE_MASTER_REGISTER.csv: 15 columns, 5 rows.
+- ROOM_COORDINATE_REGISTER.csv: 16 columns, 52 rows.
+- DOOR_WINDOW_SCHEDULE.csv: 16 columns, 51 rows.
+- wall_schedule.csv: 15 columns, 70 rows.
+- SLAB_SCHEDULE.csv: 11 columns, 5 rows.
+- AUDIO_REGISTER.csv: 11 columns, 9 rows.
+- LIGHTING_REGISTER.csv: 14 columns, 10 rows.
+
+This verifies row width only. It does not prove semantic correctness, spatial fit, collision, source licensing or engine behaviour. The three legacy IN-021/IN-022/IN-023 interaction rows were also repaired to include separate Target and Action fields. Commit: 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5.
+
 ## 6. Gameplay and narrative decisions still open
 
 1. THE_TRUTH evidence gate: ENDING_IMPLEMENTATION_SPEC.md lists DiaryFound, ChildRoomClueFound, MissingGuestEvidenceFound, SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed. The owner must confirm which are mandatory. A mandatory item must never be missable or depend on an optional clue.
