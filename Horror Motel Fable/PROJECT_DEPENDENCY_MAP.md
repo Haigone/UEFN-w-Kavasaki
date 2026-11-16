@@ -188,3 +188,25 @@ The most recent live check returned `mergeable=false` (the value had fluctuated 
 
 ### Latest branch delta
 Latest branch head is 52 commits ahead / 106 behind main, DIVERGED; PR #1 is OPEN/DRAFT and latest mergeable=false. Six west wardrobes have been changed to BLOCKED with blank coordinates, but three upper-east wardrobes remain proposed outside R2.1 bounds and F12_SECRET_PANEL remains 1.35 m offset from D-13A. Asset register now has 120 rows; source-register/GQ-007 CSV errors remain. The art intake dependency remains blocked.
+
+
+## 10. LD-GEO R2.3 and current dependency authority — 2026-11-16
+
+This section supersedes R2.0/R2.1 dependency assumptions and PR branch snapshots above wherever they conflict.
+
+### Approved design baseline
+LD-GEO R2.3 and GEO-A01–GEO-A21 are OWNER-APPROVED DESIGN. This closes the owner decision gate for geometry layout, stair, balcony, roof, secret route, reserves and U-SERVICE access policy. It does not close document integrity, editor construction, collision/navmesh or traversal tests.
+
+### Current dependency graph
+**CLD-001 actual UEFN project baseline + recoverable backup** AND **CLD-002 R2.3 document/register integrity PASS** → **CLD-003 R2.3 greybox construction** → **editor traversal/collision/NPC navigation evidence** → **owner acceptance of implemented geometry** → **Environment Art PR #1 reauthoring/intake** → **asset import and content integration** → **Verse/device/AI/gameplay implementation** → **solo/2P/4P QA and profiling** → **island validation** → **owner release approval**.
+
+CLD-001 and CLD-002 may run in parallel. CLD-003 is blocked until both pass. PR #1 remains non-authoritative and must not be merged as-is.
+
+### Current owner decision state
+- END-A01 co-op quorum: APPROVED and closed.
+- END-A02 truth evidence: PENDING; use OWNER_DECISION_PACKET_R1.md.
+- NCP-A01–A09 narrative copy: proposal complete; owner approval pending in OWNER_DECISION_PACKET_R1.md.
+- Interior/bathroom fit-out and R2.4 deviations: separate owner approval if brought into scope.
+
+### Current source authority
+Use PRODUCTION_CONTROL_MASTER_SPEC.md, LEVEL_DESIGN_R2.3_INDEX.md, LD_GEO_R2.3_APPROVAL_RECORD.md and CLAUDE_R2.3_EXECUTION_PACKET.md. Earlier R2.0/R2.1/R2.2 task descriptions and PR statistics are retained only as historical audit evidence.
