@@ -17,7 +17,7 @@ Site 84×72 m; origin SW; +X east, +Y north, +Z up. U footprint: west wing X8–
 | G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.70 |
 | G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.70 |
 
-Ground rooms occupy the courtyard-facing strips; the parallel corridors are on the outer sides. Doors are on X=10.95 (west rooms) and X=73.05 (east rooms). Windows face the courtyard at X=19.85 and X=64.15.
+Ground rooms occupy the courtyard-facing strips; the parallel corridors are on the outer sides. Doors are on X=10.95 (west rooms) and X=73.05 (east rooms). Windows face the courtyard at X=19.85 and X=64.15. South-end buffers X11.10–19.70 and X64.30–72.90,Y18.30–19.85 connect to the side corridors; room south walls close at Y19.925.
 
 The 2 m bands Y27–29 and Y36–38 are reserved as open transverse connector bays in this proposal, with 1.50 m courtyard facade openings. This is not a source-approved fact; owner approval required.
 
