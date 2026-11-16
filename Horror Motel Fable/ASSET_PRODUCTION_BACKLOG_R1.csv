@@ -59,3 +59,8 @@ AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,1 set,P
 UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,1 set,P0,UMG widget assets and per player Verse logic,NOT SOURCED,NOT IMPORTED,AST-07,UI screen layouts
 UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,1 set,P1,High contrast icon set,NOT SOURCED,NOT IMPORTED,AST-07,UI screen layouts
 VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,1 set,P2,Performance reviewed effects,NOT SOURCED,NOT IMPORTED,AST-05,Lighting cue sheet
+PROP_OPTIONAL_DOCUMENT_SET,Prop,Optional readable motel documents for desk inspection,6,P2,Readable paper prop meshes/textures and stable DocumentId content,NOT SOURCED,NOT IMPORTED,AST-02,IN-008
+PROP_STORAGE_SHELF_FUSE_B,Prop,Storage shelf and wet floor sign for Fuse B pickup,1 set,P0,Collision-safe shelf dressing and Fuse B pickup anchor,NOT SOURCED,NOT IMPORTED,AST-02,IN-025
+PROP_ROOM06_MAINTENANCE_CABINET,Prop,ROOM06 maintenance cabinet for Fuse C,1,P0,Separate cabinet mesh and Fuse C pickup actor,NOT SOURCED,NOT IMPORTED,AST-02,IN-026
+PROP_TOOL_BOARD_SCREWDRIVER,Prop,Utility tool board and reusable screwdriver display,1,P1,Board mesh and screwdriver grant actor,NOT SOURCED,NOT IMPORTED,AST-02,IN-027
+PROP_ROOM13_SERVICE_KEY_DRAWER,Prop,ROOM13 desk drawer compartment for Service Key,1,P0,Drawer open state and IN-017 pickup actor,NOT SOURCED,NOT IMPORTED,AST-02,IN-017
