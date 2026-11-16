@@ -193,3 +193,18 @@ The control status remains:
 6. Asset acquisition/licensing/import, editor build, Verse compile, memory/performance profiling and release QA remain separate open gates.
 
 Do not describe the project as fully implemented or release-ready based on documentation completion.
+
+
+## 15. R3 current document authority refresh — 2026-11-16
+
+Current execution entry point: CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. It supersedes older execution-order text and stale pre-R2.3 geometry instructions.
+
+Additional controlling documents:
+- Room fit-out: ROOM_INTERIOR_FITOUT_SPEC_R1.md; exact proposed placement coordinates remain in room_furnishing_schedule.csv. R2.3 structural envelope always wins.
+- Asset production: ASSET_PRODUCTION_BACKLOG_R1.csv plus ASSET_PRODUCTION_PIPELINE_SPEC.md. No source/license/import status is accepted without evidence.
+- UEFN capability references: UEFN_VERIFIED_REFERENCE_REGISTER_R1.md plus UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md. Officially documented feature does not equal project verified.
+- Device binding: UEFN_DEVICE_BINDINGS.csv is expanded to all 32 interactions and supporting session/system devices; every row remains editor-test required unless explicitly marked official capability documented/project test required.
+- Character production: GUEST_MODEL_SPEC.md including the production sequence and combined NPC proof gates.
+- Event integration: EVENT_INTERACTION_VERSE_CROSSWALK_R1.md maps IN-001–IN-032 to EVT-001–EVT-051. No duplicate event bus or duplicate state writer is permitted.
+
+The current main branch documentation is ready for technical execution, but native UEFN project existence, editor version, asset acquisition, Verse source/compile, geometry implementation, runtime tests, profiling and release validation remain NOT EVIDENCED until Claude supplies reproducible artifacts.
