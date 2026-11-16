@@ -11,7 +11,7 @@ The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APP
 
 ## A. Geometry decisions
 
-| ID | Decision required | R2.2 proposal to approve | Consequence if not approved |
+| ID | Approved decision | Approved R2.2 baseline | Implementation constraint |
 |---|---|---|---|
 | GEO-A01 | Ground-floor room orientation | Guest rooms face courtyard; circulation corridors occupy outer west/east bands | No room placement or greybox freeze |
 | GEO-A02 | Ground-floor room Y bands | 20–27, 29–36, 38–45 m; two 2.00 m gross cross-bays per wing (1.70 m clear between finished wall faces) | Cross-bay topology remains unresolved |
@@ -39,21 +39,21 @@ The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APP
 - Flat roof.
 - THE GUEST must access both floors.
 
-These fixed intent points do not approve the proposed detailed dimensions.
+The owner subsequently approved the detailed dimensions and all GEO-A01–GEO-A21 dispositions on 2026-11-16; see Section F and the R2.3 approval record.
 
 
 ## A2. Additional geometry decisions from final R2.2 review
 
 Detailed dimensions, diagrams and approved outcomes: LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md and LD_GEO_R2.3_APPROVAL_RECORD.md.
 
-| ID | Decision required | Observed R2.2 condition / proposal | Alternatives and consequence |
+| ID | Approved decision | Observed R2.2 condition | Approved disposition |
 |---|---|---|---|
-| GEO-A16 | Ground-floor north pockets | Two unregistered sealed pockets, each X11.10–19.70 or X64.30–72.90, Y45.15–48.00 (24.51 m² each) | Keep as sealed no-access reserves and register them; open from corridor; or connect to courtyard/north connector with new openings. Until chosen, no ground-floor freeze. |
-| GEO-A17 | Upper-floor north side pockets | West unassigned alcove approx. 28.28 m²; east residual area around VEST-13 approx. 17.60 m². Both lie on the UF slab but are not assigned in the room register. | Incorporate into the balcony/turning landing and register; close with partitions as no-access reserves; or assign a new service/gameplay function. Until chosen, upper-floor walkable bounds are ambiguous. |
-| GEO-A18 | U-SERVICE access and collision | U-SERVICE is 19.70×8.60 m (169.42 m²), enclosed on all sides with no scheduled door, but marked Walkable/Collision=Yes. | Add an access door from landing/north hall; or mark as sealed No_Access/No_Collision; or subdivide. Current state is contradictory. |
+| GEO-A16 | Ground-floor north pockets | Two sealed pockets, each 8.60×2.85 m | Approved: register as sealed no-access/no-navmesh reserves; retain structural floor collision; no openings. |
+| GEO-A17 | Upper-floor north side pockets | West reserve 8.70×3.25 m; east L-shaped reserve 17.39 m² | Approved: close and register both as no-access/no-navmesh reserves; west and east closure walls scheduled. |
+| GEO-A18 | U-SERVICE access and collision | U-SERVICE is 19.70×8.60 m (169.42 m²), enclosed with no scheduled door | Approved: sealed/no-access/no-navmesh; retain structural floor collision; no door. |
 | GEO-A19 | Balcony corner-pad clipping | Each 3.00×3.80 m pad extends 0.15×1.00 m (0.15 m²) into the courtyard void beyond UF-SLAB. | Clip pads to the U-slab polygon and coordinate rail edge; or explicitly extend/structurally support slab into courtyard and redesign guardrail. Recommendation: clip; do not create floor collision over the void. |
-| GEO-A20 | Cross-bay clear depth | The nominal 2.00 m gap between room FIF bounds becomes 1.70 m clear between 0.15 m wall faces. | Approve 2.00 m gross / 1.70 m net; or move room walls to provide 2.00 m net, changing room bounds and schedules. |
-| GEO-A21 | Flat-roof drainage and access | Flat roof geometry is consistent; falls/outlets are unspecified. Non-playable/no-access rule appears in R2.2 but is not one of the five fixed owner decisions. | Approve concealed falls and a drainage route after outlet coordination; separately approve roof no-access or define a playable roof route. Do not invent drain coordinates. |
+| GEO-A20 | Cross-bay clear depth | 2.00 m nominal gap yields 1.70 m clear | Approved: 2.00 m gross / 1.70 m net. |
+| GEO-A21 | Flat-roof drainage and access | Flat roof, drainage falls/outlets previously unspecified | Approved: no player access; concealed 1.0% falls to coordinated perimeter drainage; outlet positions remain technical coordination. |
 
 ## A3. Objective register corrections — no design choice required
 
