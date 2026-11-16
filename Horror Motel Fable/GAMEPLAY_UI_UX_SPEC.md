@@ -90,11 +90,11 @@ Tracker reads this state; it never infers completion from proximity alone.
 ### 4.3 Canonical act objective presentation
 | Act | Primary objective | Completion |
 |---|---|---|
-| I — THE ARRIVAL | Investigate the front desk | Required intro/phone/key/register discovery flags committed |
+| I — THE ARRIVAL | Reach the motel and investigate the front desk | ReceptionEntered, PhoneMessageHeard, Room13KeyKnown and RegisterCluesSeen committed |
 | II — THE REGISTER | Open the front desk | Register solved; Office Key granted through IN-006 |
 | II — THE REGISTER | Find the way upstairs | Office photo puzzle solved through IN-007; upper-floor access granted. Rooms 01–06 remain available for exploration; inspecting every room is not a progression gate |
 | III — THE POWER | Restore motel power | Fuse A/B/C installed and breaker activated |
-| IV — THE SECOND FLOOR | Find the way to ROOM 13 | Required diary/drawing investigation; Room 12 panel opened; route unlocked |
+| IV — THE SECOND FLOOR | Find the way to ROOM 13 | Upper-floor access; Room 12 panel opened; route unlocked. Diary and drawing are optional evidence discoveries unless END-A02 is approved for THE_TRUTH only |
 | V — ROOM 13 | Discover who the owner really is | Four-photo sequence solved; reveal completed; Service Key granted |
 | VI — NO VACANCY | Open the service route and escape | Car Keys + Service Key + GatePowered; CoreEscapeReady |
 | VI — NO VACANCY | Decide the motel's fate | Explicit ending committed |
