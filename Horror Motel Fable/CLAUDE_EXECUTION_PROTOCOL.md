@@ -82,7 +82,7 @@ The geometry design source of truth is LD-GEO R2.3 / GEO-A01–GEO-A21 and is al
 The first operational gate is native project/editor discovery and backup (GATE A in CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md). Immediately after that, rerun the repository checker with `python tools/validate_r3_repository.py` from the Horror Motel Fable directory and refresh the static report. A static pass does not replace editor or gameplay evidence.
 
 
-## 6. R3 execution authority and decision finality — 2026-11-16
+## 7. R3 execution authority and decision finality — 2026-11-16
 
 The current canonical execution sequence is CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. Claude must read it before following any older task plan or master prompt. It supersedes pre-R2.3 geometry instructions and stale roadmap/task statuses.
 
