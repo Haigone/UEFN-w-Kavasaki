@@ -12,3 +12,39 @@ DEV_HUD_OBJECTIVE,HUD Message,All areas,English objective prompts,Game_Manager,S
 DEV_BARRIER_ROOM13,Barrier,Secret route,Locked until clue solved,Puzzle_Manager,UnlockRoom13,EDITOR-TEST REQUIRED
 DEV_CINEMATIC_REVEAL,Cinematic Sequence,ROOM 13,Owner reveal beat,Cinematic_Manager,PlayOwnerReveal,EDITOR-TEST REQUIRED
 DEV_NPC_GUEST,NPC Spawner,Motel patrol routes,THE GUEST NPC implementation,Monster_Controller,SpawnGuest,ENGINE-VERIFIED REQUIRED
+DEV_IN001_ARRIVAL,Trigger,Exterior,Inspect neon sign; 2m; once discovery flag; repeat view,Game_Manager,IN-001 / EVT-043,EDITOR-TEST REQUIRED
+DEV_IN002_PHONE,Button or Verse interaction,Reception,Answer phone; readable subtitle/transcript; one session commit,Game_Manager,IN-002 / EVT-002,EDITOR-TEST REQUIRED
+DEV_IN003_ROOM13_KEY,Button or Verse interaction,Reception,Inspect anomaly key; no consumable grant unless separate item definition,Game_Manager,IN-003 / EVT-003,EDITOR-TEST REQUIRED
+DEV_IN004_REGISTER,Button or Verse interaction,Reception,Open readable register and commit discovery,Game_Manager,IN-004 / EVT-004,EDITOR-TEST REQUIRED
+DEV_IN005_KEYPAD,Verse UI or 10-button world grid,Reception,Three groups 02-13-86; validate on session authority,Puzzle_Manager,IN-005 / EVT-005,EDITOR-TEST REQUIRED
+DEV_IN006_OFFICE_KEY,Button or item pickup,Reception drawer,Grant OfficeKey once only after RegisterSolved,Inventory_Manager,IN-006 / EVT-006,EDITOR-TEST REQUIRED
+DEV_IN007_OFFICE_PHOTOS,Verse UI or four world slots,Owner office,Four slots; chronology 1974 1978 1982 1986; single operator lock,Puzzle_Manager,IN-007 / EVT-007,EDITOR-TEST REQUIRED
+DEV_IN008_DOCUMENTS,Button or Verse interaction,Rooms 01-06,DocumentId payload; journal readable; optional lore,Evidence_Manager,IN-008 / EVT-044,EDITOR-TEST REQUIRED
+DEV_IN009_BATTERY,Item pickup or Verse proxy,Room 02,Per-player spawn claim and charge; other players can collect independently,Inventory_Manager,IN-009 / EVT-045,EDITOR-TEST REQUIRED
+DEV_IN010_PANEL_COVER,Button or Verse interaction,Electrical room,Reusable screwdriver; cover open state, Puzzle_Manager,IN-010 / EVT-046,EDITOR-TEST REQUIRED
+DEV_IN011_FUSE_SLOTS,Three Button or Verse interactions,Electrical room,Slot A B C; matching item; atomic slot lock,Puzzle_Manager,IN-011 / EVT-009,EDITOR-TEST REQUIRED
+DEV_IN012_BREAKER,Button,Electrical room,Enabled only after A B C installed; one commit,Puzzle_Manager,IN-012 / EVT-010,EDITOR-TEST REQUIRED
+DEV_IN013_DIARY,Button or Verse interaction,Room 09,Readable diary then team-shared evidence commit,Evidence_Manager,IN-013 / EVT-011,EDITOR-TEST REQUIRED
+DEV_IN014_DRAWING,Button or Verse interaction,Room 11,Readable drawing and journal entry,Evidence_Manager,IN-014 / EVT-012,EDITOR-TEST REQUIRED
+DEV_IN015_SECRET_PANEL,Button or Prop Manipulator route,Room 12,Open panel and collision state; Screwdriver requirement,Puzzle_Manager,IN-015 / EVT-013,EDITOR-TEST REQUIRED
+DEV_IN016_ROOM13_PHOTOS,Verse UI or four world slots,Room 13,Chronology 1968 1974 1981 1986; reveal completion separate,Puzzle_Manager and Cinematic_Manager,IN-016 / EVT-015 EVT-016,EDITOR-TEST REQUIRED
+DEV_IN017_SERVICE_KEY,Button or item pickup,Room 13 compartment,Grant ServiceKey only after Room13RevealComplete,Inventory_Manager,IN-017 / EVT-017,EDITOR-TEST REQUIRED
+DEV_IN018_GATE_CONTROL,Button,Service route,ServiceKey and PowerRestored; activate gate once,Puzzle_Manager,IN-018 / EVT-018,EDITOR-TEST REQUIRED
+DEV_IN019_VEHICLE_IGNITION,Button or Verse interaction,Exterior vehicle,Only ESCAPE route; FinaleReady and CarKeys; commit ignition,Game_Manager,IN-019 / EVT-019,EDITOR-TEST REQUIRED
+DEV_IN020_ENDING_SELECTOR,Per-player Verse UI buttons,Final route,Only eligible endings; 20s window; majority or unanimity per END-A01,Ending_Manager,IN-020 / EVT-020 EVT-021 EVT-022,EDITOR-TEST REQUIRED
+DEV_IN021_HIDING_SPOTS,Verse interaction or Button,Authored hiding spots,Per-player hide and exit; clear state on capture/disconnect,Player_Manager,IN-021 / EVT-047,EDITOR-TEST REQUIRED
+DEV_IN022_RESCUE,Button plus progress UI,Captured locations,5s uninterrupted rescue; one rescuer lock; 90s self recovery,Player_Manager,IN-022 / EVT-025 EVT-026 EVT-027 EVT-028,EDITOR-TEST REQUIRED
+DEV_IN023_CHECKPOINTS,Trigger or checkpoint device,Authored checkpoints,Commit snapshot only after required flags; restore idempotently,Checkpoint_Manager,IN-023 / EVT-030 EVT-031,EDITOR-TEST REQUIRED
+DEV_IN024_FUSE_A,Item pickup or Verse interaction,Room 02 suitcase,Grant FuseA team flag once,Inventory_Manager,IN-024 / EVT-008 fuse_id=A,EDITOR-TEST REQUIRED
+DEV_IN025_FUSE_B,Item pickup or Verse interaction,Storage shelf,Grant FuseB team flag once,Inventory_Manager,IN-025 / EVT-008 fuse_id=B,EDITOR-TEST REQUIRED
+DEV_IN026_FUSE_C,Item pickup or Verse interaction,Room 06 cabinet,Grant FuseC team flag once,Inventory_Manager,IN-026 / EVT-008 fuse_id=C,EDITOR-TEST REQUIRED
+DEV_IN027_SCREWDRIVER,Item pickup or Verse interaction,Utility/tool board,Grant reusable shared screwdriver once,Inventory_Manager,IN-027 / EVT-048,EDITOR-TEST REQUIRED
+DEV_IN028_CAR_KEYS,Item pickup or Verse interaction,Exterior vehicle,Enable only on ESCAPE branch; grant shared keys once,Inventory_Manager,IN-028 / EVT-049,EDITOR-TEST REQUIRED
+DEV_IN029_MISSING_GUEST_ARCHIVE,Button or Verse interaction,Room 06,Readable archive and team-shared truth evidence,Evidence_Manager,IN-029 / EVT-014,EDITOR-TEST REQUIRED
+DEV_IN030_CRT_FEED,Button or Verse interaction,Room 01,View feed; optional discovery; no progression gate,Evidence_Manager,IN-030 / EVT-050,EDITOR-TEST REQUIRED
+DEV_IN031_ROOM04_RECORDING,Button or Verse interaction,Room 04,Audio and readable transcript; either presentation path commits,Evidence_Manager,IN-031 / EVT-051,EDITOR-TEST REQUIRED
+DEV_IN032_NIGHT_AUDIT,Button,Service control room,Only after EndingSelected=THE_TRUTH; 2s hold; one-shot,Ending_Manager,IN-032 / EVT-023,EDITOR-TEST REQUIRED
+DEV_SESSION_MANAGER,Verse-authored creative_device,Session,Single writer; session flags; join leave; event dedupe,Game_Manager,EVT-001 EVT-032 EVT-033 EVT-034 EVT-042,EDITOR-TEST REQUIRED
+DEV_GUEST_AI,NPC Spawner plus custom NPC behavior,Motel routes,Spawn one Guest; navmesh/route tests; NPC feature Beta,Monster_Controller,EVT-035 EVT-036 EVT-037,ENGINE/API DOCUMENTED; PROJECT TEST REQUIRED
+DEV_PRESENTATION_FAILURE,Verse presentation manager,All authored sequences,Readable fallback; never commit reveal before fallback shown,Cinematic_Manager,EVT-040,EDITOR-TEST REQUIRED
+DEV_RECOVERY_PROXY,Verse manager interaction proxy,All critical actors,Only substitute missing actor after prerequisite validated,Owning_Manager,EVT-039,EDITOR-TEST REQUIRED
