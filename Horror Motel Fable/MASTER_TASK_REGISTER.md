@@ -89,3 +89,7 @@ These tasks supplement, and do not replace, the original task IDs. ChatGPT prepa
 | SRC-001 | Asset Acquisition | Correct Fab source register and record licensing/UEFN format evidence | P2 | ART-003 | Verified source shortlist | INCOMPLETO | All candidate rows parse; current listing data, license and source format are confirmed | Listing links, owner license record, UEFN import test | Art / Production |
 
 These tasks supplement prior task IDs. ChatGPT prepares implementation packets and audits returned evidence; Claude alone performs UEFN/editor implementation and tests. Project owner approval is required for gate and other structural changes.
+
+
+### ART-004 latest scope correction
+Latest PR revision has blocked six west-wing wardrobe placements with blank coordinates. The active placement correction now covers three upper-east wardrobes (F10/F11/F12) still outside R2.1 bounds and F12_SECRET_PANEL offset 1.35 m from D-13A; all other upper-room placements still require R2.1 review because the branch's plan remains R2.0. Keep ART-004 blocked until the full footprint/door-swing audit is rerun.
