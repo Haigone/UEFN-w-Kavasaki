@@ -34,4 +34,4 @@ North stair location; continuous courtyard-facing upper balcony; ROOM 13 in nort
 - `CLAUDE_EXECUTION_PROTOCOL.md` — binding division of responsibilities and evidence policy.
 
 ## Approval boundary
-R2.2 remains a proposal. The final review found unassigned floor areas, an inaccessible U-SERVICE marked walkable, two ROOM_COORDINATE_REGISTER errors and balcony turn-pad clipping that must be resolved before geometry freeze. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
+R2.2 remains a proposal. The final review found unassigned floor areas, an inaccessible U-SERVICE marked walkable, one ROOM_COORDINATE_REGISTER dimension mismatch (VEST-13; the COURTYARD schema row is now corrected) and balcony turn-pad clipping that must be resolved before geometry freeze. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
