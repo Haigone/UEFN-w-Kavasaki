@@ -1,3 +1,5 @@
+> **GEOMETRY STATUS NOTICE — 2026-11-16:** This file is retained as historical source material. Its room allocations, door positions, stair location, balcony dimensions, ROOM 13 placement and vertical datums conflict with the current canonical proposal in `LEVEL_DESIGN_GEOMETRY.md` R2.2. Do not use this file as a placement authority. R2.2 is a proposed reconciliation only and is not owner-approved. See `GEOMETRY_VALIDATION_REPORT.md` for the conflict register and required owner decisions.
+
 # EXECUTIVE BUILD DOSSIER — GEOMETRY, FURNITURE & THE GUEST
 ## THE MOTEL: ROOM 13 | Revision 1 — dimensional design specification
 
