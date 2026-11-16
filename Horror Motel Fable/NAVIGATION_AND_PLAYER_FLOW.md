@@ -1,15 +1,15 @@
-# NAVIGATION AND PLAYER FLOW — LD-GEO R2.1
+# NAVIGATION AND PLAYER FLOW — LD-GEO R2.2
 Status: navigation design intent. All routes and THE GUEST behaviour require UEFN editor tests.
 
 ## Player progression graph
-PARKING / SOUTH GATE → RECEPTION → WEST/EAST GROUND CORRIDORS → ROOMS 01–06 + service objectives → NORTH STAIR → UPPER CONTINUOUS COURTYARD BALCONY → ROOMS 07–12 → ROOM 12 PANEL → EAST VESTIBULE → EAST BALCONY LEG → NORTH BALCONY → ROOM 13 → RETURN SAME ROUTE → GENERATOR / GATE / ESCAPE.
+PARKING / SOUTH GATE → RECEPTION → WEST/EAST GROUND CORRIDORS → ROOMS 01–06 + service objectives → NORTH STAIR → UPPER CONTINUOUS COURTYARD BALCONY → ROOMS 07–12 → ROOM 12 PANEL D-13A (69.95,47.475) → EAST VESTIBULE X67–72.9,Y47.55–49.20 → D-13C (66.925,48.45) → EAST CORNER PAD / BALCONY LEG → NORTH BALCONY → D-13B (56.35,50.95) → ROOM 13 → RETURN SAME ROUTE → GENERATOR / GATE / ESCAPE.
 No mandatory objective may require a second player. Every pickup and clue must be recoverable after disconnect or failed interaction.
 
 ## Continuous balcony geometry
-West leg X=17.20–19.70,Y=18.30–48.30; north crossbar X=19.70–64.30,Y=48.30–50.80; east leg X=64.30–66.80,Y=18.30–48.30. Corner turning pads connect each leg to the north crossbar; actual floor polygons and rail corners must be one continuous union. Courtyard-side rail 1.10 m target. Clear width 2.50 m.
+West leg X=17.15–19.70,Y=18.30–48.30; north crossbar X=19.70–64.30,Y=48.30–50.80; east leg X=64.30–66.85,Y=18.30–48.30. Corner pads west X17.15–20.15,Y47.00–50.80 and east X63.85–66.85,Y47.00–50.80. Guardrail centre-lines X19.85, X64.15 and Y48.15; these sit outside the clear walkable area. Corner turning pads connect each leg to the north crossbar; actual floor polygons and rail corners must be one continuous union. Courtyard-side rail 1.10 m target. Clear width 2.50 m.
 
 ## THE GUEST — both floors
-The Guest is allowed a designed route on ground and upper floors. The primary vertical link is the north U-turn stair. No assumption is made that a generic NPC can traverse this stair: pathfinding is EDITOR-TEST REQUIRED. Provisional patrol nodes (centres, metres):
+The Guest is allowed a designed route on ground and upper floors. The primary vertical link is the north U-turn stair (assembly X22.65–25.35,Y52.45–56.17; upper slab cut X22.50–25.50,Y52.30–56.32; south approach clear 1.20 m). No assumption is made that a generic NPC can traverse this stair: pathfinding is EDITOR-TEST REQUIRED. Provisional patrol nodes (centres, metres):
 - G-GF-01 Reception (30.0,54.0,0.0)
 - G-GF-02 West connector (14.5,49.0,0.0)
 - G-GF-03 West corridor (9.55,33.0,0.0)
