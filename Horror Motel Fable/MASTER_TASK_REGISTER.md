@@ -204,3 +204,6 @@ Inputs: EVENT_AND_STATE_TRANSITION_CATALOG_R2.md, OBJECTIVE_AND_EVENT_CATALOG.md
 Output: one authoritative crosswalk table with columns EventID, InteractionID, Verse event/function, manager owner, payload, scope, commit predicate, dedupe key, failure/recovery and acceptance test.  
 Acceptance: every existing interaction IN-001–IN-032 maps to exactly one authoritative transaction; every EVT event maps to a valid existing interaction, authored system event or derived transition; no duplicate state writer; no event IDs conflict.  
 Status: OPEN — documentation crosswalk still required before implementation can be considered decision-complete.
+
+
+| DOC-015 | Gameplay architecture | Crosswalk all 32 interaction IDs to event IDs and Verse manager ownership | P0 | EVENT_INTERACTION_VERSE_CROSSWALK_R1.md + EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | DOCUMENTATION CROSSWALK COMPLETE | Target-version Verse implementation, compile, multiplayer race/disconnect/checkpoint tests remain open |
