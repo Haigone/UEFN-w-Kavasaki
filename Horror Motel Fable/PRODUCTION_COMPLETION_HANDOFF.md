@@ -98,10 +98,10 @@ The following cross-register corrections have been committed:
 - GAT-048–GAT-052 add regression tests for these mappings.
 
 Commits:
-- PUZZLE_MASTER_REGISTER.csv: cd56e3fa058662a7eb3658e0f04a2ce7b9d5b8e9
+- PUZZLE_MASTER_REGISTER.csv: dc4716c15addd429a3fb55d71b6ddaa8d4fab6e19
 - PUZZLE_IMPLEMENTATION_SHEETS.md: 26f897541d1b7de7d662b60243850abe485be77f
 - GAMEPLAY_SYSTEMS_SPEC.md: b3fbf342da96e66de8c55086182a5c3d98479991
-- INTERACTION_MASTER_REGISTER.csv: fd7aa3b648d59cf7522c3c23b570b6bd1b8b7441
+- INTERACTION_MASTER_REGISTER.csv: 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5
 - GAMEPLAY_ACCEPTANCE_TESTS.md: 5f0264ca13c4a36ee242776c1cf3330233f715fc
 
 These changes repair documentation ownership and missing interaction definitions. They do not establish that actors, devices or Verse handlers exist.
