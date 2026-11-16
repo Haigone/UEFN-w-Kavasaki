@@ -92,6 +92,6 @@ Binding decision records:
 
 Do not ask the owner to repeat these decisions. Do not reinterpret them to work around technical limitations; use the documented UEFN fallback while preserving gameplay outcome. Any structural geometry change requires an R2.4 proposal and owner approval.
 
-Current documentary integration report: R3_INTEGRATION_INTEGRITY_REPORT.md. It records static checks only. The current UEFN device register has 49 logical/device rows; no row is editor-verified merely by appearing in the CSV. The 94-row asset rights register remains NOT SOURCED until actual license evidence is archived.
+Current documentary integration report: R3_INTEGRATION_INTEGRITY_REPORT.md. It records static checks only. The current UEFN device register has 50 logical/device rows; no row is editor-verified merely by appearing in the CSV. The 94-row asset rights register remains NOT SOURCED until actual license evidence is archived.
 
 ChatGPT's responsibility remains documentation, cross-register consistency and execution instructions. Claude remains responsible for all actual UEFN project/editor/Verse/asset operations and evidence. Do not monitor or narrate work outside the evidence returned by Claude.
