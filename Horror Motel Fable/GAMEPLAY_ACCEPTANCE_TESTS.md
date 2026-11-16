@@ -95,7 +95,7 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-049 | Collect Screwdriver; open electrical cover; later open ROOM 12 panel | One reusable team tool supports both interactions; it is not consumed or duplicated |
 | GAT-050 | Solve PZ-01 and PZ-04 without collecting the visible keys | Puzzles open their respective drawers/compartments; OfficeKey and ServiceKey are granted only by IN-006 and IN-017 |
 | GAT-051 | Collect CarKeys in Act VI and use vehicle ignition | CarKeys enters team inventory once; ignition remains unavailable until GatePowered and CarKeys are both true |
-| GAT-052 | Inspect Room 06 missing-guest photo board | MissingGuestEvidenceFound is recorded once and appears in the journal; it gates THE_TRUTH only if owner-approved as mandatory evidence |
+| GAT-052 | Inspect Room 06 missing-guest photo board | MissingGuestEvidenceFound is recorded once and appears in the journal; it is mandatory for THE_TRUTH under approved END-A02 only |
 
 
 ## 9. Objective, AI, UI and END-A01 regression tests
@@ -116,10 +116,14 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-065 | All players captured | Team checkpoint recovery completes; no death/end branch is inferred |
 | GAT-066 | Repeated checkpoint restore | Same flags/actors/objectives; no duplicate inventory, audio or one-shot events |
 
-**END-A02 test gate:** before owner approval, verify that no unapproved truth clue is treated as mandatory. After explicit approval, add/enable the three-clue truth-chain tests from END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
+**END-A02 APPROVED TEST GATE:** THE_TRUTH requires exactly DiaryFound + ChildRoomClueFound + MissingGuestEvidenceFound. Each clue is optional to ESCAPE/core progression; test missing each clue independently, full 3/3 chain, recovery and co-op shared discovery.
 | GAT-067 | THE_TRUTH and THE_NEW_GUEST without CarKeys | FinaleReady is true and branch-specific gates are met; both endings remain selectable without CarKeys/vehicle ignition; ESCAPE remains ineligible until CoreEscapeReady |
 | GAT-068 | Checkpoint restore after flashlight use | Each player's charge returns to the exact checkpoint snapshot; no free refill or duplicate battery claim |
 | GAT-069 | Battery pickup in co-op | Each player can claim the same authored spawn once where supported; one player's claim does not remove access for others |
 | GAT-070 | Vote timer | Co-op ending vote resolves immediately on valid quorum or applies END-A01 after max 20 seconds; solo never waits for timer |
 
 | GAT-071 | New Guest invitation availability | FinaleReady opens the invitation option while NewGuestAccepted is still false; only unanimous explicit acceptance sets NewGuestAccepted and commits THE_NEW_GUEST |
+
+| GAT-072 | THE_TRUTH Night Audit sequence | THE_TRUTH committed; service control room entered; IN-032 activates NightAuditActivated exactly once; room-by-room blackout, 02:13 neon hold, register print text and THE TRUTH title card occur in order; no vehicle/car key/ignition required |
+| GAT-073 | END-A02 evidence gate boundaries | All three clues required for THE_TRUTH; each clue independently optional to ESCAPE/core progression; no duplicate evidence flags from PZ-04/SecretPanelOpened/Room13RevealComplete |
+| GAT-074 | Room 06/09/11 clue recovery | Each clue remains reachable or journal-recoverable after capture, checkpoint restore, co-op teammate inspection and disconnect/reconnect before ending commit |
