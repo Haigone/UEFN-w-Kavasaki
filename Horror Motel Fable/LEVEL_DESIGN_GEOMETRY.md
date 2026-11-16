@@ -1,4 +1,4 @@
-# THE MOTEL: ROOM 13 — CANONICAL GEOMETRY PROPOSAL
+# THE MOTEL: ROOM 13 — OWNER-APPROVED CANONICAL GEOMETRY
 Revision LD-GEO R2.3 | owner approval recorded 2026-11-16
 Status: **OWNER-APPROVED CANONICAL GEOMETRY LD-GEO R2.3 — NOT UEFN-VERIFIED**
 
@@ -54,57 +54,57 @@ Classification: footprint dimensions are repeated in the dossier and E1 and are 
 ### Ground floor
 | ID | X min–max | Y min–max | FIF size | Classification |
 |---|---:|---:|---:|---|
-| ROOM 01 | 11.10–19.70 | 20.00–27.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| ROOM 02 | 11.10–19.70 | 29.00–36.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| ROOM 03 | 11.10–19.70 | 38.00–45.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| ROOM 04 | 64.30–72.90 | 20.00–27.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| ROOM 05 | 64.30–72.90 | 29.00–36.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 | PROPOSED CORRECTION |
-| GF-W-SOUTH-VEST | 11.10–19.70 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVAL REQUIRED |
-| GF-E-SOUTH-VEST | 64.30–72.90 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVAL REQUIRED |
+| ROOM 01 | 11.10–19.70 | 20.00–27.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| ROOM 02 | 11.10–19.70 | 29.00–36.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| ROOM 03 | 11.10–19.70 | 38.00–45.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| ROOM 04 | 64.30–72.90 | 20.00–27.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| ROOM 05 | 64.30–72.90 | 29.00–36.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 | OWNER APPROVED R2.3 |
+| GF-W-SOUTH-VEST | 11.10–19.70 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVED R2.3 |
+| GF-E-SOUTH-VEST | 64.30–72.90 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVED R2.3 |
 | G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.70 | DERIVED from corrected wall-face bounds |
 | G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.70 | DERIVED from R2.1 bounds |
-| RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.55×11.40 | PROPOSED CORRECTION |
-| OWNER OFFICE | 38.00–47.00 | 48.30–59.70 | 9.00×11.40 | PROPOSED CORRECTION |
-| STORAGE | 47.30–57.00 | 48.30–53.70 | 9.70×5.40 | PROPOSED CORRECTION |
-| ELECTRICAL | 57.30–72.90 | 48.30–59.70 | 15.60×11.40 | PROPOSED CORRECTION |
-| GF NORTH-WEST LINK | 8.30–10.80 | 48.30–59.70 | 2.50×11.40 | PROPOSED CORRECTION |
-| GF WEST LOBBY | 11.10–19.85 | 48.30–59.70 | 8.75×11.40 | PROPOSED CORRECTION |
-| GF NORTH-EAST LINK | 73.20–75.70 | 48.30–59.70 | 2.50×11.40 | PROPOSED CORRECTION |
-| GF SERVICE BAY | 47.30–57.00 | 53.85–59.70 | 9.70×5.85 | PROPOSED CORRECTION |
+| RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.55×11.40 | OWNER APPROVED R2.3 |
+| OWNER OFFICE | 38.00–47.00 | 48.30–59.70 | 9.00×11.40 | OWNER APPROVED R2.3 |
+| STORAGE | 47.30–57.00 | 48.30–53.70 | 9.70×5.40 | OWNER APPROVED R2.3 |
+| ELECTRICAL | 57.30–72.90 | 48.30–59.70 | 15.60×11.40 | OWNER APPROVED R2.3 |
+| GF NORTH-WEST LINK | 8.30–10.80 | 48.30–59.70 | 2.50×11.40 | OWNER APPROVED R2.3 |
+| GF WEST LOBBY | 11.10–19.85 | 48.30–59.70 | 8.75×11.40 | OWNER APPROVED R2.3 |
+| GF NORTH-EAST LINK | 73.20–75.70 | 48.30–59.70 | 2.50×11.40 | OWNER APPROVED R2.3 |
+| GF SERVICE BAY | 47.30–57.00 | 53.85–59.70 | 9.70×5.85 | OWNER APPROVED R2.3 |
 
 The key correction is ELECTRICAL ending at X=72.90. This preserves a 2.50 m east link at X=73.20–75.70 and removes the previous overlap. The north-west link/lobby are separated into two non-overlapping spaces. The service bay occupies the previously unassigned north half of the storage band; its access and use require owner approval.
 
-The south-end 1.55 m buffer zones Y18.30–19.85 are open to the ground corridor / upper balcony; the room south walls close at Y19.925. This avoids leaving an inaccessible strip behind the south facade. OWNER APPROVAL REQUIRED.
+The south-end 1.55 m buffer zones Y18.30–19.85 are open to the ground corridor / upper balcony; the room south walls close at Y19.925. This avoids leaving an inaccessible strip behind the south facade. OWNER APPROVED R2.3.
 
-The 2.00 m gaps between guest-room Y bands (27–29 and 36–38) are retained as **transverse open connector bays**, not room area. This is a proposed interpretation to avoid inventing extra room dimensions. Provide 1.50 m clear openings through both corridor/room partitions (X=10.95 west, X=73.05 east) and courtyard-facing walls (X=19.85 west, X=64.15 east) at Y=28.00 and 37.00. These bays connect the side corridor to the courtyard. OWNER APPROVAL REQUIRED.
+The 2.00 m gaps between guest-room Y bands (27–29 and 36–38) are retained as **transverse open connector bays**, not room area. The owner approved these as 2.00 m gross / 1.70 m clear net. Provide 1.50 m clear openings through both corridor/room partitions (X=10.95 west, X=73.05 east) and courtyard-facing walls (X=19.85 west, X=64.15 east) at Y=28.00 and 37.00. These bays connect the side corridor to the courtyard. OWNER APPROVED R2.3.
 
 ### Upper floor — side wings
 To retain a continuous courtyard-facing balcony without leaving an unexplained 2.50 m strip between the room and outer envelope, the side rooms use the full outer room band:
 | ID | X min–max | Y min–max | FIF size | Classification |
 |---|---:|---:|---:|---|
-| ROOM 07 | 8.30–17.00 | 20.00–27.00 | 8.70×7.00 | PROPOSED CORRECTION |
-| ROOM 08 | 8.30–17.00 | 29.00–36.00 | 8.70×7.00 | PROPOSED CORRECTION |
-| ROOM 09 | 8.30–17.00 | 38.00–47.40 | 8.70×9.40 | PROPOSED CORRECTION |
-| ROOM 10 | 67.00–75.70 | 20.00–27.00 | 8.70×7.00 | PROPOSED CORRECTION |
-| ROOM 11 | 67.00–75.70 | 29.00–36.00 | 8.70×7.00 | PROPOSED CORRECTION |
-| ROOM 12 | 67.00–75.70 | 38.00–47.40 | 8.70×9.40 | PROPOSED CORRECTION |
-| UF-W-SOUTH-VEST | 8.30–17.00 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVAL REQUIRED |
-| UF-E-SOUTH-VEST | 67.00–75.70 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVAL REQUIRED |
+| ROOM 07 | 8.30–17.00 | 20.00–27.00 | 8.70×7.00 | OWNER APPROVED R2.3 |
+| ROOM 08 | 8.30–17.00 | 29.00–36.00 | 8.70×7.00 | OWNER APPROVED R2.3 |
+| ROOM 09 | 8.30–17.00 | 38.00–47.40 | 8.70×9.40 | OWNER APPROVED R2.3 |
+| ROOM 10 | 67.00–75.70 | 20.00–27.00 | 8.70×7.00 | OWNER APPROVED R2.3 |
+| ROOM 11 | 67.00–75.70 | 29.00–36.00 | 8.70×7.00 | OWNER APPROVED R2.3 |
+| ROOM 12 | 67.00–75.70 | 38.00–47.40 | 8.70×9.40 | OWNER APPROVED R2.3 |
+| UF-W-SOUTH-VEST | 8.30–17.00 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVED R2.3 |
+| UF-E-SOUTH-VEST | 67.00–75.70 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVED R2.3 |
 
-This restores a usable 8.70 m room width consistent with the 12.00 m wing depth, 2.50 m courtyard balcony and 0.30 m wall allowance. It replaces the R2.1 5.90 m width, which left an unexplained outer strip. OWNER APPROVAL REQUIRED.
+This restores a usable 8.70 m room width consistent with the 12.00 m wing depth, 2.50 m courtyard balcony and 0.30 m wall allowance. It replaces the R2.1 5.90 m width, which left an unexplained outer strip. OWNER APPROVED R2.3.
 
-The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as upper cross-bays. Each receives a 1.50 m clear opening through the room/balcony partition so the cross-bay connects to the continuous balcony. These are open circulation bays, not additional rooms. OWNER APPROVAL REQUIRED.
+The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as upper cross-bays. Each receives a 1.50 m clear opening through the room/balcony partition so the cross-bay connects to the continuous balcony. These are open circulation bays, not additional rooms. OWNER APPROVED R2.3.
 
 ### Upper floor — continuous balcony and north connector
 | ID | X min–max | Y min–max | FIF size | Classification |
 |---|---:|---:|---:|---|
-| U-WEST-BALCONY | 17.15–19.70 | 18.30–48.30 | 2.55×30.00 | OWNER DECISION + PROPOSED DIMENSION |
-| U-NORTH-BALCONY | 19.70–64.30 | 48.30–50.80 | 44.60×2.50 | OWNER DECISION + PROPOSED DIMENSION |
-| U-EAST-BALCONY | 64.30–66.85 | 18.30–48.30 | 2.55×30.00 | OWNER DECISION + PROPOSED DIMENSION |
+| U-WEST-BALCONY | 17.15–19.70 | 18.30–48.30 | 2.55×30.00 | OWNER APPROVED R2.3 |
+| U-NORTH-BALCONY | 19.70–64.30 | 48.30–50.80 | 44.60×2.50 | OWNER APPROVED R2.3 |
+| U-EAST-BALCONY | 64.30–66.85 | 18.30–48.30 | 2.55×30.00 | OWNER APPROVED R2.3 |
 | U-WEST-TURN | 17.15–20.00 | 47.00–50.80 | 2.85×3.80 | OWNER APPROVED R2.3 — clipped to UF slab |
 | U-EAST-TURN | 64.00–66.85 | 47.00–50.80 | 2.85×3.80 | OWNER APPROVED R2.3 — clipped to UF slab |
-| U-STAIR-LANDING | 20.15–28.70 | 51.10–59.70 | 8.55×8.60 | PROPOSED CORRECTION |
+| U-STAIR-LANDING | 20.15–28.70 | 51.10–59.70 | 8.55×8.60 | OWNER APPROVED R2.3 |
 | U-SERVICE | 29.00–48.70 | 51.10–59.70 | 19.70×8.60 | OWNER APPROVED R2.3 — sealed, no access/no navmesh |
 | ROOM 13 | 49.00–63.70 | 51.10–59.70 | 14.70×8.60 | OWNER DECISION for location; size PROPOSED |
 | U-WEST-SERVICE-RESERVE | 8.30–19.85 | 51.10–59.70 | 11.55×8.60 | PROPOSED non-playable reserve |
@@ -112,7 +112,7 @@ The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as 
 
 The balcony is one connected walkable polygon: union of the two side legs, north crossbar and two corner turning pads. Guardrail only along courtyard-facing exposed edges; centre-lines X=19.85 (west leg), X=64.15 (east leg), Y=48.15 (north crossbar), Z=3.60–4.70. Rails sit in the 0.30 m edge strips outside the walkable polygon; no rail across room door thresholds or stair landing. Target guardrail height 1.10 m. The 2.50 m clear width is measured after rail posts/props.
 
-The two service reserve zones are non-playable placeholders to close the upper-floor slab footprint. They are not new rooms and have no assumed access. OWNER APPROVAL REQUIRED to retain them or replace them with another upper-level allocation.
+The two service reserve zones are non-playable, no-access placeholders to close the upper-floor slab footprint. They are not new rooms and have no assumed access. OWNER APPROVED R2.3.
 
 **Room-interior boundary:** ROOM 01–13 coordinates define the finished room envelopes only. The EBD mentions a nominal 2.20×2.40 m bathroom allowance in standard rooms, but it does not give a reconciled placement/orientation or complete door/partition geometry. R2.2 therefore does not invent bathroom walls, bathroom doors or fixture clearances. These interior subdivisions remain out of the canonical wall schedule pending owner-approved room fit-out.
 
@@ -174,7 +174,7 @@ Proposed consistent stack:
 | Flat roof slab top | Z=6.65 |
 | Parapet top | Z=7.10 |
 
-Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are proposed at 0.25 m from E1. All three thicknesses require owner approval. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent but is a PROPOSED CORRECTION to EBD/E1 vertical values and requires owner approval.
+Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are proposed at 0.25 m from E1. All three thicknesses require owner approval. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent but is a OWNER APPROVED R2.3 to EBD/E1 vertical values and requires owner approval.
 
 ## 10. Balcony, courtyard and floor separation
 - Courtyard void: X=20–64, Y=18–48; no floor slab above ground level and no roof.
@@ -217,3 +217,8 @@ The owner approved all geometric decisions GEO-A01–GEO-A21 and the R2.2 recomm
 - Door/window positions and dimensions, wall thicknesses, slab polygons and room envelopes in R2.2 are approved as design geometry. Room interior/bathroom fit-out remains outside this envelope approval.
 
 The owner approval does not certify structural adequacy, waterproofing, collision, navmesh, player capsule clearance, THE GUEST traversal or UEFN import. Claude must perform those checks and report evidence separately.
+
+
+### R2.3 sealed upper reserve wall closure
+
+The west upper reserve is closed by UF-W-SEALED-RESERVE-WEST on X=17.075 from Y=47.475 to 50.95. The east L-shaped reserve is closed by UF-E-SEALED-RESERVE-WEST on X=66.925 from Y=49.275 to 50.95. Both connect the existing room/balcony or vestibule wall to UF-NORTH-HALL-ROOMS. Neither wall has an opening. Register the enclosed areas as no-access/no-navmesh reserves; retain structural floor collision only.
