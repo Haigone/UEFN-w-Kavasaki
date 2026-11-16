@@ -114,3 +114,24 @@ These tasks supplement prior IDs. Geometry R2.2 is a candidate proposal only; al
 - Geometry is the physical critical path. Narrative authoring may run in parallel but cannot authorize geometry-dependent production.
 - Environment Art PR #1 is not ready to merge: live comparison at the current audit is diverged from main; re-read exact ahead/behind counts before any merge, OPEN/DRAFT and mergeable=false.
 - The documentary fixes to the interaction/puzzle registers and stair coordinate discrepancy do not close the editor-dependent tasks above.
+
+
+## R2.2 corrective status override — 2026-11-16
+
+This addendum supersedes earlier R2.0/R2.1 geometry references and the prior DATA-002 finding where the current main snapshot contradicts it.
+
+| ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
+|---|---|---|---|---|---|---|---|---|---|
+| GEO-013 | Level Design | Obtain owner approval of LD-GEO R2.2 or an explicitly revised geometry baseline | P0 | R2.2 proposal | OWNER_DECISION_GATE_R2.2.md | BLOCCATO | GEO-A01–A15 approved or explicitly revised | Owner's explicit decision and revision ID | Project Owner |
+| GEO-016 | Level Design / Data | Validate all R2.2 structural IDs, wall/opening hosts, slab topology and secret route | P0 | GEO-013; CLD-002 | R2.2_DOCUMENT_INTEGRITY_REPORT.md | NOT RUN | Every required reference resolves exactly once; exceptions documented | Parser, cross-reference and topology report | Claude / Technical Level Design |
+| END-001 | Narrative / Gameplay | Resolve co-op ending quorum and truth evidence gate | P0 | Owner decision gate | Updated ending specs and QA tests | BLOCCATO | One explicit co-op quorum and one approved mandatory truth evidence list | Owner decision and synchronized document diff | Project Owner |
+| CLD-001 | UEFN | Inspect actual project/editor and record baseline | P0 | Project/editor access | CLAUDE_ENVIRONMENT_BASELINE.md | NOT RUN | Version, project/build, branch, capability and inventory evidence | Claude baseline report and screenshots | Claude |
+| CLD-002 | Data / Geometry | Perform read-only R2.2 schema and cross-register audit | P0 | Repository access | R2.2_DOCUMENT_INTEGRITY_REPORT.md | NOT RUN | Schema, IDs, wall/opening joins, slabs and route exceptions reported | Parser and cross-reference output | Claude |
+| CLD-004 | UEFN | Build and test greybox from approved geometry | P0 | CLD-001; CLD-002; GEO-013; GEO-016 | Playable R2.2 greybox | BLOCCATO | Approved geometry implemented; spatial tests PASS with evidence | Build/version, screenshots, walkthrough and test log | Claude |
+| ART-005 | Environment Art | Reauthor PR #1 against owner-approved and Claude-verified geometry | P1 | GEO-013; CLD-004 | Rebased/re-authored art package | BLOCCATO | No stale geometry assumptions; all IDs, bounds, clearances and licenses reviewed | Fresh PR diff, parser/footprint report and review | Art Lead / Claude |
+
+### DATA-002 correction
+The current main snapshot shows IN-021/022/023 semantically aligned with the INTERACTION_MASTER_REGISTER.csv header. The previous DATA-002 assertion that those rows were malformed is superseded and must not be used as a work instruction. PZ-03's missing acceptance-test field has been completed. SITE, BLDG-UNION and COURTYARD semantic columns in ROOM_COORDINATE_REGISTER.csv have been corrected. Remaining data validation is referential/topological, not a claim that all CSVs are now fully validated.
+
+### Current execution boundary
+The current Claude handoff is `CLAUDE_R2.2_EXECUTION_PACKET.md`. Only CLD-001 read-only baseline and CLD-002 read-only integrity audit may proceed before owner approval. CLD-004, final art placements, PR merge and geometry-dependent gameplay placement remain blocked. Claude alone performs UEFN/editor implementation and tests.
