@@ -158,7 +158,7 @@ R2.2 definisce gli envelope delle camere ma non le partizioni/porte dei bagni. I
 
 ## 5. Decisioni numerate per il proprietario
 
-Le decisioni qui sotto riguardano solo le quote non ancora fissate. Le cinque decisioni FIX-01…FIX-05 non devono essere rivotate.
+Le decisioni qui sotto sono un riepilogo tematico. Per la risposta formale usare gli ID GEO-A01–GEO-A21 nel documento OWNER_DECISION_GATE_R2.2.md, che resta il registro canonico delle approvazioni; il presente pacchetto fornisce motivazioni, alternative e raccomandazioni. Le cinque decisioni FIX-01…FIX-05 non devono essere rivotate.
 
 | N. | Decisione richiesta | Valore proposto R2.2 | Alternative e conseguenze | Raccomandazione |
 |---:|---|---|---|---|
