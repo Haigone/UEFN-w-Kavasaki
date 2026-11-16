@@ -1,5 +1,16 @@
 # THE MOTEL: ROOM 13 — Fable production package
 
+## Current production authority — 2026-11-16
+- [PRODUCTION_COMPLETION_HANDOFF.md](PRODUCTION_COMPLETION_HANDOFF.md) — latest consolidated audit, remaining blockers, owner decisions and Claude handoff.
+- [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — current geometry document hierarchy.
+- [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) LD-GEO R2.2 — single candidate geometry proposal; **not owner-approved and not UEFN-verified**.
+- [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — binding responsibility and evidence rules.
+- [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — current executable order; section 19 supersedes earlier phase ordering where it conflicts.
+- [GAMEPLAY_ACCEPTANCE_TESTS.md](GAMEPLAY_ACCEPTANCE_TESTS.md) — test definitions GAT-001–GAT-052; all remain NOT RUN until Claude supplies evidence.
+
+Do not use CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md as a build authority; it is superseded by R2.2. Do not merge Environment Art PR #1 until it is reauthored against approved and editor-verified geometry.
+
+
 Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla realizzazione del gioco completo in **UEFN / Fortnite**.
 
 ## Collaborazione e responsabilità
