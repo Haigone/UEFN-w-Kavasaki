@@ -1,11 +1,11 @@
 # END-A02 — THE TRUTH EVIDENCE GATE
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **OWNER APPROVED — CANONICAL END-A02 DECISION (2026-11-16)**
+Status: **APPROVED UNDER EXPRESS OWNER DELEGATION — CANONICAL END-A02 DECISION (2026-11-16)**
 
 ## 1. Owner-approved decision
 
-The owner explicitly approved the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete` on 2026-11-16:
+Under the owner's express instruction to take the remaining decisions, the delegated Creative/Narrative Director approved the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete` on 2026-11-16:
 
 | Required evidence | Flag | Location | Narrative function |
 |---|---|---|---|
@@ -27,11 +27,11 @@ The following are not additional evidence pickups. They remain independent progr
 - `PhotoSequenceSolved`: mandatory ROOM 13 puzzle progression.
 - `OwnerIdentityRevealed` / `Room13RevealComplete`: identity-reveal presentation state.
 
-The truth ending must still require the existing independent gates: core progression, completed ROOM 13 reveal, service key/service route readiness and explicit team selection. Do not count the same action twice by adding these flags to the three-clue evidence formula.
+THE_TRUTH must still require the independent gates: FinaleReady, completed ROOM 13 reveal, Service Key/service route readiness and explicit team selection. It does not require CoreEscapeReady, CarKeys or vehicle ignition. Do not count the same action twice by adding progression flags to the three-clue evidence formula.
 
 ## 3. Availability and anti-softlock requirements
 
-If the owner approves this gate, each of the three required clues must satisfy all of the following before implementation can be considered complete:
+The approved gate requires each of the three clues to satisfy all of the following before implementation can be considered complete:
 
 1. The clue is reachable during normal mandatory exploration and remains recoverable until an ending is committed.
 2. No clue can be permanently missed because of a one-way door, timed event, chase, capture, player death/respawn, item consumption or another player's interaction.
@@ -60,6 +60,6 @@ If the owner approves this gate, each of the three required clues must satisfy a
 
 ## 6. Approval boundary
 
-**DECISION STATUS: APPROVED BY OWNER — 2026-11-16.** This file is the implementation contract for the three-clue THE_TRUTH evidence gate. This approval covers the evidence formula and its availability/recovery requirements; it does not independently approve unrelated narrative material.
+**DECISION STATUS: APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16.** This file is the implementation contract for the three-clue THE_TRUTH evidence gate. This approval covers the evidence formula and its availability/recovery requirements; it does not independently approve unrelated narrative material.
 
 Claude is authorized to implement the approved evidence gate, validate actual clue placement and event bindings in UEFN, and execute the tests in Section 5. Keep all three clues optional to core progression and ESCAPE. The authoritative approval record is `OWNER_DECISION_GATE_R2.2.md`.
