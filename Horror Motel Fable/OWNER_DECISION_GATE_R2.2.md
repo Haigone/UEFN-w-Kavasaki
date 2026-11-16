@@ -103,7 +103,7 @@ All GEO-A01–GEO-A21 approved as proposed, with these explicit final dispositio
 - GEO-A09: approve U-turn stair, 20 risers, two 1.20 m flights, nine 0.28 m goings per flight, 2.70×1.20 m landing at Z1.80; west lower flight rises south-to-north, east upper flight returns north-to-south; lower south approach 1.35 m, upper south approach 1.20 m.
 - GEO-A10–A15: approve wall thicknesses, vertical stack, continuous balcony, clipped corner pads, flat roof, opening schedule/secret route, and envelope-only room scope (bathrooms/interior fit-out remain excluded).
 - GEO-A16: both ground north pockets are sealed no-access reserves; structural floor collision retained, navmesh disabled.
-- GEO-A17: both upper side pockets are sealed no-access reserves; west pocket closed by UF-W-SEALED-RESERVE-WEST; east L-shaped pocket split into two registered components.
+- GEO-A17: both upper side pockets are sealed no-access reserves; west pocket closed by UF-W-SEALED-RESERVE-WEST; east L-shaped pocket split into two registered components and closed by UF-E-SEALED-RESERVE-WEST.
 - GEO-A18: U-SERVICE is sealed/no-access/no-navmesh; no door added.
 - GEO-A19: turning pads clipped to UF-SLAB boundary; no collision over courtyard void.
 - GEO-A20: 2.00 m gross / 1.70 m net cross-bays.
