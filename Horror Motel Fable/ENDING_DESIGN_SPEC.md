@@ -8,7 +8,7 @@ FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteR
 Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete. CoreEscapeReady = FinaleReady AND CarKeysObtained AND successful vehicle ignition (IN-019). CarKeys/ignition are required only for ESCAPE.
 
 ## ESCAPE
-**Eligibility:** CoreEscapeReady; CarKeysObtained; GatePowered; EndingSelected is NONE; team chooses vehicle escape. CarKeys and vehicle ignition are specific to ESCAPE.
+**Eligibility:** CoreEscapeReady; GatePowered; EndingSelected is NONE; team chooses vehicle escape. CarKeys may be collected after FinaleReady; pickup does not commit or select the ending.
 **Sequence:** reach car; activate escape; final chase through gate; play exact approved radio line “Thank you for staying at the Raven Motel. We hope to see you again soon.”; silhouette in rear seat or rear-view reflection; cut to black; ESCAPE title card.
 **Outcome:** players physically leave, but the final image implies the motel's influence persists.
 
