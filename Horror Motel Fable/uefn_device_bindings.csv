@@ -1,0 +1,14 @@
+Device_ID,Device_Type,Area,Configuration_Target,Verse_Owner,Event_or_Binding,Status
+DEV_SPAWN_01,Player Spawner,Parking,Team start and first-person entry,Game_Manager,OnPlayerSpawned,EDITOR-TEST REQUIRED
+DEV_TRIGGER_REGISTER,Trigger,Reception,Register puzzle start,Puzzle_Manager,StartRegisterPuzzle,EDITOR-TEST REQUIRED
+DEV_TIMER_CAPTURE,Timer,Capture loop,90s emergency recovery threshold,Player_Manager,CaptureRecovery,EDITOR-TEST REQUIRED
+DEV_TRACKER_MAIN,Tracker,Team objectives,Shared act objectives,Game_Manager,UpdateObjective,EDITOR-TEST REQUIRED
+DEV_BUTTON_FUSE_A,Conditional Button,Electrical,Require Fuse A,Puzzle_Manager,InsertFuseA,EDITOR-TEST REQUIRED
+DEV_BUTTON_FUSE_B,Conditional Button,Electrical,Require Fuse B,Puzzle_Manager,InsertFuseB,EDITOR-TEST REQUIRED
+DEV_BUTTON_FUSE_C,Conditional Button,Electrical,Require Fuse C,Puzzle_Manager,InsertFuseC,EDITOR-TEST REQUIRED
+DEV_AUDIO_RAIN,Audio Player,Exterior,Loop rain ambience,Audio_Manager,StartRain,EDITOR-TEST REQUIRED
+DEV_AUDIO_PHONE,Audio Player,Reception,Phone ring cue,Audio_Manager,PlayPhoneCue,EDITOR-TEST REQUIRED
+DEV_HUD_OBJECTIVE,HUD Message,All areas,English objective prompts,Game_Manager,ShowObjective,EDITOR-TEST REQUIRED
+DEV_BARRIER_ROOM13,Barrier,Secret route,Locked until clue solved,Puzzle_Manager,UnlockRoom13,EDITOR-TEST REQUIRED
+DEV_CINEMATIC_REVEAL,Cinematic Sequence,ROOM 13,Owner reveal beat,Cinematic_Manager,PlayOwnerReveal,EDITOR-TEST REQUIRED
+DEV_NPC_GUEST,NPC Spawner,Motel patrol routes,THE GUEST NPC implementation,Monster_Controller,SpawnGuest,ENGINE-VERIFIED REQUIRED
