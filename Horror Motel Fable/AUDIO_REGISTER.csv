@@ -1,16 +1,25 @@
-Audio_ID,Area,Emitter_Mode,Attachment_Target,X_m,Y_m,Z_m,Audio_Type,Loop,Attenuation_Radius_m,Trigger,Subtitle_Required,Status
-SFX_RAIN,Exterior,FIXED,NONE,42,30,3,Ambience,Yes,35,LevelStart,No,EDITOR-TEST REQUIRED
-SFX_NEON,NeonSign,FIXED,NONE,42,15,2.2,Loop,Yes,12,NeonActivated,No,EDITOR-TEST REQUIRED
-SFX_FLUORESCENT,Interior,FIXED,NONE,42,54,2.7,Hum,Yes,8,InteriorPowerStateActive,No,EDITOR-TEST REQUIRED
-SFX_PHONE,Reception,FIXED,NONE,31,54,1.1,OneShot,No,10,ReceptionEntered,No,EDITOR-TEST REQUIRED
-SFX_CRT,ROOM01,FIXED,NONE,15,24,1.2,Static,Yes,4,IN-030,No,EDITOR-TEST REQUIRED
-SFX_ROOM13_DRONE,ROOM13,FIXED,NONE,56,55,4.8,Ambience,Yes,7,OnEntry,No,EDITOR-TEST REQUIRED
-SFX_CHASE_STINGER,FinalEscape,FIXED,NONE,42,18,2,Stinger,No,18,ChaseStarted,No,EDITOR-TEST REQUIRED
-SFX_GUEST_FOOTSTEPS,GuestDynamic,ACTOR_ATTACHED,THE_GUEST_ACTOR,,,,Footsteps,No,12,NPCMovement,No,ENGINE-VERIFIED REQUIRED
-SFX_GUEST_BREATH,GuestDynamic,ACTOR_ATTACHED,THE_GUEST_ACTOR,,,,Breath,Yes,5,GuestNearEligiblePlayer,No,ENGINE-VERIFIED REQUIRED
+"Audio_ID","Area","Emitter_Mode","Attachment_Target","X_m","Y_m","Z_m","Audio_Type","Loop","Attenuation_Radius_m","Trigger","Subtitle_Required","Status"
+"SFX_RAIN","Exterior","FIXED","NONE","42","30","3","Ambience","Yes","35","LevelStart","No","EDITOR-TEST REQUIRED"
+"SFX_NEON","NeonSign","FIXED","NONE","42","15","2.2","Loop","Yes","12","NeonActivated","No","EDITOR-TEST REQUIRED"
+"SFX_FLUORESCENT","Interior","FIXED","NONE","42","54","2.7","Hum","Yes","8","InteriorPowerStateActive","No","EDITOR-TEST REQUIRED"
+"SFX_PHONE","Reception","FIXED","NONE","31","54","1.1","OneShot","No","10","ReceptionEntered","No","EDITOR-TEST REQUIRED"
+"SFX_CRT","ROOM01","FIXED","NONE","15","24","1.2","Static","Yes","4","IN-030","No","EDITOR-TEST REQUIRED"
+"SFX_ROOM13_DRONE","ROOM13","FIXED","NONE","56","55","4.8","Ambience","Yes","7","OnEntry","No","EDITOR-TEST REQUIRED"
+"SFX_CHASE_STINGER","FinalEscape","FIXED","NONE","42","18","2","Stinger","No","18","ChaseStarted","No","EDITOR-TEST REQUIRED"
+"SFX_GUEST_FOOTSTEPS","GuestDynamic","ACTOR_ATTACHED","THE_GUEST_ACTOR","","","","Footsteps","No","12","NPCMovement","No","ENGINE-VERIFIED REQUIRED"
+"SFX_GUEST_BREATH","GuestDynamic","ACTOR_ATTACHED","THE_GUEST_ACTOR","","","","Breath","Yes","5","GuestNearEligiblePlayer","No","ENGINE-VERIFIED REQUIRED"
 "SFX_PHONE_VO","Reception","FIXED","NONE","31","54","1.1","VO","No","10","IN-002","Yes","ASSET REQUIRED"
 "SFX_FUSE_INSERT","Utility","ACTOR_ATTACHED","ELECTRICAL_PANEL_ACTOR","","","","OneShot","No","6","IN-011","No","ASSET REQUIRED"
 "SFX_BREAKER_ACTIVATE","Utility","ACTOR_ATTACHED","ELECTRICAL_PANEL_ACTOR","","","","OneShot","No","8","IN-012","No","ASSET REQUIRED"
 "SFX_CAPTURE_STINGER","GuestDynamic","ACTOR_ATTACHED","THE_GUEST_ACTOR","","","","OneShot","No","12","CaptureAccepted","No","ASSET REQUIRED"
 "SFX_GATE_MOTOR","ServiceRoute","ACTOR_ATTACHED","GATE_ACTOR","","","","OneShot","No","16","IN-018","No","ASSET REQUIRED"
 "VO_ESCAPE_RADIO","Vehicle","ACTOR_ATTACHED","VEHICLE_RADIO_ACTOR","","","","VO","No","15","EndingCommitted_ESCAPE","Yes","ASSET REQUIRED"
+"SFX_WIND_ROADSIDE","Exterior","FIXED","NONE","42","18","2","Ambience","Yes","30","SessionStarted","No","ASSET REQUIRED"
+"SFX_DESK_BELL","Reception","FIXED","NONE","29","54","1.2","OneShot","No","5","DeskBellInteraction","No","ASSET REQUIRED"
+"SFX_PLAYER_WALK","PlayerDynamic","ACTOR_ATTACHED","PLAYER_ACTOR","","","","Footsteps","Yes","5","PlayerWalkState","No","ENGINE-VERIFIED REQUIRED"
+"SFX_PLAYER_RUN","PlayerDynamic","ACTOR_ATTACHED","PLAYER_ACTOR","","","","Footsteps","Yes","8","PlayerRunState","No","ENGINE-VERIFIED REQUIRED"
+"SFX_GUEST_CLOTH","GuestDynamic","ACTOR_ATTACHED","THE_GUEST_ACTOR","","","","Foley","No","6","GuestLocomotionState","No","ENGINE-VERIFIED REQUIRED"
+"SFX_DOOR_LOCK","DoorDynamic","ACTOR_ATTACHED","DOOR_ACTOR","","","","OneShot","No","6","DoorLocked","No","ASSET REQUIRED"
+"SFX_DOOR_CREAK","DoorDynamic","ACTOR_ATTACHED","DOOR_ACTOR","","","","OneShot","No","6","DoorOpened","No","ASSET REQUIRED"
+"SFX_CEILING_FOOTSTEPS","ROOM05","ACTOR_ATTACHED","ROOM05_CEILING_EMITTER","","","","Footsteps","No","8","CINE-005","No","ASSET REQUIRED"
+"VO_TRUTH_RECORDER","ServiceRoute","ACTOR_ATTACHED","TRUTH_RECORDER_ACTOR","","","","VO","No","10","CINE-010","Yes","ASSET REQUIRED"
