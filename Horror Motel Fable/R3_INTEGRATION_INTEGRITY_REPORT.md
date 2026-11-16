@@ -54,7 +54,7 @@ All 183 furniture footprints now fit the assigned room's axis-aligned envelope u
 | Puzzle register | 5 rows; PZ-01–PZ-05; unique IDs | PASS — structural |
 | Event/interaction crosswalk | 32 unique interaction rows; every IN-001–IN-032 present exactly once | PASS — mapping coverage |
 | Event catalog | EVT-001–EVT-051; 51 unique IDs | PASS — structural |
-| Device binding register | 49 rows; 49 unique Device_IDs | PASS — structural |
+| Device binding register | 50 rows; 50 unique Device_IDs | PASS — structural |
 | UI string table | 100 unique String_ID rows | PASS — structural |
 
 ### Logic conflicts resolved in this pass
