@@ -1,38 +1,38 @@
-# GEOMETRY VALIDATION REPORT — REVISION E1
+# GEOMETRY VALIDATION REPORT — LD-GEO R2.0
+Audit date 2026-11-16. Result: DOCUMENT AUDIT COMPLETE; GEOMETRY NOT APPROVED.
 
-**Result: NOT ACCEPTED FOR FINAL BUILD.** A dimensioned proposal and coordinate schedules have been added, but there are unresolved route and junction issues. This report is deliberately conservative.
+## Conflict register
+| ID | Conflict | R2.0 resolution | Remaining proof |
+|---|---|---|---|
+| C01 | Ground room positions/corridor side differ | Select E1 allocation | Wall openings and circulation |
+| C02 | Reception 14.00 vs 17.40 m | Select 17.40 m | Internal partition/furniture |
+| C03 | Office/storage/electrical differ | Select E1 | Shared wall and service route |
+| C04 | Upper six rooms in north wing vs side wings | Select E1 side-wing rooms 07–12 | Slab and wall support |
+| C05 | ROOM 13 east pocket vs north connector | Select E1 north connector pocket | Section and route collision |
+| C06 | Stair X10–14/Y44–48 vs X21–27/Y51.2–59 | Select north-west connector reservation | Stair flight layout |
+| C07 | Balcony 2.50 vs 1.50 m | 2.50 m target | Edge polygon/guardrail |
+| C08 | Upper floor 3.50 vs 3.60 m | Select 3.60 m | Slab/ceiling stack |
+| C09 | Ceiling/roof elevations inconsistent | Clear-height targets only; datum stack unresolved | Section and editor |
+| C10 | ROOM 12 route has undefined 0.30 m junction | Add vestibule and explicit openings | Wall segmentation/collision |
+| C11 | 20 risers and 5.32 m run underspecified | Keep 20×0.18 m rise; withhold total run | Tread/landing calculation |
+| C12 | Room rectangles used as solid overlapping boxes | FIF convention; shared walls once | Polygon intersection check |
 
-## Completed as document evidence
-- Site datum and unit conversion defined.
-- Connected U-shaped footprint described.
-- Ground-floor and upper-floor room bounds listed.
-- Furniture placement table generated for all 13 rooms (target coordinates).
-- Initial door/window schedule generated.
-- Vertical elevations and stair target specified.
+## Arithmetic
+Site area 6,048 m². Courtyard nominal area 1,320 m². Reception nominal area 198.36 m². Office 102.60 m². Storage 52.38 m². Electrical 209.76 m². ROOM 13 126.42 m². These are nominal rectangular areas before partitions/returns. 20×0.18 m = 3.60 m rise. Twenty risers do not imply twenty treads.
 
-## Blocking issues to resolve before greybox acceptance
-1. ROOM 12 to ROOM 13 secret corridor: current description has a discontinuity risk at the east wing/north connector junction. Build a single walkable polygon and revise both room bounds and opening coordinates. Do not fake the route.
-2. North connector room divisions: check wall intersections at reception/office/storage/electrical and both wing junctions. Room schedules are clear-space bounds; wall centre-lines still need a full solid wall schedule.
-3. Stair: target 20 risers at 0.18 m gives 3.60 m, but two flights and intermediate landing require a resolved plan footprint and exact riser numbering. Verify headroom and collision.
-4. Balcony: define exact slab polygon, rail segments, post spacing, door thresholds and drainage; current width is a target only.
-5. Door/window placements: schedule centres need exact host wall alignment and opening cut geometry. Some room door orientations must be checked against actual corridor face and swing.
-6. Furniture: generated coordinates are proposed. Check each item against doors, bathroom partitions, player capsule and 0.90 m clear path; bathroom zones are not yet partitioned in the floor plan.
-7. Site arrival: add exact parking, car, neon sign, gate, generator, bins, vending machine and courtyard prop coordinates to the master schedule.
+## Risks
+- U-footprint corners require polygon union and no duplicate collision.
+- Room bounds do not yet define every partition, wall return or bathroom.
+- Storage door/partition arrangement and office/service connectivity require a wall plan.
+- ROOM 12 panel needs clear vestibule depth and a fully dimensioned opening junction.
+- ROOM 13 entry approach and two-player photo inspection must preserve egress.
+- Stair reservation overlaps upper connector program conceptually; exact stair and ground-floor use below need coordination.
+- Balcony edge and guardrail are not yet defined as continuous geometry.
+- Windows must not overlap concealed panel or create unintended exits.
+- Electrical room below ROOM 13 requires continuous slab and separate collision volumes.
 
-## QA checks required in UEFN
-- Render both floors as top-down orthographic screenshots.
-- Validate all room polygons with no unintended overlaps.
-- Walk every mandatory route in first person.
-- Run a capsule sweep through every door and stair.
-- Test THE GUEST navigation through every intended chase loop.
-- Verify line of sight is blocked by actual walls.
-- Verify secret panel can open without intersecting furniture.
-- Confirm two players can inspect ROOM 13 photo wall without blocking exit.
+## Test matrix
+Solo mandatory progression — EDITOR-TEST REQUIRED. Two-player passing/inspection — EDITOR-TEST REQUIRED. Four-player reception and ROOM 13 flow — EDITOR-TEST REQUIRED. First-person door/camera/capsule — EDITOR-TEST REQUIRED. Stair ascent/headroom — EDITOR-TEST REQUIRED. Balcony rail — EDITOR-TEST REQUIRED. THE GUEST patrol/LOS/chase/recovery — EDITOR-TEST REQUIRED. Disconnect/rejoin and pickup persistence — EDITOR-TEST REQUIRED. Collision seams and floor thresholds — EDITOR-TEST REQUIRED.
 
-## Status vocabulary
-- COMPLETED WITH EVIDENCE: artifact exists and its content can be inspected.
-- PRESENT BUT UNVERIFIED: specification exists, no editor/playtest evidence.
-- INCOMPLETE: required artifact or information is absent.
-- BLOCKED: known unresolved dependency prevents acceptance.
-
-No UEFN editor verification has been performed by this document generation.
+## Approval
+NOT APPROVED for final environmental asset production. Greybox only as a validation method after polygons, wall centre-lines, stair and secret route are dimensioned. No ENGINE-VERIFIED items exist in this audit.
