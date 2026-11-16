@@ -15,11 +15,11 @@ Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePo
 ## THE TRUTH
 **Eligibility:** FinaleReady; TruthChainComplete; Room13RevealComplete; ServiceKeyObtained; ServiceRouteReady; explicit team choice; EndingSelected is NONE. Does not require CarKeys or vehicle ignition.
 **Sequence:** after the session commits THE_TRUTH, enter the service control room with the Service Key. The four ROOM 13 photographs appear on the evidence rail in their solved chronology (1968/1974/1981/1986); no second photo puzzle or inventory transfer is required. Play the night manager's 02:13 recorder entry with subtitles; THE GUEST appears at the opposite corridor end; the owner portrait and THE GUEST align in a reflection; players activate the dedicated `NIGHT AUDIT — END CYCLE` breaker through IN-032. Lights go out room by room while the neon remains at 02:13; the register prints `NO VACANCY. NO OWNER. NO GUEST.`; cut to THE TRUTH title card.
-**Outcome:** the current night-loop is stopped and exposed, but the motel remains physically present; its source is not proven destroyed. This is distinct from ESCAPE and requires no car, car keys, ignition or chase.
+**Outcome:** the team stops the current night-loop and exposes it, but the motel remains physically present and its source is not proven destroyed. All players remain together in the service control room after blackout; nobody is killed, sacrificed or selected as a replacement. This is distinct from ESCAPE and requires no car, car keys, ignition or chase.
 
 ## THE NEW GUEST
 **Eligibility:** FinaleReady; EndingSelected is NONE; invitation must receive unanimous explicit affirmative confirmation. NewGuestAccepted is the resolver output set only after the quorum succeeds. Does not require CarKeys or vehicle ignition.
-**Sequence:** present invitation; if every connected eligible player explicitly accepts, commit one shared session-wide outcome; motel resets; the register gains a blank NEXT GUEST line and the ROOM 13 key returns to the rack; neon lights at 02:13; NEW GUEST title card. No individual player is selected as keeper or sacrificed.
+**Sequence:** present invitation; if every connected eligible player explicitly accepts, commit one shared session-wide outcome; the whole team willingly becomes the next collective caretaker/guest group (no individual is selected or sacrificed); motel resets; the register gains a blank NEXT GUEST line and the ROOM 13 key returns to the rack; neon lights at 02:13; NEW GUEST title card.
 
 ## Deterministic resolver
 
