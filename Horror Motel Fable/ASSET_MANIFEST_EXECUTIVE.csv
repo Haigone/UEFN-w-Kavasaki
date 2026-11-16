@@ -1,42 +1,95 @@
-"Asset_ID","Category","Description","Dimensions_m","Material_or_Map","Quantity_Target","Priority","Status"
-"ENV_SIGN_RAVEN","Mesh","Freestanding Raven Motel neon sign","3.8x0.35x1.6","Neon red/blue emissive","1","P0","PROPOSED TARGET"
-"ENV_CAR_1986","Mesh","1980s American sedan broken down","4.8x1.9x1.45","Paint glass rubber chrome","1","P0","PROPOSED TARGET"
-"PROP_RECEPTION_COUNTER","Mesh","Reception counter","3.6x0.9x1.1","Dark stained wood","1","P0","PROPOSED TARGET"
-"PROP_KEY_RACK","Mesh","Wall key rack","1.2x0.12x0.8","Dark wood brass","1","P0","PROPOSED TARGET"
-"PROP_CRT_01","Mesh","CRT television","0.55x0.5x0.5","Plastic glass emissive","13","P1","PROPOSED TARGET"
-"PROP_BED_DOUBLE","Mesh","Double motel bed","1.6x2.1x0.55","Fabric wood","12","P1","PROPOSED TARGET"
-"PROP_WARDROBE","Mesh","Guest wardrobe","1.2x0.6x2.0","Dark wood","13","P1","PROPOSED TARGET"
-"PROP_PHONE","Mesh","Rotary motel phone","0.2x0.22x0.15","Plastic","13","P1","PROPOSED TARGET"
-"PROP_FUSE_PANEL","Mesh","Three-fuse electrical panel","1.2x0.25x1.4","Painted metal","1","P0","PROPOSED TARGET"
-"PROP_PHOTO_FRAME","Mesh","Guest/owner photo frame","0.3x0.05x0.4","Wood glass paper","30","P1","PROPOSED TARGET"
-"PROP_CHILD_TOYS","Mesh","1980s toys","Variable","Painted plastic/wood","8","P2","PROPOSED TARGET"
-"CHAR_GUEST_LOD0","Character","THE GUEST hero skeletal mesh","2.60m tall","See GUEST_MODEL_SPEC.md","1","P0","NOT CREATED"
-"CHAR_GUEST_LOD1","Character","THE GUEST LOD1","2.60m tall","Reduced mesh","1","P1","NOT CREATED"
-"CHAR_GUEST_LOD2","Character","THE GUEST LOD2","2.60m tall","Reduced mesh","1","P1","NOT CREATED"
-"MAT_CARPET","Material","Worn burgundy carpet","Tiling 2m","BaseColor Normal Roughness","1","P1","NOT CREATED"
-"MAT_WALLPAPER","Material","Yellowed beige wallpaper","Tiling 1.5m","BaseColor Normal Roughness","1","P1","NOT CREATED"
-"MAT_WET_ASPHALT","Material","Rain-soaked parking asphalt","Tiling 4m","BaseColor Normal Roughness","1","P1","NOT CREATED"
-"SFX_RAIN","Audio","Continuous rain bed","Loop","Spatial ambience","1","P0","NOT CREATED"
-"SFX_NEON","Audio","Neon transformer buzz","Loop","3D attenuation","1","P1","NOT CREATED"
-"SFX_CRT","Audio","CRT static and tuning","One-shot/loop","3D attenuation","1","P1","NOT CREATED"
-"SFX_PHONE","Audio","Telephone ring and voice cue","One-shot","Subtitle paired","1","P0","NOT CREATED"
-"SFX_FLUORESCENT","Audio","Interior fluorescent electrical hum","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_ROOM13_DRONE","Audio","ROOM 13 low-frequency ambience","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P1","NOT CREATED"
-"SFX_CHASE_STINGER","Audio","Chase start stinger","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_GUEST_FOOTSTEPS","Audio","THE GUEST locomotion footsteps","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P1","NOT CREATED"
-"SFX_GUEST_BREATH","Audio","THE GUEST proximity breath","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P1","NOT CREATED"
-"SFX_PHONE_VO","Audio","Reception phone welcome voice line","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_FUSE_INSERT","Audio","Fuse insertion interaction sound","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_BREAKER_ACTIVATE","Audio","Electrical breaker activation sound","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_CAPTURE_STINGER","Audio","Player capture stinger","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_GATE_MOTOR","Audio","Service gate motor","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P1","NOT CREATED"
-"VO_ESCAPE_RADIO","Audio","ESCAPE ending radio voice line","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_WIND_ROADSIDE","Audio","Roadside wind ambience loop","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
-"SFX_DESK_BELL","Audio","Reception desk bell interaction","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P3","NOT CREATED"
-"SFX_PLAYER_WALK","Audio","Player walking footsteps","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P3","NOT CREATED"
-"SFX_PLAYER_RUN","Audio","Player sprinting footsteps","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_GUEST_CLOTH","Audio","THE GUEST clothing movement foley","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_DOOR_LOCK","Audio","Door lock engagement sound","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_DOOR_CREAK","Audio","Door opening creak","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P2","NOT CREATED"
-"SFX_CEILING_FOOTSTEPS","Audio","ROOM 05 overhead footsteps scare","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P1","NOT CREATED"
-"VO_TRUTH_RECORDER","Audio","THE TRUTH recorder voice line","N/A","AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv","1","P0","NOT CREATED"
+Asset_ID,Category,Description,Dimensions_m,Material_or_Map,Quantity_Target,Priority,Status
+ENV_SIGN_RAVEN,Mesh,Freestanding Raven Motel neon sign,3.8x0.35x1.6,Neon red/blue emissive,1,P0,PROPOSED TARGET
+ENV_CAR_1986,Mesh,1980s American sedan broken down,4.8x1.9x1.45,Paint glass rubber chrome,1,P0,PROPOSED TARGET
+PROP_RECEPTION_COUNTER,Mesh,Reception counter,3.6x0.9x1.1,Dark stained wood,1,P0,PROPOSED TARGET
+PROP_KEY_RACK,Mesh,Wall key rack,1.2x0.12x0.8,Dark wood brass,1,P0,PROPOSED TARGET
+PROP_CRT_01,Mesh,CRT television,0.55x0.5x0.5,Plastic glass emissive,13,P1,PROPOSED TARGET
+PROP_BED_DOUBLE,Mesh,Double motel bed,1.6x2.1x0.55,Fabric wood,12,P1,PROPOSED TARGET
+PROP_WARDROBE,Mesh,Guest wardrobe,1.2x0.6x2.0,Dark wood,13,P1,PROPOSED TARGET
+PROP_PHONE,Mesh,Rotary motel phone,0.2x0.22x0.15,Plastic,13,P1,PROPOSED TARGET
+PROP_FUSE_PANEL,Mesh,Three-fuse electrical panel,1.2x0.25x1.4,Painted metal,1,P0,PROPOSED TARGET
+PROP_PHOTO_FRAME,Mesh,Guest/owner photo frame,0.3x0.05x0.4,Wood glass paper,30,P1,PROPOSED TARGET
+PROP_CHILD_TOYS,Mesh,1980s toys,Variable,Painted plastic/wood,8,P2,PROPOSED TARGET
+CHAR_GUEST_LOD0,Character,THE GUEST hero skeletal mesh,2.60m tall,See GUEST_MODEL_SPEC.md,1,P0,NOT CREATED
+CHAR_GUEST_LOD1,Character,THE GUEST LOD1,2.60m tall,Reduced mesh,1,P1,NOT CREATED
+CHAR_GUEST_LOD2,Character,THE GUEST LOD2,2.60m tall,Reduced mesh,1,P1,NOT CREATED
+MAT_CARPET,Material,Worn burgundy carpet,Tiling 2m,BaseColor Normal Roughness,1,P1,NOT CREATED
+MAT_WALLPAPER,Material,Yellowed beige wallpaper,Tiling 1.5m,BaseColor Normal Roughness,1,P1,NOT CREATED
+MAT_WET_ASPHALT,Material,Rain-soaked parking asphalt,Tiling 4m,BaseColor Normal Roughness,1,P1,NOT CREATED
+SFX_RAIN,Audio,Continuous rain bed,Loop,Spatial ambience,1,P0,NOT CREATED
+SFX_NEON,Audio,Neon transformer buzz,Loop,3D attenuation,1,P1,NOT CREATED
+SFX_CRT,Audio,CRT static and tuning,One-shot/loop,3D attenuation,1,P1,NOT CREATED
+SFX_PHONE,Audio,Telephone ring and voice cue,One-shot,Subtitle paired,1,P0,NOT CREATED
+SFX_FLUORESCENT,Audio,Interior fluorescent electrical hum,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_ROOM13_DRONE,Audio,ROOM 13 low-frequency ambience,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P1,NOT CREATED
+SFX_CHASE_STINGER,Audio,Chase start stinger,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_GUEST_FOOTSTEPS,Audio,THE GUEST locomotion footsteps,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P1,NOT CREATED
+SFX_GUEST_BREATH,Audio,THE GUEST proximity breath,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P1,NOT CREATED
+SFX_PHONE_VO,Audio,Reception phone welcome voice line,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_FUSE_INSERT,Audio,Fuse insertion interaction sound,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_BREAKER_ACTIVATE,Audio,Electrical breaker activation sound,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_CAPTURE_STINGER,Audio,Player capture stinger,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_GATE_MOTOR,Audio,Service gate motor,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P1,NOT CREATED
+VO_ESCAPE_RADIO,Audio,ESCAPE ending radio voice line,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_WIND_ROADSIDE,Audio,Roadside wind ambience loop,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+SFX_DESK_BELL,Audio,Reception desk bell interaction,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P3,NOT CREATED
+SFX_PLAYER_WALK,Audio,Player walking footsteps,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P3,NOT CREATED
+SFX_PLAYER_RUN,Audio,Player sprinting footsteps,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_GUEST_CLOTH,Audio,THE GUEST clothing movement foley,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_DOOR_LOCK,Audio,Door lock engagement sound,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_DOOR_CREAK,Audio,Door opening creak,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P2,NOT CREATED
+SFX_CEILING_FOOTSTEPS,Audio,ROOM 05 overhead footsteps scare,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P1,NOT CREATED
+VO_TRUTH_RECORDER,Audio,THE TRUTH recorder voice line,N/A,AUDIO_REGISTER.csv / AUDIO_CUE_SHEET.csv,1,P0,NOT CREATED
+ENV_MOD_WALL_KIT,Environment,Exterior interior straight wall corner endcap modules,TBD,SEE BACKLOG,1 kit,P0,NOT SOURCED
+ENV_MOD_FLOOR_KIT,Environment,Ground upper roof slab and trim modules,TBD,SEE BACKLOG,1 kit,P0,NOT SOURCED
+ENV_MOD_DOOR_KIT,Environment,Standard service double and secret door kit,TBD,SEE BACKLOG,1 kit,P0,NOT SOURCED
+ENV_MOD_WINDOW_KIT,Environment,Window frames dirty glass sills shutters,TBD,SEE BACKLOG,1 kit,P1,NOT SOURCED
+ENV_MOD_STAIR_BALCONY,Environment,Two flight stair landing balcony guardrails clipped pads,TBD,SEE BACKLOG,1 kit,P0,NOT SOURCED
+ENV_MOD_ROOF_DRAIN,Environment,Roof parapet drainage downspouts,TBD,SEE BACKLOG,1 kit,P2,NOT SOURCED
+ENV_PARKING_SET,Environment,Parking asphalt curbs wheel stops puddles road shoulder,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
+ENV_RAIN_SET,VFX,Exterior rain and puddle dressing,TBD,SEE BACKLOG,1 set,P2,NOT SOURCED
+PROP_RECEPTION,Prop,Reception counter desk bell shelving chairs,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+PROP_REGISTER_KEYPAD,Prop,Guest register pen keypad and drawer lock,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+PROP_OFFICE_PHOTO_BOARD,Prop,Office chronology board four photos,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_ROOM13_PHOTO_BOARD,Prop,ROOM13 chronology board and evidence rail,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_CRT,Prop,CRT monitor controllable feed materials,TBD,SEE BACKLOG,13,P1,NOT SOURCED
+PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,TBD,SEE BACKLOG,13,P1,NOT SOURCED
+PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,TBD,SEE BACKLOG,12,P1,NOT SOURCED
+PROP_WARDROBE_KIT,Prop,Guest wardrobe and approved hiding variants,TBD,SEE BACKLOG,13,P1,NOT SOURCED
+PROP_DESK_CHAIR_KIT,Prop,Desk chair lamp stationery,TBD,SEE BACKLOG,13 sets,P2,NOT SOURCED
+PROP_BATHROOM_KIT,Prop,Vanity toilet shower mirror tile,TBD,SEE BACKLOG,12 sets,P2,NOT SOURCED
+PROP_FUSE_PICKUPS,Prop,Distinct Fuse A B C pickups,TBD,SEE BACKLOG,3,P0,NOT SOURCED
+PROP_SCREWDRIVER,Prop,Reusable screwdriver and tool board,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_BATTERY,Prop,Flashlight battery and recovery battery,TBD,SEE BACKLOG,2,P0,NOT SOURCED
+PROP_FLASHLIGHT,Prop,Player flashlight presentation,TBD,SEE BACKLOG,1 per player,P0,NOT SOURCED
+PROP_DIARY,Prop,ROOM09 night manager diary,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_CHILD_DRAWING,Prop,ROOM11 child's drawing,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_MISSING_GUEST_ARCHIVE,Prop,ROOM06 missing guest photo archive,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_ROOM04_RECORDING,Prop,ROOM04 phone recording,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+PROP_SECRET_PANEL,Prop,ROOM12 concealed panel and vestibule hardware,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_SERVICE_CONTROL,Prop,Service key lock gate control and Night Audit breaker,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+PROP_OWNER_PORTRAIT,Prop,M Harrow portrait and reflection composition,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+CHAR_GUEST_CONCEPT,Character,THE GUEST turnaround concept pack,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+CHAR_GUEST_MESH,Character,THE GUEST LOD0 skeletal mesh 2.60m,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+CHAR_GUEST_RIG,Character,THE GUEST skeleton retarget and bind pose,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+CHAR_GUEST_ANIM_IDLE,Animation,Idle breathing near still 6 to 10 seconds,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_WALK,Animation,Slow walk 2 to 3 second cycle,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_TURN,Animation,Head turn 1.2 to 2 seconds,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_INVESTIGATE,Animation,Investigate lean 1.5 to 2.5 seconds,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_CHASE,Animation,Chase run 0.8 to 1.2 second cycle,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_CAPTURE,Animation,Reach capture 1 to 1.5 seconds,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+CHAR_GUEST_ANIM_SEARCH,Animation,Search lean 2 to 3 seconds,TBD,SEE BACKLOG,1,P2,NOT SOURCED
+CHAR_GUEST_ANIM_RETREAT,Animation,Retreat disappear 1.5 to 3 seconds,TBD,SEE BACKLOG,1,P2,NOT SOURCED
+CHAR_GUEST_ANIM_BALCONY,Animation,Balcony still silhouette 4 to 8 seconds,TBD,SEE BACKLOG,1,P2,NOT SOURCED
+CHAR_GUEST_ANIM_REVEAL,Animation,Owner reveal pose 3 to 5 seconds,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+MAT_MOTEL_SURFACE_SET,Material,Carpet wallpaper wood tile concrete metal glass fabric asphalt,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
+MAT_GUEST_SKIN_CLOTH,Material,THE GUEST skin shirt trousers shoes badge,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
+VFX_NEON_FLICKER,VFX,Controlled motel neon flicker,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+VFX_POWER_TRANSITION,VFX,Power restore and room by room blackout,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
+VFX_REFLECTION_SCARE,VFX,ROOM03 mirror and THE GUEST reveal reflection,TBD,SEE BACKLOG,2,P2,NOT SOURCED
+AUDIO_AMBIENCE_SET,Audio,Rain wind neon fluorescent ROOM13 drone,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+AUDIO_FOLEY_SET,Audio,Player Guest footsteps breath cloth doors phone CRT breaker capture chase gate,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
+VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,TBD,SEE BACKLOG,1 set,P2,NOT SOURCED
