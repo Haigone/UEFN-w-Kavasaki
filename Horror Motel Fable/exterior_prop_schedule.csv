@@ -1,0 +1,13 @@
+Prop_ID,Area,X_m,Y_m,Z_m,Yaw_deg,Width_m,Depth_m,Height_m,Collision,Gameplay_Function,Status
+EXT_BROKEN_CAR,SouthParking,37,8,0,90,4.8,1.9,1.45,Yes,Opening narrative setpiece,PROPOSED TARGET
+EXT_NEON_SIGN,SouthApproach,42,15,2.2,0,3.8,0.35,1.6,Yes,Raven Motel landmark,PROPOSED TARGET
+EXT_GATE,SouthDrive,42,18,0,0,4.0,0.25,2.2,Yes,Final escape gate,PROPOSED TARGET
+EXT_VENDING,WestCourtyard,22.5,27,0,90,1.2,0.8,1.9,Yes,Optional supplies/story prop,PROPOSED TARGET
+EXT_DUMPSTER,EastService,72,22,0,0,2.0,1.0,1.4,Yes,Environmental dressing,PROPOSED TARGET
+EXT_LAMP_01,SouthParking,25,12,0,0,0.25,0.25,4.0,Yes,Cold blue pool,PROPOSED TARGET
+EXT_LAMP_02,SouthParking,59,12,0,0,0.25,0.25,4.0,Yes,Cold blue pool,PROPOSED TARGET
+EXT_LAMP_03,Courtyard,25,43,0,0,0.25,0.25,4.0,Yes,Courtyard fill,PROPOSED TARGET
+EXT_LAMP_04,Courtyard,59,43,0,0,0.25,0.25,4.0,Yes,Courtyard fill,PROPOSED TARGET
+EXT_CAR_KEYS,FinalEscape,37,8,0.8,0,0.1,0.05,0.03,No,Final escape item,PROPOSED TARGET
+EXT_GENERATOR,ServiceYard,70,54,0,180,1.4,0.8,1.2,Yes,Gate power objective,PROPOSED TARGET
+EXT_SIGN_TRIGGER,SouthApproach,42,15,0,0,1,1,1,No,02:13 neon scare trigger,EDITOR-TEST REQUIRED
