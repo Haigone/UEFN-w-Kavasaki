@@ -56,3 +56,11 @@ Fuse panel 1.20×0.25×1.40; labelled A/B/C sockets; workbench 1.50×0.70×0.90;
 
 ## Prop placement authority
 Use PROP_PLACEMENT_REGISTER.csv as the placement index. Existing coordinates from room_furnishing_schedule.csv and exterior_prop_schedule.csv remain PROPOSED TARGET until geometry and first-person collision tests pass. Do not infer absent prop coordinates.
+
+
+## Revision 2.0 — placement and geometry override
+Geometry authority: `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0. ROOM 13 is the north connector pocket (X49.00..63.70, Y51.10..59.70) with a south-wall entry near X56.35/Y50.95. ROOM 12 concealed panel is on the north wall near X68.60/Y47.55. Preserve the vestibule and continuous return route specified in the Claude Environment Art Execution Plan. The previous E1 wording about an unspecified hidden route is superseded.
+The balcony target is 2.50m clear, not 1.50m. The vertical levels are ground FFL 0.00m and upper FFL 3.60m; clear heights 3.00m / 2.80m target. Do not use the legacy 3.20m wall-height assumption as approved.
+The furnishing schedule is not a collision-approved final placement. Claude must check every bounding box and rotated footprint against R2 room FIF bounds, bathroom partitions, door swing, 0.90m path, 1.20m interaction zones, photo viewing and exit. ROOM 13 photos must remain simultaneously inspectable by two players while leaving the south exit clear. ROOM 05 remains intentionally sparse.
+Shared areas require explicit furniture placements for reception, office, storage and electrical room; the current room furnishing CSV does not provide a complete placed-object schedule for all these shared props. Add rows only after geometry reconciliation. Never invent final coordinates.
+
