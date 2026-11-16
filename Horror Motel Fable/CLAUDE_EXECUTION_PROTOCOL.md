@@ -76,7 +76,7 @@ No unsupported "done", "tested", "compiled" or "ready to publish" claims.
 4. If evidence is incomplete or a test fails, ChatGPT prepares a corrective packet; Claude performs the next editor operation.
 5. A task advances only when its gate is satisfied. Documentation cannot substitute for editor evidence.
 
-## 7. Current production gate — R3
+## 6. Current production gate — R3
 The geometry design source of truth is LD-GEO R2.3 / GEO-A01–GEO-A21 and is already owner-approved as a design baseline. Do not reopen that approval or block implementation waiting for another geometry decision. The baseline is NOT editor-verified: Claude must build the greybox from the controlled R2.3 schedules, measure actual pivots/collision/clearance in UEFN, and record deviations as defects. Do not alter structural dimensions silently; a structural change requires an R2.4 proposal and owner approval.
 
 The first operational gate is native project/editor discovery and backup (GATE A in CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md). Immediately after that, rerun the repository checker with `python tools/validate_r3_repository.py` from the Horror Motel Fable directory and refresh the static report. A static pass does not replace editor or gameplay evidence.
