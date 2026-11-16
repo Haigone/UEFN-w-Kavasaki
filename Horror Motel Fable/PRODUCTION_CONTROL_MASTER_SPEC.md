@@ -80,17 +80,15 @@ END-A01 co-op ending resolver is approved:
 
 This decision is controlling even if older documents state different vote rules.
 
-## 7. END-A02 and narrative decision boundary
+## 7. Narrative and ending decision boundary — CURRENT
 
-END-A02 is not approved. A detailed recommended three-clue evidence gate is in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md:
-- ROOM 09 diary;
-- ROOM 11 child's drawing;
-- ROOM 06 missing-guest photo archive.
+**NCP-A01–A09 APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16.** `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md` is the canonical English source for clue text, puzzle deductions, prop captions and all three ending scripts/beats. The historical filename is retained for stable links.
 
-If approved, these three alone set TruthChainComplete. SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed/Room13RevealComplete remain separate progression/reveal gates, not duplicate evidence pickups.
+**END-A02 APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16.** `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. The three discoveries are mandatory only for THE_TRUTH, optional for core progression and ESCAPE. Keep SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete as separate progression/reveal gates.
 
-NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md is complete draft content but remains proposal-only. The consolidated owner decision packet is OWNER_DECISION_PACKET_R1.md. No proposal becomes canon until the owner explicitly approves its listed scope.
+**END-A01 remains separately owner-approved and unchanged.** ENDING_IMPLEMENTATION_SPEC.md and OWNER_DECISION_GATE_R2.2.md are the authority for quorum and atomic ending commit. IN-032 is the approved dedicated Night Audit interaction after THE_TRUTH is committed.
 
+No further owner creative approval is pending for NCP-A01–A09 or END-A02. UEFN implementation, imported assets, engine/API feasibility, runtime tests and publication remain unverified and require their own evidence/gates.
 ## 8. State ownership and transaction invariants
 
 | Data | Sole logical owner | Invariant |
