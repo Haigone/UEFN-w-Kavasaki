@@ -266,3 +266,17 @@ Epic's documentation states that UEFN Source listings provide the publisher proj
 R2.1 is a materially improved geometry design handoff, not a final approved or engine-verified build. The revised Environment Art package is useful as a sourcing/design proposal but is stale against R2.1 and has CSV, placement, licence and compatibility gaps. The current main branch still contains no native UEFN project, Verse source, imported binary art package, editor screenshots, compile logs, gameplay test evidence, performance profile or island validation.
 
 **Production remains DOCUMENTATION / PRE-PRODUCTION.** Only greybox work is authorized by the R2.1 index; final environment art, final placements, imports and engine acceptance remain blocked pending owner-approved geometry and Claude's reproducible UEFN evidence. ChatGPT continues to prepare plans and review evidence only; Claude executes all editor operations and tests.
+
+
+## 15. FINAL PR METADATA CORRECTION — LATEST LIVE CHECK
+
+A final live check after the R2.1 document updates supersedes the PR mergeability wording in section 14.4:
+
+- Current compare: branch `environment-art/room13-v1` is **49 commits ahead and 94 behind** `main`, status DIVERGED.
+- Pull Request #1 is OPEN and DRAFT. GitHub currently reports `mergeable=true` (no merge conflict detected at the metadata check), not mergeable=false. This does not mean reviewed, approved, current or production-ready.
+- The PR still changes 12 files, has zero submitted reviews, zero discussion comments and zero status checks on its current head.
+- The PR description is now updated to 119 asset rows, 20 material specifications and 286 placement rows (91 unplaced). Its earlier “102 asset rows” statement is no longer current.
+- The PR description claims “CSV schemas normalized”; direct parsing still finds 8 malformed rows in ENVIRONMENT_ASSET_SOURCE_REGISTER.csv and malformed GQ-007 in ENVIRONMENT_GEOMETRY_ART_QUERIES.csv. That claim is not supported by the actual files.
+- The PR still declares LD-GEO R2.0 as its candidate reference, while main's R2.1 index/brief explicitly supersede R2.0. Its placement and execution plans therefore remain stale even though GitHub reports no merge conflict.
+
+**Decision:** do not merge in the current state. The reason is stale geometry authority, unreviewed/draft status and unresolved data/placement defects, not a reported Git conflict. Reauthor against R2.1, rerun the register checks, obtain review and owner approval, then reassess.
