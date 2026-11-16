@@ -190,3 +190,79 @@ README is not a current complete index: it omits several R2.0 and Claude governa
 The repository remains a documentation/specification package, not an evidenced UEFN project. The re-audit found no native UEFN project/map/content files, no `.verse` source, no binary asset production, no editor screenshots, no compile logs, no playtest evidence, no performance profile and no island validation/publication record. The repository tree also contains no `.github/workflows/` CI workflow files; the PR head has no registered status checks in the inspected commit status response.
 
 **Current production state remains DOCUMENTATION / PRE-PRODUCTION.** The new R2.0 geometry candidate and Environment Art package improve planning completeness but do not change implementation status. Claude remains the designated executor/tester; ChatGPT remains limited to detailed plans, documentation, review of returned evidence and corrective instructions.
+
+
+## 14. R2.1 AND REVISED ENVIRONMENT ART RE-AUDIT — LATEST SNAPSHOT
+
+**Snapshot:** main commit `e76b61527e381fbf37354c7616d5375c94f0f5aa`; Environment Art branch commit `8a06b37ad2805d23db9ed54fdfdfac6546647168`. This section supersedes the earlier file counts and the R2.0/first-version PR counts in section 13.
+
+### 14.1 Current main inventory and geometry authority
+
+The current tree contains 72 files in `Horror Motel Fable/` plus the root README (73 file blobs): 50 Markdown, 17 CSV and 5 SVG. New R2.1 control documents include `LEVEL_DESIGN_R2.1_INDEX.md`, `CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md`, `STAIR_PLAN_R2.md`, `ROOF_PLAN_R2.md`, and updated R2.1 plans, sections, navigation and blockout guide. Separate `AUDIO_REGISTER.csv` and `LIGHTING_REGISTER.csv` now replace the mixed lighting/audio table for future edits. `ROOM_FURNISHING_SCHEDULE.csv` is explicitly an initial subset, not a complete furnishing register.
+
+R2.1 supersedes R2.0 and E1 wherever they conflict. Owner-locked decisions now recorded are: north stair at reception, continuous courtyard-facing U-shaped upper balcony with 2.50 m clear target, ROOM 13 in the north connector, flat non-playable roof, and intended THE GUEST navigation across both floors. R2.1 remains PROPOSED TARGET / NOT APPROVED / NOT UEFN-VERIFIED. The R2.1 index and geometry validation report expressly authorize greybox-only work until the required geometry and traversal evidence is closed; final environmental art is not authorized.
+
+### 14.2 R2.1 geometry checks
+
+Positive changes:
+- Upper side rooms are now 5.90 m wide, with doors facing the courtyard balcony and windows facing the exterior.
+- The upper balcony is specified as a continuous U-shaped route with 2.50 m clear width and 1.10 m guardrail target.
+- The north stair now has coherent arithmetic: 20 risers total, two flights of 10, nine goings per flight at 0.28 m, intermediate landing at Z=1.80 m.
+- The vertical stack is now explicitly proposed: ground ceiling Z=3.00 m; upper slab underside/top Z=3.35/3.60 m; upper ceiling Z=6.40 m; roof top Z=6.65 m; parapet top Z=7.10 m.
+- `DOOR_WINDOW_SCHEDULE.csv` has 32 consistent rows and its upper room doors/windows reflect the R2.1 5.90 m room strips.
+
+Remaining geometry blockers:
+- `wall_schedule.csv` is still the old 23-row partial schedule. It does not define the full R2.1 side walls, balcony rails/corner pads, vestibule cuts, all wall returns, floor polygons or ceiling/roof boundaries. Its old opening IDs do not match the 32 current opening IDs. It cannot drive a complete R2.1 build.
+- `ROOM_COORDINATE_REGISTER.csv` has 46 consistent rows, but it uses bounds rather than explicit non-overlapping floor polygon vertices. The two courtyard balcony corner turning pads described in `LEVEL_DESIGN_GEOMETRY.md` are not explicit register rows. The continuous U-shaped collision/floor union therefore remains to be authored and checked.
+- The ROOM 12 → ROOM 13 route depends on the vestibule and corner pad being modelled as a continuous floor/wall system. `VEST-13` is X=67.00–72.90, Y=47.70–49.20; D-13C is centred at X=64.30, Y=49.55. The intended corner pad is described in the geometry authority but is not separately registered as a polygon/wall assembly. Produce a dimensioned plan/section and prove the 0.90 m opening, approach and return route; do not infer continuity from room labels.
+- `STAIR_PLAN_R2.md` resolves the riser/going arithmetic but still withholds exact stair origin, flight direction, landing polygon and upper slab opening. It is not a finished CAD plan.
+- `ROOF_PLAN_R2.md` gives levels and footprint intent, but drainage positions/falls and a polygonal roof cut-out around the open courtyard still require explicit geometry. The coordinate register's roof row is only a bounding envelope.
+- The gate anchor remains unresolved: `ROOM_COORDINATE_REGISTER.csv` places GATE-01 at X=40–44, Y=0–1, while `exterior_prop_schedule.csv` places EXT_GATE at (42,18). The art query register correctly marks it blocked. Claude must propose a correction and wait for project-owner approval before changing the geometry authority or dependent schedules.
+
+### 14.3 Current main CSV integrity
+
+All 17 main-branch CSV files were parsed. Current R2.1 `ROOM_COORDINATE_REGISTER.csv`, `DOOR_WINDOW_SCHEDULE.csv`, `ROOM_FURNISHING_SCHEDULE.csv`, `AUDIO_REGISTER.csv` and `LIGHTING_REGISTER.csv` have consistent row widths. However, structural width alone does not guarantee correct field semantics:
+
+- `INTERACTION_MASTER_REGISTER.csv`: IN-021, IN-022 and IN-023 have been padded to the 13-column width, but their target/action/prerequisite/range/duration/state/feedback fields remain shifted; each ends with an empty FailureFallback. For example, IN-021 has `Player ACTIVE; spot available` in Action and `PlayerHidden` in DurationSec.
+- `PUZZLE_MASTER_REGISTER.csv`: PZ-03 now has 15 columns, but the Solution field is missing; the success state appears under Solution, failure behaviour under SuccessState, and the final AcceptanceTest cell is empty. Rebuild the row semantically, not just by adding a trailing comma.
+- `ROOM_FURNISHING_SCHEDULE.csv`: 15 rows only, covering a subset of rooms. Its `Material_ID` values are `PROP-...` identifiers, not material IDs from the Material Master, and its first-column identifiers do not map to the current Environment Asset Register IDs. Separate Placement_ID, Asset_ID and Material_ID and establish explicit cross-references.
+- `LIGHTING_REGISTER.csv`: row widths are consistent, but `Intensity_Target` contains values such as “3000K visual ref”, “Red accent” and “Material emission”; these are colour-temperature/description values, not numeric light intensity. Separate CCT/colour intent from the actual intensity value and unit.
+- `AUDIO_REGISTER.csv`: two NPC audio rows use the text “Dynamic” in X/Y/Z columns. Define an attachment/emitter mode (for example, attach to THE GUEST) rather than pretending these are numeric coordinates.
+- Legacy `coordinate_schedule.csv` still has the malformed UPPER_ROOM11 row (missing the 8.6 m width value). The R2.1 index points to `ROOM_COORDINATE_REGISTER.csv`; mark the lower-case file legacy and do not import it.
+- Legacy `lighting_audio_schedule.csv` still contains two different headers/tables in one file. The README now says to use the separate AUDIO/LIGHTING registers for future edits; keep the combined file historical only.
+- `room_furnishing_schedule.csv` (183 rows) and `ROOM_FURNISHING_SCHEDULE.csv` (15 rows) are different datasets/schemas. The R2.1 index describes the uppercase file as an initial placed subset. Declare the lower-case file's status and the merge/precedence rule.
+
+### 14.4 Revised Environment Art PR #1 — current state
+
+The current branch comparison reports **44 commits ahead and 87 behind main**, status DIVERGED. PR #1 remains OPEN and DRAFT, and GitHub reports `mergeable=false`. It has 12 changed files, no submitted reviews, no discussion comments and no status checks on the inspected head. Branch head at this snapshot is `8a06b37ad2805d23db9ed54fdfdfac6546647168`. Do not merge this branch in its current state.
+
+Current PR data:
+- `ENVIRONMENT_ASSET_REGISTER.csv`: 119 rows / 119 unique IDs, 111 NOT STARTED and 8 BLOCKED. The PR description still says 102 asset rows.
+- `MATERIAL_MASTER_REGISTER.csv`: 20 rows.
+- `ENVIRONMENT_ASSET_SOURCE_REGISTER.csv`: 10 candidate rows, but 8 rows have more fields than the 12-column header because comma-containing descriptions are not quoted.
+- `ENVIRONMENT_GEOMETRY_ART_QUERIES.csv`: 10 rows; GQ-007 has an unquoted comma in the source-conflict field and therefore 11 fields against 10 headers.
+- `PROP_PLACEMENT_REGISTER.csv`: 286 rows total; 195 have coordinates (192 PROPOSED TARGET, 2 EDITOR-TEST REQUIRED, 1 BLOCKED) and 91 are explicitly UNPLACED. This matches the 195-placement claim only if unplaced rows are excluded.
+
+The PR still uses R2.0 coordinates and its Environment Art execution plan says R2.0 is the candidate authority. Main now declares R2.1 the sole candidate authority and narrows upper rooms from 8.60 m to 5.90 m. The PR must be rewritten/rebased against R2.1, not merely merged or mechanically rebased.
+
+A footprint comparison against R2.1 room bounds found nine wardrobe placements outside their assigned rooms: F01/F02/F03_WARDROBE, F07/F08/F09_WARDROBE and F10/F11/F12_WARDROBE. The first six lie at X≈10.10–10.70 m while west room X-min is 11.10 m; the upper east three lie at X≈65.70–66.30 m while upper east room X-min is 67.00 m. The PR's F12_SECRET_PANEL remains at X=68.60 m while R2.1 opening D-13A is centred at X=69.95 m (1.35 m offset); Y=47.55 m now matches. All upper-floor placements must be rechecked because the room widths and door sides changed in R2.1.
+
+The PR's former EXT_SIGN_TRIGGER reference issue is corrected in the current branch: the placement now references ENV_TRIGGER_VOLUME and all Asset_ID references resolve against the current asset register. Do not carry the earlier missing-asset finding forward as an active defect.
+
+### 14.5 External asset listing verification
+
+The ten Fab candidate URLs were checked against current listing pages and Epic documentation. No asset is claimed acquired, licensed, downloaded, imported or accepted.
+
+- PropHaus “Motel and Hotel Props” bundle lists UEFN Source plus USD/FBX/glTF and 50+ meshes across 14 listings. PropHaus “Motel Signs” lists UEFN Source and 14 sign meshes. These are the strongest direct UEFN-source candidates, subject to owner acquisition and license selection.
+- “Motel” by Volodymyr Stepaniuk lists UEFN Reference, not UEFN Source. Treat it as a referenced asset, not as an editable source project.
+- Befour “Motel Room Interior Environment” (68 meshes) and “Motel Reception Interior Environment” (86 meshes), PropHaus “Motel Room Props” (104 meshes), “Modular Hotel”, “Forgotten Hotel”, “1980s Sedan Car” and “Abandoned Cars” list Unreal Engine and/or Blender/glTF formats but not UEFN Source on the checked pages. UEFN import/compatibility is therefore unconfirmed; do not infer it from “Unreal Engine” format or Blueprint functionality.
+- Current “Abandoned Cars” listing reports 42 static vehicle variants, 7 Blueprints and 10 road props, with 4.0/5 from 4 ratings. The PR source register says 28 variants and 5.0/5 from 1 rating, so its listing evidence is stale.
+- Fab license tier and exact project-use rights still require checkout/account verification. No purchase or license decision is implied.
+
+Epic's documentation states that UEFN Source listings provide the publisher project files for download/editing, and listings without UEFN Source do not offer that source-project path. See the official [UEFN Fab import guide](https://dev.epicgames.com/documentation/fortnite/import-from-fab-in-unreal-editor-for-fortnite) and [Fab license/pricing guide](https://dev.epicgames.com/documentation/fab/licenses-and-pricing-in-fab).
+
+### 14.6 Current status conclusion
+
+R2.1 is a materially improved geometry design handoff, not a final approved or engine-verified build. The revised Environment Art package is useful as a sourcing/design proposal but is stale against R2.1 and has CSV, placement, licence and compatibility gaps. The current main branch still contains no native UEFN project, Verse source, imported binary art package, editor screenshots, compile logs, gameplay test evidence, performance profile or island validation.
+
+**Production remains DOCUMENTATION / PRE-PRODUCTION.** Only greybox work is authorized by the R2.1 index; final environment art, final placements, imports and engine acceptance remain blocked pending owner-approved geometry and Claude's reproducible UEFN evidence. ChatGPT continues to prepare plans and review evidence only; Claude executes all editor operations and tests.
