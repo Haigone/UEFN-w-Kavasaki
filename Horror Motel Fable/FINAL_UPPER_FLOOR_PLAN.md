@@ -35,7 +35,7 @@ The legs, crossbar and pads must be merged into one connected walkable polygon; 
 | West service reserve | 8.30–19.85 | 51.10–59.70 |
 | East service reserve | 64.00–75.70 | 51.10–59.70 |
 
-The two service reserves are non-playable, no-access placeholders. The west and east side pockets are also sealed and registered as non-playable reserves: west X8.30–17.00,Y47.55–50.80; east L-shape split into X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. The west pocket is closed by wall UF-W-SEALED-RESERVE-WEST. All sealed reserves retain structural floor collision but are excluded from navmesh/gameplay.
+The two service reserves are non-playable, no-access placeholders. The west and east side pockets are also sealed and registered as non-playable reserves: west X8.30–17.00,Y47.55–50.80; east L-shape split into X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. The west pocket is closed by wall UF-W-SEALED-RESERVE-WEST; the east L-shaped pocket is closed by UF-E-SEALED-RESERVE-WEST. All sealed reserves retain structural floor collision but are excluded from navmesh/gameplay.
 
 ## ROOM 12 → ROOM 13
 D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m clear); wall centre-lines west X66.925, east X72.975, north Y49.275, south shared at Y47.475. D-13C in vestibule west wall centre (66.925,48.45), clear 0.90×2.10 m, opens west to east balcony. Follow east balcony to corner pad, west along north crossbar. D-13B in ROOM 13 south wall centre (56.35,50.95), clear 0.90×2.10 m, opens north. Route is two-way; no teleport.
