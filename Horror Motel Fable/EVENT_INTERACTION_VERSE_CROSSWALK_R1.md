@@ -35,7 +35,7 @@
 | IN-016 | EVT-015 Room13PhotoSequenceSolved + EVT-016 OwnerRevealPresented | PuzzleManager.CommitRoom13PhotoSequence; CinematicManager.RequestReveal / GameManager.CommitReveal | PhotoSequenceSolved=true; then Room13RevealComplete=true | Keep solve and presentation-complete commits separate |
 | IN-017 | EVT-017 ServiceKeyGranted | InventoryManager.GrantServiceKey | ServiceKeyObtained=true; ServiceKey held | Sole ServiceKey writer |
 | IN-018 | EVT-018 ServiceGateActivated | PuzzleManager.ActivateServiceGate | GatePowered=true; ServiceRouteReady=true | GameManager derives FinaleReady |
-| IN-019 | EVT-019 VehicleIgnitionSucceeded | GameManager.CommitCoreEscapeReady | CoreEscapeReady=true | Requires FinaleReady + CarKeys; ESCAPE branch only |
+| IN-019 | EVT-019 VehicleIgnitionSucceeded | GameManager.CommitVehicleIgnitionSucceeded | VehicleIgnitionSucceeded=true; CoreEscapeReady is derived | Requires FinaleReady + CarKeys; ESCAPE branch only |
 | IN-020 | EVT-020 EndingVoteCommitted + EVT-021 EndingSelected; EVT-022 for NEW_GUEST consent | EndingManager.SubmitVote / GameManager.CommitEnding | EndingSelected set once | END-A01 rules; New Guest unanimous explicit confirmation |
 | IN-021 | EVT-047 HidingStateChanged | PlayerStateManager.SetHidden | PlayerHidden[player]=true/false | New event: player-local, clear on disconnect/reset/capture |
 | IN-022 | EVT-025 RescueStarted + EVT-026 PlayerRescued; EVT-027/028 self-recovery | PlayerStateManager.StartRescue / CompleteRescue / StartSelfRecovery / CompleteSelfRecovery | CAPTURED→RESCUING→RECOVERING→NORMAL | Rescue 5 s uninterrupted; emergency recovery never auto-kills |
@@ -44,7 +44,7 @@
 | IN-025 | EVT-008 FusePickup(fuse_id=B) | InventoryManager.GrantFuseB | FuseBFound=true; FuseB team available | Storage shelf beside wet-floor sign |
 | IN-026 | EVT-008 FusePickup(fuse_id=C) | InventoryManager.GrantFuseC | FuseCFound=true; FuseC team available | Room 06 maintenance cabinet |
 | IN-027 | EVT-048 ScrewdriverPickupClaimed | InventoryManager.GrantScrewdriver | ScrewdriverObtained=true; reusable tool held | New event: shared team item, sole writer |
-| IN-028 | EVT-049 CarKeysPickupClaimed | InventoryManager.GrantCarKeys | CarKeysObtained=true; CarKeys held | New event: only enabled for ESCAPE route in Act VI |
+| IN-028 | EVT-049 CarKeysPickupClaimed | InventoryManager.GrantCarKeys | CarKeysObtained=true; CarKeys held | Optional Act VI vehicle-route pickup after FinaleReady; not an ending selection |
 | IN-029 | EVT-014 MissingGuestArchiveDiscovered | EvidenceManager.CommitMissingGuestEvidence | MissingGuestEvidenceFound=true | Room 06; TruthChainComplete recomputed |
 | IN-030 | EVT-050 CRTFeedViewed | EvidenceManager.CommitCRTFeedViewed | CRTFeedSeen=true | Room 01; repeatable view, one discovery flag |
 | IN-031 | EVT-051 Room04RecordingPresented | EvidenceManager.CommitRoom04Recording | Room04RecordingHeard=true; Room04TranscriptRead=true | Room 04; transcript is sufficient if audio unavailable |
