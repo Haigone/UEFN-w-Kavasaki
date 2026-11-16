@@ -77,7 +77,9 @@ Until this is approved, Claude may implement only the solo ending selection and 
 
 ## C. Truth-ending evidence gate
 
-**END-A02 — Mandatory truth evidence.** Current implementation spec lists DiaryFound, ChildRoomClueFound, MissingGuestEvidenceFound, SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed as mandatory. Confirm whether all six are mandatory, or identify which are optional. No missable clue may silently become a mandatory progression gate.
+**END-A02 — PENDING OWNER APPROVAL.** The recommended decision is recorded in `END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md`: require only `DiaryFound`, `ChildRoomClueFound` and `MissingGuestEvidenceFound` for `TruthChainComplete`. Keep `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` as separate progression/reveal gates, not duplicate evidence pickups.
+
+This is a recommendation, not an approval. Until the owner explicitly approves END-A02, Claude must not implement the proposed three-clue mandatory gate or treat the six-flag list in `ENDING_IMPLEMENTATION_SPEC.md` as approved. No clue may silently become a mandatory progression gate; if approved, each required clue must be recoverable, team-shared, idempotent and have readable/journal fallback.
 
 ## D. Approval record
 
