@@ -36,7 +36,7 @@ Ending selection is team-wide. Present only eligible options.
 - Disconnect during THE_NEW_GUEST confirmation: remove the disconnected player and re-prompt/reconfirm unanimity with all remaining connected eligible players. Disconnect is not consent.
 - Solo choice is direct.
 
-The active electorate is the set of currently connected eligible players when the vote/prompt is evaluated; update it on disconnect before resolving. Commit only after the applicable quorum is satisfied.
+The active electorate is the set of currently connected eligible players when the vote/prompt is evaluated; update it on disconnect before resolving. Commit only after the applicable quorum is satisfied. If the selector is opened before vehicle ignition, ESCAPE is simply omitted; players may close the selector, complete the optional CarKeys/ignition route and reopen it.
 
 ## 5. Atomic selection
 GameManager validates eligibility; acquire ending lock; if Ending==NONE set Ending and EndingSelected; disable all other ending triggers; broadcast one branch event. Repeated trigger calls return existing ending without replay.
