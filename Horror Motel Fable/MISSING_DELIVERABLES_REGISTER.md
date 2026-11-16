@@ -28,3 +28,7 @@
 
 ## Important distinction
 Some deliverables have partial written specifications. They remain PRESENTE MA NON VERIFICATO or INCOMPLETO until the actual asset, editor configuration, compiled source or test evidence exists. The existence of this register is not completion of any implementation item.
+
+
+## Who produces the missing evidence
+For every deliverable whose completion requires an actual UEFN project/editor, asset import, Verse compile, gameplay test, multiplayer test, performance profile or island validation, **Claude produces the implementation and evidence**. ChatGPT prepares the detailed execution plan, exact test protocol and acceptance checklist, then checks Claude's returned evidence. The project owner supplies access and approves decisions/publication. Repository entries remain guidance until implementation evidence is returned. See `CLAUDE_EXECUTION_PROTOCOL.md`.
