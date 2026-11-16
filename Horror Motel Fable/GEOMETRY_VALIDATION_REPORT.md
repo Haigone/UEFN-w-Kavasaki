@@ -91,12 +91,12 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - coordinate_schedule.csv: 38 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 51 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
-- wall_schedule.csv: 70 unique wall IDs; all rows match the 15-column header.
+- wall_schedule.csv: 70 unique wall IDs; all rows match the 15-column header. Upper room partition IDs now follow ROOM 07–12 numbering.
 - SLAB_SCHEDULE.csv: 5 explicit slab/void records, including the upper stairwell cut; the U footprint polygon is shared by ground, upper and roof slabs, with the courtyard excluded.
 - All 51 opening Wall_ID values resolve to an existing wall. All 51 opening centres lie on the centre-line of their host wall; every clear opening span fits within its host wall segment and its vertical extent stays within the wall's Z range. All 51 wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
 
-Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`).
+Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps.
 
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
