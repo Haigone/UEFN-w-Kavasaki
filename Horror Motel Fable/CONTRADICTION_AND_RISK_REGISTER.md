@@ -140,3 +140,32 @@ This addendum supersedes the older 11-item approval count and narrative-complete
 - CSV structural correction: current ROOM_COORDINATE_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and INTERACTION_MASTER_REGISTER.csv have zero row-width errors. The combined lighting_audio_schedule.csv remains a historical malformed-width file; use LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv.
 
 The next executable work is CLD-001/CLD-002 from CLAUDE_R2.2_EXECUTION_PACKET.md. Geometry-dependent build remains blocked by owner approval.
+
+
+## R2.3 current-authority correction — 2026-11-16
+
+This addendum supersedes the earlier R2.0/R2.1/R2.2 status statements below where they conflict with the current owner-approved R2.3 baseline. Historical audit rows are retained for traceability and must not be read as current state.
+
+| Earlier risk | Current status | Correct current interpretation |
+|---|---|---|
+| CR-001 / CR-002 geometry allocation conflict | RESOLVED AT DESIGN SOURCE-OF-TRUTH LEVEL | LD-GEO R2.3 is owner-approved and is the controlling geometry. Physical editor build/traversal still NOT RUN. |
+| CR-003 room bounds / wall / opening conflict | PARTIALLY RESOLVED / CLD-002 REQUIRED | R2.3 controlled records govern; CLD-002 must validate CSV references and topology. Do not reuse legacy dossier values. |
+| CR-004 / CR-005 / CR-006 / CR-007 geometry and schedule risks | OPEN AS DOCUMENT/EDITOR VALIDATION ITEMS | R2.3 approval does not prove host-wall references, collision, headroom, rail, stair or player traversal. |
+| CR-009 / CR-010 asset and THE GUEST production | OPEN | Model/rig/animation/import assets are not evidenced as produced. |
+| CR-011 / CR-012 / CR-013 / CR-014 / CR-016 UEFN/Verse/device/QA | OPEN | No editor build, compiled Verse, device binding or QA pass is certified by repository documents. |
+| CR-018 ending co-op ambiguity | RESOLVED BY END-A01 | Owner-approved quorum is in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md. |
+| CR-043 R2.2 geometry approval missing | SUPERSEDED / CLOSED FOR DESIGN APPROVAL | Owner approved GEO-A01–GEO-A21 for LD-GEO R2.3 on 2026-11-16. |
+| CR-045 THE_NEW_GUEST quorum conflict | RESOLVED BY END-A01 | Majority applies only to ESCAPE/THE_TRUTH; THE_NEW_GUEST requires explicit unanimity. |
+| CR-046 narrative copy absent | DRAFT CONTENT NOW PRESENT; OWNER APPROVAL PENDING | NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md contains full draft copy; OWNER_DECISION_PACKET_R1.md consolidates NCP-A01–A09 and END-A02 approval. |
+| CR-047 PR #1 geometry staleness | OPEN / DO NOT MERGE AS-IS | Any intake must be reauthored and validated against R2.3; old ahead/behind counts are historical and must be re-read live. |
+
+### New current risks
+| ID | Type | Finding | Impact | Status | Required resolution |
+|---|---|---|---|---|---|
+| CR-051 | Narrative approval | NCP-A01–A09 and END-A02 remain proposed, not owner-approved | Draft copy cannot be treated as shipped canon | PENDING OWNER | One consolidated response to OWNER_DECISION_PACKET_R1.md |
+| CR-052 | Objective consistency | Objective/event catalog now defines explicit predicates and IN-001–IN-031 mappings | Existing summaries/registers must match one state writer and one commit event | DOCUMENT AUDIT REQUIRED | Cross-check all objective, interaction, puzzle, Verse and UI references |
+| CR-053 | AI feasibility | Detailed THE GUEST behaviour contract exists, but NPC navigation/perception/capture APIs are unverified | AI scope may exceed current UEFN capability | ENGINE FEASIBILITY PENDING | Verify each required behaviour in target UEFN and report supported alternatives |
+| CR-054 | Audio/lighting cues | Registers identify assets/sources but do not yet define a complete cue-level trigger/mix/concurrency plan | Atmosphere implementation may be inconsistent or duplicated | INCOMPLETO | Create cue sheet with unique event IDs, priority, cooldown, subtitle/visual fallback and mix rules |
+| CR-055 | UI string/prompt completeness | UI spec defines layout and behaviour but not every final StringId/copy/input glyph | Inconsistent player-facing language and unclear interactions | INCOMPLETO | Complete objective/UI string table and IN-001–IN-031 prompt/failure/cancel copy |
+
+Current status authority: PRODUCTION_CONTROL_MASTER_SPEC.md, OWNER_DECISION_GATE_R2.2.md, LEVEL_DESIGN_R2.3_INDEX.md and CLAUDE_R2.3_EXECUTION_PACKET.md.
