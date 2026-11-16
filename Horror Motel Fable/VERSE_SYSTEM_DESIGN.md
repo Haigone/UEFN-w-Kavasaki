@@ -92,9 +92,9 @@ Do not hard-gate optional evidence. Required clues must have clear fallback read
 
 At the final sequence, present only endings whose full eligibility predicates are true. GameManager validates eligibility, acquires the ending lock, commits one session-wide ending only when Ending==NONE, disables all competing triggers and broadcasts one branch event.
 
-- ESCAPE: CoreEscapeReady and explicit vehicle-route selection; remains available if truth evidence is incomplete.
-- THE_TRUTH: CoreEscapeReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit truth-route selection.
-- THE_NEW_GUEST: NewGuestAccepted through explicit invitation and team confirmation; never inferred from capture, defeat, inactivity or timeout.
+- ESCAPE: CoreEscapeReady (gate powered and CarKeys used at vehicle ignition) and explicit vehicle-route selection; remains available if truth evidence is incomplete.
+- THE_TRUTH: FinaleReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit truth-route selection; does not require vehicle ignition.
+- THE_NEW_GUEST: FinaleReady plus NewGuestAccepted through explicit invitation and team confirmation; never inferred from capture, defeat, inactivity or timeout; does not require vehicle ignition.
 
 **END-A01 owner-approved quorum (2026-11-16):** strict majority of currently connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. Tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. Disconnect removes the voter and recalculates/re-prompts; disconnect is never consent. Solo selection is direct. Ending commit is atomic and one-shot.
 
