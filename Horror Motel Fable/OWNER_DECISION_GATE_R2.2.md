@@ -1,13 +1,13 @@
 # OWNER DECISION GATE — LD-GEO R2.2
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **WAITING FOR PROJECT OWNER — NO GEOMETRY APPROVAL IMPLIED**
+Status: **GEOMETRY APPROVED BY PROJECT OWNER ON 2026-11-16 — UEFN VERIFICATION PENDING**
 
 ## Purpose
 This document turns the open R2.2 geometry and ending decisions into one explicit approval gate. It does not silently select creative or structural alternatives. Claude must not build final geometry from R2.2 until the owner approves this package or supplies a revised choice.
 
 ## Decision method
-The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner may approve the geometry only after GEO-A01–A21 are resolved and the remaining objective register correction A-02 in that packet is applied; A-01 (COURTYARD schema) is already corrected in main. Reply **APPROVE R2.2** only when the proposal and all added gate items are accepted, or **APPROVE WITH EXCEPTIONS** with item IDs and replacement values. Silence is not approval.
+The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner replied **APPROVO TUTTO, PROCEDI** on 2026-11-16, approving the R2.2 geometry proposal and recommendations for GEO-A01–GEO-A21. The approved and synchronized geometry baseline is LD-GEO R2.3. The VEST-13 correction and approved reserve/pad/stair/roof clarifications have been applied. This approval does not include END-A01/END-A02 and does not constitute UEFN verification.
 
 ## A. Geometry decisions
 
@@ -81,16 +81,32 @@ Until this is approved, Claude may implement only the solo ending selection and 
 
 ## D. Approval record
 
-Owner response: NOT RECEIVED  
-Approved geometry revision: NONE  
-Approved co-op quorum: NONE  
-Approved truth evidence gate: NONE  
-Approval date: NOT RECORDED
+Owner response: APPROVED — “APPROVO TUTTO, PROCEDI” — 2026-11-16  
+Approved geometry revision: LD-GEO R2.3  
+Approved co-op quorum: NONE — outside geometry scope  
+Approved truth evidence gate: NONE — outside geometry scope  
+Approval date: 2026-11-16
 
 Once approved, update this record with the owner's exact decision, then synchronize LEVEL_DESIGN_GEOMETRY.md, all controlled schedules, ENDING_DESIGN_SPEC.md, ENDING_IMPLEMENTATION_SPEC.md, GAMEPLAY_FLOW_AND_TESTS.md, QA matrices and Claude execution packets.
 
 ## E. Stop conditions
-- No final geometry placement before GEO-A01–A21 are resolved and the remaining objective register correction A-02 (VEST-13 Length_m=1.65) is applied; A-01 (COURTYARD schema) is already corrected in main.
+- Geometry decisions GEO-A01–GEO-A21 are approved and synchronized as LD-GEO R2.3. No editor-dependent item may be marked complete without Claude's UEFN evidence.
 - Claude may inspect the existing project and report feasibility/measurements while waiting.
 - Do not merge Environment Art PR #1 or treat its placements as approved geometry.
 - Do not mark any editor-dependent task complete without Claude's UEFN evidence.
+
+
+## F. Recorded GEO-A01–GEO-A21 approval outcome
+
+All GEO-A01–GEO-A21 approved as proposed, with these explicit final dispositions:
+- GEO-A01–A08: retain R2.2 room orientation, room bands, cross-bay openings, upper room widths, south buffers and north connector allocations; cross-bays are 2.00 m gross / 1.70 m net.
+- GEO-A09: approve U-turn stair, 20 risers, two 1.20 m flights, nine 0.28 m goings per flight, 2.70×1.20 m landing at Z1.80; west lower flight rises south-to-north, east upper flight returns north-to-south; lower south approach 1.35 m, upper south approach 1.20 m.
+- GEO-A10–A15: approve wall thicknesses, vertical stack, continuous balcony, clipped corner pads, flat roof, opening schedule/secret route, and envelope-only room scope (bathrooms/interior fit-out remain excluded).
+- GEO-A16: both ground north pockets are sealed no-access reserves; structural floor collision retained, navmesh disabled.
+- GEO-A17: both upper side pockets are sealed no-access reserves; west pocket closed by UF-W-SEALED-RESERVE-WEST; east L-shaped pocket split into two registered components.
+- GEO-A18: U-SERVICE is sealed/no-access/no-navmesh; no door added.
+- GEO-A19: turning pads clipped to UF-SLAB boundary; no collision over courtyard void.
+- GEO-A20: 2.00 m gross / 1.70 m net cross-bays.
+- GEO-A21: visually flat, non-accessible roof; concealed 1.0% falls to coordinated perimeter drainage; outlets remain technical coordination.
+
+END-A01 and END-A02 remain unapproved and must not be treated as decided by this geometry-only approval.
