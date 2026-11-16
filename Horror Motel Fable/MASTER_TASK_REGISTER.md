@@ -55,3 +55,18 @@ No task may move to COMPLETATO CON EVIDENZA because a document was authored. The
 
 ## Execution ownership rule (binding)
 The Owner column identifies the discipline responsible for the work, not a separate executor. For all UEFN/editor-dependent work, **Claude is the sole designated execution and test operator**; ChatGPT prepares the exact task packet, steps, values, expected outcomes, recovery path and evidence checklist. The project owner approves design decisions and publication. Do not interpret a task assignment to QA, Level Design, Verse or UEFN as a request for ChatGPT to operate the editor. A task requiring editor evidence cannot be marked complete until Claude returns that evidence. See `CLAUDE_EXECUTION_PROTOCOL.md`.
+
+
+## Re-audit tasks — 2026-11-16
+
+| ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
+|---|---|---|---|---|---|---|---|---|---|
+| AUD-002 | Production | Re-audit current main, all CSV schemas and open Environment Art PR | P0 | Repository access | Updated PROJECT_STATUS_AUDIT.md and registers | COMPLETATO CON EVIDENZA | Current tree, branch divergence, CSV structure and placement anomalies recorded | Git tree, PR metadata, parser and geometry-boundary report | Production Director |
+| DATA-001 | Data | Repair malformed interaction, puzzle and coordinate rows; split lighting/audio tables | P0 | AUD-002 | Validated CSV package | INCOMPLETO | Every row matches its header; IDs and numeric fields validate | CSV parser report and diff | Gameplay / Level Design |
+| GEO-008 | Level Design | Complete wall schedule and reconcile all opening IDs to canonical door/window register | P0 | GEO-001; DATA-001 | Complete wall/opening schedule | BLOCCATO | Every opening maps to one host wall; D-13C and vestibule are modelled | Cross-reference report, plans and sections | Technical Level Designer |
+| ART-001 | Environment Art | Synchronise/rebase PR #1 with current main and complete formal review before merge | P1 | GEO-001; AUD-002 | Reviewed Environment Art PR | BLOCCATO | Current-base diff is reviewed; no stale geometry assumptions or unaddressed critical defects | Updated PR diff, review and approval | Art Lead / Production Director |
+| ART-002 | Environment Art | Correct six wardrobe bounds, ROOM 12 panel alignment and trigger reference typing | P1 | GEO-001; ART-001 | Corrected PROP_PLACEMENT_REGISTER.csv | BLOCCATO | All footprints fit approved polygons and preserve door/route clearances | Automated footprint report and Claude editor screenshots | Environment Art |
+| DOC-001 | Production | Refresh README and identify canonical vs legacy documents/schedules | P2 | GEO-001; DATA-001 | Updated README.md | INCOMPLETO | Reading order points to current R2.0, protocol and canonical schedules | Link/path audit | Production Director |
+| PROD-001 | Production | Resolve narrative-first vs geometry-first phase order | P1 | AUD-002 | Approved execution sequence | PRESENTE MA NON VERIFICATO | Claude receives one unambiguous critical path; narrative parallel work explicitly identified | Owner decision and revised roadmap/plan | Project Owner |
+
+These tasks supplement, and do not replace, the original task IDs. ChatGPT prepares exact implementation packets for Claude; Claude performs all UEFN/editor actions and tests. No task above authorises ChatGPT to operate UEFN or merge PR #1.
