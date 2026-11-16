@@ -88,3 +88,12 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 ## 8. Status vocabulary
 
 Use OWNER-APPROVED DESIGN, CANONICAL DOCUMENT, PROPOSED, ENGINE-VERIFIED, EDITOR-VERIFIED, TEST-PASS, BLOCKED and NOT RUN precisely. A document being authored does not mean its feature is implemented or tested.
+
+
+## 9. Case-sensitive schedule authority — do not substitute legacy duplicates
+
+- Use uppercase DOOR_WINDOW_SCHEDULE.csv for current R2.3 openings. Lowercase door_window_schedule.csv is an R2.2 mirror only.
+- Use lowercase room_furnishing_schedule.csv for the current 183-row furnishing placement schedule. Uppercase ROOM_FURNISHING_SCHEDULE.csv is an older 15-row proposal and is not placement authority.
+- Use uppercase UEFN_DEVICE_BINDINGS.csv for the current 50-row, 8-column device/anchor register. Lowercase uefn_device_bindings.csv is an older draft.
+- lighting_audio_schedule.csv is a historical combined schedule with malformed/obsolete rows; use AUDIO_REGISTER.csv, AUDIO_CUE_SHEET.csv, LIGHTING_REGISTER.csv and LIGHTING_CUE_SHEET.csv.
+- Do not normalize filename case or merge these historical mirrors automatically. Current exact filenames are intentional.
