@@ -1,21 +1,29 @@
-# LEVEL DESIGN R2.1 — DOCUMENT INDEX & SOURCE-OF-TRUTH NOTICE
-Revision: LD-GEO R2.1 | Date: 2026-11-16
+# LEVEL DESIGN R2.2 — DOCUMENT INDEX
+Revision: LD-GEO R2.2 | 2026-11-16
+Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
 
-## Authority
-For all other project chats and production disciplines, LEVEL_DESIGN_GEOMETRY.md revision R2.1 is the sole candidate geometry authority. Earlier geometry values in EXECUTIVE_BUILD_DOSSIER.md, EXECUTIVE_FLOORPLANS.md and R1/R2.0 drafts are superseded wherever they conflict with R2.1. The original files remain historical references and must not be used to place assets.
+## Single candidate geometry authority
+`LEVEL_DESIGN_GEOMETRY.md` R2.2 is the single candidate geometry proposal. It reconciles the source documents but does not claim owner approval. Do not use R1/E1/R2.0/R2.1 coordinates where R2.2 differs.
 
-## Owner-locked decisions
-- North stair in reception/north connector.
-- Continuous U-shaped upper balcony facing courtyard, 2.50 m clear target.
-- ROOM 13 in north connector, upper floor.
-- Flat, non-playable roof.
-- THE GUEST intended to navigate both floors via north stair.
+## Controlled geometry files
+- `LEVEL_DESIGN_GEOMETRY.md` — canonical proposal and owner approval list.
+- `ROOM_COORDINATE_REGISTER.csv` — room/zone bounds, FIF convention.
+- `coordinate_schedule.csv` — compatibility coordinate schedule; UPPER_ROOM11 corrected.
+- `DOOR_WINDOW_SCHEDULE.csv` — authoritative opening centre-lines and clear sizes.
+- `door_window_schedule.csv` — legacy-format mirror; not an independent authority.
+- `wall_schedule.csv` — unique wall centre-lines, thicknesses, levels and opening IDs.
+- `FINAL_GROUND_FLOOR_PLAN.md` / `FINAL_UPPER_FLOOR_PLAN.md` — written plans.
+- `GROUND_FLOOR_PLAN_R2.svg` / `UPPER_FLOOR_PLAN_R2.svg` — plan drawings.
+- `LEVEL_SECTIONS.md` / `SECTIONS_R2.2.svg` — vertical sections and stair/secret route.
+- `STAIR_PLAN_R2.md` — stair proposal.
+- `ROOF_PLAN_R2.md` — flat roof proposal.
+- `GEOMETRY_VALIDATION_REPORT.md` — source conflict register and acceptance status.
 
-## Controlled files
-LEVEL_DESIGN_GEOMETRY.md — authority; FINAL_GROUND_FLOOR_PLAN.md and FINAL_UPPER_FLOOR_PLAN.md — plans; GROUND_FLOOR_PLAN_R2.svg and UPPER_FLOOR_PLAN_R2.svg — schematic graphics, not CAD; LEVEL_SECTIONS.md — section control; STAIR_PLAN_R2.md — stair; ROOF_PLAN_R2.md — roof; ROOM_COORDINATE_REGISTER.csv — coordinates; DOOR_WINDOW_SCHEDULE.csv — openings; ROOM_FURNISHING_SCHEDULE.csv — initial placed prop subset, not complete furnishing; NAVIGATION_AND_PLAYER_FLOW.md — player/NPC routes; GEOMETRY_VALIDATION_REPORT.md — risks and acceptance; UEFN_BLOCKOUT_BUILD_GUIDE.md — greybox build; CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md — Claude handoff.
+## Source files retained as historical references
+`EXECUTIVE_BUILD_DOSSIER.md` and `EXECUTIVE_FLOORPLANS.md` contain conflicting earlier allocations. Their values are not to be used for placement without reconciliation to R2.2.
 
-## Status and restrictions
-R2.1 is a design proposal and handoff baseline, not a final approved construction package. No ENGINE-VERIFIED claim is made. Claude performs all UEFN editor tests and supplies evidence. Until geometry, wall/floor/ceiling schedules, all furniture placements, stair, balcony, secret route and THE GUEST navigation are closed and tested, only greybox work is authorized. Final environmental asset production remains blocked.
+## Owner decisions already fixed
+North stair location; continuous courtyard-facing upper balcony; ROOM 13 in north connector; flat roof; THE GUEST intended to use both floors.
 
-## Update protocol
-Any geometry change must update the authority file first, then all affected plans, sections, coordinate/opening/furniture schedules, navigation and Claude brief. Record revision, commit SHA, reason, affected IDs and validation evidence. Other chats must quote current revision and must not silently retain obsolete coordinates.
+## Approval boundary
+R2.2 remains a proposal. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
