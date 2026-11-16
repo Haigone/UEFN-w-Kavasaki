@@ -1,97 +1,70 @@
-# THE MOTEL: ROOM 13 — Fable production package
+# THE MOTEL: ROOM 13 — Production Documentation Hub
 
-## Current production authority — 2026-11-16
-- [PRODUCTION_COMPLETION_HANDOFF.md](PRODUCTION_COMPLETION_HANDOFF.md) — latest consolidated audit, remaining blockers, owner decisions and Claude handoff.
-- [MASTER_TASK_REGISTER.md](MASTER_TASK_REGISTER.md) — prioritized production tasks, dependencies, owners and evidence gates.
-- [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) — current missing/incomplete deliverables and superseding R2.2 addenda.
-- [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — active cross-discipline conflicts and current risk status.
-- [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — current geometry document hierarchy.
-- [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — exact geometry and ending decisions awaiting owner approval.
-- [CLAUDE_R2.2_EXECUTION_PACKET.md](CLAUDE_R2.2_EXECUTION_PACKET.md) — current restricted execution packet for Claude (read-only audit first; greybox only after approval).
-- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — complete draft clue/puzzle/ending content awaiting owner approval.
-- [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) LD-GEO R2.2 — single candidate geometry proposal; **not owner-approved and not UEFN-verified**.
-- [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — binding responsibility and evidence rules.
-- [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — current executable order; section 19 supersedes earlier phase ordering where it conflicts.
-- [GAMEPLAY_ACCEPTANCE_TESTS.md](GAMEPLAY_ACCEPTANCE_TESTS.md) — test definitions GAT-001–GAT-052; all remain NOT RUN until Claude supplies evidence.
+**Current baseline:** LD-GEO R2.3 design approval recorded 2026-11-16.  
+**Repository purpose:** complete, controlled specifications and production instructions for a full Fortnite / UEFN island.  
+**Important:** this repository is not proof of a native UEFN build, compiled Verse, imported assets or passed playtests.
 
-Do not use CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md as a build authority; it is superseded by R2.2. Do not merge Environment Art PR #1 until it is reauthored against approved and editor-verified geometry.
+## 1. Start here — controlling documents
 
+1. [PRODUCTION_CONTROL_MASTER_SPEC.md](PRODUCTION_CONTROL_MASTER_SPEC.md) — authority hierarchy, canonical rules, ownership, change control and cross-system invariants.
+2. [MASTER_TASK_REGISTER.md](MASTER_TASK_REGISTER.md) — production work packages, dependencies and acceptance evidence.
+3. [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — consolidated remaining narrative/creative approval request.
+4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21 and co-op ending rule END-A01; END-A02 remains pending.
+5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
+6. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — current R2.3 audit/build gates and immediate authorization.
+7. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
+8. [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) and [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — outstanding work and risks.
 
-Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla realizzazione del gioco completo in **UEFN / Fortnite**.
+## 2. Approved geometry authority
 
-## Collaborazione e responsabilità
-- ChatGPT prepara specifiche, piani di esecuzione, checklist, criteri di accettazione e analisi delle evidenze.
-- Claude esegue implementazione, compilazione e test reali in UEFN/Playtest.
-- Nessun test è PASS senza esecuzione effettiva e prove registrate.
-- Consultare [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) per fasi, gate, deliverable e procedura di handoff.
+- [LD_GEO_R2.3_APPROVAL_RECORD.md](LD_GEO_R2.3_APPROVAL_RECORD.md) — owner-approved design geometry GEO-A01–GEO-A21.
+- [LEVEL_DESIGN_R2.3_INDEX.md](LEVEL_DESIGN_R2.3_INDEX.md) — controlling R2.3 geometry source hierarchy.
+- [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — R2.3 geometry definition.
+- Controlled schedules: [ROOM_COORDINATE_REGISTER.csv](ROOM_COORDINATE_REGISTER.csv), [DOOR_WINDOW_SCHEDULE.csv](DOOR_WINDOW_SCHEDULE.csv), [SLAB_SCHEDULE.csv], [coordinate_schedule.csv](coordinate_schedule.csv), [wall_schedule.csv](wall_schedule.csv), [STAIR_PLAN_R2.md](STAIR_PLAN_R2.md), [ROOF_PLAN_R2.md](ROOF_PLAN_R2.md), [LEVEL_SECTIONS.md](LEVEL_SECTIONS.md).
+- [GEOMETRY_VALIDATION_REPORT.md](GEOMETRY_VALIDATION_REPORT.md) — document-level validation and remaining editor checks.
+- [UEFN_BLOCKOUT_BUILD_GUIDE.md](UEFN_BLOCKOUT_BUILD_GUIDE.md) — construction sequence and evidence requirements.
 
-## Ordine di lettura
-1. [MASTER_PROMPT_FOR_CLAUDE.md](MASTER_PROMPT_FOR_CLAUDE.md) — prompt operativo principale e confine delle responsabilità.
-2. [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — piano operativo dettagliato, priorità e criteri di avanzamento.
-3. [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — visione, lore, struttura, personaggi, stanze, enigmi, dialoghi e finali.
-4. [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md) — flusso dei sei atti, stati giocatore, cattura/salvataggio, inventario, finali e QA.
-5. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
-6. [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — gerarchia geometrica attuale.
-7. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — proposta LD-GEO R2.2, non approvata dal proprietario e non verificata in UEFN.
-8. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — approvazioni richieste prima del greybox.
-9. [CLAUDE_R2.2_EXECUTION_PACKET.md](CLAUDE_R2.2_EXECUTION_PACKET.md) — istruzioni operative correnti per Claude.
-10. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità.
-11. [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md) — requisiti di produzione e QA.
+R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry packets are historical. The executive dossier and legacy schedules are not placement authority where they conflict with R2.3.
 
-`EXECUTIVE_BUILD_DOSSIER.md` ed `EXECUTIVE_FLOORPLANS.md` sono fonti storiche in conflitto: non usarle come autorità geometrica contro R2.2.
+## 3. Game design, narrative and gameplay
 
-## Vincoli non negoziabili
-- Prodotto finale: isola Fortnite reale, costruita in Unreal Editor for Fortnite (UEFN).
-- 1–4 giocatori, prima persona, 40–50 minuti, survival horror cooperativo.
-- Ambientazione Raven Motel, USA, 1986; gioco interamente in inglese.
-- **Nessuna demo, nessun prototipo dimostrativo**: obiettivo gioco completo, pronto per test, revisione e pubblicazione.
-- Non sostituire UEFN con Unity, Unreal standalone, browser, HTML o Three.js.
-- Non dichiarare mai di aver modificato UEFN, compilato, testato o pubblicato se non è realmente avvenuto.
-- Verificare la compatibilità di ogni API, dispositivo, proprietà Verse e workflow con la versione UEFN disponibile.
-- La stima di circa due ore è un obiettivo aspirazionale, non una garanzia. Se non è fattibile, dichiarare limiti e priorità senza spacciare un risultato incompleto per gioco finito.
+- [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — product vision, setting, pillars and canon.
+- [NARRATIVE_MASTER_SCRIPT.md](NARRATIVE_MASTER_SCRIPT.md) — six-act beat script.
+- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — complete proposed player-facing clue/puzzle/ending copy; pending owner approval.
+- [STORY_DOCUMENT_REGISTER.md](STORY_DOCUMENT_REGISTER.md) and [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md).
+- [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — one consolidated approval request for NCP-A01–A09 and END-A02.
+- [GAMEPLAY_SYSTEMS_SPEC.md](GAMEPLAY_SYSTEMS_SPEC.md), [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md), [ACT_AND_OBJECTIVE_MATRIX.md](ACT_AND_OBJECTIVE_MATRIX.md).
+- [ITEM_AND_INVENTORY_SPEC.md](ITEM_AND_INVENTORY_SPEC.md), [PUZZLE_IMPLEMENTATION_SHEETS.md](PUZZLE_IMPLEMENTATION_SHEETS.md), [PUZZLE_MASTER_REGISTER.csv](PUZZLE_MASTER_REGISTER.csv), [INTERACTION_MASTER_REGISTER.csv](INTERACTION_MASTER_REGISTER.csv).
+- [PLAYER_STATE_MACHINE.md](PLAYER_STATE_MACHINE.md), [CAPTURE_AND_RESCUE_SPEC.md](CAPTURE_AND_RESCUE_SPEC.md), [CHECKPOINT_AND_RECOVERY_SPEC.md](CHECKPOINT_AND_RECOVERY_SPEC.md), [GAMEPLAY_UI_UX_SPEC.md](GAMEPLAY_UI_UX_SPEC.md), [GAME_BALANCING_SPEC.md](GAME_BALANCING_SPEC.md).
+- [ENDING_DESIGN_SPEC.md](ENDING_DESIGN_SPEC.md), [ENDING_IMPLEMENTATION_SPEC.md](ENDING_IMPLEMENTATION_SPEC.md), [END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md](END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md).
 
-## Stato del materiale
-Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coordinate presenti nel dossier sono **proposte dimensionali**, non una planimetria esecutiva approvata: Claude deve risolvere ogni conflitto, produrre planimetrie e sezioni coerenti, generare coordinate puntuali per ogni arredo/asset e verificare percorsi e collisioni prima del blockout definitivo. Le quantità di dispositivi e i parametri AI sono valori iniziali da verificare in UEFN, non garanzie di API o performance.
+## 4. Antagonist, art and audio
 
-## Elaborati esecutivi aggiunti
-- [EXECUTIVE_FLOORPLANS.md](EXECUTIVE_FLOORPLANS.md) — piante quotate preliminari e sezioni richieste.
-- [coordinate_schedule.csv](coordinate_schedule.csv) — coordinate di footprint e spazi.
-- [wall_schedule.csv](wall_schedule.csv) — prime linee guida di pareti e partizioni.
-- [door_window_schedule.csv](door_window_schedule.csv) — aperture, porte e finestre.
-- [room_furnishing_schedule.csv](room_furnishing_schedule.csv) — posizionamento proposto degli arredi per stanza.
-- [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv) — inventario asset e priorità.
-- [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — scheda di produzione 3D di THE GUEST.
-- [UEFN_DEVICE_BINDINGS.csv](UEFN_DEVICE_BINDINGS.csv) — matrice iniziale dispositivi/Verse.
-- [GEOMETRY_VALIDATION_REPORT.md](GEOMETRY_VALIDATION_REPORT.md) — controlli geometrici ancora aperti.
-- [QA_ACCEPTANCE_MATRIX.md](QA_ACCEPTANCE_MATRIX.md) — matrice di collaudo.
-- [exterior_prop_schedule.csv](exterior_prop_schedule.csv) — coordinate di auto, insegna, cancello, generatore e props esterni.
-- [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) — registro normalizzato delle luci (10 righe dati).
-- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) — registro normalizzato delle sorgenti audio (9 righe dati).
-- `lighting_audio_schedule.csv` — file storico combinato mantenuto per tracciabilità; usare i due registri separati per le modifiche future.
+- [MONSTER_AI_BEHAVIOUR_SPEC.md](MONSTER_AI_BEHAVIOUR_SPEC.md) — dedicated state machine, perception, stimuli, targeting, navigation, capture handoff, fairness, tuning and AI tests.
+- [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — THE GUEST character production requirements.
+- [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md), [asset_manifest.csv](asset_manifest.csv), [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv).
+- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) are the current separate registers; the old combined lighting/audio schedule is historical.
+- Environment Art PR #1 is not a build authority and must not be merged as-is; all placements require R2.3 reconciliation.
 
-## File di produzione che Claude deve generare
-- `coordinate_schedule.csv`
-- `room_furnishing_schedule.csv`
-- `door_window_schedule.csv`
-- `asset_manifest.csv`
-- `guest_model_spec.md`
-- `geometry_validation_report.md`
-- `uefn_device_bindings.csv`
-- `qa_acceptance_matrix.md`
+## 5. UEFN, Verse and technical production
 
-## Disegni e logica di implementazione aggiunti
-- [floorplan_ground.svg](floorplan_ground.svg) — disegno vettoriale del piano terra.
-- [floorplan_upper.svg](floorplan_upper.svg) — disegno vettoriale del piano superiore.
-- [sections_AA_CC_DD.svg](sections_AA_CC_DD.svg) — sezioni verticali schematiche.
-- [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — contratti logici per stati, eventi, enigmi, cattura, checkpoint e finali; pseudocodice non compilato.
-- [asset_manifest.csv](asset_manifest.csv) — manifest con nome canonico richiesto.
+- [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — system architecture and device families.
+- [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — API-neutral logical contracts/pseudocode, not compiled Verse.
+- [UEFN_DEVICE_BINDINGS.csv](UEFN_DEVICE_BINDINGS.csv) — intended device/event bindings; editor verification required.
+- [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md), [CLAUDE_UEFN_EXECUTION_PLAN.md](CLAUDE_UEFN_EXECUTION_PLAN.md), [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md).
 
-## Chat 01 — Game Design & Narrative deliverables
-- [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — consolidated canon and progression flags.
-- [NARRATIVE_MASTER_SCRIPT.md](NARRATIVE_MASTER_SCRIPT.md) — six-act beat script and narrative gaps.
-- [ACT_AND_OBJECTIVE_MATRIX.md](ACT_AND_OBJECTIVE_MATRIX.md) — act objectives, durations, events, checkpoints and dependencies.
-- [ENDING_DESIGN_SPEC.md](ENDING_DESIGN_SPEC.md) — ending gates, flags, resolver and multiplayer choice contract.
-- [GAME_BALANCING_SPEC.md](GAME_BALANCING_SPEC.md) — pacing, interaction/tension targets and playtest plan.
-- [STORY_DOCUMENT_REGISTER.md](STORY_DOCUMENT_REGISTER.md) — narrative document and clue inventory.
-- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — proposal-level copy for all major missing narrative deliverables; not approved canon.
-- [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md) — narrative QA and blocking dependencies.
+## 6. Non-negotiable production rules
+
+- Final target is a complete Fortnite island built in UEFN; do not substitute another engine.
+- Solo and 1–4 player co-op must be supported by design; all mandatory progression must be solo-completable.
+- Shipped player-facing content is English.
+- No mandatory clue is audio-only; readable/journal fallback is required.
+- Team quest state and ending selection are session-authoritative; personal flashlight charge is per player.
+- Every pickup, puzzle, checkpoint and ending transaction must be idempotent and recoverable.
+- Never invent or assume UEFN APIs, NPC navigation, animation or device properties. Verify them against the target editor release.
+- Never report an editor build, import, Verse compile, playtest, multiplayer test, performance profile or island validation without actual reproducible evidence.
+- Do not publish without all release gates and explicit owner authorization.
+
+## 7. Status vocabulary
+
+Use OWNER-APPROVED DESIGN, CANONICAL DOCUMENT, PROPOSED, ENGINE-VERIFIED, EDITOR-VERIFIED, TEST-PASS, BLOCKED and NOT RUN precisely. A document being authored does not mean its feature is implemented or tested.
