@@ -244,3 +244,10 @@ The following documentation deliverables are now present on main. These close pl
 - Performance/memory profiling, island validation and release authorization.
 
 The R3 brief is the current execution sequence. Historical task rows below this addendum remain useful as historical audit evidence but must not override the current R2.3/R3 authority.
+
+
+## R3 static integration audit completion — 2026-11-16
+
+**R3_INTEGRATION_INTEGRITY_REPORT.md** is now present. The static checks recorded there pass for: 57 room-coordinate rows; 183 furnishing rows; 51 openings resolving to 72 unique walls; 32 interaction IDs mapped exactly once in the crosswalk; 51 event IDs; 49 unique device binding IDs; 100 UI strings; audio and lighting cue references; and 94 unique master asset IDs. Six out-of-room wardrobe positions were corrected and all 183 furniture footprints now fit their room envelopes under the stated centre-origin assumption.
+
+This closes the corresponding static documentation/data-integrity deliverable. It does not close editor collision, mesh pivot, door swing, interaction reach, AI navigation, Verse compilation, multiplayer, asset license or performance tests.
