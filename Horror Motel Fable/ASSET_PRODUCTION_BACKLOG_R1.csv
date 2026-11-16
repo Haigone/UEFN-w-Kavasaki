@@ -1,0 +1,61 @@
+Asset_ID,Category,Description,Quantity,Priority,Required_Deliverable,Source_Rights_Status,Import_Status,Acceptance_Gate,Dependencies
+ENV_MOD_WALL_KIT,Environment,Exterior interior straight wall corner endcap modules,1 kit,P0,Meshes pivots collision and LOD,NOT SOURCED,NOT IMPORTED,AST-01,LD-GEO R2.3
+ENV_MOD_FLOOR_KIT,Environment,Ground upper roof slab and trim modules,1 kit,P0,Meshes preserving courtyard and stair voids,NOT SOURCED,NOT IMPORTED,AST-01,LD-GEO R2.3
+ENV_MOD_DOOR_KIT,Environment,Standard service double and secret door kit,1 kit,P0,Door meshes hinges pivots swing and collision states,NOT SOURCED,NOT IMPORTED,AST-01,DOOR_WINDOW_SCHEDULE.csv
+ENV_MOD_WINDOW_KIT,Environment,Window frames dirty glass sills shutters,1 kit,P1,Meshes materials glass collision and variants,NOT SOURCED,NOT IMPORTED,AST-01,DOOR_WINDOW_SCHEDULE.csv
+ENV_MOD_STAIR_BALCONY,Environment,Two flight stair landing balcony guardrails clipped pads,1 kit,P0,Exact R2.3 dimensions and walkable collision union,NOT SOURCED,NOT IMPORTED,AST-01,STAIR_PLAN_R2.md
+ENV_MOD_ROOF_DRAIN,Environment,Roof parapet drainage downspouts,1 kit,P2,Nonplayable roof dressing concealed 1 percent falls,NOT SOURCED,NOT IMPORTED,AST-01,ROOF_PLAN_R2.md
+ENV_SIGN_RAVEN,Environment,Raven Motel roadside neon sign,1,P0,3.8x0.35x1.6 m mesh emissive material safe flicker,NOT SOURCED,NOT IMPORTED,AST-02,Exterior plan
+ENV_CAR_1986,Vehicle,1980s American sedan broken down,1,P0,4.8x1.9x1.45 m mesh collision ignition anchor,NOT SOURCED,NOT IMPORTED,AST-02,Exterior plan
+ENV_PARKING_SET,Environment,Parking asphalt curbs wheel stops puddles road shoulder,1 set,P1,Modular meshes decals and collision,NOT SOURCED,NOT IMPORTED,AST-02,Exterior plan
+ENV_RAIN_SET,VFX,Exterior rain and puddle dressing,1 set,P2,Low overdraw effects and surface materials,NOT SOURCED,NOT IMPORTED,AST-05,Lighting budget
+PROP_RECEPTION,Prop,Reception counter desk bell shelving chairs,1 set,P0,Mesh kit with interaction anchors and collision,NOT SOURCED,NOT IMPORTED,AST-02,ROOM_INTERIOR_FITOUT_SPEC_R1.md
+PROP_KEY_RACK,Prop,Key rack ROOM13 key and office key drawer,1 set,P0,Mesh actors and unique grant anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-003 IN-006
+PROP_REGISTER_KEYPAD,Prop,Guest register pen keypad and drawer lock,1 set,P0,Readable text prop and puzzle actor,NOT SOURCED,NOT IMPORTED,AST-02,PZ-01
+PROP_OFFICE_PHOTO_BOARD,Prop,Office chronology board four photos,1,P0,Four inspectable cards and slot actors,NOT SOURCED,NOT IMPORTED,AST-02,PZ-02
+PROP_ROOM13_PHOTO_BOARD,Prop,ROOM13 chronology board and evidence rail,1,P0,Four inspectable dated photos and slot actors,NOT SOURCED,NOT IMPORTED,AST-02,PZ-04
+PROP_PHOTO_FRAME,Prop,Guest and owner photo frame family,30,P1,Reusable mesh variants and readable image textures,NOT SOURCED,NOT IMPORTED,AST-02,Narrative content pack
+PROP_CRT,Prop,CRT monitor controllable feed materials,13,P1,Reusable mesh screen states and interaction anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-030
+PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,13,P1,Mesh audio transcript and interaction anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-002 IN-031
+PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,12,P1,Reusable mesh kit collision,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
+PROP_WARDROBE_KIT,Prop,Guest wardrobe and approved hiding variants,13,P1,Mesh plus hide exit actor only where assigned,NOT SOURCED,NOT IMPORTED,AST-02,IN-021
+PROP_DESK_CHAIR_KIT,Prop,Desk chair lamp stationery,13 sets,P2,Reusable low-cost meshes,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
+PROP_BATHROOM_KIT,Prop,Vanity toilet shower mirror tile,12 sets,P2,Decorative meshes no plumbing simulation,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
+PROP_FUSE_PANEL,Prop,Three fuse panel sockets A B C and breaker,1,P0,Interactive mesh and slot state visuals,NOT SOURCED,NOT IMPORTED,AST-02,PZ-03
+PROP_FUSE_PICKUPS,Prop,Distinct Fuse A B C pickups,3,P0,Unique actors and shared inventory grants,NOT SOURCED,NOT IMPORTED,AST-02,IN-024 IN-025 IN-026
+PROP_SCREWDRIVER,Prop,Reusable screwdriver and tool board,1,P0,Shared pickup actor,NOT SOURCED,NOT IMPORTED,AST-02,IN-027
+PROP_BATTERY,Prop,Flashlight battery and recovery battery,2,P0,Per-player charge pickup with duplicate prevention,NOT SOURCED,NOT IMPORTED,AST-02,IN-009
+PROP_FLASHLIGHT,Prop,Player flashlight presentation,1 per player,P0,Per-player charge feedback and on off state,NOT SOURCED,NOT IMPORTED,AST-02,Input specification
+PROP_DIARY,Prop,ROOM09 night manager diary,1,P0,Readable prop and journal record,NOT SOURCED,NOT IMPORTED,AST-02,IN-013
+PROP_CHILD_DRAWING,Prop,ROOM11 child's drawing,1,P0,Readable art and transcript,NOT SOURCED,NOT IMPORTED,AST-02,IN-014
+PROP_MISSING_GUEST_ARCHIVE,Prop,ROOM06 missing guest photo archive,1,P0,Readable photo board and evidence transcript,NOT SOURCED,NOT IMPORTED,AST-02,IN-029
+PROP_ROOM04_RECORDING,Prop,ROOM04 phone recording,1,P1,Audio and readable transcript,NOT SOURCED,NOT IMPORTED,AST-02,IN-031
+PROP_SECRET_PANEL,Prop,ROOM12 concealed panel and vestibule hardware,1,P0,Open closed collision states and interaction anchor,NOT SOURCED,NOT IMPORTED,AST-02,IN-015
+PROP_SERVICE_CONTROL,Prop,Service key lock gate control and Night Audit breaker,1 set,P0,Separate IN-018 and IN-032 actors,NOT SOURCED,NOT IMPORTED,AST-02,IN-018 IN-032
+PROP_OWNER_PORTRAIT,Prop,M Harrow portrait and reflection composition,1,P0,Approved canonical portrait image,NOT SOURCED,NOT IMPORTED,AST-02,Narrative content pack
+CHAR_GUEST_CONCEPT,Character,THE GUEST turnaround concept pack,1,P0,Front side back three quarter face hands scale and pose,NOT SOURCED,NOT CREATED,AST-03,GUEST_MODEL_SPEC.md
+CHAR_GUEST_MESH,Character,THE GUEST LOD0 skeletal mesh 2.60m,1,P0,25k to 45k target triangles rig material slots,NOT SOURCED,NOT CREATED,AST-03,GUEST_MODEL_SPEC.md
+CHAR_GUEST_LOD1,Character,THE GUEST LOD1,1,P1,12k to 20k target triangles silhouette continuity,NOT SOURCED,NOT_CREATED,AST-03,CHAR_GUEST_MESH
+CHAR_GUEST_LOD2,Character,THE GUEST LOD2,1,P1,4k to 8k target triangles silhouette continuity,NOT SOURCED,NOT_CREATED,AST-03,CHAR_GUEST_MESH
+CHAR_GUEST_RIG,Character,THE GUEST skeleton retarget and bind pose,1,P0,Root pelvis spine neck head arms hands legs feet hierarchy,NOT SOURCED,NOT_CREATED,AST-03,GUEST_MODEL_SPEC.md
+CHAR_GUEST_ANIM_IDLE,Animation,Idle breathing near still 6 to 10 seconds,1,P1,Loop clip root locked,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_WALK,Animation,Slow walk 2 to 3 second cycle,1,P1,Loop clip root policy documented,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_TURN,Animation,Head turn 1.2 to 2 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_INVESTIGATE,Animation,Investigate lean 1.5 to 2.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_CHASE,Animation,Chase run 0.8 to 1.2 second cycle,1,P1,Loop clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_CAPTURE,Animation,Reach capture 1 to 1.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_SEARCH,Animation,Search lean 2 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_RETREAT,Animation,Retreat disappear 1.5 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_BALCONY,Animation,Balcony still silhouette 4 to 8 seconds,1,P2,Loop or hold clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_REVEAL,Animation,Owner reveal pose 3 to 5 seconds,1,P1,Hold pose clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
+MAT_MOTEL_SURFACE_SET,Material,Carpet wallpaper wood tile concrete metal glass fabric asphalt,1 set,P1,Master materials instances and supported maps,NOT SOURCED,NOT_IMPORTED,AST-05,Asset pipeline
+MAT_GUEST_SKIN_CLOTH,Material,THE GUEST skin shirt trousers shoes badge,1 set,P1,Supported BaseColor Normal Roughness workflow,NOT SOURCED,NOT_IMPORTED,AST-05,CHAR_GUEST_MESH
+VFX_NEON_FLICKER,VFX,Controlled motel neon flicker,1,P1,Material and light control with photosensitive fallback,NOT SOURCED,NOT_IMPORTED,AST-05,Lighting cue sheet
+VFX_POWER_TRANSITION,VFX,Power restore and room by room blackout,1 set,P1,Replicated light state transitions,NOT SOURCED,NOT_IMPORTED,AST-05,Ending cinematic spec
+VFX_REFLECTION_SCARE,VFX,ROOM03 mirror and THE GUEST reveal reflection,2,P2,Verified reflection method or monitor substitute,NOT SOURCED,NOT_IMPORTED,AST-05,Feature compatibility
+AUDIO_AMBIENCE_SET,Audio,Rain wind neon fluorescent ROOM13 drone,1 set,P0,Licensed loops and cue metadata,NOT SOURCED,NOT_IMPORTED,AST-06,AUDIO_REGISTER.csv
+AUDIO_FOLEY_SET,Audio,Player Guest footsteps breath cloth doors phone CRT breaker capture chase gate,1 set,P0,Licensed one shots loops concurrency metadata,NOT SOURCED,NOT_IMPORTED,AST-06,AUDIO_REGISTER.csv
+AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,1 set,P0,English VO stable String IDs subtitles transcripts,NOT SOURCED,NOT_IMPORTED,AST-06,Narrative content pack
+UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,1 set,P0,UMG widget assets and per player Verse logic,NOT SOURCED,NOT_IMPORTED,AST-07,UI screen layouts
+UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,1 set,P1,High contrast icon set,NOT SOURCED,NOT_IMPORTED,AST-07,UI screen layouts
+VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,1 set,P2,Performance reviewed effects,NOT SOURCED,NOT_IMPORTED,AST-05,Lighting cue sheet
