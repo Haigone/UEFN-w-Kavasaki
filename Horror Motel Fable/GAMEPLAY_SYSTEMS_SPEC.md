@@ -93,7 +93,7 @@ Initial tuning anchors (playtest targets): patrol interval 35 s at DORMANT to 18
 - Solo: direct choice.
 - Commit one session-wide ending atomically; disable all competing triggers after commit.
 
-**Truth evidence END-A02:** still pending owner approval. Do not hard-code a mandatory evidence list until approval. The recommended three-clue formula is in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md. Keep route, puzzle and reveal flags separate from evidence pickups.
+**Truth evidence END-A02 — OWNER APPROVED 2026-11-16:** `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. The flags are set by inspection of the ROOM 09 diary, ROOM 11 child's drawing and ROOM 06 missing-guest photo archive. They are team/session-authoritative, idempotent, recoverable and have readable/journal fallbacks. `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` remain separate progression/reveal gates, not evidence pickups.
 
 ## 11. Accessibility and recovery
 - All essential clues have readable text.
@@ -114,7 +114,7 @@ All six acts playable in solo and 2–4 player co-op; all mandatory items recove
 
 
 ## 15. Cross-register state additions and reward ownership
-- Add `MissingGuestEvidenceFound` as the Room 06 photo-board discovery flag. It is a candidate END-A02 evidence clue; mandatory status remains pending owner approval.
+- `MissingGuestEvidenceFound` is the mandatory END-A02 Room 06 photo-board discovery flag, granted by IN-029 after inspection. It participates in the approved three-flag TruthChainComplete formula.
 - `RegisterSolved` opens the desk drawer; the OfficeKey is granted only by interaction IN-006.
 - `PhotoSequenceSolved` opens the ROOM 13 compartment; the ServiceKey is granted only by interaction IN-017.
 - Pickup events IN-024–IN-028 are the authoritative grants for FuseA, FuseB, FuseC, Screwdriver and CarKeys. Each is team-owned and idempotent.
