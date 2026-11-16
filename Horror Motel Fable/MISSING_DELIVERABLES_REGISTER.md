@@ -104,3 +104,21 @@ This addendum supersedes older R2.0/R2.1 status and Environment Art branch diver
 - PUZZLE_MASTER_REGISTER.csv, ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv, SLAB_SCHEDULE.csv, AUDIO_REGISTER.csv and LIGHTING_REGISTER.csv also passed row-width checks in this audit. These are schema checks only, not semantic or editor validation.
 - Gameplay reward ownership and Screwdriver use were reconciled; GAT-048–GAT-052 now cover the revised contracts.
 - Current Environment Art PR divergence is 66 ahead / 290 behind; do not reuse older 52/113 or 52/106 figures as current metadata.
+
+
+## R2.2 re-audit correction — 2026-11-16
+
+The earlier MD-023 wording that IN-021/022/023 were malformed is superseded by the current main snapshot: those three rows are header-aligned. The PZ-03 AcceptanceTest field has now been populated. The SITE, BLDG-UNION and COURTYARD semantic columns in ROOM_COORDINATE_REGISTER.csv have also been corrected.
+
+This does **not** close the full CSV/data gate. Remaining validation still required:
+- schema and enum checks across every controlled CSV;
+- unique ID and foreign-key checks across coordinate, wall, opening, slab, asset, material and placement registers;
+- one-to-one opening-to-host-wall mapping;
+- geometry topology, balcony union, courtyard void and ROOM 12–ROOM 13 continuity checks;
+- editor collision and traversal proof by Claude after owner approval.
+
+Current geometry decision and Claude execution documents:
+- `OWNER_DECISION_GATE_R2.2.md`
+- `CLAUDE_R2.2_EXECUTION_PACKET.md`
+
+Current state remains **INCOMPLETO / BLOCCATO** where editor evidence or owner approval is required. No implementation status is upgraded by these documentary repairs.
