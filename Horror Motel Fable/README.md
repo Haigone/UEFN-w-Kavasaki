@@ -2,15 +2,22 @@
 
 Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla realizzazione del gioco completo in **UEFN / Fortnite**.
 
+## Collaborazione e responsabilità
+- ChatGPT prepara specifiche, piani di esecuzione, checklist, criteri di accettazione e analisi delle evidenze.
+- Claude esegue implementazione, compilazione e test reali in UEFN/Playtest.
+- Nessun test è PASS senza esecuzione effettiva e prove registrate.
+- Consultare [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) per fasi, gate, deliverable e procedura di handoff.
+
 ## Ordine di lettura
-1. [MASTER_PROMPT_FOR_CLAUDE.md](MASTER_PROMPT_FOR_CLAUDE.md) — prompt operativo principale, aggiornato per richiedere un handoff di produzione misurabile.
-2. [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — visione, lore, struttura, personaggi, stanze, enigmi, dialoghi e finali.
-3. [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md) — flusso dei sei atti, stati giocatore, cattura/salvataggio, inventario, finali e QA.
-4. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
-5. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura per la planimetria esecutiva corretta.
-6. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità.
-7. [EXECUTIVE_BUILD_DOSSIER.md](EXECUTIVE_BUILD_DOSSIER.md) — specifiche dimensionali proposte per sito, stanze, arredi, sezioni e THE GUEST.
-8. [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md) — requisiti obbligatori per piante quotate, coordinate di ogni arredo, CSV completi, scheda 3D/rig/LOD/animazioni del mostro, validazione geometrica e QA.
+1. [MASTER_PROMPT_FOR_CLAUDE.md](MASTER_PROMPT_FOR_CLAUDE.md) — prompt operativo principale e confine delle responsabilità.
+2. [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — piano operativo dettagliato, priorità e criteri di avanzamento.
+3. [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — visione, lore, struttura, personaggi, stanze, enigmi, dialoghi e finali.
+4. [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md) — flusso dei sei atti, stati giocatore, cattura/salvataggio, inventario, finali e QA.
+5. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
+6. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura per la planimetria esecutiva corretta.
+7. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità.
+8. [EXECUTIVE_BUILD_DOSSIER.md](EXECUTIVE_BUILD_DOSSIER.md) — specifiche dimensionali proposte per sito, stanze, arredi, sezioni e THE GUEST.
+9. [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md) — requisiti obbligatori per piante quotate, coordinate di ogni arredo, CSV completi, scheda 3D/rig/LOD/animazioni del mostro, validazione geometrica e QA.
 
 ## Vincoli non negoziabili
 - Prodotto finale: isola Fortnite reale, costruita in Unreal Editor for Fortnite (UEFN).
@@ -49,17 +56,12 @@ Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coor
 - `uefn_device_bindings.csv`
 - `qa_acceptance_matrix.md`
 
-Repository: [Haigone/UEFN-w-Kavasaki](https://github.com/Haigone/UEFN-w-Kavasaki)
-Branch: `main`
-
-
 ## Disegni e logica di implementazione aggiunti
 - [floorplan_ground.svg](floorplan_ground.svg) — disegno vettoriale del piano terra.
 - [floorplan_upper.svg](floorplan_upper.svg) — disegno vettoriale del piano superiore.
 - [sections_AA_CC_DD.svg](sections_AA_CC_DD.svg) — sezioni verticali schematiche.
 - [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — contratti logici per stati, eventi, enigmi, cattura, checkpoint e finali; pseudocodice non compilato.
 - [asset_manifest.csv](asset_manifest.csv) — manifest con nome canonico richiesto.
-
 
 ## Chat 01 — Game Design & Narrative deliverables
 - [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — consolidated canon and progression flags.
