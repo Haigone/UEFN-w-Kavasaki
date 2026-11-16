@@ -292,3 +292,9 @@ Before implementation, reconcile/create:
 | UI-024 | No navigation aids | No marker reveals undiscovered clues/items or THE GUEST |
 
 **Definition of done:** every approved gameplay state has a player-facing representation; every UI action has a defined input/close path; Claude verifies the cases in the target UEFN project and attaches evidence.
+
+## THE_TRUTH evidence and final interaction UI
+- Journal shows `Truth evidence: 0/3` through `Truth evidence: 3/3` using UI_TRUTH_EVIDENCE_PROGRESS. It may show the count only; do not expose undiscovered clue names or locations.
+- Each discovery gives UI_EVIDENCE_ADDED and updates the count. The journal retains full readable text after discovery.
+- THE_TRUTH option appears only when FinaleReady, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and TruthChainComplete are true. CarKeys/CoreEscapeReady are irrelevant to this branch.
+- After THE_TRUTH is committed, show UI_IN_032_PROMPT at the dedicated service-control breaker. On commit, show UI_NIGHT_AUDIT_ACTIVATED; the cinematic then owns the screen until the title card/fallback.
