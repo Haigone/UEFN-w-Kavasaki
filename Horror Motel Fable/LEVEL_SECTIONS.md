@@ -1,5 +1,5 @@
 # LEVEL SECTIONS — CANONICAL GEOMETRY PROPOSAL R2.2
-Status: PROPOSED — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Status: OWNER-APPROVED LD-GEO R2.3 — NOT UEFN-VERIFIED.
 Graphic sections: `SECTIONS_R2.2.svg`. Slab polygons: `SLAB_SCHEDULE.csv`. All coordinates in metres.
 
 ## Vertical datum
@@ -24,7 +24,7 @@ Section line X=14.00, looking east. Show ground ROOM 01/02/03 below upper ROOM 0
 Section line Y=55.00, looking north. Ground allocations left-to-right: NW link X8.30–10.80; west lobby X11.10–19.85; reception X20.15–37.70; office X38–47; service/storage reserve X47.30–57; electrical X57.30–72.90; NE link X73.20–75.70. Upper allocations: west service reserve X8.30–19.85; stair landing X20.15–28.70; U-service X29–48.70; ROOM 13 X49–63.70; east service reserve X64.00–75.70. The upper balcony crossbar is south of this section at Y48.30–50.80.
 
 ## C–C — North U-turn stair
-Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.45–56.17. Two 1.20 m clear parallel flights, 0.30 m central structure/clearance band; 20 risers total at 0.18 m, 10 per flight; 9 goings per flight at 0.28 m; each flight run 2.52 m. Intermediate U-turn landing 2.70×1.20 m at Z1.80. Plan envelope 2.70×3.72 m. Upper south approach is 1.20 m from Y51.10 to Y52.30; lower approach must be ≥1.20 m but its polygon is not yet dimensioned. Stair occupies reception floor area; counter/queue furniture must be kept clear. Headroom ≥2.20 m above nosings and landings. Upper slab cut X22.50–25.50,Y52.30–56.32 (3.00×4.02 m) through Z3.35–3.60; guardrail west/east/north and open south landing approach. The arithmetic is derived; exact handedness, flight offset, structure and approach clearance require owner approval and editor verification.
+Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.45–56.17. Two 1.20 m clear parallel flights, 0.30 m central structure/clearance band; 20 risers total at 0.18 m, 10 per flight; 9 goings per flight at 0.28 m; each flight run 2.52 m. Intermediate U-turn landing 2.70×1.20 m at Z1.80. Plan envelope 2.70×3.72 m. Upper south approach is 1.20 m from Y51.10 to Y52.30; lower south approach is 1.35 m nominal from Y51.10 to stair footprint Y52.45. Stair occupies reception floor area; counter/queue furniture must be kept clear. Headroom ≥2.20 m above nosings and landings. Upper slab cut X22.50–25.50,Y52.30–56.32 (3.00×4.02 m) through Z3.35–3.60; guardrail west/east/north and open south landing approach. The arithmetic is derived; owner-approved handedness: west/lower flight rises south-to-north; east/upper flight returns north-to-south to the south upper approach. Claude must verify structure, headroom, capsule clearance and collision.
 
 ## D–D — ROOM 12 to ROOM 13
 Plan/section route:
@@ -36,10 +36,14 @@ Plan/section route:
 Show upper FFL Z3.60, slab thickness0.25, ceiling/roof underside Z6.40, and ground electrical room below. No vertical cut through the floor slab is required; the route remains on the upper floor. Continuous 0.90 m clear door width and 2.20 m minimum overhead target.
 
 ## E–E — Courtyard and continuous balcony
-Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.15–19.70, east leg X64.30–66.85, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m; centre-lines X19.85, X64.15 and Y48.15 sit outside the 2.50 m walkable polygon. Ground and upper floor slabs are separate at Z0 and Z3.60.
+Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.15–19.70, east leg X64.30–66.85, north crossbar X19.70–64.30,Y48.30–50.80 and clipped corner pads west X17.15–20.00, east X64.00–66.85,Y47.00–50.80. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m; centre-lines X19.85, X64.15 and Y48.15 sit outside the 2.50 m walkable polygon. Ground and upper floor slabs are separate at Z0 and Z3.60.
 
 ## F–F — Flat roof
-Flat roof slab underside Z6.40, top Z6.65, parapet top Z7.10. Roof polygon follows the U footprint union; courtyard is excluded. Roof has no player access. Courtyard-side parapet segments meet continuously at both north U-corners; use wall_schedule.csv centre-lines and miter/trim corners without gaps or stacked collision. Falls and drainage outlets remain to be dimensioned after roof drainage direction is approved.
+Flat roof slab underside Z6.40, top Z6.65, parapet top Z7.10. Roof polygon follows the U footprint union; courtyard is excluded. Roof has no player access. Courtyard-side parapet segments meet continuously at both north U-corners; use wall_schedule.csv centre-lines and miter/trim corners without gaps or stacked collision. Owner-approved concept: visually flat roof with concealed 1.0% falls to a coordinated perimeter drainage system. Exact outlet/scupper locations remain for technical coordination; do not invent positions.
 
 ## Geometry limitations
 These are dimensioned design sections, not proof of UEFN collision, navmesh, stair traversal, waterproofing or structural support. No UEFN testing was performed.
+
+## R2.3 sealed reserves and collision policy
+
+Ground sealed reserves: X11.10–19.70 and X64.30–72.90, Y45.15–48.00. Upper west sealed reserve: X8.30–17.00,Y47.55–50.80, closed by UF-W-SEALED-RESERVE-WEST. Upper east L-shaped reserve components: X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. These spaces retain structural floor collision but are excluded from navmesh and gameplay. U-SERVICE is similarly sealed/no-access/no-navmesh. They are not player traversal routes.
