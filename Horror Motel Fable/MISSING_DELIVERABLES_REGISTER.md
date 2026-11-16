@@ -185,3 +185,28 @@ Old audit sections below this addendum remain historical evidence. Use the curre
 | MD-048 | Approved THE_TRUTH evidence gate and finale | COMPLETE — END-A02 APPROVED; exact 3-clue gate and finale specified | Implement IN-032 and cinematic/actor presentation; run solo/co-op acceptance tests. |
 | MD-053 | Consolidated owner narrative decision | COMPLETE — delegated approval recorded in OWNER_DECISION_PACKET_R1.md | No further owner decision required for NCP-A01–A09 or END-A02. |
 | MD-063 | THE_TRUTH Night Audit interaction | DOCUMENTED — IN-032 in interaction register/execution spec | Implement dedicated control actor/proxy, one-shot event and sequence; verify target UEFN capabilities. |
+
+
+## Detailed systems documentation addendum — 2026-11-16
+
+The following deliverables have been authored and verified on branch main. Their existence closes documentation-authoring gaps only; it does not imply implementation, API verification, editor validation or playtest completion.
+
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-064 | Detailed executable sheets for all registered puzzles PZ-01–PZ-05 | PRESENTE — PUZZLE_EXECUTION_DETAIL_R2.md | Cross-register audit, UEFN interaction implementation, solo/co-op acceptance evidence |
+| MD-065 | THE GUEST numeric tuning baseline | PRESENTE — THE_GUEST_NUMERIC_TUNING_R1.md (PROPOSED CALIBRATION) | Verify movement/NPC capabilities in target UEFN; calibrate with at least 3 runs per party size; replace proposed values only with measured evidence |
+| MD-066 | UEFN feature compatibility and fallback matrix | PRESENTE — UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md | Check each feature against target editor/API digest; create minimal proofs; record engine/editor evidence |
+| MD-067 | UI screen layouts and widget state definitions | PRESENTE — UI_SCREEN_LAYOUTS_AND_WIDGET_STATES_R1.md | Implement widget hierarchy; verify safe zones, controller focus, mobile/console scaling, accessibility and multiplayer refresh |
+| MD-068 | Authoritative event and state transition catalog | PRESENTE — EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | Reconcile EVT-001–042 with existing IN-001–IN-032 and Verse/device bindings; resolve event-ID mapping; run race/disconnect/checkpoint tests |
+
+### Current documentary closure
+
+The core gameplay design now has explicit documentation for: all five registered puzzles; per-screen UI layouts; numeric THE GUEST starting values; 42 logical events; and a feature-by-feature UEFN implementation/fallback route. The remaining major documentary risks are cross-register reconciliation, asset-level sourcing/rights/completeness, exact device/API bindings against the target release, and consistency of legacy task/status snapshots.
+
+### Mandatory follow-up
+
+1. Do not treat the proposed AI numbers as final tuning or measured behavior.
+2. Do not treat compatibility matrix routes as verified UEFN capabilities.
+3. Cross-map EVT IDs to existing interaction IDs; no second event system may be created in Verse.
+4. Confirm all UI strings exist in UI_STRING_TABLE.csv; add missing stable StringIds before implementation.
+5. Keep CLD-001/CLD-002 and all editor gates open until reproducible evidence is committed.
