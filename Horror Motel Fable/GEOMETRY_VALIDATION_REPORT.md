@@ -87,8 +87,8 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 
 
 ## 8. R2.2 document-level integrity checks (performed after schedule updates)
-- ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows match the 16-column header.
-- coordinate_schedule.csv: 38 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
+- ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows match the 16-column header. U-NORTH-HALL is explicitly a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
+- coordinate_schedule.csv: 55 data rows; all rows match the 14-column header. Cross-bays, balcony turn-pad union components, the UPPER_NORTH_HALL functional alias, service reserves and south-end buffers are represented; aliases/components do not create duplicate floor collision. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 51 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
 - wall_schedule.csv: 70 unique wall IDs; all rows match the 15-column header. Upper room partition IDs now follow ROOM 07–12 numbering.
