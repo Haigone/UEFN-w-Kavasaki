@@ -8,12 +8,12 @@ A test remains NOT RUN until executed in target build with evidence. Design revi
 | NAR-002 | ACT I comprehension | Player understands breakdown, closed motel, twelve rooms and anomalous key without external context | NOT RUN |
 | NAR-003 | Reception phone | Exact approved line with English subtitle | NOT RUN |
 | NAR-004 | Register solvability | Three-part code 02-13-86 inferable in solo; retry possible | CONTENT SPEC APPROVED; RUNTIME NOT RUN |
-| NAR-005 | Office photo clue | Grants upper access; order 1974 → 1978 → 1982 → 1986; distinct from ROOM 13 puzzle | CONTENT SPEC READY; OWNER APPROVAL PENDING; RUNTIME NOT RUN |
+| NAR-005 | Office photo clue | Grants upper access; order 1974 → 1978 → 1982 → 1986; distinct from ROOM 13 puzzle | CONTENT SPEC APPROVED; RUNTIME NOT RUN |
 | NAR-006 | Rooms 01–06 | All specified anomalies present; mandatory progression information readable; optional evidence clues inspectable but not required for core ESCAPE progression | NOT RUN |
 | NAR-007 | Power/chase order | First full chase follows power restoration in ACT III | NOT RUN |
-| NAR-008 | Upper-floor history | ROOM 09 diary, ROOM 11 drawing and ROOM 12 panel communicate intended roles | CONTENT SPEC READY; OWNER APPROVAL PENDING; RUNTIME NOT RUN |
+| NAR-008 | Upper-floor history | ROOM 09 diary, ROOM 11 drawing and ROOM 12 panel communicate intended roles | CONTENT SPEC APPROVED; RUNTIME NOT RUN |
 | NAR-009 | Secret passage | Continuous navigable path to ROOM 13 | R2.3 DESIGN APPROVED; EDITOR TRAVERSAL NOT RUN |
-| NAR-010 | Four-photo chronology | Dates/clues infer 1968 → 1974 → 1981 → 1986; wrong input resets safely | CONTENT SPEC READY; OWNER APPROVAL PENDING; RUNTIME NOT RUN |
+| NAR-010 | Four-photo chronology | Dates/clues infer 1968 → 1974 → 1981 → 1986; wrong input resets safely | CONTENT SPEC APPROVED; RUNTIME NOT RUN |
 | NAR-011 | Identity reveal | Portrait, records and creature appearance establish owner/GUEST identity | NOT RUN |
 | NAR-012 | Self-contained story | Main mystery and choices understandable without external lore | CANONICAL SCRIPT APPROVED; RUNTIME NOT RUN |
 | NAR-013 | Optional lore safety | Ignoring optional props does not block progress | NOT RUN |
