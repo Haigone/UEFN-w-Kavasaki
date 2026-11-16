@@ -50,3 +50,23 @@ The following items were found during deeper CSV, wall-register and open-branch 
 | MD-030 | Explicit execution-order decision | Claude execution plan says Narrative Lock Phase 1; master register/roadmap say geometry first | PRESENTE MA NON VERIFICATO | Approved order clarifying parallel narrative work vs geometry critical path | Production sequencing | Project Owner |
 
 The PR's asset/material specifications do not close MD-009/011/012/016: no source models, textures, rig/animation files, license proof or UEFN imports are present in that branch. Documentation improves readiness but does not create the deliverables.
+
+
+## R2.1 / current PR additions — 2026-11-16
+
+| ID | Missing / incomplete deliverable | Current evidence | Status | Required completion evidence | Dependency | Owner |
+|---|---|---|---|---|---|---|
+| MD-031 | Complete R2.1 wall/floor/ceiling and polygon schedules | wall_schedule.csv remains 23 partial rows; balcony corner pads and courtyard roof cut-out are not explicit polygons | BLOCCATO | Unique wall/floor/ceiling IDs, vertices, thickness/elevations, openings and collision | R2.1 design baseline | Technical Level Design |
+| MD-032 | Dimensioned continuous ROOM 12 → ROOM 13 route | Vestibule, corner pads and D-13C are described but not fully registered as one continuous wall/floor assembly | BLOCCATO | Dimensioned plan/section D-D, wall cuts, clear opening, approach and return-path evidence | MD-031 | Technical Level Design |
+| MD-033 | Finished north stair drawing | STAIR_PLAN_R2.md gives correct riser/going arithmetic but exact origin, flight direction, landing polygon and slab opening remain unresolved | INCOMPLETO | Dimensioned plan and section with start/end coordinates, handrails, headroom and collision | R2.1 geometry | Level Design |
+| MD-034 | Finished roof construction schedule | ROOF_PLAN_R2.md defines levels and intent but drainage positions/falls and courtyard polygon exclusion are not fully modelled | INCOMPLETO | Roof polygon union, drains/scuppers, downpipes and coordinated section | R2.1 geometry | Level Design |
+| MD-035 | Complete furnishing/placement schedule with valid references | ROOM_FURNISHING_SCHEDULE.csv has 15 initial rows; Material_ID contains PROP-* IDs and Asset_ID values do not resolve to current asset IDs | INCOMPLETO | Full room/shared-area placement register with separate Placement_ID, Asset_ID and Material_ID | MD-031/032 | Environment Art |
+| MD-036 | R2.1-compatible Environment Art package | PR #1 is 44 ahead / 87 behind, draft, non-mergeable and still based on R2.0 | BLOCCATO | Reauthored R2.1 art spec/registers, synchronized branch, review and acceptance | MD-031/035 | Environment Art / Production |
+| MD-037 | Corrected art placement coordinates | Nine wardrobes outside R2.1 bounds; secret panel X differs from D-13A by 1.35 m; 91 rows remain unplaced | BLOCCATO | Corrected coordinates, footprint/door-swing/path checks and Claude editor evidence | MD-036 | Environment Art |
+| MD-038 | Valid source/geometry query registers | 8/10 source rows malformed; GQ-007 has 11 fields against 10; one Fab listing's current metadata differs from register | INCOMPLETO | Quoted CSV, verified listing facts, license/provenance and UEFN format classification | MD-036 | Art / Production |
+| MD-039 | Semantic repair of interaction/puzzle rows | IN-021/022/023 and PZ-03 pass width count but fields remain shifted; PZ-03 AcceptanceTest blank | INCOMPLETO | Correct field mapping and explicit row-level acceptance tests | Gameplay design | Gameplay Design |
+| MD-040 | Lighting/audio parameter schema | Light intensity field mixes Kelvin and descriptive text; two NPC audio rows use Dynamic in numeric XYZ | INCOMPLETO | Numeric intensity with units, separate CCT, explicit attached-emitter mode | R2.1 layout | Lighting / Audio |
+| MD-041 | Approved gate anchor and vehicle route | GATE-01 at Y=0–1 conflicts with legacy EXT_GATE at Y=18 | BLOCCATO | Owner-approved anchor and aligned schedules/drive path | R2.1 exterior plan | Project Owner / Level Design |
+| MD-042 | Current production index | README omits R2.1 source hierarchy and geometry handoff documents | INCOMPLETO | README points to LEVEL_DESIGN_R2.1_INDEX.md and current Claude protocols | R2.1 baseline | Production |
+
+The current R2.1 design has corrected several earlier ambiguities, but it remains a proposed greybox baseline. No native UEFN build, imported asset, editor test or engine-verified evidence is present in the repository.
