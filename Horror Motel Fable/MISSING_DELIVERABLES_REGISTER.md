@@ -157,7 +157,7 @@ This addendum supersedes older rows and narrative notes where they describe geom
 | ID | Deliverable | Current status | Completion criterion |
 |---|---|---|---|
 | MD-051 | Dedicated THE GUEST AI behaviour specification | PRESENTE — MONSTER_AI_BEHAVIOUR_SPEC.md | Design contract reviewed; target UEFN feasibility remains a separate engine gate |
-| MD-052 | Canonical objective/event/flag catalog | PRESENTE — OBJECTIVE_AND_EVENT_CATALOG.md | Cross-reference every objective and IN-001–IN-031 mapping; no duplicate flag writer |
+| MD-052 | Canonical objective/event/flag catalog | PRESENTE — OBJECTIVE_AND_EVENT_CATALOG.md + INTERACTION_EXECUTION_SPEC.md | Cross-reference every objective and IN-001–IN-031 mapping; no duplicate flag writer |
 | MD-053 | Consolidated owner narrative decision packet | PRESENTE — OWNER_DECISION_PACKET_R1.md | Owner response recorded; NCP-A01–A09 and END-A02 synchronized |
 | MD-054 | UI/UX vote and objective reconciliation | PARTIAL — GAMEPLAY_UI_UX_SPEC.md | Fully matches END-A01 and objective catalog; vote window and visual treatment specified as tunable UX parameters |
 | MD-055 | Cue-level audio/lighting specification | PRESENTE — AUDIO_CUE_SHEET.csv / LIGHTING_CUE_SHEET.csv initial baseline; asset/mix/editor validation pending | Complete cue IDs, triggers, duration, priority, concurrency/mix, subtitle/visual fallback and recovery |
