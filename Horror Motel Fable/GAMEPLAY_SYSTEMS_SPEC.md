@@ -114,7 +114,7 @@ All six acts playable in solo and 2–4 player co-op; all mandatory items recove
 
 
 ## 15. Cross-register state additions and reward ownership
-- Add `MissingGuestEvidenceFound` as the Room 06 photo-board discovery flag. It is part of the proposed THE_TRUTH evidence checklist only while the project owner retains it as mandatory.
+- Add `MissingGuestEvidenceFound` as the Room 06 photo-board discovery flag. It is a candidate END-A02 evidence clue; mandatory status remains pending owner approval.
 - `RegisterSolved` opens the desk drawer; the OfficeKey is granted only by interaction IN-006.
 - `PhotoSequenceSolved` opens the ROOM 13 compartment; the ServiceKey is granted only by interaction IN-017.
 - Pickup events IN-024–IN-028 are the authoritative grants for FuseA, FuseB, FuseC, Screwdriver and CarKeys. Each is team-owned and idempotent.
