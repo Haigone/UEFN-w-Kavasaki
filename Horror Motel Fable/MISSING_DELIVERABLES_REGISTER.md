@@ -233,6 +233,8 @@ The following documentation deliverables are now present on main. These close pl
 | MD-073 | Official UEFN feature reference register | PRESENT — UEFN_VERIFIED_REFERENCE_REGISTER_R1.md | Minimal project proofs for all project-specific behaviors |
 | MD-074 | Expanded device binding register | PRESENT — UEFN_DEVICE_BINDINGS.csv (50 rows including all 32 interactions and system devices) | Verify exact device properties/events in target editor; map each device to a placed actor and source revision |
 | MD-075 | THE GUEST model-to-UEFN production sequence | PRESENT — GUEST_MODEL_SPEC.md addendum | Produce turnaround/mesh/rig/animations and combined NPC proof |
+| MD-076 | Exact world/UI/player spawn anchors for IN-001–IN-032 | PRESENT — INTERACTION_ANCHOR_SCHEDULE_R1.csv (58 rows) | Verify all pivots, collision, reach and spawn clearance in editor |
+| MD-077 | THE GUEST spawn/patrol/stair waypoint anchors | PRESENT — AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv | Verify NPC spawn, navmesh and every route in target UEFN build |
 
 ### Current blockers that documentation cannot close
 
