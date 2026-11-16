@@ -324,3 +324,19 @@ Only read-only project baseline and document integrity inspection are authorized
 
 ### Current verdict
 **DOCUMENTATION / PRE-PRODUCTION — GEOMETRY APPROVAL BLOCKED.** The repository still does not evidence a native UEFN project, compiled Verse source, imported binary asset package, editor screenshots, gameplay test results, performance profile or island validation. This statement describes the inspected repository snapshot only; it does not prove that no local project exists outside the repository.
+
+
+## 19. Latest tree and CSV structural check — 2026-11-16
+
+Latest recursive main tree: 81 entries, consisting of 80 files (79 under Horror Motel Fable/ and root README.md) plus the folder entry. This supersedes the 76-file count in section 18.
+
+A fresh parser pass covered all 18 CSV files currently under Horror Motel Fable/:
+- 17 current authoring/compatibility CSVs have zero row-width errors.
+- Historical combined lighting_audio_schedule.csv has 10 rows whose field count differs from its 14-column header. This file is explicitly retained as a historical trace only; use LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv for all future authoring. Do not treat the combined file as a live authority.
+- All rows in ROOM_COORDINATE_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and INTERACTION_MASTER_REGISTER.csv now match their header widths.
+- PZ-03 has a populated InputType, Solution and AcceptanceTest field.
+- SITE, BLDG-UNION and COURTYARD rows now have semantic column placement aligned with the header.
+
+This is a structural parser result only. It does not validate enum domains, duplicate IDs, foreign keys, coordinate overlaps, asset footprints, wall/opening joins, UEFN collision or gameplay.
+
+The current production docs are linked from Horror Motel Fable/README.md. Current work remains blocked at owner geometry approval; Claude's CLD-001 and CLD-002 are the next authorized read-only tasks.
