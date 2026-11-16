@@ -25,9 +25,9 @@ Approved scope includes the R2.3 room envelopes, walls/openings, slabs, stair, s
 Separately approved decision:
 - END-A01 co-op ending quorum is owner-approved on 2026-11-16 and is binding: strict majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST; tie/timeout fallback and disconnect/reconfirmation rules are in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md.
 
-Still not approved:
-- END-A02 is EXPLICITLY APPROVED BY THE OWNER (2026-11-16): TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound; mandatory only for THE_TRUTH.
-- NCP-A01–A09 are APPROVED canonical English narrative/puzzle/ending copy in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. Implement exactly; do not rewrite canon.
+Not approved / outside this packet's authority:
+- END-A02 is APPROVED UNDER EXPRESS OWNER DELEGATION (2026-11-16): TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound; mandatory only for THE_TRUTH.
+- NCP-A01–A09 are APPROVED UNDER EXPRESS OWNER DELEGATION as canonical English narrative/puzzle/ending copy in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. Implement exactly; do not rewrite canon.
 - Room interior/bathroom partitions and fit-out.
 - Editor-driven geometry changes; propose these as R2.4 and obtain owner approval.
 
