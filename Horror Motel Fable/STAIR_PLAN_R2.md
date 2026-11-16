@@ -4,8 +4,8 @@ Status: OWNER-APPROVED LD-GEO R2.3 — NOT UEFN-VERIFIED.
 ## Fixed location decision
 The owner selected the north connector/reception for the main stair. Reservation: X21.00–27.00,Y51.20–59.00. This location is fixed by owner decision; the exact stair footprint within the reservation is not.
 
-## Proposed dimensional layout
-- Proposed stair assembly bounds: X22.65–25.35,Y52.45–56.17.
+## Owner-approved dimensional layout
+- Owner-approved stair assembly bounds: X22.65–25.35,Y52.45–56.17.
 - Two parallel U-turn flights, each 1.20 m clear width, separated by 0.30 m structure/clearance band. West flight is the lower flight and rises south-to-north; east flight is the upper flight and returns north-to-south, exiting at the south side of the upper opening.
 - Total rise 3.60 m, 20 risers at 0.18 m each.
 - 10 risers per flight; 9 goings per flight at 0.28 m = 2.52 m horizontal run.
