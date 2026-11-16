@@ -184,3 +184,7 @@ Latest live GitHub metadata reports PR #1 as OPEN/DRAFT and `mergeable=true`, bu
 
 ### Final mergeability status correction
 The most recent live check returned `mergeable=false` (the value had fluctuated between checks); compare was 49 ahead / 100 behind main. Keep the art intake gate closed. Recheck metadata after the branch is reauthored against R2.1, not before.
+
+
+### Latest branch delta
+Latest branch head is 52 commits ahead / 106 behind main, DIVERGED; PR #1 is OPEN/DRAFT and latest mergeable=false. Six west wardrobes have been changed to BLOCKED with blank coordinates, but three upper-east wardrobes remain proposed outside R2.1 bounds and F12_SECRET_PANEL remains 1.35 m offset from D-13A. Asset register now has 120 rows; source-register/GQ-007 CSV errors remain. The art intake dependency remains blocked.
