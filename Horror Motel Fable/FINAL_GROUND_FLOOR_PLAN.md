@@ -25,8 +25,8 @@ The 2 m bands Y27–29 and Y36–38 are reserved as open transverse connector ba
 | Zone | X min–max | Y min–max |
 |---|---:|---:|
 | GF north-west link | 8.30–10.80 | 48.30–59.70 |
-| GF west lobby | 11.10–19.70 | 48.30–59.70 |
-| Reception | 20.30–37.70 | 48.30–59.70 |
+| GF west lobby | 11.10–19.85 | 48.30–59.70 |
+| Reception | 20.15–37.70 | 48.30–59.70 |
 | Owner office | 38.00–47.00 | 48.30–59.70 |
 | Storage | 47.30–57.00 | 48.30–53.70 |
 | Storage/service bay | 47.30–57.00 | 53.85–59.70 |
