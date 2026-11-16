@@ -26,8 +26,8 @@ Separately approved decision:
 - END-A01 co-op ending quorum is owner-approved on 2026-11-16 and is binding: strict majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST; tie/timeout fallback and disconnect/reconfirmation rules are in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md.
 
 Still not approved:
-- END-A02: mandatory evidence list for THE TRUTH. See OWNER_DECISION_PACKET_R1.md and END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
-- NCP-A01–A09: narrative/puzzle/ending copy in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; consolidated owner approval is pending in OWNER_DECISION_PACKET_R1.md.
+- END-A02 is APPROVED under express owner delegation: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound; mandatory only for THE_TRUTH.
+- NCP-A01–A09 are APPROVED canonical English narrative/puzzle/ending copy in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. Implement exactly; do not rewrite canon.
 - Room interior/bathroom partitions and fit-out.
 - Editor-driven geometry changes; propose these as R2.4 and obtain owner approval.
 
@@ -86,7 +86,7 @@ Priority P1 | Parallel document/design work permitted; implementation only again
 
 Complete and reconcile: PZ-01 Guest Register (02-13-86); PZ-02 Office Photographs (1974/1978/1982/1986); exact Fuse A/B/C locations and clues aligned to IN-024/025/026; ROOM 04 phone recording; ROOM 06 missing guest photos; ROOM 09 diary; ROOM 11 child drawing; ROOM 13 four-photo content/captions and chronology (1968/1974/1981/1986); THE TRUTH confrontation/action/dialogue/consequence/cinematic beats.
 
-Narrative proposal pack is not canon until owner approval. END-A01 co-op quorum is owner-approved and may be implemented exactly as specified in ENDING_IMPLEMENTATION_SPEC.md. END-A02 remains pending owner approval; see END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md. Do not implement any mandatory truth-evidence gate until explicit owner approval. Keep SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed / Room13RevealComplete as separate progression/reveal gates, not duplicate evidence pickups. Use OBJECTIVE_AND_EVENT_CATALOG.md for exact objective predicates and IN-001–IN-031 event ownership; use MONSTER_AI_BEHAVIOUR_SPEC.md for AI state/perception/navigation/capture behaviour. Verify every capability against the target UEFN release. Every approved mandatory clue needs readable/journal fallback; each reward flag has one authoritative grant interaction.
+NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md is approved canon under express owner delegation. END-A01 and END-A02 are approved and binding. Implement the three-clue TruthChainComplete formula only for THE_TRUTH; keep SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete as separate progression/reveal states. NCP-A01–A09 exact English copy is final. IN-032 is the dedicated Night Audit ending interaction; see INTERACTION_EXECUTION_SPEC.md and OBJECTIVE_AND_EVENT_CATALOG.md. Use the catalog for IN-001–IN-032 event ownership and MONSTER_AI_BEHAVIOUR_SPEC.md for AI state/perception/navigation/capture behaviour. Verify engine capabilities against target UEFN release; technical adaptation may not alter narrative outcome.
 
 Verse implementation must be compiled against the actual current UEFN Verse API. Do not invent API signatures or report pseudocode as implementation.
 
