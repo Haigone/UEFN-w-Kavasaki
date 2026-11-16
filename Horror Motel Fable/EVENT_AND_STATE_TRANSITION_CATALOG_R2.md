@@ -122,3 +122,24 @@ EVT-R2-01 duplicate pickup; EVT-R2-02 simultaneous fuse same slot; EVT-R2-03 dif
 ## 8. Conflict resolution
 
 If this catalog conflicts with OBJECTIVE_AND_EVENT_CATALOG.md, the objective catalog controls objective IDs/predicates; this catalog controls event transaction semantics. If either conflicts with an owner-approved decision record, owner-approved decision record wins. Update all dependent docs in one change set.
+
+
+## 9. Additional interaction-specific events — crosswalk closure
+
+The following events complete the mapping to IN-001–IN-032. They extend the existing EVT namespace; they do not create a parallel event bus.
+
+| Event ID | Event / payload | Sole writer | Preconditions | Commit / failure |
+|---|---|---|---|---|
+| EVT-043 | ArrivalClueSeen(player, source_id) | GameManager | IN-001 sign/sightline inspected and visual clue presented | ArrivalClueSeen=true; repeat inspection is harmless |
+| EVT-044 | DocumentEvidenceDiscovered(player, document_id) | EvidenceManager | IN-008 valid authored document; readable content presented | Commit document-specific discovery flag; never gate mandatory progression unless separately approved |
+| EVT-045 | BatteryPickupClaimed(player, spawn_id) | InventoryManager | IN-009; local charge below 100%; spawn claim not already used by this player | Set player-local charge to 100%; record per-player spawn claim; if full, reject without consuming claim |
+| EVT-046 | ElectricalPanelCoverOpened(player) | PuzzleManager | IN-010; Screwdriver team-owned; panel not already open | PanelCoverOpen=true; screwdriver remains in inventory |
+| EVT-047 | HidingStateChanged(player, hidden) | PlayerStateManager | IN-021; player NORMAL and hiding spot available; valid exit if currently hidden | Set/clear player-local hidden state; clear on capture/disconnect/reset |
+| EVT-048 | ScrewdriverPickupClaimed(player, grant_token) | InventoryManager | IN-027; Screwdriver not already granted | ScrewdriverObtained=true; grant once; reusable |
+| EVT-049 | CarKeysPickupClaimed(player, grant_token) | InventoryManager | IN-028; Act VI; ESCAPE route eligible/selected according to authored flow | CarKeysObtained=true; grant once; never required by THE_TRUTH or THE_NEW_GUEST |
+| EVT-050 | CRTFeedViewed(player, feed_id) | EvidenceManager | IN-030; CRT visual feed presented | CRTFeedSeen=true; repeat view allowed, discovery flag one-shot |
+| EVT-051 | Room04RecordingPresented(player, recording_id, transcript_presented) | EvidenceManager | IN-031; transcript presented; audio may be unavailable | Room04RecordingHeard=true and Room04TranscriptRead=true only when readable transcript is visible |
+
+### Crosswalk authority
+
+EVENT_INTERACTION_VERSE_CROSSWALK_R1.md is the exact mapping between IN-001–IN-032 and EVT-001–EVT-051. If an event name or payload changes, update both files in the same commit. Existing EVT-001–042 semantics are unchanged. The crosswalk is a design mapping, not a claim that Verse methods with those names already compile.
