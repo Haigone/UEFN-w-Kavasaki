@@ -11,8 +11,8 @@ ROOM-06,GF,Room,64.3,72.9,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial alloca
 G-CW,GF,Corridor,8.3,10.8,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 G-CE,GF,Corridor,73.2,75.7,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 GF-NW-LINK,GF,Corridor,8.3,10.8,48.3,59.7,0,2.5,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-GF-W-LOBBY,GF,Lobby,11.1,19.7,48.3,59.7,0,8.6,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-RECEPTION,GF,Room,20.3,37.7,48.3,59.7,0,17.4,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+GF-W-LOBBY,GF,Lobby,11.1,19.85,48.3,59.7,0,8.75,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+RECEPTION,GF,Room,20.15,37.7,48.3,59.7,0,17.55,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 OWNER-OFFICE,GF,Room,38,47,48.3,59.7,0,9,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 STORAGE,GF,Room,47.3,57,48.3,53.7,0,9.7,5.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 GF-SERVICE-BAY,GF,Service_Corridor,47.3,57,53.85,59.7,0,9.7,5.85,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
@@ -31,14 +31,14 @@ ROOM-12,UF,Room,67,75.7,38,47.4,3.6,8.7,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper 
 U-WEST-BALCONY,UF,Balcony,17.2,19.7,18.3,48.3,3.6,2.5,30,2.8,0,FLOOR-UPPER-01,Walkable,Continuous courtyard-facing west leg,OWNER DECISION + PROPOSED DIMENSION
 U-NORTH-BALCONY,UF,Balcony,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-UPPER-01,Walkable,Continuous courtyard-facing north crossbar,OWNER DECISION + PROPOSED DIMENSION
 U-EAST-BALCONY,UF,Balcony,64.3,66.8,18.3,48.3,3.6,2.5,30,2.8,0,FLOOR-UPPER-01,Walkable,Continuous courtyard-facing east leg,OWNER DECISION + PROPOSED DIMENSION
-U-WEST-TURN,UF,Balcony_Turn,17.2,20.3,47,50.8,3.6,3.1,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-U-EAST-TURN,UF,Balcony_Turn,63.7,66.8,47,50.8,3.6,3.1,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+U-WEST-TURN,UF,Balcony_Turn,17.15,20.15,47,50.8,3.6,3.1,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+U-EAST-TURN,UF,Balcony_Turn,63.85,66.85,47,50.8,3.6,3.1,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 U-NORTH-HALL,UF,Hall,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-U-STAIR-LANDING,UF,Stair_Landing,20.3,28.7,51.1,59.7,3.6,8.4,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+U-STAIR-LANDING,UF,Stair_Landing,20.15,28.7,51.1,59.7,3.6,8.4,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 U-SERVICE,UF,Service_Room,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room; north connector,OWNER DECISION for location; dimensions proposed
-U-WEST-SERVICE-RESERVE,UF,Nonplayable_Reserve,8.3,19.7,51.1,59.7,3.6,11.4,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
-U-EAST-SERVICE-RESERVE,UF,Nonplayable_Reserve,64.3,75.7,51.1,59.7,3.6,11.4,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
+U-WEST-SERVICE-RESERVE,UF,Nonplayable_Reserve,8.3,19.85,51.1,59.7,3.6,11.4,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
+U-EAST-SERVICE-RESERVE,UF,Nonplayable_Reserve,64,75.7,51.1,59.7,3.6,11.4,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
 VEST-13,UF,Secret_Vestibule,67,72.9,47.55,49.2,3.6,5.9,1.5,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 panel to east balcony,EDITOR-TEST REQUIRED
 STAIR-01,GF-UF,Stair_U_Turn,22.65,25.35,52,55.72,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,20 risers; 2 flights; 9 goings each; landing Z1.80,OWNER APPROVAL + EDITOR-TEST REQUIRED
 ROOF-SLAB,ROOF,Flat_Roof_U_Polygon,8,76,18,60,6.4,68,42,0.25,0,ROOF-SLAB-01,Solid,Flat roof over U union only; courtyard excluded,PROPOSED CORRECTION
