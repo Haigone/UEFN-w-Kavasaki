@@ -88,6 +88,8 @@ To retain a continuous courtyard-facing balcony without leaving an unexplained 2
 
 This restores a usable 8.70 m room width consistent with the 12.00 m wing depth, 2.50 m courtyard balcony and 0.30 m wall allowance. It replaces the R2.1 5.90 m width, which left an unexplained outer strip. OWNER APPROVAL REQUIRED.
 
+The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as upper cross-bays. Each receives a 1.50 m clear opening through the room/balcony partition so the cross-bay connects to the continuous balcony. These are open circulation bays, not additional rooms. OWNER APPROVAL REQUIRED.
+
 ### Upper floor — continuous balcony and north connector
 | ID | X min–max | Y min–max | FIF size | Classification |
 |---|---:|---:|---:|---|
