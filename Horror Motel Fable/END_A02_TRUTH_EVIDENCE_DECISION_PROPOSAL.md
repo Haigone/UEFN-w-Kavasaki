@@ -1,11 +1,11 @@
 # END-A02 — THE TRUTH EVIDENCE GATE
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **RECOMMENDATION FOR OWNER DECISION — NOT APPROVED**
+Status: **OWNER APPROVED — CANONICAL END-A02 DECISION (2026-11-16)**
 
-## 1. Recommended decision
+## 1. Owner-approved decision
 
-Approve the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete`:
+The owner explicitly approved the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete` on 2026-11-16:
 
 | Required evidence | Flag | Location | Narrative function |
 |---|---|---|---|
@@ -13,7 +13,7 @@ Approve the following three optional-investigation clues as the only evidence pi
 | Child's drawing | `ChildRoomClueFound` | ROOM 11 | Establishes that the figure is present throughout the motel and links it to the owner. |
 | Missing-guest photo archive | `MissingGuestEvidenceFound` | ROOM 06 | Establishes the historical pattern of guests who never checked out and the recurring figure. |
 
-Proposed formula:
+Canonical approved formula:
 
 `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`
 
@@ -60,11 +60,6 @@ If the owner approves this gate, each of the three required clues must satisfy a
 
 ## 6. Approval boundary
 
-**DECISION STATUS: APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16.** This file is now the implementation contract for the three-clue THE_TRUTH evidence gate. The complete narrative copy is approved in `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md`.
+**DECISION STATUS: APPROVED BY OWNER — 2026-11-16.** This file is the implementation contract for the three-clue THE_TRUTH evidence gate. This approval covers the evidence formula and its availability/recovery requirements; it does not independently approve unrelated narrative material.
 
-- Keep the current implementation gate marked pending.
-- Do not implement these three flags as mandatory THE TRUTH requirements.
-- Do not treat the six-flag list in `ENDING_IMPLEMENTATION_SPEC.md` as owner-approved.
-- Claude may validate clue placement/accessibility and report findings without changing the ending gate.
-
-Owner decision: **PENDING**. The authoritative approval record is OWNER_DECISION_GATE_R2.2.md; it currently records END-A02 as not approved.
+Claude is authorized to implement the approved evidence gate, validate actual clue placement and event bindings in UEFN, and execute the tests in Section 5. Keep all three clues optional to core progression and ESCAPE. The authoritative approval record is `OWNER_DECISION_GATE_R2.2.md`.
