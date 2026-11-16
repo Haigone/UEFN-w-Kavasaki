@@ -19,7 +19,7 @@ Upper and roof slabs target 0.25 m thickness. Ground ceiling void between Z3.00 
 Section line X=14.00, looking east. Show ground ROOM 01/02/03 below upper ROOM 07/08/09. Outer wall centreline X=8.15, room outer FIF X=8.30. Upper balcony is not intersected by X=14; its courtyard-facing edge is at X=19.70. The upper room doors are on wall centreline X=17.10 and open east to balcony. Ground room windows face courtyard at wall centreline X=19.85. Show upper slab Z3.35–3.60 and roof slab Z6.40–6.65.
 
 ## B–B — North connector east-west
-Section line Y=55.00, looking north. Ground allocations left-to-right: NW link X8.30–10.80; west lobby X11.10–19.70; reception X20.30–37.70; office X38–47; service/storage reserve X47.30–57; electrical X57.30–72.90; NE link X73.20–75.70. Upper allocations: west service reserve X8.30–19.70; stair landing X20.30–28.70; U-service X29–48.70; ROOM 13 X49–63.70; east service reserve X64.30–75.70. The upper balcony crossbar is south of this section at Y48.30–50.80.
+Section line Y=55.00, looking north. Ground allocations left-to-right: NW link X8.30–10.80; west lobby X11.10–19.85; reception X20.15–37.70; office X38–47; service/storage reserve X47.30–57; electrical X57.30–72.90; NE link X73.20–75.70. Upper allocations: west service reserve X8.30–19.85; stair landing X20.15–28.70; U-service X29–48.70; ROOM 13 X49–63.70; east service reserve X64.00–75.70. The upper balcony crossbar is south of this section at Y48.30–50.80.
 
 ## C–C — North U-turn stair
 Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.00–55.72. Two 1.20 m clear parallel flights, 0.30 m central structure/clearance band; 20 risers total at 0.18 m, 10 per flight; 9 goings per flight at 0.28 m; each flight run 2.52 m. Intermediate U-turn landing 2.70×1.20 m at Z1.80. Plan envelope 2.70×3.72 m. Top and bottom approach target ≥1.20 m. Headroom ≥2.20 m above nosings and landings. The arithmetic is derived; exact handedness, flight offset, structure and approach clearance require owner approval and editor verification.
@@ -28,13 +28,13 @@ Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.00–5
 Plan/section route:
 - D-13A centre (69.95,47.475), panel in ROOM 12 north wall, opens north.
 - Vestibule X67.00–72.90,Y47.55–49.20, FFL3.60.
-- D-13C centre (66.90,48.45), opens west into east balcony leg.
+- D-13C centre (66.925,48.45), opens west into east balcony leg.
 - Follow east leg to the east corner pad, then west along north balcony crossbar.
 - D-13B centre (56.35,50.95), in ROOM 13 south wall, opens north.
 Show upper FFL Z3.60, slab thickness0.25, ceiling/roof underside Z6.40, and ground electrical room below. No vertical cut through the floor slab is required; the route remains on the upper floor. Continuous 0.90 m clear door width and 2.20 m minimum overhead target.
 
 ## E–E — Courtyard and continuous balcony
-Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.20–19.70, east leg X64.30–66.80, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m. Ground and upper floor slabs are separate at Z0 and Z3.60.
+Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.15–19.70, east leg X64.30–66.85, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m. Ground and upper floor slabs are separate at Z0 and Z3.60.
 
 ## F–F — Flat roof
 Flat roof slab underside Z6.40, top Z6.65, parapet top Z7.10. Roof polygon follows the U footprint union; courtyard is excluded. Roof has no player access. Falls and drainage outlets remain to be dimensioned after roof drainage direction is approved.
