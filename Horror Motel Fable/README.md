@@ -25,6 +25,18 @@ Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla re
 ## Stato del materiale
 Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coordinate presenti nel dossier sono **proposte dimensionali**, non una planimetria esecutiva approvata: Claude deve risolvere ogni conflitto, produrre planimetrie e sezioni coerenti, generare coordinate puntuali per ogni arredo/asset e verificare percorsi e collisioni prima del blockout definitivo. Le quantità di dispositivi e i parametri AI sono valori iniziali da verificare in UEFN, non garanzie di API o performance.
 
+## Elaborati esecutivi aggiunti
+- [EXECUTIVE_FLOORPLANS.md](EXECUTIVE_FLOORPLANS.md) — piante quotate preliminari e sezioni richieste.
+- [coordinate_schedule.csv](coordinate_schedule.csv) — coordinate di footprint e spazi.
+- [wall_schedule.csv](wall_schedule.csv) — prime linee guida di pareti e partizioni.
+- [door_window_schedule.csv](door_window_schedule.csv) — aperture, porte e finestre.
+- [room_furnishing_schedule.csv](room_furnishing_schedule.csv) — posizionamento proposto degli arredi per stanza.
+- [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv) — inventario asset e priorità.
+- [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — scheda di produzione 3D di THE GUEST.
+- [UEFN_DEVICE_BINDINGS.csv](UEFN_DEVICE_BINDINGS.csv) — matrice iniziale dispositivi/Verse.
+- [GEOMETRY_VALIDATION_REPORT.md](GEOMETRY_VALIDATION_REPORT.md) — controlli geometrici ancora aperti.
+- [QA_ACCEPTANCE_MATRIX.md](QA_ACCEPTANCE_MATRIX.md) — matrice di collaudo.
+
 ## File di produzione che Claude deve generare
 - `coordinate_schedule.csv`
 - `room_furnishing_schedule.csv`
