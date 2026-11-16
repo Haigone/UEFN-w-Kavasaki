@@ -172,7 +172,7 @@ Proposed consistent stack:
 | Flat roof slab top | Z=6.65 |
 | Parapet top | Z=7.10 |
 
-Upper slab and roof slab thickness target 0.25 m. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent but is a PROPOSED CORRECTION to EBD/E1 vertical values and requires owner approval.
+Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are proposed at 0.25 m from E1. All three thicknesses require owner approval. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent but is a PROPOSED CORRECTION to EBD/E1 vertical values and requires owner approval.
 
 ## 10. Balcony, courtyard and floor separation
 - Courtyard void: X=20–64, Y=18–48; no floor slab above ground level and no roof.
@@ -191,7 +191,7 @@ Upper slab and roof slab thickness target 0.25 m. The 0.35 m gap between ground 
 5. Confirm west lobby, service bay and upper service reserve allocations.
 6. Confirm ROOM 13 dimensions 14.70×8.60 m and exact north connector placement.
 7. Confirm stair geometry, handedness, exact placement and 0.18/0.28 riser/going targets.
-8. Confirm wall thicknesses 0.30/0.15 m and vertical stack Z=3.00/3.35/3.60/6.40/6.65/7.10.
+8. Confirm wall thicknesses 0.30/0.15 m, ground slab 0.20 m, upper/roof slabs 0.25 m, and vertical stack Z=3.00/3.35/3.60/6.40/6.65/7.10.
 9. Confirm 2.50 m balcony width and corner pads.
 10. Confirm window placement on courtyard-facing ground facades and exterior-facing upper facades.
 11. Confirm the 1.55 m south-end vestibule buffers and their open connections to the corridors/balconies.
