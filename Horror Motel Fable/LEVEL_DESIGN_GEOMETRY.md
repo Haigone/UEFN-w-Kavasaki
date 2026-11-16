@@ -213,7 +213,7 @@ The owner approved all geometric decisions GEO-A01–GEO-A21 and the R2.2 recomm
 - Balcony corner pads are clipped to the UF-SLAB polygon: west X17.15–20.00, east X64.00–66.85, Y47.00–50.80. No floor collision may extend into the courtyard void. Maintain a 2.50 m minimum clear continuous path after rail/post offsets.
 - Cross-bays remain 2.00 m gross / 1.70 m clear net; 1.50 m openings retained.
 - VEST-13 Length_m is corrected to 1.65 m from FIF bounds Y47.55–49.20.
-- Stair handedness: west/lower flight rises south-to-north to the intermediate landing; east/upper flight returns north-to-south and exits at the south upper approach. Two 1.20 m clear flights, 0.30 m central separation, 20 risers at 0.18 m, nine 0.28 m goings per flight, landing 2.70×1.20 m at Z1.80.
+- Stair handedness: west/lower flight X22.65–23.85,Y52.45–54.97 rises south-to-north; east/upper flight X24.15–25.35,Y52.45–54.97 returns north-to-south; central band X23.85–24.15. Two 1.20 m clear flights, 0.30 m central separation, 20 risers at 0.18 m, nine 0.28 m goings per flight, landing X22.65–25.35,Y54.97–56.17 at Z1.80.
 - Vertical stack approved as recorded: GF slab −0.20/0.00; UF slab 3.35/3.60; roof slab 6.40/6.65; parapet top 7.10 m. Headroom target 2.20 m minimum; nominal stair headroom 2.80 m before beam/MEP coordination.
 - Roof remains visually flat and non-accessible. Approve concealed 1.0% falls to a coordinated perimeter drainage system; exact outlets/scuppers are not located by this geometry package and require technical coordination.
 - Door/window positions and dimensions, wall thicknesses, slab polygons and room envelopes in R2.2 are approved as design geometry. Room interior/bathroom fit-out remains outside this envelope approval.
