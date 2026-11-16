@@ -5,7 +5,7 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 | Act | Target | Environments | Primary objectives | Evidence / puzzle | Exit state |
 |---|---:|---|---|---|---|
 | I — THE ARRIVAL | 0–8 | Road, car, parking, neon, balcony, reception | Reach motel; inspect front desk; hear phone; see anomalous key | Twelve-room register/key rack; ROOM 13 key; phone line | Investigation started |
-| II — THE REGISTER | 8–17 | Reception, office, rooms 01–06 | Solve register; obtain Office Key; solve office photo clue; inspect rooms; identify missing guests | Three-part register code; separate office photo clue; room anomalies | RegisterSolved; OfficeAccessGranted; OfficePhotoPuzzleSolved; UpperFloorAccessGranted |
+| II — THE REGISTER | 8–17 | Reception, office, rooms 01–06 | Solve register; obtain Office Key; solve office photo clue; investigate ground-floor rooms (optional lore) | Three-part register code; separate office photo clue; room anomalies; Room 06 archive is optional evidence for THE_TRUTH | RegisterSolved; OfficeAccessGranted; OfficePhotoPuzzleSolved; UpperFloorAccessGranted |
 | III — THE POWER | 17–27 | Storage, utility/electrical room | Find three fuses; install; restore power; evade first full chase | Fuse A/B/C and labelled panel | PowerRestored; CP02 |
 | IV — THE SECOND FLOOR | 27–36 | Rooms 07–12, balcony, concealed panel | Find diary; inspect child's room; open Room 12 panel; reach passage | Room 09 diary; Room 11 drawing; Room 12 panel | SecretPanelOpened; Room13Unlocked; CP03 |
 | V — ROOM 13 | 36–43 | Passage and impossible room | Inspect room; order four photos; reveal identity; obtain Service Key | Four-photo chronology; owner portrait/records/creature match | Room13RevealComplete; ServiceKeyObtained; CP04 |
@@ -31,7 +31,7 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 ## Secondary objectives
 No fixed side-quest or collectible chain is defined. Optional environmental lore may enrich play but cannot gate mandatory progress. Any new side objective is PROPOSAL and requires dependency review.
 
-## Remaining design and approval dependencies
+## Resolved design decisions (2026-11-16)\n- Act II does not require inspecting all rooms 01–06. Mandatory exit is OfficePhotoPuzzleSolved + UpperFloorAccessGranted after register/Office Key progression. Room 01 CRT, Room 03 mirror, Room 04 recording and Room 05 footsteps are optional. Room 06 photo archive is optional to core progress but required for THE_TRUTH evidence gate.\n- END-A02 is approved: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. This gates THE_TRUTH only; ESCAPE remains available without it.\n- Ending quorum is governed by END-A01 in ENDING_IMPLEMENTATION_SPEC.md: majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative consent for THE_NEW_GUEST.\n\n## Remaining design and approval dependencies
 
 - Owner approval of narrative copy and puzzle clue text: consolidated as NCP-A01–A09 in OWNER_DECISION_PACKET_R1.md. The complete proposal is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
 - Owner approval of END-A02 mandatory truth evidence: recommended three-clue gate in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md; pending.
