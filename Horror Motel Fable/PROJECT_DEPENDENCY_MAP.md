@@ -101,3 +101,7 @@ After the geometry source-of-truth decision is made:
 - **Gate G6 — Release:** performance, memory and island validation pass; publication explicitly authorized.
 
 No gate is passed by documentation alone.
+
+
+## Execution ownership and evidence loop
+All nodes requiring editor access, UEFN construction, asset import, Verse compilation, gameplay tests, multiplayer tests, profiling or island validation are executed by **Claude**. ChatGPT supplies ordered, granular execution plans and evaluates the returned evidence; it does not run these tests. The project owner approves design decisions and release. Repository documents are guidance, not implementation proof. Every gate must include Claude's evidence, editor/project version and reproducible result before status advancement. See `CLAUDE_EXECUTION_PROTOCOL.md`.
