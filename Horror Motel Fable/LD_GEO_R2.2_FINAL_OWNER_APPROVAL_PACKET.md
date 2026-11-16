@@ -54,14 +54,10 @@ Le dimensioni delle camere, la forma esatta dei turning pad, le quote verticali,
 
 ## 4. Anomalie da correggere prima del freeze
 
-### A-01 — COURTYARD: riga CSV malformata
-**Priorità: ALTA — correzione documentale oggettiva.**
+### A-01 — COURTYARD: allineamento schema CSV
+**Priorità: RISOLTA in main — nessuna ulteriore modifica richiesta.**
 
-ROOM_COORDINATE_REGISTER.csv ha 52 righe dati, ma la riga COURTYARD contiene 15 campi contro i 16 dell'header. Manca il placeholder Material_Asset_ID; i campi successivi risultano quindi disallineati e Verification_Status è assente.
-
-Correzione proposta: inserire il valore NA dopo Rotation_deg=0, mantenendo No_Floor_Slab nel campo Collision, la descrizione open-to-sky in Gameplay_Function e FIXED REQUIREMENT in Verification_Status.
-
-Il precedente GEOMETRY_VALIDATION_REPORT.md afferma che tutte le righe hanno 16 colonne: questa affermazione è falsa e deve essere aggiornata.
+La prima lettura di revisione aveva rilevato 15 campi nella riga COURTYARD. La versione attuale di main contiene ora il placeholder Material_Asset_ID=NA: la riga ha 16 campi e i campi Collision, Gameplay_Function e Verification_Status sono correttamente allineati. La correzione è presente nel commit 5ac16543. Il report di validazione è stato aggiornato per riflettere lo stato corrente.
 
 ### A-02 — VEST-13: profondità errata nel registro
 **Priorità: ALTA — correzione documentale derivata.**
@@ -181,10 +177,10 @@ Le decisioni qui sotto sono un riepilogo tematico. Per la risposta formale usare
 
 ## 6. Raccomandazione finale
 
-**Non congelare R2.2 nello stato attuale.** La struttura matematica principale è coerente, e il percorso ROOM 12 → ROOM 13, le aperture, le quote verticali e i calcoli della scala sono sostanzialmente allineati. Restano però aree fisiche non assegnate, un ambiente U-SERVICE senza accesso ma marcato walkable, due errori nel registro coordinate e il clipping dei turning pad.
+**Non congelare R2.2 nello stato attuale.** La struttura matematica principale è coerente, e il percorso ROOM 12 → ROOM 13, le aperture, le quote verticali e i calcoli della scala sono sostanzialmente allineati. Restano però aree fisiche non assegnate, un ambiente U-SERVICE senza accesso ma marcato walkable, un errore dimensionale residuo nel registro coordinate e il clipping dei turning pad.
 
 Ordine raccomandato:
-1. Correggere A-01 e A-02 nei registri senza cambiare la geometria.
+1. Confermare A-01 già risolta in main; correggere A-02 (VEST-13 Length_m=1,65) senza cambiare la geometria.
 2. Ottenere le scelte del proprietario per A-03, A-04 e A-05.
 3. Correggere A-06 e chiarire A-07.
 4. Approvare la configurazione dettagliata della scala e le quote di stack.
