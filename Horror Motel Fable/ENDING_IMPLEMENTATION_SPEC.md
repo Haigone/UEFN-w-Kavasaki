@@ -2,11 +2,11 @@
 ## THE MOTEL: ROOM 13
 
 ## 1. Canonical flags
-FinaleReady; CoreEscapeReady; PowerRestored; GatePowered; CarKeysObtained; ServiceKeyObtained; ServiceRouteReady; TruthChainComplete; Room13RevealComplete; NewGuestAccepted; EndingSelected; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
+FinaleReady; CoreEscapeReady; PowerRestored; GatePowered; CarKeysObtained; ServiceKeyObtained; ServiceRouteReady; TruthChainComplete; Room13RevealComplete; NewGuestAccepted; EndingSelected; NightAuditActivated; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
 
 Derived flags: `FinaleReady = PowerRestored AND GatePowered AND ServiceKeyObtained AND ServiceRouteReady AND Room13RevealComplete`. `CoreEscapeReady = FinaleReady AND CarKeysObtained AND successful vehicle ignition (IN-019)`. CarKeys/vehicle ignition are required only for ESCAPE.
 
-All flags are session-authoritative. Ending starts as NONE and may be committed exactly once.
+All flags are session-authoritative. Ending starts as NONE and may be committed exactly once. `NightAuditActivated` starts false and may be committed once only after Ending=THE_TRUTH.
 
 ## 2. Eligibility
 **ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. CoreEscapeReady is committed only after the service gate is powered and CarKeys are used at the vehicle ignition. This is available even when optional truth evidence was missed.  
@@ -50,7 +50,7 @@ THE_NEW_GUEST: explicit acceptance; motel cycle resets; neon lights at 02:13; te
 If ending cinematic fails, preserve Ending and show fallback title card/complete state. Disconnect during vote removes that voter; recalculate eligible majority. If a player disconnects after commit, ending continues for remaining connected players. Overlapping trigger volumes cannot change a committed ending.
 
 ## 8. Tests
-All three endings solo; all three in co-op; truth evidence incomplete; acceptance without consent; tie vote; no vote; simultaneous trigger volumes; disconnect during vote; disconnect during cinematic; repeat activation; invalid eligibility.
+All three endings solo; all three in co-op; truth evidence incomplete; acceptance without consent; tie vote; no vote; simultaneous trigger volumes; disconnect during vote; disconnect during cinematic; repeat activation; invalid eligibility; IN-032 Night Audit once-only/fallback.
 
 
 ## 9. Approval record
