@@ -109,3 +109,7 @@ These are CSV/schema and coordinate-reference checks only. They do not prove tha
 
 ## 9. Acceptance
 R2.2 is a single coherent **proposal**, not an approved construction package. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run. Final geometry freeze and environmental art remain blocked until the owner approves the listed decisions and Claude verifies the approved geometry in UEFN.
+
+## 10. Approval-gate pointer and scope clarification
+
+The numbered geometry approval list in Section 6 is operationalized as GEO-A01–GEO-A15 in OWNER_DECISION_GATE_R2.2.md. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval remains NOT RECEIVED. This document and its prior dimensional checks do not authorize construction or imply editor verification.
