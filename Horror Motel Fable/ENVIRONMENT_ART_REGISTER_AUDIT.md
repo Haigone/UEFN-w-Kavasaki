@@ -298,3 +298,46 @@ A register/asset family is acceptable only when all applicable criteria pass:
 - No canonical geometry or final coordinates invented.
 - No asset purchase, download, DCC creation or license clearance claimed.
 - No UEFN test, import, collision test, playtest or performance test performed by this audit.
+
+
+## Supplemental placement audit — 2026-11-16
+
+The coordinate-bearing rows were re-audited using oriented rectangular footprints derived from Width_m, Depth_m and Yaw_deg, with vertical intervals derived from Z_m and Height_m, grouped by identical Floor and Room_or_Area. This is a deterministic schedule-level screening only; it is not a mesh/collision simulation.
+
+- Rows with full coordinate and dimension fields before this correction: 189.
+- Potential same-room 3D bounds intersections: 29 pairs; all participating rows are individually tagged in Footprint_Audit and Audit_Notes.
+- Rows without a declared wall-clearance measurement are tagged MISSING_MEASUREMENT_PENDING_CHAT02.
+- Every remaining coordinate is explicitly tagged PROPOSED_SOURCE_SCHEDULE_NOT_CANONICAL.
+- EXT_GATE and EXT_SIGN_TRIGGER, in addition to the six wardrobes, have their provisional coordinates cleared and are BLOCKED pending canonical geometry. Their former coordinates are retained in audit notes only.
+- No collision profile, actual mesh bounds, player capsule or navigation test is implied.
+
+Pair list:
+- F01_DESK × F01_CRT
+- F01_CRT × F01_CHAIR
+- F02_DESK × F02_CRT
+- F02_CRT × F02_CHAIR
+- F02_TOILET × F02_SUITCASE
+- F03_DESK × F03_CRT
+- F03_CRT × F03_CHAIR
+- F04_DESK × F04_CRT
+- F04_CRT × F04_CHAIR
+- F05_DESK × F05_CRT
+- F05_CRT × F05_CHAIR
+- F06_DESK × F06_CRT
+- F06_CRT × F06_CHAIR
+- F07_DESK × F07_CRT
+- F07_CRT × F07_CHAIR
+- F08_DESK × F08_CRT
+- F08_CRT × F08_CHAIR
+- F09_DESK × F09_CRT
+- F09_CRT × F09_CHAIR
+- F09_SHOWER × F09_DIARY
+- F10_DESK × F10_CRT
+- F10_CRT × F10_CHAIR
+- F11_BED × F11_CHILD_BED
+- F11_DESK × F11_CRT
+- F11_CRT × F11_CHAIR
+- F12_DESK × F12_CRT
+- F12_CRT × F12_CHAIR
+- F13_DESK × F13_CRT
+- F13_CRT × F13_CHAIR
