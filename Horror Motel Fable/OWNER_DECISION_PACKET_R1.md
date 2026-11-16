@@ -15,11 +15,11 @@ This approval covers NCP-A01 through NCP-A09. NCP-A10's co-op quorum is supersed
 
 ### Included content
 
-| ID | Proposed content to approve | Recommendation |
+| ID | Approved canonical content | Decision |
 |---|---|---|
-| NCP-A01 | Reception register text and 02-13-86 code deduction | Approve as drafted |
+| NCP-A01 | Reception register text and 02-13-86 code deduction | APPROVED AS DRAFTED |
 | NCP-A02 | Office photo captions and 1974 → 1978 → 1982 → 1986 order | Approve as drafted |
-| NCP-A03 | Fuse A/B/C labels, placements and Room 04 transcript | Approve as drafted, preserving Room 02 battery as separate personal pickup |
+| NCP-A03 | Fuse A/B/C labels, placements and Room 04 transcript | APPROVED AS DRAFTED; Room 02 battery remains a separate personal pickup |
 | NCP-A04 | Room 06 missing-guest photo archive and captions | Approve as drafted |
 | NCP-A05 | Room 09 night-manager diary | Approve as drafted |
 | NCP-A06 | Room 11 child's drawing and caption | Approve as drafted |
