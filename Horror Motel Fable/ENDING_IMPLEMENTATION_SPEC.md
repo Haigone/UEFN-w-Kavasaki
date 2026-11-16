@@ -11,11 +11,11 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 **THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects the truth route. It does not require CarKeys or vehicle ignition.  
 **THE_NEW_GUEST:** FinaleReady=true and NewGuestAccepted=true through explicit invitation interaction and team confirmation. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
-## 3. Truth evidence — END-A02 APPROVED 2026-11-16
+## 3. Truth evidence — END-A02 PENDING OWNER APPROVAL
 
-The three-clue evidence gate is approved and authorized for implementation.
+No mandatory truth-evidence list is currently owner-approved. The recommended three-clue gate is documented in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md.
 
-**Canonical evidence formula:**
+**Proposed formula (NOT AUTHORIZED FOR IMPLEMENTATION UNTIL APPROVED):**
 `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`
 - `DiaryFound`: ROOM 09 night manager diary.
 - `ChildRoomClueFound`: ROOM 11 child's drawing.
@@ -23,7 +23,7 @@ The three-clue evidence gate is approved and authorized for implementation.
 
 Keep `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` as separate route, puzzle and identity-reveal progression gates. Do not add them as duplicate evidence pickups inside `TruthChainComplete`.
 
-The three clues are optional to the core game and ESCAPE ending, but mandatory for THE_TRUTH eligibility. Each must be recoverable, team-shared, idempotent and have readable/journal fallback; see END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. Other optional lore remains excluded.
+Until explicit owner approval, do not implement a mandatory truth-evidence gate. ESCAPE remains available when any optional investigation clue is missed. If approved, each required clue must be recoverable, team-shared, idempotent and have readable/journal fallback. Other optional lore remains excluded.
 
 ## 4. Co-op choice — OWNER APPROVED 2026-11-16
 Ending selection is team-wide. Present only eligible options.
@@ -53,6 +53,6 @@ All three endings solo; all three in co-op; truth evidence incomplete; acceptanc
 
 ## 9. Owner approval gate — co-op quorum and truth evidence
 
-**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver, including timeout/tie and disconnect handling, after validating it against the current UEFN/Verse API. END-A02 is approved; Claude may implement the three-clue truth gate subject to clue accessibility/recovery validation.
+**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver after validating it against the current UEFN/Verse API.
 
-**Truth evidence gate:** END-A02 is approved. Implement the three-clue formula in Section 3; the clues remain optional to ESCAPE and mandatory only for THE_TRUTH. Exact narrative prose and visual assets in the proposal pack remain draft.
+**END-A02 PENDING:** Do not implement a mandatory truth-evidence gate until the owner explicitly approves it in OWNER_DECISION_PACKET_R1.md and the approval is recorded in OWNER_DECISION_GATE_R2.2.md. The three-clue formula in Section 3 is recommendation only.
