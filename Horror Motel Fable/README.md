@@ -44,7 +44,9 @@ Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coor
 - [GEOMETRY_VALIDATION_REPORT.md](GEOMETRY_VALIDATION_REPORT.md) — controlli geometrici ancora aperti.
 - [QA_ACCEPTANCE_MATRIX.md](QA_ACCEPTANCE_MATRIX.md) — matrice di collaudo.
 - [exterior_prop_schedule.csv](exterior_prop_schedule.csv) — coordinate di auto, insegna, cancello, generatore e props esterni.
-- [lighting_audio_schedule.csv](lighting_audio_schedule.csv) — posizionamento iniziale di luci e sorgenti audio.
+- [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) — registro normalizzato delle luci (10 righe dati).
+- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) — registro normalizzato delle sorgenti audio (9 righe dati).
+- `lighting_audio_schedule.csv` — file storico combinato mantenuto per tracciabilità; usare i due registri separati per le modifiche future.
 
 ## File di produzione che Claude deve generare
 - `coordinate_schedule.csv`
