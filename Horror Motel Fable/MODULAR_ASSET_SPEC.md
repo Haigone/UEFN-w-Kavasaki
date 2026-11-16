@@ -6,16 +6,15 @@ Primary architectural grid: 100 cm. Secondary trim increments: 10 cm and 5 cm on
 
 - Exterior wall thickness target: 30 cm.
 - Interior partition thickness target: 15 cm.
-- Ground floor: Z=0 cm; upper floor: Z=360 cm (proposal).
-- Ground ceiling underside: Z=320 cm; upper ceiling underside: Z=680 cm.
-- Roof top: Z=710 cm.
-- Do not assume a 320 cm tall wall asset can be used on both floors without checking floor slab and ceiling interfaces.
+- Ground finished floor: Z=0 cm; upper finished floor: Z=360 cm (candidate target).
+- Clear-height targets: ground 300 cm; upper 280 cm. Exact wall mesh top, slab soffit, ceiling underside and roof elevations are not frozen.
+- Do not author a fixed wall height or roof module as final-fit until a coordinated section reconciles the 25 cm upper slab target, ceiling void/services and roof build-up.
 
 ## 2. Required modular families
 | Family | Required variants | Proposed module envelope | Pivot |
 |---|---|---:|---|
-| Exterior wall | straight, inside/outside corner, T-junction, end cap, window opening, service opening | 400×30×320 cm | lower-left-back |
-| Interior wall | straight, corner, T-junction, end cap, door opening, concealed panel opening | 400×15×320 cm | lower-left-back |
+| Exterior wall | straight, inside/outside corner, T-junction, end cap, window opening, service opening | 400×30×variable; clear height target 300 cm GF / 280 cm UF | lower-left-back |
+| Interior wall | straight, corner, T-junction, end cap, door opening, concealed panel opening | 400×15×variable; clear height target 300 cm GF / 280 cm UF | lower-left-back |
 | Floor | interior tile, exterior slab, balcony, threshold, stair landing | 400×400×25 cm | lower-left |
 | Ceiling | plain, access hatch, damaged/leak variant | 400×400×15 cm | lower-left |
 | Trim | baseboard, crown, corner trim, door casing, window casing | 400 cm linear | start end |
@@ -48,7 +47,7 @@ Stair asset cannot be finalized from the current target alone. E1 proposes 20 ri
 Balcony: 150 cm clear walking width target, 110 cm guardrail height target. Exact slab polygon, rail segments, post spacing, door thresholds and drainage are BLOCKED pending geometry approval.
 
 ## 7. Hidden passage / ROOM 13
-Build only after the geometry issue is resolved. The current documents conflict: door_window_schedule places D_ROOM13_SECRET at (49.00,55.40) on the west boundary, while wall_schedule labels ROOM13_S on the south boundary from (49.00,51.10) to (63.70,51.10). Executive plan describes the door at the south wall centre near X=56.35, Y=51.10. Geometry owner must select one and update every schedule. Do not create both openings.
+Build only after the geometry issue is resolved. Candidate LD-GEO R2.0 route: ROOM 12 north-wall concealed panel centre approx X=68.60,Y=47.55; east vestibule X=64.30..72.90,Y=47.85..49.35; west junction passage centred near Y=48.60; upper north hall; ROOM 13 south-wall door near X=56.35,Y=50.95. Align wall schedule, door schedule, prop placement and section D-D to one continuous physical route. Do not create the superseded west-wall opening or duplicate doors.
 
 ## 8. Collision and LOD
 - Architecture: simple box/convex collision, no detailed collision on decorative bevels.
