@@ -220,7 +220,7 @@ Show team ownership, never a misleading holder name. Do not use personal hotbar 
 - ESCAPE is fallback if truth eligibility is incomplete or co-op vote ties/expires.
 - THE_TRUTH requires approved truth gates, completed reveal and explicit team choice.
 - THE_NEW_GUEST requires explicit acceptance; never infer from capture, timeout or ordinary defeat.
-- Proposed operational vote: each connected player gets one vote in a 15-second window; strict majority commits; tie/no majority defaults to ESCAPE. This makes the existing team-confirmation rule implementable but requires owner confirmation.
+- Apply the owner-approved END-A01 quorum exactly: strict majority of connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. A tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. A disconnect removes that player and triggers recalculation/reconfirmation; disconnect is never consent. Solo selection is direct. Do not add a 15-second timer or any other vote window until its duration is approved as a UX tuning value.
 - EndingSelected locks once; overlapping triggers cannot reopen selector.
 
 ## 10. Accessibility, localization and input
@@ -256,7 +256,7 @@ Before implementation, reconcile/create:
 2. Exact Act II objective completion predicate is not aligned across all docs. Confirm if all rooms 01–06 must be inspected.
 3. Room 04 phone and Room 01 CRT need stable DocumentId/discovery-flag mapping; reuse existing flags where possible.
 4. Journal binding and final control glyphs must be selected/verified in UEFN.
-5. New Guest 15-second majority vote is proposed and needs owner confirmation.
+5. END-A01 quorum is approved; exact vote-window duration, vote UI presentation and timeout UX remain implementation parameters to be proposed and documented without changing the approved outcome rules.
 6. HUD visual style, typography, icons, safe-area coordinates and animation timing need a visual mockup and in-editor validation.
 7. Any objective arrow/beacon requires explicit design approval; default is no persistent navigation marker.
 
