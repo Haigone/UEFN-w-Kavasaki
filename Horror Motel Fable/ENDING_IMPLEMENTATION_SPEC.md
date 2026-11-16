@@ -11,7 +11,7 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 ## 2. Eligibility
 **ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. CoreEscapeReady is committed only after the service gate is powered and CarKeys are used at the vehicle ignition. This is available even when optional truth evidence was missed.  
 **THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects the truth route. It does not require CarKeys or vehicle ignition.  
-**THE_NEW_GUEST:** FinaleReady=true and NewGuestAccepted=true through explicit invitation interaction and team confirmation. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
+**THE_NEW_GUEST:** FinaleReady=true makes the invitation option available. The resolver presents the invitation and requires unanimous explicit affirmative confirmation from every currently connected eligible player. Set NewGuestAccepted=true only after that quorum succeeds, then commit THE_NEW_GUEST. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
 ## 3. Truth evidence — END-A02 PENDING OWNER APPROVAL
 
