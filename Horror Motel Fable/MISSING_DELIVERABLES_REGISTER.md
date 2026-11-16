@@ -169,3 +169,6 @@ Old audit sections below this addendum remain historical evidence. Use the curre
 
 | MD-059 | Cinematic and presentation sequence specification | PRESENTE — CINEMATIC_AND_PRESENTATION_SPEC.md; narrative approval/engine capabilities pending | Sequence IDs, triggers, durations, locks, fallbacks, subtitles, multiplayer sync and tests defined |
 | MD-060 | Asset sourcing/licensing/import pipeline | PRESENTE — ASSET_PRODUCTION_PIPELINE_SPEC.md; actual asset sourcing/import pending | Asset IDs, rights, metadata, import, collision, LOD, performance and acceptance gates defined |
+
+| MD-061 | Audio mix/ducking/concurrency policy | PRESENTE — AUDIO_MIX_POLICY.md; actual mix calibration pending | Relative level targets, VO ducking, concurrency, spatial and loop QA defined |
+| MD-062 | Lighting state/intensity/readability specification | PRESENTE — LIGHTING_STATE_SPEC.md; actual editor calibration pending | Relative state targets, transitions, readability and photosensitivity rules defined |
