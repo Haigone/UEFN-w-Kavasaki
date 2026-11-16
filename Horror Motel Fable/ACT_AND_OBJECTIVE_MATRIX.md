@@ -31,5 +31,12 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 ## Secondary objectives
 No fixed side-quest or collectible chain is defined. Optional environmental lore may enrich play but cannot gate mandatory progress. Any new side objective is PROPOSAL and requires dependency review.
 
-## Known unresolved dependencies
-Exact register code; office photo solution; fuse locations; truth evidence checklist; Car Keys/Screwdriver location; generator/gate/vehicle interaction design; secret passage geometry; final truth action; New Guest choice/vote rule.
+## Remaining design and approval dependencies
+
+- Owner approval of narrative copy and puzzle clue text: consolidated as NCP-A01–A09 in OWNER_DECISION_PACKET_R1.md. The complete proposal is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
+- Owner approval of END-A02 mandatory truth evidence: recommended three-clue gate in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md; pending.
+- UEFN/editor verification of the approved R2.3 secret passage, stair, balcony and all mandatory routes.
+- Editor verification of final gate/generator/vehicle actor placements and the documented PZ-05 interaction sequence.
+- Runtime solo/2-player/4-player pacing, chase, rescue, ending and recovery tests.
+
+The register code (02-13-86), office photo solution (1974/1978/1982/1986), fuse locations, CarKeys/Screwdriver locations, PZ-05 prerequisite chain, THE TRUTH draft sequence and New Guest consent copy are documented in the current puzzle sheets/proposal pack; they are no longer missing at draft-specification level. Do not mark the draft narrative canon until the owner decision is recorded.
