@@ -7,29 +7,26 @@ Status: **WAITING FOR PROJECT OWNER — NO GEOMETRY APPROVAL IMPLIED**
 This document turns the open R2.2 geometry and ending decisions into one explicit approval gate. It does not silently select creative or structural alternatives. Claude must not build final geometry from R2.2 until the owner approves this package or supplies a revised choice.
 
 ## Decision method
-The owner may approve the complete R2.2 proposal with one response:
-**APPROVE R2.2 AS WRITTEN**
-or reply **APPROVE WITH EXCEPTIONS** and identify item numbers and replacement values.
-A rejection must identify the preferred alternative. Silence is not approval.
+The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner may approve the geometry only after GEO-A01–A21 are resolved and the objective register corrections A-01/A-02 in that packet are applied. Reply **APPROVE R2.2** only when the proposal and all added gate items are accepted, or **APPROVE WITH EXCEPTIONS** with item IDs and replacement values. Silence is not approval.
 
 ## A. Geometry decisions
 
 | ID | Decision required | R2.2 proposal to approve | Consequence if not approved |
 |---|---|---|---|
 | GEO-A01 | Ground-floor room orientation | Guest rooms face courtyard; circulation corridors occupy outer west/east bands | No room placement or greybox freeze |
-| GEO-A02 | Ground-floor room Y bands | 20–27, 29–36, 38–45 m; two 2.00 m cross-bays per wing | Cross-bay topology remains unresolved |
+| GEO-A02 | Ground-floor room Y bands | 20–27, 29–36, 38–45 m; two 2.00 m gross cross-bays per wing (1.70 m clear between finished wall faces) | Cross-bay topology remains unresolved |
 | GEO-A03 | Ground-floor cross-bay openings | 1.50 m clear openings through corridor-side and courtyard-side partitions at Y=28 and 37 m | Do not cut openings |
 | GEO-A04 | Upper rooms 07–12 | Side wings, 8.70 m nominal width; replace R2.1 5.90 m width | Upper room layout remains blocked |
 | GEO-A05 | Upper cross-bays | Two 2.00 m cross-bays per wing with 1.50 m clear openings to balcony | Upper circulation not frozen |
 | GEO-A06 | South-end buffers | Retain 1.55 m ground-floor buffers and upper-floor equivalents, open to adjacent circulation | South-end room/corridor junctions unresolved |
 | GEO-A07 | Ground north connector | Retain NW link/lobby, reception, office, storage, service bay, electrical ending X=72.90 and NE link X=73.20–75.70 | North connector partitions not frozen |
-| GEO-A08 | Upper north connector | Retain stair landing, U-service, ROOM 13 at X49.00–63.70 / Y51.10–59.70 and two non-playable service reserves | Upper connector allocation not frozen |
-| GEO-A09 | Stair geometry | North location fixed; approve U-turn footprint, handedness, 20 risers, two flights, 9 goings per flight, landing and headroom targets | No stair build |
+| GEO-A08 | Upper north connector | Retain stair landing, U-service, ROOM 13 at X49.00–63.70 / Y51.10–59.70 and two non-playable service reserves; decide explicit U-service access/collision under GEO-A18 | Upper connector allocation not frozen |
+| GEO-A09 | Stair geometry | North location fixed; approve U-turn footprint, handedness, 20 risers, two flights, 9 goings per flight, 1.20 m flight widths, 2.70×1.20 m landing, 1.20 m upper approach, 1.35 m nominal lower south approach and 2.80 m nominal headroom (subject to beams/MEP) | No stair build |
 | GEO-A10 | Wall thicknesses | 0.30 m exterior/courtyard-facing; 0.15 m standard partitions; 0.30 m selected connector partitions | Wall schedule not final |
-| GEO-A11 | Vertical stack | GF FFL 0.00; GF ceiling 3.00; slab underside/top 3.35/3.60; UF ceiling/roof underside 6.40; roof top 6.65; parapet top 7.10 m | No vertical geometry freeze |
-| GEO-A12 | Balcony | Continuous U route; minimum 2.50 m clear, 2.55 m side legs, corner pads and 1.10 m guardrail | No upper circulation/rail build |
-| GEO-A13 | Roof | Flat U-shaped roof; 0.25 m slab; 0.20 m parapet thickness and 0.45 m parapet height; courtyard excluded | Roof package incomplete |
-| GEO-A14 | Openings and secret route | Approve proposed door/window centres, sizes/sills, ROOM 12 vestibule and D-13A/B/C positions/clearances | No final opening cuts or secret-route build |
+| GEO-A11 | Vertical stack | GF FFL 0.00; GF slab 0.20 m; GF ceiling 3.00; UF slab underside/top 3.35/3.60; UF clear/roof underside 6.40; roof slab top 6.65; parapet top 7.10 m | No vertical geometry freeze |
+| GEO-A12 | Balcony | Continuous U route; minimum 2.50 m clear, 2.55 m side legs, 3.00×3.80 m corner pads and 1.10 m guardrail; approve pad clipping to the U-slab boundary under GEO-A19 | No upper circulation/rail build |
+| GEO-A13 | Roof | Flat U-shaped roof; 0.25 m slab; 0.20 m parapet thickness and 0.45 m parapet height; courtyard excluded; drainage and player-access rule under GEO-A21 | Roof package incomplete |
+| GEO-A14 | Openings and secret route | Approve proposed door/window centres, sizes/sills, ROOM 12 vestibule FIF 5.90×1.65 m and D-13A/B/C positions/0.90×2.10 m clearances | No final opening cuts or secret-route build |
 | GEO-A15 | Room interiors | R2.2 controls room envelopes only; bathrooms and interior partitions are not invented until a separate fit-out decision | No bathroom wall/fixture placement |
 
 ### Fixed intent already recorded (not being re-asked)
@@ -43,6 +40,27 @@ A rejection must identify the preferred alternative. Silence is not approval.
 - THE GUEST must access both floors.
 
 These fixed intent points do not approve the proposed detailed dimensions.
+
+
+## A2. Additional geometry decisions from final R2.2 review
+
+Detailed dimensions, diagrams and recommendations: LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md.
+
+| ID | Decision required | Observed R2.2 condition / proposal | Alternatives and consequence |
+|---|---|---|---|
+| GEO-A16 | Ground-floor north pockets | Two unregistered sealed pockets, each X11.10–19.70 or X64.30–72.90, Y45.15–48.00 (24.51 m² each) | Keep as sealed no-access reserves and register them; open from corridor; or connect to courtyard/north connector with new openings. Until chosen, no ground-floor freeze. |
+| GEO-A17 | Upper-floor north side pockets | West unassigned alcove approx. 28.28 m²; east residual area around VEST-13 approx. 17.60 m². Both lie on the UF slab but are not assigned in the room register. | Incorporate into the balcony/turning landing and register; close with partitions as no-access reserves; or assign a new service/gameplay function. Until chosen, upper-floor walkable bounds are ambiguous. |
+| GEO-A18 | U-SERVICE access and collision | U-SERVICE is 19.70×8.60 m (169.42 m²), enclosed on all sides with no scheduled door, but marked Walkable/Collision=Yes. | Add an access door from landing/north hall; or mark as sealed No_Access/No_Collision; or subdivide. Current state is contradictory. |
+| GEO-A19 | Balcony corner-pad clipping | Each 3.00×3.80 m pad extends 0.15×1.00 m (0.15 m²) into the courtyard void beyond UF-SLAB. | Clip pads to the U-slab polygon and coordinate rail edge; or explicitly extend/structurally support slab into courtyard and redesign guardrail. Recommendation: clip; do not create floor collision over the void. |
+| GEO-A20 | Cross-bay clear depth | The nominal 2.00 m gap between room FIF bounds becomes 1.70 m clear between 0.15 m wall faces. | Approve 2.00 m gross / 1.70 m net; or move room walls to provide 2.00 m net, changing room bounds and schedules. |
+| GEO-A21 | Flat-roof drainage and access | Flat roof geometry is consistent; falls/outlets are unspecified. Non-playable/no-access rule appears in R2.2 but is not one of the five fixed owner decisions. | Approve concealed falls and a drainage route after outlet coordination; separately approve roof no-access or define a playable roof route. Do not invent drain coordinates. |
+
+## A3. Objective register corrections — no design choice required
+
+- ROOM_COORDINATE_REGISTER.csv / COURTYARD: add the missing Material_Asset_ID placeholder (NA) so the row has 16 fields and Verification_Status remains FIXED REQUIREMENT.
+- ROOM_COORDINATE_REGISTER.csv / VEST-13: change Length_m from 1.50 to the derived 1.65 m from Y=47.55–49.20. The other R2.2 documents already specify 1.65 m.
+- GEOMETRY_VALIDATION_REPORT.md: correct the previous claim that every ROOM_COORDINATE_REGISTER row matches the 16-column header and include the final-review findings.
+
 
 ## B. Ending multiplayer rule
 
