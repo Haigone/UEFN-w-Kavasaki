@@ -165,3 +165,6 @@ This addendum supersedes earlier task wording/statuses where it refers to R2.2 g
 4. Keep CLD-001/002 as Claude's actual editor/repository execution gates; no UEFN work is claimed by these documentation tasks.
 
 The older "First 20 production tasks" list remains a historical ordering snapshot; use this addendum and the current R2.3 execution packet for current sequencing.
+
+| DOC-007 | Cinematics | Define sequence lifecycle, co-op presentation and fallback behaviour | P1 | Ending and narrative proposals | CINEMATIC_AND_PRESENTATION_SPEC.md | PRESENTE — narrative approval and UEFN capability verification pending | Every sequence has unique ID, trigger, duration, lock, cleanup, fallback and acceptance tests | Sequence test evidence and owner approval | Cinematic / Gameplay |
+| DOC-008 | Asset pipeline | Define source, license, import and acceptance workflow | P1 | Asset manifest and GUEST_MODEL_SPEC | ASSET_PRODUCTION_PIPELINE_SPEC.md | PRESENTE — actual source/import work pending | Every published asset has source/license, metadata, target import and measured acceptance | License archive and UEFN import/performance evidence | Art / Technical Art |
