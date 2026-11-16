@@ -26,31 +26,31 @@ Status: **OWNER-APPROVED LD-GEO R2.3 — DOCUMENTARY GEOMETRY RECONCILED — NOT
 |---|---|
 | APPROVED / FIXED | Explicit owner/project constraint |
 | DERIVED | Direct arithmetic from a fixed or selected coordinate |
-| PROPOSED CORRECTION | Selected to create a single internally consistent proposal |
-| OWNER APPROVAL REQUIRED | Do not freeze or build as final without owner confirmation |
+| APPROVED R2.3 | Owner-approved design geometry; not UEFN-verified |
+| EDITOR VERIFICATION REQUIRED | Must be verified by Claude in UEFN before implementation sign-off |
 | EDITOR VERIFICATION REQUIRED | Cannot be proven from files; requires UEFN testing by Claude |
 
 Only the site datum, U footprint/open courtyard, two-floor premise, room count, and the five explicit owner decisions are treated as fixed. All numerical room/wall/opening/stair/roof values remain proposed unless individually approved.
 
 ## 3. Conflict register and resolution
-| ID | Source conflict | R2.2 proposal | Classification / remaining action |
+| ID | Source conflict | R2.2 proposal | R2.3 final disposition |
 |---|---|---|---|
-| G01 | EBD places west rooms X8.30–17.00 and corridor X17.20–19.70; E1/R2.1 reverse these bands | Ground floor follows E1/R2.1: rooms on courtyard side, outer corridor on west/east perimeter side | OWNER APPROVAL REQUIRED |
-| G02 | EBD and R2.1 use different room Y bands | R2.2 retains R2.1 Y bands (20–27, 29–36, 38–45) and labels the 2 m gaps as proposed open connector bays | OWNER APPROVAL REQUIRED |
-| G03 | EBD upper rooms 07–12 occupy six north connector bays; E1/R2.1 place them in side wings | R2.2 uses side wings to preserve the continuous U balcony and restores 8.70 m room width | OWNER APPROVAL REQUIRED |
-| G04 | R2.1 upper rooms only 5.90 m wide, leaving an unexplained outer strip | Upper rooms become X8.30–17.00 west and X67.00–75.70 east | OWNER APPROVAL REQUIRED |
-| G05 | Electrical allocation overlaps the full NORTH LINK EAST area | ELECTRICAL ends at X72.90; east link is X73.20–75.70 | DERIVED partition gap; OWNER APPROVAL REQUIRED |
-| G06 | West lobby, reception and stair connector boundaries leave ambiguous offsets | Lobby ends X19.85, reception starts X20.15, with 0.30 m partition at X20.00; north-west link/lobby split by 0.30 m partition | PROPOSED CORRECTION |
+| G01 | EBD places west rooms X8.30–17.00 and corridor X17.20–19.70; E1/R2.1 reverse these bands | Ground floor follows E1/R2.1: rooms on courtyard side, outer corridor on west/east perimeter side | APPROVED R2.3 |
+| G02 | EBD and R2.1 use different room Y bands | R2.2 retains R2.1 Y bands (20–27, 29–36, 38–45) and labels the 2 m gaps as proposed open connector bays | APPROVED R2.3 |
+| G03 | EBD upper rooms 07–12 occupy six north connector bays; E1/R2.1 place them in side wings | R2.2 uses side wings to preserve the continuous U balcony and restores 8.70 m room width | APPROVED R2.3 |
+| G04 | R2.1 upper rooms only 5.90 m wide, leaving an unexplained outer strip | Upper rooms become X8.30–17.00 west and X67.00–75.70 east | APPROVED R2.3 |
+| G05 | Electrical allocation overlaps the full NORTH LINK EAST area | ELECTRICAL ends at X72.90; east link is X73.20–75.70 | DERIVED partition gap; APPROVED R2.3 |
+| G06 | West lobby, reception and stair connector boundaries leave ambiguous offsets | Lobby ends X19.85, reception starts X20.15, with 0.30 m partition at X20.00; north-west link/lobby split by 0.30 m partition | APPROVED R2.3 |
 | G07 | ROOM 13 originally in east wing; later decision moves it to north connector | ROOM 13 upper north connector X49.00–63.70,Y51.10–59.70 | OWNER DECISION fixes location; dimensions require approval |
-| G08 | ROOM 12 route coordinates used boundary points rather than host wall centre-lines; vestibule wall extents were not aligned to FIF bounds | D-13A (69.95,47.475); vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m); west/east wall centre-lines X66.925/72.975; north Y49.275; D-13C (66.925,48.45); D-13B (56.35,50.95) | PROPOSED CORRECTION; EDITOR VERIFICATION REQUIRED |
-| G09 | Door schedules disagree on room orientation, wall host and opening centre | Uppercase DOOR_WINDOW_SCHEDULE.csv is canonical; lowercase file is a compatibility mirror | PROPOSED CORRECTION |
-| G10 | Wall schedule only contains a partial subset of perimeter and partitions | wall_schedule.csv rebuilt as centre-line schedule with unique wall IDs and opening references | PROPOSED CORRECTION; review all physical joins in UEFN |
-| G11 | EBD/E1 vertical heights conflict with R2.1 | Z0.00 GF; ceiling3.00; slab underside3.35/top3.60; upper ceiling/roof underside6.40; roof top6.65; parapet7.10 | DERIVED internally consistent stack from proposed slab/clearance values; OWNER APPROVAL REQUIRED |
+| G08 | ROOM 12 route coordinates used boundary points rather than host wall centre-lines; vestibule wall extents were not aligned to FIF bounds | D-13A (69.95,47.475); vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m); west/east wall centre-lines X66.925/72.975; north Y49.275; D-13C (66.925,48.45); D-13B (56.35,50.95) | APPROVED R2.3; EDITOR VERIFICATION REQUIRED |
+| G09 | Door schedules disagree on room orientation, wall host and opening centre | Uppercase DOOR_WINDOW_SCHEDULE.csv is canonical; lowercase file is a compatibility mirror | APPROVED R2.3 |
+| G10 | Wall schedule only contains a partial subset of perimeter and partitions | wall_schedule.csv rebuilt as centre-line schedule with unique wall IDs and opening references | APPROVED R2.3; review all physical joins in UEFN |
+| G11 | EBD/E1 vertical heights conflict with R2.1 | Z0.00 GF; ceiling3.00; slab underside3.35/top3.60; upper ceiling/roof underside6.40; roof top6.65; parapet7.10 | DERIVED internally consistent stack from proposed slab/clearance values; APPROVED R2.3 |
 | G12 | Stair text states 5.32 m run but 20 risers/2 flights/9 goings each | 9×0.28=2.52 m per flight; total 18 goings=5.04 m; U-turn landing2.70×1.20; plan envelope2.70×3.72 | DERIVED arithmetic; exact layout OWNER APPROVAL + EDITOR VERIFICATION |
-| G13 | Balcony width listed as 1.50 m in E1 and 2.50 m in R2.1 | Continuous U route, 2.50 m minimum clear; side leg widths adjusted to 2.55 m where needed to align wall faces | OWNER DECISION on continuity; width OWNER APPROVAL REQUIRED |
+| G13 | Balcony width listed as 1.50 m in E1 and 2.50 m in R2.1 | Continuous U route, 2.50 m minimum clear; side leg widths adjusted to 2.55 m where needed to align wall faces | APPROVED R2.3 |
 | G14 | UPPER_ROOM11 row has missing Y2, shifting subsequent CSV fields | Complete row: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8 | DERIVED from R2.2 room schedule |
-| G15 | SVGs were schematic and did not consistently represent R2.1 room/balcony dimensions | Both SVG plans redrawn with R2.2 proposed bounds; SECTIONS_R2.2.svg added and syntax/labels corrected | PROPOSED CORRECTION; not CAD/engine verification |
-| G16 | EBD contains a generic 2.20×2.40 m bathroom allowance but no reconciled internal wall/door placement | R2.2 controls room envelopes only; bathroom subdivisions and fixtures are intentionally not fabricated in the wall schedule | OWNER APPROVAL REQUIRED for room-interior fit-out |
+| G15 | SVGs were schematic and did not consistently represent R2.1 room/balcony dimensions | Both SVG plans redrawn with R2.2 proposed bounds; SECTIONS_R2.2.svg added and syntax/labels corrected | APPROVED R2.3; not CAD/engine verification |
+| G16 | EBD contains a generic 2.20×2.40 m bathroom allowance but no reconciled internal wall/door placement | R2.2 controls room envelopes only; bathroom subdivisions and fixtures are intentionally not fabricated in the wall schedule | OUT OF SCOPE — separate room-interior fit-out required |
 
 ## 4. Canonical dimensional checks
 - Site area: 84×72 = 6,048 m².
@@ -116,7 +116,7 @@ LD-GEO R2.3 is owner-approved design geometry, not an engine-verified or constru
 
 ## 10. Approval-gate pointer and scope clarification
 
-The existing OWNER_DECISION_GATE_R2.2.md remains the owner response record for GEO-A01–GEO-A21 and END-A01/END-A02. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval for GEO-A01–GEO-A21 was received on 2026-11-16 and is recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. Ending decisions END-A01/END-A02 remain outside this geometry approval. This document and its dimensional checks do not authorize construction or imply editor verification.
+OWNER_DECISION_GATE_R2.2.md records the owner response for GEO-A01–GEO-A21. END-A01/END-A02 remain outside geometry scope. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval for GEO-A01–GEO-A21 was received on 2026-11-16 and is recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. Ending decisions END-A01/END-A02 remain outside this geometry approval. This document and its dimensional checks do not authorize construction or imply editor verification.
 
 
 ## 11. R2.3 post-approval validation
