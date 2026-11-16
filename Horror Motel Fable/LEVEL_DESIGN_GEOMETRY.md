@@ -125,7 +125,7 @@ Route sequence:
 5. D-13B: concealed door in ROOM 13 south wall; wall centreline Y=50.95, centre X=56.35, clear 0.90×2.10 m; opens north into ROOM 13.
 6. Return uses the same continuous path. No teleport and no one-way lock.
 
-The vestibule and opening are dimensionally aligned in R2.2. Door cuts, collision, enclosure and return path still require editor verification.
+Vestibule bounds are FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m clear). Its 0.15 m wall centre-lines are X=66.925 west, X=72.975 east and Y=49.275 north; the south boundary is the ROOM 12 north wall at Y=47.475. Door cuts, collision, enclosure and return path still require editor verification.
 
 ## 6. Doors and windows — canonical placement rules
 - Ground guest-room doors: west wing X=10.95, east wing X=73.05; centres Y=23.50, 32.50, 41.50. These sit on corridor/room partition centre-lines.
