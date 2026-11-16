@@ -29,7 +29,7 @@ DEV_IN014_DRAWING,Button or Verse interaction,Room 11,Readable drawing and journ
 DEV_IN015_SECRET_PANEL,Button or Prop Manipulator route,Room 12,Open panel and collision state; Screwdriver requirement,Puzzle_Manager,IN-015 / EVT-013,EDITOR-TEST REQUIRED
 DEV_IN016_ROOM13_PHOTOS,Verse UI or four world slots,Room 13,Chronology 1968 1974 1981 1986; reveal completion separate,Puzzle_Manager and Cinematic_Manager,IN-016 / EVT-015 EVT-016,EDITOR-TEST REQUIRED
 DEV_IN017_SERVICE_KEY,Button or item pickup,Room 13 compartment,Grant ServiceKey only after Room13RevealComplete,Inventory_Manager,IN-017 / EVT-017,EDITOR-TEST REQUIRED
-DEV_IN018_GATE_CONTROL,Button,Service route,ServiceKey and PowerRestored; activate gate once,Puzzle_Manager,IN-018 / EVT-018,EDITOR-TEST REQUIRED
+DEV_IN018_GATE_CONTROL,Button,GF-SERVICE-BAY SVC-GATE-CONSOLE, ServiceKey and PowerRestored; activate gate once,Puzzle_Manager,IN-018 / EVT-018,EDITOR-TEST REQUIRED
 DEV_IN019_VEHICLE_IGNITION,Button or Verse interaction,Exterior vehicle,Only ESCAPE route; FinaleReady and CarKeys; commit ignition,Game_Manager,IN-019 / EVT-019,EDITOR-TEST REQUIRED
 DEV_IN020_ENDING_SELECTOR,Per-player Verse UI buttons,Final route,Only eligible endings; 20s window; majority or unanimity per END-A01,Ending_Manager,IN-020 / EVT-020 EVT-021 EVT-022,EDITOR-TEST REQUIRED
 DEV_IN021_HIDING_SPOTS,Verse interaction or Button,Authored hiding spots,Per-player hide and exit; clear state on capture/disconnect,Player_Manager,IN-021 / EVT-047,EDITOR-TEST REQUIRED
@@ -43,7 +43,7 @@ DEV_IN028_CAR_KEYS,Item pickup or Verse interaction,Exterior vehicle,Enable only
 DEV_IN029_MISSING_GUEST_ARCHIVE,Button or Verse interaction,Room 06,Readable archive and team-shared truth evidence,Evidence_Manager,IN-029 / EVT-014,EDITOR-TEST REQUIRED
 DEV_IN030_CRT_FEED,Button or Verse interaction,Room 01,View feed; optional discovery; no progression gate,Evidence_Manager,IN-030 / EVT-050,EDITOR-TEST REQUIRED
 DEV_IN031_ROOM04_RECORDING,Button or Verse interaction,Room 04,Audio and readable transcript; either presentation path commits,Evidence_Manager,IN-031 / EVT-051,EDITOR-TEST REQUIRED
-DEV_IN032_NIGHT_AUDIT,Button,Service control room,Only after EndingSelected=THE_TRUTH; 2s hold; one-shot,Ending_Manager,IN-032 / EVT-023,EDITOR-TEST REQUIRED
+DEV_IN032_NIGHT_AUDIT,Button,GF-SERVICE-BAY SVC-NIGHT-AUDIT, Only after EndingSelected=THE_TRUTH; 2s hold; one-shot,Ending_Manager,IN-032 / EVT-023,EDITOR-TEST REQUIRED
 DEV_SESSION_MANAGER,Verse-authored creative_device,Session,Single writer; session flags; join leave; event dedupe,Game_Manager,EVT-001 EVT-032 EVT-033 EVT-034 EVT-042,EDITOR-TEST REQUIRED
 DEV_GUEST_AI,Verse NPC Behavior script component,NPC Character Definition,Assign custom behavior to the same definition referenced by DEV_NPC_GUEST; do not place a second spawner,Monster_Controller,NPC behavior lifecycle and navigatable control,API-DOCUMENTED; PROJECT TEST REQUIRED
 DEV_PRESENTATION_FAILURE,Verse presentation manager,All authored sequences,Readable fallback; never commit reveal before fallback shown,Cinematic_Manager,EVT-040,EDITOR-TEST REQUIRED
