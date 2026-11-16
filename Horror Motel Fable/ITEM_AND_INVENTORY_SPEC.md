@@ -16,7 +16,7 @@ The authoritative quest inventory is a session-level set of ItemId values. No qu
 | CarKeys | Broken group vehicle / authored return location | Vehicle ignition | No | Vehicle key hook / recovery proxy |
 | ServiceKey | ROOM 13 compartment after PZ-04 | Service gate control | No | Compartment proxy after solved flag |
 
-Room02 battery is a personal flashlight recharge pickup and is not FuseA; keep their pickup IDs and props distinct. The Room 13 key is introduced in Act I but access to ROOM 13 is gated by story progression, not by consuming the key.
+Room02 battery is a personal flashlight recharge pickup and is not FuseA; keep their pickup IDs and props distinct. Each player has independent charge and a per-spawn claim; a pickup restores that player's charge to 100%. In co-op, the pickup remains available to other players until each has claimed it where supported. If per-player actor availability is unsupported, use a clearly displayed team battery stock with per-player charge. The Room 13 key is introduced in Act I but access to ROOM 13 is gated by story progression, not by consuming the key.
 
 ## 3. State model
 QuestItemState: NOT_FOUND, TEAM_AVAILABLE, INSTALLED (fuses only), USED (optional terminal use flag). AddItem(ItemId) succeeds once. InstallFuse validates item exists, slot is empty and item matches slot; atomically marks INSTALLED and slot filled. No operation deletes the only copy of a required item.
@@ -39,7 +39,7 @@ On disconnect before commit, lock expires and actor remains. On disconnect after
 - All state-changing operations are idempotent.
 
 ## 6. Personal flashlight resources
-Flashlight charge is per player; target full charge 180 seconds. Battery pickup restores a defined charge amount (default one full charge, subject to playtest). If batteries are intended as shared stock instead, change both UI and this specification before implementation. Replacement action lasts about 2 seconds; cancel/interruption does not consume a battery or reset current charge. Below 15% flicker; 0% off. Provide minimum environmental readability in mandatory puzzle zones.
+Flashlight charge is per player; target full charge 180 seconds. Battery pickup restores the collecting player's charge to 100% (design baseline; playtest may tune spawn count, not the basic full-charge effect). If batteries are intended as shared stock instead, change both UI and this specification before implementation. Replacement action lasts about 2 seconds; cancel/interruption does not consume a battery or reset current charge. Below 15% flicker; 0% off. Provide minimum environmental readability in mandatory puzzle zones.
 
 ## 7. Optional items and lore
 Optional pickups may include personal notes, cosmetic tokens, nonessential batteries and environmental evidence. Each receives an OptionalItemId and never gates the six-act progression or any required ending except THE_TRUTH only where the item is explicitly included in the truth evidence register. Do not silently promote optional content to mandatory.
