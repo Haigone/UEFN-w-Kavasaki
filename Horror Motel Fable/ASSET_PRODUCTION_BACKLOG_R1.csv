@@ -16,8 +16,8 @@ PROP_OFFICE_PHOTO_BOARD,Prop,Office chronology board four photos,1,P0,Four inspe
 PROP_ROOM13_PHOTO_BOARD,Prop,ROOM13 chronology board and evidence rail,1,P0,Four inspectable dated photos and slot actors,NOT SOURCED,NOT IMPORTED,AST-02,PZ-04
 PROP_PHOTO_FRAME,Prop,Guest and owner photo frame family,30,P1,Reusable mesh variants and readable image textures,NOT SOURCED,NOT IMPORTED,AST-02,Narrative content pack
 PROP_CRT,Prop,CRT monitor controllable feed materials,13,P1,Reusable mesh screen states and interaction anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-030
-PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,13,P1,Mesh audio transcript and interaction anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-002 IN-031
-PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,12,P1,Reusable mesh kit collision,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
+PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,14,P1,Mesh audio transcript and interaction anchors,NOT SOURCED,NOT IMPORTED,AST-02,IN-002 IN-031
+PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,13,P1,Reusable mesh kit collision,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
 PROP_WARDROBE_KIT,Prop,Guest wardrobe and approved hiding variants,13,P1,Mesh plus hide exit actor only where assigned,NOT SOURCED,NOT IMPORTED,AST-02,IN-021
 PROP_DESK_CHAIR_KIT,Prop,Desk chair lamp stationery,13 sets,P2,Reusable low-cost meshes,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
 PROP_BATHROOM_KIT,Prop,Vanity toilet shower mirror tile,12 sets,P2,Decorative meshes no plumbing simulation,NOT SOURCED,NOT IMPORTED,AST-02,Room furnishing schedule
