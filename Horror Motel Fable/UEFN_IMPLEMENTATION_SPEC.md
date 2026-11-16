@@ -290,3 +290,14 @@ Use local lights, emissive signs, post-processing and fog with performance budge
 - Comment all unverified assumptions.
 - Keep pseudocode out of files presented as compilable Verse.
 - Include a compile/test report with exact editor version and date when actually run.
+
+
+## 13. Current controlling gameplay contracts — R2.3 documentation update
+
+For the exact six-act objective predicates, stable ObjectiveIds, flag ownership and IN-001–IN-031 event mapping, use [OBJECTIVE_AND_EVENT_CATALOG.md](OBJECTIVE_AND_EVENT_CATALOG.md). It supersedes informal objective assumptions in older narrative-flow summaries where they conflict.
+
+For THE GUEST's full state machine, perception, noise stimuli, target selection, navigation, capture handoff, solo/co-op fairness, recovery and AI acceptance tests, use [MONSTER_AI_BEHAVIOUR_SPEC.md](MONSTER_AI_BEHAVIOUR_SPEC.md). This dedicated specification is API-neutral. It does not assert that the target UEFN release supports a particular NPC perception, pathfinding, animation or control API.
+
+Ending resolver must follow END-A01 in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md: majority for ESCAPE/THE_TRUTH, unanimous explicit consent for THE_NEW_GUEST, defined tie/timeout/disconnect handling and one atomic session-wide commit. END-A02 remains pending owner approval.
+
+Before full implementation, Claude must return a target-version feasibility table for every module and capability: supported device/API, exact signature/property, replication/authority behaviour, known limitations, minimal test result and fallback. A conceptual module name or device family in this document is not proof of availability.
