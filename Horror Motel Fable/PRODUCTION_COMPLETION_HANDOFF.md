@@ -191,7 +191,7 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 - Consolidated the remaining blockers and owner decisions in this handoff document.
 
 ### Not completed — and why
-- **Owner decisions:** the 11 geometry approval items, truth-evidence gate, THE_NEW_GUEST quorum and unresolved finale content require owner approval. I have not invented approvals.
+- **Owner decisions:** the 14 geometry approval checklist items, truth-evidence gate, THE_NEW_GUEST quorum and unresolved finale content require owner approval. I have not invented approvals.
 - **UEFN implementation:** no native project/editor session was available to this documentary audit; Claude must perform it.
 - **Verse compilation/device setup/NPC verification:** these require the actual target UEFN release and editor evidence from Claude.
 - **Asset creation/import/licensing:** no model/texture/audio/animation source assets or license evidence were present in main. The Environment Art PR contains registers/specifications, not imported production assets.
@@ -202,3 +202,40 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 The next work can proceed without further clarification only on non-destructive preflight and document-only tasks. Before final geometry-dependent production, the owner must approve the R2.2 checklist or provide a replacement. Claude must then return the actual UEFN project path/identity, editor version, initial screenshots and the first geometry feasibility report.
 
 **Final status:** ChatGPT's documentation audit and correction package is complete for this pass. The overall game production is not complete. Remaining items are explicitly listed above and are owned by the project owner or Claude according to the execution protocol.
+
+## 13. Live repository refresh — 2026-11-16, 16:06 CET
+
+This section supersedes volatile PR divergence/mergeability figures and adds a fresh CSV structural check. It does not change the owner-approval or UEFN evidence gates above.
+
+### 13.1 Environment Art PR #1 — latest live check
+- PR #1 remains **OPEN / DRAFT**.
+- GitHub currently reports `mergeable=true`; this is a technical mergeability flag, not approval to merge.
+- Live compare `main...environment-art/room13-v1`: **66 commits ahead, 300 commits behind; status DIVERGED**.
+- The PR has 13 added files. No submitted reviews and no PR discussion comments were returned by the latest check.
+- The branch audit and execution documents contain older geometry references and must be reauthored against the owner-approved geometry before integration.
+- **Decision unchanged: DO NOT MERGE, rebase, force-push or synchronize this PR as-is.** A mergeable flag does not resolve stale content, obsolete geometry assumptions or the absence of review.
+
+### 13.2 Current main CSV row-width refresh
+A fresh parser check was run against 15 current main CSV files. Every non-empty data row matched its header field count:
+- ASSET_MANIFEST_EXECUTIVE.csv: 21 rows / 8 columns.
+- asset_manifest.csv: 21 rows / 8 columns (same blob as the executive manifest).
+- DOOR_WINDOW_SCHEDULE.csv: 51 rows / 16 columns.
+- door_window_schedule.csv: 51 rows / 12 columns.
+- ROOM_COORDINATE_REGISTER.csv: 52 rows / 16 columns.
+- coordinate_schedule.csv: 55 rows / 14 columns.
+- exterior_prop_schedule.csv: 12 rows / 12 columns.
+- room_furnishing_schedule.csv: 183 rows / 17 columns.
+- UEFN_DEVICE_BINDINGS.csv and uefn_device_bindings.csv: 13 rows / 7 columns (same blob).
+- wall_schedule.csv: 70 rows / 15 columns.
+- INTERACTION_MASTER_REGISTER.csv: 29 rows / 13 columns.
+- PUZZLE_MASTER_REGISTER.csv: 5 rows / 15 columns.
+- LIGHTING_REGISTER.csv: 10 rows / 16 columns.
+- AUDIO_REGISTER.csv: 9 rows / 13 columns.
+
+This is a structural row-width check only. It does not establish semantic correctness, coordinate fit, valid mesh bounds, licenses, collision, engine compatibility or gameplay behaviour. The historical combined lighting_audio_schedule.csv is not a current authoring authority; use the separate registers.
+
+### 13.3 Current geometry authority reminder
+- LD-GEO R2.2 is the single candidate geometry proposal.
+- The geometry validation report lists **14 numbered owner-approval items**. The owner must approve or request revisions before geometry is frozen.
+- R2.2 includes document-level corrections such as the UPPER_ROOM11 row and aligned opening/host-wall references. These corrections do not make the layout owner-approved or editor-verified.
+- Do not assign Environment Art final placements against R2.2 until owner approval and Claude's editor traversal/collision evidence are obtained.
