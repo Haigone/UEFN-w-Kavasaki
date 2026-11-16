@@ -98,7 +98,7 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-052 | Inspect Room 06 missing-guest photo board | MissingGuestEvidenceFound is recorded once and appears in the journal; it gates THE_TRUTH only if owner-approved as mandatory evidence |
 
 
-## 8. Objective, AI, UI and END-A01 regression tests
+## 9. Objective, AI, UI and END-A01 regression tests
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-053 | Complete PZ-01 and PZ-02 without inspecting every Room 01–06 anomaly | ACT II completes; room anomaly inspection is not an accidental progression gate |
