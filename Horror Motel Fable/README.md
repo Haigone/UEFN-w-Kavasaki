@@ -9,7 +9,7 @@
 1. [PRODUCTION_CONTROL_MASTER_SPEC.md](PRODUCTION_CONTROL_MASTER_SPEC.md) — authority hierarchy, canonical rules, ownership, change control and cross-system invariants.
 2. [MASTER_TASK_REGISTER.md](MASTER_TASK_REGISTER.md) — production work packages, dependencies and acceptance evidence.
 3. [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — consolidated remaining narrative/creative approval request.
-4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21 and co-op ending rule END-A01; END-A02 remains pending.
+4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21, co-op ending rule END-A01 and delegated narrative approvals NCP-A01–A09 / END-A02.
 5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
 6. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — current R2.3 audit/build gates and immediate authorization.
 7. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
@@ -30,9 +30,9 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 
 - [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — product vision, setting, pillars and canon.
 - [NARRATIVE_MASTER_SCRIPT.md](NARRATIVE_MASTER_SCRIPT.md) — six-act beat script.
-- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — complete proposed player-facing clue/puzzle/ending copy; pending owner approval.
+- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — approved canonical English player-facing clue/puzzle/ending copy.
 - [STORY_DOCUMENT_REGISTER.md](STORY_DOCUMENT_REGISTER.md) and [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md).
-- [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — one consolidated approval request for NCP-A01–A09 and END-A02.
+- [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — record of delegated approval for NCP-A01–A09 and END-A02.
 - [GAMEPLAY_SYSTEMS_SPEC.md](GAMEPLAY_SYSTEMS_SPEC.md), [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md), [ACT_AND_OBJECTIVE_MATRIX.md](ACT_AND_OBJECTIVE_MATRIX.md), [OBJECTIVE_AND_EVENT_CATALOG.md](OBJECTIVE_AND_EVENT_CATALOG.md).
 - [ITEM_AND_INVENTORY_SPEC.md](ITEM_AND_INVENTORY_SPEC.md), [INTERACTION_EXECUTION_SPEC.md](INTERACTION_EXECUTION_SPEC.md), [PUZZLE_IMPLEMENTATION_SHEETS.md](PUZZLE_IMPLEMENTATION_SHEETS.md), [PUZZLE_MASTER_REGISTER.csv](PUZZLE_MASTER_REGISTER.csv), [INTERACTION_MASTER_REGISTER.csv](INTERACTION_MASTER_REGISTER.csv).
 - [PLAYER_STATE_MACHINE.md](PLAYER_STATE_MACHINE.md), [CAPTURE_AND_RESCUE_SPEC.md](CAPTURE_AND_RESCUE_SPEC.md), [CHECKPOINT_AND_RECOVERY_SPEC.md](CHECKPOINT_AND_RECOVERY_SPEC.md), [GAMEPLAY_UI_UX_SPEC.md](GAMEPLAY_UI_UX_SPEC.md), [GAME_BALANCING_SPEC.md](GAME_BALANCING_SPEC.md).
