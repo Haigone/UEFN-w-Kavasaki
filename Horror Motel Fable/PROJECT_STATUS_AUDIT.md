@@ -128,3 +128,9 @@ All of the following require a human/editor workflow unless a verified connected
 
 ## 11. Audit limitations
 This audit reads the GitHub repository contents available on branch main. Binary assets are not represented in this tree; no separate Epic/UEFN project, local workspace or island session was inspected. The audit does not certify that the project is absent elsewhere. No files existing before this audit were deleted or overwritten.
+
+
+## 12. Execution responsibility clarification (binding)
+This repository is a specification/reference package for Claude, not proof of an implemented island. ChatGPT's role is limited to preparing detailed, ordered execution packets, specifications, acceptance criteria and evidence checklists. **Claude is the designated executor** for all UEFN editor operations, asset imports, device configuration, Verse implementation/compilation, playtests, QA, profiling and island validation. The project owner approves design decisions and publication. ChatGPT must not claim or certify any editor test it did not perform. See `CLAUDE_EXECUTION_PROTOCOL.md`.
+
+The statuses in this audit describe repository evidence only. Any editor-dependent item remains PRESENTE MA NON VERIFICATO / INCOMPLETO / BLOCCATO until Claude returns reproducible evidence tied to the project and UEFN version.
