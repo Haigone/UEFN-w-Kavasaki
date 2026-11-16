@@ -53,8 +53,8 @@ PROP_REGISTER_KEYPAD,Prop,Guest register pen keypad and drawer lock,TBD,SEE BACK
 PROP_OFFICE_PHOTO_BOARD,Prop,Office chronology board four photos,TBD,SEE BACKLOG,1,P0,NOT SOURCED
 PROP_ROOM13_PHOTO_BOARD,Prop,ROOM13 chronology board and evidence rail,TBD,SEE BACKLOG,1,P0,NOT SOURCED
 PROP_CRT,Prop,CRT monitor controllable feed materials,TBD,SEE BACKLOG,13,P1,NOT SOURCED
-PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,TBD,SEE BACKLOG,13,P1,NOT SOURCED
-PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,TBD,SEE BACKLOG,12,P1,NOT SOURCED
+PROP_ROTARY_PHONE,Prop,Rotary telephone and recording actor,TBD,SEE BACKLOG,14,P1,NOT SOURCED
+PROP_BED_KIT,Prop,Double bed mattress bedding headboard nightstands,TBD,SEE BACKLOG,13,P1,NOT SOURCED
 PROP_WARDROBE_KIT,Prop,Guest wardrobe and approved hiding variants,TBD,SEE BACKLOG,13,P1,NOT SOURCED
 PROP_DESK_CHAIR_KIT,Prop,Desk chair lamp stationery,TBD,SEE BACKLOG,13 sets,P2,NOT SOURCED
 PROP_BATHROOM_KIT,Prop,Vanity toilet shower mirror tile,TBD,SEE BACKLOG,12 sets,P2,NOT SOURCED
