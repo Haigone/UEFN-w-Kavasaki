@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<rect width="1400" height="1000" fill="#fbfaf6"/>
+<g font-family="Arial" fill="#202020">
+<text x="45" y="38" font-size="24" font-weight="bold">THE MOTEL: ROOM 13 — SECTIONS R2.2</text>
+<text x="45" y="62" font-size="13">PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED | dimensions in metres</text>
+</g>
+<!-- A-A side section -->
+<g transform="translate(55,100)">
+<text x="0" y="0" font-family="Arial" font-size="18" font-weight="bold">A–A | WEST WING VERTICAL STACK</text>
+<g stroke="#444" fill="none" stroke-width="2">
+<rect x="70" y="80" width="520" height="190" fill="#dce7ef"/>
+<rect x="70" y="270" width="520" height="25" fill="#aaa"/>
+<rect x="70" y="295" width="520" height="170" fill="#e5e0d5"/>
+<rect x="70" y="465" width="520" height="25" fill="#aaa"/>
+<rect x="70" y="65" width="520" height="15" fill="#888"/>
+<path d="M70 65 H590 M70 490 H590" stroke="#333"/>
+</g>
+<g font-family="Arial" font-size="13" fill="#333">
+<text x="330" y="165" text-anchor="middle">UPPER ROOM 07 / 08 / 09</text>
+<text x="330" y="370" text-anchor="middle">GROUND ROOM 01 / 02 / 03</text>
+<text x="600" y="283">Upper slab 0.25</text>
+<text x="600" y="478">Roof slab 0.25</text>
+<text x="600" y="75">Parapet top Z=7.10</text>
+<text x="5" y="273">Z=3.35</text><text x="5" y="298">Z=3.60</text><text x="5" y="468">Z=0.00</text>
+<text x="330" y="515" text-anchor="middle">Ground FFL 0.00 → Upper FFL 3.60 → Roof top 6.65</text>
+<text x="330" y="535" text-anchor="middle">Ground clear 3.00 m | Upper clear 2.80 m</text>
+</g>
+</g>
+<!-- B-B North connector -->
+<g transform="translate(55,610)">
+<text x="0" y="0" font-family="Arial" font-size="18" font-weight="bold">B–B | NORTH CONNECTOR SECTION (Y=55.00)</text>
+<g stroke="#444" stroke-width="1.5">
+<rect x="0" y="80" width="90" height="120" fill="#eadcbf"/><rect x="90" y="80" width="90" height="120" fill="#e6d9c8"/>
+<rect x="180" y="80" width="140" height="120" fill="#bcd2e3"/><rect x="320" y="80" width="80" height="120" fill="#d7c9b8"/>
+<rect x="400" y="80" width="95" height="120" fill="#e5dfd3"/><rect x="495" y="80" width="170" height="120" fill="#c6d5c7"/>
+<rect x="665" y="80" width="90" height="120" fill="#eadcbf"/>
+<rect x="0" y="45" width="90" height="35" fill="#eeeeea"/><rect x="90" y="45" width="90" height="35" fill="#eeeeea"/>
+<rect x="180" y="45" width="85" height="35" fill="#c4b4d8"/><rect x="265" y="45" width="200" height="35" fill="#e4ddd0"/>
+<rect x="465" y="45" width="150" height="35" fill="#e8c4c4"/><rect x="615" y="45" width="140" height="35" fill="#eeeeea"/>
+<path d="M0 200 H755 M0 45 H755" stroke="#222" stroke-width="2"/>
+</g>
+<g font-family="Arial" font-size="11" fill="#202020" text-anchor="middle">
+<text x="45" y="145">NW LINK</text><text x="135" y="145">WEST LOBBY</text><text x="250" y="145">RECEPTION</text><text x="360" y="145">OFFICE</text><text x="447" y="145">STORAGE / SERVICE</text><text x="580" y="145">ELECTRICAL</text><text x="710" y="145">NE LINK</text>
+<text x="45" y="67">U-W RESERVE</text><text x="135" y="67">U-W RESERVE</text><text x="222" y="67">STAIR</text><text x="365" y="67">U-SERVICE</text><text x="540" y="67">ROOM 13</text><text x="685" y="67">U-E RESERVE</text>
+</g>
+<text x="0" y="225" font-family="Arial" font-size="12" fill="#444">GF FFL Z=0.00; UF FFL Z=3.60; upper clear height 2.80 m; flat roof slab underside Z=6.40.</text>
+</g>
+<!-- C-C Stair detail -->
+<g transform="translate(850,100)">
+<text x="0" y="0" font-family="Arial" font-size="18" font-weight="bold">C–C | NORTH U-TURN STAIR</text>
+<rect x="0" y="60" width="470" height="390" fill="#f2efe7" stroke="#999"/>
+<g stroke="#333" stroke-width="2" fill="none">
+<path d="M45 365 H200 V245 H355 V125 H425"/>
+<path d="M45 365 L60 347 L75 329 L90 311 L105 293 L120 275 L135 257 L150 239 L165 221 L180 203 L195 185"/>
+<path d="M225 245 L240 227 L255 209 L270 191 L285 173 L300 155 L315 137 L330 119 L345 101 L360 83"/>
+<path d="M200 245 H355" stroke="#777" stroke-width="8"/>
+</g>
+<g font-family="Arial" font-size="12" fill="#333">
+<text x="40" y="390">GF FFL Z=0.00</text><text x="225" y="230">Landing Z=1.80</text><text x="365" y="110">UF FFL Z=3.60</text>
+<text x="35" y="420">10 risers × 0.18 m / flight</text><text x="35" y="438">9 goings × 0.28 m = 2.52 m run / flight</text>
+<text x="240" y="285">Landing 2.70 × 1.20 m</text><text x="240" y="305">Clear width 1.20 m per flight</text>
+<text x="240" y="325">Headroom ≥ 2.20 m</text>
+</g>
+</g>
+<!-- D-D Secret route -->
+<g transform="translate(850,610)">
+<text x="0" y="0" font-family="Arial" font-size="18" font-weight="bold">D–D | ROOM 12 → ROOM 13 ROUTE</text>
+<rect x="0" y="30" width="470" height="270" fill="#f8f3eb" stroke="#999"/>
+<g stroke="#555" stroke-width="2">
+<rect x="20" y="80" width="105" height="100" fill="#bcd2e3"/><rect x="125" y="80" width="70" height="100" fill="#e9d9b8"/>
+<rect x="195" y="140" width="100" height="40" fill="#f1d99a"/><rect x="295" y="140" width="130" height="40" fill="#f1d99a"/>
+<rect x="320" y="45" width="120" height="95" fill="#e8c4c4"/>
+</g>
+<g font-family="Arial" font-size="11" fill="#222" text-anchor="middle">
+<text x="72" y="130">ROOM 12</text><text x="160" y="130">VESTIBULE</text><text x="245" y="165">EAST BALCONY</text><text x="360" y="165">NORTH HALL</text><text x="380" y="95">ROOM 13</text>
+</g>
+<path d="M72 80 L160 80 L160 160 L245 160 L360 160 L380 140" fill="none" stroke="#a33" stroke-width="3" stroke-dasharray="7 4"/>
+<g font-family="Arial" font-size="11" fill="#444">
+<text x="10" y="220">D-13A (69.95,47.475)</text><text x="10" y="238">D-13C (66.90,48.45)</text><text x="10" y="256">D-13B (56.35,50.95)</text>
+<text x="10" y="280">All doors 0.90 × 2.10 m clear; FFL Z=3.60; headroom target ≥2.20 m.</text>
+</g>
+</g>
+</svg>
