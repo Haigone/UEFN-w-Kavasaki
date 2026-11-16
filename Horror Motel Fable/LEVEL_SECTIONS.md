@@ -29,7 +29,7 @@ Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.45–5
 ## D–D — ROOM 12 to ROOM 13
 Plan/section route:
 - D-13A centre (69.95,47.475), panel in ROOM 12 north wall, opens north.
-- Vestibule X67.00–72.90,Y47.55–49.20, FFL3.60.
+- Vestibule FIF X67.00–72.90,Y47.55–49.20, clear 5.90×1.65 m, FFL3.60. Wall centre-lines: west X66.925, east X72.975, north Y49.275; south boundary is shared ROOM 12 north wall Y47.475.
 - D-13C centre (66.925,48.45), opens west into east balcony leg.
 - Follow east leg to the east corner pad, then west along north balcony crossbar.
 - D-13B centre (56.35,50.95), in ROOM 13 south wall, opens north.
