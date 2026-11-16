@@ -1,53 +1,58 @@
 ID,Floor,Element_Type,X_Min_m,X_Max_m,Y_Min_m,Y_Max_m,Z_Floor_m,Width_m,Length_m,Height_m,Rotation_deg,Material_Asset_ID,Collision,Gameplay_Function,Verification_Status
 SITE,ALL,Site_Boundary,0,84,0,72,0,84,72,NA,0,NA,No_Geometry_Envelope,Site envelope 84x72 m,FIXED REQUIREMENT
-BLDG-UNION,ALL,U_Footprint_Envelope,8,76,18,60,0,68,42,NA,0,NA,No_Geometry_Envelope,U-shaped footprint envelope; courtyard void excluded,PROPOSED CORRECTION
+BLDG-UNION,ALL,U_Footprint_Envelope,8,76,18,60,0,68,42,NA,0,NA,No_Geometry_Envelope,U-shaped footprint envelope; courtyard void excluded,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
 COURTYARD,ALL,Open_Courtyard,20,64,18,48,0,44,30,NA,0,NA,No_Floor_Slab,Open to sky; excluded from floor and roof slabs,FIXED REQUIREMENT
-ROOM-01,GF,Room,11.1,19.7,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-02,GF,Room,11.1,19.7,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-03,GF,Room,11.1,19.7,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-04,GF,Room,64.3,72.9,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-05,GF,Room,64.3,72.9,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-06,GF,Room,64.3,72.9,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-G-CW,GF,Corridor,8.3,10.8,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-G-CE,GF,Corridor,73.2,75.7,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-GF-NW-LINK,GF,Corridor,8.3,10.8,48.3,59.7,0,2.5,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-GF-W-LOBBY,GF,Lobby,11.1,19.85,48.3,59.7,0,8.75,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-RECEPTION,GF,Room,20.15,37.7,48.3,59.7,0,17.55,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-OWNER-OFFICE,GF,Room,38,47,48.3,59.7,0,9,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-STORAGE,GF,Room,47.3,57,48.3,53.7,0,9.7,5.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-GF-SERVICE-BAY,GF,Service_Corridor,47.3,57,53.85,59.7,0,9.7,5.85,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ELECTRICAL,GF,Room,57.3,72.9,48.3,59.7,0,15.6,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-GF-NE-LINK,GF,Corridor,73.2,75.7,48.3,59.7,0,2.5,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-G-W-CROSS-01,GF,Open_Connector_Bay,11.1,19.7,27,29,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 1; owner approval required,PROPOSED CORRECTION
-G-W-CROSS-02,GF,Open_Connector_Bay,11.1,19.7,36,38,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 2; owner approval required,PROPOSED CORRECTION
-G-E-CROSS-01,GF,Open_Connector_Bay,64.3,72.9,27,29,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 1; owner approval required,PROPOSED CORRECTION
-G-E-CROSS-02,GF,Open_Connector_Bay,64.3,72.9,36,38,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 2; owner approval required,PROPOSED CORRECTION
-ROOM-07,UF,Room,8.3,17,20,27,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 07; revised width 8.70,PROPOSED CORRECTION
-ROOM-08,UF,Room,8.3,17,29,36,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 08; revised width 8.70,PROPOSED CORRECTION
-ROOM-09,UF,Room,8.3,17,38,47.4,3.6,8.7,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 09; revised width 8.70,PROPOSED CORRECTION
-ROOM-10,UF,Room,67,75.7,20,27,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 10; revised width 8.70,PROPOSED CORRECTION
-ROOM-11,UF,Room,67,75.7,29,36,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 11; corrected UPPER_ROOM11,PROPOSED CORRECTION
-ROOM-12,UF,Room,67,75.7,38,47.4,3.6,8.7,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 12; revised width 8.70,PROPOSED CORRECTION
-U-WEST-BALCONY,UF,Balcony,17.15,19.7,18.3,48.3,3.6,2.55,30,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER DECISION + PROPOSED DIMENSION
-U-NORTH-BALCONY,UF,Balcony,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER DECISION + PROPOSED DIMENSION
-U-EAST-BALCONY,UF,Balcony,64.3,66.85,18.3,48.3,3.6,2.55,30,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER DECISION + PROPOSED DIMENSION
-U-WEST-TURN,UF,Balcony_Turn,17.15,20.15,47,50.8,3.6,3,3.8,2.8,0,FLOOR-INT-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,PROPOSED CORRECTION
-U-EAST-TURN,UF,Balcony_Turn,63.85,66.85,47,50.8,3.6,3,3.8,2.8,0,FLOOR-INT-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,PROPOSED CORRECTION
-U-NORTH-HALL,UF,Hall,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-INT-01,Alias_NoGeometry,Navigation/functional alias of U-NORTH-BALCONY; do not create a second floor or collision,PROPOSED CORRECTION
-U-STAIR-LANDING,UF,Stair_Landing,20.15,28.7,51.1,59.7,3.6,8.55,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-U-SERVICE,UF,Service_Room,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room; north connector,OWNER DECISION for location; dimensions proposed
-U-WEST-SERVICE-RESERVE,UF,Nonplayable_Reserve,8.3,19.85,51.1,59.7,3.6,11.55,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
-U-EAST-SERVICE-RESERVE,UF,Nonplayable_Reserve,64,75.7,51.1,59.7,3.6,11.7,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
-VEST-13,UF,Secret_Vestibule,67,72.9,47.55,49.2,3.6,5.9,1.5,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 panel to east balcony,EDITOR-TEST REQUIRED
-STAIR-01,GF-UF,Stair_U_Turn,22.65,25.35,52.45,56.17,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,20 risers; 2 flights; 9 goings each; landing Z1.80,OWNER APPROVAL + EDITOR-TEST REQUIRED
-ROOF-SLAB,ROOF,Flat_Roof_U_Polygon,8,76,18,60,6.4,68,42,0.25,0,ROOF-SLAB-01,Solid,Flat roof over U union only; courtyard excluded,PROPOSED CORRECTION
-U-W-CROSS-01,UF,Open_Connector_Bay,8.3,17,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVAL REQUIRED
-U-W-CROSS-02,UF,Open_Connector_Bay,8.3,17,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVAL REQUIRED
-U-E-CROSS-01,UF,Open_Connector_Bay,67,75.7,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
-U-E-CROSS-02,UF,Open_Connector_Bay,67,75.7,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
-UF-STAIR-OPENING,UF,Slab_Opening,22.5,25.5,52.3,56.32,3.35,3,4.02,0,0,NA,No collision,Upper slab cut for U-turn stair,OWNER APPROVAL + EDITOR-TEST REQUIRED
-GF-W-SOUTH-VEST,GF,Entry_Buffer,11.1,19.7,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to west corridor,OWNER APPROVAL REQUIRED
-GF-E-SOUTH-VEST,GF,Entry_Buffer,64.3,72.9,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to east corridor,OWNER APPROVAL REQUIRED
-UF-W-SOUTH-VEST,UF,Entry_Buffer,8.3,17,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to west balcony,OWNER APPROVAL REQUIRED
-UF-E-SOUTH-VEST,UF,Entry_Buffer,67,75.7,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to east balcony,OWNER APPROVAL REQUIRED
+ROOM-01,GF,Room,11.1,19.7,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-02,GF,Room,11.1,19.7,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-03,GF,Room,11.1,19.7,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-04,GF,Room,64.3,72.9,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-05,GF,Room,64.3,72.9,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-06,GF,Room,64.3,72.9,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-CW,GF,Corridor,8.3,10.8,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-CE,GF,Corridor,73.2,75.7,18.3,48,0,2.5,29.7,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-NW-LINK,GF,Corridor,8.3,10.8,48.3,59.7,0,2.5,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-W-LOBBY,GF,Lobby,11.1,19.85,48.3,59.7,0,8.75,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+RECEPTION,GF,Room,20.15,37.7,48.3,59.7,0,17.55,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+OWNER-OFFICE,GF,Room,38,47,48.3,59.7,0,9,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+STORAGE,GF,Room,47.3,57,48.3,53.7,0,9.7,5.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-SERVICE-BAY,GF,Service_Corridor,47.3,57,53.85,59.7,0,9.7,5.85,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ELECTRICAL,GF,Room,57.3,72.9,48.3,59.7,0,15.6,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-NE-LINK,GF,Corridor,73.2,75.7,48.3,59.7,0,2.5,11.4,3,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-W-CROSS-01,GF,Open_Connector_Bay,11.1,19.7,27,29,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 1; owner approval required,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-W-CROSS-02,GF,Open_Connector_Bay,11.1,19.7,36,38,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 2; owner approval required,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-E-CROSS-01,GF,Open_Connector_Bay,64.3,72.9,27,29,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 1; owner approval required,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+G-E-CROSS-02,GF,Open_Connector_Bay,64.3,72.9,36,38,0,8.6,2,3,0,FLOOR-INT-01,Walkable,Cross passage 2; owner approval required,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-07,UF,Room,8.3,17,20,27,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 07; revised width 8.70,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-08,UF,Room,8.3,17,29,36,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 08; revised width 8.70,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-09,UF,Room,8.3,17,38,47.4,3.6,8.7,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper west room 09; revised width 8.70,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-10,UF,Room,67,75.7,20,27,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 10; revised width 8.70,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-11,UF,Room,67,75.7,29,36,3.6,8.7,7,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 11; corrected UPPER_ROOM11,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-12,UF,Room,67,75.7,38,47.4,3.6,8.7,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper east room 12; revised width 8.70,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-WEST-BALCONY,UF,Balcony,17.15,19.7,18.3,48.3,3.6,2.55,30,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-NORTH-BALCONY,UF,Balcony,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-EAST-BALCONY,UF,Balcony,64.3,66.85,18.3,48.3,3.6,2.55,30,2.8,0,FLOOR-UPPER-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-WEST-TURN,UF,Balcony_Turn,17.15,20.00,47,50.8,3.6,2.85,3.8,2.8,0,FLOOR-INT-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-EAST-TURN,UF,Balcony_Turn,64.00,66.85,47,50.8,3.6,2.85,3.8,2.8,0,FLOOR-INT-01,Union_Component_NoDuplicateCollision,Component of one continuous balcony floor polygon; union before mesh/collision creation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-NORTH-HALL,UF,Hall,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-INT-01,Alias_NoGeometry,Navigation/functional alias of U-NORTH-BALCONY; do not create a second floor or collision,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-STAIR-LANDING,UF,Stair_Landing,20.15,28.7,51.1,59.7,3.6,8.55,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-SERVICE,UF,Service_Room,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-INT-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,Sealed technical reserve; no gameplay access; structural floor collision retained; navmesh excluded,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room; north connector,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-WEST-SERVICE-RESERVE,UF,Nonplayable_Reserve,8.3,19.85,51.1,59.7,3.6,11.55,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-EAST-SERVICE-RESERVE,UF,Nonplayable_Reserve,64,75.7,51.1,59.7,3.6,11.7,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+VEST-13,UF,Secret_Vestibule,67,72.9,47.55,49.2,3.6,5.9,1.65,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 panel to east balcony,OWNER APPROVED R2.3 — EDITOR VERIFICATION REQUIRED
+STAIR-01,GF-UF,Stair_U_Turn,22.65,25.35,52.45,56.17,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,20 risers; 2 flights; 9 goings each; landing Z1.80,OWNER APPROVED R2.3 — EDITOR VERIFICATION REQUIRED
+ROOF-SLAB,ROOF,Flat_Roof_U_Polygon,8,76,18,60,6.4,68,42,0.25,0,ROOF-SLAB-01,Solid,Flat roof over U union only; courtyard excluded,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-W-CROSS-01,UF,Open_Connector_Bay,8.3,17,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-W-CROSS-02,UF,Open_Connector_Bay,8.3,17,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-E-CROSS-01,UF,Open_Connector_Bay,67,75.7,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+U-E-CROSS-02,UF,Open_Connector_Bay,67,75.7,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-STAIR-OPENING,UF,Slab_Opening,22.5,25.5,52.3,56.32,3.35,3,4.02,0,0,NA,No collision,Upper slab cut for U-turn stair,OWNER APPROVED R2.3 — EDITOR VERIFICATION REQUIRED
+GF-W-SOUTH-VEST,GF,Entry_Buffer,11.1,19.7,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to west corridor,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-E-SOUTH-VEST,GF,Entry_Buffer,64.3,72.9,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to east corridor,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-W-SOUTH-VEST,UF,Entry_Buffer,8.3,17,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to west balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-E-SOUTH-VEST,UF,Entry_Buffer,67,75.7,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to east balcony,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-W-NORTH-SEALED-RESERVE,GF,Sealed_Reserve,11.1,19.7,45.15,48,0,8.6,2.85,3,0,FLOOR-INT-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,Sealed north pocket west of ROOM 03; no gameplay; structural floor remains,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+GF-E-NORTH-SEALED-RESERVE,GF,Sealed_Reserve,64.3,72.9,45.15,48,0,8.6,2.85,3,0,FLOOR-INT-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,Sealed north pocket east of ROOM 06; no gameplay; structural floor remains,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-W-NORTH-SEALED-RESERVE,UF,Sealed_Reserve,8.3,17,47.55,50.8,3.6,8.7,3.25,2.8,0,FLOOR-UPPER-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,Sealed west upper pocket; closed by added UF-W-SEALED-RESERVE-WEST; no gameplay,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-E-NORTH-SEALED-RESERVE-N,UF,Sealed_Reserve,67,73.05,49.35,50.8,3.6,6.05,1.45,2.8,0,FLOOR-UPPER-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,North component of east L-shaped sealed pocket above VEST-13,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
+UF-E-NORTH-SEALED-RESERVE-E,UF,Sealed_Reserve,73.05,75.7,47.55,50.8,3.6,2.65,3.25,2.8,0,FLOOR-UPPER-01,No_Access;Navmesh_Excluded;Structural_Floor_Collision_Only,East component of east L-shaped sealed pocket beside VEST-13,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING
