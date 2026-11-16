@@ -15,7 +15,7 @@ Upper FFL Z=3.60; clear ceiling Z=6.40; upper clear height 2.80 m. Upper slab ta
 | ROOM 11 | 67.00–75.70 | 29–36 | 8.70×7.00 |
 | ROOM 12 | 67.00–75.70 | 38–47.40 | 8.70×9.40 |
 
-R2.2 restores 8.70 m width and removes the unexplained 2.50 m outer strips in R2.1. Doors face the courtyard balcony at X=17.075 (west rooms) and X=66.925 (east rooms). Windows face the outer perimeter at X=8.15 and X=75.85. The 2 m Y gaps between room bays are proposed cross-bays with 1.50 m openings to the balcony; owner approval required.
+R2.2 restores 8.70 m width and removes the unexplained 2.50 m outer strips in R2.1. South-end buffers X8.30–17.00 and X67.00–75.70,Y18.30–19.85 connect to the respective balcony legs; room south walls close at Y19.925. Doors face the courtyard balcony at X=17.075 (west rooms) and X=66.925 (east rooms). Windows face the outer perimeter at X=8.15 and X=75.85. The 2 m Y gaps between room bays are proposed cross-bays with 1.50 m openings to the balcony; owner approval required.
 
 ## Continuous U balcony
 - West leg X=17.15–19.70,Y=18.30–48.30.
