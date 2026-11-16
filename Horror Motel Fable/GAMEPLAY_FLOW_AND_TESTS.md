@@ -171,10 +171,11 @@ ESCAPE:
 - Trigger vehicle escape.
 
 THE TRUTH:
-- CoreEscapeReady = true.
-- TruthChainComplete = true.
-- Room13RevealComplete = true.
+- FinaleReady = true.
+- TruthChainComplete = true (only after END-A02 is owner-approved and its formula is satisfied).
+- Room13RevealComplete = true; ServiceKeyObtained and ServiceRouteReady are included in FinaleReady.
 - Players select/activate the truth route.
+- CarKeys and vehicle ignition are not required.
 - Trigger the distinct owner confrontation/revelation resolution.
 
 THE NEW GUEST:
