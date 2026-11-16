@@ -1,4 +1,6 @@
-# NARRATIVE CONTENT PROPOSAL PACK — THE MOTEL: ROOM 13
+# CANONICAL NARRATIVE CONTENT PACK — THE MOTEL: ROOM 13
+
+> Canonical approved content. The historical filename `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md` is retained for stable references.
 Revision: NCP-01 | 2026-11-16
 Status: **APPROVED CANONICAL ENGLISH NARRATIVE / PUZZLE CONTENT — 2026-11-16 (UNDER EXPRESS OWNER DELEGATION)**
 Language of in-game content: English.
@@ -201,3 +203,16 @@ The consolidated decision is recorded in OWNER_DECISION_PACKET_R1.md and OWNER_D
 
 ## 13. Canonical handoff
 This pack is approved canon. All controlling narrative, gameplay, puzzle, UI, subtitle, journal and execution documents must reference it and must not contradict it. Claude implements the exact approved text and validates clue readability, transcript fallback, solo/co-op progression, duplicate triggers and recovery. Technical limitations must be reported with a proposed presentation-preserving workaround; they do not authorize rewriting the story.
+
+
+## 14. Optional environmental fragments — approved, non-gating
+These short diegetic fragments are approved as optional environmental dressing. They do not create evidence flags, journal entries, puzzle requirements or ending gates. They may be omitted if the prop placement is not available; never substitute them for mandatory clue text.
+
+| String ID | Exact text | Placement | Rule |
+|---|---|---|---|
+| PROP-ENV-001 | NO CHECK-OUT RECORDED. | ROOM 06 photo archive frame backs | Atmosphere; duplicate archive phrase is intentional |
+| PROP-ENV-002 | If the sign is lit, do not answer the desk phone. | Small handwritten note beside the ROOM 04 phone | Foreshadowing only; does not disable the phone or change its approved welcome line |
+| PROP-ENV-003 | MAIN POWER — STAFF ONLY. | Utility/breaker panel cover | Wayfinding label; does not reveal fuse order |
+| PROP-ENV-004 | The room was never built. It was always here. | ROOM 12 concealed-panel approach | Atmosphere; does not reveal how to open the panel |
+| PROP-ENV-005 | HE WAITS OUTSIDE THE DOOR. | ROOM 03 mirror-side door frame | Atmosphere; does not trigger or identify THE GUEST |
+| PROP-ENV-006 | 02:13 | Repeating clocks and the exterior neon sign | Motif only; the authored WorldClock_02_13 event remains separate from real time |
