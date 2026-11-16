@@ -260,3 +260,14 @@ The documentation author does not run UEFN, does not claim editor test results, 
 
 ### Completion accounting
 Report distinct totals for: required asset IDs; existing licensed source assets inventoried; original models created; textures/materials created; assets exported; assets imported; assets engine-verified; assets accepted; placements verified; items blocked. A single aggregate “complete” percentage is not acceptable unless its numerator/denominator and acceptance definition are stated. Documentation readiness must be reported separately from physical asset completion and UEFN verification.
+
+## 13. Current documentary package audit snapshot
+At the time of this revision:
+- Environment asset register: 119 asset/specification rows, 25 columns including source mode/candidate URL/license evidence/UEFN compatibility.
+- Material master: 20 material specifications, 15 columns.
+- Prop placement register: 286 individual placement rows, 22 columns. 91 rows are explicitly UNPLACED because the current authoritative geometry/schedules do not provide approved coordinates; 1 exterior gate row is BLOCKED due conflicting source coordinates. These are not missing silently: Claude must resolve them in the geometry/art change log.
+- Cross-register integrity: every placement Asset_ID resolves to the asset register; every placement Material_ID resolves to the material master; no duplicate placement IDs were found in the audit.
+- Asset source/license evidence remains NOT_ACQUIRED_OR_NOT_VERIFIED across the asset register. Source candidates and marketplace URLs are leads only, not permission to use or proof of UEFN compatibility. Claude must acquire and inspect license evidence or create an original replacement. No third-party asset is cleared for use by this documentary audit.
+- No mesh, texture, material instance, DCC source, FBX export or UEFN import is claimed created by this package. All production statuses remain NOT STARTED/BLOCKED until real files and evidence exist.
+- UEFN tests are exclusively Claude's responsibility. This package author has performed no UEFN editor, collision, play, performance, import or compatibility tests.
+
