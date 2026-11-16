@@ -133,3 +133,15 @@ The repository contains historical case-variant CSV mirrors. The current authori
 - lighting_audio_schedule.csv is historical and malformed; current separate audio/lighting registers and cue sheets control.
 
 No automatic case normalization or merge is permitted. See README.md Section 9.
+
+
+### Anchor-to-device crosswalk validation
+
+A follow-up cross-reference check confirms:
+- Every one of the 32 registered Interaction_ID values appears in INTERACTION_ANCHOR_SCHEDULE_R1.csv.
+- All 58 interaction/player-spawn Anchor_ID values are unique.
+- All 25 AI spawn/patrol/reveal Anchor_ID values are unique.
+- Every non-logical Anchor_ID reference in the 50-row UEFN_DEVICE_BINDINGS.csv resolves to an interaction anchor, AI anchor or the SVC-DOOR-READER anchor in the Service Control Bay spec. UI/audio/dynamic aliases are explicitly named logical anchors.
+- All static numeric interaction and AI anchor positions fit the canonical area bounds in ROOM_COORDINATE_REGISTER.csv; two interaction rows are intentionally per-player UI/dynamic rescue anchors and have no fixed world XYZ.
+
+These checks validate coordinate references and area envelopes only. They do not prove that the placed mesh pivots, trigger volumes, door swings, player capsules or NPC capsules are clear in the editor.
