@@ -88,12 +88,17 @@ This prevents two players consuming the same shared item or completing a puzzle 
 
 Do not hard-gate optional evidence. Required clues must have clear fallback readability and solo completion.
 
-## 9. Ending decision
-At final sequence, evaluate one mutually exclusive condition set:
-- ESCAPE: team activates the vehicle escape route without completing the truth condition.
-- THE_TRUTH: photo chronology and owner reveal are completed, then the truth route is selected.
-- THE_NEW_GUEST: the cycle/acceptance condition is completed.
-Set Ending only if current value is NONE. Once set, ignore all other ending triggers.
+## 9. Ending decision — canonical resolver contract
+
+At the final sequence, present only endings whose full eligibility predicates are true. GameManager validates eligibility, acquires the ending lock, commits one session-wide ending only when Ending==NONE, disables all competing triggers and broadcasts one branch event.
+
+- ESCAPE: CoreEscapeReady and explicit vehicle-route selection; remains available if truth evidence is incomplete.
+- THE_TRUTH: CoreEscapeReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit truth-route selection.
+- THE_NEW_GUEST: NewGuestAccepted through explicit invitation and team confirmation; never inferred from capture, defeat, inactivity or timeout.
+
+**END-A01 owner-approved quorum (2026-11-16):** strict majority of currently connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. Tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. Disconnect removes the voter and recalculates/re-prompts; disconnect is never consent. Solo selection is direct. Ending commit is atomic and one-shot.
+
+**END-A02 remains pending owner approval.** Do not implement mandatory truth-evidence pickups until the owner approves OWNER_DECISION_PACKET_R1.md. The current recommended evidence proposal is three optional-investigation clues (ROOM 09 diary, ROOM 11 drawing, ROOM 06 missing-guest archive). Keep physical route, photo puzzle and identity reveal as independent progression gates.
 
 ## 10. Adaptive tension
 Inputs: time without meaningful progress, capture events, puzzle stalls, monster sightings and noise/detection events.
