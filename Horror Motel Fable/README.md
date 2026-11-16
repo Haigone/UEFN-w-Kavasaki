@@ -8,10 +8,10 @@
 
 1. [PRODUCTION_CONTROL_MASTER_SPEC.md](PRODUCTION_CONTROL_MASTER_SPEC.md) — authority hierarchy, canonical rules, ownership, change control and cross-system invariants.
 2. [MASTER_TASK_REGISTER.md](MASTER_TASK_REGISTER.md) — production work packages, dependencies and acceptance evidence.
-3. [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — consolidated remaining narrative/creative approval request.
+3. [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — delegated narrative and ending approvals; historical proposal packet.
 4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21, co-op ending rule END-A01 and delegated narrative approvals NCP-A01–A09 / END-A02.
 5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
-6. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — current R2.3 audit/build gates and immediate authorization.
+6. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — R2.3 geometry-specific gate reference; superseded for overall execution order by [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md).
 7. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
 8. [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) and [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — outstanding work and risks.
 
@@ -42,7 +42,9 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 
 - [MONSTER_AI_BEHAVIOUR_SPEC.md](MONSTER_AI_BEHAVIOUR_SPEC.md) — state machine, perception, stimuli, targeting, navigation, capture handoff and fairness.
 - [THE_GUEST_NUMERIC_TUNING_R1.md](THE_GUEST_NUMERIC_TUNING_R1.md) — numeric starting defaults and calibration protocol; values are proposed, not playtest-validated.
-- [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — THE GUEST character production requirements.
+- [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — THE GUEST character production requirements and UEFN proof gates.
+- [ASSET_PRODUCTION_BACKLOG_R1.csv](ASSET_PRODUCTION_BACKLOG_R1.csv) — 60-row asset production backlog, priorities, dependencies and source/import gates.
+- [ROOM_INTERIOR_FITOUT_SPEC_R1.md](ROOM_INTERIOR_FITOUT_SPEC_R1.md) — room-by-room fit-out rules and clearances; no structural geometry changes.
 - [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md), [asset_manifest.csv](asset_manifest.csv), [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv).
 - [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) are the current separate registers; [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv), [AUDIO_MIX_POLICY.md](AUDIO_MIX_POLICY.md), [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv) and [LIGHTING_STATE_SPEC.md](LIGHTING_STATE_SPEC.md) define event triggers, mix and readability behaviour; the old combined lighting/audio schedule is historical.
 - [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv) is the current stable English copy baseline for objectives, prompts, feedback and subtitles.
