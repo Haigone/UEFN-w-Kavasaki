@@ -14,8 +14,8 @@ Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePo
 
 ## THE TRUTH
 **Eligibility:** FinaleReady; TruthChainComplete; Room13RevealComplete; ServiceKeyObtained; ServiceRouteReady; explicit team choice; EndingSelected is NONE. Does not require CarKeys or vehicle ignition.
-**Sequence:** confirm owner/GUEST reveal; activate truth route rather than standard vehicle escape; play distinct confrontation/exposure sequence; ending-specific consequence and title card.
-**Canon boundary:** confrontation verb, cost, cinematic, dialogue and exact consequence are not defined in source material. These are PROPOSALS requiring approval.
+**Sequence:** after the session commits THE_TRUTH, enter the service control room with the Service Key. The four ROOM 13 photographs appear on the evidence rail in their solved chronology (1968/1974/1981/1986); no second photo puzzle or inventory transfer is required. Play the night manager's 02:13 recorder entry with subtitles; THE GUEST appears at the opposite corridor end; the owner portrait and THE GUEST align in a reflection; players activate the dedicated `NIGHT AUDIT — END CYCLE` breaker through IN-032. Lights go out room by room while the neon remains at 02:13; the register prints `NO VACANCY. NO OWNER. NO GUEST.`; cut to THE TRUTH title card.
+**Outcome:** the current night-loop is stopped and exposed, but the motel remains physically present; its source is not proven destroyed. This is distinct from ESCAPE and requires no car, car keys, ignition or chase.
 
 ## THE NEW GUEST
 **Eligibility:** FinaleReady; EndingSelected is NONE; invitation must receive unanimous explicit affirmative confirmation. NewGuestAccepted is the resolver output set only after the quorum succeeds. Does not require CarKeys or vehicle ignition.
@@ -37,7 +37,7 @@ The ending resolver is an eligibility filter plus one team-choice transaction, n
 One shared ending for the session. All connected players receive the same choice. Disconnect during vote cannot silently count as acceptance. **APPROVED CO-OP RULE (owner, 2026-11-16):** ESCAPE and THE TRUTH require a strict majority of currently connected eligible players. THE NEW GUEST requires an explicit affirmative confirmation from every currently connected eligible player; no inferred acceptance. A tie or timeout for ESCAPE/THE TRUTH selects ESCAPE only when ESCAPE is eligible; otherwise the choice remains active for a new vote. A disconnect removes that player from the active electorate and recalculates majority; for THE NEW GUEST, re-prompt/reconfirm unanimity among the remaining connected players. A disconnect never counts as acceptance. Solo choice is direct. After commit, lock all competing endings.
 
 ## Required state transitions
-- Complete approved evidence checklist → TruthChainComplete.
+- All three END-A02 evidence flags true → TruthChainComplete.
 - Finish four-photo puzzle → Room13PhotoSequenceSolved.
 - Finish identity reveal presentation → Room13RevealComplete.
 - Open compartment → ServiceKeyObtained.
@@ -46,4 +46,4 @@ One shared ending for the session. All connected players receive the same choice
 - Eligible selection while EndingSelected is NONE → commit exactly one ending.
 
 ## Acceptance
-All endings reachable solo/co-op; mutually exclusive; no capture/timeout trigger; one-shot replicated state; no reconnect duplication; unique ending sequence/title card; approved radio line exact. THE TRUTH and NEW GUEST scripts require approval.
+All endings reachable solo/co-op; mutually exclusive; no capture/timeout trigger; one-shot replicated state; no reconnect duplication; unique ending sequence/title card; approved radio line exact. THE TRUTH and THE NEW GUEST scripts are approved in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
