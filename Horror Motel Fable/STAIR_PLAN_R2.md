@@ -9,8 +9,8 @@ The owner selected the north connector/reception for the main stair. Reservation
 - Two parallel U-turn flights, each 1.20 m clear width, separated by 0.30 m structure/clearance band. West flight is the lower flight and rises south-to-north; east flight is the upper flight and returns north-to-south, exiting at the south side of the upper opening.
 - Total rise 3.60 m, 20 risers at 0.18 m each.
 - 10 risers per flight; 9 goings per flight at 0.28 m = 2.52 m horizontal run.
-- Intermediate U-turn landing: 2.70×1.20 m at Z=1.80, across the north end of both parallel flights (Y=54.97–56.17).
-- Plan envelope: 2.70×3.72 m (2.52 m flight run + 1.20 m landing depth).
+- Intermediate U-turn landing: X22.65–25.35,Y54.97–56.17 (2.70×1.20 m) at Z=1.80, across the north end of both parallel flights.
+- Plan envelope: X22.65–25.35,Y52.45–56.17 (2.70×3.72 m: 2.52 m flight run + 1.20 m landing depth).
 - Ground FFL Z0.00; upper FFL Z3.60.
 - Handrails both sides, 1.00 m target height.
 - Headroom ≥2.20 m above every nosing and landing. Upper slab cut: X22.50–25.50,Y52.30–56.32 (3.00×4.02 m), through Z3.35–3.60. Guardrail along west, east and north edges; south edge remains open to the upper landing approach.
