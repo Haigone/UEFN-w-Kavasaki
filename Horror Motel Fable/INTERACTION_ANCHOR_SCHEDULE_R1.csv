@@ -6,54 +6,54 @@ IA-004,IN-004,Guest register,RECEPTION,28.2,55,1.05,0,PROP_GUEST_REGISTER,New re
 IA-005,IN-005,Register keypad,RECEPTION,29.8,55,1.05,0,PROP_REGISTER_KEYPAD,New reception counter layout target,PROPOSED TARGET,Six digit groups 02-13-86; UI or 10-button world grid.
 IA-006,IN-006,Office key drawer,RECEPTION,29.8,55,0.75,0,PROP_OFFICE_KEY_DRAWER,New reception counter layout target,PROPOSED TARGET,Pickup actor only enabled after RegisterSolved.
 IA-007,IN-007,Office photo board,OWNER-OFFICE,42.5,59.55,1.65,180,PROP_OFFICE_PHOTO_BOARD,OWNER-OFFICE bounds and north wall in wall_schedule.csv,PROPOSED TARGET,Four inspectable years 1974/1978/1982/1986; keep 1.2m approach.
-IA-008-R01,IN-008,Optional document on desk R01,ROOM 01,15.799999999999999,20.75,0.8,0,DOC-R01-01,room_furnishing_schedule.csv:F01_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-008-R02,IN-008,Optional document on desk R02,ROOM 02,15.799999999999999,29.75,0.8,0,DOC-R02-01,room_furnishing_schedule.csv:F02_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-008-R03,IN-008,Optional document on desk R03,ROOM 03,15.799999999999999,38.75,0.8,0,DOC-R03-01,room_furnishing_schedule.csv:F03_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-008-R04,IN-008,Optional document on desk R04,ROOM 04,71.39999999999999,20.75,0.8,0,DOC-R04-01,room_furnishing_schedule.csv:F04_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-008-R05,IN-008,Optional document on desk R05,ROOM 05,71.39999999999999,29.75,0.8,0,DOC-R05-01,room_furnishing_schedule.csv:F05_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-008-R06,IN-008,Optional document on desk R06,ROOM 06,71.39999999999999,38.75,0.8,0,DOC-R06-01,room_furnishing_schedule.csv:F06_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
-IA-009,IN-009,Personal battery pickup,ROOM 02,17.2,30.2,0.8,35,F02_BATTERY,room_furnishing_schedule.csv:F02_BATTERY,SCHEDULE LINK,Per-player charge and per-player spawn claim.
+IA-008-R01,IN-008,Optional document on desk R01,ROOM-01,15.799999999999999,20.75,0.8,0,DOC-R01-01,room_furnishing_schedule.csv:F01_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-008-R02,IN-008,Optional document on desk R02,ROOM-02,15.799999999999999,29.75,0.8,0,DOC-R02-01,room_furnishing_schedule.csv:F02_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-008-R03,IN-008,Optional document on desk R03,ROOM-03,15.799999999999999,38.75,0.8,0,DOC-R03-01,room_furnishing_schedule.csv:F03_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-008-R04,IN-008,Optional document on desk R04,ROOM-04,71.39999999999999,20.75,0.8,0,DOC-R04-01,room_furnishing_schedule.csv:F04_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-008-R05,IN-008,Optional document on desk R05,ROOM-05,71.39999999999999,29.75,0.8,0,DOC-R05-01,room_furnishing_schedule.csv:F05_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-008-R06,IN-008,Optional document on desk R06,ROOM-06,71.39999999999999,38.75,0.8,0,DOC-R06-01,room_furnishing_schedule.csv:F06_DESK,PROPOSED TARGET,Optional readable document; does not gate progression.
+IA-009,IN-009,Personal battery pickup,ROOM-02,17.2,30.2,0.8,35,F02_BATTERY,room_furnishing_schedule.csv:F02_BATTERY,SCHEDULE LINK,Per-player charge and per-player spawn claim.
 IA-010,IN-010,Electrical panel cover,ELECTRICAL,64,58.95,1.15,270,PROP_FUSE_PANEL_COVER,ELECTRICAL bounds; north wall placement target,PROPOSED TARGET,Reusable screwdriver; cover open state.
 IA-011-A,IN-011,Fuse socket A,ELECTRICAL,65,58.95,1.2,270,PROP_FUSE_SOCKET_A,ELECTRICAL panel target,PROPOSED TARGET,Atomic slot assignment; matching fuse only.
 IA-011-B,IN-011,Fuse socket B,ELECTRICAL,65.85,58.95,1.2,270,PROP_FUSE_SOCKET_B,ELECTRICAL panel target,PROPOSED TARGET,Atomic slot assignment; matching fuse only.
 IA-011-C,IN-011,Fuse socket C,ELECTRICAL,66.7,58.95,1.2,270,PROP_FUSE_SOCKET_C,ELECTRICAL panel target,PROPOSED TARGET,Atomic slot assignment; matching fuse only.
 IA-012,IN-012,Main breaker,ELECTRICAL,68.4,58.95,1.2,270,PROP_MAIN_BREAKER,ELECTRICAL panel target,PROPOSED TARGET,Disabled until A/B/C slots committed.
-IA-013,IN-013,Night manager diary,ROOM 09,16,43.2,4.35,0,F09_DIARY,room_furnishing_schedule.csv:F09_DIARY,SCHEDULE LINK,Readable diary; journal flag DiaryFound.
-IA-014,IN-014,Child drawing,ROOM 11,71.2,35.82,5.05,180,PROP_CHILD_DRAWING,ROOM 11 north wall bounds,PROPOSED TARGET,Readable caption; journal flag ChildRoomClueFound.
-IA-015,IN-015,ROOM 12 secret panel,ROOM 12,68.6,47.25,4.65,0,F12_SECRET_PANEL,room_furnishing_schedule.csv:F12_SECRET_PANEL,SCHEDULE LINK,Do not block VEST-13 route.
-IA-016,IN-016,ROOM 13 chronology board,ROOM 13,52.5,59.55,5,180,F13_PHOTO_1..4,room_furnishing_schedule.csv:F13_PHOTO_1..4,SCHEDULE LINK,Four photo slots; chronology 1968/1974/1981/1986.
-IA-017,IN-017,Service Key drawer,ROOM 13,58.9,52.75,4.1,0,PROP_SERVICE_KEY_PICKUP,F13_DESK at room_furnishing_schedule.csv,PROPOSED TARGET,Only after Room13RevealComplete; key reusable.
+IA-013,IN-013,Night manager diary,ROOM-09,16,43.2,4.35,0,F09_DIARY,room_furnishing_schedule.csv:F09_DIARY,SCHEDULE LINK,Readable diary; journal flag DiaryFound.
+IA-014,IN-014,Child drawing,ROOM-11,71.2,35.82,5.05,180,PROP_CHILD_DRAWING,ROOM 11 north wall bounds,PROPOSED TARGET,Readable caption; journal flag ChildRoomClueFound.
+IA-015,IN-015,ROOM 12 secret panel,ROOM-12,68.6,47.25,4.65,0,F12_SECRET_PANEL,room_furnishing_schedule.csv:F12_SECRET_PANEL,SCHEDULE LINK,Do not block VEST-13 route.
+IA-016,IN-016,ROOM 13 chronology board,ROOM-13,52.5,59.55,5,180,F13_PHOTO_1..4,room_furnishing_schedule.csv:F13_PHOTO_1..4,SCHEDULE LINK,Four photo slots; chronology 1968/1974/1981/1986.
+IA-017,IN-017,Service Key drawer,ROOM-13,58.9,52.75,4.1,0,PROP_SERVICE_KEY_PICKUP,F13_DESK at room_furnishing_schedule.csv,PROPOSED TARGET,Only after Room13RevealComplete; key reusable.
 IA-018,IN-018,Service gate console,GF-SERVICE-BAY,49.7,58.95,1.1,270,SVC-GATE-CONSOLE,SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md,SCHEDULE LINK,Requires PowerRestored and ServiceKey; commits gate once.
-IA-019,IN-019,Vehicle ignition,SouthParking,37,8,0.9,90,VEHICLE_IGNITION,EXT_BROKEN_CAR in exterior_prop_schedule.csv,PROPOSED TARGET,Requires FinaleReady and CarKeys; commits VehicleIgnitionSucceeded.
+IA-019,IN-019,Vehicle ignition,SITE,37,8,0.9,90,VEHICLE_IGNITION,EXT_BROKEN_CAR in exterior_prop_schedule.csv,PROPOSED TARGET,Requires FinaleReady and CarKeys; commits VehicleIgnitionSucceeded.
 IA-020,IN-020,Ending selector,GF-SERVICE-BAY,PER_PLAYER_UI,PER_PLAYER_UI,PER_PLAYER_UI,N/A,ENDING_RESOLVER_WIDGET,EXEC_UI_UX_SPEC_R1.md,LOGICAL UI ANCHOR,Show only eligible endings; selector can close/reopen after optional vehicle prep.
-IA-021-R01,IN-021,Wardrobe hide spot ROOM 01,ROOM 01,11.7,26.099999999999998,0,90,F01_WARDROBE,room_furnishing_schedule.csv:F01_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R02,IN-021,Wardrobe hide spot ROOM 02,ROOM 02,11.7,35.1,0,90,F02_WARDROBE,room_furnishing_schedule.csv:F02_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R03,IN-021,Wardrobe hide spot ROOM 03,ROOM 03,11.7,44.1,0,90,F03_WARDROBE,room_furnishing_schedule.csv:F03_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R04,IN-021,Wardrobe hide spot ROOM 04,ROOM 04,66,26.099999999999998,0,90,F04_WARDROBE,room_furnishing_schedule.csv:F04_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R05,IN-021,Wardrobe hide spot ROOM 05,ROOM 05,66,35.1,0,90,F05_WARDROBE,room_furnishing_schedule.csv:F05_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R06,IN-021,Wardrobe hide spot ROOM 06,ROOM 06,66,44.1,0,90,F06_WARDROBE,room_furnishing_schedule.csv:F06_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R07,IN-021,Wardrobe hide spot ROOM 07,ROOM 07,10.399999999999999,26.099999999999998,3.6,90,F07_WARDROBE,room_furnishing_schedule.csv:F07_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R08,IN-021,Wardrobe hide spot ROOM 08,ROOM 08,10.399999999999999,35.1,3.6,90,F08_WARDROBE,room_furnishing_schedule.csv:F08_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R09,IN-021,Wardrobe hide spot ROOM 09,ROOM 09,10.399999999999999,45.400000000000006,3.6,90,F09_WARDROBE,room_furnishing_schedule.csv:F09_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R10,IN-021,Wardrobe hide spot ROOM 10,ROOM 10,67.3,26.099999999999998,3.6,90,F10_WARDROBE,room_furnishing_schedule.csv:F10_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R11,IN-021,Wardrobe hide spot ROOM 11,ROOM 11,67.3,35.1,3.6,90,F11_WARDROBE,room_furnishing_schedule.csv:F11_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R12,IN-021,Wardrobe hide spot ROOM 12,ROOM 12,67.3,45.400000000000006,3.6,90,F12_WARDROBE,room_furnishing_schedule.csv:F12_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
-IA-021-R13,IN-021,Wardrobe hide spot ROOM 13,ROOM 13,53.5,58.1,3.6,90,F13_WARDROBE,room_furnishing_schedule.csv:F13_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R01,IN-021,Wardrobe hide spot ROOM 01,ROOM-01,11.7,26.099999999999998,0,90,F01_WARDROBE,room_furnishing_schedule.csv:F01_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R02,IN-021,Wardrobe hide spot ROOM 02,ROOM-02,11.7,35.1,0,90,F02_WARDROBE,room_furnishing_schedule.csv:F02_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R03,IN-021,Wardrobe hide spot ROOM 03,ROOM-03,11.7,44.1,0,90,F03_WARDROBE,room_furnishing_schedule.csv:F03_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R04,IN-021,Wardrobe hide spot ROOM 04,ROOM-04,66,26.099999999999998,0,90,F04_WARDROBE,room_furnishing_schedule.csv:F04_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R05,IN-021,Wardrobe hide spot ROOM 05,ROOM-05,66,35.1,0,90,F05_WARDROBE,room_furnishing_schedule.csv:F05_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R06,IN-021,Wardrobe hide spot ROOM 06,ROOM-06,66,44.1,0,90,F06_WARDROBE,room_furnishing_schedule.csv:F06_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R07,IN-021,Wardrobe hide spot ROOM 07,ROOM-07,10.399999999999999,26.099999999999998,3.6,90,F07_WARDROBE,room_furnishing_schedule.csv:F07_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R08,IN-021,Wardrobe hide spot ROOM 08,ROOM-08,10.399999999999999,35.1,3.6,90,F08_WARDROBE,room_furnishing_schedule.csv:F08_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R09,IN-021,Wardrobe hide spot ROOM 09,ROOM-09,10.399999999999999,45.400000000000006,3.6,90,F09_WARDROBE,room_furnishing_schedule.csv:F09_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R10,IN-021,Wardrobe hide spot ROOM 10,ROOM-10,67.3,26.099999999999998,3.6,90,F10_WARDROBE,room_furnishing_schedule.csv:F10_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R11,IN-021,Wardrobe hide spot ROOM 11,ROOM-11,67.3,35.1,3.6,90,F11_WARDROBE,room_furnishing_schedule.csv:F11_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R12,IN-021,Wardrobe hide spot ROOM 12,ROOM-12,67.3,45.400000000000006,3.6,90,F12_WARDROBE,room_furnishing_schedule.csv:F12_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
+IA-021-R13,IN-021,Wardrobe hide spot ROOM 13,ROOM-13,53.5,58.1,3.6,90,F13_WARDROBE,room_furnishing_schedule.csv:F13_WARDROBE,SCHEDULE LINK,Use wardrobe front/approach anchor; test entry/exit and NPC collision.
 IA-022-DYNAMIC,IN-022,Rescue target,DYNAMIC_PLAYER_LOCATION,CAPTURED_PLAYER_X,CAPTURED_PLAYER_Y,CAPTURED_PLAYER_Z,FACE_RESCUER,CAPTURED_PLAYER_STATE,PlayerStateManager runtime transform,LOGICAL DYNAMIC ANCHOR,Rescuer interaction radius 2m; 5s uninterrupted hold.
 IA-023-CP01,IN-023,Checkpoint CP01,RECEPTION,29,56,0,0,CP01_TRIGGER,Reception room bounds,PROPOSED TARGET,Commit after OfficeKey/OBJ-02 checkpoint predicate.
 IA-023-CP02,IN-023,Checkpoint CP02,ELECTRICAL,64.5,53.5,0,0,CP02_TRIGGER,Electrical room bounds,PROPOSED TARGET,Commit after PowerRestored.
 IA-023-CP03,IN-023,Checkpoint CP03,U-STAIR-LANDING,24.4,55.4,3.6,0,CP03_TRIGGER,ROOM_COORDINATE_REGISTER.csv:U-STAIR-LANDING,PROPOSED TARGET,Commit after upper-floor access.
-IA-023-CP04,IN-023,Checkpoint CP04,ROOM 13,56,55.5,3.6,0,CP04_TRIGGER,ROOM_COORDINATE_REGISTER.csv:ROOM-13,PROPOSED TARGET,Commit after Room13RevealComplete and ServiceKey.
-IA-024,IN-024,Fuse A pickup,ROOM 02,16.8,34.2,00.25,25,F02_SUITCASE_FUSE_A,room_furnishing_schedule.csv:F02_SUITCASE,PROPOSED TARGET,Fuse A inside suitcase; one team grant.
+IA-023-CP04,IN-023,Checkpoint CP04,ROOM-13,56,55.5,3.6,0,CP04_TRIGGER,ROOM_COORDINATE_REGISTER.csv:ROOM-13,PROPOSED TARGET,Commit after Room13RevealComplete and ServiceKey.
+IA-024,IN-024,Fuse A pickup,ROOM-02,16.8,34.2,00.25,25,F02_SUITCASE_FUSE_A,room_furnishing_schedule.csv:F02_SUITCASE,PROPOSED TARGET,Fuse A inside suitcase; one team grant.
 IA-025,IN-025,Fuse B pickup,STORAGE,52,51.2,0.95,0,PROP_STORAGE_SHELF_FUSE_B,STORAGE bounds; shelf target,PROPOSED TARGET,Beside wet-floor sign; unique fuse actor.
-IA-026,IN-026,Fuse C pickup,ROOM 06,68,44.6,0.95,0,PROP_ROOM06_MAINTENANCE_CABINET,ROOM 06 north wall target,PROPOSED TARGET,Separate actor from missing-guest archive.
+IA-026,IN-026,Fuse C pickup,ROOM-06,68,44.6,0.95,0,PROP_ROOM06_MAINTENANCE_CABINET,ROOM 06 north wall target,PROPOSED TARGET,Separate actor from missing-guest archive.
 IA-027,IN-027,Screwdriver pickup,ELECTRICAL,60.2,55.2,1.05,0,PROP_TOOL_BOARD_SCREWDRIVER,ELECTRICAL bounds; tool board target,PROPOSED TARGET,Reusable team tool.
-IA-028,IN-028,Car Keys pickup,SouthParking,37,8,0.8,90,EXT_CAR_KEYS,exterior_prop_schedule.csv:EXT_CAR_KEYS,SCHEDULE LINK,Optional after FinaleReady; pickup does not select ESCAPE.
-IA-029,IN-029,Missing guest archive,ROOM 06,64.45,41.5,1.65,90,F06_PHOTO_WALL,room_furnishing_schedule.csv:F06_PHOTO_WALL,SCHEDULE LINK,Truth evidence only; separate from Fuse C actor.
-IA-030,IN-030,CRT feed,ROOM 01,15.799999999999999,21.25,0.65,0,F01_CRT,room_furnishing_schedule.csv:F01_CRT,SCHEDULE LINK,Optional supporting discovery; not a gate.
-IA-031,IN-031,Room 04 recording,ROOM 04,71.39999999999999,20.75,0.76,0,F04_PHONE,room_furnishing_schedule.csv:F04_PHONE,SCHEDULE LINK,Audio and transcript; transcript sufficient.
+IA-028,IN-028,Car Keys pickup,SITE,37,8,0.8,90,EXT_CAR_KEYS,exterior_prop_schedule.csv:EXT_CAR_KEYS,SCHEDULE LINK,Optional after FinaleReady; pickup does not select ESCAPE.
+IA-029,IN-029,Missing guest archive,ROOM-06,64.45,41.5,1.65,90,F06_PHOTO_WALL,room_furnishing_schedule.csv:F06_PHOTO_WALL,SCHEDULE LINK,Truth evidence only; separate from Fuse C actor.
+IA-030,IN-030,CRT feed,ROOM-01,15.799999999999999,21.25,0.65,0,F01_CRT,room_furnishing_schedule.csv:F01_CRT,SCHEDULE LINK,Optional supporting discovery; not a gate.
+IA-031,IN-031,Room 04 recording,ROOM-04,71.39999999999999,20.75,0.76,0,F04_PHONE,room_furnishing_schedule.csv:F04_PHONE,SCHEDULE LINK,Audio and transcript; transcript sufficient.
 IA-032,IN-032,Night Audit breaker,GF-SERVICE-BAY,54.6,58.95,1.1,270,SVC-NIGHT-AUDIT,SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md,SCHEDULE LINK,Only after EndingSelected=THE_TRUTH; hold 2s.
-SPN-01,NONE,Player start 01,SouthParking,28,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; maintain 1.5m clear from car and neon trigger.
-SPN-02,NONE,Player start 02,SouthParking,32,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
-SPN-03,NONE,Player start 03,SouthParking,42,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; 3m south of neon sign anchor.
-SPN-04,NONE,Player start 04,SouthParking,46,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
+SPN-01,NONE,Player start 01,SITE,28,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; maintain 1.5m clear from car and neon trigger.
+SPN-02,NONE,Player start 02,SITE,32,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
+SPN-03,NONE,Player start 03,SITE,42,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; 3m south of neon sign anchor.
+SPN-04,NONE,Player start 04,SITE,46,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
