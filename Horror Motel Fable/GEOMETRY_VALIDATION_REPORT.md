@@ -1,7 +1,7 @@
 # GEOMETRY VALIDATION REPORT — CANONICAL PROPOSAL R2.2
 Audit date: 2026-11-16
 Scope: document and coordinate reconciliation only.
-Status: **SUBSTANTIALLY CONSISTENT PROPOSAL — FINAL REVIEW FOUND BLOCKING UNASSIGNED AREAS AND REGISTER ERRORS — NOT OWNER-APPROVED — NOT UEFN-VERIFIED**.
+Status: **OWNER-APPROVED LD-GEO R2.3 — DOCUMENTARY GEOMETRY RECONCILED — NOT UEFN-VERIFIED**
 
 ## 1. Files examined
 - LEVEL_DESIGN_GEOMETRY.md
@@ -112,8 +112,20 @@ The side-room partition ends now meet the adjacent corridor/outer wall centre-li
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
 ## 9. Acceptance
-R2.2 remains a candidate **proposal**, not an approved construction package. The final review confirms the room bounds, opening/host-wall geometry, principal slab polygon and secret route mathematically, but finds two unregistered ground-floor sealed pockets, unassigned upper-floor side pockets, an inaccessible U-SERVICE marked walkable, turn-pad clipping beyond the courtyard void, and one remaining coordinate-register dimension mismatch; the COURTYARD schema issue has been corrected. These issues block geometry freeze. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run.
+LD-GEO R2.3 is owner-approved design geometry, not an engine-verified or construction-certified package. The owner-approved R2.3 revision registers both ground-floor sealed reserves and all upper side-pocket components, closes the west upper reserve with a scheduled wall, marks U-SERVICE no-access/no-navmesh, clips both turning pads to the UF slab polygon, clarifies the 2.00 m gross / 1.70 m net cross-bays, and corrects VEST-13 to 1.65 m. These documentary geometry blockers are resolved. Remaining verification is editor-dependent: navmesh/collision, stair traversal, headroom around beams/MEP, Guest traversal, and physical opening behaviour. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run.
 
 ## 10. Approval-gate pointer and scope clarification
 
-The existing OWNER_DECISION_GATE_R2.2.md remains the owner response record for GEO-A01–GEO-A21 and END-A01/END-A02. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval remains NOT RECEIVED. This document and its dimensional checks do not authorize construction or imply editor verification.
+The existing OWNER_DECISION_GATE_R2.2.md remains the owner response record for GEO-A01–GEO-A21 and END-A01/END-A02. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval for GEO-A01–GEO-A21 was received on 2026-11-16 and is recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. Ending decisions END-A01/END-A02 remain outside this geometry approval. This document and its dimensional checks do not authorize construction or imply editor verification.
+
+
+## 11. R2.3 post-approval validation
+
+- ROOM_COORDINATE_REGISTER.csv: VEST-13 length is 1.65 m; five sealed-reserve components are explicitly registered (two GF, one UF west, two UF east).
+- coordinate_schedule.csv mirrors the five reserve components and the U-SERVICE no-navmesh state.
+- wall_schedule.csv contains 71 unique wall IDs; UF-W-SEALED-RESERVE-WEST closes the west upper pocket between existing wall runs.
+- DOOR_WINDOW_SCHEDULE.csv remains 51 openings; no new access openings were introduced for sealed reserves. Existing openings retain their host-wall relationships.
+- U-WEST-TURN and U-EAST-TURN are clipped to X=20.00 and X=64.00 respectively; courtyard void remains excluded from UF-SLAB.
+- Stair handedness and approach zones are explicitly fixed in STAIR_PLAN_R2.md; editor traversal remains unverified.
+- Roof drainage concept is concealed 1.0% falls to perimeter drainage; outlet coordinates/hydraulic sizing remain outside this geometry package.
+- No UEFN editor or playtest was run. No ENGINE-VERIFIED status is asserted.
