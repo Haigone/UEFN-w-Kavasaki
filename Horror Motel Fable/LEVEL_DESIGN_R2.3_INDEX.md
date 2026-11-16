@@ -20,7 +20,7 @@ Approval: 2026-11-16 — owner response “approvo tutto, procedi”.
 - STAIR_PLAN_R2.md — approved stair handedness and dimensions.
 - ROOF_PLAN_R2.md — flat roof, no-access rule and concealed drainage concept.
 - GEOMETRY_VALIDATION_REPORT.md — final documentary audit and editor verification boundary.
-- OWNER_DECISION_GATE_R2.2.md — approval record for GEO-A01–GEO-A21; END-A01/A02 remain open.
+- OWNER_DECISION_GATE_R2.2.md — approval record for GEO-A01–GEO-A21 and owner-approved END-A01; END-A02 remains pending.
 
 ## Key approved geometry resolutions
 
