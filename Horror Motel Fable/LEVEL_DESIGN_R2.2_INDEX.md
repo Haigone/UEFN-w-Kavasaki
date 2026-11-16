@@ -26,5 +26,10 @@ Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED
 ## Owner decisions already fixed
 North stair location; continuous courtyard-facing upper balcony; ROOM 13 in north connector; flat roof; THE GUEST intended to use both floors.
 
+## Approval and execution documents
+- `OWNER_DECISION_GATE_R2.2.md` — exact owner decisions GEO-A01–A15 and ending decisions END-A01/END-A02.
+- `CLAUDE_R2.2_EXECUTION_PACKET.md` — current Claude task order, preconditions, tests and evidence contract.
+- `CLAUDE_EXECUTION_PROTOCOL.md` — binding division of responsibilities and evidence policy.
+
 ## Approval boundary
 R2.2 remains a proposal. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
