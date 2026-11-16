@@ -1,5 +1,7 @@
 # MISSING DELIVERABLES REGISTER
 
+> **CURRENT AUTHORITY — 2026-11-16:** For present-day counts, approved decisions, canonical filenames, current documentary closure and dependency-ordered remaining work, use [R3_CURRENT_STATUS_AND_REMAINING_WORK.md](R3_CURRENT_STATUS_AND_REMAINING_WORK.md). Older MD-001–MD-077 rows and historical audit sections are retained as history; they do not override the current R3 status. Engine/editor implementation and evidence gates remain open until reproducible evidence is committed.
+
 > **CURRENT STATUS ADDENDUM — 2026-11-16:** NCP-A01–A09 and END-A02 are now APPROVED under the owner's express delegation. Exact canonical content is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; END-A02's three required evidence flags and THE_TRUTH ending sequence are in ENDING_IMPLEMENTATION_SPEC.md; IN-032 Night Audit is in INTERACTION_MASTER_REGISTER.csv and INTERACTION_EXECUTION_SPEC.md. Historical entries below that say these decisions are pending are superseded. Documentation approval does not mean props, audio, assets, Verse or UEFN tests are implemented.
 
  — THE MOTEL: ROOM 13
