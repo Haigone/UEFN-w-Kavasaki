@@ -1,3 +1,5 @@
+> **CURRENT AUTHORITY OVERRIDE — R3 / 2026-11-16:** This file is a historical master prompt and its earlier geometry instructions, read order and phase order are superseded wherever they conflict with LD-GEO R2.3, OWNER_DECISION_GATE_R2.2.md, NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md or CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. The current exact execution sequence is CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. Read that brief first. Geometry R2.3 is owner-approved design; END-A01, END-A02 and NCP-A01–A09 are approved as recorded. Do not ask the owner to reopen those decisions. The current asset, device, event and room-fit-out sources are indexed by Horror Motel Fable/README.md. This notice does not imply UEFN implementation or test evidence.
+
 # MASTER PROMPT — CLAUDE
 ## THE MOTEL: ROOM 13 | Complete UEFN / Fortnite island
 
