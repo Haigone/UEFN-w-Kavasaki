@@ -301,3 +301,10 @@ For THE GUEST's full state machine, perception, noise stimuli, target selection,
 Ending resolver must follow END-A01 in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md: majority for ESCAPE/THE_TRUTH, unanimous explicit consent for THE_NEW_GUEST, defined tie/timeout/disconnect handling and one atomic session-wide commit. END-A02 remains pending owner approval.
 
 Before full implementation, Claude must return a target-version feasibility table for every module and capability: supported device/API, exact signature/property, replication/authority behaviour, known limitations, minimal test result and fallback. A conceptual module name or device family in this document is not proof of availability.
+
+
+### Presentation and cue registers
+- [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv) is the stable English copy baseline for objectives, interactions, feedback, endings and required subtitles. Every new player-facing string must receive a StringId before integration.
+- [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) maps authored game events to audio assets, priorities, cooldowns, concurrency groups, spatial policy and fallback.
+- [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv) maps act/gameplay events to lighting states and readability constraints.
+- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) remain the asset/emitter source registers. Cue sheets do not prove assets have been created or imported.
