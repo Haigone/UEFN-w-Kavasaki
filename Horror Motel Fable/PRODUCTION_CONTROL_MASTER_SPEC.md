@@ -217,7 +217,7 @@ R3_INTEGRATION_INTEGRITY_REPORT.md is the current static data-integrity report. 
 
 Asset governance now uses:
 - asset_manifest.csv and ASSET_MANIFEST_EXECUTIVE.csv — synchronized 99-row master inventory.
-- ASSET_PRODUCTION_BACKLOG_R1.csv — 60 production packages and dependencies.
+- ASSET_PRODUCTION_BACKLOG_R1.csv — 65 production packages and dependencies.
 - ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv — 99 rights evidence records. All remain NOT SOURCED until evidence is supplied.
 
 No asset can be treated as licensed, imported or accepted merely because it appears in the inventory. The target UEFN/editor baseline, source rights, build, compile, runtime and release evidence remain separate gates.
