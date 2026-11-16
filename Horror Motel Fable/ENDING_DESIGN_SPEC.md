@@ -18,7 +18,7 @@ Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePo
 **Canon boundary:** confrontation verb, cost, cinematic, dialogue and exact consequence are not defined in source material. These are PROPOSALS requiring approval.
 
 ## THE NEW GUEST
-**Eligibility:** FinaleReady and NewGuestAccepted from explicit invitation/team confirmation; EndingSelected is NONE. Does not require CarKeys or vehicle ignition.
+**Eligibility:** FinaleReady; EndingSelected is NONE; invitation must receive unanimous explicit affirmative confirmation. NewGuestAccepted is the resolver output set only after the quorum succeeds. Does not require CarKeys or vehicle ignition.
 **Sequence:** present invitation; if every connected eligible player explicitly accepts, commit one shared session-wide outcome; motel resets; the register gains a blank NEXT GUEST line and the ROOM 13 key returns to the rack; neon lights at 02:13; NEW GUEST title card. No individual player is selected as keeper or sacrificed.
 
 ## Deterministic resolver
