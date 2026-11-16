@@ -14,7 +14,7 @@ This catalog makes act progression, objective presentation and state commits exp
 - Each event commits once; repeat inspection may reopen readable content but cannot duplicate flags/rewards.
 - Room entry alone never completes an objective unless explicitly stated.
 - Optional investigation flags never block ESCAPE.
-- END-A02 is pending: no truth evidence flag becomes a mandatory ending gate until owner approval.
+- END-A02 is approved: exactly three discoveries gate THE_TRUTH only; they never gate core progression or ESCAPE.
 - If a required actor is missing, recovery may restore only the interaction proxy/flag whose prerequisite has already been validated.
 
 ## 2. Canonical act state
@@ -126,7 +126,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | OBJ-008 | Open panel and enter ROOM 13 | OBJ-06 active |
 | OBJ-009 | Solve photos but reveal presentation fails | Service Key/reveal progression does not falsely complete; recovery path is available |
 | OBJ-010 | Inspect optional evidence in any order | Flags persist; primary objective does not regress |
-| OBJ-011 | Missing END-A02 clue | ESCAPE remains eligible; THE_TRUTH unavailable until approved gate is satisfied |
+| OBJ-011 | One or more END-A02 clues missing | ESCAPE remains eligible; THE_TRUTH unavailable until all three approved evidence flags are true |
 | OBJ-012 | Disconnect after team pickup | Objective/inventory unchanged |
 | OBJ-013 | Restore any checkpoint twice | Identical objective/actor state; no duplicate events |
 | OBJ-014 | Two endings trigger simultaneously | Exactly one ending commits under eligibility/quorum lock |
