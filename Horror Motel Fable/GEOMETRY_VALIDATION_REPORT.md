@@ -1,38 +1,43 @@
-# GEOMETRY VALIDATION REPORT — LD-GEO R2.0
-Audit date 2026-11-16. Result: DOCUMENT AUDIT COMPLETE; GEOMETRY NOT APPROVED.
+# GEOMETRY VALIDATION REPORT — LD-GEO R2.1
+Audit date 2026-11-16. Status: DOCUMENT DESIGN UPDATED; NOT GEOMETRY APPROVED.
 
-## Conflict register
-| ID | Conflict | R2.0 resolution | Remaining proof |
+## Owner decisions applied
+North stair at reception; continuous courtyard-facing upper balcony; ROOM 13 north connector; flat roof; THE GUEST both floors.
+
+## Conflict resolutions
+| ID | Conflict | R2.1 resolution | Remaining proof |
 |---|---|---|---|
-| C01 | Ground room positions/corridor side differ | Select E1 allocation | Wall openings and circulation |
-| C02 | Reception 14.00 vs 17.40 m | Select 17.40 m | Internal partition/furniture |
-| C03 | Office/storage/electrical differ | Select E1 | Shared wall and service route |
-| C04 | Upper six rooms in north wing vs side wings | Select E1 side-wing rooms 07–12 | Slab and wall support |
-| C05 | ROOM 13 east pocket vs north connector | Select E1 north connector pocket | Section and route collision |
-| C06 | Stair X10–14/Y44–48 vs X21–27/Y51.2–59 | Select north-west connector reservation | Stair flight layout |
-| C07 | Balcony 2.50 vs 1.50 m | 2.50 m target | Edge polygon/guardrail |
-| C08 | Upper floor 3.50 vs 3.60 m | Select 3.60 m | Slab/ceiling stack |
-| C09 | Ceiling/roof elevations inconsistent | Clear-height targets only; datum stack unresolved | Section and editor |
-| C10 | ROOM 12 route has undefined 0.30 m junction | Add vestibule and explicit openings | Wall segmentation/collision |
-| C11 | 20 risers and 5.32 m run underspecified | Keep 20×0.18 m rise; withhold total run | Tread/landing calculation |
-| C12 | Room rectangles used as solid overlapping boxes | FIF convention; shared walls once | Polygon intersection check |
+| C01 | Ground room allocation differs between dossier and E1 | Retain E1/R2.0 ground room strip and north service allocation | Full wall/polygon plan |
+| C02 | Reception 14.00 vs 17.40 m | Select E1 17.40 m width | Furniture and circulation |
+| C03 | Upper 6-room north band vs side wings | Select side wings | Vertical support/partitions |
+| C04 | ROOM 13 east pocket vs north connector | North connector pocket | Secret route section |
+| C05 | Stair west connector vs north/reception | Owner confirms north; reserve X21–27,Y51.2–59 in reception | Exact stair CAD/blockout |
+| C06 | Balcony 1.50 vs 2.50 m | Continuous U balcony 2.50 m | Corner polygon/guardrail |
+| C07 | Upper side room width 8.60 vs balcony integration | Revised 5.90 m FIF width | Furniture fit |
+| C08 | Upper floor elevation variants | FFL 3.60 m | Slab/ceiling proof |
+| C09 | Flat roof/roof elevations | Ceiling 6.40; slab top 6.65; parapet 7.10 | Roof section/drainage |
+| C10 | ROOM 12 route junction undefined | Vestibule and east-to-north balcony opening | Wall cuts/collision |
+| C11 | Stair 20 risers vs 5.32 m run ambiguity | 20 risers, 18 goings total, two flights; 2.52 m run per flight | CAD layout/headroom |
+| C12 | NPC on both floors | Stair-connected nav nodes both floors | Actual NPC pathfinding |
+
+## Room and furniture fit risks
+The upper side rooms are now 5.90 m wide, not 8.60 m. Standard double bed, wardrobe, desk and bathroom package must be re-laid out. The 2.20×2.40 m bathroom allowance from the dossier must be checked against the new width and door position. Do not reuse R2.0 furniture coordinates. Ground room furniture is also not yet instance-positioned.
+
+## Geometry risks
+- Balcony corner pads and side legs must form one continuous collision/floor polygon.
+- Rail segments must terminate at room doors and stair opening without gaps or blocked egress.
+- The stair envelope is a reservation, not an exact mesh; confirm landing, run, headroom and guardrail.
+- North stair lies inside reception; preserve reception queue, counter access and entrance.
+- ROOM 12 vestibule and D-13C opening must join the east balcony to north crossbar.
+- Room windows must face exterior, room doors must face balcony.
+- Flat roof needs drainage but no player access.
+- THE GUEST height 2.60 m does not define capsule; both-floor navigation must be tested.
 
 ## Arithmetic
-Site area 6,048 m². Courtyard nominal area 1,320 m². Reception nominal area 198.36 m². Office 102.60 m². Storage 52.38 m². Electrical 209.76 m². ROOM 13 126.42 m². These are nominal rectangular areas before partitions/returns. 20×0.18 m = 3.60 m rise. Twenty risers do not imply twenty treads.
+Site 84×72=6,048 m². Courtyard nominal 44×30=1,320 m². Upper balcony side legs each 2.50×30.00=75 m²; north crossbar 44.60×2.50=111.50 m² before corner union adjustments. 20×0.18=3.60 m rise. 9×0.28=2.52 m run per flight.
 
-## Risks
-- U-footprint corners require polygon union and no duplicate collision.
-- Room bounds do not yet define every partition, wall return or bathroom.
-- Storage door/partition arrangement and office/service connectivity require a wall plan.
-- ROOM 12 panel needs clear vestibule depth and a fully dimensioned opening junction.
-- ROOM 13 entry approach and two-player photo inspection must preserve egress.
-- Stair reservation overlaps upper connector program conceptually; exact stair and ground-floor use below need coordination.
-- Balcony edge and guardrail are not yet defined as continuous geometry.
-- Windows must not overlap concealed panel or create unintended exits.
-- Electrical room below ROOM 13 requires continuous slab and separate collision volumes.
-
-## Test matrix
-Solo mandatory progression — EDITOR-TEST REQUIRED. Two-player passing/inspection — EDITOR-TEST REQUIRED. Four-player reception and ROOM 13 flow — EDITOR-TEST REQUIRED. First-person door/camera/capsule — EDITOR-TEST REQUIRED. Stair ascent/headroom — EDITOR-TEST REQUIRED. Balcony rail — EDITOR-TEST REQUIRED. THE GUEST patrol/LOS/chase/recovery — EDITOR-TEST REQUIRED. Disconnect/rejoin and pickup persistence — EDITOR-TEST REQUIRED. Collision seams and floor thresholds — EDITOR-TEST REQUIRED.
+## Required validation matrix
+1P full completion; 2P simultaneous photo inspection; 3P capture/rescue; 4P queue, stair, balcony and ROOM 13. Player and NPC stair ascent/descent. NPC no wall vision/clipping. Door/camera/capsule. Balcony guardrail and fall prevention. ROOM 12 enter, traverse, inspect ROOM 13, return. Disconnect/rejoin and pickup persistence. All EDITOR-TEST REQUIRED.
 
 ## Approval
-NOT APPROVED for final environmental asset production. Greybox only as a validation method after polygons, wall centre-lines, stair and secret route are dimensioned. No ENGINE-VERIFIED items exist in this audit.
+NOT APPROVED for final environmental asset production. R2.1 is PROPOSED TARGET only. No ENGINE-VERIFIED items are asserted.
