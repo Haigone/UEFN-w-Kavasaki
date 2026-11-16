@@ -4,7 +4,7 @@ Revision: 1.0 — 2026-11-16
 Status: **GEOMETRY APPROVED BY PROJECT OWNER ON 2026-11-16 — UEFN VERIFICATION PENDING**
 
 ## Purpose
-This document turns the open R2.2 geometry and ending decisions into one explicit approval gate. It does not silently select creative or structural alternatives. Claude must not build final geometry from R2.2 until the owner approves this package or supplies a revised choice.
+This document records the owner's approval of geometry decisions GEO-A01–GEO-A21 and separately tracks ending decisions END-A01/END-A02, which remain unapproved. Claude may implement the approved geometry baseline LD-GEO R2.3, subject to editor verification.
 
 ## Decision method
 The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner replied **APPROVO TUTTO, PROCEDI** on 2026-11-16, approving the R2.2 geometry proposal and recommendations for GEO-A01–GEO-A21. The approved and synchronized geometry baseline is LD-GEO R2.3. The VEST-13 correction and approved reserve/pad/stair/roof clarifications have been applied. This approval does not include END-A01/END-A02 and does not constitute UEFN verification.
@@ -44,7 +44,7 @@ These fixed intent points do not approve the proposed detailed dimensions.
 
 ## A2. Additional geometry decisions from final R2.2 review
 
-Detailed dimensions, diagrams and recommendations: LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md.
+Detailed dimensions, diagrams and approved outcomes: LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md and LD_GEO_R2.3_APPROVAL_RECORD.md.
 
 | ID | Decision required | Observed R2.2 condition / proposal | Alternatives and consequence |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Detailed dimensions, diagrams and recommendations: LD_GEO_R2.2_FINAL_OWNER_APPRO
 ## A3. Objective register corrections — no design choice required
 
 - ROOM_COORDINATE_REGISTER.csv / COURTYARD: RESOLVED in main. The Material_Asset_ID placeholder NA is present; the row has 16 fields and Verification_Status remains FIXED REQUIREMENT.
-- ROOM_COORDINATE_REGISTER.csv / VEST-13: change Length_m from 1.50 to the derived 1.65 m from Y=47.55–49.20. The other R2.2 documents already specify 1.65 m. This is the only remaining objective register correction.
+- ROOM_COORDINATE_REGISTER.csv / VEST-13: RESOLVED in R2.3. Length_m=1.65 from Y=47.55–49.20.
 - GEOMETRY_VALIDATION_REPORT.md: correct the previous claim that every ROOM_COORDINATE_REGISTER row matches the 16-column header and include the final-review findings.
 
 
