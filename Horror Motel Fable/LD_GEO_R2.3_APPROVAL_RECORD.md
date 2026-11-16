@@ -18,7 +18,7 @@ LD-GEO R2.3 is the single canonical geometry baseline. It consolidates the R2.2 
 2. Rooms 01–06 ground floor, 07–12 upper floor, ROOM 13 upper north connector; room bounds as R2.2.
 3. Ground-floor room orientation toward courtyard, external corridors; cross-bays 2.00 m gross / 1.70 m net with 1.50 m openings.
 4. Upper rooms 8.70 m nominal width; continuous U-shaped courtyard-facing balcony.
-5. North stair: two parallel 1.20 m flights, 0.30 m central separator, 20 risers at 0.18 m, nine 0.28 m goings per flight, 2.70×1.20 m intermediate landing at Z1.80. West/lower flight rises south-to-north; east/upper flight returns north-to-south. Lower south approach 1.35 m nominal; upper south approach 1.20 m.
+5. North stair: two parallel 1.20 m flights, 0.30 m central separator, 20 risers at 0.18 m, nine 0.28 m goings per flight, 2.70×1.20 m intermediate landing at Z1.80. West/lower flight X22.65–23.85,Y52.45–54.97 rises south-to-north; east/upper flight X24.15–25.35,Y52.45–54.97 returns north-to-south; 0.30 m separator X23.85–24.15; landing X22.65–25.35,Y54.97–56.17. Lower south approach 1.35 m nominal; upper south approach 1.20 m.
 6. Wall thicknesses 0.30 m exterior/courtyard-facing and 0.15 m standard partitions; selected connector partitions 0.30 m.
 7. Vertical stack: GF slab −0.20/0.00; GF clear ceiling 3.00; UF slab 3.35/3.60; UF clear ceiling 6.40; roof slab 6.40/6.65; parapet top 7.10 m.
 8. ROOM 12 → ROOM 13 secret route: D-13A, VEST-13 5.90×1.65 m, D-13C, east balcony leg, north balcony crossbar, D-13B. All three doors clear 0.90×2.10 m.
