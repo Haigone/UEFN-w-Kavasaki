@@ -143,29 +143,19 @@ If custom animation integration is unavailable, use only a verified compatible r
 - Rain VFX and puddle response if within budget.
 
 ## 10. Audio register
-- SFX_Rain_Exterior_Loop
-- SFX_Wind_Roadside_Loop
-- SFX_Neon_Hum_Loop
-- SFX_Fluorescent_Buzz_Loop
-- SFX_CRT_Static_Loop
-- SFX_Phone_Ring
-- SFX_Desk_Bell
-- SFX_Footsteps_Player_Walk
-- SFX_Footsteps_Player_Run
-- SFX_Guest_Footsteps
-- SFX_Guest_Breath
-- SFX_Guest_Cloth
-- SFX_Fuse_Insert
-- SFX_Breaker_Activate
-- SFX_Door_Lock
-- SFX_Door_Creak
-- SFX_Capture_Stinger
-- SFX_Chase_Stinger
-- SFX_Room13_Ambience
-- SFX_Final_Radio
-- VO_Reception_Welcome
 
-All voice and written content in game must be English. Provide subtitle text and trigger conditions for all narrative VO.
+The current authoritative audio source and cue registers are AUDIO_REGISTER.csv and AUDIO_CUE_SHEET.csv. Their stable Audio_IDs are:
+
+- SFX_RAIN, SFX_WIND_ROADSIDE, SFX_NEON, SFX_FLUORESCENT.
+- SFX_PHONE, SFX_PHONE_VO, SFX_DESK_BELL.
+- SFX_CRT, SFX_ROOM13_DRONE, SFX_CEILING_FOOTSTEPS.
+- SFX_PLAYER_WALK, SFX_PLAYER_RUN.
+- SFX_GUEST_FOOTSTEPS, SFX_GUEST_BREATH, SFX_GUEST_CLOTH.
+- SFX_FUSE_INSERT, SFX_BREAKER_ACTIVATE, SFX_DOOR_LOCK, SFX_DOOR_CREAK.
+- SFX_CAPTURE_STINGER, SFX_CHASE_STINGER, SFX_GATE_MOTOR.
+- VO_ESCAPE_RADIO, VO_TRUTH_RECORDER.
+
+All voice and written content in game must be English. Every narrative VO requires a stable String_ID, subtitle and trigger condition. Mandatory information also requires readable text/journal fallback. No listed audio asset is claimed to be created, licensed or imported; see ASSET_PRODUCTION_PIPELINE_SPEC.md for source and acceptance requirements.
 
 ## 11. Asset metadata required
 Every asset entry must include:
