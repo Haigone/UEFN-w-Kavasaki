@@ -13,7 +13,7 @@ The owner selected the north connector/reception for the main stair. Reservation
 - Plan envelope: 2.70×3.72 m (2.52 m flight run + 1.20 m landing depth).
 - Ground FFL Z0.00; upper FFL Z3.60.
 - Handrails both sides, 1.00 m target height.
-- Headroom ≥2.20 m above every nosing and landing.
+- Headroom ≥2.20 m above every nosing and landing. Upper slab cut: X22.50–25.50,Y51.85–55.87 (3.00×4.02 m), through Z3.35–3.60. Guardrail along west, east and north edges; south edge remains open to the upper landing approach.
 - Top/bottom approach target ≥1.20 m, no overlap with reception entry, queue or counter.
 
 ## Arithmetic correction
