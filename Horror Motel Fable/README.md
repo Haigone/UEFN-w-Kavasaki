@@ -51,3 +51,11 @@ Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coor
 
 Repository: [Haigone/UEFN-w-Kavasaki](https://github.com/Haigone/UEFN-w-Kavasaki)
 Branch: `main`
+
+
+## Disegni e logica di implementazione aggiunti
+- [floorplan_ground.svg](floorplan_ground.svg) — disegno vettoriale del piano terra.
+- [floorplan_upper.svg](floorplan_upper.svg) — disegno vettoriale del piano superiore.
+- [sections_AA_CC_DD.svg](sections_AA_CC_DD.svg) — sezioni verticali schematiche.
+- [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — contratti logici per stati, eventi, enigmi, cattura, checkpoint e finali; pseudocodice non compilato.
+- [asset_manifest.csv](asset_manifest.csv) — manifest con nome canonico richiesto.
