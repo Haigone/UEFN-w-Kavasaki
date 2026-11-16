@@ -230,13 +230,13 @@ if len(crosswalk_row_ids) != len(set(crosswalk_row_ids)):
     fail("EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: duplicate interaction mapping rows")
 if set(crosswalk_row_ids) != interaction_ids:
     fail(f"crosswalk mapping mismatch: missing={sorted(interaction_ids-set(crosswalk_row_ids))}, extra={sorted(set(crosswalk_row_ids)-interaction_ids)}")
-event_id_list = re.findall(r"EVT-\d{3}", event_catalog)
-event_ids = set(event_id_list)
+event_definition_ids = re.findall(r"^\|\s*(EVT-\d{3})\s*\|", event_catalog, flags=re.MULTILINE)
+event_ids = set(event_definition_ids)
 expected_event_ids = {f"EVT-{n:03d}" for n in range(1, 52)}
 if event_ids != expected_event_ids:
     fail(f"event catalog ID coverage mismatch: missing={sorted(expected_event_ids-event_ids)}, extra={sorted(event_ids-expected_event_ids)}")
-if len(event_id_list) != len(event_ids):
-    fail("event catalog contains duplicate EVT identifiers")
+if len(event_definition_ids) != len(event_ids):
+    fail("event catalog contains duplicate EVT definition rows")
 
 # Check all CSV rows have the same number of columns through DictReader extras.
 # The markdown event crosswalk and official engine behavior require semantic/editor proof.
