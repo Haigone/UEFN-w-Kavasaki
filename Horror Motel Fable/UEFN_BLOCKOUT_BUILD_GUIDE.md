@@ -19,7 +19,7 @@ Use LEVEL_DESIGN_GEOMETRY.md R2.2 as the candidate geometry authority. Read ROOM
 11. Build north U-turn stair at X22.65–25.35,Y52.45–56.17: 20 risers, two flights of 10, nine goings per flight at0.28 m, riser0.18 m, intermediate landing Z1.80, 1.20 m clear flight width. Upper slab cut and three-edge guardrail are mandatory; south approach remains open and ≥1.20 m.
 12. Build ROOM 12→ROOM 13 route exactly: D-13A (69.95,47.475), vestibule X67–72.90,Y47.55–49.20, D-13C (66.925,48.45), east corner pad/balcony leg, north balcony, D-13B (56.35,50.95). Verify bidirectional passage.
 13. Build ROOM 13 in north connector upper floor at X49–63.70,Y51.10–59.70.
-14. Build flat roof over the U polygon only: underside Z6.40, top Z6.65, parapet top Z7.10. Courtyard remains open; roof is non-playable.
+14. Build flat roof over the U polygon only: underside Z6.40, top Z6.65, parapet top Z7.10. Courtyard remains open; roof is non-playable. Join the courtyard-side parapet centre-lines continuously at both north U-corners per wall_schedule.csv.
 15. Add placeholder furniture only after owner-approved room bounds. Preserve door swings, 0.90 m routes and 1.20×1.20 m interaction pads.
 16. Add THE GUEST placeholder at 2.60 m visual height; provisional navigation markers on both floors. Stair and all nav routes remain EDITOR-TEST REQUIRED.
 17. Run player/NPC tests in UEFN and attach evidence. This guide does not claim any tests were run by the author.
