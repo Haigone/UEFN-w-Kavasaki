@@ -83,7 +83,7 @@ Until this is approved, Claude may implement only the solo ending selection and 
 
 Owner response: APPROVED — “APPROVO TUTTO, PROCEDI” — 2026-11-16  
 Approved geometry revision: LD-GEO R2.3  
-Approved co-op quorum: NONE — outside geometry scope  
+Approved co-op quorum: MAJORITY for ESCAPE/THE TRUTH; UNANIMOUS explicit confirmation for THE NEW GUEST; timeout/tie defaults to ESCAPE only when eligible; disconnect removes voter and recalculates/reconfirms  
 Approved truth evidence gate: NONE — outside geometry scope  
 Approval date: 2026-11-16
 
@@ -109,4 +109,4 @@ All GEO-A01–GEO-A21 approved as proposed, with these explicit final dispositio
 - GEO-A20: 2.00 m gross / 1.70 m net cross-bays.
 - GEO-A21: visually flat, non-accessible roof; concealed 1.0% falls to coordinated perimeter drainage; outlets remain technical coordination.
 
-END-A01 and END-A02 remain unapproved and must not be treated as decided by this geometry-only approval.
+END-A01 is separately approved by owner on 2026-11-16 as recorded in Section B. END-A02 remains unapproved.
