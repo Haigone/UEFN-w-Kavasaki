@@ -3,7 +3,9 @@
 Exactly three endings. Names and core outcomes are canon; flag names below are logical identifiers, not verified Verse code.
 
 ## Shared flags
-FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteReady, TruthChainComplete, Room13RevealComplete, NewGuestAccepted, EndingSelected. Team/session authoritative except individual inputs used for a vote. Commit ending atomically and once.
+FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteReady, GatePowered, PowerRestored, TruthChainComplete, Room13RevealComplete, NewGuestAccepted, EndingSelected. Team/session authoritative except individual inputs used for a vote. Commit ending atomically and once.
+
+Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete. CoreEscapeReady = FinaleReady AND CarKeysObtained AND successful vehicle ignition (IN-019). CarKeys/ignition are required only for ESCAPE.
 
 ## ESCAPE
 **Eligibility:** CoreEscapeReady; CarKeysObtained; GatePowered; EndingSelected is NONE; team chooses vehicle escape. CarKeys and vehicle ignition are specific to ESCAPE.
@@ -17,18 +19,19 @@ FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteR
 
 ## THE NEW GUEST
 **Eligibility:** FinaleReady and NewGuestAccepted from explicit invitation/team confirmation; EndingSelected is NONE. Does not require CarKeys or vehicle ignition.
-**Sequence:** present invitation; confirm shared outcome in co-op; motel resets; one or more players become part of next story; neon lights at 02:13; NEW GUEST title card.
-**Canon boundary:** whether one player or the group becomes the next guest/keeper is unresolved. Random selection without consent is prohibited. Team-wide result is the safe baseline.
+**Sequence:** present invitation; if every connected eligible player explicitly accepts, commit one shared session-wide outcome; motel resets; the register gains a blank NEXT GUEST line and the ROOM 13 key returns to the rack; neon lights at 02:13; NEW GUEST title card. No individual player is selected as keeper or sacrificed.
 
 ## Deterministic resolver
-Recommended order is a PROPOSAL because source documents require deterministic precedence but do not define it:
-1. If EndingSelected is not NONE, reject all triggers.
-2. If NewGuestAccepted is true after team confirmation, select THE NEW GUEST.
-3. Else if FinaleReady, TruthChainComplete, Room13RevealComplete and ServiceRouteReady are true and team selects truth, select THE TRUTH.
-4. Else if CoreEscapeReady, CarKeysObtained and GatePowered are true and team selects vehicle escape, select ESCAPE.
-5. Otherwise keep final objective active; never infer an ending from elapsed time, capture or defeat.
 
-If truth and escape are both eligible, expose explicit choice; do not rely on race conditions.
+The ending resolver is an eligibility filter plus one team-choice transaction, not an automatic priority list.
+
+1. If EndingSelected is not NONE, reject all new triggers.
+2. Open one session-wide ending selector only when FinaleReady is true. Show only currently eligible choices.
+3. Each connected eligible player may cast one explicit choice in the active round.
+4. ESCAPE and THE_TRUTH resolve on strict majority. THE_NEW_GUEST is a separate explicit confirmation requiring unanimous affirmative consent; a decline or timeout does not commit it.
+5. Apply END-A01 tie/timeout/disconnect rules exactly. If ESCAPE is eligible, tie/timeout selects ESCAPE; otherwise keep the selector active for a new round.
+6. On a valid quorum, acquire the ending lock, set Ending and EndingSelected atomically, disable all competing triggers and broadcast one branch event.
+7. No elapsed time, capture, defeat, disconnection or failed chase can select an ending.
 
 ## Multiplayer contract
 One shared ending for the session. All connected players receive the same choice. Disconnect during vote cannot silently count as acceptance. **APPROVED CO-OP RULE (owner, 2026-11-16):** ESCAPE and THE TRUTH require a strict majority of currently connected eligible players. THE NEW GUEST requires an explicit affirmative confirmation from every currently connected eligible player; no inferred acceptance. A tie or timeout for ESCAPE/THE TRUTH selects ESCAPE only when ESCAPE is eligible; otherwise the choice remains active for a new vote. A disconnect removes that player from the active electorate and recalculates majority; for THE NEW GUEST, re-prompt/reconfirm unanimity among the remaining connected players. A disconnect never counts as acceptance. Solo choice is direct. After commit, lock all competing endings.
@@ -39,7 +42,7 @@ One shared ending for the session. All connected players receive the same choice
 - Finish identity reveal presentation → Room13RevealComplete.
 - Open compartment → ServiceKeyObtained.
 - Activate service mechanism → ServiceRouteReady.
-- Explicit accepted invitation → NewGuestAccepted.
+- Explicit invitation and unanimous affirmative confirmation → NewGuestAccepted and THE_NEW_GUEST commit.
 - Eligible selection while EndingSelected is NONE → commit exactly one ending.
 
 ## Acceptance
