@@ -95,7 +95,8 @@ Presence of a document closes only the corresponding documentation-authoring gap
 **Acceptance evidence:** project inventory, target version, map/project open in editor, backup location and restore proof.
 
 ### GATE B — re-run data and design integrity (P0)
-1. Re-run R3_INTEGRATION_INTEGRITY_REPORT.md checks on the current branch head.
+1. Run `python tools/validate_r3_repository.py` from this directory and inspect the GitHub Actions `R3 Static Repository Validation` result; resolve every static failure.
+2. Re-run R3_INTEGRATION_INTEGRITY_REPORT.md checks on the current branch head.
 2. Validate all CSV row widths, unique IDs, enum values, numeric fields and cross-register references.
 3. Validate 51 openings ↔ 72 walls, all furniture footprints and door swings, 32 interactions ↔ 51 events, all device anchors, all UI/audio/lighting string references and 99 asset IDs ↔ 99 rights rows.
 4. Resolve every defect with synchronized edits to all dependent files; record exact changed rows.
