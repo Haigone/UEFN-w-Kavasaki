@@ -111,3 +111,28 @@ The battery is personal equipment, not a quest item and not FuseA. Each player h
 - [ ] Battery pickups preserve personal charge and do not disappear globally before other players can claim them, unless the documented team-stock fallback is used.
 - [ ] Checkpoint restore rebuilds actors from committed flags and clears locks.
 - [ ] Every fallback is logged and does not bypass unsolved puzzle prerequisites.
+
+
+## 7. Standard feedback mapping
+
+All player-facing copy must resolve through UI_STRING_TABLE.csv. No ad hoc hard-coded strings.
+
+| Interaction group | Success StringId | Failure StringId | Cancel / repeat StringId |
+|---|---|---|---|
+| IN-001 / IN-003 / IN-004 / IN-008 / IN-013 / IN-014 / IN-029 / IN-030 / IN-031 | UI_EVIDENCE_ADDED then UI_JOURNAL_UPDATED | UI_INTERACTION_UNAVAILABLE | UI_CLUE_ALREADY_FOUND on repeat |
+| IN-002 | UI_PHONE_WELCOME_SUB | UI_INTERACTION_UNAVAILABLE | UI_ACTION_CANCELLED; transcript remains available |
+| IN-005 | UI_PUZZLE_SOLVED | UI_ERR_CODE | UI_ACTION_CANCELLED |
+| IN-006 / IN-017 / IN-024 / IN-025 / IN-026 / IN-027 / IN-028 | UI_PICKUP_COLLECTED | UI_ERR_REQUIREMENT | UI_ALREADY_SECURED |
+| IN-007 / IN-016 | UI_PUZZLE_SOLVED and UI_ACCESS_GRANTED | UI_ERR_PHOTO | UI_ACTION_CANCELLED |
+| IN-009 | UI_BATTERY_RECHARGED | UI_FLASHLIGHT_FULL | No charge consumed; pickup remains |
+| IN-010 / IN-015 | UI_PANEL_OPEN; IN-015 also UI_ACCESS_GRANTED | UI_ERR_REQUIREMENT | UI_ACTION_CANCELLED |
+| IN-011 | UI_FUSE_INSTALLED | UI_ERR_FUSE | UI_ACTION_CANCELLED; fuse remains in inventory |
+| IN-012 | UI_POWER_ON | UI_ERR_REQUIREMENT | UI_ACTION_CANCELLED |
+| IN-018 | UI_SERVICE_ROUTE_READY | UI_ERR_REQUIREMENT | UI_ACTION_CANCELLED |
+| IN-019 | UI_VEHICLE_READY | UI_ERR_REQUIREMENT | UI_ACTION_CANCELLED |
+| IN-020 | UI_VOTE_SUBMITTED; UI_END_* after commit | UI_VOTE_TIE / UI_VOTE_TIMEOUT / UI_NEW_GUEST_DECLINED | UI_ENDING_WAITING |
+| IN-021 | UI_HIDE_ENTERED / UI_HIDE_EXITED | UI_INVALID_STATE | Repeat press toggles state |
+| IN-022 | UI_RESCUE_DONE | UI_RESCUE_CANCEL | UI_RESCUE_PROGRESS while held |
+| IN-023 | UI_CHECKPOINT | UI_ERR_REQUIREMENT | Repeated activation is harmless |
+
+Global rule: if the player state blocks the action, use UI_INVALID_STATE. If the target actor is missing/disabled, use UI_INTERACTION_UNAVAILABLE and log the failure. Cancellation never plays a failure penalty. Do not show hidden prerequisites or reveal clue locations through generic error text.
