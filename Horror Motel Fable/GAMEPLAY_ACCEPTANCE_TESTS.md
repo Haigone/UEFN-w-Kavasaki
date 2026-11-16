@@ -1,11 +1,18 @@
 # GAMEPLAY ACCEPTANCE TESTS
 ## THE MOTEL: ROOM 13
-**Test target:** UEFN build and target Fortnite release recorded by QA. This document defines expected behavior; no test is claimed passed until evidence is attached.
+**Execution owner:** Claude in the actual UEFN/Fortnite project environment.  
+**Specification and review owner:** ChatGPT prepares test design, expected outcomes and defect analysis; it does not execute UEFN tests.  
+**Status:** test cases defined; none are considered passed until Claude attaches actual evidence.
 
-## 1. Test environment
-Record editor/build version, island revision, platform, party size, test date, tester, session ID and Verse compile result. Run solo, 2-player and 4-player configurations.
+## Execution rules
+- Execute the detailed sequence in CLAUDE_UEFN_EXECUTION_PLAN.md.
+- Record actual editor/game version, build commit, party size, platform, tester, timestamp and evidence for every case.
+- Use PASS, FAIL, BLOCKED or NOT RUN. Never infer PASS from code review alone.
+- Run solo, 2-player and 4-player configurations where specified.
+- A blocked/unavailable test is not a pass; include reason and next action.
+- ChatGPT may review Claude's reports and prepare fixes, but must not claim to have launched UEFN, compiled Verse or run the test.
 
-## 2. Progression and puzzle tests
+## 1. Progression and puzzle tests
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-001 | Complete six acts solo | Reach an ending without another player |
@@ -18,7 +25,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-008 | Required item actor missing | Recovery proxy restores only validated item |
 | GAT-009 | Optional lore omitted | Core escape remains completable |
 
-## 3. Inventory and multiplayer
+## 2. Inventory and multiplayer
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-010 | Two players pick up same fuse simultaneously | One team grant; no duplicate |
@@ -28,7 +35,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-014 | Player leaves during puzzle transaction | Lock clears; puzzle retryable |
 | GAT-015 | Fuse installed then CP02 restore | Slot remains filled; no duplicate item |
 
-## 4. Capture/rescue
+## 3. Capture/rescue
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-016 | Two-player rescue | 5-second rescue within 2 m succeeds |
@@ -40,7 +47,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-022 | Capture during protected puzzle | Capture is rejected/deferred |
 | GAT-023 | Duplicate capture event | No second transition |
 
-## 5. Checkpoint and disconnect
+## 4. Checkpoint and disconnect
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-024 | Restore CP01 | Register/office progression retained |
@@ -51,7 +58,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-029 | Player rejoins same live session | Current team state restored |
 | GAT-030 | All players disconnect | No claim of cross-session persistence unless separately implemented |
 
-## 6. Endings
+## 5. Endings
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-031 | Standard escape without truth chain | ESCAPE |
@@ -62,7 +69,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-036 | Tie/no response in co-op vote | ESCAPE deterministic fallback |
 | GAT-037 | Repeat ending trigger | No branch change or replay |
 
-## 7. AI, readability and performance
+## 6. AI, readability and performance
 | Test ID | Scenario | Expected result |
 |---|---|---|
 | GAT-038 | THE GUEST investigates sound | Moves to last-known position, not wall-tracks |
@@ -76,5 +83,7 @@ Record editor/build version, island revision, platform, party size, test date, t
 | GAT-046 | English UI/subtitle audit | All required text readable and consistent |
 | GAT-047 | Island validation and performance | Actual memory/performance evidence recorded; no assumed pass |
 
-## 8. Release acceptance
+## 7. Release acceptance
 Release only when all critical tests pass in solo and relevant co-op party sizes; no mandatory item is permanently lost; all endings are reachable; no known softlock remains; Verse compiles in the target editor; device/API assumptions are verified; and evidence/results are attached to the build. Any failed test creates a tracked defect with severity, reproduction steps, owner and retest result.
+
+**Ownership reminder:** Claude performs all UEFN implementation and execution. ChatGPT prepares specifications and reviews evidence/results supplied by Claude.
