@@ -79,11 +79,21 @@ Inputs: meaningful objective stagnation (after grace period), recent captures, n
 
 Initial tuning anchors (playtest targets): patrol interval 35 s at DORMANT to 18 s at RELENTLESS; investigation 12 s to 8 s; hiding search 5 s to 10 s; post-chase recovery 25 s to 12 s. These are balance targets, not engine guarantees.
 
-## 10. Endings
-- ESCAPE: core escape ready; truth chain incomplete or standard exit explicitly selected.
-- THE_TRUTH: core escape ready, truth chain and ROOM 13 reveal complete, truth route explicitly selected.
-- THE_NEW_GUEST: explicit acceptance interaction/team decision; never inferred from capture or timeout.
-In co-op, use a team vote/confirmation with deterministic tie rule (majority; tie defaults to ESCAPE unless the group confirms THE_NEW_GUEST again). Lock the first valid ending selection.
+## 10. Endings — canonical decision contract
+
+- **ESCAPE:** requires CoreEscapeReady and explicit selection of the vehicle route. It remains eligible when optional truth evidence is incomplete.
+- **THE_TRUTH:** requires CoreEscapeReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit selection of the truth route.
+- **THE_NEW_GUEST:** requires NewGuestAccepted through explicit invitation interaction and team confirmation. Capture, defeat, inactivity or timeout never imply consent.
+
+**Owner-approved co-op quorum END-A01 (2026-11-16):**
+- ESCAPE and THE_TRUTH: strict majority of currently connected eligible players.
+- THE_NEW_GUEST: explicit unanimous affirmative confirmation from all currently connected eligible players.
+- Tie/timeout for ESCAPE/THE_TRUTH: select ESCAPE only if eligible; otherwise keep choice active for a new vote. Never silently select THE_TRUTH.
+- Disconnect removes that player from the active electorate and recalculates majority; for THE_NEW_GUEST, re-prompt/reconfirm unanimity among remaining connected players. Disconnect is never consent.
+- Solo: direct choice.
+- Commit one session-wide ending atomically; disable all competing triggers after commit.
+
+**Truth evidence END-A02:** still pending owner approval. Do not hard-code a mandatory evidence list until approval. The recommended three-clue formula is in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md. Keep route, puzzle and reveal flags separate from evidence pickups.
 
 ## 11. Accessibility and recovery
 - All essential clues have readable text.
