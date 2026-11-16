@@ -46,3 +46,4 @@ U-W-CROSS-01,UF,Open_Connector_Bay,8.3,17,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,W
 U-W-CROSS-02,UF,Open_Connector_Bay,8.3,17,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVAL REQUIRED
 U-E-CROSS-01,UF,Open_Connector_Bay,67,75.7,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
 U-E-CROSS-02,UF,Open_Connector_Bay,67,75.7,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
+UF-STAIR-OPENING,UF,Slab_Opening,22.5,25.5,51.85,55.87,3.35,3,4.02,0,0,NA,No collision,Upper slab cut for U-turn stair,OWNER APPROVAL + EDITOR-TEST REQUIRED
