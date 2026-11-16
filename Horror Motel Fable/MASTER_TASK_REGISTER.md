@@ -112,5 +112,5 @@ These tasks supplement prior IDs. Geometry R2.2 is a candidate proposal only; al
 
 ### Current task-order clarification
 - Geometry is the physical critical path. Narrative authoring may run in parallel but cannot authorize geometry-dependent production.
-- Environment Art PR #1 is not ready to merge: live comparison at the current audit is 66 commits ahead / 285 behind main, OPEN/DRAFT and mergeable=false.
+- Environment Art PR #1 is not ready to merge: live comparison at the current audit is 66 commits ahead / 290 behind main, OPEN/DRAFT and mergeable=false.
 - The documentary fixes to the interaction/puzzle registers and stair coordinate discrepancy do not close the editor-dependent tasks above.
