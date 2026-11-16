@@ -66,7 +66,7 @@ All interaction events are validated by the authoritative Verse/gameplay layer. 
 | IN-026 | PICKUP / 1 s | Grant FuseC to team once from ROOM 06 cabinet | Duplicate pickup ignored; recover only if authored pickup unreachable | UI_IN_026_PROMPT; UI_ALREADY_SECURED |
 | IN-027 | PICKUP / 1 s | Grant reusable Screwdriver to team once | Duplicate pickup ignored; do not consume on IN-010/015 | UI_IN_027_PROMPT; UI_ALREADY_SECURED |
 | IN-028 | PICKUP / 1 s | If pursuing ESCAPE in ACT VI, grant CarKeys to team once | If actor missing, vehicle key hook proxy; no ignition until IN-018 + IN-019 conditions | UI_IN_028_PROMPT; UI_ALREADY_SECURED |
-| IN-029 | INSPECT / press | Inspect ROOM 06 missing-guest photo archive; set MissingGuestEvidenceFound | Repeatable; journal copy; END-A02 mandatory role pending owner approval | UI_IN_029_PROMPT; readable photo archive |
+| IN-029 | INSPECT / press | Inspect ROOM 06 missing-guest photo archive; set MissingGuestEvidenceFound | Repeatable; journal copy; END-A02 mandatory for THE_TRUTH only | UI_IN_029_PROMPT; readable photo archive |
 | IN-030 | INSPECT / press | Watch ROOM 01 CRT; set CRTFeedSeen | Repeatable; visual content remains available if audio unavailable | UI_IN_030_PROMPT; CRT visual feed |
 | IN-031 | PRESS + LISTEN / VO duration | Listen to ROOM 04 recording; set Room04RecordingHeard and Room04TranscriptRead when transcript is presented | Replayable; close/cancel does not erase transcript; audio is not required to learn fuse locations | UI_IN_031_PROMPT; transcript/journal fallback |
 
@@ -96,7 +96,7 @@ The battery is personal equipment, not a quest item and not FuseA. Each player h
 - IN-018 sets GatePowered and ServiceRouteReady; GameManager derives FinaleReady; IN-019 sets CoreEscapeReady only for the ESCAPE vehicle branch.
 - IN-030 and IN-031 own the CRT/Room04 recording discovery flags.
 - IN-029 owns MissingGuestEvidenceFound.
-- TruthChainComplete is a derived GameManager flag and remains unimplemented as a mandatory gate until END-A02 is approved.
+- TruthChainComplete is derived as DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. END-A02 is approved; this gate applies only to THE_TRUTH.
 - Every UI prompt uses the stable StringId in UI_STRING_TABLE.csv; any new string must be added there before implementation.
 
 ## 6. Acceptance checklist
@@ -136,3 +136,5 @@ All player-facing copy must resolve through UI_STRING_TABLE.csv. No ad hoc hard-
 | IN-023 | UI_CHECKPOINT | UI_ERR_REQUIREMENT | Repeated activation is harmless |
 
 Global rule: if the player state blocks the action, use UI_INVALID_STATE. If the target actor is missing/disabled, use UI_INTERACTION_UNAVAILABLE and log the failure. Cancellation never plays a failure penalty. Do not show hidden prerequisites or reveal clue locations through generic error text.
+
+| IN-032 | HOLD / 2 s | Dedicated NIGHT AUDIT — END CYCLE breaker; available only after EndingSelected=THE_TRUTH in the service control room | One-shot session commit NightAuditActivated=true; starts the approved room-by-room blackout/register print/title-card sequence; no other ending can be selected after branch commit | UI_IN_032_PROMPT; UI_NIGHT_AUDIT_ACTIVATED |
