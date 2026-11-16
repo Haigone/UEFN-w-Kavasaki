@@ -1,47 +1,45 @@
-# FINAL GROUND FLOOR PLAN — LD-GEO R2.1
-Status: PROPOSED TARGET; not editor-verified. Coordinates in metres, room bounds FIF.
+# FINAL GROUND FLOOR PLAN — CANONICAL PROPOSAL R2.2
+Status: PROPOSED — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Units metres; room bounds finished-inside-face (FIF); wall centre-lines in wall_schedule.csv.
 
-## Plan schematic
-```
-                                      NORTH (+Y)
- Y=60   +----------------+--------------------------------+----------------+
-        | NORTH LINK W   | RECEPTION + NORTH STAIR        | ELECTRICAL     |
-        |                | OWNER OFFICE / STORAGE         |                |
- Y=48   +----------------+--------------------------------+----------------+
-        | WEST CORRIDOR  |                                | EAST CORRIDOR  |
-        | ROOM 01        |          OPEN COURTYARD        | ROOM 04        |
-        | ROOM 02        |                                | ROOM 05        |
-        | ROOM 03        |                                | ROOM 06        |
- Y=18   +----------------+                                +----------------+
-        |                |                                |                |
- Y=0    +----------------+--------- PARKING / CAR --------+----------------+
-                                      SOUTH
-```
-Schematic only; schedule controls. Site 84×72 m, origin SW, +X east/+Y north.
+## Datum and footprint
+Site 84×72 m; origin SW; +X east, +Y north, +Z up. U footprint: west wing X8–20,Y18–60; east wing X64–76,Y18–60; north connector X8–76,Y48–60. Courtyard X20–64,Y18–48 remains open to sky.
 
-## Ground room schedule
-| ID | X min–max | Y min–max | Clear m |
-|---|---|---|---|
-| G-CW | 8.30–10.80 | 18.30–47.70 | 2.50×29.40 |
-| ROOM 01 | 11.10–19.70 | 20.00–27.00 | 8.60×7.00 |
-| ROOM 02 | 11.10–19.70 | 29.00–36.00 | 8.60×7.00 |
-| ROOM 03 | 11.10–19.70 | 38.00–45.00 | 8.60×7.00 |
-| G-CE | 73.20–75.70 | 18.30–47.70 | 2.50×29.40 |
-| ROOM 04 | 64.30–72.90 | 20.00–27.00 | 8.60×7.00 |
-| ROOM 05 | 64.30–72.90 | 29.00–36.00 | 8.60×7.00 |
-| ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 |
-| RECEPTION | 20.30–37.70 | 48.30–59.70 | 17.40×11.40 |
-| OWNER OFFICE | 38.00–47.00 | 48.30–59.70 | 9.00×11.40 |
-| STORAGE | 47.30–57.00 | 48.30–53.70 | 9.70×5.40 |
-| ELECTRICAL | 57.30–75.70 | 48.30–59.70 | 18.40×11.40 |
+## Guest rooms and corridors
+| ID | X min–max | Y min–max | Clear size |
+|---|---:|---:|---:|
+| ROOM 01 | 11.10–19.70 | 20–27 | 8.60×7.00 |
+| ROOM 02 | 11.10–19.70 | 29–36 | 8.60×7.00 |
+| ROOM 03 | 11.10–19.70 | 38–45 | 8.60×7.00 |
+| ROOM 04 | 64.30–72.90 | 20–27 | 8.60×7.00 |
+| ROOM 05 | 64.30–72.90 | 29–36 | 8.60×7.00 |
+| ROOM 06 | 64.30–72.90 | 38–45 | 8.60×7.00 |
+| G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.70 |
+| G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.70 |
 
-## North stair
-Owner-selected location: north connector, at reception. Reservation X=21.00–27.00,Y=51.20–59.00. 20 risers×0.18 m, two flights of 10 risers, nine goings per flight×0.28 m, intermediate landing Z=1.80 m, clear width 1.20 m. Exact stair plan and queue/counter clearance must be checked in STAIR_PLAN_R2.md and editor.
+Ground rooms occupy the courtyard-facing strips; the parallel corridors are on the outer sides. Doors are on X=10.95 (west rooms) and X=73.05 (east rooms). Windows face the courtyard at X=19.85 and X=64.15.
 
-## Exterior anchors
-Car X=34–40,Y=5–10; neon sign X=39–45,Y=14.5–15.5; courtyard entry near X=42,Y=18 with 3 m clear route; vending X=21–24,Y=25–28; dumpster X=70–74,Y=20–24; generator approx. 3×2 m plus 1.5 m interaction clearance; gate south/east boundary with 4 m vehicle route. All proposed.
+The 2 m bands Y27–29 and Y36–38 are reserved as open transverse connector bays in this proposal, with 1.50 m courtyard facade openings. This is not a source-approved fact; owner approval required.
 
-## Vertical datum
-Ground FFL 0.00; clear ceiling plane Z=3.00; upper slab underside Z=3.35 and top/upper FFL Z=3.60. Flat roof upper ceiling Z=6.40, roof slab top Z=6.65, parapet top Z=7.10. See LEVEL_SECTIONS.md and ROOF_PLAN_R2.md.
+## North connector allocations
+| Zone | X min–max | Y min–max |
+|---|---:|---:|
+| GF north-west link | 8.30–10.80 | 48.30–59.70 |
+| GF west lobby | 11.10–19.70 | 48.30–59.70 |
+| Reception | 20.30–37.70 | 48.30–59.70 |
+| Owner office | 38.00–47.00 | 48.30–59.70 |
+| Storage | 47.30–57.00 | 48.30–53.70 |
+| Storage/service bay | 47.30–57.00 | 53.85–59.70 |
+| Electrical | 57.30–72.90 | 48.30–59.70 |
+| GF north-east link | 73.20–75.70 | 48.30–59.70 |
 
-Shared walls once; do not build overlapping solid room boxes. Exact wall centre-lines, furniture positions and all collision remain EDITOR-TEST REQUIRED.
+The electrical room ends at X=72.90 to preserve the 2.50 m east link; this removes the former electrical/link overlap. The west lobby and west link are separated by a partition with a 0.90 m opening. Storage/service bay connection is shown in the door and wall schedules. These north-zone allocations require owner approval.
+
+## Stair
+North stair reservation X=21–27,Y=51.2–59.0, inside reception. Proposed assembly X=22.65–25.35,Y=52.00–55.72; 20 risers, 10 per flight, 0.18 m rise; 9 goings per flight at 0.28 m; 2.52 m run per flight; 2.70×1.20 m intermediate landing at Z1.80; clear flight width 1.20 m. Headroom target ≥2.20 m. Exact handedness and entry/exit approaches require owner approval and editor verification.
+
+## Openings
+See DOOR_WINDOW_SCHEDULE.csv. Door/window centres are on wall centre-lines, not on room FIF boundaries. Main reception door centre (29.00,48.15), 1.60×2.30 m; reception window centre (33.00,48.15), 2.40×1.50 m.
+
+## Construction
+Use one U-shaped ground slab and unique wall centre-lines. Do not create overlapping wing rectangles or duplicate walls at the north junctions. No UEFN testing was performed.
