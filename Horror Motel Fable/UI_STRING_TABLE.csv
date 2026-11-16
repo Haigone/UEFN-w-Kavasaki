@@ -1,4 +1,4 @@
-String_ID,Category,English_Text,Context,Implementation_Notes
+"String_ID","Category","English_Text","Context","Implementation_Notes"
 "UI_OBJ_01_TITLE","Objective","REACH THE MOTEL","ACT I","Primary objective title"
 "UI_OBJ_01_BODY","Objective","Follow the neon sign to reception.","ACT I","Primary instruction"
 "UI_OBJ_02_TITLE","Objective","OPEN THE FRONT DESK","ACT II","Primary objective title"
@@ -90,3 +90,6 @@ String_ID,Category,English_Text,Context,Implementation_Notes
 "UI_INTERACTION_UNAVAILABLE","Feedback","This cannot be used right now.","Fallback/error","Use when actor is missing or disabled"
 "UI_RECORDER_PLAYING","Status","Recording playing.","CINE-010","Subtitles remain visible"
 "UI_JOURNAL_UPDATED","Feedback","Journal updated.","Evidence interactions","Non-blocking confirmation"
+"UI_IN_032_PROMPT","Interaction","ACTIVATE NIGHT AUDIT","THE TRUTH / Service control room","Shown only after THE_TRUTH is committed"
+"UI_NIGHT_AUDIT_ACTIVATED","Feedback","Night audit complete.","THE TRUTH ending","Shown after NightAuditActivated commits"
+"UI_TRUTH_EVIDENCE_PROGRESS","Journal","Truth evidence: {FOUND}/3","Journal evidence section","Display 0/3 through 3/3; never reveal undiscovered clue locations"
