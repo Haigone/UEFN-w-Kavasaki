@@ -96,7 +96,7 @@ Tracker reads this state; it never infers completion from proximity alone.
 | III — THE POWER | Restore motel power | Fuse A/B/C installed and breaker activated |
 | IV — THE SECOND FLOOR | Find the way to ROOM 13 | Upper-floor access; Room 12 panel opened; route unlocked. Diary and drawing are optional evidence discoveries unless END-A02 is approved for THE_TRUTH only |
 | V — ROOM 13 | Discover who the owner really is | Four-photo sequence solved; reveal completed; Service Key granted |
-| VI — NO VACANCY | Open the service route and escape | Car Keys + Service Key + GatePowered; CoreEscapeReady |
+| VI — NO VACANCY | Open the service route and decide the motel's fate | ServiceKey + PowerRestored + GatePowered; FinaleReady. CarKeys/vehicle ignition are required only for ESCAPE |
 | VI — NO VACANCY | Decide the motel's fate | Explicit ending committed |
 
 Canonical objective IDs and exact completion predicates are in OBJECTIVE_AND_EVENT_CATALOG.md. ACT II completes after PZ-01/OfficeKey and PZ-02/UpperFloorAccessGranted; it does not require inspecting every room 01–06.
