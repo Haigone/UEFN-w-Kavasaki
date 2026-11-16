@@ -365,3 +365,55 @@ Ogni sessione deve terminare con:
 
 ### Prossimo task assegnato a Claude
 Eseguire FASE 0 (audit ambiente e baseline), quindi iniziare FASE 1 soltanto dopo aver confermato di aver letto tutte le fonti. Non modificare canon narrativo senza marcare le nuove parti PROPOSAL e sottoporle ad approvazione.
+
+## 19. CURRENT BASELINE OVERRIDE — R2.2 AND CRITICAL PATH (2026-11-16)
+
+This addendum supersedes any earlier phase ordering or geometry references in this plan where they conflict.
+
+### 19.1 Current geometry authority
+- Read LEVEL_DESIGN_R2.2_INDEX.md first.
+- LEVEL_DESIGN_GEOMETRY.md LD-GEO R2.2 is the single candidate geometry proposal.
+- Controlled data: ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv, SLAB_SCHEDULE.csv, LEVEL_SECTIONS.md, STAIR_PLAN_R2.md, ROOF_PLAN_R2.md, GROUND_FLOOR_PLAN_R2.svg, UPPER_FLOOR_PLAN_R2.svg, SECTIONS_R2.2.svg.
+- R2.2 is not owner-approved and not UEFN-verified. The owner approval checklist in LEVEL_DESIGN_GEOMETRY.md is a hard stop. Claude may audit arithmetic, IDs, topology and implementation feasibility, but must not silently approve or alter owner-level layout decisions.
+- CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md is superseded. Do not use it as a build authority.
+
+### 19.2 Correct production order
+Geometry is the physical critical path. Narrative documentation may be completed in parallel, but must not delay or replace the geometry approval/build gate:
+1. Preflight the real project and editor version; create a baseline/backup.
+2. Obtain owner approval of R2.2 proposal or a revised owner-selected geometry.
+3. Close document-level geometry issues: stair coordinates, shared wall/opening joins, slab/void polygons, balcony union, secret route and complete structural schedules.
+4. Claude builds a greybox only from the approved revision and tests traversal/collision/nav constraints.
+5. Freeze geometry only after owner review of Claude's evidence.
+6. Reconcile Environment Art registers and placements against that exact frozen revision.
+7. Acquire/produce/import assets and verify licensing, scale, pivots, materials, LOD and collision.
+8. Verify UEFN device/API/NPC feasibility against the installed release; implement and compile Verse.
+9. Integrate gameplay, narrative, audio, lighting, UI and final art in dependency order.
+10. Run solo, 2-player and 4-player tests, disconnect/rejoin, checkpoint, capture/rescue, all endings, performance and island validation.
+11. Release gate and publication only after owner approval.
+
+### 19.3 Required cross-register corrections
+- Use INTERACTION_MASTER_REGISTER.csv IN-006 as the only OfficeKey grant after PZ-01 opens the drawer.
+- Use IN-017 as the only ServiceKey grant after PZ-04 opens the compartment.
+- IN-024–IN-026 are the team pickup transactions for FuseA/B/C.
+- IN-027 is the reusable Screwdriver pickup; it serves the electrical cover and ROOM 12 panel.
+- IN-028 is the Act VI CarKeys pickup.
+- IN-029 records Room 06 missing-guest evidence as MissingGuestEvidenceFound.
+- Room13Key is the team item; Room13KeyKnown is its narrative discovery flag.
+- Treat GAT-048–GAT-052 as required regression tests.
+- The exact truth-evidence gate and the THE_NEW_GUEST co-op quorum remain design approvals where the narrative/ending documents mark them PROPOSAL; do not infer approval from the existence of a table.
+
+### 19.4 Environment Art branch restriction
+PR #1 / environment-art/room13-v1 is OPEN/DRAFT and currently diverged from main (61 commits ahead, 226 behind at the 2026-11-16 audit). It is based on older geometry and is not ready to merge. Do not merge, rebase, force-push or synchronize it as a substitute for reauthoring. Reauthor the art package against owner-approved and Claude-verified geometry, then submit a fresh review.
+
+### 19.5 Stop conditions
+Stop and report BLOCKED if:
+- owner has not approved the R2.2 geometry decisions required for the next construction step;
+- any opening has no unique host wall or any wall/opening ID fails to resolve;
+- the ROOM 12 → ROOM 13 route is not physically continuous and two-way;
+- stair, balcony, slab opening or roof polygons conflict;
+- an asset source/license or UEFN import right is unclear;
+- required NPC/Verse/device API support is not verified in the target release;
+- a mandatory clue, key or puzzle reward has no unique state owner;
+- the actual project/editor access is unavailable.
+
+Every stop report must identify the task ID, exact source lines/IDs, consequence, required owner action, and evidence needed to resume.
