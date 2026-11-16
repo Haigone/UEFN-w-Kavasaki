@@ -155,3 +155,14 @@ These checks validate coordinate references and area envelopes only. They do not
 - PZ-05 prerequisite corrected: FinaleReady is no longer listed as a prerequisite. PZ-05 starts from PowerRestored, ServiceKeyObtained and Room13RevealComplete; GatePowered and ServiceRouteReady are then committed, after which FinaleReady is derived. This removes the circular dependency.
 - Event catalog contains EVT-001–EVT-051; the crosswalk contains IN-001–IN-032.
 - A repeatable standard-library checker is available at tools/validate_r3_repository.py. Run from the Horror Motel Fable directory with `python tools/validate_r3_repository.py`. It validates CSV structure and selected cross-references only; it does not validate UEFN, Verse, editor placement, runtime or gameplay.
+
+
+## 12. Final handoff and repeatability controls
+
+- The README link audit found no broken relative links in Horror Motel Fable/README.md; all 94 local references resolve in the current repository tree.
+- CLAUDE_START_HERE_PROMPT_R3.md provides a paste-ready instruction to begin at native project discovery (GATE A), run the static validator, then continue through GATE G without avoidable questions or per-batch user prompts.
+- CLAUDE_AUTONOMOUS_EXECUTION_ADDENDUM_R1.md defines the decision hierarchy, batch execution loop, owner-only stop conditions and the production path for a missing THE GUEST model, rig, LODs, collision and animation set.
+- .github/workflows/r3-static-validation.yml runs tools/validate_r3_repository.py on relevant pushes, pull requests and manual dispatch. The workflow file is present; its first hosted run is not yet evidenced in this report.
+- CLAUDE_EXECUTION_PROTOCOL.md was reconciled to R3: R2.3 is approved as design (not editor-verified), GATE A is native project discovery/backup, current device register is 50 rows, and the current rights register is 99 rows NOT SOURCED.
+
+The static checks above remain documentary/data checks. No UEFN project opening, Verse compile, editor placement, runtime, multiplayer, performance or island validation is claimed.
