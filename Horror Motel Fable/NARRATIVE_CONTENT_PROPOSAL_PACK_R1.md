@@ -185,16 +185,19 @@ If quorum is not met: return to eligible ending choice; never auto-accept.
 ## 12. Owner approval checklist
 | ID | Approval required | Status |
 |---|---|---|
-| NCP-A01 | Register copy and 02-13-86 deduction | PENDING |
-| NCP-A02 | Office photo captions and chronological solution | PENDING |
-| NCP-A03 | Fuse labels and Room 04 transcript | PENDING |
-| NCP-A04 | Room 06 photo content and truth-chain role | PENDING |
-| NCP-A05 | Room 09 diary and truth-chain role | PENDING |
-| NCP-A06 | Room 11 drawing/caption and truth-chain role | PENDING |
-| NCP-A07 | ROOM 13 photos, captions and reveal sequence | PENDING |
-| NCP-A08 | THE TRUTH action, consequence and sequence | PENDING |
-| NCP-A09 | THE NEW GUEST invitation and consent copy | PENDING |
-| NCP-A10 | Co-op quorum and mandatory evidence list | PENDING |
+| NCP-A01 | Register copy and 02-13-86 deduction | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A02 | Office photo captions and chronological solution | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A03 | Fuse labels and Room 04 transcript | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A04 | Room 06 photo content and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A05 | Room 09 diary and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A06 | Room 11 drawing/caption and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A07 | ROOM 13 photos, captions and reveal sequence | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A08 | THE TRUTH action, consequence and sequence | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A09 | THE NEW GUEST invitation and consent copy | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A10a | Co-op ending quorum (END-A01) | **APPROVED 2026-11-16; see OWNER_DECISION_GATE_R2.2.md. This item is closed and must not be reopened.** |
+| NCP-A10b | Mandatory THE TRUTH evidence (END-A02) | PENDING — recommended three-clue gate in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md |
+
+The consolidated owner action is OWNER_DECISION_PACKET_R1.md. It requests NCP-A01–A09 plus END-A02 only; END-A01 is already approved and remains binding.
 
 ## 13. Handoff
 After owner approval, copy approved content into canonical narrative documents and story register; synchronize puzzle/interaction flags, subtitles, journal and audio cue sheets. Claude implements the approved text exactly and tests clue readability, transcript fallback, solo/co-op progression, duplicate triggers and recovery. Unapproved text remains proposal and must not be implemented as canon.
