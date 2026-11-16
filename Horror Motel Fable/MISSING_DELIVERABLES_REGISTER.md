@@ -265,3 +265,13 @@ This closes the corresponding static documentation/data-integrity deliverable. I
 | MD-079 | Repeatable static repository integrity checker | PRESENT — tools/validate_r3_repository.py | Run in the repository environment; resolve any reported static defects. Does not replace editor/runtime evidence |
 
 The R3 follow-up also corrected the PZ-05 circular prerequisite and reconciled the asset manifest/rights counts to 99 unique assets and 99 rights rows. Actual asset sourcing/import, native UEFN project, Verse compilation and all editor/runtime/release gates remain open.
+
+
+## R3 final handoff additions — 2026-11-16
+
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-080 | Autonomous Claude execution rules, decision hierarchy, batch loop and THE GUEST missing-model/rig/animation production route | PRESENT — CLAUDE_AUTONOMOUS_EXECUTION_ADDENDUM_R1.md | Claude must follow it during implementation |
+| MD-081 | Automated static repository validation on push and pull request | PRESENT — .github/workflows/r3-static-validation.yml | First GitHub Actions run must complete; resolve any reported script/workflow failures |
+
+MD-080 closes the ambiguity in the autonomous handoff instructions. MD-081 automates the static checks; neither constitutes native UEFN implementation or runtime validation.
