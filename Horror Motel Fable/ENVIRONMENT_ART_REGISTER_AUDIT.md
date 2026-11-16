@@ -25,11 +25,11 @@ Execution boundary: documentation/register audit only. No UEFN editor, import, c
 
 Placement status after correction:
 - PROPOSED TARGET: 186
-- EDITOR-TEST REQUIRED: 2
-- BLOCKED: 7 (six out-of-perimeter wardrobes + exterior gate conflict)
+- EDITOR-TEST REQUIRED: 1 (secret-route door)
+- BLOCKED: 8 (six out-of-perimeter wardrobes + exterior gate anchor + neon scare trigger anchor)
 - UNPLACED: 91
 - Total: 286 rows.
-- 189 rows retain coordinates (186 proposed, 2 editor-test, 1 blocked gate); the six invalid wardrobe rows have their X/Y/Z/yaw and wall-clearance values blanked so they cannot be mistaken for usable placement targets.
+- 187 rows currently retain coordinates (186 proposed + 1 editor-test). The six wardrobes, exterior gate and neon trigger have blank X/Y/Z/yaw and wall-clearance fields; rejected legacy anchors are retained only in Audit_Notes.
 
 ## 3. Corrective actions applied
 
@@ -341,3 +341,27 @@ Pair list:
 - F12_CRT × F12_CHAIR
 - F13_DESK × F13_CRT
 - F13_CRT × F13_CHAIR
+
+
+## Supplemental material-ID and integrity audit — 2026-11-16
+
+A second full pass across the final 286 placement rows found 15 primary placement Material_ID mismatches against the linked asset's declared material slots. These have been corrected in PROP_PLACEMENT_REGISTER.csv:
+- F01_BED through F13_BED (13 placements): MAT_CARPET_BURGUNDY → MAT_FABRIC_MOTEL.
+- EXT_BROKEN_CAR: MAT_ASPHALT_WET → MAT_METAL_RUST.
+- EXT_CAR_KEYS: MAT_PLASTIC_AGED → MAT_METAL_RUST.
+
+The complete multi-slot material set remains recorded in Asset_Material_IDs; Material_ID is the placement's primary material association.
+
+Post-correction integrity results:
+- 120 unique Asset_IDs; 20 unique Material_IDs; 286 unique Placement_IDs.
+- 0 unresolved placement Asset_ID references.
+- 0 unresolved placement Material_ID references.
+- 0 primary placement Material_IDs outside the linked asset's declared material set.
+- 0 asset Material_ID references missing from the Material Master.
+- 0 malformed rotations, 0 missing/non-positive dimensions among coordinate-bearing rows, and 0 dimension mismatches between the placement schedule and numeric asset dimension targets (allowing width/depth axis swap).
+- 0 exact duplicate placements (same asset, room, floor, position and yaw). Reuse of the same Asset_ID across different rooms is intentional instancing, not duplicate asset definitions.
+- 0 blank Room_or_Area or Floor fields.
+- Current status counts: 186 PROPOSED TARGET, 1 EDITOR-TEST REQUIRED, 8 BLOCKED, 91 UNPLACED.
+- Current coordinate-bearing rows: 187. All 187 are still proposals/test-only and none is canonical geometry approval.
+
+These are document/register consistency checks only. They do not prove actual mesh dimensions, pivots, collision, wall clearance, navigability, or UEFN import behaviour.
