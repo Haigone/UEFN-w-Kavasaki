@@ -77,3 +77,23 @@ Before committing to an implementation:
 | Status | API-CHECK REQUIRED / ENGINE-VERIFIED / EDITOR-VERIFIED / TEST-PASS / BLOCKED |
 
 No evidence row means status remains API-CHECK REQUIRED or EDITOR-VERIFY.
+
+
+## 5. Official documentation cross-check — 2026-11-16
+
+The current platform reference review is recorded in UEFN_VERIFIED_REFERENCE_REGISTER_R1.md. It changes the confidence level of several rows but does not close project verification:
+
+- NPC Spawner, custom NPC behavior, navigatable movement and focus are documented by Epic. NPC Spawner is explicitly Beta; project-specific route traversal remains required.
+- Skeletal mesh/animation import and Animation Sequence playback are documented. Combined custom NPC definition, imported mesh, behavior and animation state machine still needs an isolated proof.
+- Per-player Verse/UMG UI and player_ui add/remove/focus are documented. Each player needs their own UI instance; shared session state must refresh each player's widgets. Interactable Button and Slider are documented; do not assume arbitrary text-entry controls.
+- Hearing/perception matching the designed sound radius model, stair navigation on R2.3, mirror reflections, exact multi-client cinematic synchronization and per-player battery pickup are not established by the cited docs. Keep these API-CHECK REQUIRED or PROJECT TEST REQUIRED.
+
+### Official references
+
+- NPC Spawner: https://dev.epicgames.com/documentation/fortnite/using-npc-spawner-devices-in-unreal-editor-for-fortnite
+- Custom NPC Behavior: https://dev.epicgames.com/documentation/fortnite/create-custom-npc-behavior-in-unreal-editor-for-fortnite
+- Skeletal mesh animation import: https://dev.epicgames.com/documentation/fortnite/import-and-play-mesh-animations-in-unreal-editor-for-fortnite
+- In-game UI: https://dev.epicgames.com/documentation/en-us/fortnite/ingame-user-interfaces-in-unreal-editor-for-fortnite
+- Interactable UI widgets: https://dev.epicgames.com/documentation/fortnite/making-widgets-interactable-in-unreal-editor-for-fortnite
+
+Do not change any matrix row to ENGINE-VERIFIED, EDITOR-VERIFIED or TEST-PASS until the exact project proof and target UEFN build evidence are attached.
