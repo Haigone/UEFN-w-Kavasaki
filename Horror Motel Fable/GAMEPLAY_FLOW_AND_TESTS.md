@@ -76,7 +76,7 @@ Checkpoint CP03: upper-floor access, opened panel/route and all evidence already
 4. Arrange four photographs chronologically.
 5. Reveal owner identity: owner is identical to THE GUEST.
 6. Open hidden compartment and obtain Service Key.
-7. Evaluate TruthChainComplete only from the END-A02 owner-approved evidence formula. END-A02 is pending; do not implement a mandatory truth-evidence gate until approved. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal flags.
+7. Evaluate TruthChainComplete using the owner-approved END-A02 formula: DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal flags. Each evidence clue is team-shared, idempotent, recoverable and available in readable/journal form.
 Checkpoint CP04: photo puzzle solved and reveal state retained.
 
 ### ACT VI — NO VACANCY (43–50 min)
@@ -190,7 +190,7 @@ THE NEW GUEST:
 - Tie/timeout for ESCAPE/THE_TRUTH: choose ESCAPE only if eligible; otherwise keep selector active for a new vote; never silently choose THE_TRUTH.
 - Solo choice is direct. Ending is locked once committed.
 
-**END-A02:** mandatory truth-evidence formula remains pending owner approval. See OWNER_DECISION_PACKET_R1.md.
+**END-A02 APPROVED BY OWNER (2026-11-16):** TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal requirements. See OWNER_DECISION_GATE_R2.2.md and END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
 
 ## 8. QA scenarios
 1. Solo: complete all acts and reach ESCAPE.
