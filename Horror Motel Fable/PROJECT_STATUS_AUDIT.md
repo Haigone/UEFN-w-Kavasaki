@@ -294,3 +294,33 @@ The latest placement-register revision has 24 columns and 286 rows. Statuses: 18
 The latest asset register now contains 120 rows / unique IDs (112 NOT STARTED, 8 BLOCKED), while the PR description still says 119. The 20-row material register is unchanged. All placement Asset_ID and Material_ID references resolve against the current registers. The source register still has 8/10 malformed rows and GQ-007 remains malformed, so the PR description's “CSV schemas normalized” claim remains inaccurate. The Environment Art execution plan still declares R2.0 as its authority, while main is R2.1.
 
 This latest snapshot supersedes the nine-active-wardrobe and 119-asset-row counts in section 14.4 and the 49/94 or 49/100 branch comparisons in sections 15–16. Recheck again before any merge because the branch is actively changing.
+
+
+## 18. R2.2 CURRENT BASELINE CORRECTION — 2026-11-16
+
+This addendum supersedes the old repository file count and all R2.0/R2.1 geometry-authority statements above where they conflict.
+
+### Current repository snapshot
+- Repository: `Haigone/UEFN-w-Kavasaki`, branch `main`.
+- Latest tree inspected: 77 entries total, comprising the `Horror Motel Fable/` directory, 75 files in that directory and root `README.md` (76 files total).
+- Current geometry index: `LEVEL_DESIGN_R2.2_INDEX.md`.
+- Current geometry candidate: `LEVEL_DESIGN_GEOMETRY.md`, LD-GEO R2.2.
+- R2.2 is a proposal only, not owner-approved and not UEFN-verified.
+- `CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md` is superseded.
+- New current handoff files: `OWNER_DECISION_GATE_R2.2.md` and `CLAUDE_R2.2_EXECUTION_PACKET.md`.
+
+### Corrected document/data findings
+- `INTERACTION_MASTER_REGISTER.csv` rows IN-021, IN-022 and IN-023 are aligned with the 13-column header in the current main snapshot. The prior claim of semantic shifts for these three rows is superseded.
+- `PUZZLE_MASTER_REGISTER.csv` PZ-03 previously had a blank AcceptanceTest; that field has now been completed with solo, wrong-slot/no-consumption, simultaneous slot, duplicate pickup, disconnect/rejoin and breaker-gating cases.
+- `ROOM_COORDINATE_REGISTER.csv` had semantic column misalignment in SITE, BLDG-UNION and COURTYARD. These rows have been corrected: collision intent, gameplay function and verification status now occupy their matching columns.
+- CSV row-width correctness is not proof of full referential or geometric correctness. Claude's packet requires cross-reference and topology validation.
+
+### Current approval blockers
+The owner must explicitly approve or revise GEO-A01–A15 in `OWNER_DECISION_GATE_R2.2.md`. In particular, exact room orientation/dimensions, cross-bays, north connector allocation, stair handedness/landing, wall/slab stack, balcony/roof details and openings/secret route remain proposed.
+The ending documents still conflict on co-op quorum (majority vs unanimous) and the mandatory truth-evidence list needs explicit confirmation. These are recorded as END-A01 and END-A02 in the decision gate.
+
+### Execution ownership and evidence
+Only read-only project baseline and document integrity inspection are authorized before geometry approval. Claude performs all UEFN/editor operations, Verse compilation, asset imports, gameplay/solo/co-op tests, performance/memory checks and island validation. The project owner approves design and publication. No editor-dependent task is complete without Claude's reproducible evidence.
+
+### Current verdict
+**DOCUMENTATION / PRE-PRODUCTION — GEOMETRY APPROVAL BLOCKED.** The repository still does not evidence a native UEFN project, compiled Verse source, imported binary asset package, editor screenshots, gameplay test results, performance profile or island validation. This statement describes the inspected repository snapshot only; it does not prove that no local project exists outside the repository.
