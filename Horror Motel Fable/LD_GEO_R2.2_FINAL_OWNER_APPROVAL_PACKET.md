@@ -146,7 +146,7 @@ Raccomandazione: mantenere l'aspetto flat con pendenze tecniche nascoste e drena
 ### A-10 — Report di validazione precedente non aggiornato
 **Priorità: RISOLTA in questa revisione documentale.**
 
-La versione precedente di GEOMETRY_VALIDATION_REPORT.md elencava un set di file superato e affermava erroneamente che tutte le righe del ROOM_COORDINATE_REGISTER.csv rispettassero l'header. Il report è stato aggiornato durante questa revisione: ora include i documenti R2.2 effettivamente esaminati, registra la riga COURTYARD malformata e la discrepanza VEST-13, e dichiara che le anomalie bloccano il freeze. Restano da correggere i registri A-01/A-02; non è più necessario aggiornare il report per questo punto.
+La versione precedente di GEOMETRY_VALIDATION_REPORT.md elencava un set di file superato e riportava un controllo schema non più attuale. Il report è stato aggiornato durante questa revisione: ora include i documenti R2.2 effettivamente esaminati, conferma la riga COURTYARD corretta a 16 campi, registra la discrepanza VEST-13 e dichiara che le anomalie residue bloccano il freeze. Non è necessaria un'ulteriore modifica al report per questo punto.
 
 ### A-11 — Fit-out interno camere escluso
 **Priorità: NON BLOCCANTE per l'envelope; BLOCCANTE per un freeze completo degli interni.**
