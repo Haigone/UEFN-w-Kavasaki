@@ -1,0 +1,22 @@
+Light_ID,Area,X_m,Y_m,Z_m,Yaw_deg,Type,Color_Intent,Intensity_Target,Radius_m,Shadow,Trigger,Audio_ID,Status
+L_EXT_PARK_01,Parking,25,12,3.5,0,Point,Cold blue,3000K visual ref,12,Yes,Always,SFX_RAIN,EDITOR-TEST REQUIRED
+L_EXT_PARK_02,Parking,59,12,3.5,0,Point,Cold blue,3000K visual ref,12,Yes,Always,SFX_RAIN,EDITOR-TEST REQUIRED
+L_COURTYARD_01,Courtyard,25,43,3.5,0,Point,Cold blue,3200K visual ref,10,Yes,Always,SFX_NEON,EDITOR-TEST REQUIRED
+L_COURTYARD_02,Courtyard,59,43,3.5,0,Point,Cold blue,3200K visual ref,10,Yes,Always,SFX_NEON,EDITOR-TEST REQUIRED
+L_RECEPTION_MAIN,Reception,29,54,2.8,0,Area,Dirty warm amber,2900K visual ref,8,No,Always,SFX_FLUORESCENT,EDITOR-TEST REQUIRED
+L_CORRIDOR_W,WestCorridor,9.5,33,2.7,0,Point,Dirty amber,2700K visual ref,7,No,Always,SFX_FLUORESCENT,EDITOR-TEST REQUIRED
+L_CORRIDOR_E,EastCorridor,74.5,33,2.7,0,Point,Dirty amber,2700K visual ref,7,No,Always,SFX_FLUORESCENT,EDITOR-TEST REQUIRED
+L_ROOM13_RED,ROOM13,56,55,5.8,0,Point,Dark red,2400K visual ref,5,Yes,OnEntry,SFX_ROOM13_DRONE,EDITOR-TEST REQUIRED
+L_ESCAPE_RED,FinalEscape,42,18,2.5,0,Point,Emergency red,Red accent,9,Yes,OnFinalSequence,SFX_CHASE_STINGER,EDITOR-TEST REQUIRED
+L_NEON_SIGN,Sign,42,15,2.2,0,Emissive,Red/blue emissive,Material emission,4,No,02:13,SFX_NEON,EDITOR-TEST REQUIRED
+
+Audio_ID,Area,X_m,Y_m,Z_m,Audio_Type,Loop,Attenuation_Radius_m,Trigger,Subtitle_Required,Status
+SFX_RAIN,Exterior,42,30,3,Ambience,Yes,35,LevelStart,No,EDITOR-TEST REQUIRED
+SFX_NEON,NeonSign,42,15,2.2,Loop,Yes,12,SignPowered,No,EDITOR-TEST REQUIRED
+SFX_FLUORESCENT,Interior,42,54,2.7,Hum,Yes,8,Always,No,EDITOR-TEST REQUIRED
+SFX_PHONE,Reception,31,54,1.1,OneShot,No,10,RegisterPuzzle,Yes,EDITOR-TEST REQUIRED
+SFX_CRT,ROOM01,15,24,1.2,Static,Yes,4,TVScare,No,EDITOR-TEST REQUIRED
+SFX_ROOM13_DRONE,ROOM13,56,55,4.8,Ambience,Yes,7,OnEntry,No,EDITOR-TEST REQUIRED
+SFX_CHASE_STINGER,FinalEscape,42,18,2,Stinger,No,18,ChaseStart,No,EDITOR-TEST REQUIRED
+SFX_GUEST_FOOTSTEPS,GuestDynamic,Dynamic,Dynamic,Dynamic,Footsteps,No,12,NPCMovement,No,ENGINE-VERIFIED REQUIRED
+SFX_GUEST_BREATH,GuestDynamic,Dynamic,Dynamic,Dynamic,Breath,Yes,5,NearPlayer,No,ENGINE-VERIFIED REQUIRED
