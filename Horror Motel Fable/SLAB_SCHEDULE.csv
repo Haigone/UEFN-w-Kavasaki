@@ -1,0 +1,5 @@
+Slab_ID,Level,Polygon_ID,Polygon_Vertices_XY_m,Underside_Z_m,Top_Z_m,Thickness_m,Collision,Status,Notes
+GF-SLAB,Ground,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",-0.20,0.00,0.20,Walkable,PROPOSED CORRECTION,Single U-shaped polygon; thickness 0.20 m inherited from EBD and requires owner approval
+UF-SLAB,Upper,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",3.35,3.60,0.25,Walkable,PROPOSED CORRECTION,Single U-shaped polygon; courtyard excluded
+ROOF-SLAB,Roof,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",6.40,6.65,0.25,Solid,PROPOSED CORRECTION,Flat roof over U footprint only; courtyard remains open to sky
+COURTYARD-VOID,Void,COURTYARD,"20 18;64 18;64 48;20 48",NA,NA,0,No collision,FIXED REQUIREMENT,No upper slab or roof over courtyard
