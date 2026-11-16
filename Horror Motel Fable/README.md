@@ -12,6 +12,7 @@
 4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21, co-op ending rule END-A01 and delegated narrative approvals NCP-A01–A09 / END-A02.
 5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
 6. [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md) — current ordered execution instructions, canonical decisions, gates, fallbacks and required return package.
+7. [CLAUDE_START_HERE_PROMPT_R3.md](CLAUDE_START_HERE_PROMPT_R3.md) — paste-ready autonomous implementation prompt for Claude Code/Claude with native UEFN access.
 7. [CLAUDE_AUTONOMOUS_EXECUTION_ADDENDUM_R1.md](CLAUDE_AUTONOMOUS_EXECUTION_ADDENDUM_R1.md) — autonomous batch execution, decision rules and missing THE GUEST model/rig/animation production path.
 8. [R3_CURRENT_STATUS_AND_REMAINING_WORK.md](R3_CURRENT_STATUS_AND_REMAINING_WORK.md) — canonical current counts, approved decisions, status boundaries and dependency-ordered remaining work.
 9. [tools/validate_r3_repository.py](tools/validate_r3_repository.py) — repeatable standard-library CSV/reference integrity check; does not validate UEFN runtime.
