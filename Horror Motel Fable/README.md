@@ -9,6 +9,7 @@ Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla re
 4. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
 5. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura obbligatoria per produrre la planimetria esecutiva corretta.
 6. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità di produzione.
+7. [EXECUTIVE_BUILD_DOSSIER.md](EXECUTIVE_BUILD_DOSSIER.md) — specifiche dimensionali di sito e stanze, arredi con ingombri, posizionamenti, sezioni, planimetrie da produrre e scheda tecnica 3D di THE GUEST.
 
 ## Vincoli non negoziabili
 - Prodotto finale: isola Fortnite reale, costruita in Unreal Editor for Fortnite (UEFN).
