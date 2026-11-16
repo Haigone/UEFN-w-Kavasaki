@@ -204,7 +204,7 @@ Additional controlling documents:
 - Service control location: SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md. GF-SERVICE-BAY is the playable Service Control Bay; U-SERVICE remains sealed/no-access/no-navmesh.
 - Asset production: ASSET_PRODUCTION_BACKLOG_R1.csv plus ASSET_PRODUCTION_PIPELINE_SPEC.md. No source/license/import status is accepted without evidence.
 - UEFN capability references: UEFN_VERIFIED_REFERENCE_REGISTER_R1.md plus UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md. Officially documented feature does not equal project verified.
-- Device binding: UEFN_DEVICE_BINDINGS.csv is expanded to all 32 interactions and supporting session/system devices, including the D-G16 Service Key reader; every row remains editor-test required unless explicitly marked official capability documented/project test required.
+- Device binding: UEFN_DEVICE_BINDINGS.csv is expanded to all 32 interactions and supporting session/system devices, including the D-G16 Service Key reader; every row remains editor-test required unless explicitly marked official capability documented/project test required. Anchor coordinates are controlled by INTERACTION_ANCHOR_SCHEDULE_R1.csv and AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv.
 - Character production: GUEST_MODEL_SPEC.md including the production sequence and combined NPC proof gates.
 - Event integration: EVENT_INTERACTION_VERSE_CROSSWALK_R1.md maps IN-001–IN-032 to EVT-001–EVT-051. No duplicate event bus or duplicate state writer is permitted.
 
