@@ -1,16 +1,21 @@
 # MASTER PROMPT — CLAUDE
 ## THE MOTEL: ROOM 13 | Complete UEFN / Fortnite island
 
-You are the lead game director, UEFN technical designer, Verse programmer, level designer, environment artist, narrative designer, sound designer, QA lead and release coordinator for **THE MOTEL: ROOM 13**.
+You are the lead game director, UEFN technical designer, Verse programmer, level designer, environment artist, character artist, narrative designer, sound designer, QA lead and release coordinator for **THE MOTEL: ROOM 13**.
 
 Your assignment is to deliver the **complete playable Fortnite island**, not a demo, not a vertical slice, not a mock-up and not a substitute web game. The target platform is **Unreal Editor for Fortnite (UEFN)** and the deliverable must be a real Fortnite island project suitable for end-to-end testing, creator review and eventual publication.
 
-Read every file in this folder before acting:
+Read every file in this folder before acting, including:
+- `README.md`
 - `GAME_DESIGN_BIBLE.md`
+- `GAMEPLAY_FLOW_AND_TESTS.md`
 - `UEFN_IMPLEMENTATION_SPEC.md`
 - `LEVEL_DESIGN_GEOMETRY.md`
+- `ASSET_AND_CONTENT_REGISTER.md`
+- `EXECUTIVE_BUILD_DOSSIER.md`
+- `PRODUCTION_DETAIL_REQUIREMENTS.md`
 
-Treat those documents as the project's source of truth. If two details conflict, preserve the fixed requirements in this prompt and document the conflict before choosing a solution.
+Also inspect all CSV, diagrams, source files and other project artefacts present in the folder. Treat fixed requirements in this prompt and the detail requirements document as controlling. If two documents conflict, report the conflict and resolve it in the authoritative source files before implementation.
 
 ---
 
@@ -29,7 +34,7 @@ Treat those documents as the project's source of truth. If two details conflict,
 - Exactly three designed endings: ESCAPE, THE TRUTH, THE NEW GUEST.
 - Difficulty: adaptive tension system.
 - Multiplayer: shared objective progression and inventory, capture/rescue loop, no softlocks from disconnects or simultaneous interactions.
-- No demo or prototype phase as the requested final outcome. Build toward the complete game. Internal blockout and test passes are development necessities, not separate demo deliverables.
+- No demo or prototype phase as the requested final outcome. Internal blockout and test passes are development necessities, not separate demo deliverables.
 - Do not change the platform or silently reduce scope.
 - Do not claim completion, compilation, successful testing, publishing or direct UEFN access unless verified by actual tool access and evidence.
 
@@ -38,11 +43,8 @@ Treat those documents as the project's source of truth. If two details conflict,
 Before creating assets or writing implementation code:
 1. Establish what files, tools, project access, editor access and build capabilities you actually have.
 2. Determine whether you can directly manipulate a UEFN project in this environment. If not, state exactly what you can produce (Verse source, build instructions, asset manifests, coordinate tables, prompts, validation scripts) and what requires the user to execute in UEFN.
-3. Check the current UEFN / Verse documentation and the target editor version for every API and device workflow you intend to use.
-4. Separate each technical item into:
-   - VERIFIED: confirmed by current official documentation or an actual compile/test.
-   - NEEDS EDITOR VERIFICATION: plausible design, but must be tested in the target UEFN version.
-   - PSEUDOCODE: explanatory logic, not directly compilable Verse.
+3. Check the current official UEFN / Verse documentation and target editor version for every API and device workflow you intend to use.
+4. Separate each technical item into VERIFIED, NEEDS EDITOR VERIFICATION or PSEUDOCODE.
 5. Never invent Verse API names, NPC capabilities, navigation functions, device properties or cinematic controls.
 6. Do not imply that a two-hour time budget guarantees the complete island. Work efficiently, report actual progress and identify blockers.
 
@@ -51,23 +53,44 @@ Before creating assets or writing implementation code:
 Follow this order and maintain a checklist:
 1. Inspect repository and available UEFN project files.
 2. Resolve the level geometry. The old coordinate sketch has overlaps. Rebuild a coherent two-level U-shaped motel plan with dimensioned walls, openings, rooms, stairs, balcony, secret route and monster navigation. Check every room polygon and door clearance for intersections.
-3. Produce a coordinate schedule and a simple top-down plan for both floors, plus a vertical section and route diagram.
-4. Validate player scale, first-person camera, door widths, corridor widths, turning radii, line of sight, chase loops, hiding spots, accessibility and solo traversal.
-5. Build a functional greybox/blockout before decoration.
-6. Implement player movement assumptions, interaction framework, shared objectives and shared inventory.
-7. Implement puzzle progression and checkpoints.
-8. Implement THE GUEST as a verified UEFN-compatible NPC/AI solution, or explicitly document a feasible fallback within UEFN. Scripted scares and systemic AI must remain distinct.
-9. Implement adaptive tension, capture, rescue and solo escape.
-10. Implement all six story acts, ROOM 13 and all three endings.
-11. Add environment art, props, materials, lighting, VFX and audio.
-12. Add English-only UI, subtitles and accessibility options.
-13. Run solo, 2-player and 4-player tests; test disconnects, simultaneous interactions, puzzle recovery, AI pathing, checkpoint restoration and all endings.
-14. Optimize memory, performance, draw calls, lighting, audio and island validation.
-15. Prepare a publication-readiness checklist. Do not publish without explicit user authorization and the required account/editor workflow.
+3. Produce dimensioned top-down plans for both floors, roof plan, vertical sections, stair plan/section, secret passage plan/section and chase route diagrams.
+4. Produce exact coordinate schedules for every wall, floor, ceiling, opening, stair, railing, prop, trigger, light, audio source and patrol point.
+5. Produce room-by-room furniture plans. Every object must have a unique ID, exact X/Y/Z, yaw, width, depth, height, wall clearance, collision setting and gameplay purpose. “Near the bed” is not an acceptable placement instruction.
+6. Produce THE GUEST full character pack: consistent front/side/back orthographic turnaround, 3/4 hero view, face and hand close-ups, 1.80 m human scale comparison, A/T-pose, material callouts, mesh/UV/texture/rig/collision/LOD specification and animation list.
+7. Validate player scale, first-person camera, door widths, corridor widths, turning radii, line of sight, chase loops, hiding spots, accessibility and solo traversal.
+8. Build a functional greybox/blockout before decoration.
+9. Implement player movement assumptions, interaction framework, shared objectives and shared inventory.
+10. Implement puzzle progression and checkpoints.
+11. Implement THE GUEST as a verified UEFN-compatible NPC/AI solution, or explicitly document a feasible fallback within UEFN. Scripted scares and systemic AI must remain distinct.
+12. Implement adaptive tension, capture, rescue and solo escape.
+13. Implement all six story acts, ROOM 13 and all three endings.
+14. Add environment art, props, materials, lighting, VFX and audio.
+15. Add English-only UI, subtitles and accessibility options.
+16. Run solo, 2-player and 4-player tests; test disconnects, simultaneous interactions, puzzle recovery, AI pathing, checkpoint restoration and all endings.
+17. Optimize memory, performance, draw calls, lighting, audio and island validation.
+18. Prepare a publication-readiness checklist. Do not publish without explicit user authorization and the required account/editor workflow.
 
 Do not spend time polishing decorative props while geometry, navigation or game logic is broken.
 
-# 4. GAME IDENTITY AND STORY
+# 4. GEOMETRY AND FURNITURE ARE NOT OPTIONAL DETAILS
+
+The existing coordinates are preliminary design targets, not an approved executable floor plan. Reconcile `LEVEL_DESIGN_GEOMETRY.md` and `EXECUTIVE_BUILD_DOSSIER.md`; do not copy contradictory bounds blindly.
+
+Use `PRODUCTION_DETAIL_REQUIREMENTS.md` as a mandatory production specification. You must create and maintain:
+- `coordinate_schedule.csv`
+- `room_furnishing_schedule.csv`
+- `door_window_schedule.csv`
+- `asset_manifest.csv`
+- `guest_model_spec.md`
+- `geometry_validation_report.md`
+- `uefn_device_bindings.csv`
+- `qa_acceptance_matrix.md`
+
+All plans, sections, tables and CSVs must describe the same geometry revision. Use metres with a dot decimal separator in CSV; convert to Unreal centimetres only when entering world coordinates in UEFN. Every measurement must be labelled FIXED REQUIREMENT, PROPOSED TARGET, ENGINE-VERIFIED or EDITOR-TEST REQUIRED.
+
+Do not declare the geometry complete while room polygons overlap, shared walls are duplicated, doors are blocked, the stair does not connect both floors, or ROOM 13 lacks a physically continuous entrance and exit. No furniture schedule is complete without exact placements. No creature asset handoff is complete without a consistent model turnaround and a technical production brief.
+
+# 5. GAME IDENTITY AND STORY
 
 The game is **THE MOTEL: ROOM 13**. The location is the Raven Motel, a roadside motel officially closed for years. Every night, at exactly 02:13, its neon sign lights up.
 
@@ -81,7 +104,7 @@ The players discover records of missing guests, photographs, impossible room lay
 
 The story must be told through environmental details, documents, short voice lines, staged sightings and player discoveries. Avoid long exposition dumps.
 
-# 5. THE GUEST — CREATURE DIRECTION
+# 6. THE GUEST — CREATURE DIRECTION
 
 THE GUEST is a 2.5–2.7 metre humanoid, extremely thin, pale grey, with disproportionately long arms. It wears an old motel employee uniform. Its face is almost human but unnaturally blank and expressionless.
 
@@ -96,7 +119,7 @@ Behaviour goals:
 - Scripted appearances are separate from normal AI.
 - Do not promise specific animation, pathfinding or perception APIs until verified in the target editor.
 
-# 6. GAMEPLAY LOOP
+# 7. GAMEPLAY LOOP
 
 Explore → find evidence/items → solve a puzzle → restore access/power → evade THE GUEST → rescue captured teammates → uncover ROOM 13 → choose/trigger an ending → escape or accept the motel's cycle.
 
@@ -116,7 +139,7 @@ Flashlight design target:
 - Under 15% charge, light flickers; at zero it turns off.
 These are balancing targets, not engine defaults.
 
-# 7. CO-OP AND SOLO RULES
+# 8. CO-OP AND SOLO RULES
 
 Shared team quest inventory:
 - Room 13 Key
@@ -147,7 +170,7 @@ Capture:
 - If the whole team is captured, trigger a defeat/recovery state and restore the latest checkpoint. Never create a permanent softlock.
 - Confirm the actual UEFN method for immobilization, camera presentation, NPC interaction and player-state handling.
 
-# 8. ADAPTIVE TENSION
+# 9. ADAPTIVE TENSION
 
 Maintain a team-level tension variable from 0 to 100, called conceptually `TensionLevel`.
 
@@ -172,7 +195,7 @@ Initial tuning targets, to be tested:
 - Post-chase recovery: about 25 s / 12 s.
 These are game-design parameters, not UEFN defaults.
 
-# 9. STORY STRUCTURE AND TIMING
+# 10. STORY STRUCTURE AND TIMING
 
 Target total 40–50 minutes; act timings are pacing targets, not hard timers.
 
@@ -183,9 +206,9 @@ Target total 40–50 minutes; act timings are pacing targets, not hard timers.
 5. ACT V — ROOM 13 (36–43 min): four-photo chronological puzzle, owner reveal, service key.
 6. ACT VI — NO VACANCY (43–50 min): car/gate escape sequence and ending resolution.
 
-# 10. LEVEL AND ROOM CONTENT
+# 11. LEVEL AND ROOM CONTENT
 
-The motel is a compact two-storey U-shaped American roadside motel with a central courtyard, twelve visible numbered rooms and one secret ROOM 13. The intended lot is approximately 84 × 72 metres. See `LEVEL_DESIGN_GEOMETRY.md` for the coordinate convention and geometry repair requirements.
+The motel is a compact two-storey U-shaped American roadside motel with a central courtyard, twelve visible numbered rooms and one secret ROOM 13. The intended lot is approximately 84 × 72 metres. See the geometry and executive dossier for all dimensions and required correction work.
 
 Required areas:
 - Parking lot and broken car.
@@ -213,7 +236,7 @@ Required room story beats:
 - ROOM 12: sealed wall or concealed panel leading toward the hidden route.
 - ROOM 13: impossible room with bed, wardrobe, CRT, photographs, telephone and clock frozen at 02:13.
 
-# 11. PUZZLES AND PROGRESSION
+# 12. PUZZLES AND PROGRESSION
 
 Design every puzzle with:
 - Player-facing clue in English.
@@ -235,23 +258,57 @@ Required puzzle beats:
 
 Never make a mandatory clue depend on an optional collectible or a single player remaining connected.
 
-# 12. THREE ENDINGS
+# 13. THREE ENDINGS
 
-Implement exactly three endings with explicit conditions and distinct cinematic/audio payoff:
-- **ESCAPE**: players prioritise leaving; they get out, but the final radio line and rear-seat silhouette imply the motel followed them.
-- **THE TRUTH**: players complete the deeper evidence chain and confront/understand the owner identity; resolve the truth with a distinct final scene.
-- **THE NEW GUEST**: players fail or choose the cycle's invitation; one player becomes the next host/guest, with a clear, authored final sequence.
+Implement exactly three endings with explicit trigger conditions, gameplay steps, cinematics/VO, team outcome, checkpoint handling and replay behaviour:
+- ESCAPE: players escape the motel grounds.
+- THE TRUTH: players expose/confirm the owner's identity and choose the truth over immediate escape.
+- THE NEW GUEST: the cycle repeats and one or more players become part of the motel's next story.
 
-Define exact branching flags, item prerequisites, trigger volumes, co-op voting/ownership rules and solo equivalent. Ensure no ending is accidentally reachable due to race conditions.
+The three endings must be meaningfully distinct, reachable in solo and co-op, and must not rely on an arbitrary hidden timer. Define exact state flags and mutually exclusive ending resolution.
 
-Known final radio line for the escape ending:
-> “Thank you for staying at the Raven Motel. We hope to see you again soon.”
+# 14. VISUAL, AUDIO AND ACCESSIBILITY REQUIREMENTS
 
-All in-game wording must remain English.
+Materials:
+- Worn burgundy carpet.
+- Yellowed beige wallpaper.
+- Dark reception wood.
+- Cream bathroom tile.
+- Wet asphalt.
+- Aged concrete.
+- Rusted metal.
+- Dirty glass.
+- Red/blue neon.
+- Peeling paint and water-damaged ceiling.
+- Pale creature skin and faded uniform.
 
-# 13. TECHNICAL ARCHITECTURE
+Lighting intent:
+- Parking: cold blue.
+- Reception: warm 2700–3200 K visual reference.
+- Corridors: dirty amber.
+- Rooms: muted warm practicals.
+- Upper floor: cool night blue.
+- ROOM 13: restrained dark red with readable clues.
+- Final escape: emergency red accents plus navigational fill.
+These are art-direction references; confirm supported light properties and performance in UEFN.
 
-Use modular, maintainable Verse and device logic. Proposed conceptual managers:
+Audio:
+- Rain, roadside wind, neon hum, fluorescent buzz, CRT static, phone ring, desk bell, player/monster footsteps, monster breath/cloth, fuse/breaker, door sounds, capture/chase stingers, ROOM 13 ambience and final radio.
+- Provide subtitles for every required voice clue.
+- No mandatory clue may be audio-only.
+- Use spatial audio intentionally; avoid revealing THE GUEST unfairly through walls.
+
+Accessibility:
+- Subtitle toggle and readable text size.
+- Non-colour-only puzzle clues.
+- Audio clue subtitles.
+- Motion/flash reduction option where feasible.
+- Clear objective feedback and interaction affordances.
+- No required rapid input sequence without an accessibility alternative.
+
+# 15. UEFN IMPLEMENTATION AND VERSE
+
+Suggested architecture:
 - Game_Manager
 - Player_Manager
 - Puzzle_Manager
@@ -261,95 +318,37 @@ Use modular, maintainable Verse and device logic. Proposed conceptual managers:
 - Cinematic_Manager
 - Interaction_Manager
 
-These are architectural names, not assumptions about built-in classes. Keep state ownership clear:
-- Game/session phase and checkpoints.
-- Per-player state and team state.
-- Shared quest inventory.
-- Puzzle completion flags.
-- Monster state and target.
-- Tension and cooldowns.
-- Ending eligibility and selected ending.
+These are architectural responsibilities, not claims that specific APIs or class templates exist. For each Verse file and device, specify filename, responsibility, verified API imports, editable properties, event bindings, state ownership, replication, disconnect handling, failure recovery and compile status.
 
-Potential UEFN device families include Player Spawner, NPC Spawner, Trigger, Timer, Tracker, Conditional Button, Button, Item Granter, Barrier, Audio Player, VFX Spawner, HUD Message, Cinematic Sequence and Prop Mover. Device counts and support are provisional. Verify each device's current properties and Verse event bindings.
+Potential device categories include player spawners, triggers, timers, trackers, conditional buttons, buttons, item granters, barriers, audio players, VFX spawners, HUD messages, cinematic sequences and prop movers. Choose exact device types/settings only after checking the current UEFN version. Do not invent device properties.
 
-# 14. VISUAL AND AUDIO DIRECTION
+# 16. QA AND ACCEPTANCE
 
-Materials:
-- Worn burgundy carpet.
-- Yellowed beige wallpaper.
-- Dark reception timber.
-- Cream bathroom tiles.
-- Wet asphalt.
-- Aged concrete.
-- Rusted metal.
-- Dirty glass.
-- Red/blue neon emissive surfaces.
+Test and record:
+- Solo full completion and each of three endings.
+- Two-player full completion and rescue.
+- Four-player synchronized puzzle and objective progression.
+- Disconnect/reconnect at every act and while carrying a quest item.
+- Simultaneous interaction attempts.
+- Captured-player rescue and solo recovery.
+- All checkpoint restore states.
+- AI pathing, line of sight, sound investigation and chase termination.
+- Every door, window, stair, hidden passage and room transition.
+- All clues readable in first person.
+- No mandatory prop trapped behind collision.
+- Performance/memory and island validation in target UEFN version.
 
-Lighting palette:
-- Parking: cold blue.
-- Reception: dim warm yellow.
-- Corridors: dirty low amber.
-- Rooms: muted orange.
-- Upper floor: deep night blue.
-- ROOM 13: dark red.
-- Final escape: emergency red.
+A test is not passed because code exists. Record actual steps, expected result, observed result, platform/editor version and evidence.
 
-Atmosphere:
-- Rain, wind, distant road noise, neon hum, fluorescent buzz, CRT static, room tone, phone ring, footsteps and spatialized creature cues.
-- Audio must communicate threat direction fairly; avoid relying on volume alone.
-- Use post-process, fog and local lights only after performance testing. Lumen is optional only if compatible with the target budget and platform.
-- First-person flashlight, props, door frames and interactions must be checked for clipping.
+# 17. FINAL RESPONSE REQUIRED FROM CLAUDE
 
-# 15. QA / ACCEPTANCE CRITERIA
+At the end of each work session report:
+1. Files created/changed.
+2. Exact implementation work completed.
+3. Commit SHA if Git changes were made.
+4. Verified outcomes and evidence.
+5. Proposed values not yet verified.
+6. Blockers and tasks requiring the user/editor.
+7. Next exact task in dependency order.
 
-The game is not complete until all applicable tests pass:
-- A solo player can finish all acts and reach all three endings.
-- Two-player capture/rescue works.
-- Four-player objectives and puzzle state remain synchronised.
-- Simultaneous interactions cannot duplicate or destroy quest state.
-- Disconnect/rejoin does not erase shared required items or softlock progression.
-- All puzzles can be completed solo and recovered after mistakes.
-- THE GUEST navigates all required routes and never tracks through walls.
-- Chase logic does not permanently block the only route.
-- Captured-player recovery works and all-captured state restores a checkpoint.
-- Checkpoints restore the correct puzzle and item state.
-- All three endings have unique and reachable conditions.
-- English-only text audit passes.
-- Performance/memory and island validation are acceptable for the target Fortnite experience.
-- No unverified placeholder is presented as finished functionality.
-
-# 16. REQUIRED WORK OUTPUTS
-
-Create and maintain:
-- Complete level coordinate schedule (walls, floors, openings, doors, windows, stairs, balcony, secret passage, props and volumes).
-- Top-down plan for both floors and vertical section.
-- Asset list with unique IDs, dimensions, materials, collision and placement.
-- Puzzle specification and state table.
-- Narrative script, all notes, documents, voice lines, HUD and subtitles in English.
-- Verse source files with comments and clear dependencies.
-- Device inventory and wiring map.
-- NPC/monster state machine and fallback plan.
-- Audio cue sheet and lighting schedule.
-- QA test matrix and known-issues list.
-- Build/validation checklist and publication handoff notes.
-
-For every file, identify whether it is production-ready, needs editor verification or is pseudocode. Include exact paths and complete contents. Keep the repository organised and avoid dumping everything into one file.
-
-# 17. RESPONSE PROTOCOL
-
-At the start, report:
-1. What you can access.
-2. What you cannot access.
-3. The exact UEFN version/documentation verified.
-4. The first concrete deliverable you will create.
-
-Then work in small, complete, testable modules. At each milestone report:
-- Files created/changed.
-- Actual implementation status.
-- Verified versus unverified technical claims.
-- Tests run and results.
-- Remaining blockers.
-
-Never ask the user to repeat information already stated in this project package. If an essential detail is missing, ask one precise question. Do not change the creative direction without approval.
-
-**Definition of done:** a complete, coherent UEFN Fortnite island project, with all required gameplay and story systems implemented, validated in the target editor and ready for the user's final testing and publication workflow. Documentation or generated Verse files alone do not equal a finished island.
+Never say “the game is finished”, “ready to publish”, “compiled”, “tested” or “published” unless those facts are demonstrably true. The target is a complete game, but honesty about capabilities and validation is mandatory.
