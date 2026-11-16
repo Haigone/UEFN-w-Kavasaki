@@ -12,7 +12,7 @@
 | NAR-008 | II Room 03 | Cracked mirror / reflection | Uncertain presence | Beat specified | Supporting |
 | NAR-009 | II Room 04 | Telephone recording | Supporting fuse/safety clue | Transcript drafted; not required for fuse progression | Optional supporting evidence |
 | NAR-010 | II Room 05 | Ceiling footsteps | Impossible architecture | Beat specified | Supporting |
-| NAR-011 | II Room 06 | Missing guest photos | Link disappearances to ROOM 13 | Photo identities/dates drafted; flag MissingGuestEvidenceFound | Required for THE_TRUTH only; optional to ESCAPE/core progress |
+| NAR-011 | II Room 06 | Missing guest photos | Link disappearances to ROOM 13 | Photo identities/dates drafted; flag MissingGuestEvidenceFound | Candidate END-A02 evidence; mandatory role pending owner approval; optional to ESCAPE/core progress |
 | NAR-012 | IV Room 09 | Diary | Primary history evidence | Full text drafted; flag DiaryFound | Required for THE_TRUTH only; optional to ESCAPE/core progress |
 | NAR-013 | IV Room 11 | Child's room/drawing | Unease/foreshadowing | Caption drafted; flag ChildRoomClueFound | Required for THE_TRUTH only; optional to ESCAPE/core progress |
 | NAR-014 | IV Room 12 | Concealed panel | Opens secret passage | Screwdriver-opened concealed panel; exact actor/animation remains editor implementation detail | Yes |
