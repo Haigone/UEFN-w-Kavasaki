@@ -1,0 +1,33 @@
+Opening_ID,Floor,Parent_Zone,Wall_Orientation,Center_X_m,Center_Y_m,Sill_Z_m,Clear_Width_m,Clear_Height_m,Rough_Width_m,Rough_Height_m,Swing_or_Operation,Collision_Behaviour,Gameplay_Function,Verification_Status
+D-G01,GF,ROOM-01,West,11.10,23.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Room access,PROPOSED TARGET
+D-G02,GF,ROOM-02,West,11.10,32.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Battery room,PROPOSED TARGET
+D-G03,GF,ROOM-03,West,11.10,41.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Mirror room,PROPOSED TARGET
+D-G04,GF,ROOM-04,East,72.90,23.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Room access,PROPOSED TARGET
+D-G05,GF,ROOM-05,East,72.90,32.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Room access,PROPOSED TARGET
+D-G06,GF,ROOM-06,East,72.90,41.50,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Photo room,PROPOSED TARGET
+D-G07,GF,RECEPTION,South,29,48.30,0,1.60,2.30,1.90,2.45,Double_or_sliding,State-controlled,Main entry,PROPOSED TARGET
+D-G08,GF,OFFICE,West,38,51,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Office,PROPOSED TARGET
+D-G09,GF,STORAGE,West,47.30,51,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Storage,PROPOSED TARGET
+D-G10,GF,ELECTRICAL,West,57.30,51,0,1.00,2.10,1.30,2.25,Outward_or_sliding,Blocks_when_closed,Service access,PROPOSED TARGET
+D-U07,UF,ROOM-07,West,11.10,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room,PROPOSED TARGET
+D-U08,UF,ROOM-08,West,11.10,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room,PROPOSED TARGET
+D-U09,UF,ROOM-09,West,11.10,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Diary room,PROPOSED TARGET
+D-U10,UF,ROOM-10,East,72.90,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room,PROPOSED TARGET
+D-U11,UF,ROOM-11,East,72.90,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Child room,PROPOSED TARGET
+D-U12,UF,ROOM-12,East,72.90,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Secret panel room,PROPOSED TARGET
+D-13A,UF,ROOM-12,North,68.60,47.55,3.60,0.90,2.10,1.20,2.25,Concealed_panel_north,State-controlled,Secret entry,EDITOR-TEST REQUIRED
+D-13B,UF,ROOM-13,South,56.35,50.95,3.60,0.90,2.10,1.20,2.25,Concealed_inward,State-controlled,Secret room entry/exit,EDITOR-TEST REQUIRED
+D-13C,UF,EAST_VESTIBULE,West,64,48.60,3.60,0.90,2.10,1.20,2.25,Open_passage,No collision threshold,Connects to hall,EDITOR-TEST REQUIRED
+W-G01,GF,ROOM-01,West,15.40,20,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-G02,GF,ROOM-02,West,15.40,29,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-G03,GF,ROOM-03,West,15.40,38,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-G04,GF,ROOM-04,East,68.60,20,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-G05,GF,ROOM-05,East,68.60,29,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-G06,GF,ROOM-06,East,68.60,38,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Window,PROPOSED TARGET
+W-U07,UF,ROOM-07,West,15.40,20,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window,PROPOSED TARGET
+W-U08,UF,ROOM-08,West,15.40,29,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window,PROPOSED TARGET
+W-U09,UF,ROOM-09,West,15.40,38,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window,PROPOSED TARGET
+W-U10,UF,ROOM-10,East,68.60,20,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window,PROPOSED TARGET
+W-U11,UF,ROOM-11,East,68.60,29,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window,PROPOSED TARGET
+W-U12,UF,ROOM-12,East,68.60,38,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Upper window; confirm panel separation,EDITOR-TEST REQUIRED
+W-G-RCP,GF,RECEPTION,South,33,48.30,1.00,2.40,1.50,2.60,1.70,Fixed_glazing,Glass collision,Reception window,PROPOSED TARGET
