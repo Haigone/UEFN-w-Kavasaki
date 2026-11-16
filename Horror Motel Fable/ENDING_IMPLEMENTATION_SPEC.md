@@ -2,14 +2,14 @@
 ## THE MOTEL: ROOM 13
 
 ## 1. Canonical flags
-CoreEscapeReady; TruthChainComplete; Room13RevealComplete; ServiceRouteReady; NewGuestAccepted; EndingSelected; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
+FinaleReady; CoreEscapeReady; TruthChainComplete; Room13RevealComplete; ServiceRouteReady; NewGuestAccepted; EndingSelected; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
 
 All flags are session-authoritative. Ending starts as NONE and may be committed exactly once.
 
 ## 2. Eligibility
-**ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. This is available even when optional truth evidence was missed.  
-**THE_TRUTH:** CoreEscapeReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceRouteReady=true, and team explicitly selects truth route.  
-**THE_NEW_GUEST:** NewGuestAccepted=true through explicit invitation interaction and team confirmation. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
+**ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. CoreEscapeReady is committed only after the service gate is powered and CarKeys are used at the vehicle ignition. This is available even when optional truth evidence was missed.  
+**THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects the truth route. It does not require CarKeys or vehicle ignition.  
+**THE_NEW_GUEST:** FinaleReady=true and NewGuestAccepted=true through explicit invitation interaction and team confirmation. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
 ## 3. Truth evidence — END-A02 APPROVED 2026-11-16
 
