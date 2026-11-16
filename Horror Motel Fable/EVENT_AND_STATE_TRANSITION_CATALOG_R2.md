@@ -88,7 +88,8 @@ Never trust a client-supplied success flag. Client input requests a transaction;
 - TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound.
 - FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete.
 - CoreEscapeReady = FinaleReady AND CarKeysObtained AND VehicleIgnitionSucceeded.
-- NewGuestInvitationAvailable = FinaleReady AND InvitationPresented. This is the pre-confirmation option availability predicate.\n- NewGuestAccepted is an EndingManager output set only after every currently connected eligible player explicitly accepts; it is not an input to eligibility.
+- NewGuestInvitationAvailable = FinaleReady AND InvitationPresented. This is the pre-confirmation option availability predicate.
+- NewGuestAccepted is an EndingManager output set only after every currently connected eligible player explicitly accepts; it is not an input to eligibility.
 - EndingEligibility:
   - ESCAPE: CoreEscapeReady.
   - THE_TRUTH: FinaleReady AND TruthChainComplete.
