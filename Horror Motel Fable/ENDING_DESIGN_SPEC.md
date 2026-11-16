@@ -26,7 +26,7 @@ Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePo
 The ending resolver is an eligibility filter plus one team-choice transaction, not an automatic priority list.
 
 1. If EndingSelected is not NONE, reject all new triggers.
-2. Open one session-wide ending selector only when FinaleReady is true. Show only currently eligible choices.
+2. Open one session-wide ending selector when FinaleReady is true. Show only currently eligible choices. If ESCAPE is not eligible yet, omit it; players may close the selector, collect CarKeys, complete ignition and reopen the selector.
 3. Each connected eligible player may cast one explicit choice in the active round.
 4. ESCAPE and THE_TRUTH resolve on strict majority. THE_NEW_GUEST is a separate explicit confirmation requiring unanimous affirmative consent; a decline or timeout does not commit it.
 5. Apply END-A01 tie/timeout/disconnect rules exactly. If ESCAPE is eligible, tie/timeout selects ESCAPE; otherwise keep the selector active for a new round.
