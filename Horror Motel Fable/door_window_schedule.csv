@@ -46,3 +46,7 @@ P-U-W-CROSS-01,UF,WEST-UPPER-CROSS-BAY-01,17.075,28.00,3.60,1.50,2.40,East,East 
 P-U-W-CROSS-02,UF,WEST-UPPER-CROSS-BAY-02,17.075,37.00,3.60,1.50,2.40,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
 P-U-E-CROSS-01,UF,EAST-UPPER-CROSS-BAY-01,66.925,28.00,3.60,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
 P-U-E-CROSS-02,UF,EAST-UPPER-CROSS-BAY-02,66.925,37.00,3.60,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-W-LINK-01,GF,WEST-CROSS-BAY-01,10.95,28.00,0.00,1.50,2.40,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-W-LINK-02,GF,WEST-CROSS-BAY-02,10.95,37.00,0.00,1.50,2.40,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-E-LINK-01,GF,EAST-CROSS-BAY-01,73.05,28.00,0.00,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-E-LINK-02,GF,EAST-CROSS-BAY-02,73.05,37.00,0.00,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
