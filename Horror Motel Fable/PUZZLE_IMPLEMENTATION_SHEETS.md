@@ -79,3 +79,11 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 - On disconnect/timeout, release puzzle lock and return IN_PROGRESS to AVAILABLE unless a committed substep is explicitly checkpointed.
 - Never infer success from visual prop position alone; commit authoritative flags.
 - Keep puzzle inputs protected from monster capture during the short interaction transaction.
+
+
+## PZ-06 — NIGHT AUDIT (THE_TRUTH ending interaction)
+**Availability:** only after IN-020 has atomically committed Ending=THE_TRUTH. This is an ending beat, not a puzzle and not an ending selector.
+**Player action:** enter the service control room, inspect the automatically displayed ROOM 13 evidence rail, then hold the dedicated NIGHT AUDIT — END CYCLE breaker for 2 seconds through IN-032.
+**Success:** NightAuditActivated=true exactly once; run the approved room-by-room blackout, 02:13 neon hold, register print “NO VACANCY. NO OWNER. NO GUEST.” and THE TRUTH title card.
+**No extra requirements:** no car keys, vehicle ignition, chase, extra inventory item or second photo puzzle. The four photos are mirrored to the rail in solved order; the original ROOM 13 board remains intact.
+**Fallback:** if the breaker actor is missing, use the service-control proxy to invoke the same one-shot event. If presentation fails, preserve Ending=THE_TRUTH and NightAuditActivated, then show the approved fallback title card.
