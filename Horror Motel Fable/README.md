@@ -49,6 +49,7 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 - [ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv](ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv) — 94 per-asset source, license, commercial-use and UEFN publishing-rights evidence rows.
 - [asset_manifest.csv](asset_manifest.csv) and [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv) — synchronized 94-asset master inventory.
 - [ROOM_INTERIOR_FITOUT_SPEC_R1.md](ROOM_INTERIOR_FITOUT_SPEC_R1.md) — room-by-room fit-out rules and clearances; no structural geometry changes.
+- [SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md](SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md) — exact service control location, D-G16 access and IN-018/IN-032 console anchors.
 - [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md), [asset_manifest.csv](asset_manifest.csv), [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv).
 - [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) are the current separate registers; [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv), [AUDIO_MIX_POLICY.md](AUDIO_MIX_POLICY.md), [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv) and [LIGHTING_STATE_SPEC.md](LIGHTING_STATE_SPEC.md) define event triggers, mix and readability behaviour; the old combined lighting/audio schedule is historical.
 - [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv) is the current stable English copy baseline for objectives, prompts, feedback and subtitles.
