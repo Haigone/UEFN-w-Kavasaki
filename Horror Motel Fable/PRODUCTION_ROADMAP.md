@@ -132,3 +132,7 @@ GitHub currently reports the PR as technically mergeable, but it remains OPEN/DR
 
 ### Final PR status correction
 Latest live metadata returned `mergeable=false`; compare was 49 ahead / 100 behind main. An earlier check briefly returned true, so recheck the flag before any integration attempt. The art package remains blocked on R2.1 reauthoring, data repair, placement validation and review.
+
+
+### Latest art placement delta
+The latest PR revision blocks six west wardrobes with blank coordinates, but three upper-east wardrobes remain outside R2.1 room bounds and the secret panel remains 1.35 m offset from D-13A. The asset register now has 120 rows (PR description says 119). PR branch is 52 ahead / 106 behind, draft and latest mergeable=false. Continue to block intake pending R2.1 reauthoring and validation.
