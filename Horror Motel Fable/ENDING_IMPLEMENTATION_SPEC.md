@@ -14,8 +14,16 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 ## 3. Truth evidence
 TruthChainComplete is true only when all required truth evidence flags are true: DiaryFound; ChildRoomClueFound; MissingGuestEvidenceFound (Room 06); SecretPanelOpened; PhotoSequenceSolved; OwnerIdentityRevealed. Optional lore notes are excluded. If any of these are not authored as mandatory in the final level, remove them from the gate and update all documents before implementation; do not silently make a missable pickup mandatory.
 
-## 4. Co-op choice
-Ending selection is team-wide. Present eligible options and require majority vote. If tie/no response by decision timeout, default to ESCAPE (safe deterministic branch). THE_NEW_GUEST requires explicit majority acceptance; no random player selection. Solo choice is direct.
+## 4. Co-op choice — OWNER APPROVED 2026-11-16
+Ending selection is team-wide. Present only eligible options.
+- ESCAPE and THE_TRUTH: strict majority of currently connected eligible players.
+- THE_NEW_GUEST: unanimous explicit affirmative confirmation from every currently connected eligible player. Never infer acceptance; no random player selection.
+- Tie or timeout for ESCAPE/THE_TRUTH: choose ESCAPE only if ESCAPE is eligible; otherwise keep the choice active and permit a new vote. Never silently choose THE_TRUTH.
+- Disconnect during ESCAPE/THE_TRUTH vote: remove disconnected voter from active electorate and recalculate majority.
+- Disconnect during THE_NEW_GUEST confirmation: remove the disconnected player and re-prompt/reconfirm unanimity with all remaining connected eligible players. Disconnect is not consent.
+- Solo choice is direct.
+
+The active electorate is the set of currently connected eligible players when the vote/prompt is evaluated; update it on disconnect before resolving. Commit only after the applicable quorum is satisfied.
 
 ## 5. Atomic selection
 GameManager validates eligibility; acquire ending lock; if Ending==NONE set Ending and EndingSelected; disable all other ending triggers; broadcast one branch event. Repeated trigger calls return existing ending without replay.
@@ -34,11 +42,6 @@ All three endings solo; all three in co-op; truth evidence incomplete; acceptanc
 
 ## 9. Owner approval gate — co-op quorum and truth evidence
 
-**HARD STOP:** Section 4's majority-vote rule conflicts with ENDING_DESIGN_SPEC.md, which proposes unanimous confirmation for THE NEW GUEST and leaves the quorum for other endings for approval. Neither rule is silently canonical until the project owner decides END-A01 in `OWNER_DECISION_GATE_R2.2.md`.
-
-Until END-A01 is approved:
-- Solo ending selection may be implemented from the eligibility/atomic-commit rules.
-- Co-op may expose eligible choices for design review, but Claude must not implement the vote/quorum resolver, timeout default or disconnect recalculation as final behaviour.
-- Do not treat majority or unanimity as approved merely because one document currently contains it.
+**END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver, including timeout/tie and disconnect handling, after validating it against the current UEFN/Verse API. Keep END-A02 as a hard stop for mandatory truth-evidence gating.
 
 **Truth evidence gate:** The six flags in Section 3 remain a proposed mandatory list until the owner approves END-A02. Do not make a clue mandatory unless its placement, readability, fallback and progression role are confirmed in the approved narrative pack.
