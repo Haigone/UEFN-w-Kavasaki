@@ -96,7 +96,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - All 51 opening Wall_ID values resolve to an existing wall. All 51 opening centres lie on the centre-line of their host wall; every clear opening span fits within its host wall segment and its vertical extent stays within the wall's Z range. All 51 wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
 
-Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps.
+Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps. The section graphic's lower slab label was corrected from roof slab to ground slab (0.20 m), and the roof slab (0.25 m) is now labelled at the upper roof datum.
 
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
