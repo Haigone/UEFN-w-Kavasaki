@@ -112,7 +112,11 @@ References and implementation consequences are recorded in UEFN_VERIFIED_REFEREN
 | P0 final | Performance/memory/island validation | Target platform reports and validation output |
 | P0 final | Publication | Explicit owner authorization after all gates pass |
 
-## 8. Current conclusion
+## 8. Additional R3 location resolution — Service Control Bay
+
+A location ambiguity was resolved after the static CSV audit. The player-accessible Service Control Room is the existing ground-floor GF-SERVICE-BAY (X 47.30–57.00 m, Y 53.85–59.70 m), entered from Storage through D-G16 using the reusable Service Key. The two finale controls are anchored inside this existing envelope. U-SERVICE remains sealed/no-access/no-navmesh and must never receive gameplay actors or player spawns. Exact anchors and access behavior are in SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md. No structural geometry changed.
+
+## 9. Current conclusion
 
 **Documentation and static cross-register coverage are materially complete for this pass.** The repository now has a canonical R3 execution brief, expanded asset backlog and rights register, room fit-out rules, official UEFN reference register, expanded device bindings and an explicit static integrity report.
 
