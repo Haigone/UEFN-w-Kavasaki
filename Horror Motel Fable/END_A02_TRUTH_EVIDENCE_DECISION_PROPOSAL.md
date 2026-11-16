@@ -1,9 +1,9 @@
 # END-A02 — THE TRUTH EVIDENCE GATE
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **APPROVED DESIGN DECISION — 2026-11-16**
+Status: **RECOMMENDATION FOR OWNER DECISION — NOT APPROVED**
 
-## 1. Approved decision
+## 1. Recommended decision
 
 Approve the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete`:
 
@@ -67,4 +67,4 @@ This file is a recommendation only. It does not approve the three clues, the dra
 - Do not treat the six-flag list in `ENDING_IMPLEMENTATION_SPEC.md` as owner-approved.
 - Claude may validate clue placement/accessibility and report findings without changing the ending gate.
 
-Owner decision: **APPROVED — 2026-11-16**.
+Owner decision: **PENDING**. The authoritative approval record is OWNER_DECISION_GATE_R2.2.md; it currently records END-A02 as not approved.
