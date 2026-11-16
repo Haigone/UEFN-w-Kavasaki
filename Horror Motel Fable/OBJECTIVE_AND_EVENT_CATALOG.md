@@ -39,7 +39,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | OBJ-04-POWER | III | RESTORE THE POWER | Find three fuses, install them in matching sockets and activate the breaker | FuseAFound AND FuseBFound AND FuseCFound AND FuseAInstalled AND FuseBInstalled AND FuseCInstalled AND PowerRestored | OBJ-05-SECOND-FLOOR |
 | OBJ-05-SECOND-FLOOR | IV | FIND ROOM 13 | Reach the upper floor and open the concealed panel in ROOM 12 | UpperFloorAccessGranted AND SecretPanelOpened AND Room13Unlocked | OBJ-06-ROOM-13 |
 | OBJ-06-ROOM-13 | V | DISCOVER THE OWNER'S IDENTITY | Solve the four-photo chronology and complete the reveal | PhotoSequenceSolved AND Room13RevealComplete AND ServiceKeyObtained (IN-017) | OBJ-07-FINAL-ROUTE |
-| OBJ-07-FINAL-ROUTE | VI | OPEN THE SERVICE ROUTE | Obtain the car keys, unlock service control and activate the gate | CarKeysObtained AND ServiceKeyObtained AND PowerRestored AND GatePowered AND CoreEscapeReady | OBJ-08-ENDING |
+| OBJ-07-FINAL-ROUTE | VI | OPEN THE SERVICE ROUTE | Unlock service control and activate the gate; obtain CarKeys only if pursuing ESCAPE | ServiceKeyObtained AND PowerRestored AND GatePowered AND ServiceRouteReady AND Room13RevealComplete (derived as FinaleReady) | OBJ-08-ENDING |
 | OBJ-08-ENDING | VI | DECIDE THE MOTEL'S FATE | Choose an eligible ending as a team | EndingSelected AND Ending != NONE | Session complete |
 
 ### Act completion rules
@@ -86,7 +86,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | ServiceKeyObtained / ServiceKey | InventoryManager | IN-017 only | Hidden compartment pickup |
 | GatePowered / ServiceRouteReady | PuzzleManager | IN-018 | Service Key + power; service control opens the route and commits both flags |
 | CarKeysObtained / CarKeys | InventoryManager | IN-028 | Team pickup transaction commits |
-| CoreEscapeReady | GameManager | IN-019 | GatePowered AND CarKeys; ignition succeeds |
+| FinaleReady | GameManager | Derived state | PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete; unlocks final choice point without requiring CarKeys |\n| CoreEscapeReady | GameManager | IN-019 | FinaleReady AND CarKeys; vehicle ignition succeeds |
 | MissingGuestEvidenceFound | EvidenceManager/GameManager | IN-029 | Room 06 archive inspected |
 | TruthChainComplete | GameManager | derived state only | END-A02 formula, only after owner approval |
 | NewGuestAccepted | EndingManager | explicit invitation interaction and END-A01 team confirmation | Every currently connected eligible player explicitly accepts |
@@ -94,10 +94,10 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 
 ## 6. Ending selector predicates
 
-- Show the selector only at the authored final choice point after CoreEscapeReady.
-- ESCAPE is eligible when CoreEscapeReady is true and the vehicle route is selected.
-- THE_TRUTH is eligible only when CoreEscapeReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained and ServiceRouteReady are all true and the team explicitly selects it.
-- THE_NEW_GUEST is eligible only after explicit invitation interaction and unanimous affirmative confirmation. It must not be triggered by capture, timeout, defeat or failure.
+- Show the selector at the authored final choice point after FinaleReady. CarKeys/vehicle ignition are not required to reach the selector.
+- ESCAPE is eligible only when CoreEscapeReady is true and the vehicle route is selected.
+- THE_TRUTH is eligible when FinaleReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained and ServiceRouteReady are true and the team explicitly selects it; CarKeys and vehicle ignition are not required.
+- THE_NEW_GUEST is eligible after FinaleReady and explicit invitation interaction plus unanimous affirmative confirmation. It must not be triggered by capture, timeout, defeat or failure.
 - Apply END-A01 exactly: majority for ESCAPE/THE_TRUTH; unanimous explicit consent for THE_NEW_GUEST; tie/timeout fallback to ESCAPE only if eligible; otherwise reopen choice; disconnect removes voter and recalculates/reconfirms; solo is direct.
 - Ending commit is session-wide, atomic and one-shot.
 
