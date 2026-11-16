@@ -42,3 +42,7 @@ U-EAST-SERVICE-RESERVE,UF,Nonplayable_Reserve,64,75.7,51.1,59.7,3.6,11.7,8.6,2.8
 VEST-13,UF,Secret_Vestibule,67,72.9,47.55,49.2,3.6,5.9,1.5,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 panel to east balcony,EDITOR-TEST REQUIRED
 STAIR-01,GF-UF,Stair_U_Turn,22.65,25.35,52,55.72,0,2.7,3.72,3.6,0,STAIR-MOD-01,Blockout only,20 risers; 2 flights; 9 goings each; landing Z1.80,OWNER APPROVAL + EDITOR-TEST REQUIRED
 ROOF-SLAB,ROOF,Flat_Roof_U_Polygon,8,76,18,60,6.4,68,42,0.25,0,ROOF-SLAB-01,Solid,Flat roof over U union only; courtyard excluded,PROPOSED CORRECTION
+U-W-CROSS-01,UF,Open_Connector_Bay,8.3,17,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVAL REQUIRED
+U-W-CROSS-02,UF,Open_Connector_Bay,8.3,17,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper west cross-bay to balcony,OWNER APPROVAL REQUIRED
+U-E-CROSS-01,UF,Open_Connector_Bay,67,75.7,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
+U-E-CROSS-02,UF,Open_Connector_Bay,67,75.7,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
