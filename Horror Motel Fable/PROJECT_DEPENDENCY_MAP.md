@@ -176,3 +176,7 @@ Only the checked PropHaus Motel and Hotel Props bundle and Motel Signs listings 
 
 ### Revised execution ownership
 Claude may inspect, greybox and test only within the current authorized scope. If an unresolved geometry conflict requires a structural decision, Claude records a proposed correction and stops for owner approval. ChatGPT supplies task packets and audits evidence; it does not execute UEFN or certify engine behaviour.
+
+
+## 9. PR metadata correction
+Latest live GitHub metadata reports PR #1 as OPEN/DRAFT and `mergeable=true`, but the branch is DIVERGED 49 ahead / 94 behind main and has no reviews/comments/status checks. The mergeable flag only indicates no current merge conflict; it does not clear the R2.0-vs-R2.1 authority mismatch, nine out-of-bounds wardrobes, panel X offset or malformed source/query CSVs. Keep the art intake gate closed until those are corrected and reviewed.
