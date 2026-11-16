@@ -16,7 +16,7 @@ IN-014,IV,Room 11,Child drawing,Inspect,Upper floor access,2,0,ChildRoomClueFoun
 IN-015,IV,Room 12,Concealed panel,Inspect/Open,Upper floor access; Screwdriver,2,2,SecretPanelOpened,Panel animation/audio,Once,Shared lock,Alternate panel proxy
 IN-016,V,Room 13,Four-photo board,Arrange,Room 13 unlocked,2,0,PhotoSequenceSolved,Compartment opens,Retryable,One operator; replicated,Journal chronology/substitute cards
 IN-017,V,Room 13,Hidden compartment,Collect Service Key,PhotoSequenceSolved,2,1,ServiceKey,Pickup cue,Once,Team-owned,Regrant if flag solved
-IN-018,VI,Service route,Gate control,Unlock/activate,PowerRestored; ServiceKey,2,2,GatePowered,Gate movement/cue,Once,Shared,Manual lever fallback
+IN-018,VI,Service route,Gate control,Unlock/activate,PowerRestored; ServiceKey,2,2,GatePowered;ServiceRouteReady,Gate movement/cue,Once,Shared,Manual lever fallback
 IN-019,VI,Exterior,Vehicle ignition,Use car keys,CarKeys; GatePowered,2,2,CoreEscapeReady,Engine start cue,Once,Shared,Ignition proxy if actor missing
 IN-020,VI,Final route,Ending selector,Choose ending,Eligibility validated; Ending=NONE,2,0,EndingSelected,Branch-specific UI/audio,Once locked,Team vote/confirmation,ESCAPE default on unresolved tie
 IN-021,Any,Authored hiding spots,Hiding spot,Hide/Exit,Player ACTIVE; spot available,2,1,PlayerHidden,Hide/exit cue,Repeatable,Per-player,Force exit on reset/disconnect
@@ -28,3 +28,5 @@ IN-026,III,Room 06,Maintenance cabinet / Fuse C,Collect,Room accessible; FuseC n
 IN-027,III,Utility / storage tool board,Screwdriver,Collect,Utility/storage accessible; Screwdriver not TEAM_AVAILABLE,2,1,Screwdriver,Pickup cue and team HUD; reusable tool,Once per team,Team-shared,Tool board recovery proxy
 IN-028,VI,Exterior / broken group vehicle,Car Keys,Collect,Act VI; CarKeys not TEAM_AVAILABLE; key actor enabled,2,1,CarKeys,Pickup cue and team HUD,Once per team,Team-shared,Vehicle key hook recovery proxy
 IN-029,II,Room 06,Missing guest photo board,Inspect,Room 06 accessible,2,0,MissingGuestEvidenceFound,Readable close-up and journal flag,Repeatable,Shared discovery flag,Journal copy
+IN-030,II,Room 01,CRT monitor,Inspect/Watch,Room accessible,2,0,CRTFeedSeen,Visual anomaly cue,Repeatable,Shared discovery flag,Replayable journal/visual feed
+IN-031,II,Room 04,Telephone recording,Listen/Read transcript,Room accessible,2,0,Room04RecordingHeard;Room04TranscriptRead,Subtitle plus readable transcript,Repeatable,Shared discovery flag,Transcript/journal fallback if audio fails
