@@ -25,11 +25,11 @@ Execution boundary: documentation/register audit only. No UEFN editor, import, c
 
 Placement status after correction:
 - PROPOSED TARGET: 186
-- EDITOR-TEST REQUIRED: 1 (secret-route door)
-- BLOCKED: 8 (six out-of-perimeter wardrobes + exterior gate anchor + neon scare trigger anchor)
+- EDITOR-TEST REQUIRED: 0
+- BLOCKED: 9 (six out-of-perimeter wardrobes + exterior gate anchor + neon scare trigger anchor + ROOM 12 secret-panel schedule conflict)
 - UNPLACED: 91
 - Total: 286 rows.
-- 187 rows currently retain coordinates (186 proposed + 1 editor-test). The six wardrobes, exterior gate and neon trigger have blank X/Y/Z/yaw and wall-clearance fields; rejected legacy anchors are retained only in Audit_Notes.
+- 186 rows currently retain coordinates (all PROPOSED TARGET). The six wardrobes, exterior gate, neon trigger and ROOM 12 secret panel have blank X/Y/Z/yaw and wall-clearance fields; rejected/conflicting legacy anchors are retained only in Audit_Notes.
 
 ## 3. Corrective actions applied
 
@@ -361,7 +361,19 @@ Post-correction integrity results:
 - 0 malformed rotations, 0 missing/non-positive dimensions among coordinate-bearing rows, and 0 dimension mismatches between the placement schedule and numeric asset dimension targets (allowing width/depth axis swap).
 - 0 exact duplicate placements (same asset, room, floor, position and yaw). Reuse of the same Asset_ID across different rooms is intentional instancing, not duplicate asset definitions.
 - 0 blank Room_or_Area or Floor fields.
-- Current status counts: 186 PROPOSED TARGET, 1 EDITOR-TEST REQUIRED, 8 BLOCKED, 91 UNPLACED.
-- Current coordinate-bearing rows: 187. All 187 are still proposals/test-only and none is canonical geometry approval.
+- Current status counts: 186 PROPOSED TARGET, 0 EDITOR-TEST REQUIRED, 9 BLOCKED, 91 UNPLACED.
+- Current coordinate-bearing rows: 186. All 187 are still proposals/test-only and none is canonical geometry approval.
 
 These are document/register consistency checks only. They do not prove actual mesh dimensions, pivots, collision, wall clearance, navigability, or UEFN import behaviour.
+
+
+## Supplemental source-schedule reconciliation — 2026-11-16
+
+The full placement register was compared row-by-row against both source placement schedules:
+- `room_furnishing_schedule.csv`: 183 rows; all 183 Asset_IDs have a corresponding Placement_ID in the register and all room names match.
+- `exterior_prop_schedule.csv`: 12 rows; all 12 Prop_IDs have a corresponding Placement_ID in the register.
+- No placed register row is absent from both source schedules.
+- One coordinate conflict was found: `F12_SECRET_PANEL` / `ARCH_DOOR_SECRET` has Y=47.25m in `room_furnishing_schedule.csv` and Y=47.55m in the previous Prop Placement Register. Both values are proposals, not canonical geometry. The placement is now BLOCKED and X/Y/Z/yaw/clearance have been cleared. CHAT 02 must resolve the panel's host wall, face, opening centre and room polygon; neither value is selected.
+- All 12 exterior source rows are mapped; the EXT_GATE and EXT_SIGN_TRIGGER coordinates are now blocked as described above.
+
+Final placement state after all corrections: 186 PROPOSED TARGET with provisional source-schedule coordinates, 9 BLOCKED with no usable coordinates, 91 UNPLACED; 286 total. No coordinate is approved as canonical.
