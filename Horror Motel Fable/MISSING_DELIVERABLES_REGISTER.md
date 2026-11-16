@@ -255,3 +255,13 @@ The R3 brief is the current execution sequence. SERVICE_CONTROL_BAY_LOCATION_AND
 **R3_INTEGRATION_INTEGRITY_REPORT.md** is now present. The static checks recorded there pass for: 57 room-coordinate rows; 183 furnishing rows; 51 openings resolving to 72 unique walls; 32 interaction IDs mapped exactly once in the crosswalk; 51 event IDs; 49 unique device binding IDs; 100 UI strings; audio and lighting cue references; and 94 unique master asset IDs. Six out-of-room wardrobe positions were corrected and all 183 furniture footprints now fit their room envelopes under the stated centre-origin assumption.
 
 This closes the corresponding static documentation/data-integrity deliverable. It does not close editor collision, mesh pivot, door swing, interaction reach, AI navigation, Verse compilation, multiplayer, asset license or performance tests.
+
+
+## R3 follow-up deliverables — 2026-11-16
+
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-078 | Consolidated current status, canonical counts and strict dependency-ordered remaining work | PRESENT — R3_CURRENT_STATUS_AND_REMAINING_WORK.md | Keep synchronized when a controlling decision, register count or gate status changes |
+| MD-079 | Repeatable static repository integrity checker | PRESENT — tools/validate_r3_repository.py | Run in the repository environment; resolve any reported static defects. Does not replace editor/runtime evidence |
+
+The R3 follow-up also corrected the PZ-05 circular prerequisite and reconciled the asset manifest/rights counts to 99 unique assets and 99 rights rows. Actual asset sourcing/import, native UEFN project, Verse compilation and all editor/runtime/release gates remain open.
