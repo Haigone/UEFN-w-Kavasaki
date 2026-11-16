@@ -403,7 +403,7 @@ Geometry is the physical critical path. Narrative documentation may be completed
 - The exact truth-evidence gate and the THE_NEW_GUEST co-op quorum remain design approvals where the narrative/ending documents mark them PROPOSAL; do not infer approval from the existence of a table.
 
 ### 19.4 Environment Art branch restriction
-PR #1 / environment-art/room13-v1 is OPEN/DRAFT and currently diverged from main (61 commits ahead, 226 behind at the 2026-11-16 audit). It is based on older geometry and is not ready to merge. Do not merge, rebase, force-push or synchronize it as a substitute for reauthoring. Reauthor the art package against owner-approved and Claude-verified geometry, then submit a fresh review.
+PR #1 / environment-art/room13-v1 is OPEN/DRAFT and currently diverged from main (66 commits ahead, 285 behind at the 2026-11-16 audit). It is based on older geometry and is not ready to merge. Do not merge, rebase, force-push or synchronize it as a substitute for reauthoring. Reauthor the art package against owner-approved and Claude-verified geometry, then submit a fresh review.
 
 ### 19.5 Stop conditions
 Stop and report BLOCKED if:
