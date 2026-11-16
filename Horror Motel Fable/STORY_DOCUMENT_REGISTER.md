@@ -24,8 +24,8 @@
 | NAR-020 | VI THE TRUTH | Final cinematic | Resolve identity/source | Approved action/sequence/consequence in proposal pack | Yes |
 | NAR-021 | VI THE NEW GUEST | Invitation/acceptance | Explicit consent to cycle | Approved invitation and ACCEPT THE ROOM / LEAVE THE KEY choices in proposal pack | Yes |
 
-## Suggested environmental fragments (not final approved text)
-“NO CHECK-OUT RECORDED.” / “If the sign is lit, do not answer the desk phone.” / “MAIN POWER — STAFF ONLY.” / “The room was never built. It was always here.” / “HE WAITS OUTSIDE THE DOOR.” / “02:13”.
+## Optional environmental fragments (approved, non-gating)
+See NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md Section 14 and UI_STRING_TABLE.csv PROP-ENV-001–006. These fragments are optional dressing only and never create progression flags or ending gates.
 
 ## Exact mandatory voice lines
 - Reception phone: “Welcome. We've been expecting you.”
@@ -46,3 +46,6 @@ The missing player-facing draft copy and puzzle clue chains have been authored i
 
 This changes the status from **no draft text available** to **draft proposal available**; it does not change any item to approved canon. NCP-A01–A09 and END-A02 are APPROVED under express owner delegation. END-A01 co-op quorum is separately APPROVED and closed. Claude must implement the approved text exactly as final canon.
 \n\n## Canonical gameplay decisions — 2026-11-16\n- Act II room-by-room inspection is optional; no requirement to inspect every room 01–06.\n- Room 01 CRT and Room 04 phone are optional supporting journal discoveries, not gates. Suggested stable evidence IDs: `EV-ROOM01-CRT` and `EV-ROOM04-PHONE`; discovery flags: `Room01CRTClueFound` and `Room04PhoneClueFound` (reuse an existing exact-equivalent flag if present).\n- Room 06 archive, Room 09 diary and Room 11 drawing are optional to core progress/ESCAPE but required together for THE_TRUTH under approved END-A02.\n- Draft narrative copy remains draft; approval of gameplay dependency does not silently canonize exact prose or visual assets.\n
+
+## Optional prop text decision
+PROP-ENV-001–006 are approved for optional environmental dressing exactly as listed in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md Section 14. They are non-gating, do not create journal entries/evidence flags and may be omitted if a prop placement is unavailable. Their UI String IDs are present in UI_STRING_TABLE.csv.
