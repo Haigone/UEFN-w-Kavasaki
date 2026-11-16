@@ -84,7 +84,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | PhotoSequenceSolved | PuzzleManager | IN-016 | Correct 1968/1974/1981/1986 order |
 | OwnerIdentityRevealed / Room13RevealComplete | GameManager / CinematicManager handshake | reveal event after PZ-04 | Presentation completes and readable/journal version is available |
 | ServiceKeyObtained / ServiceKey | InventoryManager | IN-017 only | Hidden compartment pickup |
-| GatePowered | PuzzleManager | IN-018 | Service Key + power; gate control commits |
+| GatePowered / ServiceRouteReady | PuzzleManager | IN-018 | Service Key + power; service control opens the route and commits both flags |
 | CarKeysObtained / CarKeys | InventoryManager | IN-028 | Team pickup transaction commits |
 | CoreEscapeReady | GameManager | IN-019 | GatePowered AND CarKeys; ignition succeeds |
 | MissingGuestEvidenceFound | EvidenceManager/GameManager | IN-029 | Room 06 archive inspected |
