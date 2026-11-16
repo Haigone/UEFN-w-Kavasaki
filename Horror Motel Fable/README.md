@@ -6,6 +6,8 @@
 - [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) — current missing/incomplete deliverables and superseding R2.2 addenda.
 - [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — active cross-discipline conflicts and current risk status.
 - [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — current geometry document hierarchy.
+- [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — exact geometry and ending decisions awaiting owner approval.
+- [CLAUDE_R2.2_EXECUTION_PACKET.md](CLAUDE_R2.2_EXECUTION_PACKET.md) — current restricted execution packet for Claude (read-only audit first; greybox only after approval).
 - [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) LD-GEO R2.2 — single candidate geometry proposal; **not owner-approved and not UEFN-verified**.
 - [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — binding responsibility and evidence rules.
 - [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — current executable order; section 19 supersedes earlier phase ordering where it conflicts.
@@ -28,10 +30,14 @@ Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla re
 3. [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — visione, lore, struttura, personaggi, stanze, enigmi, dialoghi e finali.
 4. [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md) — flusso dei sei atti, stati giocatore, cattura/salvataggio, inventario, finali e QA.
 5. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
-6. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura per la planimetria esecutiva corretta.
-7. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità.
-8. [EXECUTIVE_BUILD_DOSSIER.md](EXECUTIVE_BUILD_DOSSIER.md) — specifiche dimensionali proposte per sito, stanze, arredi, sezioni e THE GUEST.
-9. [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md) — requisiti obbligatori per piante quotate, coordinate di ogni arredo, CSV completi, scheda 3D/rig/LOD/animazioni del mostro, validazione geometrica e QA.
+6. [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — gerarchia geometrica attuale.
+7. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — proposta LD-GEO R2.2, non approvata dal proprietario e non verificata in UEFN.
+8. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — approvazioni richieste prima del greybox.
+9. [CLAUDE_R2.2_EXECUTION_PACKET.md](CLAUDE_R2.2_EXECUTION_PACKET.md) — istruzioni operative correnti per Claude.
+10. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità.
+11. [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md) — requisiti di produzione e QA.
+
+`EXECUTIVE_BUILD_DOSSIER.md` ed `EXECUTIVE_FLOORPLANS.md` sono fonti storiche in conflitto: non usarle come autorità geometrica contro R2.2.
 
 ## Vincoli non negoziabili
 - Prodotto finale: isola Fortnite reale, costruita in Unreal Editor for Fortnite (UEFN).
