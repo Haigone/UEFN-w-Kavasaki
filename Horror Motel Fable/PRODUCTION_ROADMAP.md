@@ -199,3 +199,26 @@ This is the current roadmap authority and supersedes the R2.0/R2.1/R2.2 baseline
 - README.md and PRODUCTION_CONTROL_MASTER_SPEC.md for document hierarchy.
 
 No UEFN implementation, compile, playtest, performance pass or publication is claimed by this roadmap update.
+
+
+## R2.3.1 DECISION UPDATE — 2026-11-16 (CURRENT)
+
+This addendum supersedes the R2.3 override above only for narrative/ending approval status and content references. It does not change the geometry baseline or technical production sequence.
+
+### Current approved creative baseline
+- LD-GEO R2.3: approved design geometry GEO-A01–GEO-A21; editor verification remains separate.
+- END-A01: separately owner-approved co-op quorum; unchanged.
+- NCP-A01–A09: approved under the owner's express delegation “prendi tu le decisione”. `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md` is canonical English narrative/puzzle content, including the 1968 pre-opening M. Harrow clue, ROOM 13 photo sequence, and all ending copy/beats.
+- END-A02: approved under the same delegation. `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`; mandatory only for THE_TRUTH, optional to core progression and ESCAPE.
+- THE_TRUTH ending: FinaleReady + TruthChainComplete + Room13RevealComplete + ServiceKeyObtained + ServiceRouteReady + team selection; no CarKeys/CoreEscapeReady/vehicle ignition. After commit, IN-032 activates Night Audit once, then sequential blackout, 02:13 neon hold, register print and title card.
+- IN-001–IN-032 and associated UI/audio/lighting cues are documented. No further owner creative decision is pending for NCP-A01–A09 or END-A02.
+
+### Current production sequence
+1. Use the approved canonical creative and gameplay specifications as implementation authority.
+2. Complete CLD-001 actual UEFN environment baseline and recoverable backup.
+3. Complete CLD-002 R2.3 document/register integrity audit.
+4. Begin greybox only after the explicit CLD-001/CLD-002 gates in CLAUDE_R2.3_EXECUTION_PACKET.md.
+5. Implement the approved content and systems against verified UEFN capabilities; report any technical limitation with a presentation-preserving workaround, not a narrative rewrite.
+6. Complete solo/2-player/4-player QA, memory/performance profiling, island validation and owner release approval.
+
+The repository now has approved design decisions; it does not claim that any UEFN implementation, compile, playtest, performance pass or publication has occurred.
