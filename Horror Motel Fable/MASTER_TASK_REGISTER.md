@@ -227,7 +227,7 @@ This table supersedes stale task rows above where they still label approved R2.3
 | DOC-016 | Room interior fit-out | P1 | DESIGN BASELINE PRESENT | ROOM_INTERIOR_FITOUT_SPEC_R1.md / room_furnishing_schedule.csv | 183 placement rows validated in editor |
 | DOC-017 | Asset production backlog | P1 | DOCUMENTATION PRESENT | ASSET_PRODUCTION_BACKLOG_R1.csv | Rights/source evidence, production and import |
 | VER-001 | UEFN API/device feasibility | P0 | OFFICIAL REFERENCE REVIEW PRESENT; PROJECT PROOF OPEN | UEFN_VERIFIED_REFERENCE_REGISTER_R1.md | Minimal proofs on target editor build |
-| DEV-001 | Device placement/binding | P1 | REGISTER EXPANDED; EDITOR NOT VERIFIED | UEFN_DEVICE_BINDINGS.csv | 49 device/system rows mapped to real placed actors and tested |
+| DEV-001 | Device placement/binding | P1 | REGISTER EXPANDED; EDITOR NOT VERIFIED | UEFN_DEVICE_BINDINGS.csv | 50 device/system rows mapped to real placed actors and tested |
 | AS-001 | Asset source/license/import | P1 | BACKLOG PRESENT; ASSETS NOT SOURCED | ASSET_PRODUCTION_PIPELINE_SPEC.md / backlog | License archive and accepted import per Asset_ID |
 | AS-002/003 | THE GUEST model/rig/animation | P1 | PRODUCTION SPEC COMPLETE; ASSETS NOT CREATED | GUEST_MODEL_SPEC.md | Art package, mesh, rig, LOD, import and NPC tests |
 | VER-002/003 | Verse systems | P1 | LOGICAL DESIGN ONLY; NO SOURCE EVIDENCED | VERSE_SYSTEM_DESIGN.md and event crosswalk | Compilable source and runtime evidence |
