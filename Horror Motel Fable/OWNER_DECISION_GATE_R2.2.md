@@ -4,7 +4,7 @@ Revision: 1.0 — 2026-11-16
 Status: **GEOMETRY APPROVED BY PROJECT OWNER ON 2026-11-16 — UEFN VERIFICATION PENDING**
 
 ## Purpose
-This document records the owner's approval of geometry decisions GEO-A01–GEO-A21 and separately tracks ending decisions END-A01/END-A02, which remain unapproved. Claude may implement the approved geometry baseline LD-GEO R2.3, subject to editor verification.
+This document records the owner's approval of geometry decisions GEO-A01–GEO-A21 and the END-A01 co-op quorum. END-A02 truth-evidence gating remains pending owner approval. Claude may implement the approved geometry baseline LD-GEO R2.3, subject to editor verification.
 
 ## Decision method
 The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner replied **APPROVO TUTTO, PROCEDI** on 2026-11-16, approving the R2.2 geometry proposal and recommendations for GEO-A01–GEO-A21. The approved and synchronized geometry baseline is LD-GEO R2.3. The VEST-13 correction and approved reserve/pad/stair/roof clarifications have been applied. This approval does not include END-A01/END-A02 and does not constitute UEFN verification.
