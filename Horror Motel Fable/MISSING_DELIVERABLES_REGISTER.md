@@ -210,3 +210,12 @@ The core gameplay design now has explicit documentation for: all five registered
 3. Cross-map EVT IDs to existing interaction IDs; no second event system may be created in Verse.
 4. Confirm all UI strings exist in UI_STRING_TABLE.csv; add missing stable StringIds before implementation.
 5. Keep CLD-001/CLD-002 and all editor gates open until reproducible evidence is committed.
+
+
+## Event integration crosswalk addendum — 2026-11-16
+
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-069 | Complete IN-001–IN-032 ↔ EVT-001–EVT-051 ↔ Verse manager crosswalk | PRESENTE — EVENT_INTERACTION_VERSE_CROSSWALK_R1.md; EVT-043–051 added to EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | Implement against target Verse API; confirm no duplicate event writers; compile and run solo/2P/4P transaction tests |
+
+The interaction-to-event documentation mapping is now complete at design level. It does not mean the logical Verse method names exist as compiled source. UEFN_DEVICE_BINDINGS.csv still contains EDITOR-TEST REQUIRED entries and must not be upgraded without target-editor evidence.
