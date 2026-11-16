@@ -45,7 +45,7 @@ The following controlled test suites are now part of the release evidence plan. 
 | LGT | LIGHTING_CUE_SHEET.csv + LIGHTING_STATE_SPEC.md | Act/power/chase/ending states; readability; photosensitivity; route visibility | UEFN property captures; dark/bright display tests | NOT RUN |
 | AST | ASSET_PRODUCTION_PIPELINE_SPEC.md | Source/license; import; pivot/scale; collision; LOD; material/texture memory | Source/license archive; editor import and profile evidence | NOT RUN |
 | UI | UI_STRING_TABLE.csv + GAMEPLAY_UI_UX_SPEC.md | StringId coverage; safe areas; input prompts; vote; journal; subtitles | UI screenshots at supported resolutions/input modes | NOT RUN |
-| END | ENDING_IMPLEMENTATION_SPEC.md | ESCAPE/THE_TRUTH/THE_NEW_GUEST; END-A01; END-A02 after approval; atomic commit | Solo/2P/4P vote traces and ending sequence evidence | NOT RUN |
+| END | ENDING_IMPLEMENTATION_SPEC.md | ESCAPE/THE_TRUTH/THE_NEW_GUEST; END-A01 and approved END-A02; IN-032 Night Audit; atomic commit | Solo/2P/4P vote traces and ending sequence evidence | NOT RUN |
 
 ### Release gate
 
