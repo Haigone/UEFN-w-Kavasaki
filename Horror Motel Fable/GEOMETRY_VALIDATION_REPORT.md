@@ -96,7 +96,7 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
 
 ## 8. R2.2 document-level integrity checks (performed after schedule updates)
-- ROOM_COORDINATE_REGISTER.csv: 52 data rows; 51 rows match the 16-column header, but COURTYARD has only 15 fields (missing Material_Asset_ID placeholder), shifting the remaining fields and omitting Verification_Status. VEST-13 also reports Length_m=1.50 although its FIF Y bounds 47.55–49.20 derive 1.65 m. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
+- ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows now match the 16-column header. The COURTYARD row has the Material_Asset_ID placeholder NA and is schema-aligned (correction present in main at commit 5ac16543). VEST-13 still reports Length_m=1.50 although its FIF Y bounds 47.55–49.20 derive 1.65 m. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
 - coordinate_schedule.csv: 55 data rows; all rows match the 14-column header. Cross-bays, balcony turn-pad union components, the UPPER_NORTH_HALL functional alias, service reserves and south-end buffers are represented; aliases/components do not create duplicate floor collision. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 51 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
@@ -112,7 +112,7 @@ The side-room partition ends now meet the adjacent corridor/outer wall centre-li
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
 ## 9. Acceptance
-R2.2 remains a candidate **proposal**, not an approved construction package. The final review confirms the room bounds, opening/host-wall geometry, principal slab polygon and secret route mathematically, but finds two unregistered ground-floor sealed pockets, unassigned upper-floor side pockets, an inaccessible U-SERVICE marked walkable, turn-pad clipping beyond the courtyard void, and two coordinate-register errors. These issues block geometry freeze. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run.
+R2.2 remains a candidate **proposal**, not an approved construction package. The final review confirms the room bounds, opening/host-wall geometry, principal slab polygon and secret route mathematically, but finds two unregistered ground-floor sealed pockets, unassigned upper-floor side pockets, an inaccessible U-SERVICE marked walkable, turn-pad clipping beyond the courtyard void, and one remaining coordinate-register dimension mismatch; the COURTYARD schema issue has been corrected. These issues block geometry freeze. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run.
 
 ## 10. Approval-gate pointer and scope clarification
 
