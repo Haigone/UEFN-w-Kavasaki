@@ -1,7 +1,7 @@
 # CINEMATIC & PRESENTATION SPECIFICATION
 ## THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **PRESENTATION DESIGN BASELINE; NARRATIVE APPROVAL AND UEFN CAPABILITY VERIFICATION REQUIRED**
+Status: **PRESENTATION DESIGN BASELINE; NARRATIVE CANON APPROVED; UEFN CAPABILITY VERIFICATION REQUIRED**
 
 ## 1. Purpose and constraints
 
@@ -55,8 +55,8 @@ These are pacing targets, not engine guarantees.
 | CINE-007 ROOM 13 identity reveal | PZ-04 solved | Photo alignment reveals owner/Guest identity; show readable text/portrait alignment; hidden compartment opens | 6–10 s | Protect all players from capture; puzzle lock released after reveal | Room13RevealComplete only after reveal and readable version available; if camera/animation fails, use in-world portrait/lighting and journal reveal |
 | CINE-008 Capture presentation | PlayerManager accepts CaptureRequest | Brief capture pose/stinger; transfer player to CAPTURED; no death imagery or loss of quest inventory | 2 s | Target only | Capture state commits in PlayerManager; fallback is immediate HUD/status transition |
 | CINE-009 ESCAPE ending | EndingSelected=ESCAPE | Reach vehicle; gate route; final chase; exact radio line; rear-seat/rear-view silhouette; cut to black; title card | 12–20 s target | Ending lock; all players share result | Ending remains committed if sequence fails; fallback title card and complete state |
-| CINE-010 THE TRUTH ending | EndingSelected=THE_TRUTH | Service route confrontation; recorder plays diary entry; owner portrait and THE GUEST align in reflection; night-audit breaker; motel lights extinguish; register prints final message; title card | 15–25 s target | Ending lock; AI capture disabled | Ending remains committed; fallback readable reveal, lights/prop state and title card; narrative beats remain proposal pending owner approval |
-| CINE-011 THE NEW GUEST ending | EndingSelected=THE_NEW_GUEST | Shared invitation accepted; motel resets; twelve public lights illuminate; Room 13 key returns to rack; register shows blank NEXT GUEST line; neon pulses at 02:13; title card | 12–20 s target | Ending lock; AI capture disabled | Ending remains committed; fallback world-state reset and title card; text/copy remains proposal pending owner approval |
+| CINE-010 THE TRUTH ending | EndingSelected=THE_TRUTH | Service route confrontation; recorder plays diary entry; owner portrait and THE GUEST align in reflection; IN-032 NIGHT AUDIT breaker; room-by-room blackout; 02:13 neon hold; register prints “NO VACANCY. NO OWNER. NO GUEST.”; THE TRUTH title card | 15–25 s target | Ending lock; AI capture disabled | Ending remains committed; service-control proxy and fallback title card; approved narrative beats preserved |
+| CINE-011 THE NEW GUEST ending | EndingSelected=THE_NEW_GUEST | Shared invitation accepted; motel resets; twelve public lights illuminate; Room 13 key returns to rack; register shows blank NEXT GUEST line; neon pulses at 02:13; THE NEW GUEST title card | 12–20 s target | Ending lock; AI capture disabled | Ending remains committed; fallback world-state reset and title card; approved text/copy preserved |
 
 ## 4. Co-op presentation and voting
 
@@ -111,7 +111,7 @@ No asset is considered produced/imported/working until it is present in the actu
 
 ## 8. Approval and implementation boundary
 
-Sequence mechanics and fallback rules are production design guidance. Narrative text, THE TRUTH consequence and THE NEW GUEST wording remain pending owner approval in OWNER_DECISION_PACKET_R1.md. END-A01 quorum is already owner-approved. All camera, NPC animation, audio playback, replication and cinematic-device capabilities must be verified in the target UEFN release.
+Sequence mechanics and fallback rules are production design guidance. Narrative text, THE TRUTH consequence and THE NEW GUEST wording are approved canon in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md and OWNER_DECISION_PACKET_R1.md. END-A01 quorum is separately owner-approved; END-A02 is approved under express owner delegation. All camera, NPC animation, audio playback, replication and cinematic-device capabilities must be verified in the target UEFN release.
 
 
 ## Approved THE_TRUTH sequence binding
