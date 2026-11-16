@@ -96,5 +96,8 @@ In co-op, use a team vote/confirmation with deterministic tie rule (majority; ti
 ## 12. Implementation ownership
 GameManager: act/objective/checkpoint/ending authority. PuzzleManager: puzzle transactions. InventoryManager: team item set. PlayerManager: per-player states, join/leave, capture/rescue. InteractionManager: range and locks. DifficultyManager: tension. MonsterController: navigation/threat. UI/Audio managers are presentation-only.
 
-## 13. Definition of done
-All six acts playable in solo and 2–4 player co-op; all mandatory items recoverable; all puzzles retryable; disconnect and all-captured recovery tested; checkpoints idempotent; all three endings reachable; no known softlock; actual UEFN compile and playtest evidence attached before release.
+## 13. Execution ownership
+Claude is responsible for all UEFN project inspection, Verse/API verification, implementation, compilation, device setup, in-editor/game-session execution, multiplayer testing, performance validation and evidence capture. ChatGPT is responsible for preparing and maintaining detailed specifications, execution plans, test cases, expected results and reviewing evidence/defects supplied by Claude. ChatGPT does not claim to run UEFN or execute tests.
+
+## 14. Definition of done
+All six acts playable in solo and 2–4 player co-op; all mandatory items recoverable; all puzzles retryable; disconnect and all-captured recovery tested by Claude; checkpoints idempotent; all three endings reachable; no known softlock; actual UEFN compile and playtest evidence attached before release. See CLAUDE_UEFN_EXECUTION_PLAN.md for the required execution sequence and reporting format.
