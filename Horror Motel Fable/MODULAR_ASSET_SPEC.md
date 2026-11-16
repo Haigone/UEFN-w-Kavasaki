@@ -65,3 +65,12 @@ Character: separate pipeline; skeletal FBX only after rig, skeleton and animatio
 
 ## 10. Required review package per family
 Provide front/side/top orthographic screenshots, dimensions, pivot marker, wireframe, UV layout, material preview, collision preview, LOD comparison, source/export file list and a UEFN import screenshot. No family is ACCEPTED based only on a beauty render.
+
+
+## Revision 2.0 — LD-GEO R2.0 implementation override
+Use `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0 as geometry authority. The standard 4m module length and 1m grid remain reusable production targets. Exterior thickness = 30cm; interior partition thickness = 15cm. Floor levels: ground FFL 0cm; upper FFL 360cm. Do not freeze wall height at 320cm or ceiling/roof levels until a coordinated section defines ground clear height 300cm, upper clear height 280cm, upper slab 25cm, ceiling undersides and roof stack.
+Balcony is 250cm clear width target, not the E1 150cm value. Stair target is 120cm clear width, 20 risers x18cm, 28cm tread depth; exact tread count, run, intermediate landing and headroom must be dimensioned. Stair flight/landing/handrail assets remain BLOCKED for final fit.
+ROOM 12 panel centre target is (68.60,47.55); route includes a 1.40m-minimum vestibule, 0.90m west wall junction opening centred near Y48.60, north hall and ROOM 13 south entry near (56.35,50.95). The secret panel is not the old west-wall opening described in earlier schedule variants. Align wall schedule, door schedule, prop placement and section D-D before creating bespoke pieces.
+Gate anchor conflict remains BLOCKED. Do not use EXT_GATE (42,18) as final without reconciling it with GATE-01 at X40..44/Y0..1 and the R2 south/east edge description.
+All modules may be modelled as reusable generic pieces, but any opening, stair, balcony, roof, bathroom or secret-route custom variant is final-fit BLOCKED until its dimensions are coordinated. All measurements remain PROPOSED TARGET or EDITOR-TEST REQUIRED, never ENGINE-VERIFIED without Claude's UEFN evidence.
+
