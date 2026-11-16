@@ -8,6 +8,7 @@
 - [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — current geometry document hierarchy.
 - [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — exact geometry and ending decisions awaiting owner approval.
 - [CLAUDE_R2.2_EXECUTION_PACKET.md](CLAUDE_R2.2_EXECUTION_PACKET.md) — current restricted execution packet for Claude (read-only audit first; greybox only after approval).
+- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — complete draft clue/puzzle/ending content awaiting owner approval.
 - [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) LD-GEO R2.2 — single candidate geometry proposal; **not owner-approved and not UEFN-verified**.
 - [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — binding responsibility and evidence rules.
 - [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md) — current executable order; section 19 supersedes earlier phase ordering where it conflicts.
@@ -92,4 +93,5 @@ Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coor
 - [ENDING_DESIGN_SPEC.md](ENDING_DESIGN_SPEC.md) — ending gates, flags, resolver and multiplayer choice contract.
 - [GAME_BALANCING_SPEC.md](GAME_BALANCING_SPEC.md) — pacing, interaction/tension targets and playtest plan.
 - [STORY_DOCUMENT_REGISTER.md](STORY_DOCUMENT_REGISTER.md) — narrative document and clue inventory.
+- [NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md](NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md) — proposal-level copy for all major missing narrative deliverables; not approved canon.
 - [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md) — narrative QA and blocking dependencies.
