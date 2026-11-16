@@ -219,3 +219,28 @@ The core gameplay design now has explicit documentation for: all five registered
 | MD-069 | Complete IN-001–IN-032 ↔ EVT-001–EVT-051 ↔ Verse manager crosswalk | PRESENTE — EVENT_INTERACTION_VERSE_CROSSWALK_R1.md; EVT-043–051 added to EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | Implement against target Verse API; confirm no duplicate event writers; compile and run solo/2P/4P transaction tests |
 
 The interaction-to-event documentation mapping is now complete at design level. It does not mean the logical Verse method names exist as compiled source. UEFN_DEVICE_BINDINGS.csv still contains EDITOR-TEST REQUIRED entries and must not be upgraded without target-editor evidence.
+
+
+## R3 production documentation refresh — 2026-11-16
+
+The following documentation deliverables are now present on main. These close planning gaps only; source acquisition, editor setup, import, compilation and testing remain open.
+
+| ID | Deliverable | Status | Remaining acceptance |
+|---|---|---|---|
+| MD-070 | Canonical Claude read order and ordered production gates | PRESENT — CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md | Executor must return baseline and integrity report |
+| MD-071 | Room interior fit-out rules and clearance policy | PRESENT — ROOM_INTERIOR_FITOUT_SPEC_R1.md | Verify all 183 furnishing rows against R2.3 bounds, door swings and interaction clearance in editor |
+| MD-072 | Expanded asset production backlog | PRESENT — ASSET_PRODUCTION_BACKLOG_R1.csv (60 rows) | Source original/licensed assets; fill exact provider/license evidence; import and profile |
+| MD-073 | Official UEFN feature reference register | PRESENT — UEFN_VERIFIED_REFERENCE_REGISTER_R1.md | Minimal project proofs for all project-specific behaviors |
+| MD-074 | Expanded device binding register | PRESENT — UEFN_DEVICE_BINDINGS.csv (49 rows including all 32 interactions and system devices) | Verify exact device properties/events in target editor; map each device to a placed actor and source revision |
+| MD-075 | THE GUEST model-to-UEFN production sequence | PRESENT — GUEST_MODEL_SPEC.md addendum | Produce turnaround/mesh/rig/animations and combined NPC proof |
+
+### Current blockers that documentation cannot close
+
+- MD-001 native UEFN project and target editor baseline.
+- R3 integration integrity report: semantic checks beyond CSV row width, including furniture-vs-room fit, interaction/event/objective mapping, cue/string coverage and exact device binding.
+- Actual R2.3 greybox construction and traversal proof.
+- Asset source/rights verification and actual asset creation/import.
+- Verse source compilation and all runtime tests.
+- Performance/memory profiling, island validation and release authorization.
+
+The R3 brief is the current execution sequence. Historical task rows below this addendum remain useful as historical audit evidence but must not override the current R2.3/R3 authority.
