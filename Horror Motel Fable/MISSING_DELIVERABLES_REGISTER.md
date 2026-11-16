@@ -82,3 +82,25 @@ Latest live check returned `mergeable=false` after an earlier check reported tru
 
 ### MD-036 / MD-037 latest placement delta
 Latest PR snapshot has 120 asset rows and 286 placement rows (186 proposed, 7 blocked, 2 editor-test required, 91 unplaced). Six west wardrobes are now blocked/unplaced rather than active placements; three upper-east wardrobes remain outside R2.1 bounds, and F12_SECRET_PANEL is 1.35 m offset from D-13A. PR remains draft and diverged 52 ahead / 106 behind; latest mergeable=false. This supersedes the earlier nine-active-wardrobe and 119-asset counts.
+
+## R2.2 / current-main addendum — 2026-11-16
+
+This addendum supersedes older R2.0/R2.1 status and Environment Art branch divergence figures where they differ.
+
+| ID | Missing / incomplete deliverable | Current evidence | Status | Required completion evidence | Dependency |
+|---|---|---|---|---|---|
+| MD-043 | Owner approval of LD-GEO R2.2 | Single candidate proposal and 11-item approval checklist exist; full geometry remains explicitly unapproved | BLOCCATO | Explicit owner approval or revised signed geometry decision | Project owner |
+| MD-044 | Single physical identity for north balcony/hall polygon | U-NORTH-BALCONY and U-NORTH-HALL have identical bounds in ROOM_COORDINATE_REGISTER.csv | INCOMPLETO | Register alias/functional-area mapping; one physical slab and collision surface | Level Design |
+| MD-045 | Final roof drainage and complete ceiling/service construction detail | R2.2 sections show levels and flat roof intent; drainage/falls and detailed ceiling/service layout remain open | INCOMPLETO | Dimensioned roof falls/drains/downpipes and coordinated ceiling/void schedule | Geometry approval |
+| MD-046 | Final player-facing narrative clue content | Puzzle solutions are documented but register text, office captions, Room 04 transcript, Room 06 identities, diary, drawing and ROOM 13 captions remain incomplete | INCOMPLETO | Approved English source text, subtitle/transcript and prop layout for every mandatory clue | Narrative owner |
+| MD-047 | Consistent THE_NEW_GUEST co-op quorum | ENDING_DESIGN_SPEC.md proposes unanimous confirmation; ENDING_IMPLEMENTATION_SPEC.md / GAMEPLAY_SYSTEMS_SPEC.md use majority | BLOCCATO | One owner-approved quorum rule reflected in every gameplay/ending document | Project owner |
+| MD-048 | Approved THE_TRUTH evidence gate and finale | Truth evidence list exists but mandatory status and final confrontation/cost/dialogue/consequence remain unresolved | BLOCCATO | Approved mandatory evidence list and complete ending script/trigger specification | Narrative owner |
+| MD-049 | Environment Art package reauthored against R2.2 | PR #1 is OPEN/DRAFT; live comparison at audit time is 61 ahead / 226 behind and mergeable=false; branch handoff still references older geometry | BLOCCATO | Reauthored R2.2 package, fresh comparison, register audit and review | Geometry approval |
+| MD-050 | Actual UEFN project/editor baseline and implementation evidence | Main contains no native UEFN project, Verse source or editor/test evidence | INCOMPLETO | Actual project identity, editor version, compiled Verse, configured devices and evidence from Claude | Claude / project owner |
+
+### Current-main status corrections
+- FINAL_GROUND_FLOOR_PLAN.md stair assembly coordinates were corrected to match STAIR_PLAN_R2.md and ROOM_COORDINATE_REGISTER.csv (commit 532729b6c0e131d200eece4c4546c16e1b5bd67a).
+- INTERACTION_MASTER_REGISTER.csv now has 29 rows and every row matches its 13-column header; IN-021/022/023 Target/Action fields were repaired (commit 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5).
+- PUZZLE_MASTER_REGISTER.csv, ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv, SLAB_SCHEDULE.csv, AUDIO_REGISTER.csv and LIGHTING_REGISTER.csv also passed row-width checks in this audit. These are schema checks only, not semantic or editor validation.
+- Gameplay reward ownership and Screwdriver use were reconciled; GAT-048–GAT-052 now cover the revised contracts.
+- Current Environment Art PR divergence is 61 ahead / 226 behind; do not reuse older 52/113 or 52/106 figures as current metadata.
