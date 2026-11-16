@@ -326,3 +326,17 @@ Waypoint coordinates are destinations, not teleport points. Use NavigateTo and i
 8. Run solo, duo and four-player chase/reacquisition tests; record path failures and time-to-destination.
 9. If stair traversal fails after one path refresh, abort chase to last valid point and switch to Search/Retreat as specified. Do not increase speed or teleport to mask the failure.
 
+
+
+### Door traversal contract
+
+- Do not assume THE GUEST can automatically open a Fortnite door device or interact with a locked door.
+- A waypoint is reachable only if the complete route's door states permit traversal. The door controller may request an authored open action only for doors marked NPC_PASSABLE in the door binding configuration.
+- Puzzle/secret locks are never bypassed: D-G16 requires ServiceKeyObtained; ROOM 12 secret panel/vestibule route requires Room13Unlocked/SecretPanelOpened; any other authored locked door remains closed until its owning manager commits its unlock.
+- If a door is closed but NPC_PASSABLE, request its normal open animation/collision state through the owning door manager, wait for the open confirmation, then NavigateTo. Never disable collision through the wall or teleport across the door.
+- If the door cannot be opened or confirmed within 2 seconds, mark that route edge unavailable, enter Search/Retreat fallback and log the door ID. Do not loop forever.
+- On ending selector open, AI must stop pursuit, leave GF-SERVICE-BAY and enter the authored retreat/disabled state; on ending commit, AI is disabled session-wide.
+
+### Waypoint order
+
+Within each Route_Group in AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv, row order is the canonical traversal order. On reaching the final point, loop to the first valid point in that group. Select the next group using the weighted group selection in the AI behavior spec. STAIR group must always traverse AI-STAIR-LOWER → AI-STAIR-MID → AI-STAIR-UPPER (and reverse when returning); never issue a direct floor-to-floor teleport or skip the intermediate landing.
