@@ -145,3 +145,13 @@ A follow-up cross-reference check confirms:
 - All static numeric interaction and AI anchor positions fit the canonical area bounds in ROOM_COORDINATE_REGISTER.csv; two interaction rows are intentionally per-player UI/dynamic rescue anchors and have no fixed world XYZ.
 
 These checks validate coordinate references and area envelopes only. They do not prove that the placed mesh pivots, trigger volumes, door swings, player capsules or NPC capsules are clear in the editor.
+
+
+## 11. R3 follow-up reconciliation
+
+- Asset master and executive manifests: 99 unique Asset_ID rows each; the two files are synchronized.
+- Asset source/rights register: 99 unique Asset_ID rows, matching the master inventory. Current rights remain NOT SOURCED; no acquisition or license is implied.
+- Asset production backlog: 65 production packages; this is a package count, not the number of unique master assets.
+- PZ-05 prerequisite corrected: FinaleReady is no longer listed as a prerequisite. PZ-05 starts from PowerRestored, ServiceKeyObtained and Room13RevealComplete; GatePowered and ServiceRouteReady are then committed, after which FinaleReady is derived. This removes the circular dependency.
+- Event catalog contains EVT-001–EVT-051; the crosswalk contains IN-001–IN-032.
+- A repeatable standard-library checker is available at tools/validate_r3_repository.py. Run from the Horror Motel Fable directory with `python tools/validate_r3_repository.py`. It validates CSV structure and selected cross-references only; it does not validate UEFN, Verse, editor placement, runtime or gameplay.
