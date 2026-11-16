@@ -131,7 +131,13 @@ This verifies row width only. It does not prove semantic correctness, spatial fi
 
 Do not silently turn a proposal into canon. Claude may implement only owner-approved narrative content and choice rules.
 
-## 7. UEFN / Verse technical readiness
+## 7. Lighting / audio register normalization
+
+The separate LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv now have machine-readable fields for CCT versus intensity and fixed versus actor-attached audio emitters. Light intensity values intentionally remain TBD until Claude verifies the target UEFN light units and tunes them in-editor. THE_GUEST audio attachment still requires engine verification. These are schema corrections, not a claim that lights or audio have been placed/imported.
+
+Commits: LIGHTING_REGISTER.csv a3e67253d8cbd4b131c5c6a058b528924a641ee4; AUDIO_REGISTER.csv 3470f2448e2b586f88ccec39b2b3ac6021811def.
+
+## 8. UEFN / Verse technical readiness
 
 - VERSE_SYSTEM_DESIGN.md is explicitly an API-neutral logical contract, not compilable Verse.
 - UEFN_IMPLEMENTATION_SPEC.md defines conceptual managers and device families, not verified API signatures or final device settings.
@@ -178,6 +184,7 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 - Reconciled Screwdriver's two documented uses.
 - Added missing FuseA/FuseB/FuseC, Screwdriver, CarKeys and Room 06 evidence interaction records.
 - Added corresponding gameplay regression tests GAT-048–GAT-052.
+- Normalized lighting CCT/intensity fields and fixed versus actor-attached audio emitter fields; actual intensity tuning and NPC attachment still require Claude's editor verification.
 - Normalized lighting CCT/intensity fields and fixed versus actor-attached audio emitter fields; actual intensity tuning and NPC attachment still require Claude's editor verification.
 - Corrected the R2.2 stair footprint mismatch in FINAL_GROUND_FLOOR_PLAN.md.
 - Updated CLAUDE_EXECUTION_PLAN.md with the current R2.2 source hierarchy, geometry-first critical path, PR #1 restriction and stop conditions.
