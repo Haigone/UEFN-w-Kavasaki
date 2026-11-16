@@ -3,7 +3,7 @@
 Exactly three endings. Names and core outcomes are canon; flag names below are logical identifiers, not verified Verse code.
 
 ## Shared flags
-FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteReady, GatePowered, PowerRestored, TruthChainComplete, Room13RevealComplete, NewGuestAccepted, EndingSelected. Team/session authoritative except individual inputs used for a vote. Commit ending atomically and once.
+FinaleReady, CoreEscapeReady, CarKeysObtained, ServiceKeyObtained, ServiceRouteReady, GatePowered, PowerRestored, TruthChainComplete, Room13RevealComplete, NewGuestAccepted, EndingSelected, NightAuditActivated. Team/session authoritative except individual inputs used for a vote. Commit ending atomically and once.
 
 Derived readiness: FinaleReady = PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete. CoreEscapeReady = FinaleReady AND CarKeysObtained AND successful vehicle ignition (IN-019). CarKeys/ignition are required only for ESCAPE.
 
@@ -44,6 +44,7 @@ One shared ending for the session. All connected players receive the same choice
 - Activate service mechanism → ServiceRouteReady.
 - Explicit invitation and unanimous affirmative confirmation → NewGuestAccepted and THE_NEW_GUEST commit.
 - Eligible selection while EndingSelected is NONE → commit exactly one ending.
+- After THE_TRUTH is committed, IN-032 → NightAuditActivated=true once; this is an ending presentation beat, not an ending selector.
 
 ## Acceptance
 All endings reachable solo/co-op; mutually exclusive; no capture/timeout trigger; one-shot replicated state; no reconnect duplication; unique ending sequence/title card; approved radio line exact. THE TRUTH and THE NEW GUEST scripts are approved in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
