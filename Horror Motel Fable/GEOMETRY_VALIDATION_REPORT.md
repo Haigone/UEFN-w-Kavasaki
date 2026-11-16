@@ -45,7 +45,8 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 | G12 | Stair text states 5.32 m run but 20 risers/2 flights/9 goings each | 9×0.28=2.52 m per flight; total 18 goings=5.04 m; U-turn landing2.70×1.20; plan envelope2.70×3.72 | DERIVED arithmetic; exact layout OWNER APPROVAL + EDITOR VERIFICATION |
 | G13 | Balcony width listed as 1.50 m in E1 and 2.50 m in R2.1 | Continuous U route, 2.50 m minimum clear; side leg widths adjusted to 2.55 m where needed to align wall faces | OWNER DECISION on continuity; width OWNER APPROVAL REQUIRED |
 | G14 | UPPER_ROOM11 row has missing Y2, shifting subsequent CSV fields | Complete row: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8 | DERIVED from R2.2 room schedule |
-| G15 | SVGs were schematic and did not consistently represent R2.1 room/balcony dimensions | Both SVG plans redrawn with R2.2 proposed bounds; SECTIONS_R2.2.svg added | PROPOSED CORRECTION; not CAD/engine verification |
+| G15 | SVGs were schematic and did not consistently represent R2.1 room/balcony dimensions | Both SVG plans redrawn with R2.2 proposed bounds; SECTIONS_R2.2.svg added and syntax/labels corrected | PROPOSED CORRECTION; not CAD/engine verification |
+| G16 | EBD contains a generic 2.20×2.40 m bathroom allowance but no reconciled internal wall/door placement | R2.2 controls room envelopes only; bathroom subdivisions and fixtures are intentionally not fabricated in the wall schedule | OWNER APPROVAL REQUIRED for room-interior fit-out |
 
 ## 4. Canonical dimensional checks
 - Site area: 84×72 = 6,048 m².
@@ -100,7 +101,7 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 - All 51 opening Wall_ID values resolve to an existing wall. All 51 opening centres lie on the centre-line of their host wall; every clear opening span fits within its host wall segment and its vertical extent stays within the wall's Z range. All 51 wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
 
-Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps. The section graphic's lower slab label was corrected from roof slab to ground slab (0.20 m), and the roof slab (0.25 m) is now labelled at the upper roof datum.
+Both floor-plan SVGs had a malformed duplicated initial path command (`MM`) on the U-footprint outline; this has been corrected to a valid single move command (`M`). The courtyard-side flat-roof parapet segments were also extended to meet at both north U-corners, removing the previous 0.10 m corner gaps. The section graphic's lower slab label was corrected from roof slab to ground slab (0.20 m), and the roof slab (0.25 m) is now labelled at the upper roof datum. The THE GUEST upper stair marker was moved to the clear south landing approach (24.00,51.70,3.60), outside the stairwell slab void.
 
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
