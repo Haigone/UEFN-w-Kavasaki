@@ -377,3 +377,15 @@ The full placement register was compared row-by-row against both source placemen
 - All 12 exterior source rows are mapped; the EXT_GATE and EXT_SIGN_TRIGGER coordinates are now blocked as described above.
 
 Final placement state after all corrections: 186 PROPOSED TARGET with provisional source-schedule coordinates, 9 BLOCKED with no usable coordinates, 91 UNPLACED; 286 total. No coordinate is approved as canonical.
+
+
+## Supplemental clearance and source-coordinate check — 2026-11-16
+
+After blocking the ROOM 12 secret-panel conflict, all 195 originally coordinate-bearing records have been dispositioned: 9 have been blocked and 186 retain provisional coordinates. Reconciliation against the source schedules now has zero coordinate mismatches among active placement rows:
+- 183/183 room furnishing schedule rows map to a Placement_ID; room labels match.
+- 12/12 exterior prop schedule rows map to a Placement_ID.
+- 0 remaining active placement coordinate mismatches against those source schedules.
+- 10 active exterior placement rows lack a numeric Wall_Clearance_m: EXT_BROKEN_CAR, EXT_NEON_SIGN, EXT_VENDING, EXT_DUMPSTER, EXT_LAMP_01, EXT_LAMP_02, EXT_LAMP_03, EXT_LAMP_04, EXT_CAR_KEYS, EXT_GENERATOR. They remain provisional; do not treat missing clearance as zero.
+- The other 176 active placement rows have a declared clearance target, but it has not been measured against canonical wall faces or player routes.
+
+No real mesh-bound or collision result is available because source asset packages are not acquired/inspected in this audit and UEFN tests were explicitly excluded.
