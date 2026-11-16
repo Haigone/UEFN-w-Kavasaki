@@ -41,7 +41,7 @@ The two service reserves are non-playable placeholders for upper-level geometry 
 D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule X67.00–72.90,Y47.55–49.20. D-13C in vestibule west wall centre (66.925,48.45), clear 0.90×2.10 m, opens west to east balcony. Follow east balcony to corner pad, west along north crossbar. D-13B in ROOM 13 south wall centre (56.35,50.95), clear 0.90×2.10 m, opens north. Route is two-way; no teleport.
 
 ## Stair and roof
-North stair connects GF reception to UF landing. See STAIR_PLAN_R2.md and LEVEL_SECTIONS.md. Roof is flat and non-playable, covers the U-shaped footprint union only; courtyard remains open to sky.
+North stair connects GF reception to UF landing. Upper slab cut X22.50–25.50,Y52.30–56.32; guardrail west/east/north and south approach open. See STAIR_PLAN_R2.md, SLAB_SCHEDULE.csv and LEVEL_SECTIONS.md. Roof is flat and non-playable, covers the U-shaped footprint union only; courtyard remains open to sky.
 
 ## Construction
 See ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv and SECTIONS_R2.2.svg. All dimensions remain proposed until owner approval. No UEFN testing was performed.
