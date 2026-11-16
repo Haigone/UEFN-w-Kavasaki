@@ -60,7 +60,7 @@ If the owner approves this gate, each of the three required clues must satisfy a
 
 ## 6. Approval boundary
 
-This file is a recommendation only. It does not approve the three clues, the draft text in `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md`, or any new narrative consequence. Until the owner explicitly approves END-A02:
+**DECISION STATUS: APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16.** This file is now the implementation contract for the three-clue THE_TRUTH evidence gate. The complete narrative copy is approved in `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md`.
 
 - Keep the current implementation gate marked pending.
 - Do not implement these three flags as mandatory THE TRUTH requirements.
