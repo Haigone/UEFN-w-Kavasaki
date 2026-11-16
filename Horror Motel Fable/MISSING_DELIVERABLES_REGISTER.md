@@ -166,3 +166,6 @@ This addendum supersedes older rows and narrative notes where they describe geom
 | MD-058 | Full interaction register IN-001–IN-031 reconciliation | PARTIAL — 31 rows exist; UI/cancel/timeout/state-writer fields need final audit | Every interaction has exact preconditions, UI mode, cancel/timeout, success/failure copy, state writer and fallback |
 
 Old audit sections below this addendum remain historical evidence. Use the current R2.3 approval record, production control master and R2.3 Claude packet for current status.
+
+| MD-059 | Cinematic and presentation sequence specification | PRESENTE — CINEMATIC_AND_PRESENTATION_SPEC.md; narrative approval/engine capabilities pending | Sequence IDs, triggers, durations, locks, fallbacks, subtitles, multiplayer sync and tests defined |
+| MD-060 | Asset sourcing/licensing/import pipeline | PRESENTE — ASSET_PRODUCTION_PIPELINE_SPEC.md; actual asset sourcing/import pending | Asset IDs, rights, metadata, import, collision, LOD, performance and acceptance gates defined |
