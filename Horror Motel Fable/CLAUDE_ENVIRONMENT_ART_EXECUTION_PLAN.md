@@ -91,8 +91,12 @@ Use stable Asset_IDs from ENVIRONMENT_ASSET_REGISTER.csv. File naming: SM_[ZONE]
 6. Generate a geometry-only blockout package. Do not dress it.
 7. In UEFN, Claude performs the first editor verification: site extents, footprint union, room access, vertical stack, stair, balcony, ROOM12-to-ROOM13 route, player capsule and THE GUEST proxy navigation. Record evidence. Until pass, final-fit art remains blocked.
 
-### Phase 2 — modular architecture
-Model reusable families in this order:
+### Phase 2 — existing licensed asset source audit and integration (owner priority: existing assets first)
+Before commissioning or modelling a common motel asset, use ENVIRONMENT_ASSET_SOURCE_REGISTER.csv and CLAUDE_EXISTING_ASSET_ACQUISITION_PLAN.md. The source register is a shortlist only. Claude must inspect the exact listing, acquisition/library evidence, license tier and permitted UEFN use; if purchase or account login is needed, stop and identify that external dependency without claiming acquisition. Inventory included meshes, materials, textures, collision, LODs and dependencies; map each usable source mesh to project Asset_ID; reject modern/anachronistic items and duplicates. UEFN Source/reference listings and generic Unreal Engine listings are different and must be recorded exactly. A marketplace listing is not license proof or UEFN compatibility proof. Test one representative asset/material in the target project before bulk integration. Do not use any asset until license evidence is archived and reviewed.
+Only after the inventory, identify genuine gaps. Existing licensed meshes take priority for generic beds, desks, wardrobes, chairs, sinks, luggage, reception/service props and common signage. Preserve original purchased source packages; create project-side stylized variants only where the license permits. Do not model a bespoke duplicate of an adequate acquired mesh.
+
+### Phase 3 — gap-only modular architecture and shared materials
+Create original reusable families only for geometry modules or project-specific items not adequately supplied by licensed sources, in this order:
 1. Calibration cube 100 cm, 1 m grid marker, 4 m wall calibration segment.
 2. Exterior straight walls 400/200/100/50 cm; inside/outside corners; T-junction; end caps; exterior opening variants.
 3. Interior partitions 400/200/100/50 cm; corners; T-junction; end caps; guest/service/secret opening variants.
@@ -107,11 +111,10 @@ Model reusable families in this order:
 
 All architecture modules use 1 m primary grid and 10 cm/5 cm secondary trim increments. 4 m standard length is a reusable target, not a command to stretch a finished opening. Use explicit length variants. Do not mirror with negative scale; author mirrored variants or use approved instance transforms.
 
-### Phase 3 — shared materials and trim sheets
-Create material master assets before room dressing. Use tileables/trim sheets for repeating surfaces and unique UV atlases only for hero/narrative props. Do not bake lighting into Base Color. Do not assume real-time reflections, wet-floor reflection, emissive bounce, translucency, Nanite or virtual textures are supported in the target project; Claude verifies actual behavior in UEFN.
+Create/adjust shared material instances and trim sheets only after source inventory. Use the material master to unify acquired meshes; create original texture/material sources only for gaps or licensed modifications. Use tileables/trim sheets for repeating surfaces and unique UV atlases only for hero/narrative props. Do not bake lighting into Base Color. Do not assume real-time reflections, wet-floor reflection, emissive bounce, translucency, Nanite or virtual textures are supported in the target project; Claude verifies actual behavior in UEFN.
 
-### Phase 4 — shared props and gameplay-readable props
-Build reception, office, storage and electrical props before room-specific dressing:
+### Phase 4 — shared props and gameplay-readable props (gap-only)
+Use acquired licensed props first. Build only missing reception, office, storage and electrical props before room-specific dressing:
 - Reception counter, bell, guest ledger, pen, key rack, ROOM13 key/tag, phone, clock, CRT security monitor, filing drawer/combination lock, desk lamp, ashtray/stationery, two waiting chairs, side table, motel photograph.
 - Office desk/chair, filing cabinet, folders, calendar/notes, photo board, employee badge/uniform detail, desk phone/lamp, locked drawer, office key.
 - Storage shelves, cleaning cart, toolbox, screwdriver, spare battery, service labels.
@@ -119,7 +122,7 @@ Build reception, office, storage and electrical props before room-specific dress
 Separate the visual mesh from interaction volumes/device logic. Do not add gameplay functions to a decorative mesh.
 
 ### Phase 5 — rooms 01–13
-Use ROOM_BY_ROOM_ART_SPEC.md and the placement register as the baseline, then correct placements against the reconciled geometry. Use a shared room kit with controlled variants; ROOM 05 is intentionally sparse and must not receive a full duplicate kit. Room-specific beats:
+Use existing licensed room assets first. Use ROOM_BY_ROOM_ART_SPEC.md and the placement register as the baseline, then correct placements against the reconciled geometry. Use a shared room kit with controlled variants; ROOM 05 is intentionally sparse and must not receive a full duplicate kit. Room-specific beats:
 - 01: CRT impossible corridor feed; orient screen to approved sightline.
 - 02: open suitcase and reachable battery pickup.
 - 03: cracked mirror and a staged alternate scare if live reflection is unavailable.
@@ -136,7 +139,7 @@ Use ROOM_BY_ROOM_ART_SPEC.md and the placement register as the baseline, then co
 For every room, output top-down furnished plan, asset IDs, coordinates, yaw, dimensions, collision, wall clearance, door swing, 0.90 m path and 1.20 m interaction zones.
 
 ### Phase 6 — exterior, car and signage
-Build parking asphalt/curb/line markings, wet patches, broken generic 1980s vehicle, sign cabinet/support/tubes, gate and motor housing, vending, dumpster, parking lamps, generator, service props, conduit, road shoulder and restrained debris. Vehicle must be generic original design with no unlicensed badges or recognizable protected model trade dress. Gate remains blocked until anchor conflict is resolved. Sign lettering and Raven Motel identity are original project artwork.
+Use licensed period-compatible exterior assets first. Create only missing parking asphalt/curb/line markings, wet patches, generic 1980s vehicle, sign cabinet/support/tubes, gate and motor housing, vending, dumpster, parking lamps, generator, service props, conduit, road shoulder and restrained debris. Vehicle must be generic original design with no unlicensed badges or recognizable protected model trade dress. Gate remains blocked until anchor conflict is resolved. Sign lettering and Raven Motel identity are original project artwork.
 
 ### Phase 7 — narrative and character assets
 Create original photos, portrait, diary page graphics, guest register, motel signage, key tags, labels and warning decals. Track text owner/source and image rights. THE GUEST is a separate character deliverable: dimensioned turnaround front/side/back, 3/4, face/hands, scale mannequin 1.80 m, A/T pose, silhouette tests 5/10/15 m, rig hierarchy, LODs and animation list. Model height 2.60 m target (permitted 2.50–2.70 m), LOD0 25–45k triangles, LOD1 12–20k, LOD2 4–8k target. Do not promise custom rig/animation compatibility until Claude verifies current UEFN NPC import path. Keep character mesh and gameplay NPC separate.
