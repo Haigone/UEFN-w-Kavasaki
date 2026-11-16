@@ -22,9 +22,12 @@ The owner approved GEO-A01–GEO-A21 on 2026-11-16 (“approvo tutto, procedi”
 
 Approved scope includes the R2.3 room envelopes, walls/openings, slabs, stair, secret route, balcony clipping, sealed reserves, U-SERVICE access policy and non-playable roof as recorded in LD_GEO_R2.3_APPROVAL_RECORD.md.
 
-Not approved by that decision:
-- END-A01: co-op ending quorum, timeout and disconnect rules.
-- END-A02: mandatory evidence list for THE TRUTH.
+Separately approved decision:
+- END-A01 co-op ending quorum is owner-approved on 2026-11-16 and is binding: strict majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST; tie/timeout fallback and disconnect/reconfirmation rules are in OWNER_DECISION_GATE_R2.2.md and ENDING_IMPLEMENTATION_SPEC.md.
+
+Still not approved:
+- END-A02: mandatory evidence list for THE TRUTH. See OWNER_DECISION_PACKET_R1.md and END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
+- NCP-A01–A09: narrative/puzzle/ending copy in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; consolidated owner approval is pending in OWNER_DECISION_PACKET_R1.md.
 - Room interior/bathroom partitions and fit-out.
 - Editor-driven geometry changes; propose these as R2.4 and obtain owner approval.
 
@@ -83,7 +86,7 @@ Priority P1 | Parallel document/design work permitted; implementation only again
 
 Complete and reconcile: PZ-01 Guest Register (02-13-86); PZ-02 Office Photographs (1974/1978/1982/1986); exact Fuse A/B/C locations and clues aligned to IN-024/025/026; ROOM 04 phone recording; ROOM 06 missing guest photos; ROOM 09 diary; ROOM 11 child drawing; ROOM 13 four-photo content/captions and chronology (1968/1974/1981/1986); THE TRUTH confrontation/action/dialogue/consequence/cinematic beats.
 
-Narrative proposal pack is not canon until owner approval. END-A01 co-op quorum is owner-approved and may be implemented as specified in ENDING_IMPLEMENTATION_SPEC.md. END-A02 remains pending owner approval; see END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md for the recommended three-clue gate (ROOM 09 diary, ROOM 11 drawing, ROOM 06 missing-guest archive) and anti-softlock acceptance criteria. Do not implement any mandatory truth-evidence gate until explicit owner approval. Keep SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed / Room13RevealComplete as separate progression/reveal gates, not duplicate evidence pickups. Solo ending selection and atomic ending lock may be implemented only if the approved gameplay contract supports them. Every approved mandatory clue needs a non-audio fallback; each reward flag has one authoritative grant interaction.
+Narrative proposal pack is not canon until owner approval. END-A01 co-op quorum is owner-approved and may be implemented exactly as specified in ENDING_IMPLEMENTATION_SPEC.md. END-A02 remains pending owner approval; see END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_PACKET_R1.md. Do not implement any mandatory truth-evidence gate until explicit owner approval. Keep SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed / Room13RevealComplete as separate progression/reveal gates, not duplicate evidence pickups. Use OBJECTIVE_AND_EVENT_CATALOG.md for exact objective predicates and IN-001–IN-031 event ownership; use MONSTER_AI_BEHAVIOUR_SPEC.md for AI state/perception/navigation/capture behaviour. Verify every capability against the target UEFN release. Every approved mandatory clue needs readable/journal fallback; each reward flag has one authoritative grant interaction.
 
 Verse implementation must be compiled against the actual current UEFN Verse API. Do not invent API signatures or report pseudocode as implementation.
 
