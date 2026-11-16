@@ -101,3 +101,13 @@ Claude is responsible for all UEFN project inspection, Verse/API verification, i
 
 ## 14. Definition of done
 All six acts playable in solo and 2–4 player co-op; all mandatory items recoverable; all puzzles retryable; disconnect and all-captured recovery tested by Claude; checkpoints idempotent; all three endings reachable; no known softlock; actual UEFN compile and playtest evidence attached before release. See CLAUDE_UEFN_EXECUTION_PLAN.md for the required execution sequence and reporting format.
+
+
+## 15. Cross-register state additions and reward ownership
+- Add `MissingGuestEvidenceFound` as the Room 06 photo-board discovery flag. It is part of the proposed THE_TRUTH evidence checklist only while the project owner retains it as mandatory.
+- `RegisterSolved` opens the desk drawer; the OfficeKey is granted only by interaction IN-006.
+- `PhotoSequenceSolved` opens the ROOM 13 compartment; the ServiceKey is granted only by interaction IN-017.
+- Pickup events IN-024–IN-028 are the authoritative grants for FuseA, FuseB, FuseC, Screwdriver and CarKeys. Each is team-owned and idempotent.
+- `Room13Key` is the team inventory item; `Room13KeyKnown` is the separate narrative discovery flag. Neither is consumed to unlock ROOM 13.
+- Screwdriver is reusable and is used for the electrical cover and the ROOM 12 concealed panel.
+- These mappings are documentary reconciliation rules; Claude must verify the corresponding actors and event bindings in the actual project.
