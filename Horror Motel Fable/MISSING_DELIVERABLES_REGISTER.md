@@ -74,3 +74,7 @@ The current R2.1 design has corrected several earlier ambiguities, but it remain
 
 ### MD-036 status clarification
 PR #1 is technically reported `mergeable=true` by GitHub at the latest check, but remains OPEN/DRAFT, 49 ahead / 94 behind, unreviewed and stale against R2.1. Its block is production/data/geometry readiness, not a reported merge conflict. The PR description's 119 asset / 20 material / 286 placement counts are current; its “CSV schemas normalized” claim is not supported by the source-register and GQ-007 parsing results.
+
+
+### MD-036 final status correction
+Latest live check returned `mergeable=false` after an earlier check reported true; compare was 49 ahead / 100 behind main. Treat PR #1 as blocked and recheck after synchronisation/review. The reason for MD-036 remains content/readiness as well as the current mergeability result.
