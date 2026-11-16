@@ -47,3 +47,7 @@ U-W-CROSS-02,UF,Open_Connector_Bay,8.3,17,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,W
 U-E-CROSS-01,UF,Open_Connector_Bay,67,75.7,27,29,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
 U-E-CROSS-02,UF,Open_Connector_Bay,67,75.7,36,38,3.6,8.7,2,2.8,0,FLOOR-UPPER-01,Walkable,Upper east cross-bay to balcony,OWNER APPROVAL REQUIRED
 UF-STAIR-OPENING,UF,Slab_Opening,22.5,25.5,52.3,56.32,3.35,3,4.02,0,0,NA,No collision,Upper slab cut for U-turn stair,OWNER APPROVAL + EDITOR-TEST REQUIRED
+GF-W-SOUTH-VEST,GF,Entry_Buffer,11.1,19.7,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to west corridor,OWNER APPROVAL REQUIRED
+GF-E-SOUTH-VEST,GF,Entry_Buffer,64.3,72.9,18.3,19.85,0,8.6,1.55,3,0,FLOOR-INT-01,Walkable,South end vestibule open to east corridor,OWNER APPROVAL REQUIRED
+UF-W-SOUTH-VEST,UF,Entry_Buffer,8.3,17,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to west balcony,OWNER APPROVAL REQUIRED
+UF-E-SOUTH-VEST,UF,Entry_Buffer,67,75.7,18.3,19.85,3.6,8.7,1.55,2.8,0,FLOOR-UPPER-01,Walkable,South end vestibule open to east balcony,OWNER APPROVAL REQUIRED
