@@ -37,7 +37,7 @@ No room dimensions, wall thicknesses, door coordinates, vertical levels or stair
 - All coordinates below are OWNER APPROVED R2.3 unless specifically labelled DERIVED or EDITOR VERIFICATION REQUIRED.
 
 ## 3. Building footprint and wing arrangement
-**PROPOSED CANONICAL OUTER FOOTPRINT**
+**OWNER-APPROVED CANONICAL OUTER FOOTPRINT — R2.3**
 - West wing: X=8.00–20.00, Y=18.00–60.00.
 - East wing: X=64.00–76.00, Y=18.00–60.00.
 - North connector: X=8.00–76.00, Y=48.00–60.00.
@@ -47,7 +47,7 @@ The union is one U-shaped polygon, not three overlapping solid rectangles. Bound
 (8,18) → (20,18) → (20,48) → (64,48) → (64,18) → (76,18) → (76,60) → (8,60) → close.
 The 12×12 m intersections at each north wing junction are part of the union once only. No duplicate floor slab, wall or collision.
 
-Classification: footprint dimensions are repeated in the dossier and E1 and are treated as the best-supported baseline; exact final wall offsets remain PROPOSED and require owner approval.
+Classification: footprint dimensions and wall offsets are OWNER APPROVED R2.3; editor construction/junction checks remain pending.
 
 ## 4. Canonical room and circulation coordinates
 
@@ -106,9 +106,9 @@ The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as 
 | U-EAST-TURN | 64.00–66.85 | 47.00–50.80 | 2.85×3.80 | OWNER APPROVED R2.3 — clipped to UF slab |
 | U-STAIR-LANDING | 20.15–28.70 | 51.10–59.70 | 8.55×8.60 | OWNER APPROVED R2.3 |
 | U-SERVICE | 29.00–48.70 | 51.10–59.70 | 19.70×8.60 | OWNER APPROVED R2.3 — sealed, no access/no navmesh |
-| ROOM 13 | 49.00–63.70 | 51.10–59.70 | 14.70×8.60 | OWNER DECISION for location; size PROPOSED |
-| U-WEST-SERVICE-RESERVE | 8.30–19.85 | 51.10–59.70 | 11.55×8.60 | PROPOSED non-playable reserve |
-| U-EAST-SERVICE-RESERVE | 64.00–75.70 | 51.10–59.70 | 11.70×8.60 | PROPOSED non-playable reserve |
+| ROOM 13 | 49.00–63.70 | 51.10–59.70 | 14.70×8.60 | OWNER APPROVED R2.3 |
+| U-WEST-SERVICE-RESERVE | 8.30–19.85 | 51.10–59.70 | 11.55×8.60 | OWNER APPROVED R2.3 — sealed reserve |
+| U-EAST-SERVICE-RESERVE | 64.00–75.70 | 51.10–59.70 | 11.70×8.60 | OWNER APPROVED R2.3 — sealed reserve |
 
 The balcony is one connected walkable polygon: union of the two side legs, north crossbar and two corner turning pads. Guardrail only along courtyard-facing exposed edges; centre-lines X=19.85 (west leg), X=64.15 (east leg), Y=48.15 (north crossbar), Z=3.60–4.70. Rails sit in the 0.30 m edge strips outside the walkable polygon; no rail across room door thresholds or stair landing. Target guardrail height 1.10 m. The 2.50 m clear width is measured after rail posts/props.
 
@@ -151,7 +151,7 @@ Vestibule bounds are FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m clear). Its
 - The flat-roof parapet follows the complete U-shaped roof perimeter. Courtyard-side parapet centre-lines meet continuously at (19.85,48.15) and (64.15,48.15); use `wall_schedule.csv` and miter/trim corner meshes without gaps or stacked collision.
 
 ## 8. Stair — north connector / reception
-Owner-approved only as to **location**. Proposed dimensions:
+Owner-approved as to **location and dimensions** in LD-GEO R2.3:
 - Reservation X=21.00–27.00, Y=51.20–59.00.
 - Clear flight width 1.20 m each; two parallel flights plus 0.30 m centre separation/structure; overall width 2.70 m.
 - Floor-to-floor rise 3.60 m = 20 risers × 0.18 m.
@@ -163,7 +163,7 @@ Owner-approved only as to **location**. Proposed dimensions:
 The earlier 5.32 m run is mathematically inconsistent with two flights of nine goings each: 18×0.28=5.04 m total horizontal going, not 5.32 m. The U-turn assembly's plan depth is 2.52+1.20=3.72 m.
 
 ## 9. Vertical levels, slabs and flat roof
-Proposed consistent stack:
+Owner-approved vertical stack:
 | Element | Elevation |
 |---|---:|
 | Ground FFL | Z=0.00 |
@@ -174,7 +174,7 @@ Proposed consistent stack:
 | Flat roof slab top | Z=6.65 |
 | Parapet top | Z=7.10 |
 
-Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are proposed at 0.25 m from E1. All three thicknesses require owner approval. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent but is a OWNER APPROVED R2.3 to EBD/E1 vertical values and requires owner approval.
+Ground slab thickness is approved at 0.20 m; upper and roof slabs are approved at 0.25 m. These values reconcile the EBD/E1 vertical conflicts. The 0.35 m gap between ground ceiling plane and upper slab underside is a ceiling/service void, not walkable space. The flat roof covers the U-shaped building union only; courtyard remains open. Roof access is prohibited in the level. This stack is internally consistent and owner-approved as R2.3; structural and UEFN headroom checks remain pending.
 
 ## 10. Balcony, courtyard and floor separation
 - Courtyard void: X=20–64, Y=18–48; no floor slab above ground level and no roof.
@@ -185,18 +185,20 @@ Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are p
 - Balcony rails protect only exposed courtyard edges. No rail may obstruct the 0.90 m room door opening or the 1.20 m stair access.
 - Roof is a separate flat slab above the upper floor, not an upper-floor walkable route.
 
-## 11. Owner approval required before geometry freeze
-1. Confirm the ground-floor room orientation: R2.2 uses the E1/R2.1 arrangement (rooms on courtyard side of outer corridor), not the mirrored arrangement in the original dossier.
-2. Confirm the room Y bands and the proposed 2.00 m transverse connector bays.
-3. Confirm upper room width 8.70 m, side-wing placement and 2 m cross-bays, replacing R2.1's 5.90 m.
-4. Confirm ELECTRICAL reduced to X=57.30–72.90 and the east north-link corridor retained at X=73.20–75.70.
-5. Confirm west lobby, service bay and upper service reserve allocations.
-6. Confirm ROOM 13 dimensions 14.70×8.60 m and exact north connector placement.
-7. Confirm stair geometry, handedness, exact placement, lower approach polygon, reception counter/queue clearances and 0.18/0.28 riser/going targets.
-8. Confirm wall thicknesses 0.30/0.15 m, ground slab 0.20 m, upper/roof slabs 0.25 m, and vertical stack Z=3.00/3.35/3.60/6.40/6.65/7.10.
-9. Confirm 2.50 m balcony width and corner pads.
-10. Confirm window placement on courtyard-facing ground facades and exterior-facing upper facades.
-11. Confirm the 1.55 m south-end vestibule buffers and their open connections to the corridors/balconies.
+## 11. Owner approval recorded — implementation checks remain
+
+The owner approved GEO-A01–GEO-A21 on 2026-11-16. The following are no longer owner decision gates; they are implementation/verification tasks for Claude:
+1. Build the approved ground-floor orientation, room Y bands and 2.00 m gross / 1.70 m net cross-bays.
+2. Build the approved upper room widths, continuous balcony and north connector.
+3. Preserve the approved north stair, ROOM 13 and secret route coordinates.
+4. Build wall thicknesses, slab thicknesses and the approved vertical stack.
+5. Build the clipped balcony pads and sealed reserve walls exactly as registered.
+6. Preserve all 51 approved openings and host-wall relationships.
+7. Validate navmesh/collision exclusions for all sealed reserves and U-SERVICE.
+8. Verify stair capsule clearance, 2.20 m minimum headroom, both approaches and THE GUEST traversal on both floors.
+9. Coordinate roof drainage without changing the flat external roof silhouette.
+10. Do not add bathroom/internal partitions; room interior fit-out remains out of scope.
+
 
 ## 12. Verification boundary
 This is a document-only geometric reconciliation. No UEFN project was opened, built, simulated or tested. Mark all editor-dependent items EDITOR-TEST REQUIRED. The geometry is **not approved** until the owner explicitly approves the proposed corrections above.
