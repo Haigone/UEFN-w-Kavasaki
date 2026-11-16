@@ -9,7 +9,7 @@ Derived flags: `FinaleReady = PowerRestored AND GatePowered AND ServiceKeyObtain
 All flags are session-authoritative. Ending starts as NONE and may be committed exactly once. `NightAuditActivated` starts false and may be committed once only after Ending=THE_TRUTH.
 
 ## 2. Eligibility
-**ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. CoreEscapeReady is committed only after the service gate is powered and CarKeys are used at the vehicle ignition. This is available even when optional truth evidence was missed.  
+**ESCAPE:** CoreEscapeReady=true and player/team selects the standard vehicle route. After FinaleReady, the CarKeys pickup is optionally available; collecting it does not select or commit an ending. Vehicle ignition commits VehicleIgnitionSucceeded=true, from which CoreEscapeReady is derived. ESCAPE appears in the selector only after CoreEscapeReady is true. This is available even when optional truth evidence was missed.  
 **THE_TRUTH:** FinaleReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceKeyObtained=true, ServiceRouteReady=true, and team explicitly selects THE_TRUTH. It does not require CarKeys, CoreEscapeReady or vehicle ignition.  
 **THE_NEW_GUEST:** FinaleReady=true makes the invitation option available. The resolver presents the invitation and requires unanimous explicit affirmative confirmation from every currently connected eligible player. Set NewGuestAccepted=true only after that quorum succeeds, then commit THE_NEW_GUEST. It does not require CarKeys or vehicle ignition. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
