@@ -32,3 +32,21 @@ Some deliverables have partial written specifications. They remain PRESENTE MA N
 
 ## Who produces the missing evidence
 For every deliverable whose completion requires an actual UEFN project/editor, asset import, Verse compile, gameplay test, multiplayer test, performance profile or island validation, **Claude produces the implementation and evidence**. ChatGPT prepares the detailed execution plan, exact test protocol and acceptance checklist, then checks Claude's returned evidence. The project owner supplies access and approves decisions/publication. Repository entries remain guidance until implementation evidence is returned. See `CLAUDE_EXECUTION_PROTOCOL.md`.
+
+
+## Re-audit additions — 2026-11-16
+
+The following items were found during deeper CSV, wall-register and open-branch inspection:
+
+| ID | Missing / incomplete deliverable | Current evidence | Status | Required completion evidence | Dependency | Owner |
+|---|---|---|---|---|---|---|
+| MD-023 | Validated interaction/puzzle/coordinate CSV rows | Three malformed interaction rows, one malformed PZ-03 row and one malformed UPPER_ROOM11 row | INCOMPLETO | Header-aligned rows, parser report and cross-reference validation | Current main schedules | Gameplay / Level Design |
+| MD-024 | Split lighting and audio schedules | lighting_audio_schedule.csv contains two distinct schemas and dynamic text coordinates | INCOMPLETO | Separate schema-consistent files and defined dynamic audio emitter contract | Geometry freeze / audio design | Audio Lead |
+| MD-025 | Complete canonical wall/opening schedule | 23-row partial wall list; opening IDs differ from DOOR_WINDOW_SCHEDULE; D-13C absent | BLOCCATO | Full wall centre-lines, shared walls once, host wall IDs and every opening cross-reference | MD-002/003/007 | Technical Level Designer |
+| MD-026 | Owner-approved R2.0 geometry package and complete section set | Candidate geometry, two plan documents and schematic SVGs exist; E-E section and exact stair/vertical stack remain open | BLOCCATO | Owner approval, dimensioned plan/sections, wall/opening schedules and Claude traversal evidence | MD-002/003/004/006 | Project Owner / Level Design |
+| MD-027 | Reviewed and synchronised Environment Art package | PR #1 draft; branch 11 ahead / 42 behind; no review; files remain outside main | BLOCCATO | Rebased branch, fresh diff, review, corrected placements and approved merge | MD-026 | Art Lead / Production Director |
+| MD-028 | Corrected Environment Art placement register | Six wardrobes outside room bounds; secret panel offset 0.30 m; trigger reference lacks asset definition | BLOCCATO | Updated 195-row register, geometry footprint checks, door-swing/route checks and Claude editor evidence | MD-026/027 | Environment Art |
+| MD-029 | Current README/source-of-truth index | README omits R2.0 and Claude execution docs and points to legacy lower-case schedules | INCOMPLETO | Updated reading order, canonical/legacy naming table and links to current docs | Audit / source-of-truth decision | Production Director |
+| MD-030 | Explicit execution-order decision | Claude execution plan says Narrative Lock Phase 1; master register/roadmap say geometry first | PRESENTE MA NON VERIFICATO | Approved order clarifying parallel narrative work vs geometry critical path | Production sequencing | Project Owner |
+
+The PR's asset/material specifications do not close MD-009/011/012/016: no source models, textures, rig/animation files, license proof or UEFN imports are present in that branch. Documentation improves readiness but does not create the deliverables.
