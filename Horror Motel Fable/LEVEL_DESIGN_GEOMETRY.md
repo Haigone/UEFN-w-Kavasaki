@@ -114,6 +114,8 @@ The balcony is one connected walkable polygon: union of the two side legs, north
 
 The two service reserve zones are non-playable placeholders to close the upper-floor slab footprint. They are not new rooms and have no assumed access. OWNER APPROVAL REQUIRED to retain them or replace them with another upper-level allocation.
 
+**Room-interior boundary:** ROOM 01–13 coordinates define the finished room envelopes only. The EBD mentions a nominal 2.20×2.40 m bathroom allowance in standard rooms, but it does not give a reconciled placement/orientation or complete door/partition geometry. R2.2 therefore does not invent bathroom walls, bathroom doors or fixture clearances. These interior subdivisions remain out of the canonical wall schedule pending owner-approved room fit-out.
+
 ## 5. ROOM 12 → ROOM 13 continuous secret route
 Route sequence:
 1. D-13A: concealed panel in ROOM 12 north wall; wall centreline Y=47.475, centre X=69.95, sill Z=3.60, clear 0.90×2.10 m; opens north.
