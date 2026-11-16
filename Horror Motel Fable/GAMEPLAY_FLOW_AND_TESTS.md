@@ -165,7 +165,7 @@ Recommended flags:
 - EndingSelected
 
 ESCAPE:
-- CoreEscapeReady = true (set only after GatePowered and CarKeys vehicle ignition).
+- CoreEscapeReady = true only after FinaleReady is true and CarKeys vehicle ignition succeeds.
 - TruthChainComplete = false OR player/team chooses the standard exit path.
 - Car Keys + gate mechanism completed.
 - Trigger vehicle escape.
