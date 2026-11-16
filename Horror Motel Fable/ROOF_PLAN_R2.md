@@ -19,5 +19,5 @@ Do not roof the courtyard and do not create overlapping roof slabs at the 12×12
 ## Roof use and drainage
 Roof remains visually flat and non-playable. No player access, ladder, door or traversal route. Owner-approved drainage concept: concealed 1.0% falls to a coordinated perimeter drainage system, preserving the flat external silhouette. Exact outlets/scuppers, downpipes and hydraulic sizing remain technical-coordination items; do not invent their coordinates or treat them as approved.
 
-## Owner approval required
+## Owner approval recorded — technical coordination remains
 Confirm the vertical stack, parapet dimensions and drainage concept. Roof polygon, courtyard exclusion and no-player-access rule must remain consistent in plan, sections and wall schedule.
