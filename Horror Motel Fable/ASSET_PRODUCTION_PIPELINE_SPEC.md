@@ -111,6 +111,8 @@ If the target UEFN release cannot import the custom rig/animations, present a co
 
 - AUDIO_REGISTER.csv lists source assets and emitter intent.
 - AUDIO_CUE_SHEET.csv lists event triggers, priority, concurrency, spatial policy and fallback.
+- AUDIO_MIX_POLICY.md defines relative mix, ducking and concurrency targets.
+- LIGHTING_CUE_SHEET.csv and LIGHTING_STATE_SPEC.md define event-driven lighting and readability targets.
 - UI_STRING_TABLE.csv controls subtitle and player-facing text.
 - Every VO line has a stable String_ID and subtitle; mandatory clue audio has readable transcript fallback.
 - Normalize/compare assets in a common review environment; document loudness target and mix priority before import.
