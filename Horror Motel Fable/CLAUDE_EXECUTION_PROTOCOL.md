@@ -78,3 +78,20 @@ No unsupported "done", "tested", "compiled" or "ready to publish" claims.
 
 ## 6. Current production gate
 The current first gate remains geometry source-of-truth reconciliation. No final geometry-dependent placement, patrol/trigger placement, lighting/audio placement or production blockout should be treated as approved until the owner approves one reconciled geometry revision. Claude may inspect and report measurements in UEFN, but must not resolve creative conflicts by silently choosing a competing source.
+
+
+## 6. R3 execution authority and decision finality — 2026-11-16
+
+The current canonical execution sequence is CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md. Claude must read it before following any older task plan or master prompt. It supersedes pre-R2.3 geometry instructions and stale roadmap/task statuses.
+
+Binding decision records:
+- LD-GEO R2.3 / GEO-A01–GEO-A21: owner-approved design.
+- END-A01: owner-approved co-op quorum.
+- END-A02: owner-approved three-clue TruthChainComplete gate.
+- NCP-A01–A09: approved canonical English content under express delegated creative authority.
+
+Do not ask the owner to repeat these decisions. Do not reinterpret them to work around technical limitations; use the documented UEFN fallback while preserving gameplay outcome. Any structural geometry change requires an R2.4 proposal and owner approval.
+
+Current documentary integration report: R3_INTEGRATION_INTEGRITY_REPORT.md. It records static checks only. The current UEFN device register has 49 logical/device rows; no row is editor-verified merely by appearing in the CSV. The 94-row asset rights register remains NOT SOURCED until actual license evidence is archived.
+
+ChatGPT's responsibility remains documentation, cross-register consistency and execution instructions. Claude remains responsible for all actual UEFN project/editor/Verse/asset operations and evidence. Do not monitor or narrate work outside the evidence returned by Claude.
