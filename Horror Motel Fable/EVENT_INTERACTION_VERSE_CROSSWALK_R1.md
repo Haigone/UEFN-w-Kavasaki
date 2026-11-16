@@ -34,7 +34,7 @@
 | IN-015 | EVT-013 SecretPanelOpened | PuzzleManager.OpenSecretPanel | SecretPanelOpened=true; Room13Unlocked=true | Screwdriver reusable |
 | IN-016 | EVT-015 Room13PhotoSequenceSolved + EVT-016 OwnerRevealPresented | PuzzleManager.CommitRoom13PhotoSequence; CinematicManager.RequestReveal / GameManager.CommitReveal | PhotoSequenceSolved=true; then Room13RevealComplete=true | Keep solve and presentation-complete commits separate |
 | IN-017 | EVT-017 ServiceKeyGranted | InventoryManager.GrantServiceKey | ServiceKeyObtained=true; ServiceKey held | Sole ServiceKey writer |
-| IN-018 | EVT-018 ServiceGateActivated | PuzzleManager.ActivateServiceGate | GatePowered=true; ServiceRouteReady=true | GameManager derives FinaleReady |
+| IN-018 | EVT-018 ServiceGateActivated | PuzzleManager.ActivateServiceGate | GatePowered=true; ServiceRouteReady=true | SVC-GATE-CONSOLE in GF-SERVICE-BAY after D-G16 Service Key access; GameManager derives FinaleReady |
 | IN-019 | EVT-019 VehicleIgnitionSucceeded | GameManager.CommitVehicleIgnitionSucceeded | VehicleIgnitionSucceeded=true; CoreEscapeReady is derived | Requires FinaleReady + CarKeys; ESCAPE branch only |
 | IN-020 | EVT-020 EndingVoteCommitted + EVT-021 EndingSelected; EVT-022 for NEW_GUEST consent | EndingManager.SubmitVote / GameManager.CommitEnding | EndingSelected set once | END-A01 rules; New Guest unanimous explicit confirmation |
 | IN-021 | EVT-047 HidingStateChanged | PlayerStateManager.SetHidden | PlayerHidden[player]=true/false | New event: player-local, clear on disconnect/reset/capture |
