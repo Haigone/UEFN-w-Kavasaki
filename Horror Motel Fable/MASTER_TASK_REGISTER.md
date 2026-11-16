@@ -272,3 +272,5 @@ DOC-022 and QA-002 close documentation/tool-authoring gaps only. They do not clo
 | QA-003 | Repository QA | Run static validator automatically on push and pull request | P1 | .github/workflows/r3-static-validation.yml | WORKFLOW PRESENT — FIRST RUN NOT YET VERIFIED | GitHub Actions run completes successfully on current main and on subsequent changes |
 
 These tasks close planning/automation authoring only. Native UEFN project discovery, editor implementation and runtime/release evidence remain separate gates.
+
+| DOC-024 | Production handoff | Create a single paste-ready autonomous start prompt | P0 | CLAUDE_START_HERE_PROMPT_R3.md | DOCUMENTATION PRESENT | Claude reads canonical R3 documents, begins at GATE A, works in batches and asks only for owner-only approvals |
