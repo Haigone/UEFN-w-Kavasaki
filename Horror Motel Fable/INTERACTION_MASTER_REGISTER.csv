@@ -2,7 +2,7 @@ InteractionID,Act,Location,Target,Action,Prerequisites,RangeM,DurationSec,StateC
 IN-001,I,Exterior,Neon/sign sightline,Inspect,Session start,2,0,ArrivalClueSeen,Visual/audio cue,Repeatable,All clients may inspect,Journal flag if sightline trigger fails
 IN-002,I,Reception,Telephone,Answer/Listen,Reception entered,2,0,PhoneMessageHeard,Subtitle plus spatial audio,Once per session,Shared narrative flag,Replay subtitle/transcript
 IN-003,I,Reception,Room 13 key,Inspect/collect,Reception entered,2,1,Room13Key;Room13KeyKnown,Pickup cue and team HUD,Team flag once,Shared,Recovery proxy if actor missing
-IN-004,II,Reception,Guest register,Inspect,Reception entered,2,0,RegisterCluesSeen,Readable close-up,Repeatable,Shared discovery flag,Journal copy
+IN-004,I,Reception,Guest register,Inspect,Reception entered,2,0,RegisterCluesSeen,Readable close-up,Repeatable,Shared discovery flag,Journal copy
 IN-005,II,Reception,Desk lock,Enter code,Register clues available,2,0,RegisterSolved,Click or reject cue,Retryable,Atomic lock/team flag,Key recovery only after validated solve
 IN-006,II,Reception,Desk drawer,Collect Office Key,RegisterSolved,2,1,OfficeKey,Pickup cue,Once,Team-owned,Regrant from drawer proxy
 IN-007,II,Owner office,Photo board,Arrange photos,OfficeKey,2,0,UpperFloorAccessGranted,Mechanism opens,Retryable,One operator; replicated state,Journal photo index/substitute card
