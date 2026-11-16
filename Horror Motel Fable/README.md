@@ -36,6 +36,8 @@ Il concept narrativo e il gameplay sono definiti a livello di specifica. Le coor
 - [UEFN_DEVICE_BINDINGS.csv](UEFN_DEVICE_BINDINGS.csv) — matrice iniziale dispositivi/Verse.
 - [GEOMETRY_VALIDATION_REPORT.md](GEOMETRY_VALIDATION_REPORT.md) — controlli geometrici ancora aperti.
 - [QA_ACCEPTANCE_MATRIX.md](QA_ACCEPTANCE_MATRIX.md) — matrice di collaudo.
+- [exterior_prop_schedule.csv](exterior_prop_schedule.csv) — coordinate di auto, insegna, cancello, generatore e props esterni.
+- [lighting_audio_schedule.csv](lighting_audio_schedule.csv) — posizionamento iniziale di luci e sorgenti audio.
 
 ## File di produzione che Claude deve generare
 - `coordinate_schedule.csv`
