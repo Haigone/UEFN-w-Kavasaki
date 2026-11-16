@@ -135,3 +135,33 @@ The current main snapshot shows IN-021/022/023 semantically aligned with the INT
 
 ### Current execution boundary
 The current Claude handoff is `CLAUDE_R2.2_EXECUTION_PACKET.md`. Only CLD-001 read-only baseline and CLD-002 read-only integrity audit may proceed before owner approval. CLD-004, final art placements, PR merge and geometry-dependent gameplay placement remain blocked. Claude alone performs UEFN/editor implementation and tests.
+
+
+## R2.3 and documentation-control addendum — 2026-11-16
+
+This addendum supersedes earlier task wording/statuses where it refers to R2.2 geometry approval or pre-R2.3 narrative/AI completeness. It does not close editor-dependent work.
+
+### Geometry status reconciliation
+- **GEO-001:** design-level source-of-truth decision is now OWNER-APPROVED DESIGN under LD-GEO R2.3 (GEO-A01–GEO-A21). The earlier status BLOCCATO is superseded for the owner-decision portion. Remaining work is CLD-002 document/register integrity and editor verification; do not call geometry editor-frozen.
+- **GEO-002:** R2.3 defines the ROOM 12 → VEST-13 → ROOM 13 route at design level. Physical continuity, collision and two-way traversal remain EDITOR-TEST REQUIRED.
+- **GEO-003/004:** floor/slab/stair/balcony/roof design decisions are covered by R2.3 approval. Construction schedule integrity, editor collision, capsule clearance and traversal remain open.
+- **GEO-005/006:** keep open until CLD-002 proves opening-to-host-wall and schedule references, and Claude provides editor evidence.
+- **BLK-001/002:** no completion inferred; native project baseline and greybox remain separate UEFN deliverables.
+
+### New documentation work packages
+| ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
+|---|---|---|---|---|---|---|---|---|---|
+| DOC-001 | Narrative | Consolidate owner-facing narrative decisions | P0 | NARRATIVE_CONTENT_PROPOSAL_PACK_R1 | OWNER_DECISION_PACKET_R1.md | PRESENTE — OWNER APPROVAL PENDING | One explicit approval covers NCP-A01–A09 and END-A02; END-A01 remains closed | Recorded owner response and synchronized docs | Project Owner |
+| DOC-002 | AI | Complete THE GUEST behaviour contract | P1 | Gameplay/player-state/geometry contracts | MONSTER_AI_BEHAVIOUR_SPEC.md | DOCUMENT PRESENT; ENGINE FEASIBILITY PENDING | States, perception, stimuli, target selection, navigation, capture handoff, recovery and AI tests defined | Document review plus later target-version feasibility evidence | AI / Game Design |
+| DOC-003 | Gameplay | Define exact objective predicates and event ownership | P0 | Existing interaction/puzzle registers | OBJECTIVE_AND_EVENT_CATALOG.md | DOCUMENT PRESENT; CROSS-REGISTER AUDIT PENDING | Every objective has one predicate; each state has one authoritative writer and event mapping | Schema/reference audit and later Verse tests | Gameplay Design |
+| DOC-004 | Production governance | Reconcile stale R2.2 and pre-proposal documents to R2.3 | P0 | Current control master and source docs | Updated control/readme/registers | IN PROGRESS | No active document states an obsolete approval, quorum, puzzle solution or narrative gap as current | Repository-wide consistency audit | Production Director |
+| DOC-005 | UI/UX | Finalize vote timing, objective strings and interaction prompts | P1 | END-A01; objective catalog; narrative approval | UI string/objective/input register | PARTIAL | Every prompt has stable StringId, trigger, success/failure/cancel text and input binding | String table review and target UI validation | UI/UX |
+| DOC-006 | Audio/Lighting | Complete cue-level trigger and mix specification | P2 | Approved narrative; geometry; AUDIO_REGISTER/LIGHTING_REGISTER | Cue sheet with IDs, trigger, duration, priority, mix and fallback | PARTIAL | Every mandatory cue has unique event, concurrency and subtitle/visual fallback | Cue sheet and later editor playback evidence | Audio / Lighting |
+
+### Current documentation priorities
+1. Finish DOC-004 cross-document reconciliation; do not revive old R2.2 approval or vote text.
+2. Obtain the single consolidated owner decision in OWNER_DECISION_PACKET_R1.md. No separate repeated micro-approvals are required for its included items.
+3. Complete cue/string/asset production registers and exact interaction prompts.
+4. Keep CLD-001/002 as Claude's actual editor/repository execution gates; no UEFN work is claimed by these documentation tasks.
+
+The older "First 20 production tasks" list remains a historical ordering snapshot; use this addendum and the current R2.3 execution packet for current sequencing.
