@@ -86,3 +86,33 @@ Balcony clear width target is 2.50m and rail height 1.10m; exact polygon remains
 Exterior gate coordinates conflict between schedules and are blocked pending one corrected authoritative anchor.
 All art placement must reference the geometry reconciliation sheet and keep the statuses PROPOSED TARGET / EDITOR-TEST REQUIRED until Claude records actual UEFN evidence. This document is an art-direction specification only; no asset creation or UEFN verification is implied.
 
+
+
+## Revision 3.0 — owner decisions: stylized realism and existing-asset-first (2026-11-16)
+
+### Approved art direction
+The owner selected **stylized realism** for an American roadside motel in 1986. This is not low-poly/toon art and not photorealism. Use believable proportions and recognizable period objects, but simplify secondary forms, exaggerate silhouette/readability slightly, keep broad controlled value groups, and unify roughness/material response. Target an authored game-art look that reads clearly in dim first-person play.
+
+Visual treatment:
+- Medium-detail silhouettes; avoid noisy microgeometry and photogrammetry clutter.
+- Desaturated warm interiors (nicotine cream, burgundy, dark walnut) contrasted with cold blue rain ambience and restrained red/blue neon.
+- Slightly heightened edge wear and large readable damage shapes; no uniform grunge overlays.
+- Use stylized hand-authored decals and controlled material variation; avoid excessive texture noise.
+- Preserve 1986 authenticity: CRT, corded phone, paper ledger, mechanical keys, period furniture and generic 1980s vehicle.
+- Unify third-party packs through shared colour/roughness remapping and selective decals. Do not alter source assets beyond the license grant.
+
+### Existing asset first
+The owner selected existing assets as the preferred production route. Search and evaluate Fab/UEFN-ready assets before commissioning bespoke meshes. ENVIRONMENT_ASSET_SOURCE_REGISTER.csv is the candidate shortlist, not a record of acquired or approved assets. Each source remains SHORTLISTED_NOT_ACQUIRED until the owner/operator confirms acquisition and the exact license evidence is archived.
+
+Use this decision order:
+1. Acquire/test a coherent UEFN motel shell candidate.
+2. Acquire/test a compatible motel prop bundle for reusable furniture.
+3. Source period-specific CRT, rotary/push-button phone, analog signage, generic 1980s sedan and narrative props separately where gaps remain.
+4. Use original project-authored meshes only for gaps that cannot be filled by a suitable licensed source (Raven Motel sign artwork, ROOM 13 unique narrative props, secret panel geometry and any custom gameplay-specific mesh).
+5. Do not buy overlapping packs before comparing their included meshes and the project inventory.
+
+### Compatibility and legal gates
+A Fab listing saying "Unreal Engine" is not proof of UEFN compatibility. Prefer a listing explicitly offering UEFN Source or a UEFN reference asset, then test in the target project. Record exact Fab product, publisher, URL, acquired tier, transaction/library evidence, license version, UEFN use scope, modification/redistribution restrictions and proof file. Fab Standard Personal/Professional selection depends on the publisher terms and buyer eligibility; do not infer the tier from a listing preview. CC-BY requires attribution records. Do not copy assets from a demo video or screenshots.
+
+### Geometry decision
+Owner selected geometry status UNKNOWN. Treat LD-GEO R2.0 as the current candidate design reference only, not as approved geometry. No final-fit architecture, door/window opening, stair, balcony, bathroom partition, gate or ROOM 12/13 secret-route asset may be frozen or placed. Generic modular samples can be sourced/tested independently, but their final quantities, lengths and positions remain blocked pending geometry approval. Keep every schedule coordinate as PROPOSED TARGET until approved by the geometry authority and verified by Claude in UEFN.
