@@ -1,34 +1,32 @@
-# UEFN BLOCKOUT BUILD GUIDE — LD-GEO R2.0
-Purpose: greybox for geometry QA only; not an environmental art authorization.
+# UEFN BLOCKOUT BUILD GUIDE — LD-GEO R2.1
+Purpose: exact greybox execution brief for Claude. Greybox only; not authorization for final environmental art.
 
-## Before blockout
-Owner review of candidate R2.0. Close room polygons, wall centre-lines, shared-wall junctions, stair flights, ROOM 12 vestibule and ROOM 13 section. Resolve floor/slab/ceiling datum. No detailed environmental assets yet.
-
-## Coordinate conversion
-UEFN cm = metres × 100 on every axis. Example (21.00,51.20,3.60) m = (2100,5120,360) cm. Keep origin and pivots consistent.
-
-## Proposed modular greybox kit
-Exterior wall 3.00×0.30×3.00 m; interior wall 3.00×0.15×3.00 m; floor tile 1×1 m; standard door rough module 1.20×2.25 m for 0.90×2.10 clear; reception rough module 1.90×2.45 m for 1.60×2.30 clear; window rough module 1.80×1.40 m for 1.60×1.20 clear. All module sizes are PROPOSED TARGET, not engine-verified.
+## Source and conversion
+Use LEVEL_DESIGN_GEOMETRY.md R2.1 as geometry authority. Convert every metre coordinate to Unreal cm by multiplying X/Y/Z by 100. Origin SW. Do not use legacy R1/E1 values where R2.1 supersedes them.
 
 ## Build order
-1. Site boundary, origin and 1 m/5 m grid.
-2. U footprint as one connected polygon union.
-3. Ground slabs and corridors.
-4. Room shells; shared walls once.
-5. Door/window openings and temporary collision doors.
-6. Reception/office/storage/electrical partitions.
-7. Upper slab and floor at Z=3.60.
-8. Upper rooms, connector and balcony/guardrails.
-9. Stair after exact flight geometry is dimensioned.
-10. ROOM 12 vestibule, hall and ROOM 13 as one connected path.
-11. Primitive furniture bounding boxes; preserve route clearances.
-12. THE GUEST placeholder capsule only after collision spec selected.
-13. Objective triggers and nav markers.
-14. Solo, 2P and 4P traversal tests.
-15. Correct all geometry and schedules before environmental art.
+1. Create site datum, origin marker, 1 m minor/5 m major grid.
+2. Create one polygon-union U footprint; trim overlapping wing junctions.
+3. Ground slab and room shells; shared walls once.
+4. Ground doors/windows and north reception stair volume.
+5. Ground partitions: reception, owner office, storage, electrical.
+6. Upper slab at FFL Z=3.60; confirm 0.25 m thickness.
+7. Upper side rooms with revised 5.90 m widths.
+8. Build continuous balcony as one connected floor polygon: west leg, north crossbar, east leg, corner pads. Keep 2.50 m clear.
+9. Add courtyard-side rail only; 1.10 m high target; close rail corners and stair opening.
+10. Build north U-turn stair: 20 risers, two flights of 10, 9 goings per flight, 0.28 m going, 0.18 m rise, landing Z=1.80, clear width 1.20 m.
+11. Build ROOM 12 vestibule, east balcony access opening, north crossbar and ROOM 13 door as one continuous route.
+12. Flat roof slab Z=6.40–6.65 and parapet top Z=7.10; no gameplay roof access.
+13. Primitive furniture bounding boxes; preserve door swings, 0.90 m routes and 1.20×1.20 m interaction pads.
+14. Add THE GUEST placeholder at 2.60 m visual height; provisional navigation envelope only. Set up patrol markers on both floors and stair.
+15. Run solo, 2P and 4P traversal, stair and balcony tests; run NPC path tests up/down stairs.
+16. Correct geometry, schedules and sections before any final art.
+
+## Greybox modular targets
+Exterior wall 3.00×0.30×3.00 m; interior wall 3.00×0.15×3.00 m; floor tile 1×1 m; ordinary rough door module 1.20×2.25 m for 0.90×2.10 clear; reception rough module 1.90×2.45 m; window rough module 1.80×1.40 m. PROPOSED TARGET.
 
 ## Collision rules
-Floors continuous at thresholds; walls solid except scheduled openings; glass blocking/breakable behaviour deliberate; doors/panels collision synced to open state; guardrails continuous; secret passage has walkable floor and headroom; NPC uses simple capsule/nav footprint, not per-triangle visual collision.
+Continuous floors at thresholds; no duplicate collision in U corners; wall collision only except scheduled openings; glass collision intentional; door/panel collision synced to state; continuous rail collision along courtyard edge; stair step collision tested for players and THE GUEST; secret route no snagging seams; roof inaccessible.
 
-## Acceptance tests
-First-person door passage; four-player pinch points; stair ascent/descent/headroom; balcony edge/rail; ROOM 13 enter/inspect/turn/exit; THE GUEST patrol/investigate/chase/lose sight/recover; solo objectives; disconnect/rejoin; island memory/performance. Record UEFN build, map revision, player count and evidence. Do not mark ENGINE-VERIFIED without an actual editor/playtest proof.
+## Required test evidence
+Record UEFN version/build, map revision R2.1, test player count, NPC implementation, route, expected result, actual result, screenshots/video and pass/fail. Never label ENGINE-VERIFIED without evidence.
