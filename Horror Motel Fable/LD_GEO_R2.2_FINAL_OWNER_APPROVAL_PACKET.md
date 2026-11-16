@@ -2,7 +2,7 @@
 
 Data revisione: 2026-11-16  
 Branch esaminato: main  
-Esito: **PROPOSTA NON APPROVATA — NON PRONTA PER IL FREEZE GEOMETRICO — NON UEFN-VERIFICATA**
+Esito: **PROPOSTA APPROVATA DAL PROPRIETARIO IL 2026-11-16 — RISOLUZIONI SINCRONIZZATE IN LD-GEO R2.3 — NON UEFN-VERIFICATA**
 
 ## 1. Scopo e perimetro
 
@@ -198,3 +198,10 @@ Ordine raccomandato:
 - Solai/tetto: **poligoni coerenti; drenaggio e dettagli da approvare**.
 - UEFN: **nessun test eseguito**.
 - Stato complessivo: **NON APPROVATO — NON FREEZABLE fino alla risoluzione delle anomalie bloccanti e all'approvazione esplicita del proprietario**.
+
+
+## 8. Esito dell'approvazione del proprietario — 2026-11-16
+
+Il proprietario ha approvato tutte le decisioni geometriche GEO-A01–GEO-A21 con il messaggio “approvo tutto, procedi”. Le raccomandazioni del presente pacchetto sono state adottate come segue: tasche GF sigillate; tasche UF sigillate e registrate; U-SERVICE non accessibile; turning pad ritagliati al poligono del solaio; cross-bay 2,00 m lordi / 1,70 m netti; scala con rampa inferiore ovest in salita verso nord e rampa superiore est in salita verso sud; tetto piatto non accessibile con pendenze nascoste 1,0% verso drenaggio perimetrale coordinato. VEST-13 è corretto a 1,65 m. La geometria risultante è LD-GEO R2.3.
+
+Questa approvazione non include END-A01/END-A02 e non costituisce verifica UEFN, navmesh, collisione, struttura o impermeabilizzazione. La revisione R2.2 resta conservata come storico dell'audit; i documenti R2.3 sincronizzati sono la fonte canonica.
