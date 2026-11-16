@@ -229,7 +229,7 @@ The following documentation deliverables are now present on main. These close pl
 |---|---|---|---|
 | MD-070 | Canonical Claude read order and ordered production gates | PRESENT — CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md | Executor must return baseline and integrity report |
 | MD-071 | Room interior fit-out rules and clearance policy | PRESENT — ROOM_INTERIOR_FITOUT_SPEC_R1.md | Verify all 183 furnishing rows against R2.3 bounds, door swings and interaction clearance in editor |
-| MD-072 | Expanded asset production backlog | PRESENT — ASSET_PRODUCTION_BACKLOG_R1.csv (60 rows) | Source original/licensed assets; fill exact provider/license evidence; import and profile |
+| MD-072 | Expanded asset production backlog | PRESENT — ASSET_PRODUCTION_BACKLOG_R1.csv (65 rows) | Source original/licensed assets; fill exact provider/license evidence; import and profile |
 | MD-073 | Official UEFN feature reference register | PRESENT — UEFN_VERIFIED_REFERENCE_REGISTER_R1.md | Minimal project proofs for all project-specific behaviors |
 | MD-074 | Expanded device binding register | PRESENT — UEFN_DEVICE_BINDINGS.csv (50 rows including all 32 interactions and system devices) | Verify exact device properties/events in target editor; map each device to a placed actor and source revision |
 | MD-075 | THE GUEST model-to-UEFN production sequence | PRESENT — GUEST_MODEL_SPEC.md addendum | Produce turnaround/mesh/rig/animations and combined NPC proof |
