@@ -1,23 +1,23 @@
-# NORTH STAIR PLAN — R2.1
-Status: PROPOSED TARGET; editor verification required.
+# STAIR PLAN — NORTH RECEPTION U-TURN STAIR R2.2
+Status: PROPOSED — OWNER APPROVAL REQUIRED — NOT UEFN-VERIFIED.
 
-## Reservation and geometry
-- Ground reservation: X=21.00–27.00, Y=51.20–59.00, FFL Z=0.
-- Upper landing zone: X=20.30–28.70, Y=51.10–59.70, FFL Z=3.60.
-- Stair clear width: 1.20 m.
-- Floor-to-floor rise: 3.60 m.
-- 20 risers at 0.18 m each.
-- Two U-turn flights, 10 risers each.
-- Each flight has 9 goings at 0.28 m = 2.52 m run.
-- Intermediate landing at Z=1.80 m; minimum 1.20 m deep.
-- Stair assembly target envelope approx. 2.70×3.72 m; keep 1.20 m approach top and bottom.
-- Handrails both sides; 1.00 m high target; headroom ≥2.20 m.
+## Fixed location decision
+The owner selected the north connector/reception for the main stair. Reservation: X21.00–27.00,Y51.20–59.00. This location is fixed by owner decision; the exact stair footprint within the reservation is not.
 
-## Drafting instructions
-Draw a dimensioned plan with flight A/B, exact first/last riser coordinates, direction arrow, landing polygon, wall/guardrail thickness and stair opening in upper slab. Show vertical section with each riser elevation. Coordinate the stair with reception counter, entry and queue; no queue can overlap the bottom landing. Do not fabricate exact stair origin until this plan is resolved in CAD/blockout.
+## Proposed dimensional layout
+- Proposed stair assembly bounds: X22.65–25.35,Y52.00–55.72.
+- Two parallel U-turn flights, each 1.20 m clear width, separated by 0.30 m structure/clearance band.
+- Total rise 3.60 m, 20 risers at 0.18 m each.
+- 10 risers per flight; 9 goings per flight at 0.28 m = 2.52 m horizontal run.
+- Intermediate U-turn landing: 2.70×1.20 m at Z=1.80.
+- Plan envelope: 2.70×3.72 m (2.52 m flight run + 1.20 m landing depth).
+- Ground FFL Z0.00; upper FFL Z3.60.
+- Handrails both sides, 1.00 m target height.
+- Headroom ≥2.20 m above every nosing and landing.
+- Top/bottom approach target ≥1.20 m, no overlap with reception entry, queue or counter.
 
-## Arithmetic check
-10 risers ×0.18=1.80 m per flight. Nine goings ×0.28=2.52 m per flight. Total rise=3.60 m. Total goings=18, not 20. Stair run is 2.52 m per flight plus landing; do not use the legacy 5.32 m run.
+## Arithmetic correction
+Older notes listed a 5.32 m run. That value does not follow from 20 risers split into two 10-riser flights with nine goings per flight: 18×0.28=5.04 m total horizontal going, 2.52 m per flight. Do not use 5.32 m.
 
-## Required editor tests
-Player up/down, camera/headroom, rail collision, four-player stair bottleneck, THE GUEST up/down, NPC turn at landing, pathfinding after door state changes.
+## Owner approval required
+Confirm stair handedness, exact landing orientation, approach sides, clear width, 0.18 m riser, 0.28 m going, handrail height and precise footprint. The drawing is a dimensioned proposal only. Claude must test the actual player capsule, THE GUEST, headroom and collisions in UEFN before it is marked verified.
