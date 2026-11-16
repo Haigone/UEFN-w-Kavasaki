@@ -29,9 +29,9 @@ This approval covers NCP-A01 through NCP-A09. NCP-A10's co-op quorum is supersed
 
 The exact wording, image descriptions, clue placements, puzzle logic, sequence beats and fallback rules are in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. This packet does not paraphrase or silently alter that content.
 
-## 2. END-A02 — recommended mandatory truth evidence
+## 2. END-A02 — OWNER APPROVED mandatory truth evidence (2026-11-16)
 
-Approve exactly three optional-investigation evidence flags as the complete TruthChainComplete formula:
+The owner explicitly approved exactly three optional-investigation evidence flags as the complete TruthChainComplete formula:
 
 - DiaryFound — ROOM 09 diary.
 - ChildRoomClueFound — ROOM 11 drawing.
