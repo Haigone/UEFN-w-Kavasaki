@@ -32,7 +32,7 @@ No other transition is valid without an explicitly documented scripted exception
 - Cinematic interruption, reset and disconnect must restore movement/input state.
 
 ## 4. Solo behavior
-When session player count is one, CAPTURED transitions to SOLO_ESCAPE after a short authored presentation or after the 90 s assistance threshold (choose and tune one timing during implementation). The escape interaction/route is local and does not require a second player. Successful self-rescue grants RESCUED protection then ACTIVE.
+When session player count is one, play a capture presentation with a 2-second target duration, then transition to SOLO_ESCAPE immediately. Enable a local self-rescue interaction/route requiring 5 uninterrupted seconds; it uses no quest item and requires no second player. If the solo recovery interaction is unavailable or the player remains captured for 90 seconds from capture, automatically restore the latest checkpoint (never death/game over). Successful self-rescue grants 8 seconds of RESCUED protection, then ACTIVE.
 
 ## 5. Co-op rescue
 Any ACTIVE teammate within 2 m can start rescue. A single rescuer owns the rescue lock. Progress is displayed to target and rescuer. Rescue completes after 5 uninterrupted seconds. If multiple players attempt simultaneously, only one transaction runs; others receive “Rescue in progress”. Do not allow duplicate reward or state transitions.
