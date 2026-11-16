@@ -70,3 +70,22 @@ The Owner column identifies the discipline responsible for the work, not a separ
 | PROD-001 | Production | Resolve narrative-first vs geometry-first phase order | P1 | AUD-002 | Approved execution sequence | PRESENTE MA NON VERIFICATO | Claude receives one unambiguous critical path; narrative parallel work explicitly identified | Owner decision and revised roadmap/plan | Project Owner |
 
 These tasks supplement, and do not replace, the original task IDs. ChatGPT prepares exact implementation packets for Claude; Claude performs all UEFN/editor actions and tests. No task above authorises ChatGPT to operate UEFN or merge PR #1.
+
+
+## R2.1 re-audit tasks — 2026-11-16
+
+| ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
+|---|---|---|---|---|---|---|---|---|---|
+| GEO-009 | Level Design | Complete explicit R2.1 floor polygons, U-balcony corner pads, roof courtyard cut-out and ROOM 12–13 route assembly | P0 | GEO-001; R2.1 owner decisions | Polygon/wall/floor/ceiling package | BLOCCATO | All polygons non-overlapping and connected; D-13A/B/C and return route have dimensioned wall cuts | CAD/plan/section and collision audit | Technical Level Designer |
+| GEO-010 | Level Design | Complete wall schedule and opening cross-references for R2.1 | P0 | GEO-009 | Wall/opening schedule | BLOCCATO | Every current opening maps to one host wall; all R2.1 room side walls and rails exist | Schedule cross-reference report | Technical Level Designer |
+| GEO-011 | Level Design | Finish stair and roof construction drawings | P1 | GEO-009 | Dimensioned stair/roof plans and sections | INCOMPLETO | Stair start/end/landing/headroom and roof drainage/polygon are dimensioned | Plan/section and Claude editor evidence | Level Design |
+| DATA-002 | Gameplay/Data | Correct semantic alignment of IN-021/022/023 and PZ-03 | P0 | AUD-002 | Corrected interaction/puzzle CSVs | INCOMPLETO | Every field matches header meaning; acceptance tests are explicit | Schema-aware validator and reviewed diff | Gameplay Design |
+| ENV-003 | Environment Art | Complete furnishing schedule with stable Placement_ID, Asset_ID and Material_ID joins | P1 | GEO-009; ART-003 | Complete room/shared-space schedule | INCOMPLETO | All required rooms/areas covered and all IDs resolve to source registers | Cross-reference report and placement drawings | Environment Art |
+| ART-003 | Environment Art | Reauthor Environment Art package against R2.1 and synchronize PR #1 with main | P1 | GEO-009; GEO-010 | R2.1-aligned art package | BLOCCATO | No R2.0 coordinate dependency; all placed footprints fit approved bounds; source rows parse | Updated PR, parser, footprint report, review | Environment Art |
+| ART-004 | Environment Art | Correct nine wardrobe placements and F12 secret panel alignment | P1 | ART-003 | Corrected placement register | BLOCCATO | All bounds, door swings and clear routes pass | Footprint audit and Claude editor screenshots | Environment Art |
+| DATA-003 | Lighting/Audio | Normalize intensity/CCT and dynamic NPC audio emitter fields | P2 | R2.1 geometry | Valid light/audio registers | INCOMPLETO | Numeric values with units; dynamic emitters use attachment IDs, not text coordinates | Schema validation and UEFN evidence | Lighting / Audio |
+| GEO-012 | Level Design | Resolve GATE-01 / EXT_GATE coordinate conflict | P1 | R2.1 exterior layout | Owner-approved gate anchor | BLOCCATO | One approved coordinate, yaw, vehicle approach and aligned dependent schedules | Owner decision and revised schedule | Project Owner / Level Design |
+| DOC-002 | Production | Refresh README and all handoff references to R2.1 source hierarchy | P2 | R2.1 index | Updated README and discipline links | INCOMPLETO | R2.1 index is first geometry authority; legacy files labelled | Link and source hierarchy audit | Production |
+| SRC-001 | Asset Acquisition | Correct Fab source register and record licensing/UEFN format evidence | P2 | ART-003 | Verified source shortlist | INCOMPLETO | All candidate rows parse; current listing data, license and source format are confirmed | Listing links, owner license record, UEFN import test | Art / Production |
+
+These tasks supplement prior task IDs. ChatGPT prepares implementation packets and audits returned evidence; Claude alone performs UEFN/editor implementation and tests. Project owner approval is required for gate and other structural changes.
