@@ -9,7 +9,7 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 | III — THE POWER | 17–27 | Storage, utility/electrical room | Find three fuses; install; restore power; evade first full chase | Fuse A/B/C and labelled panel | PowerRestored; CP02 |
 | IV — THE SECOND FLOOR | 27–36 | Rooms 07–12, balcony, concealed panel | Open Room 12 panel and reach passage; investigate diary/drawing as optional evidence | Room 09 diary and Room 11 drawing are optional discoveries; Room 12 panel opens the route | SecretPanelOpened; Room13Unlocked; CP03 |
 | V — ROOM 13 | 36–43 | Passage and impossible room | Inspect room; order four photos; reveal identity; obtain Service Key | Four-photo chronology; owner portrait/records/creature match | Room13RevealComplete; ServiceKeyObtained; CP04 |
-| VI — NO VACANCY | 43–50 | Service route, gate/generator, car | Recover Car Keys; operate service mechanism; select ending | Car Keys; Service Key; explicit choice | Exactly one ending selected |
+| VI — NO VACANCY | 43–50 | Service route, gate/generator, car | Unlock service route; choose an eligible ending; obtain CarKeys only if pursuing ESCAPE | Service Key; powered gate; CarKeys/vehicle ignition for ESCAPE only; explicit team choice | FinaleReady; exactly one ending selected |
 
 ## Per-act handoff contract
 - ACT I: objects are broken car, neon, register, phone, clock, key rack and ROOM 13 key. THE GUEST appears only as distant scripted silhouette. No forced chase. No mandatory item may become missable.
@@ -17,7 +17,7 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 - ACT III: fuse pickups are team-shared and idempotent. Wrong slot feedback does not consume irreplaceable fuse. Power restoration triggers investigation and fair first chase. CP02 retains fuses/power.
 - ACT IV: diary/drawing clues must be readable when inspected but are not core progression gates; Room 12 panel opens the passage. Passage must be continuous and navigable. CP03 retains upper access and any evidence already discovered.
 - ACT V: photo puzzle is resettable and no-item-loss. All players can inspect. CP04 retains photo solution, reveal and Service Key.
-- ACT VI: final chase has loop/alternate path, no unavoidable dead end. Team defeat returns to latest checkpoint. Capture never auto-selects New Guest.
+- ACT VI: service gate establishes FinaleReady; CarKeys/vehicle ignition are required only for ESCAPE. THE_TRUTH and THE_NEW_GUEST do not require vehicle ignition. Final chase has loop/alternate path, no unavoidable dead end. Team defeat returns to latest checkpoint. Capture never auto-selects New Guest.
 
 ## Puzzle dependency chain
 1. Register puzzle → Office Key.
