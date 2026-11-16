@@ -79,3 +79,10 @@ Content/Characters/Guest
 Source/Environment/...
 Evidence/Environment/ImportTests/...
 Licenses/Environment/...
+
+
+## Revision 2.0 — execution responsibility and verification record
+All DCC export and UEFN import/test actions in this pipeline are assigned to Claude (or a named human artist/editor operator explicitly delegated by Claude). The documentation author does not perform UEFN tests. Claude must verify the calibration cube, then one representative wall, door, prop and material before batch import. No engine compatibility is assumed from an FBX export alone.
+Use `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0 for placement; do not treat E1 legacy wall heights, balcony width or ROOM 13 door coordinates as approved. Reconcile vertical stack, stair, balcony, bathroom partitions, ROOM 12 vestibule/secret route and gate anchor before final-fit assets. Generic modular pieces can be authored independently.
+Required test report fields: Test_ID, Asset_ID/Family, UEFN version, project revision, import options, test map/area, preconditions, exact steps, expected result, observed result, PASS/FAIL/BLOCKED, evidence path, owner and date. Update asset status only after evidence exists. IMPORTED, ENGINE VERIFIED and ACCEPTED are distinct states.
+
