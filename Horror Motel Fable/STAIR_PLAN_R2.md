@@ -14,7 +14,7 @@ The owner selected the north connector/reception for the main stair. Reservation
 - Ground FFL Z0.00; upper FFL Z3.60.
 - Handrails both sides, 1.00 m target height.
 - Headroom ≥2.20 m above every nosing and landing. Upper slab cut: X22.50–25.50,Y52.30–56.32 (3.00×4.02 m), through Z3.35–3.60. Guardrail along west, east and north edges; south edge remains open to the upper landing approach.
-- Top/bottom approach target ≥1.20 m; the south approach between upper wall face Y51.10 and stairwell cut Y52.30 is 1.20 m, no overlap with reception entry, queue or counter.
+- Top and bottom approach target ≥1.20 m. The upper south approach between wall face Y51.10 and slab cut Y52.30 is exactly 1.20 m. The lower approach is not yet dimensioned as a separate polygon. The stair occupies part of the reception footprint; counter, queue and circulation furniture must be kept outside the stair reservation and both approach zones. No furniture clearance is claimed until that layout is dimensioned.
 
 ## Arithmetic correction
 Older notes listed a 5.32 m run. That value does not follow from 20 risers split into two 10-riser flights with nine goings per flight: 18×0.28=5.04 m total horizontal going, 2.52 m per flight. Do not use 5.32 m.
