@@ -6,7 +6,7 @@ IN-004,II,Reception,Guest register,Inspect,Reception entered,2,0,RegisterCluesSe
 IN-005,II,Reception,Desk lock,Enter code,Register clues available,2,0,RegisterSolved,Click or reject cue,Retryable,Atomic lock/team flag,Key recovery only after validated solve
 IN-006,II,Reception,Desk drawer,Collect Office Key,RegisterSolved,2,1,OfficeKey,Pickup cue,Once,Team-owned,Regrant from drawer proxy
 IN-007,II,Owner office,Photo board,Arrange photos,OfficeKey,2,0,UpperFloorAccessGranted,Mechanism opens,Retryable,One operator; replicated state,Journal photo index/substitute card
-IN-008,II,Rooms 01-06,Documents/CRT/phone,Inspect,Ground rooms accessible,2,0,Document flags,Text/subtitle/audio cue,Repeatable,Shared discovery flags,Journal copy for mandatory clues
+IN-008,II,Rooms 01-06,Documents/CRT/phone,Inspect,Ground rooms accessible,2,0,Room01CRTClueFound / Room04PhoneClueFound / other authored DocumentIds,Text/subtitle/audio cue,Repeatable,Shared discovery flags,Journal copy; optional lore only and never blocks Act II exit
 IN-009,II,Room 02,Battery,Collect,Room accessible,2,1,BatteryChargeAdded,HUD charge cue,Pickup once,Personal charge or defined team stock,Recovery battery in same room
 IN-010,III,Utility,Electrical panel cover,Use screwdriver,Utility access,2,1,PanelCoverOpen,Metal click,Repeatable until open,Shared state,Alternate cover interaction
 IN-011,III,Utility,Socket A/B/C,Install fuse,Matching fuse team-owned,2,2,FuseSlotXFilled,Slot click/reject,Once per slot,Atomic shared slot lock,Restore item flag if rejected
