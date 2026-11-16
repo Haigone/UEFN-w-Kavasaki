@@ -1,5 +1,5 @@
 Device_ID,Device_Type,Area,Configuration_Target,Verse_Owner,Event_or_Binding,Status,Anchor_IDs
-DEV_SPAWN_01,Player Spawner,Parking,Team start and first-person entry,Game_Manager,OnPlayerSpawned,EDITOR-TEST REQUIRED,NONE
+DEV_SPAWN_01,Player Spawner,SouthParking,Four player start anchors SPN-01 through SPN-04,Game_Manager,OnPlayerSpawned,EDITOR-TEST REQUIRED,SPN-01;SPN-02;SPN-03;SPN-04
 DEV_TRIGGER_REGISTER,Trigger,Reception,Register puzzle start,Puzzle_Manager,StartRegisterPuzzle,EDITOR-TEST REQUIRED,IA-005
 DEV_TIMER_CAPTURE,Timer,Capture loop,90s emergency recovery threshold,Player_Manager,CaptureRecovery,EDITOR-TEST REQUIRED,IA-022-DYNAMIC
 DEV_TRACKER_MAIN,Tracker,Team objectives,Shared act objectives,Game_Manager,UpdateObjective,EDITOR-TEST REQUIRED,UI_OBJECTIVE_TRACKER
