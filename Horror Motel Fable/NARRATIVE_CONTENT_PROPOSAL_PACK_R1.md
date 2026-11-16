@@ -158,7 +158,7 @@ TruthChainComplete is evaluated separately using the approved END-A02 formula.
 6. Corridor is empty. The register prints: "NO VACANCY. NO OWNER. NO GUEST."
 7. Cut to black; THE TRUTH title card.
 
-**Proposed consequence:** players expose the loop and prevent the current night from restarting, but the motel remains physically present. The final 02:13 neon pulse implies the source may not be destroyed. This is distinct from vehicle escape.
+**Approved consequence:** the team exposes the loop and prevents the current night from restarting, but the motel remains physically present and its source is not proven destroyed. No player is killed, sacrificed or selected as a replacement. All players remain together in the service control room after the blackout; cut to black and show THE TRUTH. The final 02:13 neon pulse implies the source may still exist. This is distinct from vehicle escape.
 No new voiced dialogue is required. This sequence and consequence are approved canonical content. Technical implementation may adapt presentation mechanics without changing the story outcome.
 
 ## 10. THE NEW GUEST — approved invitation and consent
@@ -174,7 +174,7 @@ Choices:
 - LEAVE THE KEY
 
 Every connected player sees the same invitation. No player is selected randomly. Inactivity, capture and defeat never count as acceptance. The session commits THE NEW GUEST only if the END-A01 unanimous explicit-consent quorum is met. Timeout/disconnect rules remain END-A01.
-If quorum accepts: twelve public room lights illuminate one by one; the ROOM 13 key returns to the rack; the register gains a blank line under NEXT GUEST; neon illuminates; cut to black; THE NEW GUEST title card.
+If quorum accepts: the whole team willingly becomes the motel's next collective caretaker/guest group; no player is singled out or sacrificed. Twelve public room lights illuminate one by one; the ROOM 13 key returns to the rack; the register gains a blank line under NEXT GUEST; neon illuminates; cut to black; THE NEW GUEST title card.
 If quorum is not met: return to eligible ending choice; never auto-accept.
 
 ## 11. Subtitle and accessibility contract
