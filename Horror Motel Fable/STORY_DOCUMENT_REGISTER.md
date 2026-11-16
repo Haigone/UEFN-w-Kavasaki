@@ -33,3 +33,10 @@
 
 ## Authoring gaps
 Register entries/code; office-photo captions/solution; Room 04 transcript and mandatory status; Room 06 photo identities/dates; full Room 09 diary; Room 11 drawing; Room 13 photo dates/captions/order; THE TRUTH cinematic/dialogue/consequence; THE NEW GUEST choice text and co-op rule; complete subtitle/VO cue sheet.
+
+
+## Narrative proposal status — 2026-11-16
+
+The missing player-facing draft copy and puzzle clue chains have been authored in `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md`. It contains proposed Guest Register text/code deduction, office photo captions/solution, fuse labels and Room 04 recording, Room 06 missing-guest photos, Room 09 diary, Room 11 drawing, ROOM 13 photo sequence, THE TRUTH sequence and THE NEW GUEST invitation.
+
+This changes the status from **no draft text available** to **draft proposal available**; it does not change any item to approved canon. All NCP-A01–A10 approvals remain PENDING. Until approved, Claude must not implement these proposed texts as final content.
