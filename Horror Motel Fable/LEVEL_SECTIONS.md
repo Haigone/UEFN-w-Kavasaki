@@ -1,4 +1,4 @@
-# LEVEL SECTIONS — CANONICAL GEOMETRY PROPOSAL R2.2
+# LEVEL SECTIONS — OWNER-APPROVED CANONICAL GEOMETRY R2.3
 Status: OWNER-APPROVED LD-GEO R2.3 — NOT UEFN-VERIFIED.
 Graphic sections: `SECTIONS_R2.2.svg`. Slab polygons: `SLAB_SCHEDULE.csv`. All coordinates in metres.
 
@@ -46,4 +46,4 @@ These are dimensioned design sections, not proof of UEFN collision, navmesh, sta
 
 ## R2.3 sealed reserves and collision policy
 
-Ground sealed reserves: X11.10–19.70 and X64.30–72.90, Y45.15–48.00. Upper west sealed reserve: X8.30–17.00,Y47.55–50.80, closed by UF-W-SEALED-RESERVE-WEST. Upper east L-shaped reserve components: X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. These spaces retain structural floor collision but are excluded from navmesh and gameplay. U-SERVICE is similarly sealed/no-access/no-navmesh. They are not player traversal routes.
+Ground sealed reserves: X11.10–19.70 and X64.30–72.90, Y45.15–48.00. Upper west sealed reserve: X8.30–17.00,Y47.55–50.80, closed by UF-W-SEALED-RESERVE-WEST and UF-E-SEALED-RESERVE-WEST. Upper east L-shaped reserve components: X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. These spaces retain structural floor collision but are excluded from navmesh and gameplay. U-SERVICE is similarly sealed/no-access/no-navmesh. They are not player traversal routes.
