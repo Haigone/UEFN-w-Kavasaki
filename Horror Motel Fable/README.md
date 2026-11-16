@@ -46,9 +46,9 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 - [AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv](AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv) — exact proposed THE GUEST spawn and patrol anchors.
 - [THE_GUEST_NUMERIC_TUNING_R1.md](THE_GUEST_NUMERIC_TUNING_R1.md) — numeric starting defaults and calibration protocol; values are proposed, not playtest-validated.
 - [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — THE GUEST character production requirements and UEFN proof gates.
-- [ASSET_PRODUCTION_BACKLOG_R1.csv](ASSET_PRODUCTION_BACKLOG_R1.csv) — 60-row asset production backlog, priorities, dependencies and source/import gates.
-- [ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv](ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv) — 94 per-asset source, license, commercial-use and UEFN publishing-rights evidence rows.
-- [asset_manifest.csv](asset_manifest.csv) and [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv) — synchronized 94-asset master inventory.
+- [ASSET_PRODUCTION_BACKLOG_R1.csv](ASSET_PRODUCTION_BACKLOG_R1.csv) — 65-row asset production backlog, priorities, dependencies and source/import gates.
+- [ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv](ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv) — 99 per-asset source, license, commercial-use and UEFN publishing-rights evidence rows.
+- [asset_manifest.csv](asset_manifest.csv) and [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv) — synchronized 99-asset master inventory.
 - [ROOM_INTERIOR_FITOUT_SPEC_R1.md](ROOM_INTERIOR_FITOUT_SPEC_R1.md) — room-by-room fit-out rules and clearances; no structural geometry changes.
 - [SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md](SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md) — exact service control location, D-G16 access and IN-018/IN-032 console anchors.
 - [INTERACTION_ANCHOR_SCHEDULE_R1.csv](INTERACTION_ANCHOR_SCHEDULE_R1.csv) — 58 world/UI/dynamic interaction and player spawn anchors.
