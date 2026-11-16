@@ -60,6 +60,8 @@ Classification: footprint dimensions are repeated in the dossier and E1 and are 
 | ROOM 04 | 64.30–72.90 | 20.00–27.00 | 8.60×7.00 | PROPOSED CORRECTION |
 | ROOM 05 | 64.30–72.90 | 29.00–36.00 | 8.60×7.00 | PROPOSED CORRECTION |
 | ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 | PROPOSED CORRECTION |
+| GF-W-SOUTH-VEST | 11.10–19.70 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVAL REQUIRED |
+| GF-E-SOUTH-VEST | 64.30–72.90 | 18.30–19.85 | 8.60×1.55 | OWNER APPROVAL REQUIRED |
 | G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.70 | DERIVED from corrected wall-face bounds |
 | G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.70 | DERIVED from R2.1 bounds |
 | RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.55×11.40 | PROPOSED CORRECTION |
@@ -73,6 +75,8 @@ Classification: footprint dimensions are repeated in the dossier and E1 and are 
 
 The key correction is ELECTRICAL ending at X=72.90. This preserves a 2.50 m east link at X=73.20–75.70 and removes the previous overlap. The north-west link/lobby are separated into two non-overlapping spaces. The service bay occupies the previously unassigned north half of the storage band; its access and use require owner approval.
 
+The south-end 1.55 m buffer zones Y18.30–19.85 are open to the ground corridor / upper balcony; the room south walls close at Y19.925. This avoids leaving an inaccessible strip behind the south facade. OWNER APPROVAL REQUIRED.
+
 The 2.00 m gaps between guest-room Y bands (27–29 and 36–38) are retained as **transverse open connector bays**, not room area. This is a proposed interpretation to avoid inventing extra room dimensions. Provide 1.50 m clear openings through the courtyard-facing wall at Y=28.00 and 37.00. These bays connect the side corridor to the courtyard. OWNER APPROVAL REQUIRED.
 
 ### Upper floor — side wings
@@ -85,6 +89,8 @@ To retain a continuous courtyard-facing balcony without leaving an unexplained 2
 | ROOM 10 | 67.00–75.70 | 20.00–27.00 | 8.70×7.00 | PROPOSED CORRECTION |
 | ROOM 11 | 67.00–75.70 | 29.00–36.00 | 8.70×7.00 | PROPOSED CORRECTION |
 | ROOM 12 | 67.00–75.70 | 38.00–47.40 | 8.70×9.40 | PROPOSED CORRECTION |
+| UF-W-SOUTH-VEST | 8.30–17.00 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVAL REQUIRED |
+| UF-E-SOUTH-VEST | 67.00–75.70 | 18.30–19.85 | 8.70×1.55 | OWNER APPROVAL REQUIRED |
 
 This restores a usable 8.70 m room width consistent with the 12.00 m wing depth, 2.50 m courtyard balcony and 0.30 m wall allowance. It replaces the R2.1 5.90 m width, which left an unexplained outer strip. OWNER APPROVAL REQUIRED.
 
@@ -187,6 +193,7 @@ Upper slab and roof slab thickness target 0.25 m. The 0.35 m gap between ground 
 8. Confirm wall thicknesses 0.30/0.15 m and vertical stack Z=3.00/3.35/3.60/6.40/6.65/7.10.
 9. Confirm 2.50 m balcony width and corner pads.
 10. Confirm window placement on courtyard-facing ground facades and exterior-facing upper facades.
+11. Confirm the 1.55 m south-end vestibule buffers and their open connections to the corridors/balconies.
 
 ## 12. Verification boundary
 This is a document-only geometric reconciliation. No UEFN project was opened, built, simulated or tested. Mark all editor-dependent items EDITOR-TEST REQUIRED. The geometry is **not approved** until the owner explicitly approves the proposed corrections above.
