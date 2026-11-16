@@ -30,3 +30,15 @@ If ending cinematic fails, preserve Ending and show fallback title card/complete
 
 ## 8. Tests
 All three endings solo; all three in co-op; truth evidence incomplete; acceptance without consent; tie vote; no vote; simultaneous trigger volumes; disconnect during vote; disconnect during cinematic; repeat activation; invalid eligibility.
+
+
+## 9. Owner approval gate — co-op quorum and truth evidence
+
+**HARD STOP:** Section 4's majority-vote rule conflicts with ENDING_DESIGN_SPEC.md, which proposes unanimous confirmation for THE NEW GUEST and leaves the quorum for other endings for approval. Neither rule is silently canonical until the project owner decides END-A01 in `OWNER_DECISION_GATE_R2.2.md`.
+
+Until END-A01 is approved:
+- Solo ending selection may be implemented from the eligibility/atomic-commit rules.
+- Co-op may expose eligible choices for design review, but Claude must not implement the vote/quorum resolver, timeout default or disconnect recalculation as final behaviour.
+- Do not treat majority or unanimity as approved merely because one document currently contains it.
+
+**Truth evidence gate:** The six flags in Section 3 remain a proposed mandatory list until the owner approves END-A02. Do not make a clue mandatory unless its placement, readability, fallback and progression role are confirmed in the approved narrative pack.
