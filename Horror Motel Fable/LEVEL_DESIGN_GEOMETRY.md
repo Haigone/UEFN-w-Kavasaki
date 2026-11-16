@@ -119,7 +119,7 @@ The two service reserve zones are non-playable placeholders to close the upper-f
 ## 5. ROOM 12 → ROOM 13 continuous secret route
 Route sequence:
 1. D-13A: concealed panel in ROOM 12 north wall; wall centreline Y=47.475, centre X=69.95, sill Z=3.60, clear 0.90×2.10 m; opens north.
-2. Vestibule: X=67.00–72.90, Y=47.55–49.20, FFL Z=3.60. Clear depth 1.50 m.
+2. Vestibule: X=67.00–72.90, Y=47.55–49.20, FFL Z=3.60. Clear FIF depth 1.65 m; vestibule clear bounds are X67.00–72.90 and Y47.55–49.20.
 3. D-13C: opening through vestibule west wall; wall centreline X=66.925, centre Y=48.45, clear 0.90×2.10 m; opens west into east balcony leg X=64.30–66.85.
 4. Follow the continuous east balcony leg south-to-north to the east turning pad, then west along the north balcony crossbar.
 5. D-13B: concealed door in ROOM 13 south wall; wall centreline Y=50.95, centre X=56.35, clear 0.90×2.10 m; opens north into ROOM 13.
