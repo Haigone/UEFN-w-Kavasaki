@@ -138,3 +138,31 @@ A complete proposal-level draft pack now exists at `NARRATIVE_CONTENT_PROPOSAL_P
 - THE NEW GUEST invitation/consent copy.
 
 These are authored drafts, not approved canon. Owner approval items NCP-A01–A10 and END-A01/END-A02 remain open. Therefore the content-authoring deliverable is **PRESENTE MA NON VERIFICATO / IN ATTESA DI APPROVAZIONE**, while the final approved narrative pack and editor implementation remain incomplete.
+
+
+## R2.3 / current documentation addendum — 2026-11-16
+
+This addendum supersedes older rows and narrative notes where they describe geometry as unapproved, co-op quorum as unresolved, or draft clue text as absent. It does not claim editor implementation.
+
+### Status corrections
+- **MD-002 / MD-003:** ground/upper geometry source of truth and R2.3 design are OWNER-APPROVED DESIGN (GEO-A01–GEO-A21). Remaining work is register integrity, editor construction, collision and traversal evidence. Do not retain the old status BLOCCATO for the owner design decision.
+- **MD-004:** route is dimensioned at R2.3 design level; physical continuity and traversal remain EDITOR-TEST REQUIRED.
+- **MD-006 / MD-007:** approved stair/balcony/opening design is in R2.3 controlled records; editor and cross-register verification remain open.
+- **MD-048:** THE TRUTH narrative sequence now has a complete proposal-level draft. END-A02 evidence formula and NCP-A08 remain owner approval pending; no content is absent at draft level.
+- **MD-049:** PR #1 must be reconciled against LD-GEO R2.3, not R2.2. Do not merge it as-is.
+- END-A01 co-op quorum is owner-approved; it is no longer an outstanding owner decision.
+- The narrative proposal pack is complete at draft level. NCP-A01–A09 and END-A02 are consolidated in OWNER_DECISION_PACKET_R1.md.
+
+### New documentation deliverables
+| ID | Deliverable | Current status | Completion criterion |
+|---|---|---|---|
+| MD-051 | Dedicated THE GUEST AI behaviour specification | PRESENTE — MONSTER_AI_BEHAVIOUR_SPEC.md | Design contract reviewed; target UEFN feasibility remains a separate engine gate |
+| MD-052 | Canonical objective/event/flag catalog | PRESENTE — OBJECTIVE_AND_EVENT_CATALOG.md | Cross-reference every objective and IN-001–IN-031 mapping; no duplicate flag writer |
+| MD-053 | Consolidated owner narrative decision packet | PRESENTE — OWNER_DECISION_PACKET_R1.md | Owner response recorded; NCP-A01–A09 and END-A02 synchronized |
+| MD-054 | UI/UX vote and objective reconciliation | PARTIAL — GAMEPLAY_UI_UX_SPEC.md | Fully matches END-A01 and objective catalog; vote window and visual treatment specified as tunable UX parameters |
+| MD-055 | Cue-level audio/lighting specification | INCOMPLETO | Complete cue IDs, triggers, duration, priority, concurrency/mix, subtitle/visual fallback and recovery |
+| MD-056 | Objective/UI string table and prompt copy | INCOMPLETO | Stable StringId for every objective, interaction, error, pickup, rescue, checkpoint and ending prompt |
+| MD-057 | Complete asset acquisition/licensing/import manifest | INCOMPLETO | Every required asset has unique ID, source, license, owner, format, import status and replacement/fallback |
+| MD-058 | Full interaction register IN-001–IN-031 reconciliation | PARTIAL | Every interaction has exact preconditions, UI mode, cancel/timeout, success/failure copy, state writer and fallback |
+
+Old audit sections below this addendum remain historical evidence. Use the current R2.3 approval record, production control master and R2.3 Claude packet for current status.
