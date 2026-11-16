@@ -172,7 +172,7 @@ ESCAPE:
 
 THE TRUTH:
 - FinaleReady = true.
-- TruthChainComplete = true (only after END-A02 is owner-approved and its formula is satisfied).
+- TruthChainComplete = true exactly when DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound.
 - Room13RevealComplete = true; ServiceKeyObtained and ServiceRouteReady are included in FinaleReady.
 - Players select/activate the truth route.
 - CarKeys and vehicle ignition are not required.
@@ -190,7 +190,7 @@ THE NEW GUEST:
 - Tie/timeout for ESCAPE/THE_TRUTH: choose ESCAPE only if eligible; otherwise keep selector active for a new vote; never silently choose THE_TRUTH.
 - Solo choice is direct. Ending is locked once committed.
 
-**END-A02 APPROVED BY OWNER (2026-11-16):** TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal requirements. See OWNER_DECISION_GATE_R2.2.md and END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
+**END-A02 APPROVED UNDER EXPRESS OWNER DELEGATION (2026-11-16):** TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal requirements. See OWNER_DECISION_GATE_R2.2.md and END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
 
 ## 8. QA scenarios
 1. Solo: complete all acts and reach ESCAPE.
@@ -222,3 +222,7 @@ THE NEW GUEST:
 - Three endings are distinct and deterministic.
 - All six acts have working objectives and completion states.
 - QA results are recorded, not assumed.
+
+
+### THE_TRUTH ending branch — canonical execution
+After IN-020 commits THE_TRUTH, the team enters the service control room. The four solved ROOM 13 photos appear on the rail in order; they are not inventory and no second puzzle is run. Play the night manager's 02:13 recorder text/subtitles, show THE GUEST at the far corridor, align owner/GUEST reflection, then enable IN-032. IN-032 commits NightAuditActivated once. Execute the room-by-room blackout, preserve neon at 02:13, print “NO VACANCY. NO OWNER. NO GUEST.” and show THE TRUTH title card. No car keys, ignition or chase are involved. If a cinematic/actor fails, use the service-control proxy and fallback title card without changing the committed ending.
