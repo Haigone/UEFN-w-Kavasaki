@@ -425,3 +425,19 @@ The narrative draft package is NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. It is prop
 **Owner only:** creative/structural approval and publication authorization.
 
 Current PR #1 is OPEN/DRAFT, unmerged, and latest GitHub metadata reports mergeable=false. Do not merge it. Reauthor the package only after approved and editor-verified geometry.
+
+
+# 20. CURRENT R2.3 EXECUTION OVERRIDE — 2026-11-16
+
+This section supersedes the R2.2 handoff override in Section 19 and every older geometry baseline reference where they conflict.
+
+1. Current geometry authority is LD_GEO_R2.3_APPROVAL_RECORD.md and LEVEL_DESIGN_R2.3_INDEX.md. R2.3 is OWNER-APPROVED DESIGN for GEO-A01–GEO-A21; it is not UEFN/editor verified.
+2. END-A01 co-op quorum is owner-approved and closed. Use the exact majority/unanimity/tie/timeout/disconnect contract in ENDING_IMPLEMENTATION_SPEC.md.
+3. END-A02 remains pending owner approval. NCP-A01–A09 draft content is not canon until OWNER_DECISION_PACKET_R1.md is approved.
+4. Start only CLD-001 read-only actual UEFN project/environment baseline and CLD-002 read-only R2.3 register/topology audit. Establish a recoverable backup before writes.
+5. CLD-003 greybox is blocked until CLD-001 baseline/backup and CLD-002 PASS.
+6. Use OBJECTIVE_AND_EVENT_CATALOG.md, INTERACTION_EXECUTION_SPEC.md, MONSTER_AI_BEHAVIOUR_SPEC.md, AUDIO_CUE_SHEET.csv, LIGHTING_CUE_SHEET.csv and UI_STRING_TABLE.csv as current discipline contracts.
+7. Do not merge Environment Art PR #1 as-is or treat its placements as approved R2.3 geometry.
+8. Do not invent UEFN APIs, NPC capabilities, Verse signatures or device behaviour. Verify against the target editor release and report unsupported capabilities with fallbacks.
+9. Every handoff must include Task ID/status, UEFN version, project/build ID, branch/commit, files/assets/devices changed, actions performed, expected vs observed, evidence, parser/compiler/validation logs, defects and next dependencies.
+10. Never claim UEFN build, compile, playtest, multiplayer QA, performance validation or publication without actual reproducible evidence.
