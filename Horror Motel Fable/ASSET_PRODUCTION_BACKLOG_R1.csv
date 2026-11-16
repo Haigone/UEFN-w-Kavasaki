@@ -35,27 +35,27 @@ PROP_SERVICE_CONTROL,Prop,Service key lock gate control and Night Audit breaker,
 PROP_OWNER_PORTRAIT,Prop,M Harrow portrait and reflection composition,1,P0,Approved canonical portrait image,NOT SOURCED,NOT IMPORTED,AST-02,Narrative content pack
 CHAR_GUEST_CONCEPT,Character,THE GUEST turnaround concept pack,1,P0,Front side back three quarter face hands scale and pose,NOT SOURCED,NOT CREATED,AST-03,GUEST_MODEL_SPEC.md
 CHAR_GUEST_MESH,Character,THE GUEST LOD0 skeletal mesh 2.60m,1,P0,25k to 45k target triangles rig material slots,NOT SOURCED,NOT CREATED,AST-03,GUEST_MODEL_SPEC.md
-CHAR_GUEST_LOD1,Character,THE GUEST LOD1,1,P1,12k to 20k target triangles silhouette continuity,NOT SOURCED,NOT_CREATED,AST-03,CHAR_GUEST_MESH
-CHAR_GUEST_LOD2,Character,THE GUEST LOD2,1,P1,4k to 8k target triangles silhouette continuity,NOT SOURCED,NOT_CREATED,AST-03,CHAR_GUEST_MESH
-CHAR_GUEST_RIG,Character,THE GUEST skeleton retarget and bind pose,1,P0,Root pelvis spine neck head arms hands legs feet hierarchy,NOT SOURCED,NOT_CREATED,AST-03,GUEST_MODEL_SPEC.md
-CHAR_GUEST_ANIM_IDLE,Animation,Idle breathing near still 6 to 10 seconds,1,P1,Loop clip root locked,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_WALK,Animation,Slow walk 2 to 3 second cycle,1,P1,Loop clip root policy documented,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_TURN,Animation,Head turn 1.2 to 2 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_INVESTIGATE,Animation,Investigate lean 1.5 to 2.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_CHASE,Animation,Chase run 0.8 to 1.2 second cycle,1,P1,Loop clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_CAPTURE,Animation,Reach capture 1 to 1.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_SEARCH,Animation,Search lean 2 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_RETREAT,Animation,Retreat disappear 1.5 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_BALCONY,Animation,Balcony still silhouette 4 to 8 seconds,1,P2,Loop or hold clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-CHAR_GUEST_ANIM_REVEAL,Animation,Owner reveal pose 3 to 5 seconds,1,P1,Hold pose clip,NOT SOURCED,NOT_CREATED,AST-04,CHAR_GUEST_RIG
-MAT_MOTEL_SURFACE_SET,Material,Carpet wallpaper wood tile concrete metal glass fabric asphalt,1 set,P1,Master materials instances and supported maps,NOT SOURCED,NOT_IMPORTED,AST-05,Asset pipeline
-MAT_GUEST_SKIN_CLOTH,Material,THE GUEST skin shirt trousers shoes badge,1 set,P1,Supported BaseColor Normal Roughness workflow,NOT SOURCED,NOT_IMPORTED,AST-05,CHAR_GUEST_MESH
-VFX_NEON_FLICKER,VFX,Controlled motel neon flicker,1,P1,Material and light control with photosensitive fallback,NOT SOURCED,NOT_IMPORTED,AST-05,Lighting cue sheet
-VFX_POWER_TRANSITION,VFX,Power restore and room by room blackout,1 set,P1,Replicated light state transitions,NOT SOURCED,NOT_IMPORTED,AST-05,Ending cinematic spec
-VFX_REFLECTION_SCARE,VFX,ROOM03 mirror and THE GUEST reveal reflection,2,P2,Verified reflection method or monitor substitute,NOT SOURCED,NOT_IMPORTED,AST-05,Feature compatibility
-AUDIO_AMBIENCE_SET,Audio,Rain wind neon fluorescent ROOM13 drone,1 set,P0,Licensed loops and cue metadata,NOT SOURCED,NOT_IMPORTED,AST-06,AUDIO_REGISTER.csv
-AUDIO_FOLEY_SET,Audio,Player Guest footsteps breath cloth doors phone CRT breaker capture chase gate,1 set,P0,Licensed one shots loops concurrency metadata,NOT SOURCED,NOT_IMPORTED,AST-06,AUDIO_REGISTER.csv
-AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,1 set,P0,English VO stable String IDs subtitles transcripts,NOT SOURCED,NOT_IMPORTED,AST-06,Narrative content pack
-UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,1 set,P0,UMG widget assets and per player Verse logic,NOT SOURCED,NOT_IMPORTED,AST-07,UI screen layouts
-UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,1 set,P1,High contrast icon set,NOT SOURCED,NOT_IMPORTED,AST-07,UI screen layouts
-VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,1 set,P2,Performance reviewed effects,NOT SOURCED,NOT_IMPORTED,AST-05,Lighting cue sheet
+CHAR_GUEST_LOD1,Character,THE GUEST LOD1,1,P1,12k to 20k target triangles silhouette continuity,NOT SOURCED,NOT CREATED,AST-03,CHAR_GUEST_MESH
+CHAR_GUEST_LOD2,Character,THE GUEST LOD2,1,P1,4k to 8k target triangles silhouette continuity,NOT SOURCED,NOT CREATED,AST-03,CHAR_GUEST_MESH
+CHAR_GUEST_RIG,Character,THE GUEST skeleton retarget and bind pose,1,P0,Root pelvis spine neck head arms hands legs feet hierarchy,NOT SOURCED,NOT CREATED,AST-03,GUEST_MODEL_SPEC.md
+CHAR_GUEST_ANIM_IDLE,Animation,Idle breathing near still 6 to 10 seconds,1,P1,Loop clip root locked,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_WALK,Animation,Slow walk 2 to 3 second cycle,1,P1,Loop clip root policy documented,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_TURN,Animation,Head turn 1.2 to 2 seconds,1,P1,One shot clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_INVESTIGATE,Animation,Investigate lean 1.5 to 2.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_CHASE,Animation,Chase run 0.8 to 1.2 second cycle,1,P1,Loop clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_CAPTURE,Animation,Reach capture 1 to 1.5 seconds,1,P1,One shot clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_SEARCH,Animation,Search lean 2 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_RETREAT,Animation,Retreat disappear 1.5 to 3 seconds,1,P2,One shot clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_BALCONY,Animation,Balcony still silhouette 4 to 8 seconds,1,P2,Loop or hold clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+CHAR_GUEST_ANIM_REVEAL,Animation,Owner reveal pose 3 to 5 seconds,1,P1,Hold pose clip,NOT SOURCED,NOT CREATED,AST-04,CHAR_GUEST_RIG
+MAT_MOTEL_SURFACE_SET,Material,Carpet wallpaper wood tile concrete metal glass fabric asphalt,1 set,P1,Master materials instances and supported maps,NOT SOURCED,NOT IMPORTED,AST-05,Asset pipeline
+MAT_GUEST_SKIN_CLOTH,Material,THE GUEST skin shirt trousers shoes badge,1 set,P1,Supported BaseColor Normal Roughness workflow,NOT SOURCED,NOT IMPORTED,AST-05,CHAR_GUEST_MESH
+VFX_NEON_FLICKER,VFX,Controlled motel neon flicker,1,P1,Material and light control with photosensitive fallback,NOT SOURCED,NOT IMPORTED,AST-05,Lighting cue sheet
+VFX_POWER_TRANSITION,VFX,Power restore and room by room blackout,1 set,P1,Replicated light state transitions,NOT SOURCED,NOT IMPORTED,AST-05,Ending cinematic spec
+VFX_REFLECTION_SCARE,VFX,ROOM03 mirror and THE GUEST reveal reflection,2,P2,Verified reflection method or monitor substitute,NOT SOURCED,NOT IMPORTED,AST-05,Feature compatibility
+AUDIO_AMBIENCE_SET,Audio,Rain wind neon fluorescent ROOM13 drone,1 set,P0,Licensed loops and cue metadata,NOT SOURCED,NOT IMPORTED,AST-06,AUDIO_REGISTER.csv
+AUDIO_FOLEY_SET,Audio,Player Guest footsteps breath cloth doors phone CRT breaker capture chase gate,1 set,P0,Licensed one shots loops concurrency metadata,NOT SOURCED,NOT IMPORTED,AST-06,AUDIO_REGISTER.csv
+AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,1 set,P0,English VO stable String IDs subtitles transcripts,NOT SOURCED,NOT IMPORTED,AST-06,Narrative content pack
+UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,1 set,P0,UMG widget assets and per player Verse logic,NOT SOURCED,NOT IMPORTED,AST-07,UI screen layouts
+UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,1 set,P1,High contrast icon set,NOT SOURCED,NOT IMPORTED,AST-07,UI screen layouts
+VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,1 set,P2,Performance reviewed effects,NOT SOURCED,NOT IMPORTED,AST-05,Lighting cue sheet
