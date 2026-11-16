@@ -5,10 +5,10 @@
 ## 1. Binding division of responsibilities
 
 ### ChatGPT — planning and specification only
-ChatGPT prepares, in dependency order and at implementation-level detail:
+ChatGPT prepares, in dependency order and at implementation-level detail, execution plans only:
 - task breakdowns and execution sequences for Claude;
 - geometry decisions for owner approval, dimensioned specifications and reconciliation instructions;
-- device/Verse architecture plans, pseudocode or clearly labelled implementation briefs;
+- device/Verse architecture plans and implementation specifications that tell Claude what to implement; ChatGPT does not author or modify the implementation code under this operating model;
 - exact editor procedures, configuration tables, test cases, expected results and evidence checklists;
 - risk analysis, acceptance criteria, rollback/recovery instructions and handoff documents;
 - analysis of evidence returned by Claude and the next precise execution plan.
