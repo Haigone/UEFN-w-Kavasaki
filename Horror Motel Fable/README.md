@@ -5,8 +5,10 @@ Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla re
 ## Ordine di lettura
 1. [MASTER_PROMPT_FOR_CLAUDE.md](MASTER_PROMPT_FOR_CLAUDE.md) — prompt operativo principale: incollare per primo in Claude.
 2. [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — visione, lore, struttura, personaggi, stanze, enigmi, dialoghi e finali.
-3. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA.
-4. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura obbligatoria per produrre la planimetria esecutiva corretta.
+3. [GAMEPLAY_FLOW_AND_TESTS.md](GAMEPLAY_FLOW_AND_TESTS.md) — flusso dei sei atti, stati giocatore, cattura/salvataggio, inventario, finali e QA.
+4. [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — architettura, Verse, dispositivi, AI, cooperativa, audio, luci, performance e QA tecnico.
+5. [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) — coordinate preliminari, vincoli geometrici e procedura obbligatoria per produrre la planimetria esecutiva corretta.
+6. [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md) — inventario iniziale di modelli 3D, props, materiali, luci, audio e priorità di produzione.
 
 ## Vincoli non negoziabili
 - Prodotto finale: isola Fortnite reale, costruita in Unreal Editor for Fortnite (UEFN).
@@ -19,7 +21,7 @@ Questa cartella contiene il pacchetto di istruzioni per Claude destinato alla re
 - La stima di circa due ore è un obiettivo aspirazionale, non una garanzia. Se non è fattibile, dichiarare limiti e priorità senza spacciare un risultato incompleto per gioco finito.
 
 ## Stato del materiale
-Il design narrativo e il gameplay sono definiti a livello di concept e specifica. La geometria precedente è solo una bozza: contiene collisioni e va ricostruita/validata prima del blockout definitivo. Le quantità di dispositivi e i parametri AI sono valori iniziali da verificare in UEFN, non garanzie di API o performance.
+Il design narrativo e il gameplay sono definiti a livello di concept e specifica. La geometria precedente è solo una bozza: contiene sovrapposizioni e va ricostruita/validata prima del blockout definitivo. Le quantità di dispositivi e i parametri AI sono valori iniziali da verificare in UEFN, non garanzie di API o performance.
 
 Repository: [Haigone/UEFN-w-Kavasaki](https://github.com/Haigone/UEFN-w-Kavasaki)
 Branch: `main`
