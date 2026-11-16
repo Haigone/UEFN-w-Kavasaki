@@ -25,7 +25,7 @@ Approval: 2026-11-16 — owner response “approvo tutto, procedi”.
 ## Key approved geometry resolutions
 
 - Two ground-floor north pockets sealed/no-access/no-navmesh.
-- Upper west reserve sealed by UF-W-SEALED-RESERVE-WEST; east L-shaped reserve split into two registered components.
+- Upper west reserve sealed by UF-W-SEALED-RESERVE-WEST; east L-shaped reserve split into two registered components and closed by UF-E-SEALED-RESERVE-WEST.
 - U-SERVICE sealed/no-access/no-navmesh.
 - Balcony turning pads clipped to the UF slab polygon; no collision over courtyard void.
 - Cross-bays 2.00 m gross / 1.70 m net.
