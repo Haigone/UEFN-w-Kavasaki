@@ -263,3 +263,17 @@ This is the latest documentary handoff override for this pass.
 - Environment Art PR #1 remains unmerged and must be reauthored against approved/editor-verified geometry.
 
 **Current state:** documentation and proposal drafting advanced; production remains DOCUMENTATION / PRE-PRODUCTION. The next executable work is CLD-001 and CLD-002 from CLAUDE_R2.2_EXECUTION_PACKET.md. The next owner action is to approve or revise the decision gate. No publication is authorized.
+
+
+## 15. Final current-tree / CSV verification — 2026-11-16
+
+Latest recursive main tree contains 80 files: 79 in Horror Motel Fable/ plus root README.md. The previous 76-file snapshot is superseded.
+
+All 18 CSV files were parsed:
+- 17 current authoring/compatibility CSVs have no row-width errors.
+- Historical combined lighting_audio_schedule.csv retains 10 malformed-width rows and is not an authoring source. The split LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv are the current authoring files.
+- ROOM_COORDINATE_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and INTERACTION_MASTER_REGISTER.csv have zero row-width errors.
+- PZ-03's InputType, Solution and AcceptanceTest fields are populated.
+- SITE, BLDG-UNION and COURTYARD semantic columns have been aligned.
+
+This is structural validation only; cross-register IDs, numeric semantics, spatial overlaps, wall/opening hosts, asset bounds and engine behaviour still require validation. See CLD-002 in CLAUDE_R2.2_EXECUTION_PACKET.md.
