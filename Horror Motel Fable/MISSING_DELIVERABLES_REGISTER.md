@@ -95,7 +95,7 @@ This addendum supersedes older R2.0/R2.1 status and Environment Art branch diver
 | MD-046 | Final player-facing narrative clue content | Puzzle solutions are documented but register text, office captions, Room 04 transcript, Room 06 identities, diary, drawing and ROOM 13 captions remain incomplete | INCOMPLETO | Approved English source text, subtitle/transcript and prop layout for every mandatory clue | Narrative owner |
 | MD-047 | Consistent THE_NEW_GUEST co-op quorum | ENDING_DESIGN_SPEC.md proposes unanimous confirmation; ENDING_IMPLEMENTATION_SPEC.md / GAMEPLAY_SYSTEMS_SPEC.md use majority | BLOCCATO | One owner-approved quorum rule reflected in every gameplay/ending document | Project owner |
 | MD-048 | Approved THE_TRUTH evidence gate and finale | Truth evidence list exists but mandatory status and final confrontation/cost/dialogue/consequence remain unresolved | BLOCCATO | Approved mandatory evidence list and complete ending script/trigger specification | Narrative owner |
-| MD-049 | Environment Art package reauthored against R2.2 | PR #1 is OPEN/DRAFT; live comparison at audit time is 61 ahead / 226 behind and mergeable=false; branch handoff still references older geometry | BLOCCATO | Reauthored R2.2 package, fresh comparison, register audit and review | Geometry approval |
+| MD-049 | Environment Art package reauthored against R2.2 | PR #1 is OPEN/DRAFT; live comparison at audit time is 66 ahead / 285 behind and mergeable=false; branch handoff still references older geometry | BLOCCATO | Reauthored R2.2 package, fresh comparison, register audit and review | Geometry approval |
 | MD-050 | Actual UEFN project/editor baseline and implementation evidence | Main contains no native UEFN project, Verse source or editor/test evidence | INCOMPLETO | Actual project identity, editor version, compiled Verse, configured devices and evidence from Claude | Claude / project owner |
 
 ### Current-main status corrections
@@ -103,4 +103,4 @@ This addendum supersedes older R2.0/R2.1 status and Environment Art branch diver
 - INTERACTION_MASTER_REGISTER.csv now has 29 rows and every row matches its 13-column header; IN-021/022/023 Target/Action fields were repaired (commit 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5).
 - PUZZLE_MASTER_REGISTER.csv, ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv, SLAB_SCHEDULE.csv, AUDIO_REGISTER.csv and LIGHTING_REGISTER.csv also passed row-width checks in this audit. These are schema checks only, not semantic or editor validation.
 - Gameplay reward ownership and Screwdriver use were reconciled; GAT-048–GAT-052 now cover the revised contracts.
-- Current Environment Art PR divergence is 61 ahead / 226 behind; do not reuse older 52/113 or 52/106 figures as current metadata.
+- Current Environment Art PR divergence is 66 ahead / 285 behind; do not reuse older 52/113 or 52/106 figures as current metadata.
