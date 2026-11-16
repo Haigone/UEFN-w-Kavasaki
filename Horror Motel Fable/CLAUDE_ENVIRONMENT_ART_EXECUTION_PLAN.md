@@ -231,3 +231,32 @@ Also produce/maintain:
 - Final asset status summary.
 
 No placeholder rows such as “all other props”. Every physical asset has a stable Asset_ID. Every placed object has a placement ID. Missing coordinates remain explicitly UNPLACED / BLOCKED, never guessed. Every numeric field has units and status classification. The documentation package is ready for execution; actual content production and engine verification remain Claude's work.
+
+
+## 13. One-shot execution contract — final instruction for Claude
+
+The project owner will provide Claude one complete execution prompt and repository access. Do not ask for a sequence of separately issued prompts. Read this entire plan and all referenced project specifications first, then execute the phases sequentially in one controlled run/session to the extent the available tools and time permit. The order inside this document is the dependency order; do not parallelise dependent geometry, DCC, import and validation steps.
+
+The documentation author does not run UEFN, does not claim editor test results, and does not create scheduled activities. Claude must perform all actual UEFN work and produce the evidence. If Claude cannot operate the DCC application or UEFN editor directly in its current environment, it must clearly identify the exact actions requiring a human operator and produce deterministic click-by-click/import/test instructions for that operator; it must not claim those actions were performed.
+
+### Required order of execution today
+1. **Read-only audit first:** inspect repository, project files, schedules, geometry report, current asset library and source register.
+2. **Data integrity:** parse and validate CSVs; repair only provable schema/data errors; reconcile every source schedule row and every asset/material reference. Retain all unplaced/blocked rows.
+3. **Existing licensed assets first:** inventory the owner's already-owned content and map usable meshes/materials to stable project Asset_IDs. No purchase or license upgrade without owner approval. Do not model a generic asset that is already available in an owned and licensed source pack.
+4. **Geometry resolution:** compare the current LD-GEO R2.0 proposal with the geometry validation report. It is NOT APPROVED / NOT ENGINE-VERIFIED. Resolve only from an existing authorised approval or a documented project-owner decision. Do not turn the proposal into an approval by assumption. Keep dependent assets and placements blocked.
+5. **DCC and material work:** create only the missing assets and reusable masters after source inventory and geometry dependency checks. Retain editable source and export packages.
+6. **UEFN calibration and representative tests:** Claude imports calibration cube, wall, door, prop and material, then runs the test matrix in section 10. No batch import before representative tests pass.
+7. **Batch import and environment slice:** import eligible assets only, dress the representative benchmark slice, check collisions, materials, lighting, LODs, room clearances and performance.
+8. **Final verification and report:** update every register from evidence, attach screenshots/logs/source/license paths, record blockers and counts, commit all outputs, and state what remains incomplete.
+
+### Hard stops
+- No unlicensed or unknown-provenance asset.
+- No purchase or paid license upgrade without explicit project-owner approval.
+- No final-fit bespoke mesh or placement against unapproved geometry.
+- No invented coordinates for reception, office, storage, electrical room, gate or any other unplaced item.
+- No assumption that an Unreal Engine Marketplace/Fab asset is automatically UEFN compatible.
+- No claim of import, collision pass, performance pass, multiplayer pass or acceptance without actual UEFN evidence.
+- No separate reminder, scheduled follow-up or automation.
+
+### Completion accounting
+Report distinct totals for: required asset IDs; existing licensed source assets inventoried; original models created; textures/materials created; assets exported; assets imported; assets engine-verified; assets accepted; placements verified; items blocked. A single aggregate “complete” percentage is not acceptable unless its numerator/denominator and acceptance definition are stated. Documentation readiness must be reported separately from physical asset completion and UEFN verification.
