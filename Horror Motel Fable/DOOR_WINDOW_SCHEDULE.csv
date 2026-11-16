@@ -20,7 +20,7 @@ D-13B,UF,ROOM-13,South,56.35,50.95,3.60,0.90,2.10,1.20,2.25,Concealed_inward,Sta
 D-13C,UF,EAST_VESTIBULE,West,64.00,48.60,3.60,0.90,2.10,1.20,2.25,Open_passage,No collision threshold,Connects vestibule to hall,EDITOR-TEST REQUIRED
 W-G01,GF,ROOM-01,East,19.70,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G02,GF,ROOM-02,East,19.70,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-G03,GF,ROOM-03,East,19.70,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Courtyard-facing window,PROPOSED TARGET
+W-G03,GF,ROOM-03,East,19.70,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G04,GF,ROOM-04,West,64.30,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G05,GF,ROOM-05,West,64.30,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G06,GF,ROOM-06,West,64.30,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
