@@ -52,7 +52,7 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 **Clue design:** four images show: first motel construction / owner at opening (1968); first recorded disappearance (1974); child drawing/guest disappearance (1981); current night and owner portrait (1986). Each has a visible date or date-linked caption. A diary fragment states “The room was never built. It was always here.”  
 **Interaction:** place/select four photos in chronological order.  
 **Solution:** 1968 → 1974 → 1981 → 1986.  
-**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; Service Key pickup becomes available. IN-017 is the sole grant transaction and adds ServiceKey exactly once. TruthChainComplete is a separate derived session flag; do not set it until END-A02 is explicitly owner-approved. The recommended gate is documented in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.  
+**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; Service Key pickup becomes available. IN-017 is the sole grant transaction and adds ServiceKey exactly once. TruthChainComplete is a separate derived session flag under approved END-A02: DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. PZ-04 never sets or substitutes for any of those three evidence flags.  
 **Failure:** board indicates whether the earliest/latest relation is wrong without exposing the full answer; reset all slots; no item loss.  
 **Fallback:** journal chronology view; substitute photo cards if a prop is missing; solved flag can restore compartment and ServiceKey.  
 **Multiplayer:** shared state, one logical lock; any active player can operate; no individual vote required.  
