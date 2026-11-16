@@ -12,7 +12,7 @@ String_ID,Category,English_Text,Context,Implementation_Notes
 "UI_OBJ_06_TITLE","Objective","DISCOVER THE OWNER'S IDENTITY","ACT V","Primary objective title"
 "UI_OBJ_06_BODY","Objective","Arrange the four photographs and uncover the hidden compartment.","ACT V","Do not reveal chronology"
 "UI_OBJ_07_TITLE","Objective","OPEN THE SERVICE ROUTE","ACT VI","Primary objective title"
-"UI_OBJ_07_BODY","Objective","Find the car keys and unlock the service control.","ACT VI","Show prerequisite count/status only"
+"UI_OBJ_07_BODY","Objective","Unlock the service control; find the car keys if you choose to escape.","ACT VI","Show prerequisite count/status only"
 "UI_OBJ_08_TITLE","Objective","DECIDE THE MOTEL'S FATE","ACT VI","Primary objective title"
 "UI_OBJ_08_BODY","Objective","Choose what happens to the motel.","ACT VI","Only eligible endings shown"
 "UI_IN_001_PROMPT","Interaction","Look at the motel sign","IN-001","Show only when target is valid, in range and player state permits"
