@@ -167,3 +167,13 @@ An asset is REJECTED if:
 - actual memory/performance is outside the approved island budget.
 
 A rejected asset requires a replacement proposal linked to the same gameplay role and a new Asset_ID. It does not silently alter geometry, narrative or gameplay.
+
+
+## 13. R3 production register integration
+
+- ASSET_PRODUCTION_BACKLOG_R1.csv is the production work breakdown and dependency/priority source.
+- asset_manifest.csv and ASSET_MANIFEST_EXECUTIVE.csv are synchronized master inventory mirrors. Every backlog Asset_ID must exist in the master manifest.
+- ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv is the per-Asset_ID evidence ledger for provider, exact source, license, commercial use, modification, UEFN publishing/redistribution, attribution and proof archive.
+- A blank source/license field is acceptable only while status is NOT SOURCED and the asset is not acquired/imported/published. It is a hard acceptance blocker for any asset intended for publication.
+- Asset production status and source-rights status are separate: a model can be CREATED but still REJECTED/NOT SOURCED; a licensed source can be RIGHTS VERIFIED but not yet IMPORTED.
+- Never change NOT SOURCED to SOURCE VERIFIED or RIGHTS VERIFIED without the exact provider/source and archived license proof.
