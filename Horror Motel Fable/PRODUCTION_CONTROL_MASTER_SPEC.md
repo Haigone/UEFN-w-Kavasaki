@@ -171,3 +171,25 @@ The specification package is substantially developed but not fully decision-lock
 5. Maintain one actionable master task register and no contradictory current-status claims.
 
 This master specification is a control index. Discipline files remain the detailed technical authority within their domains.
+
+
+## 14. Documentation status refresh — 2026-11-16
+
+The following detailed specifications are now present and indexed:
+- PUZZLE_EXECUTION_DETAIL_R2.md — executable contracts for PZ-01–PZ-05.
+- UI_SCREEN_LAYOUTS_AND_WIDGET_STATES_R1.md — screen/widget layout and interaction states.
+- THE_GUEST_NUMERIC_TUNING_R1.md — proposed numeric AI defaults and calibration protocol.
+- UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md — per-system implementation route, verification and fallback.
+- EVENT_AND_STATE_TRANSITION_CATALOG_R2.md — 42 logical events and state transition rules.
+
+These documents close authoring gaps only. The remaining documentation-level integration priority is INT-001: map EVT-001–042 to IN-001–IN-032, UEFN_DEVICE_BINDINGS.csv and VERSE_SYSTEM_DESIGN.md, and eliminate duplicate or unmapped writers/events.
+
+The control status remains:
+1. Geometry: OWNER-APPROVED DESIGN R2.3; editor construction/collision/traversal proof remains outstanding.
+2. Narrative: NCP-A01–A09 and END-A02 delegated approvals recorded; prop/VO/UI asset realization remains outstanding.
+3. Puzzle/UI/AI/event documentation: detailed contracts present; cross-register integration and target implementation remain outstanding.
+4. UEFN compatibility: API-CHECK REQUIRED until exact target release verification.
+5. AI numeric values: PROPOSED until calibrated in actual solo/duo/four-player playtests.
+6. Asset acquisition/licensing/import, editor build, Verse compile, memory/performance profiling and release QA remain separate open gates.
+
+Do not describe the project as fully implemented or release-ready based on documentation completion.
