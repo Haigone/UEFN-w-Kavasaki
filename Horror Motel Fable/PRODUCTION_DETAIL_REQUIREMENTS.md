@@ -5,7 +5,7 @@
 
 **Units and status vocabulary**
 - All world dimensions are metres unless a field explicitly says cm, mm, Unreal units or pixels.
-- World coordinates use the site datum in `EXECUTIVE_BUILD_DOSSIER.md`; convert metres to Unreal centimetres by multiplying by 100.
+- World coordinates use the site datum and coordinate authority in `LD_GEO_R2.3_APPROVAL_RECORD.md`, `LEVEL_DESIGN_R2.3_INDEX.md` and the R2.3 controlled schedules; `EXECUTIVE_BUILD_DOSSIER.md` is historical where it conflicts. Convert metres to Unreal centimetres by multiplying by 100.
 - Every measurement must be tagged as one of: `FIXED REQUIREMENT`, `PROPOSED TARGET`, `ENGINE-VERIFIED`, `EDITOR-TEST REQUIRED`.
 - Never silently promote a proposed target to a verified fact.
 - Use a single coordinate convention and one authoritative schedule. If a layout changes, update every plan, schedule, route, asset placement and prompt reference.
