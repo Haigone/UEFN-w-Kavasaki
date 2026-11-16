@@ -90,7 +90,7 @@ data = {name: read_csv(name) for name in csv_files}
 unique_keys = {
     "ROOM_COORDINATE_REGISTER.csv": "ID",
     "wall_schedule.csv": "Wall_ID",
-    "INTERACTION_MASTER_REGISTER.csv": "Interaction_ID",
+    "INTERACTION_MASTER_REGISTER.csv": "InteractionID",
     "PUZZLE_MASTER_REGISTER.csv": "PuzzleID",
     "UEFN_DEVICE_BINDINGS.csv": "Device_ID",
     "INTERACTION_ANCHOR_SCHEDULE_R1.csv": "Anchor_ID",
@@ -142,7 +142,7 @@ if master_assets != rights_assets:
     fail(f"asset rights coverage mismatch: missing={sorted(master_assets-rights_assets)}, extra={sorted(rights_assets-master_assets)}")
 
 # Interaction anchor coverage: every registered interaction has at least one anchor row.
-interaction_ids = {r.get("Interaction_ID", "") for r in data["INTERACTION_MASTER_REGISTER.csv"][1]}
+interaction_ids = {r.get("InteractionID", "") for r in data["INTERACTION_MASTER_REGISTER.csv"][1]}
 anchor_interactions = {r.get("Interaction_ID", "") for r in data["INTERACTION_ANCHOR_SCHEDULE_R1.csv"][1] if r.get("Interaction_ID")}
 missing_interactions = interaction_ids - anchor_interactions
 if missing_interactions:
