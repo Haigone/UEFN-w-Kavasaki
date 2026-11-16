@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
 <rect width="1400" height="1000" fill="#fbfaf6"/>
 <g font-family="Arial" fill="#202020">
-<text x="45" y="38" font-size="24" font-weight="bold">THE MOTEL: ROOM 13 — SECTIONS R2.2</text>
-<text x="45" y="62" font-size="13">PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED | dimensions in metres | schematic, not to scale</text>
+<text x="45" y="38" font-size="24" font-weight="bold">THE MOTEL: ROOM 13 — SECTIONS R2.3</text>
+<text x="45" y="62" font-size="13">OWNER-APPROVED DESIGN GEOMETRY — NOT UEFN-VERIFIED | dimensions in metres | schematic, not to scale</text>
 </g>
 <!-- A-A side section -->
 <g transform="translate(55,100)">
