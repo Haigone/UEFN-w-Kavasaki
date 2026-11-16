@@ -93,3 +93,24 @@ These tasks supplement prior task IDs. ChatGPT prepares implementation packets a
 
 ### ART-004 latest scope correction
 Latest PR revision has blocked six west-wing wardrobe placements with blank coordinates. The active placement correction now covers three upper-east wardrobes (F10/F11/F12) still outside R2.1 bounds and F12_SECRET_PANEL offset 1.35 m from D-13A; all other upper-room placements still require R2.1 review because the branch's plan remains R2.0. Keep ART-004 blocked until the full footprint/door-swing audit is rerun.
+
+## R2.2 / final documentary audit task additions — 2026-11-16
+
+These tasks supplement prior IDs. Geometry R2.2 is a candidate proposal only; all editor execution remains Claude-owned.
+
+| ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
+|---|---|---|---|---|---|---|---|---|---|
+| GEO-013 | Level Design | Obtain owner approval of LD-GEO R2.2 or an explicitly revised geometry baseline | P0 | Current R2.2 proposal | Signed geometry decision | BLOCCATO | All 11 approval items in LEVEL_DESIGN_GEOMETRY.md are approved or revised | Explicit owner approval and revision identifier | Project Owner |
+| GEO-014 | Level Design | Resolve U-NORTH-BALCONY / U-NORTH-HALL duplicate physical bounds | P1 | GEO-013 | Canonical functional-area alias mapping | INCOMPLETO | One physical walkable polygon, slab and collision surface; functional labels do not duplicate geometry | Updated coordinate register and Claude Outliner/collision evidence | Technical Level Designer |
+| GEO-015 | Level Design | Complete roof drainage and ceiling/service construction detail | P2 | GEO-013 | Roof drainage and ceiling/void schedule | INCOMPLETO | Falls, outlets, downpipes, ceiling void and service zones are dimensioned and coordinated | Dimensioned section/schedules and editor inspection | Level Design |
+| NAR-001 | Narrative | Finalize player-facing clue copy and mandatory document transcripts | P1 | Narrative canon | Approved English clue/text pack | INCOMPLETO | Register, office photos, Room 04, Room 06, diary, drawing and ROOM 13 photo captions are final and readable | Approved text source and subtitle/prop mapping | Narrative Lead / Project Owner |
+| END-001 | Narrative / Gameplay | Resolve THE_NEW_GUEST co-op quorum conflict | P0 | Ending design review | One canonical multiplayer choice rule | BLOCCATO | Unanimous/majority rule selected and reflected in every ending/gameplay document and test | Owner decision and document diff | Project Owner |
+| END-002 | Narrative / Gameplay | Approve THE_TRUTH evidence gate and both unresolved finale scripts | P1 | NAR-001 | Final ending scripts and truth evidence checklist | BLOCCATO | Mandatory flags, player actions, consequence, dialogue and sequence are fully specified | Owner-approved script and traceability matrix | Narrative Lead / Project Owner |
+| ART-005 | Environment Art | Reauthor PR #1 package against owner-approved and Claude-verified geometry | P1 | GEO-013; GEO-014; GEO-015 | R2.2 Environment Art package | BLOCCATO | No stale R2.0/R2.1 assumptions; all IDs, placements, bounds, clearances and source records pass review | Fresh branch comparison, parser/footprint report and formal review | Art Lead / Production |
+| DATA-004 | Lighting / Audio | Normalize light intensity/CCT and dynamic NPC audio emitter fields | P2 | Geometry approval | Revised LIGHTING_REGISTER.csv and AUDIO_REGISTER.csv | INCOMPLETO | Intensity has explicit numeric units; CCT is separate; dynamic audio uses attachment/emitter IDs, not text in XYZ | Schema/semantic validation and Claude editor evidence | Lighting / Audio |
+| QA-002 | QA | Execute GAT-048–GAT-052 after gameplay build is available | P1 | BLK-002; VER-003; DEV-001 | Gameplay regression evidence | NOT RUN | All five cases executed with build/version, observed result and evidence | Claude test report and recordings/logs | QA / Claude |
+
+### Current task-order clarification
+- Geometry is the physical critical path. Narrative authoring may run in parallel but cannot authorize geometry-dependent production.
+- Environment Art PR #1 is not ready to merge: live comparison at the current audit is 61 commits ahead / 226 behind main, OPEN/DRAFT and mergeable=false.
+- The documentary fixes to the interaction/puzzle registers and stair coordinate discrepancy do not close the editor-dependent tasks above.
