@@ -1,9 +1,9 @@
 # END-A02 — THE TRUTH EVIDENCE GATE
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **RECOMMENDATION FOR OWNER DECISION — NOT APPROVED**
+Status: **APPROVED DESIGN DECISION — 2026-11-16**
 
-## 1. Decision requested
+## 1. Approved decision
 
 Approve the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete`:
 
