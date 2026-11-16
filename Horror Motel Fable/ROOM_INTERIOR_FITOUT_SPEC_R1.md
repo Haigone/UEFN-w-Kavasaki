@@ -46,7 +46,7 @@ Room-specific gameplay:
 
 **Electrical room:** labelled A/B/C fuse sockets, cover opened with reusable Screwdriver, breaker lever. Keep 1.20 m operator space in front of the panel and no dressing within 0.75 m of its interaction face. Breaker remains disabled until all three matching slots commit.
 
-**Service control room:** Service Key lock, gate control, separate NIGHT AUDIT — END CYCLE breaker, four-photo evidence rail and recorder. IN-018 controls the service gate; IN-032 controls Night Audit only after THE_TRUTH is committed.
+**Service Control Bay:** use GF-SERVICE-BAY (X 47.30–57.00 m, Y 53.85–59.70 m, floor Z 0.00 m), accessed from Storage through D-G16 using the reusable Service Key. Place the gate console, separate NIGHT AUDIT — END CYCLE breaker, status lamp and recorder at the exact anchors in SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md. IN-018 controls the service gate; IN-032 controls Night Audit only after THE_TRUTH is committed. U-SERVICE remains sealed and has no gameplay use.
 
 ## 5. ROOM 13 hero set
 
