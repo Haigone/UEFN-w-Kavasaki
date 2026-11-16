@@ -104,3 +104,23 @@ Environment Art PR #1 is an intake candidate only. Its branch is 11 commits ahea
 **Sequencing clarification required:** the master register and this roadmap make geometry the first physical critical-path sector. CLAUDE_EXECUTION_PLAN.md labels Narrative Lock as Phase 1. Narrative text/puzzle-document refinement may proceed in parallel, but must not delay geometry unless the project owner explicitly approves a reprioritisation. Record the decision and align the Claude-facing plan before execution.
 
 All actual editor operations, asset imports, Verse compilation, playtests, QA, profiling and island validation remain Claude's responsibility. ChatGPT supplies detailed plans and reviews evidence returned by Claude. This re-audit has not executed UEFN tests or merged the Environment Art PR.
+
+
+## R2.1 production update — current critical path
+
+R2.1 supersedes R2.0 as the sole candidate geometry authority. The owner-locked design decisions are now recorded, but R2.1 is still PROPOSED TARGET / NOT APPROVED / NOT UEFN-VERIFIED. The current authorization is greybox only. Do not begin final environmental art or import final placements until the geometry gates pass and the owner approves the evidence.
+
+### Updated critical path
+1. **Data integrity and source hierarchy:** repair semantic shifts in IN-021/022/023 and PZ-03; declare legacy lower-case schedule status; separate placement, asset and material identifiers.
+2. **R2.1 geometry closure:** complete non-overlapping floor polygons, shared wall register, floor/ceiling/roof schedule, U-balcony corner pads, ROOM 12–13 route assembly, stair plan and roof drainage.
+3. **Gate decision:** resolve GATE-01 (Y=0–1) vs EXT_GATE (Y=18) through a documented proposal and explicit owner approval.
+4. **Claude greybox:** implement R2.1 only, then run 1P/2P/4P traversal, stair and THE GUEST path tests on both floors; attach reproducible evidence.
+5. **Owner geometry approval:** review actual editor evidence and close every blocker before final art authorization.
+6. **Environment Art intake:** reauthor PR #1 against R2.1, synchronize the branch, correct nine wardrobe positions and the F12 panel X offset, validate all IDs/licensing/source formats, then obtain review before merge.
+7. **Final asset creation/import and lighting/audio implementation:** only after geometry freeze; profile worst-case camera and verify each asset/device.
+
+### PR #1 status
+Current compare: 44 commits ahead / 87 behind main, diverged; open draft, mergeable=false. It is not a safe integration candidate. Its 119-row asset register, 20-row material register, 10-row source register and 286-row placement register require revalidation. The 195 coordinate-bearing placements include nine out-of-bounds wardrobes and stale R2.0 upper-room positions; 91 entries remain UNPLACED. The source register and GQ-007 CSV rows need quoting repairs.
+
+### Explicit ownership
+ChatGPT produces the exact task packets, checks documentation and reviews evidence. Claude performs all UEFN editor actions, imports, Verse compilation, playtests, QA, profiling and island validation. The project owner approves structural changes and purchases. No PASS/ENGINE-VERIFIED status may be assigned without actual UEFN evidence.
