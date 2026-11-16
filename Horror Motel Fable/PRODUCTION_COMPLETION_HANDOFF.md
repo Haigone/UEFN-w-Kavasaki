@@ -141,7 +141,7 @@ Do not silently turn a proposal into canon. Claude may implement only owner-appr
 
 Claude must first record actual project/editor access and version, inspect the installed Verse digest/device APIs, build a minimal verified interaction/NPC test, then implement only verified patterns. If the actual project is unavailable, stop and report the exact access requirement.
 
-## 8. QA and release readiness
+## 9. QA and release readiness
 
 - QA_ACCEPTANCE_MATRIX.md contains 25 broad acceptance cases; all remain NOT RUN except the secret-passage route marked BLOCKED.
 - GAMEPLAY_ACCEPTANCE_TESTS.md now defines GAT-001–GAT-052; all remain NOT RUN until Claude executes them and attaches evidence.
@@ -151,7 +151,7 @@ Claude must first record actual project/editor access and version, inspect the i
 
 No test may be marked PASS from documentation, pseudocode, a source diff or an editor screenshot that does not demonstrate the actual expected behaviour.
 
-## 9. Production order and handoff
+## 10. Production order and handoff
 
 Geometry is the physical critical path. Narrative writing may proceed in parallel, but does not authorize geometry-dependent art placement or final blockout.
 
@@ -170,7 +170,7 @@ The current executable sequence is recorded in CLAUDE_EXECUTION_PLAN.md section 
 
 Every Claude task must include task ID, exact source revision, ordered steps, expected result, stop conditions, test setup, evidence requirements, acceptance criteria and rollback/recovery. See CLAUDE_EXECUTION_PROTOCOL.md.
 
-## 10. What is complete in ChatGPT's assigned scope
+## 11. What is complete in ChatGPT's assigned scope
 
 ### Completed by ChatGPT in this documentary handoff
 - Inspected the current main tree and key design, geometry, gameplay, narrative, Verse, QA and governance documents.
@@ -178,6 +178,7 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 - Reconciled Screwdriver's two documented uses.
 - Added missing FuseA/FuseB/FuseC, Screwdriver, CarKeys and Room 06 evidence interaction records.
 - Added corresponding gameplay regression tests GAT-048–GAT-052.
+- Normalized lighting CCT/intensity fields and fixed versus actor-attached audio emitter fields; actual intensity tuning and NPC attachment still require Claude's editor verification.
 - Corrected the R2.2 stair footprint mismatch in FINAL_GROUND_FLOOR_PLAN.md.
 - Updated CLAUDE_EXECUTION_PLAN.md with the current R2.2 source hierarchy, geometry-first critical path, PR #1 restriction and stop conditions.
 - Consolidated the remaining blockers and owner decisions in this handoff document.
@@ -190,7 +191,7 @@ Every Claude task must include task ID, exact source revision, ordered steps, ex
 - **Playtests/QA/performance/island validation:** these have not been run and must remain NOT RUN until Claude returns real evidence.
 - **Environment Art PR #1:** not merged because it is draft, diverged and based on obsolete geometry.
 
-## 11. Immediate resume conditions
+## 12. Immediate resume conditions
 The next work can proceed without further clarification only on non-destructive preflight and document-only tasks. Before final geometry-dependent production, the owner must approve the R2.2 checklist or provide a replacement. Claude must then return the actual UEFN project path/identity, editor version, initial screenshots and the first geometry feasibility report.
 
 **Final status:** ChatGPT's documentation audit and correction package is complete for this pass. The overall game production is not complete. Remaining items are explicitly listed above and are owned by the project owner or Claude according to the execution protocol.
