@@ -30,7 +30,7 @@ Status: **OWNER-APPROVED LD-GEO R2.3 — DOCUMENTARY GEOMETRY RECONCILED — NOT
 | EDITOR VERIFICATION REQUIRED | Must be verified by Claude in UEFN before implementation sign-off |
 | EDITOR VERIFICATION REQUIRED | Cannot be proven from files; requires UEFN testing by Claude |
 
-Only the site datum, U footprint/open courtyard, two-floor premise, room count, and the five explicit owner decisions are treated as fixed. All numerical room/wall/opening/stair/roof values remain proposed unless individually approved.
+The site datum, U footprint/open courtyard, two-floor premise, room count and all numerical room/wall/opening/stair/roof values listed in R2.3 are owner-approved design geometry. Editor-dependent checks remain pending.
 
 ## 3. Conflict register and resolution
 | ID | Source conflict | R2.2 proposal | R2.3 final disposition |
@@ -41,7 +41,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 | G04 | R2.1 upper rooms only 5.90 m wide, leaving an unexplained outer strip | Upper rooms become X8.30–17.00 west and X67.00–75.70 east | APPROVED R2.3 |
 | G05 | Electrical allocation overlaps the full NORTH LINK EAST area | ELECTRICAL ends at X72.90; east link is X73.20–75.70 | DERIVED partition gap; APPROVED R2.3 |
 | G06 | West lobby, reception and stair connector boundaries leave ambiguous offsets | Lobby ends X19.85, reception starts X20.15, with 0.30 m partition at X20.00; north-west link/lobby split by 0.30 m partition | APPROVED R2.3 |
-| G07 | ROOM 13 originally in east wing; later decision moves it to north connector | ROOM 13 upper north connector X49.00–63.70,Y51.10–59.70 | OWNER DECISION fixes location; dimensions require approval |
+| G07 | ROOM 13 originally in east wing; later decision moves it to north connector | ROOM 13 upper north connector X49.00–63.70,Y51.10–59.70 | OWNER APPROVED R2.3 — location and dimensions |
 | G08 | ROOM 12 route coordinates used boundary points rather than host wall centre-lines; vestibule wall extents were not aligned to FIF bounds | D-13A (69.95,47.475); vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m); west/east wall centre-lines X66.925/72.975; north Y49.275; D-13C (66.925,48.45); D-13B (56.35,50.95) | APPROVED R2.3; EDITOR VERIFICATION REQUIRED |
 | G09 | Door schedules disagree on room orientation, wall host and opening centre | Uppercase DOOR_WINDOW_SCHEDULE.csv is canonical; lowercase file is a compatibility mirror | APPROVED R2.3 |
 | G10 | Wall schedule only contains a partial subset of perimeter and partitions | wall_schedule.csv rebuilt as centre-line schedule with unique wall IDs and opening references | APPROVED R2.3; review all physical joins in UEFN |
@@ -95,7 +95,7 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 13. ROOM 12 → ROOM 13 secret-route vestibule, door/panel centres, concealment treatment and clearances.
 14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
 
-## 8. R2.3 document-level integrity checks (performed after schedule updates)
+## 8. R2.3 document-level integrity checks (post-approval)
 - ROOM_COORDINATE_REGISTER.csv: 57 data rows; all rows match the 16-column header. The COURTYARD row has the Material_Asset_ID placeholder NA and is schema-aligned (correction present in main at commit 5ac16543). VEST-13 reports Length_m=1.65, matching its FIF Y bounds 47.55–49.20. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
 - coordinate_schedule.csv: 55 data rows; all rows match the 14-column header. Cross-bays, balcony turn-pad union components, the UPPER_NORTH_HALL functional alias, service reserves and south-end buffers are represented; aliases/components do not create duplicate floor collision. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
