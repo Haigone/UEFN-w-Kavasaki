@@ -37,7 +37,7 @@ The ending resolver is an eligibility filter plus one team-choice transaction, n
 One shared ending for the session. All connected players receive the same choice. Disconnect during vote cannot silently count as acceptance. **APPROVED CO-OP RULE (owner, 2026-11-16):** ESCAPE and THE TRUTH require a strict majority of currently connected eligible players. THE NEW GUEST requires an explicit affirmative confirmation from every currently connected eligible player; no inferred acceptance. A tie or timeout for ESCAPE/THE TRUTH selects ESCAPE only when ESCAPE is eligible; otherwise the choice remains active for a new vote. A disconnect removes that player from the active electorate and recalculates majority; for THE NEW GUEST, re-prompt/reconfirm unanimity among the remaining connected players. A disconnect never counts as acceptance. Solo choice is direct. After commit, lock all competing endings.
 
 ## Required state transitions
-- All three END-A02 evidence flags true → TruthChainComplete.
+- All three END-A02 evidence flags true → `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`. These three discoveries are mandatory only for THE_TRUTH; optional for core progression and ESCAPE.
 - Finish four-photo puzzle → Room13PhotoSequenceSolved.
 - Finish identity reveal presentation → Room13RevealComplete.
 - Open compartment → ServiceKeyObtained.
