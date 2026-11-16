@@ -84,7 +84,7 @@ These are responsibilities, not literal API signatures:
 - Existing IN IDs remain unchanged.
 - Existing EVT-001–042 remain unchanged; new events are EVT-043–051 only.
 - No new state flag may have two writers.
-- FinaleReady, TruthChainComplete, CoreEscapeReady, NewGuestEligible are derived predicates.
+- FinaleReady, TruthChainComplete, CoreEscapeReady and NewGuestInvitationAvailable are derived predicates. NewGuestAccepted is an EndingManager output after unanimity, never a precondition to showing the invitation.
 - Room 06 missing guest evidence is independent from FuseC pickup in the same room; separate actors and separate discovery/grant flags.
 - IN-016's reveal completion is a cinematic/game manager handshake; ServiceKey grant remains IN-017 only.
 - The interaction crosswalk is the source for wiring IN events; do not add a duplicate parallel event catalogue in Verse.
