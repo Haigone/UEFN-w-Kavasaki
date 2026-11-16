@@ -61,13 +61,13 @@ Checkpoint CP02: power restored and fuse flags retained.
 
 ### ACT IV — THE SECOND FLOOR (27–36 min)
 1. Open upper floor and balcony.
-2. THE GUEST uses verified navigation routes.
-3. Find ROOM 09 diary and key history.
-4. Inspect ROOM 11 child's room.
-5. Find ROOM 12 concealed panel.
-6. Reveal hidden passage entrance.
+2. THE GUEST uses verified navigation routes only after stair/balcony navigation is proven.
+3. ROOM 09 diary is an optional history-evidence discovery.
+4. ROOM 11 child's drawing is an optional foreshadowing/evidence discovery.
+5. Use the reusable Screwdriver at the ROOM 12 concealed panel.
+6. Open the hidden passage and enable the route to ROOM 13.
 7. Ensure team can regroup before entering ROOM 13.
-Checkpoint CP03: second-floor access and required clues retained.
+Checkpoint CP03: upper-floor access, opened panel/route and all evidence already discovered are retained. Diary/drawing inspection is not a core escape progression gate.
 
 ### ACT V — ROOM 13 (36–43 min)
 1. Enter hidden passage.
@@ -76,7 +76,7 @@ Checkpoint CP03: second-floor access and required clues retained.
 4. Arrange four photographs chronologically.
 5. Reveal owner identity: owner is identical to THE GUEST.
 6. Open hidden compartment and obtain Service Key.
-7. Set TruthChainComplete when all required evidence flags are satisfied.
+7. Evaluate TruthChainComplete only from the END-A02 owner-approved evidence formula. END-A02 is pending; do not implement a mandatory truth-evidence gate until approved. SecretPanelOpened, PhotoSequenceSolved and Room13RevealComplete remain separate progression/reveal flags.
 Checkpoint CP04: photo puzzle solved and reveal state retained.
 
 ### ACT VI — NO VACANCY (43–50 min)
