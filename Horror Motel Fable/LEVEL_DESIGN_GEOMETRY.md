@@ -60,7 +60,7 @@ Classification: footprint dimensions are repeated in the dossier and E1 and are 
 | ROOM 05 | 64.30–72.90 | 29.00–36.00 | 8.60×7.00 | PROPOSED CORRECTION |
 | ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 | PROPOSED CORRECTION |
 | G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.70 | DERIVED from corrected wall-face bounds |
-| G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.40 | DERIVED from R2.1 bounds |
+| G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.70 | DERIVED from R2.1 bounds |
 | RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.55×11.40 | PROPOSED CORRECTION |
 | OWNER OFFICE | 38.00–47.00 | 48.30–59.70 | 9.00×11.40 | PROPOSED CORRECTION |
 | STORAGE | 47.30–57.00 | 48.30–53.70 | 9.70×5.40 | PROPOSED CORRECTION |
