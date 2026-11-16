@@ -1,15 +1,15 @@
 # THE MOTEL: ROOM 13 — CANONICAL GEOMETRY PROPOSAL
-Revision LD-GEO R2.2 | 2026-11-16
-Status: **PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED**
+Revision LD-GEO R2.3 | owner approval recorded 2026-11-16
+Status: **OWNER-APPROVED CANONICAL GEOMETRY LD-GEO R2.3 — NOT UEFN-VERIFIED**
 
 ## 0. Status legend and authority
 - **APPROVED / FIXED**: explicitly fixed by the owner or an unambiguous project constraint.
 - **DERIVED**: arithmetic or coordinate result from an approved/fixed input.
-- **PROPOSED CORRECTION**: selected here to eliminate a contradiction; not owner-approved.
-- **OWNER APPROVAL REQUIRED**: do not treat as final until the owner confirms.
+- **OWNER APPROVED R2.3**: geometry explicitly approved by the project owner on 2026-11-16.
+- **EDITOR VERIFICATION REQUIRED**: design intent is approved, but collision, navigation, traversal and in-editor fit remain unverified.
 - **EDITOR VERIFICATION REQUIRED**: cannot be proved by documents; Claude must test in UEFN. This document does not perform or claim UEFN testing.
 
-R2.2 is the single *candidate* geometry reference. It supersedes conflicting coordinates in R1, E1, R2.0 and R2.1 only as a proposal. The owner has not approved the full geometry in this document.
+R2.3 is the single owner-approved geometry reference. It consolidates R2.2 and the owner's approval of GEO-A01–GEO-A21 on 2026-11-16. It supersedes conflicting coordinates in R1, E1, R2.0, R2.1 and R2.2. No UEFN verification is implied.
 
 ## 1. Approved project constraints
 | Item | Value | Classification |
@@ -34,7 +34,7 @@ No room dimensions, wall thicknesses, door coordinates, vertical levels or stair
 - Openings are centred on the host wall centre-line. Opening clear width is measured along the wall; clear height is measured vertically from that floor's FFL unless noted.
 - Floor levels: GF FFL Z=0.00; UF FFL Z=3.60.
 - Do not create room-sized solid boxes on top of one another. Construct each floor polygon and each shared wall once.
-- All coordinates below are PROPOSED CORRECTIONS unless specifically labelled otherwise.
+- All coordinates below are OWNER APPROVED R2.3 unless specifically labelled DERIVED or EDITOR VERIFICATION REQUIRED.
 
 ## 3. Building footprint and wing arrangement
 **PROPOSED CANONICAL OUTER FOOTPRINT**
@@ -102,10 +102,10 @@ The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as 
 | U-WEST-BALCONY | 17.15–19.70 | 18.30–48.30 | 2.55×30.00 | OWNER DECISION + PROPOSED DIMENSION |
 | U-NORTH-BALCONY | 19.70–64.30 | 48.30–50.80 | 44.60×2.50 | OWNER DECISION + PROPOSED DIMENSION |
 | U-EAST-BALCONY | 64.30–66.85 | 18.30–48.30 | 2.55×30.00 | OWNER DECISION + PROPOSED DIMENSION |
-| U-WEST-TURN | 17.15–20.15 | 47.00–50.80 | 3.00×3.80 | PROPOSED CORRECTION |
-| U-EAST-TURN | 63.85–66.85 | 47.00–50.80 | 3.00×3.80 | PROPOSED CORRECTION |
+| U-WEST-TURN | 17.15–20.00 | 47.00–50.80 | 2.85×3.80 | OWNER APPROVED R2.3 — clipped to UF slab |
+| U-EAST-TURN | 64.00–66.85 | 47.00–50.80 | 2.85×3.80 | OWNER APPROVED R2.3 — clipped to UF slab |
 | U-STAIR-LANDING | 20.15–28.70 | 51.10–59.70 | 8.55×8.60 | PROPOSED CORRECTION |
-| U-SERVICE | 29.00–48.70 | 51.10–59.70 | 19.70×8.60 | PROPOSED CORRECTION |
+| U-SERVICE | 29.00–48.70 | 51.10–59.70 | 19.70×8.60 | OWNER APPROVED R2.3 — sealed, no access/no navmesh |
 | ROOM 13 | 49.00–63.70 | 51.10–59.70 | 14.70×8.60 | OWNER DECISION for location; size PROPOSED |
 | U-WEST-SERVICE-RESERVE | 8.30–19.85 | 51.10–59.70 | 11.55×8.60 | PROPOSED non-playable reserve |
 | U-EAST-SERVICE-RESERVE | 64.00–75.70 | 51.10–59.70 | 11.70×8.60 | PROPOSED non-playable reserve |
@@ -200,3 +200,20 @@ Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are p
 
 ## 12. Verification boundary
 This is a document-only geometric reconciliation. No UEFN project was opened, built, simulated or tested. Mark all editor-dependent items EDITOR-TEST REQUIRED. The geometry is **not approved** until the owner explicitly approves the proposed corrections above.
+
+## 12. Owner approval and R2.3 resolutions — 2026-11-16
+
+The owner approved all geometric decisions GEO-A01–GEO-A21 and the R2.2 recommendations. This is approval of design geometry, not UEFN verification.
+
+- Ground-floor sealed reserves: GF-W-NORTH-SEALED-RESERVE and GF-E-NORTH-SEALED-RESERVE, each 8.60×2.85 m. Structural slab collision remains; navigation/gameplay access is disabled.
+- Upper-floor side pockets: sealed and registered. West pocket X8.30–17.00,Y47.55–50.80 is closed by wall UF-W-SEALED-RESERVE-WEST. East L-shaped pocket is represented by UF-E-NORTH-SEALED-RESERVE-N (6.05×1.45 m) and UF-E-NORTH-SEALED-RESERVE-E (2.65×3.25 m). Both are no-access/no-navmesh reserves.
+- U-SERVICE remains 19.70×8.60 m and is sealed/no-access/no-navmesh. Structural floor collision is retained; no door is added.
+- Balcony corner pads are clipped to the UF-SLAB polygon: west X17.15–20.00, east X64.00–66.85, Y47.00–50.80. No floor collision may extend into the courtyard void. Maintain a 2.50 m minimum clear continuous path after rail/post offsets.
+- Cross-bays remain 2.00 m gross / 1.70 m clear net; 1.50 m openings retained.
+- VEST-13 Length_m is corrected to 1.65 m from FIF bounds Y47.55–49.20.
+- Stair handedness: west/lower flight rises south-to-north to the intermediate landing; east/upper flight returns north-to-south and exits at the south upper approach. Two 1.20 m clear flights, 0.30 m central separation, 20 risers at 0.18 m, nine 0.28 m goings per flight, landing 2.70×1.20 m at Z1.80.
+- Vertical stack approved as recorded: GF slab −0.20/0.00; UF slab 3.35/3.60; roof slab 6.40/6.65; parapet top 7.10 m. Headroom target 2.20 m minimum; nominal stair headroom 2.80 m before beam/MEP coordination.
+- Roof remains visually flat and non-accessible. Approve concealed 1.0% falls to a coordinated perimeter drainage system; exact outlets/scuppers are not located by this geometry package and require technical coordination.
+- Door/window positions and dimensions, wall thicknesses, slab polygons and room envelopes in R2.2 are approved as design geometry. Room interior/bathroom fit-out remains outside this envelope approval.
+
+The owner approval does not certify structural adequacy, waterproofing, collision, navmesh, player capsule clearance, THE GUEST traversal or UEFN import. Claude must perform those checks and report evidence separately.
