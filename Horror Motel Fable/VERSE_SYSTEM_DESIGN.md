@@ -94,7 +94,7 @@ At the final sequence, present only endings whose full eligibility predicates ar
 
 - ESCAPE: CoreEscapeReady (gate powered and CarKeys used at vehicle ignition) and explicit vehicle-route selection; remains available if truth evidence is incomplete.
 - THE_TRUTH: FinaleReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit truth-route selection; does not require vehicle ignition.
-- THE_NEW_GUEST: FinaleReady plus NewGuestAccepted through explicit invitation and team confirmation; never inferred from capture, defeat, inactivity or timeout; does not require vehicle ignition.
+- THE_NEW_GUEST: FinaleReady makes the invitation available; require unanimous explicit affirmative confirmation. Set NewGuestAccepted only after quorum succeeds; never infer from capture, defeat, inactivity or timeout. Vehicle ignition is not required.
 
 **END-A01 owner-approved quorum (2026-11-16):** strict majority of currently connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. Tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. Disconnect removes the voter and recalculates/re-prompts; disconnect is never consent. Solo selection is direct. Ending commit is atomic and one-shot.
 
