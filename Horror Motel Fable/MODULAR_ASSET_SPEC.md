@@ -74,3 +74,37 @@ ROOM 12 panel centre target is (68.60,47.55); route includes a 1.40m-minimum ves
 Gate anchor conflict remains BLOCKED. Do not use EXT_GATE (42,18) as final without reconciling it with GATE-01 at X40..44/Y0..1 and the R2 south/east edge description.
 All modules may be modelled as reusable generic pieces, but any opening, stair, balcony, roof, bathroom or secret-route custom variant is final-fit BLOCKED until its dimensions are coordinated. All measurements remain PROPOSED TARGET or EDITOR-TEST REQUIRED, never ENGINE-VERIFIED without Claude's UEFN evidence.
 
+
+
+## Revision 3.0 — existing asset integration and stylized-realism adapter
+
+Owner preference is existing licensed assets first. Do not start by modelling the full architecture/prop list. Evaluate the candidate packs in ENVIRONMENT_ASSET_SOURCE_REGISTER.csv and map their actual included mesh names to the stable project Asset_IDs only after the files are acquired and inspected.
+
+### Asset acceptance before adoption
+For each candidate pack:
+1. Confirm exact product and publisher in Fab Library.
+2. Archive license terms and acquisition evidence.
+3. Confirm the acquired product includes the format actually needed (prefer UEFN Source/reference path; FBX/Blender source only where legally supplied and importable).
+4. Inspect the overview/demo map and enumerate actual meshes/materials/textures.
+5. Measure representative assets in DCC/UEFN; do not rely on promotional dimensions.
+6. Check pivot, axis, scale, UVs, material slots, texture sizes, collision, LODs and dependency/plugin requirements.
+7. Test one representative asset in the target UEFN project; record version, options, screenshot and result.
+8. Only then set the source mapping and update Asset_ID status.
+
+### Stylized-realism adapter
+Use one common art-direction pass across packs:
+- Desaturate and remap base colours to the project palette; maintain readable warm/cool separation.
+- Normalize roughness ranges by surface family; remove glossy plastic unless period object requires it.
+- Keep normals moderate; do not turn bevels or damage into high-frequency noise.
+- Apply controlled, reusable dirt/leak/edge-wear decals as separate project assets.
+- Use a small number of shared master materials/instances; do not preserve dozens of redundant pack-specific material instances without reason.
+- Remove or hide anachronistic content (flat-screen TVs, modern electronics, pool accessories, contemporary logos) from selected sets.
+- Do not recolour, edit, repackage or redistribute third-party assets unless the exact license permits it.
+
+### Geometry dependency classes
+- **Independent / safe to evaluate now:** loose furniture, desk clutter, phones, CRTs, photo frames, lamps, vending machine, dumpster, signage props, car static mesh and material samples. Their final placement remains pending.
+- **Fit-dependent / blocked:** wall modules with openings, window assemblies, stairs, balcony, roof, bathroom partitions, secret door/vestibule and gate assembly. Source candidates may be previewed, but final-fit placement/variants cannot be approved until geometry is approved.
+- **Original-only gap candidates:** Raven Motel custom sign face, ROOM 13 clock/photographic narrative art, hidden panel disguise, unique puzzle props, custom collision proxies and any geometry that must match the final floorplan exactly.
+
+### Revised geometry correction
+Use the geometry authority and current execution plan only as proposed coordination references. Remove stale values from earlier spec text: balcony 150 cm is superseded by 250 cm clear-width target; legacy 320 cm wall height and 680/710 cm ceiling/roof stack are not approved. Stair run/tread count/landing, vertical stack, bathroom partitions, gate anchor and secret route remain BLOCKED.
