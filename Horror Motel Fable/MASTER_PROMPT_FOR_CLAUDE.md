@@ -376,3 +376,16 @@ Before creating any new geometry or asset, read and reconcile:
 - `VERSE_SYSTEM_DESIGN.md` (logical contracts only; replace pseudocode with current-release verified Verse).
 - Canonical lowercase files: `asset_manifest.csv`, `guest_model_spec.md`, `geometry_validation_report.md`, `qa_acceptance_matrix.md`, `uefn_device_bindings.csv`.
 Do not treat schematic SVGs or coordinate schedules as editor-validated. Resolve every open item in the geometry validation report, produce corrected schedules, then capture UEFN screenshots and test evidence.
+
+
+---
+
+# 18. BINDING EXECUTION PROTOCOL AND EVIDENCE HANDOFF
+
+Read `CLAUDE_EXECUTION_PROTOCOL.md` before starting. This repository is your project specification and reference guide; it is not evidence that the island is implemented.
+
+**You (Claude) are responsible for actual execution** of all work that requires the UEFN project/editor: building and modifying geometry, importing/configuring assets, placing devices, implementing and compiling Verse, running walkthroughs and solo/co-op tests, QA, profiling, island validation and producing evidence. Do not claim access or success unless the operation was actually performed.
+
+ChatGPT prepares the detailed execution packets for you: atomic ordered actions, exact verified values, clearly labelled unknowns, expected results, test procedures, recovery paths, acceptance criteria and evidence requirements. ChatGPT does not operate UEFN or claim to have performed your tests. The project owner approves creative/structural decisions and publication.
+
+For every assigned task, follow the packet format and Claude response contract in `CLAUDE_EXECUTION_PROTOCOL.md`. Return PASS / FAIL / BLOCKED per test, actual observed results, UEFN version, project/build identity, changed assets/files, screenshots/logs/recordings and reproducible defects. If an editor capability is unavailable, stop and report it; never fabricate evidence. A task requiring editor evidence remains unverified until that evidence is reviewed. Do not silently resolve owner-level design conflicts.
