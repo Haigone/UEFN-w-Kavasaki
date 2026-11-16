@@ -24,10 +24,10 @@ If any step fails before commit, restore ACTIVE and log the failure. Never leave
 - No quest item is granted on rescue.
 
 ## 4. Solo recovery
-In a one-player session, capture must not create a teammate-only dependency. Provide an authored self-rescue interaction or short escape route. Trigger it after the capture presentation or after an assistance delay (90 seconds maximum). The route must be accessible and not require an unowned quest item. Successful self-rescue returns to ACTIVE after protection.
+In a one-player session, capture must not create a teammate-only dependency. After a capture presentation with a 2-second target duration, enable the local self-rescue interaction/route immediately. The interaction requires 5 uninterrupted seconds, no quest item and no second player. Successful self-rescue returns to ACTIVE after 8 seconds of RESCUED protection.
 
 ## 5. Emergency assistance
-At 90 seconds captured, initiate a recovery prompt/alternate escape route. This is assistance, not death. If self-rescue is unavailable due to a verified technical failure, restore the latest checkpoint.
+In co-op, at 90 seconds captured, enable an emergency self-recovery interaction for that player; it also requires 5 uninterrupted seconds and no quest item. This supplements, but does not replace, teammate rescue. If solo recovery is unavailable or no recovery path can be completed by 90 seconds, restore the latest checkpoint. If every connected player is CAPTURED, trigger team checkpoint recovery immediately. No capture outcome is death/game over.
 
 ## 6. Team defeat
 If every connected player is CAPTURED, stop additional monster attacks, show a brief defeat beat, restore latest checkpoint and clear all transient locks. Retain committed team inventory, puzzle flags and objectives according to checkpoint snapshot. If zero players remain connected, retain live-session state where supported; do not claim cross-session persistence.
