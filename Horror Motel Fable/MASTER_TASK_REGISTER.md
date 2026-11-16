@@ -262,3 +262,13 @@ This table supersedes stale task rows above where they still label approved R2.3
 | QA-002 | Repository QA | Add repeatable static CSV and cross-reference validation | P1 | tools/validate_r3_repository.py | SCRIPT PRESENT — EXECUTION NOT EVIDENCED | Run in repository environment; commit clean output or exact defect list |
 
 DOC-022 and QA-002 close documentation/tool-authoring gaps only. They do not close native UEFN, editor, Verse, gameplay, asset rights or release gates.
+
+
+## R3 handoff completion tasks — 2026-11-16
+
+| ID | Sector | Description | Priority | Deliverable | Status | Acceptance criterion |
+|---|---|---|---|---|---|---|
+| DOC-023 | Production control | Remove ambiguity in autonomous execution, technical decision-making, batch continuation and missing THE GUEST asset production | P0 | CLAUDE_AUTONOMOUS_EXECUTION_ADDENDUM_R1.md | DOCUMENTATION PRESENT | Claude can proceed without asking avoidable technical/creative questions; only owner-only approvals remain stop conditions |
+| QA-003 | Repository QA | Run static validator automatically on push and pull request | P1 | .github/workflows/r3-static-validation.yml | WORKFLOW PRESENT — FIRST RUN NOT YET VERIFIED | GitHub Actions run completes successfully on current main and on subsequent changes |
+
+These tasks close planning/automation authoring only. Native UEFN project discovery, editor implementation and runtime/release evidence remain separate gates.
