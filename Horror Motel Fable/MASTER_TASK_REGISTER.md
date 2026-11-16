@@ -252,3 +252,13 @@ This table supersedes stale task rows above where they still label approved R2.3
 | DOC-020 | Level/gameplay integration | Resolve playable Service Control Room location inside R2.3 geometry | P0 | SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md | DESIGN LOCATION RESOLVED | Implement D-G16 access and consoles in GF-SERVICE-BAY; never use sealed U-SERVICE |
 | DOC-021 | Interaction integration | Assign exact coordinates to all interactions, player spawns and checkpoints | P0 | INTERACTION_ANCHOR_SCHEDULE_R1.csv | DESIGN ANCHORS PRESENT | Editor placement/pivot/clearance proof for all 58 anchors |
 | AI-001 | AI/Level Design | Define THE GUEST spawn and patrol waypoints including stair transitions | P0 | AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv / MONSTER_AI_BEHAVIOUR_SPEC.md | DESIGN ANCHORS PRESENT | Target UEFN navigation proof; no teleport or sealed-zone access |
+
+
+## R3 follow-up documentation tasks — 2026-11-16
+
+| ID | Sector | Description | Priority | Deliverable | Status | Acceptance criterion |
+|---|---|---|---|---|---|---|
+| DOC-022 | Production control | Consolidate current status, canonical counts and dependency order | P0 | R3_CURRENT_STATUS_AND_REMAINING_WORK.md | DOCUMENTATION PRESENT | One current source supersedes contradictory historical snapshots |
+| QA-002 | Repository QA | Add repeatable static CSV and cross-reference validation | P1 | tools/validate_r3_repository.py | SCRIPT PRESENT — EXECUTION NOT EVIDENCED | Run in repository environment; commit clean output or exact defect list |
+
+DOC-022 and QA-002 close documentation/tool-authoring gaps only. They do not close native UEFN, editor, Verse, gameplay, asset rights or release gates.
