@@ -57,7 +57,7 @@ Never trust a client-supplied success flag. Client input requests a transaction;
 | EVT-015 | Room13PhotoSequenceSolved(player, years) | PuzzleManager | PZ-04; ROOM 13 entered; exact order | PhotoSequenceSolved=true; open compartment | no evidence flag mutation |
 | EVT-016 | OwnerRevealPresented(player_set, presentation_id) | CinematicManager→GameManager handshake | PZ-04 solved; presentation or fallback text visible | Room13RevealComplete=true; OwnerIdentityRevealed=true | commit only on completion acknowledgement; retry fallback |
 | EVT-017 | ServiceKeyGranted(player, grant_token) | InventoryManager | Room13RevealComplete; key not granted | ServiceKeyObtained=true | one-shot grant |
-| EVT-018 | ServiceGateActivated(player) | PuzzleManager | ServiceKeyObtained AND PowerRestored | GatePowered=true; ServiceRouteReady=true | one-shot; lever proxy same validation |
+| EVT-018 | ServiceGateActivated(player) | PuzzleManager | ServiceKeyObtained AND PowerRestored; SVC-GATE-CONSOLE in GF-SERVICE-BAY | GatePowered=true; ServiceRouteReady=true | one-shot; lever proxy same validation |
 | EVT-019 | VehicleIgnitionSucceeded(player) | GameManager | FinaleReady AND CarKeysObtained | VehicleIgnitionSucceeded=true; CoreEscapeReady is derived | only needed for ESCAPE |
 | EVT-020 | EndingVoteCommitted(player, ending_id, vote) | EndingManager | eligible ending; resolver open; player eligible | vote stored; recompute quorum | one vote/player/round; changed vote replaces own vote until lock |
 | EVT-021 | EndingSelected(ending_id, electorate, vote_snapshot) | GameManager | quorum satisfied; ending eligible; ending lock free | EndingSelected set once; AI disabled; final sequence begins | atomic compare-and-set; competing ending rejected |
