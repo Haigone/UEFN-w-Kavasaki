@@ -128,3 +128,7 @@ ChatGPT produces the exact task packets, checks documentation and reviews eviden
 
 ### PR #1 metadata correction
 GitHub currently reports the PR as technically mergeable, but it remains OPEN/DRAFT, 49 commits ahead / 94 behind main, with no review/comments/status checks. Do not equate mergeability with acceptance: its R2.0 plan/placements must be reauthored for R2.1, and malformed source/query CSVs and out-of-bounds placements must be corrected before review and merge.
+
+
+### Final PR status correction
+Latest live metadata returned `mergeable=false`; compare was 49 ahead / 100 behind main. An earlier check briefly returned true, so recheck the flag before any integration attempt. The art package remains blocked on R2.1 reauthoring, data repair, placement validation and review.
