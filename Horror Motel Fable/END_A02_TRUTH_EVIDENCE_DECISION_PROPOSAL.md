@@ -67,4 +67,4 @@ This file is a recommendation only. It does not approve the three clues, the dra
 - Do not treat the six-flag list in `ENDING_IMPLEMENTATION_SPEC.md` as owner-approved.
 - Claude may validate clue placement/accessibility and report findings without changing the ending gate.
 
-Owner decision: **PENDING**.
+Owner decision: **APPROVED — 2026-11-16**.
