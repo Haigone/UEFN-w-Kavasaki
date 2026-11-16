@@ -1,0 +1,35 @@
+ID,Floor,Element_Type,X_Min_m,X_Max_m,Y_Min_m,Y_Max_m,Z_Floor_m,Width_m,Length_m,Height_m,Rotation_deg,Material_Asset_ID,Collision,Gameplay_Function,Verification_Status
+SITE,ALL,Site_Boundary,0,84,0,72,0,84,72,NA,0,NA,NA,Fixed site envelope,FIXED REQUIREMENT
+BLDG-W,ALL,Building_Envelope,8,20,18,60,0,12,42,NA,0,WALL-EXT-01,Blockout,West wing,PROPOSED TARGET
+BLDG-E,ALL,Building_Envelope,64,76,18,60,0,12,42,NA,0,WALL-EXT-01,Blockout,East wing,PROPOSED TARGET
+BLDG-N,ALL,Building_Envelope,8,76,48,60,0,68,12,NA,0,WALL-EXT-01,Blockout,North wing,PROPOSED TARGET
+COURTYARD,GF,Open_Courtyard,20,64,18,48,0,44,30,NA,0,GROUND-COURT-01,Walkable ground,Open to sky,FIXED REQUIREMENT
+G-CW,GF,Corridor,8.3,10.8,18.3,47.7,0,2.5,29.4,3,0,FLOOR-INT-01,Walkable,West corridor,PROPOSED TARGET
+ROOM-01,GF,Room,11.1,19.7,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,CRT scare,PROPOSED TARGET
+ROOM-02,GF,Room,11.1,19.7,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Battery suitcase,PROPOSED TARGET
+ROOM-03,GF,Room,11.1,19.7,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Mirror scare,PROPOSED TARGET
+G-CE,GF,Corridor,73.2,75.7,18.3,47.7,0,2.5,29.4,3,0,FLOOR-INT-01,Walkable,East corridor,PROPOSED TARGET
+ROOM-04,GF,Room,64.3,72.9,20,27,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Phone clue,PROPOSED TARGET
+ROOM-05,GF,Room,64.3,72.9,29,36,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Sparse room,PROPOSED TARGET
+ROOM-06,GF,Room,64.3,72.9,38,45,0,8.6,7,3,0,FLOOR-INT-01,Walkable,Photo wall,PROPOSED TARGET
+RECEPTION,GF,Room,20.3,37.7,48.3,59.7,0,17.4,11.4,3,0,FLOOR-INT-01,Walkable,Reception,PROPOSED TARGET
+OFFICE,GF,Room,38,47,48.3,59.7,0,9,11.4,3,0,FLOOR-INT-01,Walkable,Office,PROPOSED TARGET
+STORAGE,GF,Room,47.3,57,48.3,53.7,0,9.7,5.4,3,0,FLOOR-INT-01,Walkable,Storage,PROPOSED TARGET
+ELECTRICAL,GF,Room,57.3,75.7,48.3,59.7,0,18.4,11.4,3,0,FLOOR-INT-01,Walkable,Electrical room,PROPOSED TARGET
+U-CW,UF,Corridor,8.3,10.8,18.3,47.7,3.6,2.5,29.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper west circulation,PROPOSED TARGET
+ROOM-07,UF,Room,11.1,19.7,20,27,3.6,8.6,7,2.8,0,FLOOR-UPPER-01,Walkable,Owner foreshadowing,PROPOSED TARGET
+ROOM-08,UF,Room,11.1,19.7,29,36,3.6,8.6,7,2.8,0,FLOOR-UPPER-01,Walkable,Environmental story,PROPOSED TARGET
+ROOM-09,UF,Room,11.1,19.7,38,47.4,3.6,8.6,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Diary,PROPOSED TARGET
+U-CE,UF,Corridor,73.2,75.7,18.3,47.7,3.6,2.5,29.4,2.8,0,FLOOR-UPPER-01,Walkable,Upper east circulation,PROPOSED TARGET
+ROOM-10,UF,Room,64.3,72.9,20,27,3.6,8.6,7,2.8,0,FLOOR-UPPER-01,Walkable,Optional scare,PROPOSED TARGET
+ROOM-11,UF,Room,64.3,72.9,29,36,3.6,8.6,7,2.8,0,FLOOR-UPPER-01,Walkable,Child room,PROPOSED TARGET
+ROOM-12,UF,Room,64.3,72.9,38,47.4,3.6,8.6,9.4,2.8,0,FLOOR-UPPER-01,Walkable,Secret panel,PROPOSED TARGET
+U-NORTH-HALL,UF,Corridor,20.3,63.7,48.3,50.8,3.6,43.4,2.5,2.8,0,FLOOR-UPPER-01,Walkable,Secret connector,PROPOSED TARGET
+U-STAIR,UF,Stair_Landing_Zone,20.3,28.7,51.1,59.7,3.6,8.4,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Stair arrival,EDITOR-TEST REQUIRED
+U-SERVICE,UF,Service_Dressing,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Non-mandatory dressing,PROPOSED TARGET
+ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room,EDITOR-TEST REQUIRED
+STAIR-01,GF-UF,Stair_Reservation,21,27,51.2,59,0,6,7.8,3.6,0,STAIR-MOD-01,Blockout only,20 risers/two flights,EDITOR-TEST REQUIRED
+VEST-13,UF,Secret_Vestibule,64.3,72.9,47.85,49.35,3.6,8.6,1.5,2.8,0,FLOOR-UPPER-01,Walkable,ROOM12 to hall,EDITOR-TEST REQUIRED
+CAR-01,EXT,Vehicle_Prop,34,40,5,10,0,6,5,NA,180,CAR-BROKEN-01,Static,Parking landmark,PROPOSED TARGET
+SIGN-01,EXT,Neon_Sign,39,45,14.5,15.5,0,6,1,NA,180,SIGN-NEON-01,Static,South approach landmark,PROPOSED TARGET
+GATE-01,EXT,Vehicle_Gate,40,44,0,1,0,4,1,NA,0,GATE-01,Dynamic,Final escape gate,PROPOSED TARGET
