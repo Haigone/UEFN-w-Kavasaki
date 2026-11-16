@@ -1,0 +1,22 @@
+Asset_ID,Category,Description,Dimensions_m,Material_or_Map,Quantity_Target,Priority,Status
+ENV_SIGN_RAVEN,Mesh,Freestanding Raven Motel neon sign,3.8x0.35x1.6,Neon red/blue emissive,1,P0,PROPOSED TARGET
+ENV_CAR_1986,Mesh,1980s American sedan broken down,4.8x1.9x1.45,Paint glass rubber chrome,1,P0,PROPOSED TARGET
+PROP_RECEPTION_COUNTER,Mesh,Reception counter,3.6x0.9x1.1,Dark stained wood,1,P0,PROPOSED TARGET
+PROP_KEY_RACK,Mesh,Wall key rack,1.2x0.12x0.8,Dark wood brass,1,P0,PROPOSED TARGET
+PROP_CRT_01,Mesh,CRT television,0.55x0.5x0.5,Plastic glass emissive,13,P1,PROPOSED TARGET
+PROP_BED_DOUBLE,Mesh,Double motel bed,1.6x2.1x0.55,Fabric wood,12,P1,PROPOSED TARGET
+PROP_WARDROBE,Mesh,Guest wardrobe,1.2x0.6x2.0,Dark wood,13,P1,PROPOSED TARGET
+PROP_PHONE,Mesh,Rotary motel phone,0.2x0.22x0.15,Plastic,13,P1,PROPOSED TARGET
+PROP_FUSE_PANEL,Mesh,Three-fuse electrical panel,1.2x0.25x1.4,Painted metal,1,P0,PROPOSED TARGET
+PROP_PHOTO_FRAME,Mesh,Guest/owner photo frame,0.3x0.05x0.4,Wood glass paper,30,P1,PROPOSED TARGET
+PROP_CHILD_TOYS,Mesh,1980s toys,Variable,Painted plastic/wood,8,P2,PROPOSED TARGET
+CHAR_GUEST_LOD0,Character,THE GUEST hero skeletal mesh,2.60m tall,See GUEST_MODEL_SPEC.md,1,P0,NOT CREATED
+CHAR_GUEST_LOD1,Character,THE GUEST LOD1,2.60m tall,Reduced mesh,1,P1,NOT CREATED
+CHAR_GUEST_LOD2,Character,THE GUEST LOD2,2.60m tall,Reduced mesh,1,P1,NOT CREATED
+MAT_CARPET,Material,Worn burgundy carpet,Tiling 2m,BaseColor Normal Roughness,1,P1,NOT CREATED
+MAT_WALLPAPER,Material,Yellowed beige wallpaper,Tiling 1.5m,BaseColor Normal Roughness,1,P1,NOT CREATED
+MAT_WET_ASPHALT,Material,Rain-soaked parking asphalt,Tiling 4m,BaseColor Normal Roughness,1,P1,NOT CREATED
+SFX_RAIN,Audio,Continuous rain bed,Loop,Spatial ambience,1,P0,NOT CREATED
+SFX_NEON,Audio,Neon transformer buzz,Loop,3D attenuation,1,P1,NOT CREATED
+SFX_CRT,Audio,CRT static and tuning,One-shot/loop,3D attenuation,1,P1,NOT CREATED
+SFX_PHONE,Audio,Telephone ring and voice cue,One-shot,Subtitle paired,1,P0,NOT CREATED
