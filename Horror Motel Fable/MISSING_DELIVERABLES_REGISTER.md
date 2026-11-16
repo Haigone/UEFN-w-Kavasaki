@@ -277,3 +277,5 @@ The R3 follow-up also corrected the PZ-05 circular prerequisite and reconciled t
 | MD-081 | Automated static repository validation on push and pull request | PRESENT — .github/workflows/r3-static-validation.yml | First GitHub Actions run must complete; resolve any reported script/workflow failures |
 
 MD-080 closes the ambiguity in the autonomous handoff instructions. MD-081 automates the static checks; neither constitutes native UEFN implementation or runtime validation.
+
+| MD-082 | Paste-ready R3 start prompt that directs Claude to begin at GATE A and execute the canonical plan autonomously | PRESENT — CLAUDE_START_HERE_PROMPT_R3.md | Use this prompt with Claude Code/Claude connected to the native UEFN project |
