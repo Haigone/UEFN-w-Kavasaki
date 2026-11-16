@@ -178,10 +178,18 @@ THE TRUTH:
 - Trigger the distinct owner confrontation/revelation resolution.
 
 THE NEW GUEST:
-- NewGuestAccepted = true via an explicit interaction/choice, or a specifically authored cycle condition.
-- In co-op, use team-wide confirmation/vote or clearly explain the shared result.
-- Do not trigger merely because one player was captured or a timer expired.
-- All endings must have deterministic precedence and must be locked after one is selected.
+- NewGuestAccepted = true only after the explicit invitation interaction and owner-approved team confirmation. No implicit cycle condition.
+- In co-op, require explicit unanimous affirmative confirmation from every currently connected eligible player. A disconnect removes that player and requires re-confirmation among those remaining; disconnect is never consent.
+- Declining, inactivity, timeout, capture or defeat never count as acceptance.
+- All endings require eligibility validation and an atomic one-time session-wide commit.
+
+**END-A01 owner-approved quorum (2026-11-16):**
+- ESCAPE and THE_TRUTH: strict majority of currently connected eligible players.
+- THE_NEW_GUEST: unanimous explicit affirmative confirmation.
+- Tie/timeout for ESCAPE/THE_TRUTH: choose ESCAPE only if eligible; otherwise keep selector active for a new vote; never silently choose THE_TRUTH.
+- Solo choice is direct. Ending is locked once committed.
+
+**END-A02:** mandatory truth-evidence formula remains pending owner approval. See OWNER_DECISION_PACKET_R1.md.
 
 ## 8. QA scenarios
 1. Solo: complete all acts and reach ESCAPE.
