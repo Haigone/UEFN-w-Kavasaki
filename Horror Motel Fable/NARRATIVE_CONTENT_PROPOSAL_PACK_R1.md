@@ -147,13 +147,13 @@ TruthChainComplete is evaluated separately using the approved END-A02 formula.
 
 **Eligibility:** FinaleReady, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady, TruthChainComplete (all three approved END-A02 clues), explicit team choice, Ending=NONE. CoreEscapeReady, CarKeys and vehicle ignition are not required.
 
-**Player action:** use the Service Key to open the sealed service control room; place the four ROOM 13 photographs on the control-room evidence rail; activate the old night-audit recorder.
+**Player action:** use the Service Key to open and enter the sealed service control room. The evidence rail automatically displays the four ROOM 13 photographs in the already-solved 1968 / 1974 / 1981 / 1986 order; the photographs remain mounted on the ROOM 13 board and are not inventory items. Activate the old night-audit recorder.
 
 **Sequence beats**
 1. The recorder plays the night manager's 02:13 entry; show the text as subtitles.
 2. Service lights reveal THE GUEST at the opposite end of the corridor.
 3. Owner portrait and THE GUEST face align in a reflection; no second identity is introduced.
-4. Player activates the breaker marked "NIGHT AUDIT — END CYCLE".
+4. Player holds the dedicated breaker marked "NIGHT AUDIT — END CYCLE" for 2 seconds through IN-032; it commits NightAuditActivated exactly once.
 5. Motel lights go out room by room; the neon remains lit at 02:13.
 6. Corridor is empty. The register prints: "NO VACANCY. NO OWNER. NO GUEST."
 7. Cut to black; THE TRUTH title card.
