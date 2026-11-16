@@ -1,21 +1,25 @@
 # GEOMETRY VALIDATION REPORT — CANONICAL PROPOSAL R2.2
 Audit date: 2026-11-16
 Scope: document and coordinate reconciliation only.
-Status: **COHERENT PROPOSAL — NOT OWNER-APPROVED — NOT UEFN-VERIFIED**.
+Status: **SUBSTANTIALLY CONSISTENT PROPOSAL — FINAL REVIEW FOUND BLOCKING UNASSIGNED AREAS AND REGISTER ERRORS — NOT OWNER-APPROVED — NOT UEFN-VERIFIED**.
 
 ## 1. Files examined
-- EXECUTIVE_BUILD_DOSSIER.md
 - LEVEL_DESIGN_GEOMETRY.md
-- EXECUTIVE_FLOORPLANS.md
-- coordinate_schedule.csv
+- GEOMETRY_VALIDATION_REPORT.md
+- LEVEL_DESIGN_R2.2_INDEX.md
 - ROOM_COORDINATE_REGISTER.csv
+- coordinate_schedule.csv
 - DOOR_WINDOW_SCHEDULE.csv
-- door_window_schedule.csv
 - wall_schedule.csv
+- SLAB_SCHEDULE.csv
 - LEVEL_SECTIONS.md
+- STAIR_PLAN_R2.md
+- ROOF_PLAN_R2.md
+- FINAL_GROUND_FLOOR_PLAN.md
+- FINAL_UPPER_FLOOR_PLAN.md
 - GROUND_FLOOR_PLAN_R2.svg
 - UPPER_FLOOR_PLAN_R2.svg
-- GEOMETRY_VALIDATION_REPORT.md (previous revision)
+- SECTIONS_R2.2.svg
 
 ## 2. Classification
 | Classification | Meaning |
@@ -92,7 +96,7 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
 
 ## 8. R2.2 document-level integrity checks (performed after schedule updates)
-- ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows match the 16-column header. U-NORTH-HALL is explicitly a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
+- ROOM_COORDINATE_REGISTER.csv: 52 data rows; 51 rows match the 16-column header, but COURTYARD has only 15 fields (missing Material_Asset_ID placeholder), shifting the remaining fields and omitting Verification_Status. VEST-13 also reports Length_m=1.50 although its FIF Y bounds 47.55–49.20 derive 1.65 m. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
 - coordinate_schedule.csv: 55 data rows; all rows match the 14-column header. Cross-bays, balcony turn-pad union components, the UPPER_NORTH_HALL functional alias, service reserves and south-end buffers are represented; aliases/components do not create duplicate floor collision. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 51 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
@@ -108,8 +112,8 @@ The side-room partition ends now meet the adjacent corridor/outer wall centre-li
 These are CSV/schema and coordinate-reference checks only. They do not prove that wall meshes, slabs, stair collision, balcony navigation, structural support, or UEFN navigation work in the editor.
 
 ## 9. Acceptance
-R2.2 is a single coherent **proposal**, not an approved construction package. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run. Final geometry freeze and environmental art remain blocked until the owner approves the listed decisions and Claude verifies the approved geometry in UEFN.
+R2.2 remains a candidate **proposal**, not an approved construction package. The final review confirms the room bounds, opening/host-wall geometry, principal slab polygon and secret route mathematically, but finds two unregistered ground-floor sealed pockets, unassigned upper-floor side pockets, an inaccessible U-SERVICE marked walkable, turn-pad clipping beyond the courtyard void, and two coordinate-register errors. These issues block geometry freeze. No ENGINE-VERIFIED status is asserted. No UEFN editor or playtest was run.
 
 ## 10. Approval-gate pointer and scope clarification
 
-The numbered geometry approval list in Section 6 is operationalized as GEO-A01–GEO-A15 in OWNER_DECISION_GATE_R2.2.md. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval remains NOT RECEIVED. This document and its prior dimensional checks do not authorize construction or imply editor verification.
+The existing OWNER_DECISION_GATE_R2.2.md remains the owner response record for GEO-A01–GEO-A15 and END-A01/END-A02. The final review supplement LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md records additional blocking anomalies and decision options that must be incorporated into that gate before approval. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval remains NOT RECEIVED. This document and its dimensional checks do not authorize construction or imply editor verification.
