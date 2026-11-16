@@ -11,11 +11,11 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 **THE_TRUTH:** CoreEscapeReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceRouteReady=true, and team explicitly selects truth route.  
 **THE_NEW_GUEST:** NewGuestAccepted=true through explicit invitation interaction and team confirmation. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
-## 3. Truth evidence — END-A02 PENDING OWNER APPROVAL
+## 3. Truth evidence — END-A02 APPROVED 2026-11-16
 
-No mandatory truth-evidence list is currently owner-approved. The recommended END-A02 decision is documented in `END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md`.
+The three-clue evidence gate is approved and authorized for implementation.
 
-**Proposed evidence formula (NOT AUTHORIZED FOR IMPLEMENTATION UNTIL APPROVED):**
+**Canonical evidence formula:**
 `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`
 - `DiaryFound`: ROOM 09 night manager diary.
 - `ChildRoomClueFound`: ROOM 11 child's drawing.
@@ -55,4 +55,4 @@ All three endings solo; all three in co-op; truth evidence incomplete; acceptanc
 
 **END-A01 APPROVED:** Section 4 is the canonical owner-approved co-op quorum. Claude may implement this resolver, including timeout/tie and disconnect handling, after validating it against the current UEFN/Verse API. END-A02 is approved; Claude may implement the three-clue truth gate subject to clue accessibility/recovery validation.
 
-**Truth evidence gate:** The six flags in Section 3 remain a proposed mandatory list until the owner approves END-A02. Do not make a clue mandatory unless its placement, readability, fallback and progression role are confirmed in the approved narrative pack.
+**Truth evidence gate:** END-A02 is approved. Implement the three-clue formula in Section 3; the clues remain optional to ESCAPE and mandatory only for THE_TRUTH. Exact narrative prose and visual assets in the proposal pack remain draft.
