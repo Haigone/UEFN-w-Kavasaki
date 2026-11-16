@@ -222,7 +222,7 @@ event_catalog = read_text("EVENT_AND_STATE_TRANSITION_CATALOG_R2.md")
 for interaction_id in sorted(interaction_ids):
     if interaction_id and interaction_id not in crosswalk:
         fail(f"EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: missing {interaction_id}")
-event_ids = set(re.findall(r"EVT-\\d{3}", event_catalog))
+event_ids = set(re.findall(r"EVT-\d{3}", event_catalog))
 expected_event_ids = {f"EVT-{n:03d}" for n in range(1, 52)}
 if event_ids != expected_event_ids:
     fail(f"event catalog ID coverage mismatch: missing={sorted(expected_event_ids-event_ids)}, extra={sorted(event_ids-expected_event_ids)}")
