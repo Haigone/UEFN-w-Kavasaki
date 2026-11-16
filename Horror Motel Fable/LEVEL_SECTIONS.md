@@ -1,6 +1,6 @@
 # LEVEL SECTIONS — CANONICAL GEOMETRY PROPOSAL R2.2
 Status: PROPOSED — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
-Graphic sections: `SECTIONS_R2.2.svg`. All coordinates in metres.
+Graphic sections: `SECTIONS_R2.2.svg`. Slab polygons: `SLAB_SCHEDULE.csv`. All coordinates in metres.
 
 ## Vertical datum
 | Element | Z |
