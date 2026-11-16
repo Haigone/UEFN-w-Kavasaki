@@ -47,12 +47,12 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 
 ## PZ-04 — ROOM 13 PHOTOGRAPHS
 **Act:** V. **Position:** ROOM 13 wall / hidden compartment.  
-**Prerequisites:** ROOM 13 entered; four chronology photos and required evidence available.  
+**Prerequisites:** ROOM 13 entered; four chronology photos available. Optional investigation clues are not PZ-04 prerequisites.  
 **Required objects:** none. **Optional:** optional lore documents.  
 **Clue design:** four images show: first motel construction / owner at opening (1968); first recorded disappearance (1974); child drawing/guest disappearance (1981); current night and owner portrait (1986). Each has a visible date or date-linked caption. A diary fragment states “The room was never built. It was always here.”  
 **Interaction:** place/select four photos in chronological order.  
 **Solution:** 1968 → 1974 → 1981 → 1986.  
-**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; Service Key pickup becomes available. IN-017 is the sole grant transaction and adds ServiceKey exactly once. TruthChainComplete is set only when all mandatory truth evidence flags are true.  
+**Success:** hidden compartment opens; OwnerIdentityRevealed=true; PhotoSequenceSolved=true; Service Key pickup becomes available. IN-017 is the sole grant transaction and adds ServiceKey exactly once. TruthChainComplete is a separate derived session flag; do not set it until END-A02 is explicitly owner-approved. The recommended gate is documented in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.  
 **Failure:** board indicates whether the earliest/latest relation is wrong without exposing the full answer; reset all slots; no item loss.  
 **Fallback:** journal chronology view; substitute photo cards if a prop is missing; solved flag can restore compartment and ServiceKey.  
 **Multiplayer:** shared state, one logical lock; any active player can operate; no individual vote required.  
@@ -65,7 +65,7 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 **Required objects:** ServiceKey and CarKeys. Screwdriver is not consumed and is not a gate prerequisite.  
 **Interaction:** unlock service control with ServiceKey; activate powered gate; return to vehicle and interact with ignition using CarKeys.  
 **Solution:** use ServiceKey at service control, activate gate, then use CarKeys at vehicle.  
-**Success:** GatePowered=true; CoreEscapeReady=true; final pursuit can run; ending selector becomes available at authored decision point.  
+**Success:** GatePowered=true and ServiceRouteReady=true after ServiceKey validation and service-control activation; CoreEscapeReady=true only after CarKeys are used at the vehicle ignition; final pursuit/ending choice follows the authored flow.  
 **Failure:** show exact missing prerequisite; do not consume keys; player can leave and return.  
 **Fallback:** if physical key prop is missing but team flag exists, use an alternate keyhole proxy; if gate control fails, a clearly signposted manual service lever performs the same state transition after validation.  
 **Multiplayer:** shared key flags; all players can participate; ending choice is team-wide and deterministic.  
