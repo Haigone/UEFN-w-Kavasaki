@@ -2,6 +2,9 @@
 
 ## Current production authority — 2026-11-16
 - [PRODUCTION_COMPLETION_HANDOFF.md](PRODUCTION_COMPLETION_HANDOFF.md) — latest consolidated audit, remaining blockers, owner decisions and Claude handoff.
+- [MASTER_TASK_REGISTER.md](MASTER_TASK_REGISTER.md) — prioritized production tasks, dependencies, owners and evidence gates.
+- [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) — current missing/incomplete deliverables and superseding R2.2 addenda.
+- [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — active cross-discipline conflicts and current risk status.
 - [LEVEL_DESIGN_R2.2_INDEX.md](LEVEL_DESIGN_R2.2_INDEX.md) — current geometry document hierarchy.
 - [LEVEL_DESIGN_GEOMETRY.md](LEVEL_DESIGN_GEOMETRY.md) LD-GEO R2.2 — single candidate geometry proposal; **not owner-approved and not UEFN-verified**.
 - [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — binding responsibility and evidence rules.
