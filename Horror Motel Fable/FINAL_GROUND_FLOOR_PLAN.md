@@ -36,7 +36,7 @@ The 2 m bands Y27–29 and Y36–38 are reserved as open transverse connector ba
 The electrical room ends at X=72.90 to preserve the 2.50 m east link; this removes the former electrical/link overlap. The west lobby and west link are separated by a partition with a 0.90 m opening. Storage/service bay connection is shown in the door and wall schedules. These north-zone allocations require owner approval.
 
 ## Stair
-North stair reservation X=21–27,Y=51.2–59.0, inside reception. Proposed assembly X=22.65–25.35,Y=52.00–55.72; 20 risers, 10 per flight, 0.18 m rise; 9 goings per flight at 0.28 m; 2.52 m run per flight; 2.70×1.20 m intermediate landing at Z1.80; clear flight width 1.20 m. Headroom target ≥2.20 m. Exact handedness and entry/exit approaches require owner approval and editor verification.
+North stair reservation X=21–27,Y=51.2–59.0, inside reception. Proposed assembly X=22.65–25.35,Y=52.45–56.17; 20 risers, 10 per flight, 0.18 m rise; 9 goings per flight at 0.28 m; 2.52 m run per flight; 2.70×1.20 m intermediate landing at Z1.80; clear flight width 1.20 m. Headroom target ≥2.20 m. Exact handedness and entry/exit approaches require owner approval and editor verification.
 
 ## Openings
 See DOOR_WINDOW_SCHEDULE.csv. Door/window centres are on wall centre-lines, not on room FIF boundaries. Main reception door centre (29.00,48.15), 1.60×2.30 m; reception window centre (33.00,48.15), 2.40×1.50 m.
