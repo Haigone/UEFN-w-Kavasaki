@@ -158,7 +158,7 @@ Owner-approved only as to **location**. Proposed dimensions:
 - 10 risers per flight; 9 goings × 0.28 m = 2.52 m run per flight.
 - Intermediate U-turn landing 2.70×1.20 m at Z=1.80.
 - Stair flight/landing envelope 2.70×3.72 m. Bottom and top approach each target ≥1.20 m. The upper south approach is 1.20 m from the wall face at Y51.10 to the slab cut at Y52.30.
-- Handrails both sides; 1.00 m target height. Headroom ≥2.20 m measured vertically above nosings and landings.
+- Handrails both sides; 1.00 m target height. Headroom ≥2.20 m measured vertically above nosings and landings. Upper south approach is 1.20 m clear from Y51.10 to Y52.30. Lower approach must retain ≥1.20 m clear, but its exact polygon and the reception counter/queue furniture layout are not dimensioned yet. The stair occupies part of reception; furniture must remain outside the stair reservation and both approach zones.
 - Proposed placement: X=22.65–25.35, Y=52.45–56.17; lower and upper access approach from south. Upper slab cut X=22.50–25.50,Y=52.30–56.32 (3.00×4.02 m) through the 0.25 m slab; guardrail west/east/north, south edge open to the landing. Exact stair handedness and support layout require owner approval and editor verification.
 The earlier 5.32 m run is mathematically inconsistent with two flights of nine goings each: 18×0.28=5.04 m total horizontal going, not 5.32 m. The U-turn assembly's plan depth is 2.52+1.20=3.72 m.
 
@@ -192,7 +192,7 @@ Ground slab thickness is proposed at 0.20 m from EBD; upper and roof slabs are p
 4. Confirm ELECTRICAL reduced to X=57.30–72.90 and the east north-link corridor retained at X=73.20–75.70.
 5. Confirm west lobby, service bay and upper service reserve allocations.
 6. Confirm ROOM 13 dimensions 14.70×8.60 m and exact north connector placement.
-7. Confirm stair geometry, handedness, exact placement and 0.18/0.28 riser/going targets.
+7. Confirm stair geometry, handedness, exact placement, lower approach polygon, reception counter/queue clearances and 0.18/0.28 riser/going targets.
 8. Confirm wall thicknesses 0.30/0.15 m, ground slab 0.20 m, upper/roof slabs 0.25 m, and vertical stack Z=3.00/3.35/3.60/6.40/6.65/7.10.
 9. Confirm 2.50 m balcony width and corner pads.
 10. Confirm window placement on courtyard-facing ground facades and exterior-facing upper facades.
