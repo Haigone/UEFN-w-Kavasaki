@@ -66,14 +66,18 @@ Run a representative benchmark containing one full room, corridor, reception, co
 
 No universal frame-rate or memory pass value is invented here; production owner must set target platform and measurable budget before final optimization. Compare against the approved project performance target.
 
-## 7. Current blockers
-1. E1 geometry is proposal, not editor-verified.
-2. ROOM 13 secret door location conflicts between room/door/wall schedules.
-3. Stair exact footprint, riser numbering and headroom unresolved.
-4. Balcony polygon and rail layout unresolved.
-5. Bathroom partitions and door/furniture clearances need plan-level resolution.
-6. Several external prop anchors are only approximate.
-7. THE GUEST rig and custom animation workflow require UEFN/NPC compatibility proof.
+## 7. Current blockers — authoritative status
+1. Geometry status is UNKNOWN / NOT ACCEPTED. LD-GEO R2.0 is a candidate reference only; no final-fit asset placement is authorized until the geometry owner/Claude reconciles the source files and editor evidence.
+2. Vertical stack: upper FFL 3.60m and clear-height targets 3.00m ground / 2.80m upper; exact slab/soffit/ceiling/roof elevations require one coordinated section.
+3. Stair: 20 risers × 0.18m, 0.28m tread depth, 1.20m clear width and landing >=1.20x1.20m are targets; tread count/run/landing split/headroom remain unresolved.
+4. Balcony: 2.50m clear width and 1.10m guardrail are targets; exact polygon, edge, posts, supports, thresholds and drainage unresolved.
+5. ROOM 12 -> ROOM 13 candidate route includes panel, east vestibule, west wall-junction opening, north hall and ROOM 13 south entry; plan/section/collision still require proof.
+6. Bathroom partitions and wet-area clearances are absent/incomplete in source schedules; no final bathroom dressing without a coordinated plan.
+7. Gate anchor conflicts between exterior_prop_schedule.csv and ROOM_COORDINATE_REGISTER.csv; EXT_GATE placement remains BLOCKED.
+8. Existing room furnishing coordinates are proposed only. Shared reception/office/storage/electrical prop placements remain UNPLACED until exact plans are reconciled.
+9. Third-party asset candidates remain SHORTLISTED_NOT_ACQUIRED. No license evidence, acquisition or UEFN compatibility is assumed.
+10. THE GUEST rig, skeleton and custom animation workflow require current UEFN/NPC compatibility proof.
+11. Claude owns all UEFN editor, import, collision, gameplay traversal and performance tests. No UEFN test is claimed by this documentation author.
 
 ## 8. Final sign-off
 Asset_ID / Family:
