@@ -1,0 +1,10 @@
+Audio_ID,Area,X_m,Y_m,Z_m,Audio_Type,Loop,Attenuation_Radius_m,Trigger,Subtitle_Required,Status
+SFX_RAIN,Exterior,42,30,3,Ambience,Yes,35,LevelStart,No,EDITOR-TEST REQUIRED
+SFX_NEON,NeonSign,42,15,2.2,Loop,Yes,12,SignPowered,No,EDITOR-TEST REQUIRED
+SFX_FLUORESCENT,Interior,42,54,2.7,Hum,Yes,8,Always,No,EDITOR-TEST REQUIRED
+SFX_PHONE,Reception,31,54,1.1,OneShot,No,10,RegisterPuzzle,Yes,EDITOR-TEST REQUIRED
+SFX_CRT,ROOM01,15,24,1.2,Static,Yes,4,TVScare,No,EDITOR-TEST REQUIRED
+SFX_ROOM13_DRONE,ROOM13,56,55,4.8,Ambience,Yes,7,OnEntry,No,EDITOR-TEST REQUIRED
+SFX_CHASE_STINGER,FinalEscape,42,18,2,Stinger,No,18,ChaseStart,No,EDITOR-TEST REQUIRED
+SFX_GUEST_FOOTSTEPS,GuestDynamic,Dynamic,Dynamic,Dynamic,Footsteps,No,12,NPCMovement,No,ENGINE-VERIFIED REQUIRED
+SFX_GUEST_BREATH,GuestDynamic,Dynamic,Dynamic,Dynamic,Breath,Yes,5,NearPlayer,No,ENGINE-VERIFIED REQUIRED
