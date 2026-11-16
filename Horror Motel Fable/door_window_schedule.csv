@@ -42,3 +42,7 @@ P-G-E-CROSS-01,GF,EAST-CROSS-BAY-01,64.15,28,0,1.5,2.4,West,West open passage,Op
 P-G-E-CROSS-02,GF,EAST-CROSS-BAY-02,64.15,37,0,1.5,2.4,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
 D-G15,GF,GF-WEST-LOBBY,10.95,54.00,0.00,0.90,2.10,East,East into lobby,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
 D-G16,GF,GF-SERVICE-BAY,52.15,53.775,0.00,0.90,2.10,North,North into service bay,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-U-W-CROSS-01,UF,WEST-UPPER-CROSS-BAY-01,17.075,28.00,3.60,1.50,2.40,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-U-W-CROSS-02,UF,WEST-UPPER-CROSS-BAY-02,17.075,37.00,3.60,1.50,2.40,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-U-E-CROSS-01,UF,EAST-UPPER-CROSS-BAY-01,66.925,28.00,3.60,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-U-E-CROSS-02,UF,EAST-UPPER-CROSS-BAY-02,66.925,37.00,3.60,1.50,2.40,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
