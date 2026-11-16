@@ -11,8 +11,19 @@ All flags are session-authoritative. Ending starts as NONE and may be committed 
 **THE_TRUTH:** CoreEscapeReady=true, TruthChainComplete=true, Room13RevealComplete=true, ServiceRouteReady=true, and team explicitly selects truth route.  
 **THE_NEW_GUEST:** NewGuestAccepted=true through explicit invitation interaction and team confirmation. Never infer acceptance from capture, timer expiry, failed chase or ordinary defeat.
 
-## 3. Truth evidence
-TruthChainComplete is true only when all required truth evidence flags are true: DiaryFound; ChildRoomClueFound; MissingGuestEvidenceFound (Room 06); SecretPanelOpened; PhotoSequenceSolved; OwnerIdentityRevealed. Optional lore notes are excluded. If any of these are not authored as mandatory in the final level, remove them from the gate and update all documents before implementation; do not silently make a missable pickup mandatory.
+## 3. Truth evidence — END-A02 PENDING OWNER APPROVAL
+
+No mandatory truth-evidence list is currently owner-approved. The recommended END-A02 decision is documented in `END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md`.
+
+**Proposed evidence formula (NOT AUTHORIZED FOR IMPLEMENTATION UNTIL APPROVED):**
+`TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound`
+- `DiaryFound`: ROOM 09 night manager diary.
+- `ChildRoomClueFound`: ROOM 11 child's drawing.
+- `MissingGuestEvidenceFound`: ROOM 06 missing-guest photo archive.
+
+Keep `SecretPanelOpened`, `PhotoSequenceSolved` and `OwnerIdentityRevealed` / `Room13RevealComplete` as separate route, puzzle and identity-reveal progression gates. Do not add them as duplicate evidence pickups inside `TruthChainComplete`.
+
+Until explicit owner approval of END-A02, do not implement any mandatory truth-evidence pickup gate. If approved, each clue must be recoverable, team-shared, idempotent and have readable/journal fallback; see the proposal's acceptance criteria. Optional lore notes remain excluded.
 
 ## 4. Co-op choice — OWNER APPROVED 2026-11-16
 Ending selection is team-wide. Present only eligible options.
