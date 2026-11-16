@@ -25,7 +25,7 @@ R2.3 is the single owner-approved geometry reference. It consolidates R2.2 and t
 | Roof | Flat | OWNER DECISION — APPROVED |
 | THE GUEST | Intended access to both floors | OWNER DECISION — APPROVED |
 
-No room dimensions, wall thicknesses, door coordinates, vertical levels or stair details are considered owner-approved merely because they appeared in earlier drafts.
+Only the dimensions, wall thicknesses, door coordinates, vertical levels, stair and other geometry dispositions explicitly recorded in LD_GEO_R2.3_APPROVAL_RECORD.md and the controlled R2.3 schedules are owner-approved. Values from earlier drafts are superseded where they conflict.
 
 ## 2. Coordinate and wall convention
 - All room/corridor bounds in the coordinate register are **finished inside face (FIF)** bounds.
