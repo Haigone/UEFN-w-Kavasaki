@@ -1,32 +1,32 @@
-InteractionID,Act,Location,Target,Action,Prerequisites,RangeM,DurationSec,StateChange,Feedback,RepeatPolicy,Multiplayer,FailureFallback
-IN-001,I,Exterior,Neon/sign sightline,Inspect,Session start,2,0,ArrivalClueSeen,Visual/audio cue,Repeatable,All clients may inspect,Journal flag if sightline trigger fails
-IN-002,I,Reception,Telephone,Answer/Listen,Reception entered,2,0,PhoneMessageHeard,Subtitle plus spatial audio,Once per session,Shared narrative flag,Replay subtitle/transcript
-IN-003,I,Reception,Room 13 key,Inspect/collect,Reception entered,2,1,Room13Key;Room13KeyKnown,Pickup cue and team HUD,Team flag once,Shared,Recovery proxy if actor missing
-IN-004,I,Reception,Guest register,Inspect,Reception entered,2,0,RegisterCluesSeen,Readable close-up,Repeatable,Shared discovery flag,Journal copy
-IN-005,II,Reception,Desk lock,Enter code,Register clues available,2,0,RegisterSolved,Click or reject cue,Retryable,Atomic lock/team flag,Key recovery only after validated solve
-IN-006,II,Reception,Desk drawer,Collect Office Key,RegisterSolved,2,1,OfficeKey,Pickup cue,Once,Team-owned,Regrant from drawer proxy
-IN-007,II,Owner office,Photo board,Arrange photos,OfficeKey,2,0,UpperFloorAccessGranted,Mechanism opens,Retryable,One operator; replicated state,Journal photo index/substitute card
-IN-008,II,Rooms 01-06,Documents/CRT/phone,Inspect,Ground rooms accessible,2,0,Room01CRTClueFound / Room04PhoneClueFound / other authored DocumentIds,Text/subtitle/audio cue,Repeatable,Shared discovery flags,Journal copy; optional lore only and never blocks Act II exit
-IN-009,II,Room 02,Battery,Collect,Room accessible,2,1,BatteryChargeAdded,HUD charge cue,Pickup once,Per-player charge; per-spawn claim; pickup remains available to other players,Recovery battery in same room
-IN-010,III,Utility,Electrical panel cover,Use screwdriver,Utility access,2,1,PanelCoverOpen,Metal click,Repeatable until open,Shared state,Alternate cover interaction
-IN-011,III,Utility,Socket A/B/C,Install fuse,Matching fuse team-owned,2,2,FuseSlotXFilled,Slot click/reject,Once per slot,Atomic shared slot lock,Restore item flag if rejected
-IN-012,III,Utility,Breaker,Activate,All fuse slots filled,2,1,PowerRestored,Light/audio event once,Once,Shared,Alternate breaker proxy
-IN-013,IV,Room 09,Diary,Inspect,Upper floor access,2,0,DiaryFound,Readable text,Repeatable,Shared discovery flag,Journal copy
-IN-014,IV,Room 11,Child drawing,Inspect,Upper floor access,2,0,ChildRoomClueFound,Readable caption,Repeatable,Shared discovery flag,Journal copy
-IN-015,IV,Room 12,Concealed panel,Inspect/Open,Upper floor access; Screwdriver,2,2,SecretPanelOpened,Panel animation/audio,Once,Shared lock,Alternate panel proxy
-IN-016,V,Room 13,Four-photo board,Arrange,Room 13 unlocked,2,0,PhotoSequenceSolved,Compartment opens,Retryable,One operator; replicated,Journal chronology/substitute cards
-IN-017,V,Room 13,Hidden compartment,Collect Service Key,PhotoSequenceSolved,2,1,ServiceKey,Pickup cue,Once,Team-owned,Regrant if flag solved
-IN-018,VI,Service route,Gate control,Unlock/activate,PowerRestored; ServiceKey,2,2,GatePowered;ServiceRouteReady,Gate movement/cue,Once,Shared,Manual lever fallback
-IN-019,VI,Exterior,Vehicle ignition,Use car keys,CarKeys; GatePowered,2,2,CoreEscapeReady,Engine start cue,Once,Shared,Ignition proxy if actor missing
-IN-020,VI,Final route,Ending selector,Choose ending,Eligibility validated; Ending=NONE,2,20,EndingSelected,Branch-specific UI/audio,Once locked,Team vote/confirmation,END-A01 quorum; ESCAPE only if eligible on tie/timeout; otherwise reopen selector; disconnect recalculates/reconfirms
-IN-021,Any,Authored hiding spots,Hiding spot,Hide/Exit,Player ACTIVE; spot available,2,1,PlayerHidden,Hide/exit cue,Repeatable,Per-player,Force exit on reset/disconnect
-IN-022,Any,Captured location,Captured player,Rescue,Target CAPTURED; rescuer ACTIVE,2,5,Target RESCUED,Progress UI/audio,Cancelable,One rescuer commits,90s self-recovery fallback
-IN-023,Any,Checkpoint,Checkpoint device,Activate checkpoint,Required flags satisfied,2,0,CheckpointId updated,HUD checkpoint cue,Once per checkpoint,Team-shared,Re-evaluate flags and actors idempotently on restore
-IN-024,III,Room 02,Suitcase / Fuse A,Collect,Room accessible; FuseA not TEAM_AVAILABLE,2,1,FuseA,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
-IN-025,III,Storage,Fuse B on shelving beside wet-floor sign,Collect,Storage accessible; FuseB not TEAM_AVAILABLE,2,1,FuseB,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
-IN-026,III,Room 06,Maintenance cabinet / Fuse C,Collect,Room accessible; FuseC not TEAM_AVAILABLE,2,1,FuseC,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
-IN-027,III,Utility / storage tool board,Screwdriver,Collect,Utility/storage accessible; Screwdriver not TEAM_AVAILABLE,2,1,Screwdriver,Pickup cue and team HUD; reusable tool,Once per team,Team-shared,Tool board recovery proxy
-IN-028,VI,Exterior / broken group vehicle,Car Keys,Collect,Act VI; CarKeys not TEAM_AVAILABLE; key actor enabled,2,1,CarKeys,Pickup cue and team HUD,Once per team,Team-shared,Vehicle key hook recovery proxy
-IN-029,II,Room 06,Missing guest photo board,Inspect,Room 06 accessible,2,0,MissingGuestEvidenceFound,Readable close-up and journal flag,Repeatable,Shared discovery flag,Journal copy
-IN-030,II,Room 01,CRT monitor,Inspect/Watch,Room accessible,2,0,CRTFeedSeen,Visual anomaly cue,Repeatable,Shared discovery flag,Replayable journal/visual feed
-IN-031,II,Room 04,Telephone recording,Listen/Read transcript,Room accessible,2,0,Room04RecordingHeard;Room04TranscriptRead,Subtitle plus readable transcript,Repeatable,Shared discovery flag,Transcript/journal fallback if audio fails
+"InteractionID","Act","Location","Target","Action","Prerequisites","RangeM","DurationSec","StateChange","Feedback","RepeatPolicy","Multiplayer","FailureFallback"
+"IN-001","I","Exterior","Neon/sign sightline","Inspect","Session start","2","0","ArrivalClueSeen","Visual/audio cue","Repeatable","All clients may inspect","Journal flag if sightline trigger fails"
+"IN-002","I","Reception","Telephone","Answer/Listen","Reception entered","2","0","PhoneMessageHeard","Subtitle plus spatial audio","Once per session","Shared narrative flag","Replay subtitle/transcript"
+"IN-003","I","Reception","Room 13 key","Inspect/collect","Reception entered","2","1","Room13Key;Room13KeyKnown","Pickup cue and team HUD","Team flag once","Shared","Recovery proxy if actor missing"
+"IN-004","I","Reception","Guest register","Inspect","Reception entered","2","0","RegisterCluesSeen","Readable close-up","Repeatable","Shared discovery flag","Journal copy"
+"IN-005","II","Reception","Desk lock","Enter code","Register clues available","2","0","RegisterSolved","Click or reject cue","Retryable","Atomic lock/team flag","Key recovery only after validated solve"
+"IN-006","II","Reception","Desk drawer","Collect Office Key","RegisterSolved","2","1","OfficeKey","Pickup cue","Once","Team-owned","Regrant from drawer proxy"
+"IN-007","II","Owner office","Photo board","Arrange photos","OfficeKey","2","0","UpperFloorAccessGranted","Mechanism opens","Retryable","One operator; replicated state","Journal photo index/substitute card"
+"IN-008","II","Rooms 01-06","Documents/CRT/phone","Inspect","Ground rooms accessible","2","0","Room01CRTClueFound / Room04PhoneClueFound / other authored DocumentIds","Text/subtitle/audio cue","Repeatable","Shared discovery flags","Journal copy; optional lore only and never blocks Act II exit"
+"IN-009","II","Room 02","Battery","Collect","Room accessible","2","1","BatteryChargeAdded","HUD charge cue","Pickup once","Per-player charge; per-spawn claim; pickup remains available to other players","Recovery battery in same room"
+"IN-010","III","Utility","Electrical panel cover","Use screwdriver","Utility access","2","1","PanelCoverOpen","Metal click","Repeatable until open","Shared state","Alternate cover interaction"
+"IN-011","III","Utility","Socket A/B/C","Install fuse","Matching fuse team-owned","2","2","FuseSlotXFilled","Slot click/reject","Once per slot","Atomic shared slot lock","Restore item flag if rejected"
+"IN-012","III","Utility","Breaker","Activate","All fuse slots filled","2","1","PowerRestored","Light/audio event once","Once","Shared","Alternate breaker proxy"
+"IN-013","IV","Room 09","Diary","Inspect","Upper floor access","2","0","DiaryFound","Readable text","Repeatable","Shared discovery flag","Journal copy"
+"IN-014","IV","Room 11","Child drawing","Inspect","Upper floor access","2","0","ChildRoomClueFound","Readable caption","Repeatable","Shared discovery flag","Journal copy"
+"IN-015","IV","Room 12","Concealed panel","Inspect/Open","Upper floor access; Screwdriver","2","2","SecretPanelOpened","Panel animation/audio","Once","Shared lock","Alternate panel proxy"
+"IN-016","V","Room 13","Four-photo board","Arrange","Room 13 unlocked","2","0","PhotoSequenceSolved","Compartment opens","Retryable","One operator; replicated","Journal chronology/substitute cards"
+"IN-017","V","Room 13","Hidden compartment","Collect Service Key","PhotoSequenceSolved","2","1","ServiceKey","Pickup cue","Once","Team-owned","Regrant if flag solved"
+"IN-018","VI","Service route","Gate control","Unlock/activate","PowerRestored; ServiceKey","2","2","GatePowered;ServiceRouteReady","Gate movement/cue","Once","Shared","Manual lever fallback"
+"IN-019","VI","Exterior","Vehicle ignition","Use car keys","FinaleReady; CarKeys","2","2","CoreEscapeReady","Engine start cue","Once","Shared","Ignition proxy if actor missing"
+"IN-020","VI","Final route","Ending selector","Choose ending","Eligibility validated; Ending=NONE","2","20","EndingSelected","Branch-specific UI/audio","Once locked","Team vote/confirmation","END-A01 quorum; ESCAPE only if eligible on tie/timeout; otherwise reopen selector; disconnect recalculates/reconfirms"
+"IN-021","Any","Authored hiding spots","Hiding spot","Hide/Exit","Player ACTIVE; spot available","2","1","PlayerHidden","Hide/exit cue","Repeatable","Per-player","Force exit on reset/disconnect"
+"IN-022","Any","Captured location","Captured player","Rescue","Target CAPTURED; rescuer ACTIVE","2","5","Target RESCUED","Progress UI/audio","Cancelable","One rescuer commits","90s self-recovery fallback"
+"IN-023","Any","Checkpoint","Checkpoint device","Activate checkpoint","Required flags satisfied","2","0","CheckpointId updated","HUD checkpoint cue","Once per checkpoint","Team-shared","Re-evaluate flags and actors idempotently on restore"
+"IN-024","III","Room 02","Suitcase / Fuse A","Collect","Room accessible; FuseA not TEAM_AVAILABLE","2","1","FuseA","Pickup cue and team HUD","Once per team","Team-shared","Utility recovery drawer only if the authored pickup is unreachable"
+"IN-025","III","Storage","Fuse B on shelving beside wet-floor sign","Collect","Storage accessible; FuseB not TEAM_AVAILABLE","2","1","FuseB","Pickup cue and team HUD","Once per team","Team-shared","Utility recovery drawer only if the authored pickup is unreachable"
+"IN-026","III","Room 06","Maintenance cabinet / Fuse C","Collect","Room accessible; FuseC not TEAM_AVAILABLE","2","1","FuseC","Pickup cue and team HUD","Once per team","Team-shared","Utility recovery drawer only if the authored pickup is unreachable"
+"IN-027","III","Utility / storage tool board","Screwdriver","Collect","Utility/storage accessible; Screwdriver not TEAM_AVAILABLE","2","1","Screwdriver","Pickup cue and team HUD; reusable tool","Once per team","Team-shared","Tool board recovery proxy"
+"IN-028","VI","Exterior / broken group vehicle","Car Keys","Collect","Act VI; CarKeys not TEAM_AVAILABLE; key actor enabled","2","1","CarKeys","Pickup cue and team HUD","Once per team","Team-shared","Vehicle key hook recovery proxy"
+"IN-029","II","Room 06","Missing guest photo board","Inspect","Room 06 accessible","2","0","MissingGuestEvidenceFound","Readable close-up and journal flag","Repeatable","Shared discovery flag","Journal copy"
+"IN-030","II","Room 01","CRT monitor","Inspect/Watch","Room accessible","2","0","CRTFeedSeen","Visual anomaly cue","Repeatable","Shared discovery flag","Replayable journal/visual feed"
+"IN-031","II","Room 04","Telephone recording","Listen/Read transcript","Room accessible","2","0","Room04RecordingHeard;Room04TranscriptRead","Subtitle plus readable transcript","Repeatable","Shared discovery flag","Transcript/journal fallback if audio fails"
