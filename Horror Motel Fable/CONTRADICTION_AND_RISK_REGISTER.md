@@ -94,3 +94,10 @@ This section supersedes outdated details in CR-019 through CR-030 where noted.
 
 ### Evidence boundary
 Fab listing checks confirm advertised formats and listing metadata only. They do not prove acquisition, license rights for this project, UEFN import success, asset quality in the target project or runtime performance. Claude must perform actual source inventory/import/editor tests; the project owner approves purchases and structural changes.
+
+
+## Final PR metadata correction — latest live check
+
+- CR-024 remains **BLOCCATO**, but its reason is not a Git merge conflict: GitHub currently reports `mergeable=true`. The branch is still DIVERGED 49 ahead / 94 behind main, the PR is OPEN/DRAFT, and it has no reviews, comments or status checks.
+- CR-033 remains **BLOCCATO** because the PR still references R2.0 while main's current geometry authority is R2.1. “Mergeable” is not equivalent to “safe to integrate”.
+- The PR description now correctly reports 119 asset rows, 20 materials and 286 placement rows (91 unplaced). Its claim that all CSV schemas are normalized is contradicted by 8 malformed source-register rows and malformed GQ-007.
