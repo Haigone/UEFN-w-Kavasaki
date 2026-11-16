@@ -168,3 +168,34 @@ This section supersedes every earlier R2.0/R2.1 geometry and sequencing statemen
 
 ### Production gate
 The project remains DOCUMENTATION / PRE-PRODUCTION. No final geometry build, final art intake, PR merge, gameplay PASS, performance PASS or release readiness may be claimed until the relevant owner decision and Claude evidence exist.
+
+
+## R2.3 CURRENT AUTHORITY OVERRIDE — 2026-11-16
+
+This is the current roadmap authority and supersedes the R2.0/R2.1/R2.2 baseline statements and sequencing above wherever they conflict. Historical branch counts, PR counts and old geometry blockers are snapshots, not live status.
+
+### Current design/decision state
+- LD-GEO R2.3 is OWNER-APPROVED DESIGN for GEO-A01–GEO-A21. It is not UEFN/editor verified or construction certified.
+- END-A01 co-op ending quorum is OWNER-APPROVED and closed.
+- END-A02 mandatory truth evidence remains PENDING owner approval; the recommendation and complete owner action are in OWNER_DECISION_PACKET_R1.md.
+- NCP-A01–A09 draft narrative/puzzle/ending copy is complete at proposal level and awaits the single consolidated approval in OWNER_DECISION_PACKET_R1.md.
+- Room interior/bathroom fit-out and any R2.4 geometry deviation remain outside approved scope.
+
+### Current production sequence
+1. Documentation authority: PRODUCTION_CONTROL_MASTER_SPEC.md, this R2.3 override and MASTER_TASK_REGISTER.md.
+2. Claude CLD-001 actual UEFN project/environment baseline and recoverable backup (read-only until confirmed).
+3. Claude CLD-002 R2.3 controlled CSV/reference/topology integrity audit.
+4. Greybox write only after CLD-001 backup/baseline and CLD-002 PASS.
+5. Editor geometry acceptance and owner acceptance of the implemented R2.3 build.
+6. Reauthor Environment Art PR #1 against accepted R2.3 geometry; never merge PR #1 as-is or use old R2.0/R2.1 placements.
+7. Asset acquisition/import, character, audio/lighting, AI, device/Verse implementation and integration in dependency order.
+8. Solo, 2-player and 4-player QA; memory/performance profiling; island validation; owner release approval.
+
+### Current controlling implementation references
+- CLAUDE_R2.3_EXECUTION_PACKET.md for CLD-001 through CLD-005.
+- OBJECTIVE_AND_EVENT_CATALOG.md and INTERACTION_EXECUTION_SPEC.md for progression/interaction contracts.
+- MONSTER_AI_BEHAVIOUR_SPEC.md for THE GUEST.
+- OWNER_DECISION_PACKET_R1.md for outstanding owner narrative approvals.
+- README.md and PRODUCTION_CONTROL_MASTER_SPEC.md for document hierarchy.
+
+No UEFN implementation, compile, playtest, performance pass or publication is claimed by this roadmap update.
