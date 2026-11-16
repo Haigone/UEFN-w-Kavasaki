@@ -64,3 +64,10 @@ The balcony target is 2.50m clear, not 1.50m. The vertical levels are ground FFL
 The furnishing schedule is not a collision-approved final placement. Claude must check every bounding box and rotated footprint against R2 room FIF bounds, bathroom partitions, door swing, 0.90m path, 1.20m interaction zones, photo viewing and exit. ROOM 13 photos must remain simultaneously inspectable by two players while leaving the south exit clear. ROOM 05 remains intentionally sparse.
 Shared areas require explicit furniture placements for reception, office, storage and electrical room; the current room furnishing CSV does not provide a complete placed-object schedule for all these shared props. Add rows only after geometry reconciliation. Never invent final coordinates.
 
+
+
+## Revision 3.0 — stylized-realism and existing-asset-first decision
+
+Use the stylized-realism treatment in ENVIRONMENT_ART_BIBLE.md across all rooms: medium-detail silhouettes, broad readable forms, restrained wear, low-saturation period palette, unified roughness and deliberate lighting contrast. Avoid photoreal micro-noise and low-poly/toon exaggeration. Use acquired motel/hotel prop sets as the primary source for common beds, desks, wardrobes, chairs, sinks, luggage and room clutter, only after inventory and license verification. Use original narrative art for ROOM 06/09/13 photographs, diary pages, ROOM 13 clock face and custom Raven Motel branding unless an acquired asset includes suitable rights-cleared content.
+
+Existing-asset shortlist references: ENVIRONMENT_ASSET_SOURCE_REGISTER.csv. These are not acquired or approved. Do not finalize any placement from current schedule until geometry status changes from UNKNOWN and the geometry authority approves a corrected plan. Shared reception/office/storage/electrical placements remain incomplete where no coordinate schedule exists; do not invent coordinates to fill the gap.
