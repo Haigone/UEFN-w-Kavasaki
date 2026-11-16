@@ -1,5 +1,5 @@
 # FINAL UPPER FLOOR PLAN — CANONICAL PROPOSAL R2.2
-Status: PROPOSED — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Status: OWNER-APPROVED LD-GEO R2.3 — NOT UEFN-VERIFIED.
 Units metres; room bounds finished-inside-face (FIF).
 
 ## Datum
@@ -21,7 +21,7 @@ R2.2 restores 8.70 m width and removes the unexplained 2.50 m outer strips in R2
 - West leg X=17.15–19.70,Y=18.30–48.30.
 - North crossbar X=19.70–64.30,Y=48.30–50.80.
 - East leg X=64.30–66.85,Y=18.30–48.30.
-- Corner turning pads: west X=17.15–20.15,Y=47.00–50.80; east X=63.85–66.85,Y=47.00–50.80.
+- Corner turning pads clipped to UF-SLAB: west X=17.15–20.00,Y=47.00–50.80; east X=64.00–66.85,Y=47.00–50.80.
 - Minimum clear path target 2.50 m; courtyard-facing guardrail 1.10 m high target.
 
 The legs, crossbar and pads must be merged into one connected walkable polygon; do not leave point-only corner connections. No guardrail across door openings or stair exit.
@@ -35,7 +35,7 @@ The legs, crossbar and pads must be merged into one connected walkable polygon; 
 | West service reserve | 8.30–19.85 | 51.10–59.70 |
 | East service reserve | 64.00–75.70 | 51.10–59.70 |
 
-The two service reserves are non-playable placeholders for upper-level geometry closure; they have no assumed access. Owner approval required.
+The two service reserves are non-playable, no-access placeholders. The west and east side pockets are also sealed and registered as non-playable reserves: west X8.30–17.00,Y47.55–50.80; east L-shape split into X67.00–73.05,Y49.35–50.80 and X73.05–75.70,Y47.55–50.80. The west pocket is closed by wall UF-W-SEALED-RESERVE-WEST. All sealed reserves retain structural floor collision but are excluded from navmesh/gameplay.
 
 ## ROOM 12 → ROOM 13
 D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule FIF X67.00–72.90,Y47.55–49.20 (5.90×1.65 m clear); wall centre-lines west X66.925, east X72.975, north Y49.275, south shared at Y47.475. D-13C in vestibule west wall centre (66.925,48.45), clear 0.90×2.10 m, opens west to east balcony. Follow east balcony to corner pad, west along north crossbar. D-13B in ROOM 13 south wall centre (56.35,50.95), clear 0.90×2.10 m, opens north. Route is two-way; no teleport.
@@ -44,4 +44,6 @@ D-13A in ROOM 12 north wall centre (69.95,47.475), clear 0.90×2.10 m. Vestibule
 North stair connects GF reception to UF landing. Upper slab cut X22.50–25.50,Y52.30–56.32; guardrail west/east/north and south approach open. See STAIR_PLAN_R2.md, SLAB_SCHEDULE.csv and LEVEL_SECTIONS.md. Roof is flat and non-playable, covers the U-shaped footprint union only; courtyard remains open to sky.
 
 ## Construction
-See ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv and SECTIONS_R2.2.svg. All dimensions remain proposed until owner approval. No UEFN testing was performed.
+See ROOM_COORDINATE_REGISTER.csv, DOOR_WINDOW_SCHEDULE.csv, wall_schedule.csv and SECTIONS_R2.2.svg. All dimensions are owner-approved as LD-GEO R2.3; editor verification remains pending. No UEFN testing was performed.
+
+R2.3 approval: room envelopes, stair position, ROOM 13, continuous balcony, opening geometry and flat roof are approved. U-SERVICE is sealed/no-access/no-navmesh. Corner pads are clipped to the slab polygon; no collision floor extends into the courtyard void. Upper sealed reserves are non-playable. No UEFN verification is implied.
