@@ -31,7 +31,7 @@ Recommended order is a PROPOSAL because source documents require deterministic p
 If truth and escape are both eligible, expose explicit choice; do not rely on race conditions.
 
 ## Multiplayer contract
-One shared ending for the session. All connected players receive the same choice. Disconnect during vote cannot silently count as acceptance. **PROPOSAL:** unanimous confirmation for THE NEW GUEST; explicit team confirmation for the other branches. Exact quorum requires design approval. After commit, lock all competing endings.
+One shared ending for the session. All connected players receive the same choice. Disconnect during vote cannot silently count as acceptance. **APPROVED CO-OP RULE (owner, 2026-11-16):** ESCAPE and THE TRUTH require a strict majority of currently connected eligible players. THE NEW GUEST requires an explicit affirmative confirmation from every currently connected eligible player; no inferred acceptance. A tie or timeout for ESCAPE/THE TRUTH selects ESCAPE only when ESCAPE is eligible; otherwise the choice remains active for a new vote. A disconnect removes that player from the active electorate and recalculates majority; for THE NEW GUEST, re-prompt/reconfirm unanimity among the remaining connected players. A disconnect never counts as acceptance. Solo choice is direct. After commit, lock all competing endings.
 
 ## Required state transitions
 - Complete approved evidence checklist → TruthChainComplete.
