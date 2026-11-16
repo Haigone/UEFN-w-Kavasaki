@@ -1,22 +1,43 @@
-# LEVEL SECTIONS — LD-GEO R2.1
-Status: section control specification, PROPOSED TARGET; not editor-verified.
+# LEVEL SECTIONS — CANONICAL GEOMETRY PROPOSAL R2.2
+Status: PROPOSED — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Graphic sections: `SECTIONS_R2.2.svg`. All coordinates in metres.
 
-## A–A: west wing through courtyard balcony (X=15.00)
-Show west exterior wall, ROOM 07/08/09, east-facing room door at X=17.00, continuous balcony X=17.20–19.70, courtyard void from X=20–64, guardrail 1.10 m target. Vertical levels: ground FFL 0.00; ground suspended ceiling 3.00; upper slab underside 3.35/top 3.60; upper clear ceiling 6.40; flat roof slab top 6.65; parapet top 7.10.
+## Vertical datum
+| Element | Z |
+|---|---:|
+| Ground FFL | 0.00 |
+| Ground clear ceiling | 3.00 |
+| Upper slab underside | 3.35 |
+| Upper slab top / Upper FFL | 3.60 |
+| Upper clear ceiling / roof underside | 6.40 |
+| Roof slab top | 6.65 |
+| Parapet top | 7.10 |
 
-## B–B: north connector east-west (Y=55.00)
-Show ground reception, north stair volume, office/service partitions and electrical room. Upper level shows stair arrival, U-SERVICE, ROOM 13 and continuous north balcony/hall at Y=48.30–50.80. Verify room volumes and slab are distinct.
+Upper and roof slabs target 0.25 m thickness. Ground ceiling void between Z3.00 and Z3.35 is 0.35 m. Upper clear height is 2.80 m. These values reconcile the EBD and E1 vertical conflicts as one proposed stack; owner approval is required.
 
-## C–C: north stair centreline
-20 risers×0.18 m = 3.60 m; two U-turn flights of 10 risers; 9 goings per flight×0.28 m = 2.52 m run each; intermediate landing at Z=1.80 m; width 1.20 m; headroom ≥2.20 m; rails both sides, 1.00 m high target. Stair envelope approx. 2.70×3.72 m. Draw exact start/end and flight direction in STAIR_PLAN_R2.md; verify actual player capsule and THE GUEST.
+## A–A — West wing and courtyard-facing balcony
+Section line X=14.00, looking east. Show ground ROOM 01/02/03 below upper ROOM 07/08/09. Outer wall centreline X=8.15, room outer FIF X=8.30. Upper balcony is not intersected by X=14; its courtyard-facing edge is at X=19.70. The upper room doors are on wall centreline X=17.10 and open east to balcony. Ground room windows face courtyard at wall centreline X=19.85. Show upper slab Z3.35–3.60 and roof slab Z6.40–6.65.
 
-## D–D: ROOM 12 panel → ROOM 13
-Show D-13A in ROOM 12 north wall, 1.50 m vestibule, east balcony route, west opening into north balcony, ROOM 13 south door, continuous floor Z=3.60, lintels and ceiling Z=6.40. Show 0.25 m upper slab and ground-floor electrical ceiling below. Prove route entry and return.
+## B–B — North connector east-west
+Section line Y=55.00, looking north. Ground allocations left-to-right: NW link X8.30–10.80; west lobby X11.10–19.70; reception X20.30–37.70; office X38–47; service/storage reserve X47.30–57; electrical X57.30–72.90; NE link X73.20–75.70. Upper allocations: west service reserve X8.30–19.70; stair landing X20.30–28.70; U-service X29–48.70; ROOM 13 X49–63.70; east service reserve X64.30–75.70. The upper balcony crossbar is south of this section at Y48.30–50.80.
 
-## E–E: courtyard and continuous balcony
-Show courtyard open to sky; upper balcony width 2.50 m; 1.10 m guardrail; guardrail only at courtyard edge; floor Z=3.60; upper clear height 2.80; flat roof slab at Z=6.40–6.65; parapet top Z=7.10. Show no balcony segment narrower than 2.50 m.
+## C–C — North U-turn stair
+Reservation X21–27,Y51.20–59.00. Proposed assembly X22.65–25.35,Y52.00–55.72. Two 1.20 m clear parallel flights, 0.30 m central structure/clearance band; 20 risers total at 0.18 m, 10 per flight; 9 goings per flight at 0.28 m; each flight run 2.52 m. Intermediate U-turn landing 2.70×1.20 m at Z1.80. Plan envelope 2.70×3.72 m. Top and bottom approach target ≥1.20 m. Headroom ≥2.20 m above nosings and landings. The arithmetic is derived; exact handedness, flight offset, structure and approach clearance require owner approval and editor verification.
 
-## F–F: flat roof
-Show roof surface Z=6.65, parapet top Z=7.10, drainage falls to drains/scuppers. Roof access prohibited in gameplay. Drain positions and falls are proposed until roof plan coordination.
+## D–D — ROOM 12 to ROOM 13
+Plan/section route:
+- D-13A centre (69.95,47.475), panel in ROOM 12 north wall, opens north.
+- Vestibule X67.00–72.90,Y47.55–49.20, FFL3.60.
+- D-13C centre (66.90,48.45), opens west into east balcony leg.
+- Follow east leg to the east corner pad, then west along north balcony crossbar.
+- D-13B centre (56.35,50.95), in ROOM 13 south wall, opens north.
+Show upper FFL Z3.60, slab thickness0.25, ceiling/roof underside Z6.40, and ground electrical room below. No vertical cut through the floor slab is required; the route remains on the upper floor. Continuous 0.90 m clear door width and 2.20 m minimum overhead target.
 
-These are dimension requirements, not CAD section drawings. All collision, slab junction, stair and navigation checks remain EDITOR-TEST REQUIRED.
+## E–E — Courtyard and continuous balcony
+Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.20–19.70, east leg X64.30–66.80, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m. Ground and upper floor slabs are separate at Z0 and Z3.60.
+
+## F–F — Flat roof
+Flat roof slab underside Z6.40, top Z6.65, parapet top Z7.10. Roof polygon follows the U footprint union; courtyard is excluded. Roof has no player access. Falls and drainage outlets remain to be dimensioned after roof drainage direction is approved.
+
+## Geometry limitations
+These are dimensioned design sections, not proof of UEFN collision, navmesh, stair traversal, waterproofing or structural support. No UEFN testing was performed.
