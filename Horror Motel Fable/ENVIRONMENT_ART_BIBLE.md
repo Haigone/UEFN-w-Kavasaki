@@ -77,3 +77,12 @@ All budgets in the registers are proposed targets, not engine guarantees. Prefer
 ## 11. Production status vocabulary
 NOT STARTED / BLOCKED / IN PROGRESS / MODEL REVIEW / TEXTURE REVIEW / READY FOR IMPORT / IMPORTED / ENGINE VERIFIED / ACCEPTED.
 A design row is not a model. IMPORTED is not ENGINE VERIFIED. ACCEPTED requires evidence and reviewer/date.
+
+
+## Revision 2.0 — geometry and execution authority override (2026-11-16)
+The geometry authority is now `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0, not E1 as a final approved plan. Site datum remains SW=(0,0,0), +X east, +Y north, +Z up; site 84x72m; upper FFL Z=3.60m. Use clear-height targets ground 3.00m and upper 2.80m. Wall thickness targets: exterior 0.30m, interior 0.15m. The old 3.20m wall height / 6.80m upper ceiling / 7.10m roof values are not a reconciled vertical stack and must not be treated as approved.
+The R2 secret route is ROOM 12 north panel at approx (68.60,47.55), east vestibule X64.30..72.90/Y47.85..49.35, 0.90m west junction opening at Y48.60, upper north hall and ROOM 13 south entry approx (56.35,50.95). This is still a proposed topological solution; sections and collision are editor-test required.
+Balcony clear width target is 2.50m and rail height 1.10m; exact polygon remains unresolved. Stair target remains 20 risers x 0.18m, 1.20m clear width and 0.28m tread depth, but tread count/run/landing split must be dimensioned; do not infer 20 treads.
+Exterior gate coordinates conflict between schedules and are blocked pending one corrected authoritative anchor.
+All art placement must reference the geometry reconciliation sheet and keep the statuses PROPOSED TARGET / EDITOR-TEST REQUIRED until Claude records actual UEFN evidence. This document is an art-direction specification only; no asset creation or UEFN verification is implied.
+
