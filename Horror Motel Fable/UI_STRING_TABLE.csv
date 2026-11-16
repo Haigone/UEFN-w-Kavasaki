@@ -69,3 +69,4 @@ String_ID,Category,English_Text,Context,Implementation_Notes
 "UI_VOTE_TIMEOUT","Feedback","No decision was reached. Choose again.","Ending vote","Timeout follows END-A01; ESCAPE only if eligible, otherwise reopen"
 "UI_TRUTH_LOCKED","Feedback","The evidence is incomplete.","Ending selector","Do not reveal missing clue locations"
 "UI_ENDING_WAITING","Feedback","Waiting for the group...","Ending vote","No disconnected/inactive player is counted as consent"
+"UI_TRUTH_RECORDER_SUB","Subtitle","The clock stopped. The owner was standing at the far end of the corridor. I could see his face clearly. Then the lights flickered and the thing at the end of the corridor was still wearing it.","CINE-010","Draft diary excerpt used as recorder VO; narrative owner approval pending"
