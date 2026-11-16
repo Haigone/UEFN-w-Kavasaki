@@ -9,25 +9,25 @@ D-G07,GF,RECEPTION,South,29.00,48.30,0,1.60,2.30,1.90,2.45,Double_or_sliding,Sta
 D-G08,GF,OWNER OFFICE,West,38.00,51.00,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Office access from reception,PROPOSED TARGET
 D-G09,GF,STORAGE,West,47.30,51.00,0,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Storage access,PROPOSED TARGET
 D-G10,GF,ELECTRICAL,West,57.30,51.00,0,1.00,2.10,1.30,2.25,Outward_or_sliding,Blocks_when_closed,Service access,PROPOSED TARGET
-D-U07,UF,ROOM-07,West,11.10,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U08,UF,ROOM-08,West,11.10,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U09,UF,ROOM-09,West,11.10,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Diary room access,PROPOSED TARGET
-D-U10,UF,ROOM-10,East,72.90,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
-D-U11,UF,ROOM-11,East,72.90,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Child room access,PROPOSED TARGET
-D-U12,UF,ROOM-12,East,72.90,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Secret panel room access,PROPOSED TARGET
-D-13A,UF,ROOM-12,North,68.60,47.55,3.60,0.90,2.10,1.20,2.25,Concealed_panel_north,State-controlled,Secret entry,EDITOR-TEST REQUIRED
-D-13B,UF,ROOM-13,South,56.35,50.95,3.60,0.90,2.10,1.20,2.25,Concealed_inward,State-controlled,Secret room entry and return,EDITOR-TEST REQUIRED
-D-13C,UF,EAST_VESTIBULE,West,64.00,48.60,3.60,0.90,2.10,1.20,2.25,Open_passage,No collision threshold,Connects vestibule to hall,EDITOR-TEST REQUIRED
+D-U07,UF,ROOM-07,East,17.00,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
+D-U08,UF,ROOM-08,East,17.00,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
+D-U09,UF,ROOM-09,East,17.00,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Diary room access,PROPOSED TARGET
+D-U10,UF,ROOM-10,West,67.00,23.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Upper room access,PROPOSED TARGET
+D-U11,UF,ROOM-11,West,67.00,32.50,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Child room access,PROPOSED TARGET
+D-U12,UF,ROOM-12,West,67.00,42.70,3.60,0.90,2.10,1.20,2.25,Inward,Blocks_when_closed,Secret panel room access,PROPOSED TARGET
+D-13A,UF,ROOM-12,North,69.95,47.55,3.60,0.90,2.10,1.20,2.25,Concealed_panel_north,State-controlled,Secret entry,EDITOR-TEST REQUIRED
+D-13B,UF,ROOM-13,South,56.35,50.80,3.60,0.90,2.10,1.20,2.25,Concealed_inward,State-controlled,Secret room entry and return,EDITOR-TEST REQUIRED
+D-13C,UF,EAST_VESTIBULE,West,64.30,49.55,3.60,0.90,2.10,1.20,2.25,Open_passage,No collision threshold,Connects vestibule to hall,EDITOR-TEST REQUIRED
 W-G01,GF,ROOM-01,East,19.70,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G02,GF,ROOM-02,East,19.70,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G03,GF,ROOM-03,East,19.70,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G04,GF,ROOM-04,West,64.30,23.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G05,GF,ROOM-05,West,64.30,32.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
 W-G06,GF,ROOM-06,West,64.30,41.50,0.90,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing window,PROPOSED TARGET
-W-U07,UF,ROOM-07,East,19.70,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U08,UF,ROOM-08,East,19.70,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U09,UF,ROOM-09,East,19.70,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U10,UF,ROOM-10,West,64.30,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U11,UF,ROOM-11,West,64.30,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
-W-U12,UF,ROOM-12,West,64.30,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Confirm clearance from concealed panel,EDITOR-TEST REQUIRED
+W-U07,UF,ROOM-07,West,11.10,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
+W-U08,UF,ROOM-08,West,11.10,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
+W-U09,UF,ROOM-09,West,11.10,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
+W-U10,UF,ROOM-10,East,72.90,23.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
+W-U11,UF,ROOM-11,East,72.90,32.50,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Courtyard-facing upper window,PROPOSED TARGET
+W-U12,UF,ROOM-12,East,72.90,42.70,4.50,1.60,1.20,1.80,1.40,Fixed_glazing,Glass collision,Confirm clearance from concealed panel,EDITOR-TEST REQUIRED
 W-G-RCP,GF,RECEPTION,South,33.00,48.30,1.00,2.40,1.50,2.60,1.70,Fixed_glazing,Glass collision,Reception courtyard visibility,PROPOSED TARGET
