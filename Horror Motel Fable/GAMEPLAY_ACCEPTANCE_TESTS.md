@@ -127,3 +127,5 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-072 | THE_TRUTH Night Audit sequence | THE_TRUTH committed; service control room entered; IN-032 activates NightAuditActivated exactly once; room-by-room blackout, 02:13 neon hold, register print text and THE TRUTH title card occur in order; no vehicle/car key/ignition required |
 | GAT-073 | END-A02 evidence gate boundaries | All three clues required for THE_TRUTH; each clue independently optional to ESCAPE/core progression; no duplicate evidence flags from PZ-04/SecretPanelOpened/Room13RevealComplete |
 | GAT-074 | Room 06/09/11 clue recovery | Each clue remains reachable or journal-recoverable after capture, checkpoint restore, co-op teammate inspection and disconnect/reconnect before ending commit |
+
+| GAT-075 | Ending consequence / team outcome | THE_TRUTH leaves all players alive and together in the service control room after blackout; THE_NEW_GUEST makes the whole team the next collective caretaker/guest group; no random player is selected or sacrificed |
