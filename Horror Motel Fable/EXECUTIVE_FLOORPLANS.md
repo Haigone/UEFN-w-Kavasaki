@@ -70,10 +70,11 @@ Upper floor repeats the U footprint. The north connector is a circulation and se
 | U-SERVICE | X=29.00–48.70, Y=51.10–59.70 | 19.70 × 8.60 | Upper service / story dressing; no mandatory objective |
 
 ## ROOM 12 → ROOM 13 secret route
-- Concealed panel in ROOM 12 north wall: centre X=68.60, Y=47.40, Z=4.65; clear opening 0.90 × 2.10 m; opens north.
-- Short connector passage: X=68.15–69.05, Y=47.40–48.30, then east/north link routing must remain within north connector footprint. **IMPORTANT:** do not place a diagonal teleport or assume wall penetration. Use a concealed service door from ROOM 12 into the east side of U-NORTH HALL at X=63.70, Y=49.55 only if the east wing/north connector wall junction is opened as shown in the door schedule. This route is the preferred playable path.
-- Secret corridor: X=61.20–63.70, Y=49.10–50.00, then north through a concealed door in ROOM 13 west wall at X=49.00, Y=55.40 only after the connecting corridor polygon is validated. If this route cannot be built without crossing ROOM 12 or the north hall, revise the polygon and all schedules before implementation.
-- Do not mark this connection accepted until a continuous walkable polygon is confirmed in plan and section. The intended narrative connection is fixed; exact corridor geometry remains EDITOR-TEST REQUIRED.
+- Concealed panel in ROOM 12 north wall: centre X=68.60, Y=47.40, Z=4.65; clear opening 0.90 × 2.10 m; opens north into the upper east link (X=64.00–75.70, Y=48.30–59.70).
+- Hidden route is a continuous walkable route, not a teleport: pass north through the panel into the upper east link; follow the east link to its west opening at X=64.00, Y=49.55; enter U-NORTH HALL (X=20.30–63.70, Y=48.30–50.80); follow the hall west-to-east to X=56.35; pass north through ROOM 13 south-wall concealed door at centre (X=56.35, Y=51.10). Clear width 0.90 m at both doors. The hall is darkened and dressed as a service passage; the north-wall panel remains the secret entrance.
+- The upper east link must remain free of upper-floor room partitions and furniture except route dressing. Its ground-floor volume is ELECTRICAL; the upper floor is a distinct floor level at Z=3.60–6.80.
+- ROOM 13 south-wall door opens inward; reserve 1.20 × 1.20 m clear approach area inside ROOM 13 and keep photo wall on north wall so the only exit remains clear.
+- This route is now geometrically continuous in plan by design. Door cut alignment, floor slab openings, wall junctions and actual collision still require editor verification.
 
 ## Vertical circulation
 - Primary stair target: clear width 1.20 m, 20 risers at 0.18 m = 3.60 m floor-to-floor; tread depth 0.28 m; nominal run 5.32 m plus landing; two flights of 10 risers with intermediate landing 1.20 × 1.20 m. Validate actual stair code/UEFN collision and headroom.
