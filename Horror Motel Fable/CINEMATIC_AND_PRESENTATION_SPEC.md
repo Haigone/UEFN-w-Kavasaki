@@ -78,7 +78,7 @@ These are pacing targets, not engine guarantees.
 - Provide journal/transcript copies for mandatory voice content.
 - Avoid rapid full-screen flashes, high-frequency strobing and motion that prevents route comprehension.
 - For an unskippable mandatory reveal, cap the duration and provide a skip/continue action after the essential information is presented.
-- Cinematic audio uses the cue priority/concurrency rules in AUDIO_CUE_SHEET.csv; visual lighting uses LIGHTING_CUE_SHEET.csv.
+- Cinematic audio uses AUDIO_CUE_SHEET.csv and AUDIO_MIX_POLICY.md; visual lighting uses LIGHTING_CUE_SHEET.csv and LIGHTING_STATE_SPEC.md.
 
 ## 6. Asset and technical dependencies
 
