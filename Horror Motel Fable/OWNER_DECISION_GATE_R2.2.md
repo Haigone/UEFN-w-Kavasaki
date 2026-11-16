@@ -1,4 +1,4 @@
-# OWNER DECISION GATE — LD-GEO R2.2
+# OWNER DECISION RECORD — LD-GEO R2.3 / ENDINGS
 Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
 Status: **GEOMETRY APPROVED BY PROJECT OWNER ON 2026-11-16 — UEFN VERIFICATION PENDING**
@@ -64,16 +64,16 @@ Detailed dimensions, diagrams and approved outcomes: LD_GEO_R2.2_FINAL_OWNER_APP
 
 ## B. Ending multiplayer rule
 
-**END-A01 — Co-op ending quorum.** The documents conflict:
-- ENDING_DESIGN_SPEC.md proposes unanimous confirmation for THE NEW GUEST and says quorum for other branches needs approval.
-- ENDING_IMPLEMENTATION_SPEC.md specifies majority vote for all eligible endings, with tie/no response defaulting to ESCAPE.
+**END-A01 — APPROVED BY OWNER ON 2026-11-16. CLOSED.** This section supersedes all older conflicting quorum text:
+- ESCAPE and THE_TRUTH: strict majority of currently connected eligible players.
+- THE_NEW_GUEST: unanimous explicit affirmative confirmation from every currently connected eligible player.
+- Tie/timeout for ESCAPE/THE_TRUTH: choose ESCAPE only if eligible; otherwise keep the selector active and permit a new vote. Never silently choose THE_TRUTH.
+- Disconnect during ESCAPE/THE_TRUTH: remove disconnected player from active electorate and recalculate majority.
+- Disconnect during THE_NEW_GUEST: remove player and re-prompt/reconfirm unanimity among remaining connected eligible players. Disconnect is never consent.
+- Solo: direct selection.
+- Ending: session-wide, atomic, one-time commit; all competing triggers disabled after commit.
 
-Choose one rule:
-1. **MAJORITY** — majority of currently connected eligible players; define tie/no-response handling. THE NEW GUEST still requires a positive explicit vote.
-2. **UNANIMOUS** — every currently connected player must explicitly confirm; define disconnect and timeout handling.
-3. **OTHER** — provide exact quorum, timeout, disconnect and default rules.
-
-Until this is approved, Claude may implement only the solo ending selection and the ending state lock/atomic commit. Do not implement the co-op voting/quorum resolver.
+Claude may implement this resolver after verifying the target UEFN/Verse API. Do not reopen END-A01 or substitute a different quorum. Exact vote-window duration and visual presentation are UX tuning parameters, not changes to the approved quorum.
 
 ## C. Truth-ending evidence gate
 
@@ -86,10 +86,10 @@ This is a recommendation, not an approval. Until the owner explicitly approves E
 Owner response: APPROVED — “APPROVO TUTTO, PROCEDI” — 2026-11-16  
 Approved geometry revision: LD-GEO R2.3  
 Approved co-op quorum: MAJORITY for ESCAPE/THE TRUTH; UNANIMOUS explicit confirmation for THE NEW GUEST; timeout/tie defaults to ESCAPE only when eligible; disconnect removes voter and recalculates/reconfirms  
-Approved truth evidence gate: NONE — outside geometry scope  
+END-A02 truth evidence gate: NOT APPROVED; decision requested separately in OWNER_DECISION_PACKET_R1.md  
 Approval date: 2026-11-16
 
-Once approved, update this record with the owner's exact decision, then synchronize LEVEL_DESIGN_GEOMETRY.md, all controlled schedules, ENDING_DESIGN_SPEC.md, ENDING_IMPLEMENTATION_SPEC.md, GAMEPLAY_FLOW_AND_TESTS.md, QA matrices and Claude execution packets.
+Geometry and END-A01 approvals are recorded above. END-A02 remains pending; once approved, synchronize the ending, gameplay, puzzle, UI, QA and Claude execution documents.
 
 ## E. Stop conditions
 - Geometry decisions GEO-A01–GEO-A21 are approved and synchronized as LD-GEO R2.3. No editor-dependent item may be marked complete without Claude's UEFN evidence.
