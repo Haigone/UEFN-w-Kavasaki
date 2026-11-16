@@ -87,3 +87,20 @@ No calendar duration is committed by this audit. Estimate effort after scope and
 
 ## Operating model for every phase (binding)
 This roadmap is an execution guide for Claude. ChatGPT's responsibility is to turn each phase/task into a detailed, ordered packet: preconditions, exact actions, verified settings or labelled unknowns, expected outcomes, test steps, failure recovery, acceptance criteria and evidence to return. **Claude performs all actual UEFN/editor work and all tests**, including geometry walkthroughs, device setup, Verse compile, solo/co-op QA, profiling and island validation. The project owner approves design decisions and publication. ChatGPT reviews Claude's returned evidence and prepares corrective/next packets; it does not claim to have run UEFN tests. No phase gate passes on documentation alone. See `CLAUDE_EXECUTION_PROTOCOL.md`.
+
+
+## Re-audit update — repository intake and execution order
+
+The current main branch contains an R2.0 geometry candidate (`LEVEL_DESIGN_GEOMETRY.md`, `FINAL_GROUND_FLOOR_PLAN.md`, `FINAL_UPPER_FLOOR_PLAN.md`, `LEVEL_SECTIONS.md`, R2 SVGs). It improves the earlier allocation conflict but remains PROPOSED / NOT APPROVED. Geometry is still the physical critical path; wall/opening references, CSV integrity, stair flight layout, balcony edge, vertical datum and secret-route sections must be closed before geometry freeze.
+
+Before blockout, add a data-integrity sub-gate:
+1. Repair malformed rows in INTERACTION_MASTER_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and coordinate_schedule.csv.
+2. Split lighting_audio_schedule.csv into schema-consistent lighting and audio tables.
+3. Complete wall_schedule.csv and reconcile opening IDs with DOOR_WINDOW_SCHEDULE.csv.
+4. Declare which uppercase schedules are canonical and which lowercase files are legacy.
+
+Environment Art PR #1 is an intake candidate only. Its branch is 11 commits ahead / 42 behind main, still draft and unreviewed. Do not merge until synchronised, reviewed and revalidated. Its placement register has six wardrobe footprints outside assigned rooms, a 0.30 m ROOM 12 secret-panel offset and an untyped gameplay trigger reference.
+
+**Sequencing clarification required:** the master register and this roadmap make geometry the first physical critical-path sector. CLAUDE_EXECUTION_PLAN.md labels Narrative Lock as Phase 1. Narrative text/puzzle-document refinement may proceed in parallel, but must not delay geometry unless the project owner explicitly approves a reprioritisation. Record the decision and align the Claude-facing plan before execution.
+
+All actual editor operations, asset imports, Verse compilation, playtests, QA, profiling and island validation remain Claude's responsibility. ChatGPT supplies detailed plans and reviews evidence returned by Claude. This re-audit has not executed UEFN tests or merged the Environment Art PR.
