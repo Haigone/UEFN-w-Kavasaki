@@ -31,7 +31,7 @@ A test remains NOT RUN until executed in target build with evidence. Design revi
 
 ## Remaining dependencies
 
-- Owner approval of narrative proposal pack NCP-A01–A09 and END-A02, consolidated in OWNER_DECISION_PACKET_R1.md.
+- NCP-A01–A09 and END-A02 are approved under express owner delegation and recorded in OWNER_DECISION_PACKET_R1.md; validate exact canonical content and evidence gate.
 - R2.3 secret-passage traversal and all other geometry/editor checks.
 - Actual solo/2-player/4-player narrative runtime tests, readability/subtitle checks and ending tests.
 
@@ -39,3 +39,7 @@ The register solution, office-photo solution, diary/record/photo draft text, THE
 
 ## Evidence template
 Record build/commit ID, UEFN version, date, party size, checkpoint, exact steps, expected/observed result, PASS/FAIL/BLOCKED, screenshot/video/log reference, defect ID and retest.
+
+
+## Approved narrative baseline
+NCP-A01–A09 and END-A02 are approved. Narrative QA now verifies the exact text and story beats in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; it must not test for owner approval or treat the pack as proposal-only. The three END-A02 clues gate THE_TRUTH only. Include GAT-072/GAT-073/GAT-074 from GAMEPLAY_ACCEPTANCE_TESTS.md for Night Audit, evidence gating and clue recovery.
