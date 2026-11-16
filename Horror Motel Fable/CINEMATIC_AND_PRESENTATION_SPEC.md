@@ -112,3 +112,7 @@ No asset is considered produced/imported/working until it is present in the actu
 ## 8. Approval and implementation boundary
 
 Sequence mechanics and fallback rules are production design guidance. Narrative text, THE TRUTH consequence and THE NEW GUEST wording remain pending owner approval in OWNER_DECISION_PACKET_R1.md. END-A01 quorum is already owner-approved. All camera, NPC animation, audio playback, replication and cinematic-device capabilities must be verified in the target UEFN release.
+
+
+## Approved THE_TRUTH sequence binding
+Use the approved canonical sequence: service control room entry; four ROOM 13 photos displayed on the rail in solved order (no second puzzle or inventory transfer); night manager 02:13 recorder playback with subtitles; THE GUEST appears opposite the players; owner portrait aligns with THE GUEST in reflection; IN-032 activates NIGHT AUDIT — END CYCLE; rooms black out sequentially while neon holds at 02:13; register prints “NO VACANCY. NO OWNER. NO GUEST.”; cut to THE TRUTH title card. The branch is committed before the sequence begins. If the breaker actor or cinematic camera fails, preserve NightAuditActivated/Ending state and complete via the authored proxy and fallback title card; never change the ending or invent a different consequence.
