@@ -62,7 +62,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - Vestibule depth: 49.20−47.55 = 1.65 m gross; clear usable depth depends on wall finishes and requires editor verification.
 
 ## 5. Schedule integrity and remaining geometric checks
-- All room bounds use FIF convention; wall schedule uses centre-lines.
+- All room bounds use FIF convention; wall schedule uses centre-lines. SLAB_SCHEDULE.csv defines the shared U-shaped floor/roof polygon and courtyard void.
 - All door/window openings must resolve to an existing Wall_ID; any missing host is a blocking document defect.
 - Every shared partition must be represented once, never duplicated for adjacent rooms.
 - U balcony side legs, north crossbar and corner pads must be unioned into a single walkable polygon. Do not accept point-only joins.
@@ -91,7 +91,8 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - coordinate_schedule.csv: 37 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 43 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 43 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
-- wall_schedule.csv: 61 unique wall IDs; all rows match the 15-column header.
+- wall_schedule.csv: 63 unique wall IDs; all rows match the 15-column header.
+- SLAB_SCHEDULE.csv: 4 explicit slab/void records; the U footprint polygon is shared by ground, upper and roof slabs, with the courtyard excluded.
 - All 43 opening Wall_ID values resolve to an existing wall. All opening centres lie on the centre-line of their host wall. All wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
 
