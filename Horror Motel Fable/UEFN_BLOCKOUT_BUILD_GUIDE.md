@@ -14,7 +14,7 @@ Use LEVEL_DESIGN_GEOMETRY.md R2.2 as the candidate geometry authority. Read ROOM
 6. Build GF door/window openings from DOOR_WINDOW_SCHEDULE.csv. Opening centres are on host wall centre-lines.
 7. Build upper slab at FFL Z3.60, underside Z3.35, thickness0.25; include UF-STAIR-OPENING X22.50–25.50,Y52.30–56.32. Courtyard excluded.
 8. Build upper rooms 07–12 at 8.70 m width, south-end vestibule buffers and upper cross-bays. Do not use obsolete R2.1 5.90 m room widths.
-9. Build continuous upper balcony union: west leg X17.15–19.70, north crossbar X19.70–64.30,Y48.30–50.80, east leg X64.30–66.85 and two corner pads. Preserve at least 2.50 m clear after finishes.
+9. Build continuous upper balcony union: west leg X17.15–19.70, north crossbar X19.70–64.30,Y48.30–50.80, east leg X64.30–66.85 and two corner pads. Union all five components into one floor/collision surface. U-NORTH-HALL is a functional alias of the north balcony, not a second floor. Preserve at least 2.50 m clear after finishes.
 10. Build courtyard-edge guardrails 1.10 m high at centre-lines X19.85, X64.15 and Y48.15. Rails sit outside the walkable polygon; do not reduce the clear path.
 11. Build north U-turn stair at X22.65–25.35,Y52.45–56.17: 20 risers, two flights of 10, nine goings per flight at0.28 m, riser0.18 m, intermediate landing Z1.80, 1.20 m clear flight width. Upper slab cut and three-edge guardrail are mandatory; south approach remains open and ≥1.20 m.
 12. Build ROOM 12→ROOM 13 route exactly: D-13A (69.95,47.475), vestibule X67–72.90,Y47.55–49.20, D-13C (66.925,48.45), east corner pad/balcony leg, north balcony, D-13B (56.35,50.95). Verify bidirectional passage.
