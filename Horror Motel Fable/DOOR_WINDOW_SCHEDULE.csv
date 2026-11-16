@@ -21,21 +21,21 @@ D-G12,GF,GF-NORTH-WEST-LINK,GF-NORTH-SOUTH-FACADE,Y_CONST,9.55,48.15,0,1.2,2.1,1
 D-G13,GF,GF-NORTH-EAST-LINK,GF-NORTH-SOUTH-FACADE,Y_CONST,74.45,48.15,0,1.2,2.1,1.35,2.25,North into link,Open passage,PROPOSED CORRECTION,Connects east corridor to north link
 D-G14,GF,ELECTRICAL,GF-ELECTRICAL-EAST-LINK,X_CONST,73.05,54,0,0.9,2.1,1.05,2.25,West into electrical,Blocks when closed,PROPOSED CORRECTION,Service access from east link
 D-U07,UF,ROOM-07,UF-W-ROOM-BALCONY,X_CONST,17.075,23.5,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U07,UF,ROOM-07,UF-W-EXTERIOR,X_CONST,8.15,23.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U07,UF,ROOM-07,UF-EXT-WEST,X_CONST,8.15,23.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-U08,UF,ROOM-08,UF-W-ROOM-BALCONY,X_CONST,17.075,32.5,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U08,UF,ROOM-08,UF-W-EXTERIOR,X_CONST,8.15,32.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U08,UF,ROOM-08,UF-EXT-WEST,X_CONST,8.15,32.5,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-U09,UF,ROOM-09,UF-W-ROOM-BALCONY,X_CONST,17.075,42.7,3.6,0.9,2.1,1.05,2.25,East into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U09,UF,ROOM-09,UF-W-EXTERIOR,X_CONST,8.15,42.7,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U09,UF,ROOM-09,UF-EXT-WEST,X_CONST,8.15,42.7,4.5,1.6,1.2,1.8,1.4,West exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-U10,UF,ROOM-10,UF-E-ROOM-BALCONY,X_CONST,66.925,23.5,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U10,UF,ROOM-10,UF-E-EXTERIOR,X_CONST,75.85,23.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U10,UF,ROOM-10,UF-EXT-EAST,X_CONST,75.85,23.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-U11,UF,ROOM-11,UF-E-ROOM-BALCONY,X_CONST,66.925,32.5,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U11,UF,ROOM-11,UF-E-EXTERIOR,X_CONST,75.85,32.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U11,UF,ROOM-11,UF-EXT-EAST,X_CONST,75.85,32.5,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-U12,UF,ROOM-12,UF-E-ROOM-BALCONY,X_CONST,66.925,42.7,3.6,0.9,2.1,1.05,2.25,West into balcony,Blocks when closed,PROPOSED CORRECTION,Courtyard-facing balcony door
-W-U12,UF,ROOM-12,UF-E-EXTERIOR,X_CONST,75.85,42.7,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
+W-U12,UF,ROOM-12,UF-EXT-EAST,X_CONST,75.85,42.7,4.5,1.6,1.2,1.8,1.4,East exterior,Fixed glazing,PROPOSED CORRECTION,Upper exterior window
 D-13A,UF,ROOM-12,UF-ROOM12-NORTH,Y_CONST,69.95,47.475,3.6,0.9,2.1,1.05,2.25,North concealed panel,State controlled,OWNER DECISION location; dimensions proposed,ROOM 12 into vestibule
 D-13C,UF,VEST-13,UF-VEST13-WEST,X_CONST,66.925,48.45,3.6,0.9,2.1,1.05,2.25,West open passage,No threshold collision,PROPOSED CORRECTION,Vestibule to east balcony
-D-13B,UF,ROOM-13,UF-ROOM13-SOUTH,Y_CONST,56.35,50.95,3.6,0.9,2.1,1.05,2.25,North concealed inward,State controlled,OWNER DECISION location; dimensions proposed,North balcony hall into ROOM 13
-D-U-STAIR,UF,U-STAIR-LANDING,UF-NORTH-LANDING-EDGE,Y_CONST,24,50.95,3.6,1.2,2.1,1.35,2.25,North from balcony hall,Open passage,PROPOSED CORRECTION,Upper stair landing access
+D-13B,UF,ROOM-13,UF-NORTH-HALL-ROOMS,Y_CONST,56.35,50.95,3.6,0.9,2.1,1.05,2.25,North concealed inward,State controlled,OWNER DECISION location; dimensions proposed,North balcony hall into ROOM 13
+D-U-STAIR,UF,U-STAIR-LANDING,UF-NORTH-HALL-ROOMS,Y_CONST,24,50.95,3.6,1.2,2.1,1.35,2.25,North from balcony hall,Open passage,PROPOSED CORRECTION,Upper stair landing access
 P-G-W-CROSS-01,GF,WEST-CROSS-BAY-01,GF-W-COURTYARD-FACADE,X_CONST,19.85,28,0,1.5,2.4,1.65,2.55,East open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
 P-G-W-CROSS-02,GF,WEST-CROSS-BAY-02,GF-W-COURTYARD-FACADE,X_CONST,19.85,37,0,1.5,2.4,1.65,2.55,East open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
 P-G-E-CROSS-01,GF,EAST-CROSS-BAY-01,GF-E-COURTYARD-FACADE,X_CONST,64.15,28,0,1.5,2.4,1.65,2.55,West open passage,No collision,OWNER APPROVAL REQUIRED,Transverse connector bay
