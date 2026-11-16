@@ -243,7 +243,7 @@ The following documentation deliverables are now present on main. These close pl
 - Verse source compilation and all runtime tests.
 - Performance/memory profiling, island validation and release authorization.
 
-The R3 brief is the current execution sequence. Historical task rows below this addendum remain useful as historical audit evidence but must not override the current R2.3/R3 authority.
+The R3 brief is the current execution sequence. SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md resolves the service-control-room ambiguity: GF-SERVICE-BAY is playable; U-SERVICE remains sealed. Historical task rows below this addendum remain useful as historical audit evidence but must not override the current R2.3/R3 authority.
 
 
 ## R3 static integration audit completion — 2026-11-16
