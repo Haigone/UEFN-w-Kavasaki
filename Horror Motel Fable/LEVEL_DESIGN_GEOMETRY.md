@@ -148,9 +148,9 @@ Owner-approved only as to **location**. Proposed dimensions:
 - Floor-to-floor rise 3.60 m = 20 risers × 0.18 m.
 - 10 risers per flight; 9 goings × 0.28 m = 2.52 m run per flight.
 - Intermediate U-turn landing 2.70×1.20 m at Z=1.80.
-- Stair flight/landing envelope 2.70×3.72 m. Bottom and top approach each target ≥1.20 m.
+- Stair flight/landing envelope 2.70×3.72 m. Bottom and top approach each target ≥1.20 m. The upper south approach is 1.20 m from the wall face at Y51.10 to the slab cut at Y52.30.
 - Handrails both sides; 1.00 m target height. Headroom ≥2.20 m measured vertically above nosings and landings.
-- Proposed placement: X=22.65–25.35, Y=52.00–55.72; lower and upper access approach from south. Upper slab cut X=22.50–25.50,Y=51.85–55.87 (3.00×4.02 m) through the 0.25 m slab; guardrail west/east/north, south edge open to the landing. Exact stair handedness and support layout require owner approval and editor verification.
+- Proposed placement: X=22.65–25.35, Y=52.45–56.17; lower and upper access approach from south. Upper slab cut X=22.50–25.50,Y=52.30–56.32 (3.00×4.02 m) through the 0.25 m slab; guardrail west/east/north, south edge open to the landing. Exact stair handedness and support layout require owner approval and editor verification.
 The earlier 5.32 m run is mathematically inconsistent with two flights of nine goings each: 18×0.28=5.04 m total horizontal going, not 5.32 m. The U-turn assembly's plan depth is 2.52+1.20=3.72 m.
 
 ## 9. Vertical levels, slabs and flat roof
