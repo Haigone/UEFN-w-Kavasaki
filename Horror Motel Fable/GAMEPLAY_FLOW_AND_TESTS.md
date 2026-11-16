@@ -179,7 +179,7 @@ THE TRUTH:
 - Trigger the distinct owner confrontation/revelation resolution.
 
 THE NEW GUEST:
-- NewGuestAccepted = true only after the explicit invitation interaction and owner-approved team confirmation. No implicit cycle condition.
+- FinaleReady makes the invitation option available. NewGuestAccepted = true only after the resolver receives unanimous explicit affirmative confirmation from all currently connected eligible players. No implicit cycle condition.
 - In co-op, require explicit unanimous affirmative confirmation from every currently connected eligible player. A disconnect removes that player and requires re-confirmation among those remaining; disconnect is never consent.
 - Declining, inactivity, timeout, capture or defeat never count as acceptance.
 - All endings require eligibility validation and an atomic one-time session-wide commit.
