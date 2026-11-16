@@ -1,6 +1,6 @@
 # LEVEL DESIGN R2.2 — DOCUMENT INDEX
 Revision: LD-GEO R2.2 | 2026-11-16
-Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Status: PROPOSED CANONICAL GEOMETRY — FINAL REVIEW HAS OPEN BLOCKING ANOMALIES — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
 
 ## Single candidate geometry authority
 `LEVEL_DESIGN_GEOMETRY.md` R2.2 is the single candidate geometry proposal. It reconciles the source documents but does not claim owner approval. Do not use R1/E1/R2.0/R2.1 coordinates where R2.2 differs.
@@ -18,7 +18,8 @@ Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED
 - `LEVEL_SECTIONS.md` / `SECTIONS_R2.2.svg` — vertical sections and stair/secret route.
 - `STAIR_PLAN_R2.md` — stair proposal.
 - `ROOF_PLAN_R2.md` — flat roof proposal.
-- `GEOMETRY_VALIDATION_REPORT.md` — source conflict register and acceptance status.
+- `GEOMETRY_VALIDATION_REPORT.md` — source conflict register and final review acceptance status.
+- `LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md` — final mathematical audit, blocking anomalies, owner options and recommendations.
 
 ## Source files retained as historical references
 `EXECUTIVE_BUILD_DOSSIER.md` and `EXECUTIVE_FLOORPLANS.md` contain conflicting earlier allocations. Their values are not to be used for placement without reconciliation to R2.2.
@@ -27,9 +28,10 @@ Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED
 North stair location; continuous courtyard-facing upper balcony; ROOM 13 in north connector; flat roof; THE GUEST intended to use both floors.
 
 ## Approval and execution documents
-- `OWNER_DECISION_GATE_R2.2.md` — exact owner decisions GEO-A01–A15 and ending decisions END-A01/END-A02.
+- `OWNER_DECISION_GATE_R2.2.md` — owner response record for geometry decisions GEO-A01–A21 and ending decisions END-A01/END-A02.
+- `LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md` — detailed rationale supporting the expanded geometry gate.
 - `CLAUDE_R2.2_EXECUTION_PACKET.md` — current Claude task order, preconditions, tests and evidence contract.
 - `CLAUDE_EXECUTION_PROTOCOL.md` — binding division of responsibilities and evidence policy.
 
 ## Approval boundary
-R2.2 remains a proposal. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
+R2.2 remains a proposal. The final review found unassigned floor areas, an inaccessible U-SERVICE marked walkable, two ROOM_COORDINATE_REGISTER errors and balcony turn-pad clipping that must be resolved before geometry freeze. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
