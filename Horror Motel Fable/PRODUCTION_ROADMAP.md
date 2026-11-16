@@ -222,3 +222,19 @@ This addendum supersedes the R2.3 override above only for narrative/ending appro
 6. Complete solo/2-player/4-player QA, memory/performance profiling, island validation and owner release approval.
 
 The repository now has approved design decisions; it does not claim that any UEFN implementation, compile, playtest, performance pass or publication has occurred.
+
+
+## R3 supersession and current execution order — 2026-11-16
+
+The older phase narrative above is a historical roadmap snapshot. It contains pre-R2.3 statements that geometry was still awaiting owner approval; those statements are superseded. LD-GEO R2.3 and GEO-A01–GEO-A21 are owner-approved design. END-A01 and END-A02 are approved. NCP-A01–A09 are canonical under express delegation.
+
+Use CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md as the exact current sequence. Current critical path:
+1. Native UEFN project/editor baseline and verified backup (P0).
+2. R3 integration integrity report: geometry CSVs, furnishing fit, IN/EVT/Verse crosswalk, objective flags, UI strings, audio/lighting cues, device binding completeness (P0).
+3. R2.3 greybox and player traversal proof (P0).
+4. Target-version Verse/NPC/UI/device minimal proofs (P0).
+5. Core systems and all five puzzles, then AI/capture/rescue/checkpoints/endings (P1).
+6. Asset source/license acquisition, THE GUEST production, room/exterior fit-out, audio/lighting/UI polish (P1/P2).
+7. Solo/2P/4P QA, memory/performance, island validation and owner release approval (P0 final).
+
+No calendar completion estimate is claimed. No editor-dependent gate passes from documentation alone.
