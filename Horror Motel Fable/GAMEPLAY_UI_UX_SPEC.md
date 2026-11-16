@@ -135,7 +135,7 @@ Re-inspection opens the same entry without duplicate flags, rewards or events. E
 ### 5.3 Evidence categories
 - Mandatory progression clue: required for access/puzzle; readable in-world and in journal.
 - Optional lore: never blocks ESCAPE.
-- Truth evidence: the three approved investigation entries gate THE_TRUTH through TruthChainComplete. They remain optional to the core ESCAPE route and are never represented as mandatory story progression.
+- Truth evidence: the recommended ROOM 09 diary, ROOM 11 drawing and ROOM 06 archive may gate THE_TRUTH through TruthChainComplete only after END-A02 owner approval. Until then, do not treat any of these clues as mandatory ending evidence.
 - Structural states (SecretPanelOpened, PhotoSequenceSolved, OwnerIdentityRevealed) are not evidence pickups and must not be double-counted.
 
 ### 5.4 Known evidence entries to reconcile
@@ -255,7 +255,7 @@ Before implementation, reconcile/create:
 - [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) and [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv): cue trigger, priority, concurrency and readability rules.
 
 ## 13. Open issues — do not silently assume
-1. END-A02 is APPROVED: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. The gate is optional for core progression/ESCAPE and required only for THE_TRUTH.
+1. END-A02 is PENDING owner approval. Recommended formula: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. Do not implement this as a mandatory THE_TRUTH gate until OWNER_DECISION_PACKET_R1.md is explicitly approved and OWNER_DECISION_GATE_R2.2.md is updated.
 2. Use OBJECTIVE_AND_EVENT_CATALOG.md for the canonical Act II predicate; do not gate on every room 01–06 inspection.
 3. Room 01 CRT and Room 04 phone now have stable interaction IDs IN-030 and IN-031 and flags CRTFeedSeen, Room04RecordingHeard and Room04TranscriptRead.
 4. Journal binding and final control glyphs must be selected/verified in UEFN.
