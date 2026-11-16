@@ -114,8 +114,8 @@ A row-width check was run against the following current main registers. Every da
 - DOOR_WINDOW_SCHEDULE.csv: 16 columns, 51 rows.
 - wall_schedule.csv: 15 columns, 70 rows.
 - SLAB_SCHEDULE.csv: 11 columns, 5 rows.
-- AUDIO_REGISTER.csv: 11 columns, 9 rows.
-- LIGHTING_REGISTER.csv: 14 columns, 10 rows.
+- AUDIO_REGISTER.csv: 13 columns, 9 rows.
+- LIGHTING_REGISTER.csv: 16 columns, 10 rows.
 
 This verifies row width only. It does not prove semantic correctness, spatial fit, collision, source licensing or engine behaviour. The three legacy IN-021/IN-022/IN-023 interaction rows were also repaired to include separate Target and Action fields. Commit: 4ccbad6a9af1d2fabcaf26c9fe1b332a750139d5.
 
