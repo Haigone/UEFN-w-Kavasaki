@@ -105,6 +105,9 @@ unique_keys = {
 for name, key in unique_keys.items():
     require_unique(name, data[name][1], key)
 
+opening_rows_for_ids = read_csv("DOOR_WINDOW_SCHEDULE.csv")[1]
+require_unique("DOOR_WINDOW_SCHEDULE.csv", opening_rows_for_ids, "Opening_ID")
+
 expected_counts = {
     "ROOM_COORDINATE_REGISTER.csv": 57,
     "room_furnishing_schedule.csv": 183,
@@ -219,13 +222,21 @@ def read_text(relative: str) -> str:
 
 crosswalk = read_text("EVENT_INTERACTION_VERSE_CROSSWALK_R1.md")
 event_catalog = read_text("EVENT_AND_STATE_TRANSITION_CATALOG_R2.md")
+crosswalk_row_ids = re.findall(r"^\|\s*(IN-\d{3})\s*\|", crosswalk, flags=re.MULTILINE)
 for interaction_id in sorted(interaction_ids):
-    if interaction_id and interaction_id not in crosswalk:
-        fail(f"EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: missing {interaction_id}")
-event_ids = set(re.findall(r"EVT-\d{3}", event_catalog))
+    if interaction_id and interaction_id not in crosswalk_row_ids:
+        fail(f"EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: missing row for {interaction_id}")
+if len(crosswalk_row_ids) != len(set(crosswalk_row_ids)):
+    fail("EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: duplicate interaction mapping rows")
+if set(crosswalk_row_ids) != interaction_ids:
+    fail(f"crosswalk mapping mismatch: missing={sorted(interaction_ids-set(crosswalk_row_ids))}, extra={sorted(set(crosswalk_row_ids)-interaction_ids)}")
+event_id_list = re.findall(r"EVT-\d{3}", event_catalog)
+event_ids = set(event_id_list)
 expected_event_ids = {f"EVT-{n:03d}" for n in range(1, 52)}
 if event_ids != expected_event_ids:
     fail(f"event catalog ID coverage mismatch: missing={sorted(expected_event_ids-event_ids)}, extra={sorted(event_ids-expected_event_ids)}")
+if len(event_id_list) != len(event_ids):
+    fail("event catalog contains duplicate EVT identifiers")
 
 # Check all CSV rows have the same number of columns through DictReader extras.
 # The markdown event crosswalk and official engine behavior require semantic/editor proof.
