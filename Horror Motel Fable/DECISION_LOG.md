@@ -74,3 +74,7 @@ These entries do not authorize asset purchases, PR merge, geometry edits or engi
 
 ### DEC-021 status clarification
 Latest live metadata reports PR #1 `mergeable=true`, not mergeable=false. The no-merge recommendation remains unchanged because the branch is 49 ahead / 94 behind, draft and unreviewed, and still based on R2.0 rather than current R2.1. The block is readiness and governance, not Git conflict status.
+
+
+### DEC-021 final status correction
+The latest live check returned `mergeable=false` (earlier metadata had returned true); compare was 49 ahead / 100 behind main. Maintain the no-merge decision. Regardless of the fluctuating flag, PR #1 remains draft/unreviewed and based on R2.0 rather than R2.1.
