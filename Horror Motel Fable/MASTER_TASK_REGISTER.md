@@ -100,7 +100,7 @@ Latest PR revision has blocked six west-wing wardrobe placements with blank coor
 
 ## R2.2 / final documentary audit task additions — 2026-11-16
 
-These tasks supplement prior IDs. Geometry R2.2 is a candidate proposal only; all editor execution remains Claude-owned.
+These tasks supplement prior IDs. Historical R2.2 geometry proposal status is superseded by approved LD-GEO R2.3; all editor execution remains Claude-owned.
 
 | ID | Sector | Description | Priority | Dependencies | Deliverable | Status | Acceptance criterion | Required evidence | Owner |
 |---|---|---|---|---|---|---|---|---|---|
@@ -138,7 +138,7 @@ This addendum supersedes earlier R2.0/R2.1 geometry references and the prior DAT
 The current main snapshot shows IN-021/022/023 semantically aligned with the INTERACTION_MASTER_REGISTER.csv header. The previous DATA-002 assertion that those rows were malformed is superseded and must not be used as a work instruction. PZ-03's missing acceptance-test field has been completed. SITE, BLDG-UNION and COURTYARD semantic columns in ROOM_COORDINATE_REGISTER.csv have been corrected. Remaining data validation is referential/topological, not a claim that all CSVs are now fully validated.
 
 ### Current execution boundary
-The current Claude handoff is `CLAUDE_R2.2_EXECUTION_PACKET.md`. Only CLD-001 read-only baseline and CLD-002 read-only integrity audit may proceed before owner approval. CLD-004, final art placements, PR merge and geometry-dependent gameplay placement remain blocked. Claude alone performs UEFN/editor implementation and tests.
+The current Claude handoff is `CLAUDE_R2.3_EXECUTION_PACKET.md`. CLD-001 and CLD-002 are the required baseline/integrity gates before greybox writes; creative approvals NCP-A01–A09 and END-A02 are already recorded. CLD-004, final art placements, PR merge and geometry-dependent gameplay placement remain blocked. Claude alone performs UEFN/editor implementation and tests.
 
 
 ## R2.3 and documentation-control addendum — 2026-11-16
