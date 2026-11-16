@@ -1,4 +1,8 @@
-# MISSING DELIVERABLES REGISTER — THE MOTEL: ROOM 13
+# MISSING DELIVERABLES REGISTER
+
+> **CURRENT STATUS ADDENDUM — 2026-11-16:** NCP-A01–A09 and END-A02 are now APPROVED under the owner's express delegation. Exact canonical content is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; END-A02's three required evidence flags and THE_TRUTH ending sequence are in ENDING_IMPLEMENTATION_SPEC.md; IN-032 Night Audit is in INTERACTION_MASTER_REGISTER.csv and INTERACTION_EXECUTION_SPEC.md. Historical entries below that say these decisions are pending are superseded. Documentation approval does not mean props, audio, assets, Verse or UEFN tests are implemented.
+
+ — THE MOTEL: ROOM 13
 **Baseline:** repository main, 2026-11-16
 
 | ID | Missing / incomplete deliverable | Current evidence | Status | Required completion evidence | Dependency | Owner |
@@ -172,3 +176,12 @@ Old audit sections below this addendum remain historical evidence. Use the curre
 
 | MD-061 | Audio mix/ducking/concurrency policy | PRESENTE — AUDIO_MIX_POLICY.md; actual mix calibration pending | Relative level targets, VO ducking, concurrency, spatial and loop QA defined |
 | MD-062 | Lighting state/intensity/readability specification | PRESENTE — LIGHTING_STATE_SPEC.md; actual editor calibration pending | Relative state targets, transitions, readability and photosensitivity rules defined |
+
+
+## Delegated narrative decision closure — 2026-11-16
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-046 | Approved player-facing narrative/clue copy | COMPLETE — CANON APPROVED NCP-A01–A09 | Create/import authored props, images, readable text, subtitles and journal content; verify in editor. |
+| MD-048 | Approved THE_TRUTH evidence gate and finale | COMPLETE — END-A02 APPROVED; exact 3-clue gate and finale specified | Implement IN-032 and cinematic/actor presentation; run solo/co-op acceptance tests. |
+| MD-053 | Consolidated owner narrative decision | COMPLETE — delegated approval recorded in OWNER_DECISION_PACKET_R1.md | No further owner decision required for NCP-A01–A09 or END-A02. |
+| MD-063 | THE_TRUTH Night Audit interaction | DOCUMENTED — IN-032 in interaction register/execution spec | Implement dedicated control actor/proxy, one-shot event and sequence; verify target UEFN capabilities. |
