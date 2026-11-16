@@ -16,7 +16,7 @@ Read the current main-branch source files and ran structural CSV parsing plus cr
 - Audio cue Audio_ID and Subtitle_String_ID resolution.
 - Lighting cue Light_ID resolution.
 
-This is a static repository audit. It does not run UEFN, prove mesh pivots, wall collision, navmesh, actor reach, Verse compilation, multiplayer replication or gameplay.
+This is a static repository audit. It does not run UEFN, prove mesh pivots, wall collision, navmesh, actor reach, Verse compilation, multiplayer replication or gameplay. Anchor coordinates are PROPOSED TARGETS and require editor pivot/clearance proof.
 
 ## 2. Geometry register checks
 
@@ -55,8 +55,8 @@ All 183 furniture footprints now fit the assigned room's axis-aligned envelope u
 | Event/interaction crosswalk | 32 unique interaction rows; every IN-001–IN-032 present exactly once | PASS — mapping coverage |
 | Event catalog | EVT-001–EVT-051; 51 unique IDs | PASS — structural |
 | Device binding register | 50 rows; 50 unique Device_IDs; 8 columns including Anchor_IDs | PASS — structural |
-| Interaction anchor schedule | 58 rows; 58 unique Anchor_IDs; 12 columns | PASS — structural |
-| THE GUEST spawn/patrol schedule | 25 rows; 25 unique Anchor_IDs; 13 columns | PASS — structural |
+| Interaction anchor schedule | 58 rows; 58 unique Anchor_IDs; 12 columns; 56 numeric anchors resolve inside canonical area bounds; 2 UI/dynamic anchors | PASS — static coordinates |
+| THE GUEST spawn/patrol schedule | 25 rows; 25 unique Anchor_IDs; all 25 area IDs resolve and numeric positions fit assigned bounds | PASS — static coordinates |
 | UI string table | 100 unique String_ID rows | PASS — structural |
 
 ### Logic conflicts resolved in this pass
