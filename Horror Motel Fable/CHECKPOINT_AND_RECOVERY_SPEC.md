@@ -13,7 +13,7 @@ Checkpoints snapshot authoritative session progression. Snapshot is immutable un
 | CP04 | PZ-04 solved / ROOM 13 reveal committed | PhotoSequenceSolved, OwnerIdentityRevealed, ServiceKey, TruthChainComplete if evidence complete |
 
 ## 3. Snapshot contents
-CurrentAct; completed objective flags; shared quest inventory and item states; puzzle states; fuse slot states; checkpoint ID; truth evidence flags; gate state; ending remains NONE unless already safely selected (normally checkpoints occur before ending). Personal battery charge may be restored to a safe baseline; document the actual policy.
+CurrentAct; completed objective flags; shared quest inventory and item states; puzzle states; fuse slot states; checkpoint ID; truth evidence flags; gate state; ending remains NONE unless already safely selected (normally checkpoints occur before ending). Personal flashlight charge is snapshotted per player and restored to the exact checkpoint value (clamped to 0–100); checkpoint restore never grants a free refill.
 
 ## 4. Restore order
 1. Disable gameplay triggers and freeze monster.
