@@ -98,7 +98,7 @@ At the final sequence, present only endings whose full eligibility predicates ar
 
 **END-A01 owner-approved quorum (2026-11-16):** strict majority of currently connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. Tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. Disconnect removes the voter and recalculates/re-prompts; disconnect is never consent. Solo selection is direct. Ending commit is atomic and one-shot.
 
-**END-A02 remains pending owner approval.** Do not implement mandatory truth-evidence pickups until the owner approves OWNER_DECISION_PACKET_R1.md. The current recommended evidence proposal is three optional-investigation clues (ROOM 09 diary, ROOM 11 drawing, ROOM 06 missing-guest archive). Keep physical route, photo puzzle and identity reveal as independent progression gates.
+**END-A02 APPROVED under express owner delegation (2026-11-16).** Implement `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound` exactly. These three discoveries gate THE_TRUTH only; they never gate core progression or ESCAPE. Keep physical route, photo puzzle and identity reveal as independent progression gates. Add `NightAuditActivated` as the one-shot IN-032 state after THE_TRUTH commit.
 
 ## 10. Adaptive tension
 Inputs: time without meaningful progress, capture events, puzzle stalls, monster sightings and noise/detection events.
