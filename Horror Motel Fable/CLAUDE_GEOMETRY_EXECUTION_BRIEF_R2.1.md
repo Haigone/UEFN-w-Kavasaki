@@ -1,3 +1,5 @@
+> **SUPERSEDED GEOMETRY NOTICE — R2.2:** This brief was authored for R2.1 and must not be used as a geometry authority. Before any UEFN work, Claude must read `LEVEL_DESIGN_GEOMETRY.md` R2.2, `GEOMETRY_VALIDATION_REPORT.md`, `ROOM_COORDINATE_REGISTER.csv`, `DOOR_WINDOW_SCHEDULE.csv`, `wall_schedule.csv`, `LEVEL_SECTIONS.md`, and both R2.2 floor plans. R2.2 is a proposal pending owner approval; do not build/freeze it as final until approval is explicit.
+
 # CLAUDE EXECUTION BRIEF — LEVEL GEOMETRY R2.1
 Project: THE MOTEL: ROOM 13
 Role: execution instructions for Claude in UEFN
