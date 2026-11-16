@@ -1,6 +1,6 @@
-# LEVEL DESIGN R2.2 — DOCUMENT INDEX
+# LEVEL DESIGN R2.2 — SUPERSEDED BY R2.3 — DOCUMENT INDEX
 Revision: LD-GEO R2.2 | 2026-11-16
-Status: PROPOSED CANONICAL GEOMETRY — FINAL REVIEW HAS OPEN BLOCKING ANOMALIES — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Status: HISTORICAL R2.2 INDEX — OWNER APPROVAL RECORDED; CANONICAL SOURCE IS LD-GEO R2.3.
 
 ## Single candidate geometry authority
 `LEVEL_DESIGN_GEOMETRY.md` R2.2 is the single candidate geometry proposal. It reconciles the source documents but does not claim owner approval. Do not use R1/E1/R2.0/R2.1 coordinates where R2.2 differs.
@@ -35,3 +35,5 @@ North stair location; continuous courtyard-facing upper balcony; ROOM 13 in nort
 
 ## Approval boundary
 R2.2 remains a proposal. The final review found unassigned floor areas, an inaccessible U-SERVICE marked walkable, one ROOM_COORDINATE_REGISTER dimension mismatch (VEST-13; the COURTYARD schema row is now corrected) and balcony turn-pad clipping that must be resolved before geometry freeze. The geometry must not be called approved or engine-verified until the owner confirms the listed decisions and Claude tests the approved build in UEFN.
+
+> **Superseded:** owner approval on 2026-11-16 was synchronized into LD-GEO R2.3. Use LEVEL_DESIGN_R2.3_INDEX.md and LD_GEO_R2.3_APPROVAL_RECORD.md as the current authority. R2.2 remains audit history only.
