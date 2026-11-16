@@ -64,3 +64,8 @@ String_ID,Category,English_Text,Context,Implementation_Notes
 "UI_NEW_GUEST_DECLINE","Choice","LEAVE THE KEY","THE NEW GUEST","Explicit decline; never treated as acceptance"
 "UI_VOTE_TIE","Feedback","No decision was reached. Choose again.","Ending vote","Do not silently choose THE TRUTH"
 "UI_VOTE_WAIT","Feedback","Waiting for the group...","Ending vote","Do not expose absent players as consent"
+"UI_PHONE_WELCOME_SUB","Subtitle","Welcome. We've been expecting you.","IN-002","Exact approved reception phone line"
+"UI_ESCAPE_RADIO_SUB","Subtitle","Thank you for staying at the Raven Motel. We hope to see you again soon.","ESCAPE ending","Exact approved ESCAPE radio line"
+"UI_VOTE_TIMEOUT","Feedback","No decision was reached. Choose again.","Ending vote","Timeout follows END-A01; ESCAPE only if eligible, otherwise reopen"
+"UI_TRUTH_LOCKED","Feedback","The evidence is incomplete.","Ending selector","Do not reveal missing clue locations"
+"UI_ENDING_WAITING","Feedback","Waiting for the group...","Ending vote","No disconnected/inactive player is counted as consent"
