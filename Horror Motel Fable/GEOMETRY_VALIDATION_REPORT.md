@@ -1,4 +1,4 @@
-# GEOMETRY VALIDATION REPORT — CANONICAL PROPOSAL R2.2
+# GEOMETRY VALIDATION REPORT — OWNER-APPROVED CANONICAL GEOMETRY R2.3
 Audit date: 2026-11-16
 Scope: document and coordinate reconciliation only.
 Status: **OWNER-APPROVED LD-GEO R2.3 — DOCUMENTARY GEOMETRY RECONCILED — NOT UEFN-VERIFIED**
@@ -95,12 +95,12 @@ The following are still unapproved numerical/layout proposals. The five high-lev
 13. ROOM 12 → ROOM 13 secret-route vestibule, door/panel centres, concealment treatment and clearances.
 14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
 
-## 8. R2.2 document-level integrity checks (performed after schedule updates)
-- ROOM_COORDINATE_REGISTER.csv: 52 data rows; all rows now match the 16-column header. The COURTYARD row has the Material_Asset_ID placeholder NA and is schema-aligned (correction present in main at commit 5ac16543). VEST-13 still reports Length_m=1.50 although its FIF Y bounds 47.55–49.20 derive 1.65 m. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
+## 8. R2.3 document-level integrity checks (performed after schedule updates)
+- ROOM_COORDINATE_REGISTER.csv: 57 data rows; all rows match the 16-column header. The COURTYARD row has the Material_Asset_ID placeholder NA and is schema-aligned (correction present in main at commit 5ac16543). VEST-13 reports Length_m=1.65, matching its FIF Y bounds 47.55–49.20. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
 - coordinate_schedule.csv: 55 data rows; all rows match the 14-column header. Cross-bays, balcony turn-pad union components, the UPPER_NORTH_HALL functional alias, service reserves and south-end buffers are represented; aliases/components do not create duplicate floor collision. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 51 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 51 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
-- wall_schedule.csv: 70 unique wall IDs; all rows match the 15-column header. Upper room partition IDs now follow ROOM 07–12 numbering.
+- wall_schedule.csv: 72 unique wall IDs; all rows match the 15-column header. Upper room partition IDs now follow ROOM 07–12 numbering.
 - SLAB_SCHEDULE.csv: 5 explicit slab/void records, including the upper stairwell cut; the U footprint polygon is shared by ground, upper and roof slabs, with the courtyard excluded.
 - All 51 opening Wall_ID values resolve to an existing wall. All 51 opening centres lie on the centre-line of their host wall; every clear opening span fits within its host wall segment and its vertical extent stays within the wall's Z range. All 51 wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
@@ -123,7 +123,7 @@ The existing OWNER_DECISION_GATE_R2.2.md remains the owner response record for G
 
 - ROOM_COORDINATE_REGISTER.csv: VEST-13 length is 1.65 m; five sealed-reserve components are explicitly registered (two GF, one UF west, two UF east).
 - coordinate_schedule.csv mirrors the five reserve components and the U-SERVICE no-navmesh state.
-- wall_schedule.csv contains 71 unique wall IDs; UF-W-SEALED-RESERVE-WEST closes the west upper pocket between existing wall runs.
+- wall_schedule.csv contains 72 unique wall IDs; UF-W-SEALED-RESERVE-WEST and UF-E-SEALED-RESERVE-WEST close the west and east upper reserves between existing wall runs.
 - DOOR_WINDOW_SCHEDULE.csv remains 51 openings; no new access openings were introduced for sealed reserves. Existing openings retain their host-wall relationships.
 - U-WEST-TURN and U-EAST-TURN are clipped to X=20.00 and X=64.00 respectively; courtyard void remains excluded from UF-SLAB.
 - Stair handedness and approach zones are explicitly fixed in STAIR_PLAN_R2.md; editor traversal remains unverified.
