@@ -1,44 +1,44 @@
 Opening_ID,Floor,Host_Area,Center_X_m,Center_Y_m,Sill_Z_m,Clear_Width_m,Clear_Height_m,Orientation,Hand_or_Swing,Type,Status
-D-G01,GF,ROOM-01,10.95,23.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G01,GF,ROOM-01,19.85,23.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G02,GF,ROOM-02,10.95,32.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G02,GF,ROOM-02,19.85,32.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G03,GF,ROOM-03,10.95,41.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G03,GF,ROOM-03,19.85,41.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G04,GF,ROOM-04,73.05,23.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G04,GF,ROOM-04,64.15,23.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G05,GF,ROOM-05,73.05,32.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G05,GF,ROOM-05,64.15,32.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G06,GF,ROOM-06,73.05,41.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G06,GF,ROOM-06,64.15,41.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G07,GF,RECEPTION,29,48.15,0,1.6,2.3,North,North into reception,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-G-RCP,GF,RECEPTION,33,48.15,1,2.4,1.5,South,Fixed glazing south,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G08,GF,OWNER-OFFICE,37.85,54,0,0.9,2.1,East,East into office,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G09,GF,STORAGE,47.15,51,0,0.9,2.1,East,East into storage,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G10,GF,ELECTRICAL,57.15,51,0,1,2.1,East,East into electrical,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G11,GF,GF-WEST-LOBBY,20.00,54,0,1.2,2.1,East,East into reception,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G12,GF,GF-NORTH-WEST-LINK,9.55,48.15,0,1.2,2.1,North,North into link,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G13,GF,GF-NORTH-EAST-LINK,74.45,48.15,0,1.2,2.1,North,North into link,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G14,GF,ELECTRICAL,73.05,54,0,0.9,2.1,West,West into electrical,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U07,UF,ROOM-07,17.075,23.5,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U07,UF,ROOM-07,8.15,23.5,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U08,UF,ROOM-08,17.075,32.5,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U08,UF,ROOM-08,8.15,32.5,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U09,UF,ROOM-09,17.075,42.7,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U09,UF,ROOM-09,8.15,42.7,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U10,UF,ROOM-10,66.925,23.5,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U10,UF,ROOM-10,75.85,23.5,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U11,UF,ROOM-11,66.925,32.5,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U11,UF,ROOM-11,75.85,32.5,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U12,UF,ROOM-12,66.925,42.7,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-W-U12,UF,ROOM-12,75.85,42.7,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-13A,UF,ROOM-12,69.95,47.475,3.6,0.9,2.1,North,North concealed panel,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-13C,UF,VEST-13,66.925,48.45,3.6,0.9,2.1,West,West open passage,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-13B,UF,ROOM-13,56.35,50.95,3.6,0.9,2.1,North,North concealed inward,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-U-STAIR,UF,U-STAIR-LANDING,24,50.95,3.6,1.2,2.1,North,North from balcony hall,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-P-G-W-CROSS-01,GF,WEST-CROSS-BAY-01,19.85,28,0,1.5,2.4,East,East open passage,OpenPassage,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-P-G-W-CROSS-02,GF,WEST-CROSS-BAY-02,19.85,37,0,1.5,2.4,East,East open passage,OpenPassage,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-P-G-E-CROSS-01,GF,EAST-CROSS-BAY-01,64.15,28,0,1.5,2.4,West,West open passage,OpenPassage,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-P-G-E-CROSS-02,GF,EAST-CROSS-BAY-02,64.15,37,0,1.5,2.4,West,West open passage,OpenPassage,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G15,GF,GF-WEST-LOBBY,10.95,54.00,0.00,0.90,2.10,East,East into lobby,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
-D-G16,GF,GF-SERVICE-BAY,52.15,53.775,0.00,0.90,2.10,North,North into service bay,Door,R2.2 mirror; canonical source DOOR_WINDOW_SCHEDULE.csv
+D-G01,GF,ROOM-01,10.95,23.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G01,GF,ROOM-01,19.85,23.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G02,GF,ROOM-02,10.95,32.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G02,GF,ROOM-02,19.85,32.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G03,GF,ROOM-03,10.95,41.5,0,0.9,2.1,East,East into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G03,GF,ROOM-03,19.85,41.5,0.9,1.6,1.2,East,East facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G04,GF,ROOM-04,73.05,23.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G04,GF,ROOM-04,64.15,23.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G05,GF,ROOM-05,73.05,32.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G05,GF,ROOM-05,64.15,32.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G06,GF,ROOM-06,73.05,41.5,0,0.9,2.1,West,West into room,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G06,GF,ROOM-06,64.15,41.5,0.9,1.6,1.2,West,West facing courtyard,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G07,GF,RECEPTION,29,48.15,0,1.6,2.3,North,North into reception,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-G-RCP,GF,RECEPTION,33,48.15,1,2.4,1.5,South,Fixed glazing south,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G08,GF,OWNER-OFFICE,37.85,54,0,0.9,2.1,East,East into office,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G09,GF,STORAGE,47.15,51,0,0.9,2.1,East,East into storage,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G10,GF,ELECTRICAL,57.15,51,0,1,2.1,East,East into electrical,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G11,GF,GF-WEST-LOBBY,20.00,54,0,1.2,2.1,East,East into reception,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G12,GF,GF-NORTH-WEST-LINK,9.55,48.15,0,1.2,2.1,North,North into link,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G13,GF,GF-NORTH-EAST-LINK,74.45,48.15,0,1.2,2.1,North,North into link,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G14,GF,ELECTRICAL,73.05,54,0,0.9,2.1,West,West into electrical,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U07,UF,ROOM-07,17.075,23.5,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U07,UF,ROOM-07,8.15,23.5,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U08,UF,ROOM-08,17.075,32.5,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U08,UF,ROOM-08,8.15,32.5,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U09,UF,ROOM-09,17.075,42.7,3.6,0.9,2.1,East,East into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U09,UF,ROOM-09,8.15,42.7,4.5,1.6,1.2,West,West exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U10,UF,ROOM-10,66.925,23.5,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U10,UF,ROOM-10,75.85,23.5,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U11,UF,ROOM-11,66.925,32.5,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U11,UF,ROOM-11,75.85,32.5,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U12,UF,ROOM-12,66.925,42.7,3.6,0.9,2.1,West,West into balcony,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+W-U12,UF,ROOM-12,75.85,42.7,4.5,1.6,1.2,East,East exterior,Window,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-13A,UF,ROOM-12,69.95,47.475,3.6,0.9,2.1,North,North concealed panel,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-13C,UF,VEST-13,66.925,48.45,3.6,0.9,2.1,West,West open passage,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-13B,UF,ROOM-13,56.35,50.95,3.6,0.9,2.1,North,North concealed inward,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-U-STAIR,UF,U-STAIR-LANDING,24,50.95,3.6,1.2,2.1,North,North from balcony hall,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-W-CROSS-01,GF,WEST-CROSS-BAY-01,19.85,28,0,1.5,2.4,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-W-CROSS-02,GF,WEST-CROSS-BAY-02,19.85,37,0,1.5,2.4,East,East open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-E-CROSS-01,GF,EAST-CROSS-BAY-01,64.15,28,0,1.5,2.4,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+P-G-E-CROSS-02,GF,EAST-CROSS-BAY-02,64.15,37,0,1.5,2.4,West,West open passage,OpenPassage,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G15,GF,GF-WEST-LOBBY,10.95,54.00,0.00,0.90,2.10,East,East into lobby,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
+D-G16,GF,GF-SERVICE-BAY,52.15,53.775,0.00,0.90,2.10,North,North into service bay,Door,R2.2 mirror; authority DOOR_WINDOW_SCHEDULE.csv
