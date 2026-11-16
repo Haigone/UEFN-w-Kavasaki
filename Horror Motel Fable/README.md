@@ -13,6 +13,7 @@
 5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
 6. [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md) — current ordered execution instructions, canonical decisions, gates, fallbacks and required return package.
 7. [R3_CURRENT_STATUS_AND_REMAINING_WORK.md](R3_CURRENT_STATUS_AND_REMAINING_WORK.md) — canonical current counts, approved decisions, status boundaries and dependency-ordered remaining work.
+8. [tools/validate_r3_repository.py](tools/validate_r3_repository.py) — repeatable standard-library CSV/reference integrity check; does not validate UEFN runtime.
 8. [R3_INTEGRATION_INTEGRITY_REPORT.md](R3_INTEGRATION_INTEGRITY_REPORT.md) — static cross-register validation results and remaining blockers.
 8. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — R2.3 geometry-specific gate reference; superseded for overall execution order by [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md).
 9. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
