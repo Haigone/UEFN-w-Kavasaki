@@ -83,7 +83,7 @@ Initial tuning anchors (playtest targets): patrol interval 35 s at DORMANT to 18
 
 - **ESCAPE:** requires CoreEscapeReady (service gate powered and CarKeys used at vehicle ignition) and explicit selection of the vehicle route. It remains eligible when optional truth evidence is incomplete.
 - **THE_TRUTH:** requires FinaleReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady and explicit selection of the truth route. It does not require CarKeys or vehicle ignition.
-- **THE_NEW_GUEST:** requires FinaleReady and NewGuestAccepted through explicit invitation interaction and team confirmation. It does not require CarKeys or vehicle ignition. Capture, defeat, inactivity or timeout never imply consent.
+- **THE_NEW_GUEST:** requires FinaleReady and a unanimous explicit affirmative response to the invitation. NewGuestAccepted is set only after the resolver confirms the quorum. It does not require CarKeys or vehicle ignition. Capture, defeat, inactivity or timeout never imply consent.
 
 **Owner-approved co-op quorum END-A01 (2026-11-16):**
 - ESCAPE and THE_TRUTH: strict majority of currently connected eligible players.
