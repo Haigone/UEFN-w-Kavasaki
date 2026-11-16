@@ -61,7 +61,7 @@ Classification: footprint dimensions are repeated in the dossier and E1 and are 
 | ROOM 06 | 64.30–72.90 | 38.00–45.00 | 8.60×7.00 | PROPOSED CORRECTION |
 | G-CW | 8.30–10.80 | 18.30–48.00 | 2.50×29.40 | DERIVED from R2.1 bounds |
 | G-CE | 73.20–75.70 | 18.30–48.00 | 2.50×29.40 | DERIVED from R2.1 bounds |
-| RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.40×11.40 | PROPOSED CORRECTION |
+| RECEPTION | 20.15–37.70 | 48.30–59.70 | 17.55×11.40 | PROPOSED CORRECTION |
 | OWNER OFFICE | 38.00–47.00 | 48.30–59.70 | 9.00×11.40 | PROPOSED CORRECTION |
 | STORAGE | 47.30–57.00 | 48.30–53.70 | 9.70×5.40 | PROPOSED CORRECTION |
 | ELECTRICAL | 57.30–72.90 | 48.30–59.70 | 15.60×11.40 | PROPOSED CORRECTION |
@@ -108,7 +108,7 @@ The two service reserve zones are non-playable placeholders to close the upper-f
 ## 5. ROOM 12 → ROOM 13 continuous secret route
 Route sequence:
 1. D-13A: concealed panel in ROOM 12 north wall; wall centreline Y=47.55, centre X=69.95, sill Z=3.60, clear 0.90×2.10 m; opens north.
-2. Vestibule: X=67.00–75.70, Y=47.70–49.20, FFL Z=3.60. Clear depth 1.50 m.
+2. Vestibule: X=67.00–72.90, Y=47.55–49.20, FFL Z=3.60. Clear depth 1.50 m.
 3. D-13C: opening through vestibule west wall; wall centreline X=66.90, centre Y=48.45, clear 0.90×2.10 m; opens west into east balcony leg X=64.30–66.85.
 4. Follow the continuous east balcony leg south-to-north to the east turning pad, then west along the north balcony crossbar.
 5. D-13B: concealed door in ROOM 13 south wall; wall centreline Y=50.95, centre X=56.35, clear 0.90×2.10 m; opens north into ROOM 13.
