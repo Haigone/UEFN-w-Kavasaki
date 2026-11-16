@@ -107,3 +107,8 @@ Use one common art-direction pass across packs:
 
 ### Revised geometry correction
 Use the geometry authority and current execution plan only as proposed coordination references. Remove stale values from earlier spec text: balcony 150 cm is superseded by 250 cm clear-width target; legacy 320 cm wall height and 680/710 cm ceiling/roof stack are not approved. Stair run/tread count/landing, vertical stack, bathroom partitions, gate anchor and secret route remain BLOCKED.
+
+
+## Revision 4.0 — canonical geometry gate (2026-11-16)
+
+**This addendum supersedes every earlier sentence in this file that describes LD-GEO R2.0 as an approved geometry authority.** Project geometry status is UNKNOWN / NOT ACCEPTED. LD-GEO R2.0, E1 floorplans, coordinate_schedule.csv, wall_schedule.csv and door_window_schedule.csv are candidate/proposal inputs only. CHAT 02 must publish one versioned canonical plan, coordinated room polygons, wall centre-lines, openings, sections, stair/balcony/roof/bathroom geometry, secret route and gate anchor. Until then, no custom-fit dimensions, module counts, opening variants, pivots tied to wall faces or placement coordinates are final. Balcony 2.50m, upper FFL 3.60m, clear heights and all other numeric targets remain unapproved targets unless CHAT 02 explicitly ratifies them. Generic source-pack inspection may proceed, but do not author final-fit modules or call any proposed coordinate canonical.
