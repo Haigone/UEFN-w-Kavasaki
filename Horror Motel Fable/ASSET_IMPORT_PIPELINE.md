@@ -118,3 +118,8 @@ Only after inventory and geometry approval may original project-specific meshes 
 
 ### Status definitions
 SHORTLISTED_NOT_ACQUIRED; ACQUIRED_LICENSE_PENDING_REVIEW; LICENSE_VERIFIED; SOURCE_INVENTORIED; IMPORT_TEST_REQUIRED; IMPORTED; ENGINE_VERIFIED; ACCEPTED; REJECTED. Listing presence is not acquisition. Acquisition is not compatibility. Import is not acceptance.
+
+
+## Revision 4.0 — current production gate (2026-11-16)
+
+This pipeline does not authorize a bulk import or imply that any source pack is acquired. Current register state is design-only: all asset rows remain NOT IMPORTED and NOT VERIFIED; source candidates are shortlist entries, not rights-cleared inventory. Before acquisition, record owner-confirmed package possession and exact license evidence. Before mapping source meshes to Asset_IDs, inspect actual package contents and dimensions. Generic, geometry-independent samples may be evaluated in a separate test project only by the designated operator; no UEFN tests are part of this document audit. Final-fit architecture, door/window openings, stairs, balcony, roof, bathrooms, gate and ROOM 12/13 route remain blocked until CHAT 02 canonical geometry is approved. Claude must record any later UEFN import evidence; never change status based on a listing or a planned test.
