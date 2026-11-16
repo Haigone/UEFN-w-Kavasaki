@@ -100,7 +100,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 - Show the selector at the authored final choice point after FinaleReady. CarKeys/vehicle ignition are not required to reach the selector.
 - ESCAPE is eligible only when CoreEscapeReady is true. If it is not eligible yet, players may close the selector, collect CarKeys and complete ignition, then reopen the selector.
 - THE_TRUTH is eligible when FinaleReady, TruthChainComplete, Room13RevealComplete, ServiceKeyObtained and ServiceRouteReady are true and the team explicitly selects it; CarKeys and vehicle ignition are not required.
-- THE_NEW_GUEST is eligible after FinaleReady and explicit invitation interaction plus unanimous affirmative confirmation. It must not be triggered by capture, timeout, defeat or failure.
+- THE_NEW_GUEST invitation becomes available after FinaleReady. The resolver records explicit affirmative responses and commits only after unanimous confirmation from every currently connected eligible player. It must not be triggered by capture, timeout, defeat or failure.
 - Apply END-A01 exactly: majority for ESCAPE/THE_TRUTH; unanimous explicit consent for THE_NEW_GUEST; tie/timeout fallback to ESCAPE only if eligible; otherwise reopen choice; disconnect removes voter and recalculates/reconfirms; solo is direct.
 - Ending commit is session-wide, atomic and one-shot.
 
