@@ -101,3 +101,7 @@ Fab listing checks confirm advertised formats and listing metadata only. They do
 - CR-024 remains **BLOCCATO**, but its reason is not a Git merge conflict: GitHub currently reports `mergeable=true`. The branch is still DIVERGED 49 ahead / 94 behind main, the PR is OPEN/DRAFT, and it has no reviews, comments or status checks.
 - CR-033 remains **BLOCCATO** because the PR still references R2.0 while main's current geometry authority is R2.1. “Mergeable” is not equivalent to “safe to integrate”.
 - The PR description now correctly reports 119 asset rows, 20 materials and 286 placement rows (91 unplaced). Its claim that all CSV schemas are normalized is contradicted by 8 malformed source-register rows and malformed GQ-007.
+
+
+### Final mergeability status correction
+The latest live PR check returned `mergeable=false` (earlier check returned true). Compare was 49 ahead / 100 behind main, DIVERGED. Keep CR-024 blocked and recheck the live status before any merge attempt; regardless of the flag, R2.0-vs-R2.1 staleness and unresolved defects independently prevent acceptance.
