@@ -1,7 +1,7 @@
 InteractionID,Act,Location,Target,Action,Prerequisites,RangeM,DurationSec,StateChange,Feedback,RepeatPolicy,Multiplayer,FailureFallback
 IN-001,I,Exterior,Neon/sign sightline,Inspect,Session start,2,0,ArrivalClueSeen,Visual/audio cue,Repeatable,All clients may inspect,Journal flag if sightline trigger fails
 IN-002,I,Reception,Telephone,Answer/Listen,Reception entered,2,0,PhoneMessageHeard,Subtitle plus spatial audio,Once per session,Shared narrative flag,Replay subtitle/transcript
-IN-003,I,Reception,Room 13 key,Inspect/collect,Reception entered,2,1,Room13KeyKnown,Pickup cue and team HUD,Team flag once,Shared,Recovery proxy if actor missing
+IN-003,I,Reception,Room 13 key,Inspect/collect,Reception entered,2,1,Room13Key;Room13KeyKnown,Pickup cue and team HUD,Team flag once,Shared,Recovery proxy if actor missing
 IN-004,II,Reception,Guest register,Inspect,Reception entered,2,0,RegisterCluesSeen,Readable close-up,Repeatable,Shared discovery flag,Journal copy
 IN-005,II,Reception,Desk lock,Enter code,Register clues available,2,0,RegisterSolved,Click or reject cue,Retryable,Atomic lock/team flag,Key recovery only after validated solve
 IN-006,II,Reception,Desk drawer,Collect Office Key,RegisterSolved,2,1,OfficeKey,Pickup cue,Once,Team-owned,Regrant from drawer proxy
@@ -19,6 +19,12 @@ IN-017,V,Room 13,Hidden compartment,Collect Service Key,PhotoSequenceSolved,2,1,
 IN-018,VI,Service route,Gate control,Unlock/activate,PowerRestored; ServiceKey,2,2,GatePowered,Gate movement/cue,Once,Shared,Manual lever fallback
 IN-019,VI,Exterior,Vehicle ignition,Use car keys,CarKeys; GatePowered,2,2,CoreEscapeReady,Engine start cue,Once,Shared,Ignition proxy if actor missing
 IN-020,VI,Final route,Ending selector,Choose ending,Eligibility validated; Ending=NONE,2,0,EndingSelected,Branch-specific UI/audio,Once locked,Team vote/confirmation,ESCAPE default on unresolved tie
-IN-021,Any,Authored hiding spots,Hide/Exit,Player ACTIVE; spot available,2,1,PlayerHidden,Hide/exit cue,Repeatable,Per-player,Force exit on reset/disconnect,
-IN-022,Any,Captured location,Rescue,Target CAPTURED; rescuer ACTIVE,2,5,Target RESCUED,Progress UI/audio,Cancelable,One rescuer commits,90s self-recovery fallback,
-IN-023,Any,Checkpoint,Activate checkpoint,Required flags satisfied,2,0,CheckpointId updated,HUD checkpoint cue,Once per checkpoint,Team-shared,Re-evaluate on restore,
+IN-021,Any,Authored hiding spots,Hide/Exit,Player ACTIVE; spot available,2,1,PlayerHidden,Hide/exit cue,Repeatable,Per-player,Force exit on reset/disconnect
+IN-022,Any,Captured location,Rescue,Target CAPTURED; rescuer ACTIVE,2,5,Target RESCUED,Progress UI/audio,Cancelable,One rescuer commits,90s self-recovery fallback
+IN-023,Any,Checkpoint,Activate checkpoint,Required flags satisfied,2,0,CheckpointId updated,HUD checkpoint cue,Once per checkpoint,Team-shared,Re-evaluate flags and actors idempotently on restore
+IN-024,III,Room 02,Suitcase / Fuse A,Collect,Room accessible; FuseA not TEAM_AVAILABLE,2,1,FuseA,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
+IN-025,III,Storage,Fuse B on shelving beside wet-floor sign,Collect,Storage accessible; FuseB not TEAM_AVAILABLE,2,1,FuseB,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
+IN-026,III,Room 06,Maintenance cabinet / Fuse C,Collect,Room accessible; FuseC not TEAM_AVAILABLE,2,1,FuseC,Pickup cue and team HUD,Once per team,Team-shared,Utility recovery drawer only if the authored pickup is unreachable
+IN-027,III,Utility / storage tool board,Screwdriver,Collect,Utility/storage accessible; Screwdriver not TEAM_AVAILABLE,2,1,Screwdriver,Pickup cue and team HUD; reusable tool,Once per team,Team-shared,Tool board recovery proxy
+IN-028,VI,Exterior / broken group vehicle,Car Keys,Collect,Act VI; CarKeys not TEAM_AVAILABLE; key actor enabled,2,1,CarKeys,Pickup cue and team HUD,Once per team,Team-shared,Vehicle key hook recovery proxy
+IN-029,II,Room 06,Missing guest photo board,Inspect,Room 06 accessible,2,0,MissingGuestEvidenceFound,Readable close-up and journal flag,Repeatable,Shared discovery flag,Journal copy
