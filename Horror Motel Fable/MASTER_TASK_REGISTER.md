@@ -243,3 +243,7 @@ This table supersedes stale task rows above where they still label approved R2.3
 5. Implement authoritative state, interactions, puzzles and endings.
 6. Produce/import assets and integrate room fit-out.
 7. Run full QA, profile performance/memory and island validation.
+
+
+| DOC-018 | Technical integration | Static cross-register audit: geometry openings, furnishing bounds, IN/EVT, device IDs, UI/audio/lighting references and asset inventory | P0 | R3_INTEGRATION_INTEGRITY_REPORT.md | STATIC AUDIT COMPLETE | Editor geometry, mesh pivots, Verse compilation, device configuration and runtime behavior remain open |
+| DOC-019 | Asset governance | Expand master asset inventory and per-asset rights evidence ledger | P1 | asset_manifest.csv (94 IDs), ASSET_MANIFEST_EXECUTIVE.csv, ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv (94 rows) | REGISTER COMPLETE; ALL RIGHTS NOT SOURCED | Complete exact source/license/rights proof per asset before acquisition/import/publication |
