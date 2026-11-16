@@ -80,6 +80,7 @@ The repository includes:
 - Audio, lighting, cinematic, asset pipeline, room fit-out and service-control location specifications.
 - QA acceptance suites, performance/release baseline and R3 static integrity report.
 - Claude autonomous execution addendum with explicit decision hierarchy, batch loop, stop conditions and missing THE GUEST model/rig/animation production route.
+- Paste-ready Claude start prompt that directs the executor to begin at GATE A and proceed autonomously without avoidable owner questions.
 - GitHub Actions workflow for repeatable static repository validation on pushes and pull requests.
 
 Presence of a document closes only the corresponding documentation-authoring gap. It does not close implementation or evidence gates.
