@@ -60,7 +60,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - Roof slab: 6.65−6.40 = 0.25 m.
 - Stair rise: 20×0.18 = 3.60 m.
 - Stair flight run: 9×0.28 = 2.52 m; total 18 goings = 5.04 m, not 5.32 m.
-- Vestibule depth: 49.20−47.55 = 1.65 m gross; clear usable depth depends on wall finishes and requires editor verification.
+- Vestibule clear FIF depth: 49.20−47.55 = 1.65 m. Wall centre-lines are offset by half the 0.15 m partition thickness so the vestibule finished faces remain on the registered bounds.
 
 ## 5. Schedule integrity and remaining geometric checks
 - All room bounds use FIF convention; wall schedule uses centre-lines. SLAB_SCHEDULE.csv defines the shared U-shaped floor/roof polygon and courtyard void.
