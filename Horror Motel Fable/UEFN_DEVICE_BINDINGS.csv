@@ -49,4 +49,3 @@ DEV_GUEST_AI,Verse NPC Behavior script component,NPC Character Definition,Assign
 DEV_PRESENTATION_FAILURE,Verse presentation manager,All authored sequences,Readable fallback; never commit reveal before fallback shown,Cinematic_Manager,EVT-040,EDITOR-TEST REQUIRED,NONE
 DEV_RECOVERY_PROXY,Verse manager interaction proxy,All critical actors,Only substitute missing actor after prerequisite validated,Owning_Manager,EVT-039,EDITOR-TEST REQUIRED,DYNAMIC_RECOVERY_ACTORS
 DEV_SVC_DOOR_READER,Button or Verse key check,Storage side of D-G16,Open D-G16 only when ServiceKeyObtained; key is not consumed; does not commit gate progress,Game_Manager,ServiceKey access check,EDITOR-TEST REQUIRED,SVC-DOOR-READER
-
