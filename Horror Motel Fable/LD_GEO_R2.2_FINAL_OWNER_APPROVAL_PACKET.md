@@ -147,10 +147,10 @@ Il tetto piatto e il courtyard void sono coerenti. Parapetto proposto: spessore 
 
 Raccomandazione: mantenere l'aspetto flat con pendenze tecniche nascoste e drenaggio dimensionato prima del freeze; approvare separatamente il divieto di accesso al tetto. Non inventare coordinate di scarico.
 
-### A-10 — Report di validazione non aggiornato rispetto al controllo finale
-**Priorità: ALTA — correzione documentale.**
+### A-10 — Report di validazione precedente non aggiornato
+**Priorità: RISOLTA in questa revisione documentale.**
 
-GEOMETRY_VALIDATION_REPORT.md elenca un set di file esaminati precedente all'indice R2.2, non include tutti i documenti ora controllati e afferma erroneamente che tutte le righe del ROOM_COORDINATE_REGISTER.csv rispettano l'header. Deve essere aggiornato per riflettere A-01 e A-02 e per includere le anomalie A-03–A-09.
+La versione precedente di GEOMETRY_VALIDATION_REPORT.md elencava un set di file superato e affermava erroneamente che tutte le righe del ROOM_COORDINATE_REGISTER.csv rispettassero l'header. Il report è stato aggiornato durante questa revisione: ora include i documenti R2.2 effettivamente esaminati, registra la riga COURTYARD malformata e la discrepanza VEST-13, e dichiara che le anomalie bloccano il freeze. Restano da correggere i registri A-01/A-02; non è più necessario aggiornare il report per questo punto.
 
 ### A-11 — Fit-out interno camere escluso
 **Priorità: NON BLOCCANTE per l'envelope; BLOCCANTE per un freeze completo degli interni.**
@@ -184,12 +184,12 @@ Le decisioni qui sotto sono un riepilogo tematico. Per la risposta formale usare
 **Non congelare R2.2 nello stato attuale.** La struttura matematica principale è coerente, e il percorso ROOM 12 → ROOM 13, le aperture, le quote verticali e i calcoli della scala sono sostanzialmente allineati. Restano però aree fisiche non assegnate, un ambiente U-SERVICE senza accesso ma marcato walkable, due errori nel registro coordinate e il clipping dei turning pad.
 
 Ordine raccomandato:
-1. Correggere A-01 e A-02 senza cambiare la geometria.
+1. Correggere A-01 e A-02 nei registri senza cambiare la geometria.
 2. Ottenere le scelte del proprietario per A-03, A-04 e A-05.
 3. Correggere A-06 e chiarire A-07.
 4. Approvare la configurazione dettagliata della scala e le quote di stack.
 5. Approvare parapetti, drenaggio, accesso tetto e finestre.
-6. Solo dopo, aggiornare registri e planimetrie con le decisioni effettive e produrre un nuovo report di validazione.
+6. Aggiornare registri e planimetrie secondo le decisioni effettive; il report di validazione è già stato aggiornato e dovrà essere ricalcolato dopo le correzioni.
 
 ## 7. Stato di approvazione
 
