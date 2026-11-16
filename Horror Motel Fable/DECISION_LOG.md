@@ -32,3 +32,11 @@ These are recorded as existing written project requirements, not independently r
 - No geometry was changed.
 - No previous decision was silently superseded.
 - This log records audit decisions only. Future design approvals require an explicit owner decision and a revision reference.
+
+
+| DEC-009 | 2026-11-16 | Repository is a Claude-facing specification and execution guide; it is not evidence of implementation | Prevent ambiguity about the purpose of the repository | All production work | Project owner | COMPLETATO CON EVIDENZA |
+| DEC-010 | 2026-11-16 | ChatGPT prepares detailed plans/specifications/evidence criteria only; Claude executes all UEFN editor operations, compilation, playtests, QA, profiling and validation | Align responsibilities with actual tool access and avoid false test claims | UEFN / production / QA | Project owner | COMPLETATO CON EVIDENZA |
+| DEC-011 | 2026-11-16 | Editor-dependent tasks cannot advance without Claude's reproducible evidence; project owner approves design changes and publication | Evidence-based gates and explicit decision authority | All gates | Project owner | COMPLETATO CON EVIDENZA |
+
+## Binding execution protocol
+See `CLAUDE_EXECUTION_PROTOCOL.md` for task packet requirements, Claude's evidence return format, status rules and the execution feedback loop. This protocol clarifies roles without claiming that any UEFN work or test has already been performed.
