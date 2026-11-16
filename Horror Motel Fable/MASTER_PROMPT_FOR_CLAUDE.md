@@ -92,6 +92,8 @@ Use `PRODUCTION_DETAIL_REQUIREMENTS.md` as a mandatory production specification.
 - `room_furnishing_schedule.csv`
 - `door_window_schedule.csv`
 - `asset_manifest.csv`
+- `exterior_prop_schedule.csv`
+- `lighting_audio_schedule.csv`
 - `guest_model_spec.md`
 - `geometry_validation_report.md`
 - `uefn_device_bindings.csv`
