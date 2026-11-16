@@ -111,3 +111,7 @@ All six acts playable in solo and 2–4 player co-op; all mandatory items recove
 - `Room13Key` is the team inventory item; `Room13KeyKnown` is the separate narrative discovery flag. Neither is consumed to unlock ROOM 13.
 - Screwdriver is reusable and is used for the electrical cover and the ROOM 12 concealed panel.
 - These mappings are documentary reconciliation rules; Claude must verify the corresponding actors and event bindings in the actual project.
+
+
+## 16. UI/UX, quest tracker and evidence journal
+The authoritative player-facing presentation contract is defined in [GAMEPLAY_UI_UX_SPEC.md](./GAMEPLAY_UI_UX_SPEC.md). It specifies the persistent HUD, objective tracker, team status, flashlight feedback, Journal/Evidence lifecycle, interaction and pickup feedback, puzzle interfaces, capture/rescue UI, checkpoint/ending presentation, accessibility and UI acceptance tests. UI remains presentation-only; GameManager/session flags remain authoritative.
