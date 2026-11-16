@@ -7,7 +7,7 @@ Status: **DECIDED AND APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16**
 
 This packet records the consolidated creative decisions made under the owner's express instruction to take the remaining decisions. NCP-A01–A09 and END-A02 are approved as written below. This approval does not approve geometry changes, UEFN implementation claims, engine assumptions, asset rights or publication.
 
-## Recommended single decision
+## Recorded creative decision
 
 **DECISION: APPROVE NARRATIVE_CONTENT_PROPOSAL_PACK_R1 as the canonical player-facing narrative/puzzle copy baseline, with the END-A02 evidence gate defined in Section 2 below.**
 
@@ -29,9 +29,9 @@ This approval covers NCP-A01 through NCP-A09. NCP-A10's co-op quorum is supersed
 
 The exact wording, image descriptions, clue placements, puzzle logic, sequence beats and fallback rules are in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. This packet does not paraphrase or silently alter that content.
 
-## 2. END-A02 — OWNER APPROVED mandatory truth evidence (2026-11-16)
+## 2. END-A02 — DELEGATED DECISION: APPROVED mandatory truth evidence (2026-11-16)
 
-The owner explicitly approved exactly three optional-investigation evidence flags as the complete TruthChainComplete formula:
+Under the owner's express instruction to take the remaining decisions, the delegated Creative/Narrative Director approves exactly three optional-investigation evidence flags as the complete TruthChainComplete formula:
 
 - DiaryFound — ROOM 09 diary.
 - ChildRoomClueFound — ROOM 11 drawing.
@@ -41,7 +41,7 @@ Formula: `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGues
 
 Keep SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed / Room13RevealComplete as independent progression/reveal requirements. They are not additional evidence pickups and must not be duplicated inside TruthChainComplete.
 
-This choice is also detailed in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. All three clues must be recoverable, session-shared, idempotent and available as readable/journal text. ESCAPE remains available when the evidence chain is incomplete.
+This choice is also recorded in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md and OWNER_DECISION_GATE_R2.2.md. All three clues must be recoverable, session-shared, idempotent and available as readable/journal text. ESCAPE remains available when the evidence chain is incomplete.
 
 ## 3. Conditions that remain unchanged
 
