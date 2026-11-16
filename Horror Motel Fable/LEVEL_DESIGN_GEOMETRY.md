@@ -179,7 +179,7 @@ Upper slab and roof slab thickness target 0.25 m. The 0.35 m gap between ground 
 ## 11. Owner approval required before geometry freeze
 1. Confirm the ground-floor room orientation: R2.2 uses the E1/R2.1 arrangement (rooms on courtyard side of outer corridor), not the mirrored arrangement in the original dossier.
 2. Confirm the room Y bands and the proposed 2.00 m transverse connector bays.
-3. Confirm upper room width 8.70 m, replacing R2.1's 5.90 m.
+3. Confirm upper room width 8.70 m, side-wing placement and 2 m cross-bays, replacing R2.1's 5.90 m.
 4. Confirm ELECTRICAL reduced to X=57.30–72.90 and the east north-link corridor retained at X=73.20–75.70.
 5. Confirm west lobby, service bay and upper service reserve allocations.
 6. Confirm ROOM 13 dimensions 14.70×8.60 m and exact north connector placement.
