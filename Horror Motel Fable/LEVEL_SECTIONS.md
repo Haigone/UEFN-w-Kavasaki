@@ -34,7 +34,7 @@ Plan/section route:
 Show upper FFL Z3.60, slab thickness0.25, ceiling/roof underside Z6.40, and ground electrical room below. No vertical cut through the floor slab is required; the route remains on the upper floor. Continuous 0.90 m clear door width and 2.20 m minimum overhead target.
 
 ## E–E — Courtyard and continuous balcony
-Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.15–19.70, east leg X64.30–66.85, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m. Ground and upper floor slabs are separate at Z0 and Z3.60.
+Courtyard void X20–64,Y18–48 remains open to sky. Upper balcony union consists of west leg X17.15–19.70, east leg X64.30–66.85, north crossbar X19.70–64.30,Y48.30–50.80 and corner turning pads. Clear path 2.50 m minimum after rail posts. Courtyard-facing guardrail target 1.10 m; centre-lines X19.85, X64.15 and Y48.15 sit outside the 2.50 m walkable polygon. Ground and upper floor slabs are separate at Z0 and Z3.60.
 
 ## F–F — Flat roof
 Flat roof slab underside Z6.40, top Z6.65, parapet top Z7.10. Roof polygon follows the U footprint union; courtyard is excluded. Roof has no player access. Falls and drainage outlets remain to be dimensioned after roof drainage direction is approved.
