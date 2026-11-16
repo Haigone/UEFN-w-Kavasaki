@@ -29,3 +29,24 @@
 | QA-025 | Island validation | UEFN publish validation | No blocking validation errors | NOT RUN |
 
 A test can only be marked PASS after actual execution and evidence capture. Never infer pass from source code presence.
+
+
+## R2.3 documentation coverage extension — NOT RUN
+
+The following controlled test suites are now part of the release evidence plan. Their existence does not imply any test has been executed.
+
+| Suite | Source specification | Required scope | Evidence required | Status |
+|---|---|---|---|---|
+| OBJ | OBJECTIVE_AND_EVENT_CATALOG.md | Six-act progression; objective predicates; single state writer; checkpoint recovery | Solo/2P/4P state trace and objective UI captures | NOT RUN |
+| INT | INTERACTION_EXECUTION_SPEC.md | IN-001–IN-031; preconditions; cancel/failure; idempotency; item preservation | Interaction test log and state snapshots | NOT RUN |
+| AI | MONSTER_AI_BEHAVIOUR_SPEC.md | Dormant/observe/investigate/hunt/chase/search/capture/retreat; nav; fairness; fallback | Target-version capability matrix; AI traces; nav/capture video | NOT RUN |
+| CIN | CINEMATIC_AND_PRESENTATION_SPEC.md | CINE-001–CINE-011; co-op sync; camera/VO failure; fallback; one-shot endings | Sequence event logs; solo/2P/4P captures | NOT RUN |
+| AUD | AUDIO_CUE_SHEET.csv + AUDIO_MIX_POLICY.md | Audio ID/trigger references; priority; ducking; concurrency; spatialization; subtitle fallback | Asset rights/import evidence; mix recordings; concurrency log | NOT RUN |
+| LGT | LIGHTING_CUE_SHEET.csv + LIGHTING_STATE_SPEC.md | Act/power/chase/ending states; readability; photosensitivity; route visibility | UEFN property captures; dark/bright display tests | NOT RUN |
+| AST | ASSET_PRODUCTION_PIPELINE_SPEC.md | Source/license; import; pivot/scale; collision; LOD; material/texture memory | Source/license archive; editor import and profile evidence | NOT RUN |
+| UI | UI_STRING_TABLE.csv + GAMEPLAY_UI_UX_SPEC.md | StringId coverage; safe areas; input prompts; vote; journal; subtitles | UI screenshots at supported resolutions/input modes | NOT RUN |
+| END | ENDING_IMPLEMENTATION_SPEC.md | ESCAPE/THE_TRUTH/THE_NEW_GUEST; END-A01; END-A02 after approval; atomic commit | Solo/2P/4P vote traces and ending sequence evidence | NOT RUN |
+
+### Release gate
+
+A release candidate cannot pass until all required suites are PASS with target UEFN version/build identifiers, reproducible steps, logs/screenshots/video, defects and owner sign-off. A suite blocked by unavailable platform capability must have an approved fallback and a new test; it is not silently marked PASS. Performance/memory and island validation are separate mandatory release gates.
