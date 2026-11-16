@@ -184,3 +184,34 @@ Sequence: the motel resets; one player becomes the next keeper/guest and the neo
 - Escape: high tempo, clear navigation and final uncertainty.
 
 Do not overuse jump scares. Build tension through sound, negative space, sightline control, repeating motifs and fair threat cues.
+
+
+---
+
+# CONSOLIDATED DESIGN ADDENDUM — CHAT 01
+
+**Status:** Canon consolidation. Existing approved identity and beats above remain authoritative.
+
+## Canonical product contract
+THE MOTEL: ROOM 13; Raven Motel, United States, 1986; 02:13 repeating motif; first-person psychological/cooperative survival horror; 1–4 players; solo completion mandatory; target duration 40–50 minutes. Core loop: explore, inspect evidence/items, solve puzzle, open access/restore power, evade THE GUEST, rescue/recover, reveal ROOM 13, select one ending.
+
+## Canonical act order
+1. ACT I — THE ARRIVAL (0–8)
+2. ACT II — THE REGISTER (8–17)
+3. ACT III — THE POWER (17–27)
+4. ACT IV — THE SECOND FLOOR (27–36)
+5. ACT V — ROOM 13 (36–43)
+6. ACT VI — NO VACANCY (43–50)
+
+ACT II includes reception/register, office access and photo clue, rooms 01–06 and missing-guest evidence; its exit objective is restoring power. ACT III is the dedicated fuse/electrical restoration and first full pursuit. The office photo puzzle is distinct from the ROOM 13 four-photo chronology puzzle. The older Verse enum uses seven implementation phases and different labels; map it to these six narrative acts rather than treating it as a competing story structure.
+
+## Canonical session flags
+RegisterSolved; OfficeAccessGranted; OfficePhotoPuzzleSolved; UpperFloorAccessGranted; FuseAFound; FuseBFound; FuseCFound; PowerRestored; DiaryFound; ChildRoomClueFound; SecretPanelOpened; Room13Unlocked; Room13PhotoSequenceSolved; Room13RevealComplete; ServiceKeyObtained; CarKeysObtained; CoreEscapeReady; TruthChainComplete; ServiceRouteReady; NewGuestAccepted; EndingSelected.
+
+TruthChainComplete must be computed from an explicitly approved evidence checklist. It must not be inferred solely from opening ROOM 13.
+
+## Solo/co-op invariant
+Every mandatory clue is readable without relying on audio; interactions are repeatable; quest state/items are team-shared and idempotent; disconnects cannot remove progress; simultaneous interactions cannot duplicate rewards; capture cannot interrupt protected mandatory interactions; solo capture has self-recovery; co-op New Guest requires team confirmation/shared outcome.
+
+## Unresolved canon gaps
+Exact register entries/code; office photo solution; fuse locations; truth evidence checklist; Car Keys/Screwdriver location; final generator/gate/vehicle interaction; THE TRUTH confrontation action/cost; THE NEW GUEST interaction text and co-op vote rule. These remain gaps, not invented facts.
