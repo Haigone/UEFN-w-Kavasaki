@@ -104,7 +104,7 @@ The 2.00 m Y gaps between upper room bays (27–29 and 36–38) are reserved as 
 | U-WEST-SERVICE-RESERVE | 8.30–19.85 | 51.10–59.70 | 11.55×8.60 | PROPOSED non-playable reserve |
 | U-EAST-SERVICE-RESERVE | 64.00–75.70 | 51.10–59.70 | 11.70×8.60 | PROPOSED non-playable reserve |
 
-The balcony is one connected walkable polygon: union of the two side legs, north crossbar and two corner turning pads. Guardrail only along courtyard-facing exposed edges; no rail across room door thresholds or stair landing. Target guardrail height 1.10 m. The 2.50 m clear width is measured after rail posts/props.
+The balcony is one connected walkable polygon: union of the two side legs, north crossbar and two corner turning pads. Guardrail only along courtyard-facing exposed edges; centre-lines X=19.85 (west leg), X=64.15 (east leg), Y=48.15 (north crossbar), Z=3.60–4.70. Rails sit in the 0.30 m edge strips outside the walkable polygon; no rail across room door thresholds or stair landing. Target guardrail height 1.10 m. The 2.50 m clear width is measured after rail posts/props.
 
 The two service reserve zones are non-playable placeholders to close the upper-floor slab footprint. They are not new rooms and have no assumed access. OWNER APPROVAL REQUIRED to retain them or replace them with another upper-level allocation.
 
