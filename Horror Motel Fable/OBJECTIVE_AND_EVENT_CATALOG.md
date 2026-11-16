@@ -84,7 +84,7 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | PhotoSequenceSolved | PuzzleManager | IN-016 | Correct 1968/1974/1981/1986 order |
 | OwnerIdentityRevealed / Room13RevealComplete | GameManager / CinematicManager handshake | reveal event after PZ-04 | Presentation completes and readable/journal version is available |
 | ServiceKeyObtained / ServiceKey | InventoryManager | IN-017 only | Hidden compartment pickup |
-| GatePowered / ServiceRouteReady | PuzzleManager | IN-018 | Service Key + power; service control opens the route and commits both flags |
+| GatePowered / ServiceRouteReady | PuzzleManager | IN-018 | Service Key + PowerRestored; activate SVC-GATE-CONSOLE in GF-SERVICE-BAY after D-G16 access; commit both flags |
 | CarKeysObtained / CarKeys | InventoryManager | IN-028 | Team pickup transaction commits |
 | FinaleReady | GameManager | Derived state | PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete; unlocks final choice point without requiring CarKeys |
 | VehicleIgnitionSucceeded | GameManager | IN-019 | FinaleReady AND CarKeys; successful ignition commits this source flag |
