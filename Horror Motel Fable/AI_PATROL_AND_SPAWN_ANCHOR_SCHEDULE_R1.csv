@@ -1,0 +1,26 @@
+Anchor_ID,Anchor_Type,Floor,Area_or_Room,X_m,Y_m,Z_m,Yaw_deg,Access_Condition,Route_Group,Target_Use,Status,Notes
+AI-SPAWN-01,NPC_SPAWN,GF,OWNER-OFFICE,42.5,55.5,0,0,PowerRestored AND Act III or later,SPAWN,Single THE GUEST custom NPC,PROPOSED TARGET,Spawn once only; NPC Spawner at this point; spawn hidden from players where possible; never spawn in U-SERVICE.
+AI-GF-W01,WAYPOINT,GF,G-WEST-CORRIDOR,9.55,23.5,0,90,GF navigation valid,GF_WEST,Patrol waypoint,PROPOSED TARGET,Keep 0.45m capsule radius and wall clearance.
+AI-GF-W02,WAYPOINT,GF,G-WEST-CORRIDOR,9.55,32.5,0,90,GF navigation valid,GF_WEST,Patrol waypoint,PROPOSED TARGET,Near ROOM 02/03 corridor span.
+AI-GF-W03,WAYPOINT,GF,G-WEST-CORRIDOR,9.55,41.5,0,90,GF navigation valid,GF_WEST,Patrol waypoint,PROPOSED TARGET,Near ROOM 03 corridor span.
+AI-GF-W04,WAYPOINT,GF,G-WEST-CORRIDOR,9.55,47.5,0,90,GF navigation valid,GF_WEST,Patrol waypoint,PROPOSED TARGET,North link approach; do not enter sealed reserve.
+AI-GF-E01,WAYPOINT,GF,G-EAST-CORRIDOR,74.45,23.5,0,270,GF navigation valid,GF_EAST,Patrol waypoint,PROPOSED TARGET,Keep 0.45m capsule radius and wall clearance.
+AI-GF-E02,WAYPOINT,GF,G-EAST-CORRIDOR,74.45,32.5,0,270,GF navigation valid,GF_EAST,Patrol waypoint,PROPOSED TARGET,Near ROOM 05.
+AI-GF-E03,WAYPOINT,GF,G-EAST-CORRIDOR,74.45,41.5,0,270,GF navigation valid,GF_EAST,Patrol waypoint,PROPOSED TARGET,Near ROOM 06.
+AI-GF-E04,WAYPOINT,GF,G-EAST-CORRIDOR,74.45,47.5,0,270,GF navigation valid,GF_EAST,Patrol waypoint,PROPOSED TARGET,North link approach; do not enter sealed reserve.
+AI-GF-RECEPTION,WAYPOINT,GF,RECEPTION,29,55,0,0,Reception route open,GF_CORE,Investigation/patrol waypoint,PROPOSED TARGET,Keep clear of main stair reservation and player start.
+AI-GF-STORAGE,WAYPOINT,GF,STORAGE,52,51,0,180,D-G09 or D-G16 route open,GF_CORE,Investigation/patrol waypoint,PROPOSED TARGET,No obstruction at door D-G09 or D-G16.
+AI-GF-ELECTRICAL,WAYPOINT,GF,ELECTRICAL,65,54,0,180,D-G10 or D-G14 route open,GF_CORE,Investigation waypoint,PROPOSED TARGET,Do not camp the mandatory fuse panel or attack during commit window.
+AI-GF-SERVICE,WAYPOINT,GF,GF-SERVICE-BAY,52.15,56.5,0,180,D-G16 open AND service route not in finale lock,GF_CORE,Investigation waypoint,PROPOSED TARGET,Exit immediately when ending resolver opens; AI disabled on ending commit.
+AI-STAIR-LOWER,STAIR_WAYPOINT,GF,STAIR-01,23.25,52.5,0.1,0,Lower flight navmesh/collision verified,STAIR,Lower flight approach,PROPOSED TARGET,West flight rises south-to-north; no teleport.
+AI-STAIR-MID,STAIR_WAYPOINT,GF/UF,STAIR-01,24,55.5,1.8,90,Intermediate landing verified,STAIR,U-turn landing,PROPOSED TARGET,Landing bounds X22.65–25.35 Y54.97–56.17 Z1.80.
+AI-STAIR-UPPER,STAIR_WAYPOINT,UF,STAIR-01,24.75,52.5,3.6,180,Upper flight navmesh/collision verified,STAIR,Upper flight exit,PROPOSED TARGET,East flight returns north-to-south and exits upper south approach.
+AI-UF-W01,WAYPOINT,UF,U-WEST-BALCONY,18.4,23.5,3.6,90,Upper floor navmesh verified,UF_WEST,Patrol waypoint,PROPOSED TARGET,Upper west balcony corridor; preserve rail clearance.
+AI-UF-W02,WAYPOINT,UF,U-WEST-BALCONY,18.4,32.5,3.6,90,Upper floor navmesh verified,UF_WEST,Patrol waypoint,PROPOSED TARGET,Near ROOM 08.
+AI-UF-W03,WAYPOINT,UF,U-WEST-BALCONY,18.4,41.5,3.6,90,Upper floor navmesh verified,UF_WEST,Patrol waypoint,PROPOSED TARGET,Near ROOM 09.
+AI-UF-N01,WAYPOINT,UF,U-NORTH-BALCONY,42,49.5,3.6,0,Upper floor navmesh verified,UF_NORTH,Patrol waypoint,PROPOSED TARGET,One continuous balcony union; no duplicate floor collision.
+AI-UF-E01,WAYPOINT,UF,U-EAST-BALCONY,65.6,23.5,3.6,270,Upper floor navmesh verified,UF_EAST,Patrol waypoint,PROPOSED TARGET,Upper east balcony corridor.
+AI-UF-E02,WAYPOINT,UF,U-EAST-BALCONY,65.6,32.5,3.6,270,Upper floor navmesh verified,UF_EAST,Patrol waypoint,PROPOSED TARGET,Near ROOM 11.
+AI-UF-E03,WAYPOINT,UF,U-EAST-BALCONY,65.6,41.5,3.6,270,Upper floor navmesh verified,UF_EAST,Patrol waypoint,PROPOSED TARGET,Near ROOM 12.
+AI-UF-VEST13,WAYPOINT,UF,VEST-13,70,48.3,3.6,180,Secret panel open AND vestibule route verified,UF_SECRET,Investigation waypoint,PROPOSED TARGET,Do not enter U-SERVICE or sealed reserves.
+AI-UF-ROOM13-REVEAL,SCRIPTED_ANCHOR,UF,ROOM 13,56.5,55.5,3.6,180,Room13Reveal presentation only,REVEAL,Scripted silhouette/reveal mark,PROPOSED TARGET,Not a patrol waypoint; no capture authority during reveal.
