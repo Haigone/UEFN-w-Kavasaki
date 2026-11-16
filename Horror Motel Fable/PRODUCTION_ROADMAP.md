@@ -136,3 +136,35 @@ Latest live metadata returned `mergeable=false`; compare was 49 ahead / 100 behi
 
 ### Latest art placement delta
 The latest PR revision blocks six west wardrobes with blank coordinates, but three upper-east wardrobes remain outside R2.1 room bounds and the secret panel remains 1.35 m offset from D-13A. The asset register now has 120 rows (PR description says 119). PR branch is 52 ahead / 106 behind, draft and latest mergeable=false. Continue to block intake pending R2.1 reauthoring and validation.
+
+
+## R2.2 CURRENT BASELINE OVERRIDE — 2026-11-16
+
+This section supersedes every earlier R2.0/R2.1 geometry and sequencing statement above where they conflict. Earlier audit snapshots and branch counts remain historical only.
+
+### Current authority
+- `LEVEL_DESIGN_R2.2_INDEX.md` is the source hierarchy.
+- `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.2 is the single candidate geometry proposal.
+- R2.2 is **NOT OWNER-APPROVED / NOT UEFN-VERIFIED**.
+- `CLAUDE_GEOMETRY_EXECUTION_BRIEF_R2.1.md` is superseded.
+- `OWNER_DECISION_GATE_R2.2.md` is the approval gate.
+- `CLAUDE_R2.2_EXECUTION_PACKET.md` is the current Claude handoff.
+
+### Current critical path
+1. Claude read-only project/editor baseline and R2.2 document/schedule integrity audit.
+2. Owner approval or revision of GEO-A01–A15 and ending decisions END-A01/END-A02.
+3. Reconcile every dependent geometry schedule and close wall/opening/slab/stair/secret-route cross-references.
+4. Claude builds only the approved greybox and returns reproducible spatial evidence.
+5. Owner reviews and approves the geometry evidence; only then freeze geometry.
+6. Reauthor Environment Art PR #1 against the frozen geometry; do not merge the current stale/draft branch.
+7. Asset acquisition/import, device/API feasibility, Verse implementation, gameplay integration, QA, profiling and island validation by Claude in dependency order.
+8. Owner release approval; no publication without explicit authorization.
+
+### Data correction status
+- `INTERACTION_MASTER_REGISTER.csv` IN-021/022/023 rows are currently header-aligned on main; the earlier DATA-002 claim that they are shifted is superseded. Do not rewrite them without new evidence.
+- `PUZZLE_MASTER_REGISTER.csv` PZ-03 now has an explicit acceptance-test field.
+- `ROOM_COORDINATE_REGISTER.csv` SITE, BLDG-UNION and COURTYARD semantic fields have been corrected to match the header.
+- These documentary fixes do not close geometry approval, cross-register integrity or editor verification.
+
+### Production gate
+The project remains DOCUMENTATION / PRE-PRODUCTION. No final geometry build, final art intake, PR merge, gameplay PASS, performance PASS or release readiness may be claimed until the relevant owner decision and Claude evidence exist.
