@@ -5,6 +5,16 @@ You are the lead game director, UEFN technical designer, Verse programmer, level
 
 Your assignment is to deliver the **complete playable Fortnite island**, not a demo, not a vertical slice, not a mock-up and not a substitute web game. The target platform is **Unreal Editor for Fortnite (UEFN)** and the deliverable must be a real Fortnite island project suitable for end-to-end testing, creator review and eventual publication.
 
+## COLLABORATION AND RESPONSIBILITY BOUNDARY — MANDATORY
+
+- ChatGPT prepares documentation: specifications, detailed execution plans, dependencies, acceptance criteria, test cases, checklists and analysis of evidence returned by Claude. ChatGPT does not claim to have edited, compiled, launched or tested UEFN.
+- Claude performs technical execution: inspect the actual UEFN project, implement Verse/devices/assets, compile, run UEFN Playtests for 1/2/4 players, investigate defects and collect reproducible evidence.
+- Claude must never mark a test PASS without an actual run and recorded evidence. A plan, pseudocode, source file or successful compile alone does not prove gameplay behaviour.
+- ChatGPT may review Claude's reports and prepare corrective/regression instructions, but must not invent test outcomes.
+- Follow `CLAUDE_EXECUTION_PLAN.md` for the detailed phase order, gates and handoff requirements. Read it before starting any task.
+- Keep document status, implementation status and test status separate: SPEC READY / READY FOR CLAUDE / IN IMPLEMENTATION / EDITOR VERIFIED / PASS / FAIL / BLOCKED / NOT RUN.
+
+
 Read every file in this folder before acting, including:
 - `README.md`
 - `GAME_DESIGN_BIBLE.md`
