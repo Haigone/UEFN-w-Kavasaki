@@ -160,9 +160,9 @@ This addendum supersedes older rows and narrative notes where they describe geom
 | MD-052 | Canonical objective/event/flag catalog | PRESENTE — OBJECTIVE_AND_EVENT_CATALOG.md | Cross-reference every objective and IN-001–IN-031 mapping; no duplicate flag writer |
 | MD-053 | Consolidated owner narrative decision packet | PRESENTE — OWNER_DECISION_PACKET_R1.md | Owner response recorded; NCP-A01–A09 and END-A02 synchronized |
 | MD-054 | UI/UX vote and objective reconciliation | PARTIAL — GAMEPLAY_UI_UX_SPEC.md | Fully matches END-A01 and objective catalog; vote window and visual treatment specified as tunable UX parameters |
-| MD-055 | Cue-level audio/lighting specification | INCOMPLETO | Complete cue IDs, triggers, duration, priority, concurrency/mix, subtitle/visual fallback and recovery |
-| MD-056 | Objective/UI string table and prompt copy | INCOMPLETO | Stable StringId for every objective, interaction, error, pickup, rescue, checkpoint and ending prompt |
+| MD-055 | Cue-level audio/lighting specification | PRESENTE — AUDIO_CUE_SHEET.csv / LIGHTING_CUE_SHEET.csv initial baseline; asset/mix/editor validation pending | Complete cue IDs, triggers, duration, priority, concurrency/mix, subtitle/visual fallback and recovery |
+| MD-056 | Objective/UI string table and prompt copy | PRESENTE — UI_STRING_TABLE.csv initial baseline; remaining prompts and visual/input review pending | Stable StringId for every objective, interaction, error, pickup, rescue, checkpoint and ending prompt |
 | MD-057 | Complete asset acquisition/licensing/import manifest | INCOMPLETO | Every required asset has unique ID, source, license, owner, format, import status and replacement/fallback |
-| MD-058 | Full interaction register IN-001–IN-031 reconciliation | PARTIAL | Every interaction has exact preconditions, UI mode, cancel/timeout, success/failure copy, state writer and fallback |
+| MD-058 | Full interaction register IN-001–IN-031 reconciliation | PARTIAL — 31 rows exist; UI/cancel/timeout/state-writer fields need final audit | Every interaction has exact preconditions, UI mode, cancel/timeout, success/failure copy, state writer and fallback |
 
 Old audit sections below this addendum remain historical evidence. Use the current R2.3 approval record, production control master and R2.3 Claude packet for current status.
