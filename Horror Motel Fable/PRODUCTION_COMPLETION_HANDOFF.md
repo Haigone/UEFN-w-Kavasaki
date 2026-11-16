@@ -1,4 +1,7 @@
 # FINAL PRODUCTION READINESS AUDIT & CLAUDE HANDOFF
+
+> **SUPERSESSION NOTICE — 2026-11-16:** This handoff is a historical R2.2-era audit snapshot. Its geometry approval status, ending quorum status, narrative gaps and file counts are superseded by LD-GEO R2.3, END-A01 approval, the current narrative proposal pack, PRODUCTION_CONTROL_MASTER_SPEC.md and CLAUDE_R2.3_EXECUTION_PACKET.md. Do not use the historical statements below as current production authority. Current source hierarchy and statuses are in README.md and PRODUCTION_CONTROL_MASTER_SPEC.md.
+
 Project: THE MOTEL: ROOM 13
 Audit date: 2026-11-16
 Repository: Haigone/UEFN-w-Kavasaki
@@ -277,7 +280,4 @@ All 18 CSV files were parsed:
 - SITE, BLDG-UNION and COURTYARD semantic columns have been aligned.
 
 This is structural validation only; cross-register IDs, numeric semantics, spatial overlaps, wall/opening hosts, asset bounds and engine behaviour still require validation. See CLD-002 in CLAUDE_R2.2_EXECUTION_PACKET.md.
-
-
-> **SUPERSESSION NOTICE — 2026-11-16:** This handoff is a historical R2.2-era audit snapshot. Its geometry approval status, ending quorum status, narrative gaps and file counts are superseded by LD-GEO R2.3, END-A01 approval, the current narrative proposal pack, PRODUCTION_CONTROL_MASTER_SPEC.md and CLAUDE_R2.3_EXECUTION_PACKET.md. Do not use the historical statements below as current production authority. Current source hierarchy and statuses are in README.md and PRODUCTION_CONTROL_MASTER_SPEC.md.
 
