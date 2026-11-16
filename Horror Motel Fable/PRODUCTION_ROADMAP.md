@@ -83,3 +83,7 @@ Must wait for geometry freeze:
 
 ## Schedule control
 No calendar duration is committed by this audit. Estimate effort after scope and editor access are confirmed. The stated two-hour target is not a production commitment and must not be used to justify unverified completion.
+
+
+## Operating model for every phase (binding)
+This roadmap is an execution guide for Claude. ChatGPT's responsibility is to turn each phase/task into a detailed, ordered packet: preconditions, exact actions, verified settings or labelled unknowns, expected outcomes, test steps, failure recovery, acceptance criteria and evidence to return. **Claude performs all actual UEFN/editor work and all tests**, including geometry walkthroughs, device setup, Verse compile, solo/co-op QA, profiling and island validation. The project owner approves design decisions and publication. ChatGPT reviews Claude's returned evidence and prepares corrective/next packets; it does not claim to have run UEFN tests. No phase gate passes on documentation alone. See `CLAUDE_EXECUTION_PROTOCOL.md`.
