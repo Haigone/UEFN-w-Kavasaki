@@ -123,3 +123,13 @@ A location ambiguity was resolved after the static CSV audit. The player-accessi
 **Documentation and static cross-register coverage are materially complete for this pass.** The repository now has a canonical R3 execution brief, expanded asset backlog and rights register, room fit-out rules, official UEFN reference register, expanded device bindings and an explicit static integrity report.
 
 The project is not an implemented or release-ready island. All engine/editor/runtime gates remain open until reproducible UEFN evidence is committed.
+
+## 10. Case-sensitive legacy schedule handling
+
+The repository contains historical case-variant CSV mirrors. The current authority is explicit:
+- DOOR_WINDOW_SCHEDULE.csv (uppercase) is R2.3; door_window_schedule.csv (lowercase) is an R2.2 mirror.
+- room_furnishing_schedule.csv (lowercase) is the current 183-row schedule; ROOM_FURNISHING_SCHEDULE.csv (uppercase) is an older 15-row proposal.
+- UEFN_DEVICE_BINDINGS.csv (uppercase) is the current 50-row, 8-column register; uefn_device_bindings.csv (lowercase) is an older draft.
+- lighting_audio_schedule.csv is historical and malformed; current separate audio/lighting registers and cue sheets control.
+
+No automatic case normalization or merge is permitted. See README.md Section 9.
