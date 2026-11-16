@@ -1,5 +1,5 @@
 Anchor_ID,Interaction_ID,Instance,Area_or_Room,X_m,Y_m,Z_m,Yaw_deg,Target_Actor_or_Widget,Placement_Source,Status,Notes
-IA-001,IN-001,Neon sign inspection,SouthApproach,42,15,2.2,0,EXT_SIGN_TRIGGER,exterior_prop_schedule.csv:EXT_SIGN_TRIGGER,SCHEDULE LINK,Use existing trigger; presentation does not grant reception entry.
+IA-001,IN-001,Neon sign inspection,SITE,42,15,2.2,0,EXT_SIGN_TRIGGER,exterior_prop_schedule.csv:EXT_SIGN_TRIGGER,SCHEDULE LINK,Use existing trigger; presentation does not grant reception entry.
 IA-002,IN-002,Reception welcome phone,RECEPTION,28.2,55,1.05,0,PROP_RECEPTION_PHONE,New reception counter layout target,PROPOSED TARGET,Readable subtitle/transcript; phone call is a one-shot session flag.
 IA-003,IN-003,ROOM 13 key rack,RECEPTION,31.2,56.8,1.55,180,PROP_KEY_RACK_ROOM13,New reception key rack target,PROPOSED TARGET,Inspect/claim non-consumable team key; distinct from OfficeKey.
 IA-004,IN-004,Guest register,RECEPTION,28.2,55,1.05,0,PROP_GUEST_REGISTER,New reception counter layout target,PROPOSED TARGET,Readable register text; opens journal record.
