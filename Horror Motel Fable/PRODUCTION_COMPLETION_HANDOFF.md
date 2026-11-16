@@ -16,7 +16,7 @@ This audit can complete the documentation and handoff work assigned to ChatGPT. 
 
 ## 2. Repository snapshot
 
-At the current audit snapshot (main tree SHA 3379df4781033c97347d32b399f1632d1a083d26), the recursive tree contains 77 file blobs:
+At the current audit snapshot, the recursive tree contains 77 file blobs:
 - 76 files under Horror Motel Fable/
 - 1 root README
 - 53 Markdown files
