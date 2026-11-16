@@ -83,7 +83,7 @@ Priority P1 | Parallel document/design work permitted; implementation only again
 
 Complete and reconcile: PZ-01 Guest Register (02-13-86); PZ-02 Office Photographs (1974/1978/1982/1986); exact Fuse A/B/C locations and clues aligned to IN-024/025/026; ROOM 04 phone recording; ROOM 06 missing guest photos; ROOM 09 diary; ROOM 11 child drawing; ROOM 13 four-photo content/captions and chronology (1968/1974/1981/1986); THE TRUTH confrontation/action/dialogue/consequence/cinematic beats.
 
-Narrative proposal pack is not canon until owner approval. Resolve END-A01 and END-A02 with the owner before implementing co-op vote/quorum logic or making evidence clues mandatory. Solo ending selection and atomic ending lock may be implemented only if the approved gameplay contract supports them. Every mandatory clue needs a non-audio fallback; each reward flag has one authoritative grant interaction.
+Narrative proposal pack is not canon until owner approval. END-A01 co-op quorum is owner-approved and may be implemented as specified in ENDING_IMPLEMENTATION_SPEC.md. END-A02 mandatory evidence list remains unapproved: do not make evidence clues mandatory until owner approval. Solo ending selection and atomic ending lock may be implemented only if the approved gameplay contract supports them. Every mandatory clue needs a non-audio fallback; each reward flag has one authoritative grant interaction.
 
 Verse implementation must be compiled against the actual current UEFN Verse API. Do not invent API signatures or report pseudocode as implementation.
 
