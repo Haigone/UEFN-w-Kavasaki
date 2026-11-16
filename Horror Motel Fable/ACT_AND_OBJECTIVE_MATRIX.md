@@ -9,7 +9,7 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 | III — THE POWER | 17–27 | Storage, utility/electrical room | Find three fuses; install; restore power; evade first full chase | Fuse A/B/C and labelled panel | PowerRestored; CP02 |
 | IV — THE SECOND FLOOR | 27–36 | Rooms 07–12, balcony, concealed panel | Open Room 12 panel and reach passage; investigate diary/drawing as optional evidence | Room 09 diary and Room 11 drawing are optional discoveries; Room 12 panel opens the route | SecretPanelOpened; Room13Unlocked; CP03 |
 | V — ROOM 13 | 36–43 | Passage and impossible room | Inspect room; order four photos; reveal identity; obtain Service Key | Four-photo chronology; owner portrait/records/creature match | Room13RevealComplete; ServiceKeyObtained; CP04 |
-| VI — NO VACANCY | 43–50 | Service route, gate/generator, car | Unlock service route; choose an eligible ending; obtain CarKeys only if pursuing ESCAPE | Service Key; powered gate; CarKeys/vehicle ignition for ESCAPE only; explicit team choice | FinaleReady; exactly one ending selected |
+| VI — NO VACANCY | 43–50 | Service route, gate/generator, car | Unlock service route; choose an eligible ending; optionally collect CarKeys and ignite the vehicle for ESCAPE only | Service Key; powered gate; CarKeys/vehicle ignition for ESCAPE only; explicit team choice | FinaleReady; exactly one ending selected |
 
 ## Per-act handoff contract
 - ACT I: objects are broken car, neon, register, phone, clock, key rack and ROOM 13 key. THE GUEST appears only as distant scripted silhouette. No forced chase. No mandatory item may become missable.
@@ -31,12 +31,16 @@ Six approved act names and timings are retained. Timings are targets, not hard t
 ## Secondary objectives
 No fixed side-quest or collectible chain is defined. Optional environmental lore may enrich play but cannot gate mandatory progress. Any new side objective is PROPOSAL and requires dependency review.
 
-## Resolved design decisions (2026-11-16)\n- Act II does not require inspecting all rooms 01–06. Mandatory exit is OfficePhotoPuzzleSolved + UpperFloorAccessGranted after register/Office Key progression. Room 01 CRT, Room 03 mirror, Room 04 recording and Room 05 footsteps are optional. Room 06 photo archive is optional to core progress but required for THE_TRUTH evidence gate.\n- END-A02 is approved: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. This gates THE_TRUTH only; ESCAPE remains available without it.\n- Ending quorum is governed by END-A01 in ENDING_IMPLEMENTATION_SPEC.md: majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative consent for THE_NEW_GUEST.\n\n## Remaining design and approval dependencies
+## Resolved design decisions (2026-11-16)
+- Act II does not require inspecting all rooms 01–06. Mandatory exit is OfficePhotoPuzzleSolved + UpperFloorAccessGranted after register/Office Key progression. Room 01 CRT, Room 03 mirror, Room 04 recording and Room 05 footsteps are optional. Room 06 photo archive is optional to core progress but required for THE_TRUTH evidence gate.
+- END-A02 is approved: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. This gates THE_TRUTH only; ESCAPE remains available without it.
+- Ending quorum is governed by END-A01 in ENDING_IMPLEMENTATION_SPEC.md: majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative consent for THE_NEW_GUEST.
 
-- Owner approval of narrative copy and puzzle clue text: consolidated as NCP-A01–A09 in OWNER_DECISION_PACKET_R1.md. The complete proposal is in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
-- Owner approval of END-A02 mandatory truth evidence: recommended three-clue gate in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md; pending.
-- UEFN/editor verification of the approved R2.3 secret passage, stair, balcony and all mandatory routes.
-- Editor verification of final gate/generator/vehicle actor placements and the documented PZ-05 interaction sequence.
-- Runtime solo/2-player/4-player pacing, chase, rescue, ending and recovery tests.
+## Remaining implementation and verification dependencies
 
-The register code (02-13-86), office photo solution (1974/1978/1982/1986), fuse locations, CarKeys/Screwdriver locations, PZ-05 prerequisite chain, THE TRUTH draft sequence and New Guest consent copy are documented in the current puzzle sheets/proposal pack; they are no longer missing at draft-specification level. Do not mark the draft narrative canon until the owner decision is recorded.
+- NCP-A01–A09 and END-A02 are approved and canonical; no further owner content approval is pending. Implement the exact English content in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md.
+- UEFN/editor verification of the approved R2.3 secret passage, stair, balcony, furniture clearance and all mandatory routes remains open.
+- Editor verification of final gate/generator/vehicle actor placements and the documented PZ-05 interaction sequence remains open.
+- Runtime solo/2-player/4-player pacing, chase, rescue, ending and recovery tests remain NOT RUN until evidence is attached.
+
+The register code, office photo solution, fuse locations, CarKeys/Screwdriver locations, PZ-05 prerequisite chain, THE TRUTH sequence and New Guest consent copy are specified. Narrative copy is canon; visual assets and implementation evidence remain separate production deliverables.
