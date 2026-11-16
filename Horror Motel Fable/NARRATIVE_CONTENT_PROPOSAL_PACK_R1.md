@@ -1,9 +1,9 @@
 # NARRATIVE CONTENT PROPOSAL PACK — THE MOTEL: ROOM 13
 Revision: NCP-01 | 2026-11-16
-Status: **COMPLETE DRAFT PACKAGE — PROPOSAL ONLY — NOT OWNER-APPROVED**
+Status: **APPROVED CANONICAL ENGLISH NARRATIVE / PUZZLE CONTENT — 2026-11-16 (UNDER EXPRESS OWNER DELEGATION)**
 Language of in-game content: English.
 
-Purpose: supply complete draft copy and puzzle logic for the missing narrative deliverables. This pack closes the writing gap at proposal level; it does not make new creative content canon. The owner must approve or revise each item before Claude implements it.
+Purpose: canonical source for player-facing English copy, clue identities, puzzle deductions and ending narrative beats. Approved under the owner's express delegation on 2026-11-16. Claude must implement this content exactly, subject only to technical feasibility reports; do not rewrite or improvise canon.
 
 ## 0. Continuity rules
 - Raven Motel, United States, 1986; twelve public rooms.
@@ -88,7 +88,7 @@ PZ-03 solution: insert A/B/C into matching labelled sockets, close cover, activa
 **Back-of-frame note:** "Every name was checked in. None was checked out."
 Player inference: disappearances span decades and the same uncanny figure appears across years.
 Flag MissingGuestEvidenceFound is granted through IN-029 only after inspection.
-Truth-chain role remains pending END-A02 approval.
+Truth-chain role: mandatory for THE_TRUTH only under approved END-A02; optional to core progression and ESCAPE.
 
 ## 6. ROOM 09 diary — complete proposed text
 
@@ -123,7 +123,7 @@ Provide close-range readable text and a journal copy after inspection. Truth-cha
 **Back of paper:** "13 / 2:13" in crayon.
 
 Inference: ROOM 13 is not a normal room; the owner/figure identity recurs.
-ChildRoomClueFound is granted on inspection. Supporting clue / truth-chain role pending END-A02.
+ChildRoomClueFound is granted on inspection. Mandatory evidence for THE_TRUTH under approved END-A02; optional to core progression and ESCAPE.
 
 ## 8. ROOM 13 photo sequence — PZ-04
 
@@ -157,7 +157,7 @@ TruthChainComplete is evaluated separately and only after END-A02 approval.
 7. Cut to black; THE TRUTH title card.
 
 **Proposed consequence:** players expose the loop and prevent the current night from restarting, but the motel remains physically present. The final 02:13 neon pulse implies the source may not be destroyed. This is distinct from vehicle escape.
-No new voiced dialogue is required. This sequence and consequence require owner approval before implementation.
+No new voiced dialogue is required. This sequence and consequence are approved canonical content. Technical implementation may adapt presentation mechanics without changing the story outcome.
 
 ## 10. THE NEW GUEST — invitation and consent proposal
 
@@ -171,7 +171,7 @@ Choices:
 - ACCEPT THE ROOM
 - LEAVE THE KEY
 
-Every connected player sees the same invitation. No player is selected randomly. Inactivity, capture and defeat never count as acceptance. The session commits THE NEW GUEST only if the owner-approved quorum is met. Timeout/disconnect rules remain END-A01.
+Every connected player sees the same invitation. No player is selected randomly. Inactivity, capture and defeat never count as acceptance. The session commits THE NEW GUEST only if the END-A01 unanimous explicit-consent quorum is met. Timeout/disconnect rules remain END-A01.
 If quorum accepts: twelve public room lights illuminate one by one; the ROOM 13 key returns to the rack; the register gains a blank line under NEXT GUEST; neon illuminates; cut to black; THE NEW GUEST title card.
 If quorum is not met: return to eligible ending choice; never auto-accept.
 
@@ -185,19 +185,19 @@ If quorum is not met: return to eligible ending choice; never auto-accept.
 ## 12. Owner approval checklist
 | ID | Approval required | Status |
 |---|---|---|
-| NCP-A01 | Register copy and 02-13-86 deduction | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A02 | Office photo captions and chronological solution | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A03 | Fuse labels and Room 04 transcript | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A04 | Room 06 photo content and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A05 | Room 09 diary and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A06 | Room 11 drawing/caption and truth-chain role | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A07 | ROOM 13 photos, captions and reveal sequence | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A08 | THE TRUTH action, consequence and sequence | PENDING — included in OWNER_DECISION_PACKET_R1 |
-| NCP-A09 | THE NEW GUEST invitation and consent copy | PENDING — included in OWNER_DECISION_PACKET_R1 |
+| NCP-A01 | Register copy and 02-13-86 deduction | APPROVED — 2026-11-16 delegated decision |
+| NCP-A02 | Office photo captions and chronological solution | APPROVED — 2026-11-16 delegated decision |
+| NCP-A03 | Fuse labels and Room 04 transcript | APPROVED — 2026-11-16 delegated decision |
+| NCP-A04 | Room 06 photo content and truth-chain role | APPROVED — 2026-11-16 delegated decision |
+| NCP-A05 | Room 09 diary and truth-chain role | APPROVED — 2026-11-16 delegated decision |
+| NCP-A06 | Room 11 drawing/caption and truth-chain role | APPROVED — 2026-11-16 delegated decision |
+| NCP-A07 | ROOM 13 photos, captions and reveal sequence | APPROVED — 2026-11-16 delegated decision |
+| NCP-A08 | THE TRUTH action, consequence and sequence | APPROVED — 2026-11-16 delegated decision |
+| NCP-A09 | THE NEW GUEST invitation and consent copy | APPROVED — 2026-11-16 delegated decision |
 | NCP-A10a | Co-op ending quorum (END-A01) | **APPROVED 2026-11-16; see OWNER_DECISION_GATE_R2.2.md. This item is closed and must not be reopened.** |
-| NCP-A10b | Mandatory THE TRUTH evidence (END-A02) | PENDING — recommended three-clue gate in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md |
+| NCP-A10b | Mandatory THE TRUTH evidence (END-A02) | APPROVED — exactly three clues; see OWNER_DECISION_GATE_R2.2.md |
 
-The consolidated owner action is OWNER_DECISION_PACKET_R1.md. It requests NCP-A01–A09 plus END-A02 only; END-A01 is already approved and remains binding.
+The consolidated decision is recorded in OWNER_DECISION_PACKET_R1.md and OWNER_DECISION_GATE_R2.2.md. NCP-A01–A09 and END-A02 are approved; END-A01 remains separately approved and binding.
 
-## 13. Handoff
-After owner approval, copy approved content into canonical narrative documents and story register; synchronize puzzle/interaction flags, subtitles, journal and audio cue sheets. Claude implements the approved text exactly and tests clue readability, transcript fallback, solo/co-op progression, duplicate triggers and recovery. Unapproved text remains proposal and must not be implemented as canon.
+## 13. Canonical handoff
+This pack is approved canon. All controlling narrative, gameplay, puzzle, UI, subtitle, journal and execution documents must reference it and must not contradict it. Claude implements the exact approved text and validates clue readability, transcript fallback, solo/co-op progression, duplicate triggers and recovery. Technical limitations must be reported with a proposed presentation-preserving workaround; they do not authorize rewriting the story.
