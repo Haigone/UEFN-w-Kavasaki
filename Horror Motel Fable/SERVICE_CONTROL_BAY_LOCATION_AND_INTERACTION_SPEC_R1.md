@@ -29,7 +29,7 @@ All XYZ values are metres, floor-relative world coordinates. These are selected 
 
 | Anchor ID | Function | X | Y | Z | Yaw target | Interaction |
 |---|---|---:|---:|---:|---|---|
-| SVC-DOOR-READER | Service Key reader on bay side of D-G16 | 52.15 | 54.05 | 1.10 | Face south toward Storage door | Key opens D-G16; key is not consumed |
+| SVC-DOOR-READER | Service Key reader on Storage side of D-G16 | 52.15 | 53.55 | 1.10 | Face north toward D-G16 | Key opens D-G16; key is not consumed |
 | SVC-GATE-CONSOLE | IN-018 service gate control console | 49.70 | 58.95 | 1.10 | Face south into bay | Requires PowerRestored and ServiceKeyObtained; activates service route once |
 | SVC-NIGHT-AUDIT | IN-032 NIGHT AUDIT — END CYCLE breaker | 54.60 | 58.95 | 1.10 | Face south into bay | Enabled only after EndingSelected=THE_TRUTH; hold 2 seconds |
 | SVC-STATUS-LAMP | Service route status indicator | 52.15 | 58.95 | 1.70 | Face south into bay | Presentation only; reads GatePowered / ServiceRouteReady |
