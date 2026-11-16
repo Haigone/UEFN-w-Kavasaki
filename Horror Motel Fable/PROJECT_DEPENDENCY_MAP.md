@@ -105,3 +105,41 @@ No gate is passed by documentation alone.
 
 ## Execution ownership and evidence loop
 All nodes requiring editor access, UEFN construction, asset import, Verse compilation, gameplay tests, multiplayer tests, profiling or island validation are executed by **Claude**. ChatGPT supplies ordered, granular execution plans and evaluates the returned evidence; it does not run these tests. The project owner approves design decisions and release. Repository documents are guidance, not implementation proof. Every gate must include Claude's evidence, editor/project version and reproducible result before status advancement. See `CLAUDE_EXECUTION_PROTOCOL.md`.
+
+
+## 7. Re-audit dependency additions
+
+### Updated geometry dependency
+`LEVEL_DESIGN_GEOMETRY.md`, `FINAL_GROUND_FLOOR_PLAN.md` and `FINAL_UPPER_FLOOR_PLAN.md` now provide a more coherent R2.0 candidate. They reduce the earlier allocation ambiguity but remain proposed and not approved. The critical geometry dependency is therefore:
+
+**Owner review of R2.0 → canonical wall/opening/section schedules → complete CSV/reference integrity → Claude greybox and traversal evidence → geometry freeze.**
+
+Do not treat a filename containing FINAL or a document status of DOCUMENT AUDIT COMPLETE as final geometry acceptance.
+
+### Data-integrity gate
+Before Claude or any import workflow consumes schedules:
+- repair malformed rows in INTERACTION_MASTER_REGISTER.csv, PUZZLE_MASTER_REGISTER.csv and coordinate_schedule.csv;
+- split lighting_audio_schedule.csv into separate schema-consistent tables;
+- decide canonical uppercase vs legacy lowercase schedule names;
+- complete wall_schedule.csv and reconcile its opening IDs with DOOR_WINDOW_SCHEDULE.csv.
+
+This gate is a prerequisite for reliable blockout, gameplay bindings and placement work.
+
+### Environment Art intake
+PR #1 adds a useful design package but is not ready for merge/integration. Its branch is 11 commits ahead and 42 behind current main, remains draft, and has no review/comments/status checks on the inspected head. Rebase/synchronise, then repeat all placement and register checks. In particular, six wardrobe placements are outside their assigned room bounds, F12_SECRET_PANEL is offset 0.30 m from D-13A, and EXT_SIGN_TRIGGER is typed as an asset despite lacking an asset definition.
+
+The Environment Art package depends on:
+1. approved geometry revision;
+2. corrected placement register and opening alignment;
+3. canonical asset/material IDs and source/license evidence;
+4. Claude's DCC/import/engine validation.
+
+### Execution sequencing
+Geometry is the current physical critical path in MASTER_TASK_REGISTER.md and PRODUCTION_ROADMAP.md. Narrative Lock documentation can proceed in parallel, but the phase order in CLAUDE_EXECUTION_PLAN.md requires owner clarification so it does not silently delay geometry resolution.
+
+### New gates
+- **Gate G0.5 — Data integrity:** all active CSV schemas parse consistently; IDs cross-reference; legacy schedules are explicitly marked.
+- **Gate G1.5 — Geometry approval:** owner-approved R2.0 plan, complete wall/opening schedule, stair/balcony/secret-route sections.
+- **Gate G4.5 — Art intake:** PR reviewed and synchronised; no known out-of-bounds placements; source/license and import evidence tracked.
+
+No new gate passes by document presence alone. Claude remains responsible for UEFN execution and evidence; ChatGPT prepares the task packets and reviews returned results.
