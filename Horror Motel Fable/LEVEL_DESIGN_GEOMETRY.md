@@ -29,6 +29,7 @@ No room dimensions, wall thicknesses, door coordinates, vertical levels or stair
 
 ## 2. Coordinate and wall convention
 - All room/corridor bounds in the coordinate register are **finished inside face (FIF)** bounds.
+- Floor and roof slab polygons are controlled by `SLAB_SCHEDULE.csv`; the U-shaped polygon is stored once, with the courtyard void explicitly excluded.
 - Wall schedules use **wall centre-lines**. A 0.15 m partition has 0.075 m on either side of its centre-line; a 0.30 m exterior wall has 0.15 m on either side.
 - Openings are centred on the host wall centre-line. Opening clear width is measured along the wall; clear height is measured vertically from that floor's FFL unless noted.
 - Floor levels: GF FFL Z=0.00; UF FFL Z=3.60.
@@ -134,6 +135,7 @@ The vestibule and opening are dimensionally aligned in R2.2. Door cuts, collisio
 - Upper walls: Z=3.60 to Z=6.40; clear height 2.80.
 - Roof parapet: from Z=6.65 to Z=7.10, target thickness 0.20.
 - A wall segment is one unique centre-line record. Shared walls are not duplicated per room.
+- At perpendicular/T-junctions, merge or trim wall meshes to a single continuous junction; do not leave a gap and do not stack duplicate full-thickness wall meshes.
 - Openings must be listed by ID in the host wall's Openings field. Wall schedule is a construction centre-line register, not a list of room bounding boxes.
 - Courtyard remains open to sky; facade wall segments around it do not imply a roof over the courtyard.
 
