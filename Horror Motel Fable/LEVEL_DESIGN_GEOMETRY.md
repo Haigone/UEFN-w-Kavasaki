@@ -146,6 +146,7 @@ The vestibule and opening are dimensionally aligned in R2.2. Door cuts, collisio
 - At perpendicular/T-junctions, merge or trim wall meshes to a single continuous junction; do not leave a gap and do not stack duplicate full-thickness wall meshes.
 - Openings must be listed by ID in the host wall's Openings field. Wall schedule is a construction centre-line register, not a list of room bounding boxes.
 - Courtyard remains open to sky; facade wall segments around it do not imply a roof over the courtyard.
+- The flat-roof parapet follows the complete U-shaped roof perimeter. Courtyard-side parapet centre-lines meet continuously at (19.85,48.15) and (64.15,48.15); use `wall_schedule.csv` and miter/trim corner meshes without gaps or stacked collision.
 
 ## 8. Stair — north connector / reception
 Owner-approved only as to **location**. Proposed dimensions:
