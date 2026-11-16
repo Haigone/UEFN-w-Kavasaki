@@ -52,7 +52,7 @@ It does not replace discipline-specific specifications. It identifies the contro
 | Character | GUEST_MODEL_SPEC.md; asset register/manifest | model sheet, rig/animation briefs | Concept image as proof of imported asset |
 | Assets/audio/lighting | ASSET_AND_CONTENT_REGISTER.md; ASSET_PRODUCTION_PIPELINE_SPEC.md; canonical asset manifest; AUDIO_REGISTER.csv; LIGHTING_REGISTER.csv; AUDIO_CUE_SHEET.csv; AUDIO_MIX_POLICY.md; LIGHTING_CUE_SHEET.csv; LIGHTING_STATE_SPEC.md | environment art intake after revalidation | PR #1 placements before reconciliation |
 | Cinematic/presentation | CINEMATIC_AND_PRESENTATION_SPEC.md; ENDING_DESIGN_SPEC.md; ENDING_IMPLEMENTATION_SPEC.md | UI_STRING_TABLE.csv; audio/lighting cue sheets | camera/animation capability assumptions without target-editor proof |
-| UI/presentation | GAMEPLAY_UI_UX_SPEC.md; UI_STRING_TABLE.csv; OBJECTIVE_AND_EVENT_CATALOG.md | audio/lighting cue sheets; interaction register | ad hoc strings without stable IDs |
+| UI/presentation | GAMEPLAY_UI_UX_SPEC.md; UI_STRING_TABLE.csv; OBJECTIVE_AND_EVENT_CATALOG.md; INTERACTION_EXECUTION_SPEC.md | audio/lighting cue sheets; interaction register | ad hoc strings without stable IDs |
 | QA/release | QA_ACCEPTANCE_MATRIX.md; GAMEPLAY_ACCEPTANCE_TESTS.md; NARRATIVE_ACCEPTANCE_TESTS.md | performance/validation report; release checklist | Documentation-only PASS claims |
 
 If two documents in the same row disagree, record the conflict and use the higher-ranked source only for the narrow domain it governs. Never copy a value from a stale document merely because it is more detailed.
