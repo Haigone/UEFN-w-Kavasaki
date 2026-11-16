@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<defs><style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#202b35}.h{font-size:32px;font-weight:700}.s{font-size:17px;fill:#596875}.lab{font-size:18px;font-weight:700}.dim{font-size:15px;fill:#45535e}.wall{fill:#b9c4cb;stroke:#273744;stroke-width:3}.slab{fill:#7e8c96;stroke:#273744;stroke-width:2}.floor{stroke:#273744;stroke-width:4}.dash{stroke:#a13a52;stroke-width:4;stroke-dasharray:9 7}.note{font-size:14px;fill:#7c3448}
+</style></defs><rect width="1600" height="1100" fill="#fbfaf7"/>
+<text x="70" y="65" class="h">BUILDING SECTIONS — A-A / C-C / D-D</text>
+<text x="70" y="98" class="s">Vertical design targets · all elevations in metres · schematic section drawings, not construction-certified</text>
+<!-- section A-A -->
+<text x="100" y="165" class="lab">SECTION A-A — WEST WING THROUGH BOTH FLOORS</text>
+<line x1="160" y1="550" x2="1120" y2="550" class="floor"/>
+<rect class="wall" x="200" y="330" width="25" height="220"/><rect class="wall" x="520" y="330" width="25" height="220"/>
+<rect class="wall" x="200" y="100" width="25" height="230"/><rect class="wall" x="520" y="100" width="25" height="230"/>
+<rect class="slab" x="200" y="320" width="345" height="12"/>
+<rect class="slab" x="200" y="540" width="345" height="12"/>
+<line x1="200" y1="100" x2="545" y2="100" class="floor"/>
+<line x1="200" y1="320" x2="545" y2="320" class="floor"/>
+<text x="360" y="260" class="lab" text-anchor="middle">UPPER ROOM</text><text x="360" y="470" class="lab" text-anchor="middle">GROUND ROOM</text>
+<text x="570" y="108" class="dim">Roof / ceiling top Z=7.10</text><text x="570" y="326" class="dim">Upper floor Z=3.60</text><text x="570" y="545" class="dim">Ground floor Z=0.00</text>
+<line x1="150" y1="100" x2="150" y2="550" stroke="#273744" stroke-width="2"/><path d="M142 100h16 M142 550h16" stroke="#273744" stroke-width="2"/>
+<text x="130" y="330" class="dim" transform="rotate(-90 130 330)" text-anchor="middle">7.10 m overall target</text>
+<text x="220" y="590" class="dim">Exterior wall 0.30 m</text><text x="540" y="590" class="dim">Interior partitions 0.15 m</text>
+<!-- section C stair -->
+<text x="100" y="665" class="lab">SECTION C-C — STAIR FLIGHT PROFILE</text>
+<line x1="180" y1="930" x2="800" y2="930" class="floor"/>
+<path d="M200 930 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18 h28 v-18" fill="none" stroke="#273744" stroke-width="5"/>
+<text x="520" y="955" class="dim" text-anchor="middle">20 risers target · 0.18 m rise · 0.28 m tread · 1.20 m clear width</text>
+<text x="840" y="840" class="note">Resolve as two flights + intermediate landing in final stair plan.</text>
+<!-- section D -->
+<text x="900" y="665" class="lab">SECTION D-D — SECRET ROUTE / ROOM 13</text>
+<rect x="930" y="770" width="560" height="18" class="slab"/>
+<rect x="930" y="590" width="15" height="180" class="wall"/>
+<rect x="1475" y="590" width="15" height="180" class="wall"/>
+<rect x="1120" y="590" width="15" height="180" class="wall"/>
+<text x="1020" y="720" class="lab" text-anchor="middle">UPPER HALL</text><text x="1305" y="720" class="lab" text-anchor="middle">ROOM 13</text>
+<path d="M1135 700 h75" class="dash"/><text x="1170" y="680" class="note" text-anchor="middle">Secret door</text>
+<text x="930" y="815" class="dim">Floor Z=+3.60</text><text x="930" y="575" class="dim">Ceiling underside Z=+6.80</text>
+<text x="900" y="875" class="note">Section confirms intended adjacency only; wall openings, slab and collision require UEFN validation.</text>
+<text x="70" y="1050" class="s">Design status: PROPOSED TARGET. Validate scale, clearances, stair headroom, collision and navigation in editor before accepting.</text>
+</svg>
