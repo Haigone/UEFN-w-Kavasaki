@@ -181,3 +181,26 @@ The older "First 20 production tasks" list remains a historical ordering snapsho
 | END-002 | COMPLETE — DESIGN DECISION | END-A02 approved: exactly DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound for THE_TRUTH only; THE_TRUTH sequence/consequence approved; IN-032 Night Audit added. Runtime implementation/tests remain separate. |
 | DOC-001 | COMPLETE — DELEGATED DECISION RECORDED | OWNER_DECISION_PACKET_R1.md and OWNER_DECISION_GATE_R2.2.md record delegated approval. |
 | DOC-003 | DOCUMENT PRESENT — IN-001–IN-032 | Objective/event and interaction contracts include the approved evidence gate and Night Audit. Cross-register/editor verification remains separate. |
+
+
+## Documentation execution addendum — 2026-11-16
+
+The following documentation packages are now present on main. These are document-completion statuses, not implementation or test statuses.
+
+| ID | Sector | Description | Priority | Deliverable | Status | Remaining acceptance |
+|---|---|---|---|---|---|---|
+| DOC-009 | Puzzle design | Individual executable sheets for all registered PZ-01–PZ-05 | P0 | PUZZLE_EXECUTION_DETAIL_R2.md | DOCUMENT PRESENT | Cross-register IDs/flags and execute solo/co-op tests |
+| DOC-010 | UI/UX | Exact screen layouts, widget states, focus, subtitles and accessibility | P1 | UI_SCREEN_LAYOUTS_AND_WIDGET_STATES_R1.md | DOCUMENT PRESENT | Build in target UI framework and verify devices/safe zones |
+| DOC-011 | AI/gameplay | Numeric starting tuning for THE GUEST | P1 | THE_GUEST_NUMERIC_TUNING_R1.md | PROPOSED CALIBRATION VALUES DOCUMENTED | Target-editor feasibility, playtest data and tuning sign-off |
+| DOC-012 | Technical design | Feature-by-feature UEFN compatibility routes and fallbacks | P0 | UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md | DOCUMENT PRESENT; API CHECKS OPEN | Verify every exact API/device against target editor release |
+| DOC-013 | Gameplay architecture | Event envelope, manager ownership and 42 logical state events | P0 | EVENT_AND_STATE_TRANSITION_CATALOG_R2.md | DOCUMENT PRESENT | Map EVT-001–042 to IN-001–IN-032 and existing Verse event IDs; remove duplicates |
+| DOC-014 | Documentation control | Update production hub to index new discipline deliverables | P1 | README.md | COMPLETE — MAIN UPDATED | Maintain links when revisions change |
+
+### New critical integration task
+
+**INT-001 — EVENT / INTERACTION / VERSE CROSSWALK**  
+Owner: Gameplay Systems / Technical Design. Priority: P0.  
+Inputs: EVENT_AND_STATE_TRANSITION_CATALOG_R2.md, OBJECTIVE_AND_EVENT_CATALOG.md, INTERACTION_EXECUTION_SPEC.md, INTERACTION_MASTER_REGISTER.csv, UEFN_DEVICE_BINDINGS.csv, VERSE_SYSTEM_DESIGN.md.  
+Output: one authoritative crosswalk table with columns EventID, InteractionID, Verse event/function, manager owner, payload, scope, commit predicate, dedupe key, failure/recovery and acceptance test.  
+Acceptance: every existing interaction IN-001–IN-032 maps to exactly one authoritative transaction; every EVT event maps to a valid existing interaction, authored system event or derived transition; no duplicate state writer; no event IDs conflict.  
+Status: OPEN — documentation crosswalk still required before implementation can be considered decision-complete.
