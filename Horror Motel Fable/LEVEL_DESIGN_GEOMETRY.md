@@ -203,7 +203,7 @@ The owner approved GEO-A01–GEO-A21 on 2026-11-16. The following are no longer 
 ## 12. Verification boundary
 This is a document-only geometric reconciliation. No UEFN project was opened, built, simulated or tested. Mark all editor-dependent items EDITOR-TEST REQUIRED. The geometry is **not approved** until the owner explicitly approves the proposed corrections above.
 
-## 12. Owner approval and R2.3 resolutions — 2026-11-16
+## 13. Owner approval and R2.3 resolutions — 2026-11-16
 
 The owner approved all geometric decisions GEO-A01–GEO-A21 and the R2.2 recommendations. This is approval of design geometry, not UEFN verification.
 
