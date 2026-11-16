@@ -68,7 +68,7 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - U balcony side legs, north crossbar and corner pads must be unioned into a single walkable polygon. Do not accept point-only joins.
 - Roof polygon must follow the U footprint union and exclude the courtyard.
 - The ground north connector's 0.30 m partitions, the service bay door and the service reserve partitions are proposed and require owner approval.
-- The floor slab, wall, rail and parapet geometry is not structurally validated.
+- The upper slab includes a 3.00×4.02 m stairwell cut with guardrails on three edges; the south approach remains open. The floor slab, wall, rail and parapet geometry is not structurally validated.
 - Door clear widths, headroom, stair ascent/descent, balcony fall protection, NPC capsule and navmesh remain EDITOR-TEST REQUIRED.
 
 ## 6. Owner approval checklist
@@ -91,8 +91,8 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 - coordinate_schedule.csv: 37 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 47 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 47 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
-- wall_schedule.csv: 63 unique wall IDs; all rows match the 15-column header.
-- SLAB_SCHEDULE.csv: 4 explicit slab/void records; the U footprint polygon is shared by ground, upper and roof slabs, with the courtyard excluded.
+- wall_schedule.csv: 66 unique wall IDs; all rows match the 15-column header.
+- SLAB_SCHEDULE.csv: 5 explicit slab/void records, including the upper stairwell cut; the U footprint polygon is shared by ground, upper and roof slabs, with the courtyard excluded.
 - All 43 opening Wall_ID values resolve to an existing wall. All opening centres lie on the centre-line of their host wall. All wall opening references resolve to an opening ID.
 - No duplicate Wall_ID values found.
 
