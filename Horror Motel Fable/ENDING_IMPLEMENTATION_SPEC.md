@@ -2,7 +2,9 @@
 ## THE MOTEL: ROOM 13
 
 ## 1. Canonical flags
-FinaleReady; CoreEscapeReady; TruthChainComplete; Room13RevealComplete; ServiceRouteReady; NewGuestAccepted; EndingSelected; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
+FinaleReady; CoreEscapeReady; PowerRestored; GatePowered; CarKeysObtained; ServiceKeyObtained; ServiceRouteReady; TruthChainComplete; Room13RevealComplete; NewGuestAccepted; EndingSelected; Ending (NONE/ESCAPE/THE_TRUTH/THE_NEW_GUEST).
+
+Derived flags: `FinaleReady = PowerRestored AND GatePowered AND ServiceKeyObtained AND ServiceRouteReady AND Room13RevealComplete`. `CoreEscapeReady = FinaleReady AND CarKeysObtained AND successful vehicle ignition (IN-019)`. CarKeys/vehicle ignition are required only for ESCAPE.
 
 All flags are session-authoritative. Ending starts as NONE and may be committed exactly once.
 
