@@ -220,7 +220,7 @@ Show team ownership, never a misleading holder name. Do not use personal hotbar 
 - ESCAPE is fallback if truth eligibility is incomplete or co-op vote ties/expires.
 - THE_TRUTH requires approved truth gates, completed reveal and explicit team choice.
 - THE_NEW_GUEST requires explicit acceptance; never infer from capture, timeout or ordinary defeat.
-- Apply the owner-approved END-A01 quorum exactly: strict majority of connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. A tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. A disconnect removes that player and triggers recalculation/reconfirmation; disconnect is never consent. Solo selection is direct. Do not add a 15-second timer or any other vote window until its duration is approved as a UX tuning value.
+- Apply the owner-approved END-A01 quorum exactly: strict majority of connected eligible players for ESCAPE/THE_TRUTH; unanimous explicit affirmative confirmation for THE_NEW_GUEST. A tie/timeout selects ESCAPE only if eligible; otherwise reopen the vote. A disconnect removes that player and triggers recalculation/reconfirmation; disconnect is never consent. Solo selection is direct. Use a maximum 20-second vote window as the proposed UX default in INTERACTION_EXECUTION_SPEC.md; it is tunable after playtests but cannot alter END-A01 quorum or fallback rules.
 - EndingSelected locks once; overlapping triggers cannot reopen selector.
 
 ## 10. Accessibility, localization and input
@@ -247,10 +247,11 @@ Before implementation, reconcile/create:
 - Objective register: ObjectiveId, ActId, title, instruction, prerequisites, completion predicate, progress target, visibility and fallback.
 - Evidence/document register: EvidenceId/DocumentId, approved text/transcript, mandatory/optional/truth status, discovery flag, journal title and recovery source.
 - UI string table: stable StringId and approved copy for every HUD, prompt, error, notification and modal.
-- Interaction register additions: prompt, UI type (press/hold/modal), cancellation, progress, success and failure copy for every IN-001–IN-029.
+- Interaction register additions: prompt, UI type (press/hold/modal), cancellation, progress, success and failure copy for every IN-001–IN-031.
 - Input map: Journal, Interact, Back/Close, flashlight, crouch, sprint and vote action using platform mappings.
 - UI acceptance suite: resolutions/input modes, solo/2P/4P sync, reconnect, modal close, no duplicate notifications, clue readability, subtitles and safe-area clipping.
-- [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv): stable English objective, interaction, status, feedback, ending and subtitle strings. This is the first controlled copy baseline; any additional in-editor text must receive a StringId before implementation.
+- [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv): stable English objective, interaction, status, feedback, ending and subtitle strings.
+- [INTERACTION_EXECUTION_SPEC.md](INTERACTION_EXECUTION_SPEC.md): exact validation, input mode, duration, cancellation, failure, fallback and commit behaviour for IN-001–IN-031. This is the first controlled copy baseline; any additional in-editor text must receive a StringId before implementation.
 - [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) and [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv): cue trigger, priority, concurrency and readability rules.
 
 ## 13. Open issues — do not silently assume
@@ -258,7 +259,7 @@ Before implementation, reconcile/create:
 2. Use OBJECTIVE_AND_EVENT_CATALOG.md for the canonical Act II predicate; do not gate on every room 01–06 inspection.
 3. Room 01 CRT and Room 04 phone now have stable interaction IDs IN-030 and IN-031 and flags CRTFeedSeen, Room04RecordingHeard and Room04TranscriptRead.
 4. Journal binding and final control glyphs must be selected/verified in UEFN.
-5. END-A01 quorum is approved; vote-window duration, vote UI presentation and timeout UX must be specified as tunable presentation parameters without changing the approved quorum or fallback rules.
+5. END-A01 quorum is approved; vote UI presentation and timeout UX follow INTERACTION_EXECUTION_SPEC.md: maximum 20-second proposed window, early resolution when quorum is met, and exact END-A01 tie/timeout/disconnect handling.
 6. HUD visual style, typography, icons, safe-area coordinates and animation timing need a visual mockup and in-editor validation.
 7. Any objective arrow/beacon requires explicit design approval; default is no persistent navigation marker.
 
