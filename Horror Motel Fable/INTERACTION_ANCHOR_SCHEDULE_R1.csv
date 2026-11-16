@@ -53,3 +53,7 @@ IA-029,IN-029,Missing guest archive,ROOM 06,64.45,41.5,1.65,90,F06_PHOTO_WALL,ro
 IA-030,IN-030,CRT feed,ROOM 01,15.799999999999999,21.25,0.65,0,F01_CRT,room_furnishing_schedule.csv:F01_CRT,SCHEDULE LINK,Optional supporting discovery; not a gate.
 IA-031,IN-031,Room 04 recording,ROOM 04,71.39999999999999,20.75,0.76,0,F04_PHONE,room_furnishing_schedule.csv:F04_PHONE,SCHEDULE LINK,Audio and transcript; transcript sufficient.
 IA-032,IN-032,Night Audit breaker,GF-SERVICE-BAY,54.6,58.95,1.1,270,SVC-NIGHT-AUDIT,SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md,SCHEDULE LINK,Only after EndingSelected=THE_TRUTH; hold 2s.
+SPN-01,NONE,Player start 01,SouthParking,28,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; maintain 1.5m clear from car and neon trigger.
+SPN-02,NONE,Player start 02,SouthParking,32,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
+SPN-03,NONE,Player start 03,SouthParking,42,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; 3m south of neon sign anchor.
+SPN-04,NONE,Player start 04,SouthParking,46,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.
