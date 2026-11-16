@@ -365,3 +365,14 @@ At the end of each work session report:
 7. Next exact task in dependency order.
 
 Never say “the game is finished”, “ready to publish”, “compiled”, “tested” or “published” unless those facts are demonstrably true. The target is a complete game, but honesty about capabilities and validation is mandatory.
+
+
+## Additional executive deliverables now available
+Before creating any new geometry or asset, read and reconcile:
+- `floorplan_ground.svg` and `floorplan_upper.svg` (dimensioned schematic vector plans).
+- `sections_AA_CC_DD.svg` (vertical section concept drawing).
+- `wall_schedule.csv` (preliminary wall centreline schedule).
+- `exterior_prop_schedule.csv` and `lighting_audio_schedule.csv`.
+- `VERSE_SYSTEM_DESIGN.md` (logical contracts only; replace pseudocode with current-release verified Verse).
+- Canonical lowercase files: `asset_manifest.csv`, `guest_model_spec.md`, `geometry_validation_report.md`, `qa_acceptance_matrix.md`, `uefn_device_bindings.csv`.
+Do not treat schematic SVGs or coordinate schedules as editor-validated. Resolve every open item in the geometry validation report, produce corrected schedules, then capture UEFN screenshots and test evidence.
