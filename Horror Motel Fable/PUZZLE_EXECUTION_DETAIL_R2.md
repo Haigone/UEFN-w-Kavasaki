@@ -66,9 +66,9 @@ No mandatory puzzle is time-limited. THE GUEST cannot capture a player while a m
 
 ## 5. PZ-05 — FINAL ESCAPE MECHANISM / SERVICE ROUTE
 
-**Act/location:** VI, service control/gate and exterior vehicle.  
+**Act/location:** VI, GF-SERVICE-BAY (Service Control Bay) and exterior vehicle. U-SERVICE is a sealed technical reserve and is never a gameplay location.  
 **Prerequisites:** PowerRestored, ServiceKeyObtained and Room13RevealComplete.  
-**Phase A — service route:** use ServiceKey at service control; activate powered gate. Commit GatePowered=true and ServiceRouteReady=true. Derive FinaleReady only when all of the following are true: PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete.  
+**Phase A — service route:** use ServiceKey at D-G16 to access GF-SERVICE-BAY; activate the SVC-GATE-CONSOLE when PowerRestored is true. Commit GatePowered=true and ServiceRouteReady=true. Derive FinaleReady only when all of the following are true: PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete.  
 **Phase B — optional vehicle route:** after FinaleReady, CarKeys are available as an optional Act VI pickup. Collecting them does not select or commit an ending. Vehicle ignition succeeds only when FinaleReady and CarKeysObtained; commit VehicleIgnitionSucceeded=true and derive CoreEscapeReady = FinaleReady AND CarKeysObtained AND VehicleIgnitionSucceeded.  
 **No-key rule:** CarKeys and vehicle ignition are not prerequisites for THE_TRUTH or THE_NEW_GUEST. The final selector must appear after FinaleReady, regardless of CarKeys.  
 **Failure:** show exact missing prerequisite; keys are never consumed; player can leave and return. Gate control fallback lever performs the same validated transition. ServiceKey proxy is allowed only if ServiceKeyObtained is already true. CarKeys proxy is allowed only when FinaleReady and the authored CarKeys actor is verified missing/unreachable; it does not commit or select ESCAPE.  
