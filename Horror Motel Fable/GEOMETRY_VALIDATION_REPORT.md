@@ -48,9 +48,9 @@ The site datum, U footprint/open courtyard, two-floor premise, room count and al
 | G09 | Door schedules disagree on room orientation, wall host and opening centre | Uppercase DOOR_WINDOW_SCHEDULE.csv is canonical; lowercase file is a compatibility mirror | APPROVED R2.3 |
 | G10 | Wall schedule only contains a partial subset of perimeter and partitions | wall_schedule.csv rebuilt as centre-line schedule with unique wall IDs and opening references | APPROVED R2.3; review all physical joins in UEFN |
 | G11 | EBD/E1 vertical heights conflict with R2.1 | Z0.00 GF; ceiling3.00; slab underside3.35/top3.60; upper ceiling/roof underside6.40; roof top6.65; parapet7.10 | DERIVED internally consistent stack from proposed slab/clearance values; APPROVED R2.3 |
-| G12 | Stair text states 5.32 m run but 20 risers/2 flights/9 goings each | 9×0.28=2.52 m per flight; total 18 goings=5.04 m; U-turn landing2.70×1.20; plan envelope2.70×3.72 | DERIVED arithmetic; exact layout OWNER APPROVAL + EDITOR VERIFICATION |
+| G12 | Stair text states 5.32 m run but 20 risers/2 flights/9 goings each | 9×0.28=2.52 m per flight; total 18 goings=5.04 m; U-turn landing2.70×1.20; plan envelope2.70×3.72 | DERIVED arithmetic; exact layout OWNER-APPROVED R2.3 DESIGN; EDITOR VERIFICATION REQUIRED |
 | G13 | Balcony width listed as 1.50 m in E1 and 2.50 m in R2.1 | Continuous U route, 2.50 m minimum clear; side leg widths adjusted to 2.55 m where needed to align wall faces | APPROVED R2.3 |
-| G14 | UPPER_ROOM11 row has missing Y2, shifting subsequent CSV fields | Complete row: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8 | DERIVED from R2.2 room schedule |
+| G14 | UPPER_ROOM11 row has missing Y2, shifting subsequent CSV fields | Complete row: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8 | DERIVED from R2.3 controlled room schedule |
 | G15 | SVGs were schematic and did not consistently represent R2.1 room/balcony dimensions | Both SVG plans redrawn with R2.2 proposed bounds; SECTIONS_R2.2.svg added and syntax/labels corrected | APPROVED R2.3; not CAD/engine verification |
 | G16 | EBD contains a generic 2.20×2.40 m bathroom allowance but no reconciled internal wall/door placement | R2.2 controls room envelopes only; bathroom subdivisions and fixtures are intentionally not fabricated in the wall schedule | OUT OF SCOPE — separate room-interior fit-out required |
 
@@ -74,28 +74,22 @@ The site datum, U footprint/open courtyard, two-floor premise, room count and al
 - Every shared partition must be represented once, never duplicated for adjacent rooms.
 - U balcony side legs, north crossbar and corner pads must be unioned into a single walkable polygon. Do not accept point-only joins.
 - Roof polygon must follow the U footprint union and exclude the courtyard.
-- The ground north connector's 0.30 m partitions, the service bay door and the service reserve partitions are proposed and require owner approval.
+- The ground north connector's 0.30 m partitions, service bay door and service reserve partitions are included in owner-approved R2.3 design; actual mesh, collision and traversal remain editor-verification items.
 - The upper slab includes a 3.00×4.02 m stairwell cut with guardrails on three edges; the south approach remains open. The floor slab, wall, rail and parapet geometry is not structurally validated.
 - Door clear widths, headroom, stair ascent/descent, balcony fall protection, NPC capsule and navmesh remain EDITOR-TEST REQUIRED.
 
-## 6. Owner approval checklist
+## 6. Owner approval status and scope
 
-The following are still unapproved numerical/layout proposals. The five high-level choices already supplied by the owner (north stair, continuous balcony, ROOM 13 north, flat roof, THE GUEST on both floors) are treated as approved intent and are not repeated as open decisions.
+All geometry decisions GEO-A01–GEO-A21 are **OWNER-APPROVED DESIGN** for LD-GEO R2.3, recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. The numbered proposal checklist from the earlier R2.2 review is historical and is no longer an open owner-decision list.
 
-1. Ground-floor room orientation: confirm E1/R2.2 (rooms courtyard-facing, corridors outer side) rather than the mirrored EBD layout.
-2. Ground-floor room Y bands and both 2.00 m cross-bays, including the 1.50 m clear openings on corridor and courtyard sides.
-3. Upper rooms 07–12 in side wings at 8.70 m nominal width, including the two 2.00 m cross-bays per wing and their 1.50 m openings to the balcony.
-4. Ground-floor 1.55 m south-end buffer zones and their open connections to the side corridors; upper-floor equivalent buffers and connections to the balcony.
-5. Ground north connector allocation: west lobby/NW link, reception, office, storage, service bay, electrical room ending X72.90 and retained NE link X73.20–75.70.
-6. Upper north connector allocation: ROOM 13 footprint 14.70×8.60 m, U-service zone and both non-playable service reserves.
-7. Stair exact footprint, U-turn handedness, flight offsets, landing arrangement, 0.18 m riser / 0.28 m going targets, guardrails and 1.20 m approaches. North location is approved; these dimensions are not.
-8. Wall thicknesses: 0.30 m exterior, 0.15 m standard partitions and 0.30 m selected connector partitions; confirm corner/junction construction.
-9. Slab thicknesses: GF 0.20 m; UF and roof 0.25 m. Confirm the complete vertical stack Z=0.00/3.00/3.35/3.60/6.40/6.65/7.10.
-10. Continuous balcony clear width (2.50 m minimum), 2.55 m side legs, corner turning pads, rail placement and 1.10 m rail height.
-11. Flat roof parapet thickness 0.20 m, height 0.45 m, exact corner joins, roof drainage/falls and outlet locations.
-12. Ground courtyard-facing windows and upper exterior-facing windows: confirm placement, sizes and sill heights.
-13. ROOM 12 → ROOM 13 secret-route vestibule, door/panel centres, concealment treatment and clearances.
-14. Interior service-room partitions and service-bay access, including D-G16, plus any bathroom subdivisions not represented in the current room-boundary geometry.
+No further owner choice is required to build the approved R2.3 geometry as designed. The remaining gates are:
+- CLD-002 document/register integrity audit.
+- CLD-001 actual UEFN project baseline and recoverable backup.
+- Greybox construction after both gates pass.
+- Editor validation of collision, navigation, openings, headroom, stair, balcony, secret route and THE GUEST traversal.
+- Separate owner acceptance of the implemented geometry based on editor evidence.
+
+Room interior/bathroom subdivisions remain out of approved scope. Any geometric deviation from R2.3 requires an R2.4 proposal and explicit owner approval. Design approval is not editor verification or structural certification.
 
 ## 8. R2.3 document-level integrity checks (post-approval)
 - ROOM_COORDINATE_REGISTER.csv: 57 data rows; all rows match the 16-column header. The COURTYARD row has the Material_Asset_ID placeholder NA and is schema-aligned (correction present in main at commit 5ac16543). VEST-13 reports Length_m=1.65, matching its FIF Y bounds 47.55–49.20. U-NORTH-HALL is a functional alias of U-NORTH-BALCONY; balcony legs and turn pads are union components and must not be built as overlapping independent collision surfaces.
@@ -118,7 +112,7 @@ LD-GEO R2.3 is owner-approved design geometry, not an engine-verified or constru
 
 ## 10. Approval-gate pointer and scope clarification
 
-OWNER_DECISION_GATE_R2.2.md records the owner response for GEO-A01–GEO-A21. END-A01/END-A02 remain outside geometry scope. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval for GEO-A01–GEO-A21 was received on 2026-11-16 and is recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. Ending decisions END-A01/END-A02 remain outside this geometry approval. This document and its dimensional checks do not authorize construction or imply editor verification.
+OWNER_DECISION_GATE_R2.2.md records the owner response for GEO-A01–GEO-A21. END-A01/END-A02 remain outside geometry scope. It has been expanded to include the final-review decisions for unassigned floor pockets, U-SERVICE access/collision, balcony pad clipping, cross-bay net depth, and roof drainage/access. LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md provides the detailed evidence and recommendations. GEO-A15 separately covers room-interior/bathroom fit-out, which R2.2 intentionally leaves undefined. Owner approval for GEO-A01–GEO-A21 was received on 2026-11-16 and is recorded in OWNER_DECISION_GATE_R2.2.md and LD_GEO_R2.3_APPROVAL_RECORD.md. END-A01 co-op quorum is separately owner-approved; END-A02 truth-evidence gate remains pending owner approval. This document and its dimensional checks do not authorize construction or imply editor verification.
 
 
 ## 11. R2.3 post-approval validation
