@@ -11,9 +11,11 @@
 3. [OWNER_DECISION_PACKET_R1.md](OWNER_DECISION_PACKET_R1.md) — delegated narrative and ending approvals; historical proposal packet.
 4. [OWNER_DECISION_GATE_R2.2.md](OWNER_DECISION_GATE_R2.2.md) — owner approval record for geometry GEO-A01–GEO-A21, co-op ending rule END-A01 and delegated narrative approvals NCP-A01–A09 / END-A02.
 5. [CLAUDE_EXECUTION_PROTOCOL.md](CLAUDE_EXECUTION_PROTOCOL.md) — strict division between documentation planning and actual UEFN execution/evidence.
-6. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — R2.3 geometry-specific gate reference; superseded for overall execution order by [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md).
-7. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
-8. [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) and [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — outstanding work and risks.
+6. [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md) — current ordered execution instructions, canonical decisions, gates, fallbacks and required return package.
+7. [R3_INTEGRATION_INTEGRITY_REPORT.md](R3_INTEGRATION_INTEGRITY_REPORT.md) — static cross-register validation results and remaining blockers.
+8. [CLAUDE_R2.3_EXECUTION_PACKET.md](CLAUDE_R2.3_EXECUTION_PACKET.md) — R2.3 geometry-specific gate reference; superseded for overall execution order by [CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md](CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md).
+9. [PRODUCTION_ROADMAP.md](PRODUCTION_ROADMAP.md) — dependency-ordered production phases.
+10. [MISSING_DELIVERABLES_REGISTER.md](MISSING_DELIVERABLES_REGISTER.md) and [CONTRADICTION_AND_RISK_REGISTER.md](CONTRADICTION_AND_RISK_REGISTER.md) — outstanding work and risks.
 
 ## 2. Approved geometry authority
 
@@ -56,6 +58,7 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 
 - [UEFN_IMPLEMENTATION_SPEC.md](UEFN_IMPLEMENTATION_SPEC.md) — system architecture and device families.
 - [UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md](UEFN_FEATURE_COMPATIBILITY_MATRIX_R1.md) — per-system implementation route, API checks, verification procedure and fallback.
+- [UEFN_VERIFIED_REFERENCE_REGISTER_R1.md](UEFN_VERIFIED_REFERENCE_REGISTER_R1.md) — official Epic documentation references and documented-vs-unverified capability boundaries.
 - [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — API-neutral logical contracts/pseudocode, not compiled Verse.
 - [UEFN_DEVICE_BINDINGS.csv](UEFN_DEVICE_BINDINGS.csv) — intended device/event bindings; editor verification required.
 - [CLAUDE_EXECUTION_PLAN.md](CLAUDE_EXECUTION_PLAN.md), [CLAUDE_UEFN_EXECUTION_PLAN.md](CLAUDE_UEFN_EXECUTION_PLAN.md), [PRODUCTION_DETAIL_REQUIREMENTS.md](PRODUCTION_DETAIL_REQUIREMENTS.md).
