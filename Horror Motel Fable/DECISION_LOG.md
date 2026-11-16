@@ -40,3 +40,18 @@ These are recorded as existing written project requirements, not independently r
 
 ## Binding execution protocol
 See `CLAUDE_EXECUTION_PROTOCOL.md` for task packet requirements, Claude's evidence return format, status rules and the execution feedback loop. This protocol clarifies roles without claiming that any UEFN work or test has already been performed.
+
+
+## Re-audit observations and pending decisions — 2026-11-16
+
+| Decision ID | Date | Decision / observation | Rationale | Scope | Authority | Status |
+|---|---|---|---|---|---|---|
+| DEC-012 | 2026-11-16 | Re-audit current main and the open Environment Art branch; current main contains 65 files in Horror Motel Fable plus root README | Earlier inventory count was a historical snapshot and no longer describes current main | Repository baseline | Production Director | COMPLETATO CON EVIDENZA |
+| DEC-013 | 2026-11-16 | Do not merge PR #1 until its branch is synchronised with main, its data defects are corrected and it receives review | Branch is 11 commits ahead / 42 behind, draft and unreviewed | Environment Art intake | Project Owner / Production Director | BLOCCATO |
+| DEC-014 | 2026-11-16 | Treat R2.0 as the current geometry candidate, not approved final geometry | It consolidates room allocation and route concept but wall/section/stair/vertical proof remains open | Level Design | Project Owner | PRESENTE MA NON VERIFICATO |
+| DEC-015 | 2026-11-16 | Correct the six out-of-bounds wardrobe placements and the ROOM 12 panel offset before any placement import | Placement register conflicts with candidate room bounds and D-13A opening centre | Environment Art / Level Design | Project Owner / Art Lead | BLOCCATO |
+| DEC-016 | 2026-11-16 | Repair malformed CSV rows and separate lighting/audio schemas before schedules are consumed | Confirmed header-width and schema integrity defects | Data governance | Production Director | INCOMPLETO |
+| DEC-017 | 2026-11-16 | Geometry remains the physical critical path; Narrative Lock documentation may proceed in parallel unless owner explicitly changes priority | Reconciles master register/roadmap with the narrative-first phase label in CLAUDE_EXECUTION_PLAN | Production sequencing | Project Owner approval required | PRESENTE MA NON VERIFICATO |
+| DEC-018 | 2026-11-16 | Claude remains sole designated operator for UEFN implementation and tests; ChatGPT prepares plans and reviews returned evidence | Confirmed by CLAUDE_EXECUTION_PROTOCOL.md and CLAUDE_EXECUTION_PLAN.md | All UEFN/editor/QA work | Project Owner | COMPLETATO CON EVIDENZA |
+
+These entries record audit findings and recommendations. DEC-013, DEC-015 and DEC-017 require owner/discipline action; they do not authorise a merge, placement change or creative geometry change.
