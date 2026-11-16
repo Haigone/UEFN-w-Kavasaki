@@ -70,3 +70,7 @@ These entries record audit findings and recommendations. DEC-013, DEC-015 and DE
 | DEC-025 | 2026-11-16 | Claude may propose a gate-anchor correction but must not change the R2.1 authority until owner approval | Gate conflict remains unresolved and structural changes require owner authority | Exterior geometry | Project Owner | BLOCCATO |
 
 These entries do not authorize asset purchases, PR merge, geometry edits or engine acceptance.
+
+
+### DEC-021 status clarification
+Latest live metadata reports PR #1 `mergeable=true`, not mergeable=false. The no-merge recommendation remains unchanged because the branch is 49 ahead / 94 behind, draft and unreviewed, and still based on R2.0 rather than current R2.1. The block is readiness and governance, not Git conflict status.
