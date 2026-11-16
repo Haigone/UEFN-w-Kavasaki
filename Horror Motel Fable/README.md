@@ -66,6 +66,11 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 - Never report an editor build, import, Verse compile, playtest, multiplayer test, performance profile or island validation without actual reproducible evidence.
 - Do not publish without all release gates and explicit owner authorization.
 
-## 7. Status vocabulary
+## 7. QA and release gates
+
+- [QA_ACCEPTANCE_MATRIX.md](QA_ACCEPTANCE_MATRIX.md) — cross-discipline release evidence matrix, including R2.3 objective, interaction, AI, cinematic, asset, audio, lighting and UI suites.
+- [GAMEPLAY_ACCEPTANCE_TESTS.md](GAMEPLAY_ACCEPTANCE_TESTS.md) and [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md) — gameplay and narrative acceptance tests.
+
+## 8. Status vocabulary
 
 Use OWNER-APPROVED DESIGN, CANONICAL DOCUMENT, PROPOSED, ENGINE-VERIFIED, EDITOR-VERIFIED, TEST-PASS, BLOCKED and NOT RUN precisely. A document being authored does not mean its feature is implemented or tested.
