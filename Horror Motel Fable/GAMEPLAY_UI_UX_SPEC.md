@@ -91,15 +91,15 @@ Tracker reads this state; it never infers completion from proximity alone.
 | Act | Primary objective | Completion |
 |---|---|---|
 | I — THE ARRIVAL | Investigate the front desk | Required intro/phone/key/register discovery flags committed |
-| II — THE REGISTER | Find a way into the owner's office | Register solved; Office Key granted |
-| II — THE REGISTER | Investigate the motel rooms | Office photo clue solved; upper-floor access granted; required room investigation per approved flow |
+| II — THE REGISTER | Open the front desk | Register solved; Office Key granted through IN-006 |
+| II — THE REGISTER | Find the way upstairs | Office photo puzzle solved through IN-007; upper-floor access granted. Rooms 01–06 remain available for exploration; inspecting every room is not a progression gate |
 | III — THE POWER | Restore motel power | Fuse A/B/C installed and breaker activated |
 | IV — THE SECOND FLOOR | Find the way to ROOM 13 | Required diary/drawing investigation; Room 12 panel opened; route unlocked |
 | V — ROOM 13 | Discover who the owner really is | Four-photo sequence solved; reveal completed; Service Key granted |
 | VI — NO VACANCY | Open the service route and escape | Car Keys + Service Key + GatePowered; CoreEscapeReady |
 | VI — NO VACANCY | Decide the motel's fate | Explicit ending committed |
 
-Open dependency: exact Act II completion predicate is not aligned across all documents. Do not make inspection of every room 01–06 mandatory unless the approved objective matrix says so.
+Canonical objective IDs and exact completion predicates are in OBJECTIVE_AND_EVENT_CATALOG.md. ACT II completes after PZ-01/OfficeKey and PZ-02/UpperFloorAccessGranted; it does not require inspecting every room 01–06.
 
 ### 4.4 Tracker device vs quest tracker
 Quest tracker means the custom objective presentation, not a permanent world marker.
@@ -253,10 +253,10 @@ Before implementation, reconcile/create:
 
 ## 13. Open issues — do not silently assume
 1. END-A02 is APPROVED: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. The gate is optional for core progression/ESCAPE and required only for THE_TRUTH.
-2. Exact Act II objective completion predicate is not aligned across all docs. Confirm if all rooms 01–06 must be inspected.
-3. Room 04 phone and Room 01 CRT need stable DocumentId/discovery-flag mapping; reuse existing flags where possible.
+2. Use OBJECTIVE_AND_EVENT_CATALOG.md for the canonical Act II predicate; do not gate on every room 01–06 inspection.
+3. Room 01 CRT and Room 04 phone now have stable interaction IDs IN-030 and IN-031 and flags CRTFeedSeen, Room04RecordingHeard and Room04TranscriptRead.
 4. Journal binding and final control glyphs must be selected/verified in UEFN.
-5. END-A01 quorum is approved; exact vote-window duration, vote UI presentation and timeout UX remain implementation parameters to be proposed and documented without changing the approved outcome rules.
+5. END-A01 quorum is approved; vote-window duration, vote UI presentation and timeout UX must be specified as tunable presentation parameters without changing the approved quorum or fallback rules.
 6. HUD visual style, typography, icons, safe-area coordinates and animation timing need a visual mockup and in-editor validation.
 7. Any objective arrow/beacon requires explicit design approval; default is no persistent navigation marker.
 
