@@ -18,7 +18,7 @@ IN-016,V,Room 13,Four-photo board,Arrange,Room 13 unlocked,2,0,PhotoSequenceSolv
 IN-017,V,Room 13,Hidden compartment,Collect Service Key,PhotoSequenceSolved,2,1,ServiceKey,Pickup cue,Once,Team-owned,Regrant if flag solved
 IN-018,VI,Service route,Gate control,Unlock/activate,PowerRestored; ServiceKey,2,2,GatePowered;ServiceRouteReady,Gate movement/cue,Once,Shared,Manual lever fallback
 IN-019,VI,Exterior,Vehicle ignition,Use car keys,CarKeys; GatePowered,2,2,CoreEscapeReady,Engine start cue,Once,Shared,Ignition proxy if actor missing
-IN-020,VI,Final route,Ending selector,Choose ending,Eligibility validated; Ending=NONE,2,0,EndingSelected,Branch-specific UI/audio,Once locked,Team vote/confirmation,ESCAPE default on unresolved tie
+IN-020,VI,Final route,Ending selector,Choose ending,Eligibility validated; Ending=NONE,2,0,EndingSelected,Branch-specific UI/audio,Once locked,Team vote/confirmation,Tie/timeout selects ESCAPE only if eligible; otherwise reopen vote; never default to THE_TRUTH
 IN-021,Any,Authored hiding spots,Hiding spot,Hide/Exit,Player ACTIVE; spot available,2,1,PlayerHidden,Hide/exit cue,Repeatable,Per-player,Force exit on reset/disconnect
 IN-022,Any,Captured location,Captured player,Rescue,Target CAPTURED; rescuer ACTIVE,2,5,Target RESCUED,Progress UI/audio,Cancelable,One rescuer commits,90s self-recovery fallback
 IN-023,Any,Checkpoint,Checkpoint device,Activate checkpoint,Required flags satisfied,2,0,CheckpointId updated,HUD checkpoint cue,Once per checkpoint,Team-shared,Re-evaluate flags and actors idempotently on restore
