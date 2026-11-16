@@ -93,3 +93,8 @@ AUDIO_VO_SET,Audio,Phone welcome truth recorder escape radio voice lines,TBD,SEE
 UI_WIDGET_SET,UI,HUD journal inventory evidence ending vote prompts,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
 UI_ICON_SET,UI,Flashlight battery fuse keys evidence objective icons,TBD,SEE BACKLOG,1 set,P1,NOT SOURCED
 VFX_RAIN_DUST,VFX,Rain dust and restrained environmental particles,TBD,SEE BACKLOG,1 set,P2,NOT SOURCED
+PROP_OPTIONAL_DOCUMENT_SET,Prop,Optional readable motel documents for desk inspection,TBD,SEE BACKLOG,6,P2,NOT SOURCED
+PROP_STORAGE_SHELF_FUSE_B,Prop,Storage shelf and wet floor sign for Fuse B pickup,TBD,SEE BACKLOG,1 set,P0,NOT SOURCED
+PROP_ROOM06_MAINTENANCE_CABINET,Prop,ROOM06 maintenance cabinet for Fuse C,TBD,SEE BACKLOG,1,P0,NOT SOURCED
+PROP_TOOL_BOARD_SCREWDRIVER,Prop,Utility tool board and reusable screwdriver display,TBD,SEE BACKLOG,1,P1,NOT SOURCED
+PROP_ROOM13_SERVICE_KEY_DRAWER,Prop,ROOM13 desk drawer compartment for Service Key,TBD,SEE BACKLOG,1,P0,NOT SOURCED
