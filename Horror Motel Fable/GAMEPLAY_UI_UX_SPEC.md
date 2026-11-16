@@ -135,7 +135,7 @@ Re-inspection opens the same entry without duplicate flags, rewards or events. E
 ### 5.3 Evidence categories
 - Mandatory progression clue: required for access/puzzle; readable in-world and in journal.
 - Optional lore: never blocks ESCAPE.
-- Truth evidence candidate: gates THE_TRUTH only after owner approval of END-A02. Until then it is ordinary discovered evidence and must not show a completed truth-chain claim.
+- Truth evidence: the three approved investigation entries gate THE_TRUTH through TruthChainComplete. They remain optional to the core ESCAPE route and are never represented as mandatory story progression.
 - Structural states (SecretPanelOpened, PhotoSequenceSolved, OwnerIdentityRevealed) are not evidence pickups and must not be double-counted.
 
 ### 5.4 Known evidence entries to reconcile
