@@ -87,8 +87,8 @@ Only the site datum, U footprint/open courtyard, two-floor premise, room count, 
 
 
 ## 8. R2.2 document-level integrity checks (performed after schedule updates)
-- ROOM_COORDINATE_REGISTER.csv: 47 data rows; all rows match the 16-column header.
-- coordinate_schedule.csv: 37 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
+- ROOM_COORDINATE_REGISTER.csv: 48 data rows; all rows match the 16-column header.
+- coordinate_schedule.csv: 38 data rows; all rows match the 14-column header. UPPER_ROOM11 is complete: X67–75.7, Y29–36, Z3.6–6.4, width8.7, clear height2.8.
 - DOOR_WINDOW_SCHEDULE.csv: 47 openings; all rows match the 16-column header.
 - door_window_schedule.csv: 47 entries; all rows match the 12-column header and IDs/centres/sill/clear dimensions match the uppercase authority.
 - wall_schedule.csv: 66 unique wall IDs; all rows match the 15-column header.
