@@ -66,7 +66,7 @@
 | GAT-033 | Explicit team acceptance | THE_NEW_GUEST |
 | GAT-034 | Capture without acceptance | Not THE_NEW_GUEST |
 | GAT-035 | Overlapping ending triggers | Exactly one ending commits |
-| GAT-036 | Tie/no response in co-op vote | ESCAPE deterministic fallback |
+| GAT-036 | Tie/timeout in co-op ESCAPE/THE_TRUTH vote | ESCAPE only if eligible; otherwise selector remains active for a new vote; THE_TRUTH is never implicit |
 | GAT-037 | Repeat ending trigger | No branch change or replay |
 
 ## 6. AI, readability and performance
@@ -96,3 +96,24 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-050 | Solve PZ-01 and PZ-04 without collecting the visible keys | Puzzles open their respective drawers/compartments; OfficeKey and ServiceKey are granted only by IN-006 and IN-017 |
 | GAT-051 | Collect CarKeys in Act VI and use vehicle ignition | CarKeys enters team inventory once; ignition remains unavailable until GatePowered and CarKeys are both true |
 | GAT-052 | Inspect Room 06 missing-guest photo board | MissingGuestEvidenceFound is recorded once and appears in the journal; it gates THE_TRUTH only if owner-approved as mandatory evidence |
+
+
+## 8. Objective, AI, UI and END-A01 regression tests
+| Test ID | Scenario | Expected result |
+|---|---|---|
+| GAT-053 | Complete PZ-01 and PZ-02 without inspecting every Room 01–06 anomaly | ACT II completes; room anomaly inspection is not an accidental progression gate |
+| GAT-054 | Inspect Room 01 CRT and Room 04 phone | IN-030/IN-031 set their distinct discovery/transcript flags once; no objective regression |
+| GAT-055 | Activate service control then vehicle ignition | IN-018 commits GatePowered and ServiceRouteReady; IN-019 commits CoreEscapeReady only after CarKeys and GatePowered |
+| GAT-056 | Co-op ending vote with 3 eligible players and 2 choose ESCAPE | ESCAPE commits once by strict majority |
+| GAT-057 | Co-op ending vote tie/timeout while ESCAPE eligible | ESCAPE commits; no other branch inferred |
+| GAT-058 | Co-op ending vote tie/timeout while ESCAPE ineligible | Selector remains active for a new vote; THE_TRUTH is not silently selected |
+| GAT-059 | THE_NEW_GUEST confirmation with one decline | Ending does not commit; decline is not consent |
+| GAT-060 | THE_NEW_GUEST confirmation with one disconnect | Disconnected player is removed; remaining connected eligible players must explicitly reconfirm unanimity |
+| GAT-061 | Any ending trigger fires after EndingSelected is committed | Existing ending remains; no second cinematic or state mutation |
+| GAT-062 | AI loses line of sight behind solid wall | AI navigates to last-known position and never tracks hidden live transform |
+| GAT-063 | AI cannot find a valid navigation path | No teleport; repath/retreat fallback; player progression remains available |
+| GAT-064 | Player enters protected puzzle/cinematic state during chase | Capture request is rejected and AI disengages safely |
+| GAT-065 | All players captured | Team checkpoint recovery completes; no death/end branch is inferred |
+| GAT-066 | Repeated checkpoint restore | Same flags/actors/objectives; no duplicate inventory, audio or one-shot events |
+
+**END-A02 test gate:** before owner approval, verify that no unapproved truth clue is treated as mandatory. After explicit approval, add/enable the three-clue truth-chain tests from END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md.
