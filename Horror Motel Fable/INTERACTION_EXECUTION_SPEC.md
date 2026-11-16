@@ -55,7 +55,7 @@ All interaction events are validated by the authoritative Verse/gameplay layer. 
 | IN-015 | HOLD / 2 s | Use reusable Screwdriver on ROOM 12 panel; set SecretPanelOpened and Room13Unlocked; open route | Cancel leaves panel unchanged; route actor recovery allowed only after validated commit | UI_IN_015_PROMPT; readable panel cue and route visual |
 | IN-016 | PUZZLE / modal | Arrange ROOM 13 photos 1968/1974/1981/1986; set PhotoSequenceSolved and open compartment; start reveal presentation | Wrong order resets; no items consumed; disconnect releases lock | UI_IN_016_PROMPT; UI_ERR_PHOTO; chronology journal fallback |
 | IN-017 | PICKUP / 1 s | After PZ-04, grant ServiceKey team-wide exactly once | Recovery proxy only if PhotoSequenceSolved; no duplicate grant | UI_IN_017_PROMPT; UI_ALREADY_SECURED |
-| IN-018 | HOLD / 2 s | Require PowerRestored and ServiceKey; unlock service control; set GatePowered and ServiceRouteReady | Cancel leaves gate unchanged; missing prerequisite gives feedback; manual lever is equivalent validated fallback | UI_IN_018_PROMPT; gate visual/audio feedback |
+| IN-018 | HOLD / 2 s | Require PowerRestored and ServiceKey; unlock service control; set GatePowered and ServiceRouteReady; GameManager derives FinaleReady | Cancel leaves gate unchanged; missing prerequisite gives feedback; manual lever is equivalent validated fallback | UI_IN_018_PROMPT; gate visual/audio feedback |
 | IN-019 | HOLD / 2 s | Require CarKeys and GatePowered; use vehicle ignition; set CoreEscapeReady | Cancel leaves ignition uncommitted; no key consumed | UI_IN_019_PROMPT; vehicle engine cue |
 | IN-020 | VOTE / max 20 s | At final choice point, show eligible endings only; solo selects directly. Co-op: strict majority for ESCAPE/THE_TRUTH; unanimous explicit affirmative for THE_NEW_GUEST | Early resolve when quorum is met. Timeout/tie selects ESCAPE only if eligible; otherwise reopen selector. THE_NEW_GUEST decline/timeout means no commit. Disconnect removes player and restarts/reconfirms with remaining electorate. Commit ending atomically once | UI_IN_020_PROMPT; UI_VOTE_WAIT; UI_VOTE_TIE; UI_VOTE_TIMEOUT; ending choice strings |
 | IN-021 | PRESS / enter-exit | Enter/leave authored hiding spot; set per-player hidden state | Force exit on reset/disconnect; cannot hide while captured/cinematic/SAFE | UI_IN_021_PROMPT; hiding-state HUD |
@@ -65,7 +65,7 @@ All interaction events are validated by the authoritative Verse/gameplay layer. 
 | IN-025 | PICKUP / 1 s | Grant FuseB to team once from Storage shelf | Duplicate pickup ignored; recover only if authored pickup unreachable | UI_IN_025_PROMPT; UI_ALREADY_SECURED |
 | IN-026 | PICKUP / 1 s | Grant FuseC to team once from ROOM 06 cabinet | Duplicate pickup ignored; recover only if authored pickup unreachable | UI_IN_026_PROMPT; UI_ALREADY_SECURED |
 | IN-027 | PICKUP / 1 s | Grant reusable Screwdriver to team once | Duplicate pickup ignored; do not consume on IN-010/015 | UI_IN_027_PROMPT; UI_ALREADY_SECURED |
-| IN-028 | PICKUP / 1 s | In ACT VI, grant CarKeys to team once | If actor missing, vehicle key hook proxy; no ignition until IN-018 + IN-019 conditions | UI_IN_028_PROMPT; UI_ALREADY_SECURED |
+| IN-028 | PICKUP / 1 s | If pursuing ESCAPE in ACT VI, grant CarKeys to team once | If actor missing, vehicle key hook proxy; no ignition until IN-018 + IN-019 conditions | UI_IN_028_PROMPT; UI_ALREADY_SECURED |
 | IN-029 | INSPECT / press | Inspect ROOM 06 missing-guest photo archive; set MissingGuestEvidenceFound | Repeatable; journal copy; END-A02 mandatory role pending owner approval | UI_IN_029_PROMPT; readable photo archive |
 | IN-030 | INSPECT / press | Watch ROOM 01 CRT; set CRTFeedSeen | Repeatable; visual content remains available if audio unavailable | UI_IN_030_PROMPT; CRT visual feed |
 | IN-031 | PRESS + LISTEN / VO duration | Listen to ROOM 04 recording; set Room04RecordingHeard and Room04TranscriptRead when transcript is presented | Replayable; close/cancel does not erase transcript; audio is not required to learn fuse locations | UI_IN_031_PROMPT; transcript/journal fallback |
@@ -93,7 +93,7 @@ The battery is personal equipment, not a quest item and not FuseA. Each player h
 - IN-024/025/026 are the only FuseA/FuseB/FuseC grants.
 - IN-027 is the only Screwdriver grant.
 - IN-028 is the only CarKeys grant.
-- IN-018 sets GatePowered and ServiceRouteReady; IN-019 sets CoreEscapeReady.
+- IN-018 sets GatePowered and ServiceRouteReady; GameManager derives FinaleReady; IN-019 sets CoreEscapeReady only for the ESCAPE vehicle branch.
 - IN-030 and IN-031 own the CRT/Room04 recording discovery flags.
 - IN-029 owns MissingGuestEvidenceFound.
 - TruthChainComplete is a derived GameManager flag and remains unimplemented as a mandatory gate until END-A02 is approved.
