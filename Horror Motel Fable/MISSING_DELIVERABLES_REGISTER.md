@@ -78,3 +78,7 @@ PR #1 is technically reported `mergeable=true` by GitHub at the latest check, bu
 
 ### MD-036 final status correction
 Latest live check returned `mergeable=false` after an earlier check reported true; compare was 49 ahead / 100 behind main. Treat PR #1 as blocked and recheck after synchronisation/review. The reason for MD-036 remains content/readiness as well as the current mergeability result.
+
+
+### MD-036 / MD-037 latest placement delta
+Latest PR snapshot has 120 asset rows and 286 placement rows (186 proposed, 7 blocked, 2 editor-test required, 91 unplaced). Six west wardrobes are now blocked/unplaced rather than active placements; three upper-east wardrobes remain outside R2.1 bounds, and F12_SECRET_PANEL is 1.35 m offset from D-13A. PR remains draft and diverged 52 ahead / 106 behind; latest mergeable=false. This supersedes the earlier nine-active-wardrobe and 119-asset counts.
