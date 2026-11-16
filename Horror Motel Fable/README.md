@@ -43,7 +43,8 @@ R2.3 is **approved as design**, not editor-verified. R2.2 and earlier geometry p
 - [MONSTER_AI_BEHAVIOUR_SPEC.md](MONSTER_AI_BEHAVIOUR_SPEC.md) — dedicated state machine, perception, stimuli, targeting, navigation, capture handoff, fairness, tuning and AI tests.
 - [GUEST_MODEL_SPEC.md](GUEST_MODEL_SPEC.md) — THE GUEST character production requirements.
 - [ASSET_AND_CONTENT_REGISTER.md](ASSET_AND_CONTENT_REGISTER.md), [asset_manifest.csv](asset_manifest.csv), [ASSET_MANIFEST_EXECUTIVE.csv](ASSET_MANIFEST_EXECUTIVE.csv).
-- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) are the current separate registers; the old combined lighting/audio schedule is historical.
+- [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) are the current separate registers; [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) and [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv) define event triggers and behaviour; the old combined lighting/audio schedule is historical.
+- [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv) is the current stable English copy baseline for objectives, prompts, feedback and subtitles.
 - Environment Art PR #1 is not a build authority and must not be merged as-is; all placements require R2.3 reconciliation.
 
 ## 5. UEFN, Verse and technical production
