@@ -105,3 +105,7 @@ Fab listing checks confirm advertised formats and listing metadata only. They do
 
 ### Final mergeability status correction
 The latest live PR check returned `mergeable=false` (earlier check returned true). Compare was 49 ahead / 100 behind main, DIVERGED. Keep CR-024 blocked and recheck the live status before any merge attempt; regardless of the flag, R2.0-vs-R2.1 staleness and unresolved defects independently prevent acceptance.
+
+
+## Latest placement/branch delta — final snapshot
+The Environment Art branch advanced to `75013155a21717c02ad094c9c9d4238f0f9596e0`; compare is now 52 ahead / 106 behind main, DIVERGED. PR #1 remains OPEN/DRAFT, latest mergeable=false, with no reviews/comments/status checks. Its asset register is now 120 rows, not 119 as stated in the PR description. Placement status counts: 186 PROPOSED TARGET, 7 BLOCKED, 2 EDITOR-TEST REQUIRED, 91 UNPLACED. Six west wardrobes are now BLOCKED with no coordinates; three upper-east wardrobes F10/F11/F12 remain proposed outside R2.1 bounds (X=66.00 vs room minimum X=67.00). F12_SECRET_PANEL remains 1.35 m east/west misaligned from D-13A (X=68.60 vs 69.95). All placement asset/material references resolve. Source register and GQ-007 remain malformed; the plan still cites R2.0. This supersedes the earlier nine-active-wardrobe/119-row count; keep CR-033/034 blocked.
