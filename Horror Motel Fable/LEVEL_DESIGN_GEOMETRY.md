@@ -77,7 +77,7 @@ The key correction is ELECTRICAL ending at X=72.90. This preserves a 2.50 m east
 
 The south-end 1.55 m buffer zones Y18.30–19.85 are open to the ground corridor / upper balcony; the room south walls close at Y19.925. This avoids leaving an inaccessible strip behind the south facade. OWNER APPROVAL REQUIRED.
 
-The 2.00 m gaps between guest-room Y bands (27–29 and 36–38) are retained as **transverse open connector bays**, not room area. This is a proposed interpretation to avoid inventing extra room dimensions. Provide 1.50 m clear openings through the courtyard-facing wall at Y=28.00 and 37.00. These bays connect the side corridor to the courtyard. OWNER APPROVAL REQUIRED.
+The 2.00 m gaps between guest-room Y bands (27–29 and 36–38) are retained as **transverse open connector bays**, not room area. This is a proposed interpretation to avoid inventing extra room dimensions. Provide 1.50 m clear openings through both corridor/room partitions (X=10.95 west, X=73.05 east) and courtyard-facing walls (X=19.85 west, X=64.15 east) at Y=28.00 and 37.00. These bays connect the side corridor to the courtyard. OWNER APPROVAL REQUIRED.
 
 ### Upper floor — side wings
 To retain a continuous courtyard-facing balcony without leaving an unexplained 2.50 m strip between the room and outer envelope, the side rooms use the full outer room band:
