@@ -185,6 +185,48 @@ puzzle05 = next((r for r in data["PUZZLE_MASTER_REGISTER.csv"][1] if r.get("Puzz
 if puzzle05 and "FinaleReady" in puzzle05.get("Prerequisites", ""):
     fail("PZ-05 has circular prerequisite FinaleReady; it must be derived after service route activation")
 
+# Cross-reference checks for opening/wall, audio/subtitle and lighting registers.
+wall_ids = {r.get("Wall_ID", "") for r in data["wall_schedule.csv"][1]}
+opening_rows = read_csv("DOOR_WINDOW_SCHEDULE.csv")[1]
+for row_no, row in enumerate(opening_rows, start=2):
+    wall_id = row.get("Wall_ID", "")
+    if wall_id not in wall_ids:
+        fail(f"DOOR_WINDOW_SCHEDULE.csv:{row_no}: unknown host Wall_ID {wall_id}")
+
+audio_ids = {r.get("Audio_ID", "") for r in data["AUDIO_REGISTER.csv"][1]}
+string_ids = {r.get("String_ID", "") for r in data["UI_STRING_TABLE.csv"][1]}
+for row_no, row in enumerate(data["AUDIO_CUE_SHEET.csv"][1], start=2):
+    audio_id = row.get("Audio_ID", "")
+    subtitle_id = row.get("Subtitle_String_ID", "")
+    if audio_id not in audio_ids:
+        fail(f"AUDIO_CUE_SHEET.csv:{row_no}: unknown Audio_ID {audio_id}")
+    if subtitle_id and subtitle_id != "NONE" and subtitle_id not in string_ids:
+        fail(f"AUDIO_CUE_SHEET.csv:{row_no}: unknown Subtitle_String_ID {subtitle_id}")
+
+light_ids = {r.get("Light_ID", "") for r in data["LIGHTING_REGISTER.csv"][1]}
+for row_no, row in enumerate(data["LIGHTING_CUE_SHEET.csv"][1], start=2):
+    for light_id in filter(None, (part.strip() for part in row.get("Light_IDs", "").split(";"))):
+        if light_id not in light_ids:
+            fail(f"LIGHTING_CUE_SHEET.csv:{row_no}: unknown Light_ID {light_id}")
+
+# Markdown catalog coverage: IDs must remain continuous and every interaction must appear in the crosswalk.
+def read_text(relative: str) -> str:
+    path = ROOT / relative
+    if not path.is_file():
+        fail(f"MISSING FILE: {relative}")
+        return ""
+    return path.read_text(encoding="utf-8")
+
+crosswalk = read_text("EVENT_INTERACTION_VERSE_CROSSWALK_R1.md")
+event_catalog = read_text("EVENT_AND_STATE_TRANSITION_CATALOG_R2.md")
+for interaction_id in sorted(interaction_ids):
+    if interaction_id and interaction_id not in crosswalk:
+        fail(f"EVENT_INTERACTION_VERSE_CROSSWALK_R1.md: missing {interaction_id}")
+event_ids = set(re.findall(r"EVT-\\d{3}", event_catalog))
+expected_event_ids = {f"EVT-{n:03d}" for n in range(1, 52)}
+if event_ids != expected_event_ids:
+    fail(f"event catalog ID coverage mismatch: missing={sorted(expected_event_ids-event_ids)}, extra={sorted(event_ids-expected_event_ids)}")
+
 # Check all CSV rows have the same number of columns through DictReader extras.
 # The markdown event crosswalk and official engine behavior require semantic/editor proof.
 print("R3 STATIC REPOSITORY VALIDATION")
