@@ -143,3 +143,36 @@ Geometry is the current physical critical path in MASTER_TASK_REGISTER.md and PR
 - **Gate G4.5 — Art intake:** PR reviewed and synchronised; no known out-of-bounds placements; source/license and import evidence tracked.
 
 No new gate passes by document presence alone. Claude remains responsible for UEFN execution and evidence; ChatGPT prepares the task packets and reviews returned results.
+
+
+## 8. R2.1 dependency map and revised art intake
+
+### Current source hierarchy
+R2.1 is now the sole candidate geometry authority. The approved handoff sequence is:
+**Owner-locked R2.1 design decisions → complete R2.1 polygons/wall/floor/ceiling/opening schedules → complete stair/balcony/roof/secret-route sections → full furnishing/asset coordinate schedule → Claude greybox → player and THE GUEST traversal evidence → owner geometry approval → final environment art.**
+
+R2.1 owner-locked decisions are north stair at reception, continuous courtyard-facing U-shaped balcony, ROOM 13 in north connector, flat non-playable roof and THE GUEST's intended access to both floors. This does not mean the whole construction package is approved. Only greybox is authorized until the remaining geometry gates pass.
+
+### R2.1 blockers
+- Complete wall/floor/ceiling/polygon register. Current wall_schedule.csv is still a 23-row partial legacy schedule and does not represent all R2.1 walls/openings/rails.
+- Explicit U-balcony corner-pad polygons and roof polygon union excluding the courtyard.
+- Continuous ROOM 12 → vestibule → east balcony → north balcony → ROOM 13 route, including D-13A/B/C wall cuts and return path.
+- Exact stair plan origin, flight direction, landing polygon and upper slab opening.
+- Roof drainage falls and drain/downpipe positions.
+- Gate anchor: GATE-01 (X40–44,Y0–1) conflicts with legacy EXT_GATE at (42,18); owner approval required before any change.
+- Full furnishing schedule and valid Placement_ID/Asset_ID/Material_ID cross-references.
+
+### Data gates
+- Repair semantic alignment in IN-021/022/023 and PZ-03; row-width checks alone are insufficient.
+- Keep legacy coordinate_schedule.csv and lighting_audio_schedule.csv out of automated ingestion. R2.1 coordinate register and separate AUDIO_REGISTER/LIGHTING_REGISTER are current, subject to remaining semantic checks.
+- Correct ROOM_FURNISHING_SCHEDULE.csv schema: separate placement, asset and material IDs; map against actual registers.
+- Separate light colour temperature from intensity units; replace Dynamic XYZ text with explicit attached-emitter mode for NPC audio.
+
+### Environment Art branch intake
+PR #1 currently diverges 44 commits ahead / 87 behind main and is mergeable=false. It still uses R2.0 authority/placements; R2.1 reduces upper room widths to 5.90 m and moves upper doors to courtyard-facing walls. Rebase alone is not sufficient: reauthor and revalidate the 195 coordinate-bearing placements. Nine wardrobes are out of R2.1 room bounds and F12_SECRET_PANEL is offset 1.35 m in X from D-13A. The source register and geometry query CSVs also need syntax repair.
+
+### External asset source gate
+Only the checked PropHaus Motel and Hotel Props bundle and Motel Signs listings explicitly advertise UEFN Source. The Motel listing advertises UEFN Reference. Other checked candidates list Unreal Engine/Blender/glTF formats without UEFN Source; treat UEFN compatibility as unconfirmed. Epic documentation distinguishes UEFN Source publisher project files from listings without that format. No listing is acquired or licensed in this audit.
+
+### Revised execution ownership
+Claude may inspect, greybox and test only within the current authorized scope. If an unresolved geometry conflict requires a structural decision, Claude records a proposed correction and stops for owner approval. ChatGPT supplies task packets and audits evidence; it does not execute UEFN or certify engine behaviour.
