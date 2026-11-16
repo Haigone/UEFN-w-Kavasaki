@@ -1,0 +1,215 @@
+# GAMEPLAY FLOW, PLAYER STATES & QA
+## THE MOTEL: ROOM 13
+
+## 1. Player control specification
+First-person movement:
+- Walk and sprint; sprint produces more audible movement.
+- Crouch reduces noise and visibility where the verified game systems permit.
+- Manual flashlight with battery state.
+- Contextual interaction at target range 2 m.
+- Examine documents and key objects.
+- Hide only in authored hiding locations.
+- No combat-focused progression; survival is based on awareness, stealth, route planning and cooperation.
+
+Flashlight target tuning:
+- 180 seconds total per battery.
+- 3–4 replacement batteries distributed through the level.
+- Battery replacement action: about 2 seconds.
+- Flicker below 15%; turns off at 0%.
+- Provide clear HUD battery feedback and audio cue.
+- Ensure battery replacement cannot be interrupted into a permanently unusable state.
+
+## 2. Full act-by-act objective flow
+
+### ACT I — THE ARRIVAL (0–8 min)
+1. Spawn group at broken car.
+2. Introduce rain, road ambience and neon sign.
+3. Brief silhouette on upper balcony; no forced chase yet.
+4. Guide players into reception.
+5. Let players inspect register, phone, key rack and clock.
+6. Phone rings: “Welcome. We've been expecting you.”
+7. Reveal ROOM 13 key.
+8. Objective: investigate the front desk and find a way into the owner's office.
+Checkpoint setup begins; no required item should be missable.
+
+### ACT II — THE REGISTER (8–17 min)
+1. Players inspect guest register entries.
+2. Solve three-part date/number lock.
+3. Open desk drawer and obtain Office Key.
+4. Explore owner's office and photo clue.
+5. Unlock upper-floor access route/key.
+6. Explore rooms 01–06 for clues, batteries and fuse leads.
+7. ROOM 01 CRT shows impossible corridor image.
+8. ROOM 02 suitcase contains battery.
+9. ROOM 03 mirror shows THE GUEST.
+10. ROOM 04 phone gives clue.
+11. ROOM 05 footsteps from ceiling.
+12. ROOM 06 missing guest photos.
+13. Objective: restore motel power.
+Checkpoint CP01: register solved and office access granted.
+
+### ACT III — THE POWER (17–27 min)
+1. Direct players to storage/utility area.
+2. Locate Fuse A, B and C in distinct spaces; each pickup is team-shared.
+3. Return to electrical panel.
+4. Install all fuses and restore power.
+5. Lighting and selected systems change state.
+6. Power activation creates an audible event; THE GUEST investigates.
+7. Trigger first full pursuit using a fair route and clear threat cues.
+8. Players evade and regroup.
+Checkpoint CP02: power restored and fuse flags retained.
+
+### ACT IV — THE SECOND FLOOR (27–36 min)
+1. Open upper floor and balcony.
+2. THE GUEST uses verified navigation routes.
+3. Find ROOM 09 diary and key history.
+4. Inspect ROOM 11 child's room.
+5. Find ROOM 12 concealed panel.
+6. Reveal hidden passage entrance.
+7. Ensure team can regroup before entering ROOM 13.
+Checkpoint CP03: second-floor access and required clues retained.
+
+### ACT V — ROOM 13 (36–43 min)
+1. Enter hidden passage.
+2. Enter impossible ROOM 13.
+3. Inspect bed, wardrobe, CRT, phone, photographs and frozen clock at 02:13.
+4. Arrange four photographs chronologically.
+5. Reveal owner identity: owner is identical to THE GUEST.
+6. Open hidden compartment and obtain Service Key.
+7. Set TruthChainComplete when all required evidence flags are satisfied.
+Checkpoint CP04: photo puzzle solved and reveal state retained.
+
+### ACT VI — NO VACANCY (43–50 min)
+1. Reach service route.
+2. Recover Car Keys if not already team-owned.
+3. Activate generator/gate mechanism using Service Key.
+4. Trigger final pursuit with readable wayfinding.
+5. Evaluate explicit ending eligibility and selected branch.
+6. Play one of the three ending sequences.
+7. Show ending title card and return/complete session state safely.
+
+## 3. Player state transitions
+Allowed conceptual transitions:
+- ACTIVE → THREATENED → ACTIVE
+- ACTIVE / THREATENED → CAPTURED
+- CAPTURED → RESCUE_PENDING → RESCUED
+- CAPTURED → SOLO_ESCAPE → ACTIVE
+- ACTIVE / RESCUED → SAFE (ending/exit zone)
+
+Guard every transition:
+- No second capture while already CAPTURED.
+- No rescue by a captured player.
+- No duplicate item grants on rescue.
+- Clear interaction locks on disconnect, reset or checkpoint restore.
+- Do not let a player remain immobilised after an interrupted cinematic.
+- Team defeat is a recoverable checkpoint event, not an unrecoverable session failure.
+
+## 4. Capture / rescue exact targets
+- Capture starts only when THE GUEST reaches a valid target and capture is enabled.
+- Brief capture presentation; use verified UEFN-compatible camera/animation methods only.
+- Captured player remains in a recoverable state.
+- Rescue interaction range: 2 m.
+- Rescue duration: 5 seconds.
+- Post-rescue protection target: 8 seconds.
+- Emergency assistance threshold: 90 seconds; use assistance/recovery, never automatic death.
+- Solo self-rescue: alternate escape interaction or short route that does not require another player.
+- If all players captured: defeat state → latest checkpoint.
+- Only one unscripted capture transition should be processed at a time unless a deliberately authored sequence is implemented and tested.
+
+## 5. Difficulty controller
+TensionLevel range 0–100:
+- 0–24 DORMANT.
+- 25–49 UNEASY.
+- 50–74 HUNTING.
+- 75–100 RELENTLESS.
+
+Potential factors:
+- Time without objective progress.
+- Number/recentness of captures.
+- Puzzle duration with a grace period and upper cap.
+- Detection frequency and chase frequency.
+- Team separation and party size.
+
+Never raise tension solely because players are looking around. Pause or clamp during narrative beats. Reduce tension after difficult puzzles and completed chases. Smooth transitions and use cooldowns.
+
+Target parameters:
+| Parameter | DORMANT | RELENTLESS |
+|---|---:|---:|
+| Patrol interval | 35 s | 18 s |
+| Investigation duration | 12 s | 8 s |
+| Hiding search duration | 5 s | 10 s |
+| Post-chase recovery | 25 s | 12 s |
+
+These are balance targets requiring playtest, not fixed engine behaviour.
+
+## 6. Team inventory and disconnect policy
+Shared quest inventory:
+- Room 13 Key
+- Office Key
+- Fuse A
+- Fuse B
+- Fuse C
+- Screwdriver
+- Car Keys
+- Service Key
+
+The authoritative objective state is team-owned. If the picker disconnects, required progress remains. If the game uses physical item props, they must be re-grantable from a team state or checkpoint. A player leaving during a multi-step interaction must release the interaction lock.
+
+## 7. Three endings: exact flag guidance
+Recommended flags:
+- CoreEscapeReady
+- TruthChainComplete
+- Room13RevealComplete
+- ServiceRouteReady
+- NewGuestAccepted
+- EndingSelected
+
+ESCAPE:
+- CoreEscapeReady = true.
+- TruthChainComplete = false OR player/team chooses the standard exit path.
+- Car Keys + gate mechanism completed.
+- Trigger vehicle escape.
+
+THE TRUTH:
+- CoreEscapeReady = true.
+- TruthChainComplete = true.
+- Room13RevealComplete = true.
+- Players select/activate the truth route.
+- Trigger the distinct owner confrontation/revelation resolution.
+
+THE NEW GUEST:
+- NewGuestAccepted = true via an explicit interaction/choice, or a specifically authored cycle condition.
+- In co-op, use team-wide confirmation/vote or clearly explain the shared result.
+- Do not trigger merely because one player was captured or a timer expired.
+- All endings must have deterministic precedence and must be locked after one is selected.
+
+## 8. QA scenarios
+1. Solo: complete all acts and reach ESCAPE.
+2. Solo: complete truth chain and reach THE TRUTH.
+3. Solo: explicitly accept invitation and reach THE NEW GUEST.
+4. Two players: A captured, B rescues A.
+5. Two players: rescuer leaves during 5-second rescue; lock clears.
+6. Four players: multiple players interact with the same puzzle at once; state remains consistent.
+7. Four players: two players pick up same fuse simultaneously; only one team flag is awarded.
+8. Player disconnects while holding a required item; team inventory persists.
+9. All players captured; checkpoint restore returns playable state.
+10. Player is captured during a protected puzzle; this must not happen.
+11. THE GUEST hears a sound and investigates last-known position rather than wall tracking.
+12. THE GUEST cannot navigate a door/stair; fail safely and record issue.
+13. Wrong puzzle input; player can retry.
+14. Checkpoint restore after each CP01–CP04.
+15. Ending trigger volumes overlap; only one ending wins.
+16. Repeated phone/CRT/lighting triggers do not spam or duplicate.
+17. English subtitle and UI audit.
+18. First-person flashlight and prop clipping audit.
+19. Performance and memory validation in target UEFN version.
+
+## 9. Definition of done for gameplay
+- No mandatory progression depends on four players.
+- No required item can be permanently lost.
+- No capture can softlock the session.
+- All puzzles are understandable, retryable and state-synchronised.
+- Monster threat is fair and navigable.
+- Three endings are distinct and deterministic.
+- All six acts have working objectives and completion states.
+- QA results are recorded, not assumed.
