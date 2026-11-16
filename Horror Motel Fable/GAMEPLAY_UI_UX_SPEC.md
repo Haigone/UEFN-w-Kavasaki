@@ -250,6 +250,8 @@ Before implementation, reconcile/create:
 - Interaction register additions: prompt, UI type (press/hold/modal), cancellation, progress, success and failure copy for every IN-001–IN-029.
 - Input map: Journal, Interact, Back/Close, flashlight, crouch, sprint and vote action using platform mappings.
 - UI acceptance suite: resolutions/input modes, solo/2P/4P sync, reconnect, modal close, no duplicate notifications, clue readability, subtitles and safe-area clipping.
+- [UI_STRING_TABLE.csv](UI_STRING_TABLE.csv): stable English objective, interaction, status, feedback, ending and subtitle strings. This is the first controlled copy baseline; any additional in-editor text must receive a StringId before implementation.
+- [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) and [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv): cue trigger, priority, concurrency and readability rules.
 
 ## 13. Open issues — do not silently assume
 1. END-A02 is APPROVED: TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound. The gate is optional for core progression/ESCAPE and required only for THE_TRUTH.
