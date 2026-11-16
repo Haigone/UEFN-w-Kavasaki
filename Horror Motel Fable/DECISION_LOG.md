@@ -82,3 +82,18 @@ The latest live check returned `mergeable=false` (earlier metadata had returned 
 
 ### DEC-021 / DEC-022 latest branch delta
 Latest Environment Art branch is 52 commits ahead / 106 behind main and PR #1 is OPEN/DRAFT, latest mergeable=false. Asset register now has 120 rows. Six west wardrobes are blocked with no coordinates; three upper-east wardrobes remain out of R2.1 bounds and F12_SECRET_PANEL remains 1.35 m offset from D-13A. This supersedes earlier 9-active-wardrobe/119-row counts. Do not merge until the PR is reauthored against R2.1 and revalidated.
+
+
+## R2.3 decision and documentation updates — 2026-11-16
+
+| Decision ID | Date | Decision / observation | Rationale | Scope | Authority | Status |
+|---|---|---|---|---|---|---|
+| DEC-025 | 2026-11-16 | LD-GEO R2.3 is owner-approved design geometry for GEO-A01–GEO-A21 | Owner explicitly approved the consolidated R2.3 geometry dispositions | Level Design | Project Owner | APPROVED DESIGN; EDITOR VERIFICATION PENDING |
+| DEC-026 | 2026-11-16 | END-A01 co-op ending quorum is owner-approved: majority for ESCAPE/THE_TRUTH and unanimous explicit consent for THE_NEW_GUEST, with recorded tie/timeout/disconnect rules | Resolve conflicting prior ending implementations | Gameplay / Endings | Project Owner | APPROVED |
+| DEC-027 | 2026-11-16 | END-A02 mandatory truth evidence is not approved; current recommendation is three investigative clues | Prevent silent promotion of missable clues into hard gates | Narrative / Endings | Project Owner | PENDING |
+| DEC-028 | 2026-11-16 | NCP-A01–A09 draft narrative content is complete at proposal level; approval is consolidated in OWNER_DECISION_PACKET_R1.md | Avoid repeated isolated approvals and implementation ambiguity | Narrative / Puzzles | Project Owner | DRAFT COMPLETE; APPROVAL PENDING |
+| DEC-029 | 2026-11-16 | MONSTER_AI_BEHAVIOUR_SPEC.md defines the dedicated AI behaviour contract; UEFN capabilities remain unverified | Provide a deterministic design contract without inventing APIs | AI / Gameplay | Production Design | DOCUMENT PRESENT; ENGINE FEASIBILITY PENDING |
+| DEC-030 | 2026-11-16 | OBJECTIVE_AND_EVENT_CATALOG.md is the controlling source for objective predicates and IN-001–IN-031 state/event ownership | Prevent objective/flag duplication and progression ambiguity | Gameplay / Verse / UI | Production Design | DOCUMENT PRESENT; CROSS-REGISTER AUDIT PENDING |
+
+DEC-025 is design approval only, not editor verification. DEC-026 closes END-A01 and must not be reopened by older proposal text. DEC-027 remains pending until explicit owner approval. The previous DEC-003/DEC-014 geometry approval blockers and older R2.2 status notes are superseded by DEC-025.
+
