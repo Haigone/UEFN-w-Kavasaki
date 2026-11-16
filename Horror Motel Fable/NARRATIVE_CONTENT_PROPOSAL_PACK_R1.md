@@ -113,7 +113,7 @@ I locked the office. The register is open on the desk. There is a new line in th
 **13 FEBRUARY — NO TIME**  
 If someone finds this, do not trust a room number just because it is printed on a door. The room is where the motel keeps what it cannot check out.
 
-Provide close-range readable text and a journal copy after inspection. Truth-chain role remains pending END-A02 approval.
+Provide close-range readable text and a journal copy after inspection. DiaryFound is mandatory for THE_TRUTH under approved END-A02; optional to core progression/ESCAPE.
 
 ## 7. ROOM 11 child's drawing
 
@@ -139,11 +139,11 @@ This is a separate photo set from the office puzzle and Room 06 board.
 Ascending chronology: 1968 → 1974 → 1981 → 1986. Dates are printed on the front; journal copies preserve all dates and captions.
 Success: PhotoSequenceSolved=true; frames illuminate in order; owner portrait aligns with the creature's face; hidden compartment opens; Service Key becomes available through IN-017 only.
 Room13RevealComplete=true only after the reveal cue has played and all players receive the readable/journal version. The puzzle alone must not set the reveal flag.
-TruthChainComplete is evaluated separately and only after END-A02 approval.
+TruthChainComplete is evaluated separately using the approved END-A02 formula.
 
-## 9. THE TRUTH — distinct ending proposal
+## 9. THE TRUTH — approved distinct ending
 
-**Eligibility candidate:** CoreEscapeReady, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady, approved mandatory evidence complete, explicit team choice, Ending=NONE.
+**Eligibility:** FinaleReady, Room13RevealComplete, ServiceKeyObtained, ServiceRouteReady, TruthChainComplete (all three approved END-A02 clues), explicit team choice, Ending=NONE. CoreEscapeReady, CarKeys and vehicle ignition are not required.
 
 **Player action:** use the Service Key to open the sealed service control room; place the four ROOM 13 photographs on the control-room evidence rail; activate the old night-audit recorder.
 
@@ -159,7 +159,7 @@ TruthChainComplete is evaluated separately and only after END-A02 approval.
 **Proposed consequence:** players expose the loop and prevent the current night from restarting, but the motel remains physically present. The final 02:13 neon pulse implies the source may not be destroyed. This is distinct from vehicle escape.
 No new voiced dialogue is required. This sequence and consequence are approved canonical content. Technical implementation may adapt presentation mechanics without changing the story outcome.
 
-## 10. THE NEW GUEST — invitation and consent proposal
+## 10. THE NEW GUEST — approved invitation and consent
 
 **Invitation text:**  
 "THE ROOM IS READY.  
@@ -182,7 +182,7 @@ If quorum is not met: return to eligible ending choice; never auto-accept.
 - Dates and codes remain legible at intended first-person interaction distance.
 - Journal copies preserve mandatory clue content without revealing uninspected optional lore.
 
-## 12. Owner approval checklist
+## 12. Recorded approval checklist
 | ID | Approval required | Status |
 |---|---|---|
 | NCP-A01 | Register copy and 02-13-86 deduction | APPROVED — 2026-11-16 delegated decision |
