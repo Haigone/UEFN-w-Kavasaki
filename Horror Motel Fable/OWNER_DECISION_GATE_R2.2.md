@@ -90,7 +90,7 @@ Approval date: NOT RECORDED
 Once approved, update this record with the owner's exact decision, then synchronize LEVEL_DESIGN_GEOMETRY.md, all controlled schedules, ENDING_DESIGN_SPEC.md, ENDING_IMPLEMENTATION_SPEC.md, GAMEPLAY_FLOW_AND_TESTS.md, QA matrices and Claude execution packets.
 
 ## E. Stop conditions
-- No final geometry placement before GEO-A01–A15 are resolved.
+- No final geometry placement before GEO-A01–A21 are resolved and objective register corrections A-01/A-02 in the final review packet are applied.
 - Claude may inspect the existing project and report feasibility/measurements while waiting.
 - Do not merge Environment Art PR #1 or treat its placements as approved geometry.
 - Do not mark any editor-dependent task complete without Claude's UEFN evidence.
