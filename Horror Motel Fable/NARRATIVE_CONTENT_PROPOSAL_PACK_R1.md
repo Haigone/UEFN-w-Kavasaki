@@ -8,7 +8,7 @@ Purpose: canonical source for player-facing English copy, clue identities, puzzl
 ## 0. Continuity rules
 - Raven Motel, United States, 1986; twelve public rooms.
 - Motifs: 02:13, Room 13, and date/code 02-13-86.
-- Owner and THE GUEST are the same identity or manifestations of the same identity.
+- Owner and THE GUEST are the same identity or manifestations of the same identity. The man shown in the 1968 roadside photographs is M. Harrow, the owner's pre-motel identity; do not introduce a second supernatural antagonist.
 - The motel repeats a night and absorbs guests into ROOM 13.
 - Mandatory information is readable or subtitled.
 - PZ-01 register, PZ-02 office photos and PZ-04 ROOM 13 photos are separate puzzles.
@@ -80,13 +80,13 @@ PZ-03 solution: insert A/B/C into matching labelled sockets, close cover, activa
 ## 5. ROOM 06 missing-guest photo board
 
 ### Proposed photographs
-- **1968 — M. HARROW, LAST CHECK-IN:** a guest stands outside Room 02; in the motel window behind him, a tall figure has the owner's face.
+- **1968 — M. HARROW, FIRST DISAPPEARANCE:** a young roadside motel clerk stands beside an empty lot where the Raven Motel will later stand; the lot itself is empty, but the rain-streaked bus-shelter glass reflects the future motel and the same face seen in the ROOM 13 owner portrait.
 - **1974 — THE VALE PARTY:** three guests pose by the courtyard; one face is scratched out; the same figure appears in an upper-balcony reflection.
 - **1981 — NIGHT AUDIT:** empty reception at 02:13; the register reads "NO CHECK-OUT RECORDED".
 - **1986 — CLOSING NIGHT:** guests stand at the entrance; the owner is absent from the group but appears behind them in the glass.
 
-**Back-of-frame note:** "Every name was checked in. None was checked out."
-Player inference: disappearances span decades and the same uncanny figure appears across years.
+**Back-of-frame note:** "The first name was written before the first room. None was checked out."
+Player inference: the owner/M. Harrow's identity predates the motel; disappearances span decades and the same uncanny figure appears across years. The 1968 image is a supernatural pre-opening record, not a literal Room 02 check-in.
 Flag MissingGuestEvidenceFound is granted through IN-029 only after inspection.
 Truth-chain role: mandatory for THE_TRUTH only under approved END-A02; optional to core progression and ESCAPE.
 
