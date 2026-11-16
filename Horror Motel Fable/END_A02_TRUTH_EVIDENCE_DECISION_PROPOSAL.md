@@ -3,7 +3,7 @@ Project: THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
 Status: **APPROVED UNDER EXPRESS OWNER DELEGATION — CANONICAL END-A02 DECISION (2026-11-16)**
 
-## 1. Owner-approved decision
+## 1. Approved delegated decision
 
 Under the owner's express instruction to take the remaining decisions, the delegated Creative/Narrative Director approved the following three optional-investigation clues as the only evidence pickups required to set `TruthChainComplete` on 2026-11-16:
 
