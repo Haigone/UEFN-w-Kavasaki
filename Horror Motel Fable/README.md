@@ -59,3 +59,13 @@ Branch: `main`
 - [sections_AA_CC_DD.svg](sections_AA_CC_DD.svg) — sezioni verticali schematiche.
 - [VERSE_SYSTEM_DESIGN.md](VERSE_SYSTEM_DESIGN.md) — contratti logici per stati, eventi, enigmi, cattura, checkpoint e finali; pseudocodice non compilato.
 - [asset_manifest.csv](asset_manifest.csv) — manifest con nome canonico richiesto.
+
+
+## Chat 01 — Game Design & Narrative deliverables
+- [GAME_DESIGN_BIBLE.md](GAME_DESIGN_BIBLE.md) — consolidated canon and progression flags.
+- [NARRATIVE_MASTER_SCRIPT.md](NARRATIVE_MASTER_SCRIPT.md) — six-act beat script and narrative gaps.
+- [ACT_AND_OBJECTIVE_MATRIX.md](ACT_AND_OBJECTIVE_MATRIX.md) — act objectives, durations, events, checkpoints and dependencies.
+- [ENDING_DESIGN_SPEC.md](ENDING_DESIGN_SPEC.md) — ending gates, flags, resolver and multiplayer choice contract.
+- [GAME_BALANCING_SPEC.md](GAME_BALANCING_SPEC.md) — pacing, interaction/tension targets and playtest plan.
+- [STORY_DOCUMENT_REGISTER.md](STORY_DOCUMENT_REGISTER.md) — narrative document and clue inventory.
+- [NARRATIVE_ACCEPTANCE_TESTS.md](NARRATIVE_ACCEPTANCE_TESTS.md) — narrative QA and blocking dependencies.
