@@ -122,3 +122,19 @@ Current geometry decision and Claude execution documents:
 - `CLAUDE_R2.2_EXECUTION_PACKET.md`
 
 Current state remains **INCOMPLETO / BLOCCATO** where editor evidence or owner approval is required. No implementation status is upgraded by these documentary repairs.
+
+
+## Narrative draft closure — 2026-11-16
+
+A complete proposal-level draft pack now exists at `NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md`. It supplies the missing exact draft content and puzzle deduction for:
+- Guest Register / code 02-13-86;
+- Owner's Office four-photo ordering puzzle;
+- Fuse A/B/C location labels and Room 04 phone recording;
+- Room 06 missing-guest photo board;
+- Room 09 diary;
+- Room 11 child's drawing;
+- ROOM 13 four-photo sequence and reveal state contract;
+- THE TRUTH ending action/consequence proposal;
+- THE NEW GUEST invitation/consent copy.
+
+These are authored drafts, not approved canon. Owner approval items NCP-A01–A10 and END-A01/END-A02 remain open. Therefore the content-authoring deliverable is **PRESENTE MA NON VERIFICATO / IN ATTESA DI APPROVAZIONE**, while the final approved narrative pack and editor implementation remain incomplete.
