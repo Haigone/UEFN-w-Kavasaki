@@ -48,4 +48,4 @@ DEV_SESSION_MANAGER,Verse-authored creative_device,Session,Single writer; sessio
 DEV_GUEST_AI,Verse NPC Behavior script component,NPC Character Definition,Assign custom behavior to the same definition referenced by DEV_NPC_GUEST; do not place a second spawner,Monster_Controller,NPC behavior lifecycle and navigatable control,API-DOCUMENTED; PROJECT TEST REQUIRED
 DEV_PRESENTATION_FAILURE,Verse presentation manager,All authored sequences,Readable fallback; never commit reveal before fallback shown,Cinematic_Manager,EVT-040,EDITOR-TEST REQUIRED
 DEV_RECOVERY_PROXY,Verse manager interaction proxy,All critical actors,Only substitute missing actor after prerequisite validated,Owning_Manager,EVT-039,EDITOR-TEST REQUIRED
-DEV_SVC_DOOR_READER,Button or Verse key check,GF-SERVICE-BAY D-G16 bay side,Open D-G16 only when ServiceKeyObtained; key is not consumed; does not commit gate progress,Game_Manager,ServiceKey access check,EDITOR-TEST REQUIRED
+DEV_SVC_DOOR_READER,Button or Verse key check,Storage side of D-G16,Open D-G16 only when ServiceKeyObtained; key is not consumed; does not commit gate progress,Game_Manager,ServiceKey access check,EDITOR-TEST REQUIRED
