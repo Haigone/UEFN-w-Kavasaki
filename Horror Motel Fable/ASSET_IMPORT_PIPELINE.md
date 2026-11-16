@@ -86,3 +86,35 @@ All DCC export and UEFN import/test actions in this pipeline are assigned to Cla
 Use `LEVEL_DESIGN_GEOMETRY.md` LD-GEO R2.0 for placement; do not treat E1 legacy wall heights, balcony width or ROOM 13 door coordinates as approved. Reconcile vertical stack, stair, balcony, bathroom partitions, ROOM 12 vestibule/secret route and gate anchor before final-fit assets. Generic modular pieces can be authored independently.
 Required test report fields: Test_ID, Asset_ID/Family, UEFN version, project revision, import options, test map/area, preconditions, exact steps, expected result, observed result, PASS/FAIL/BLOCKED, evidence path, owner and date. Update asset status only after evidence exists. IMPORTED, ENGINE VERIFIED and ACCEPTED are distinct states.
 
+
+
+## Revision 3.0 — existing asset acquisition and integration (owner decision)
+
+The preferred route is existing assets first. Use ENVIRONMENT_ASSET_SOURCE_REGISTER.csv as a research shortlist only. No candidate is acquired, licensed, downloaded or imported by virtue of appearing there.
+
+### Phase A — acquisition evidence (human/Fab account owner)
+1. Open the exact listing URL and confirm product title and publisher.
+2. Confirm the product remains available and inspect the included format panel.
+3. Select the license tier permitted by the project owner's actual revenue/eligibility and intended use. Do not choose a tier by guess.
+4. Save invoice/library proof and the license/EULA version to Licenses/Environment/[Source_Candidate_ID]/.
+5. Record modification rights, redistribution restrictions, attribution, UEFN reference-only limitations, source access and any third-party exclusions.
+6. If the product has no UEFN Source/reference option, mark UEFN compatibility UNCONFIRMED until an authorized import test passes.
+7. Do not place a purchased Unreal Engine pack into UEFN solely because the listing says Unreal Engine.
+
+### Phase B — source inventory (Claude)
+For each acquired package, Claude must:
+- Inventory every included Static Mesh, material, texture, Blueprint, plugin and demo map.
+- Identify useful meshes and map each to project Asset_ID; record source object path and source package.
+- Mark duplicate/overlapping assets so the project does not acquire redundant packs.
+- Flag modern/anachronistic objects, branding, unsupported Blueprint dependencies, Nanite/virtual texture/translucency assumptions and missing collision/LODs.
+- Preserve original source assets; create project variants only where the license permits modification.
+- Prefer native UEFN reference content when the purchased listing supplies it. Otherwise test a representative static mesh and material import path before bulk adoption.
+
+### Phase C — art-direction integration
+Apply the stylized-realism adapter in ENVIRONMENT_ART_BIBLE.md: restrained desaturation, warm/cool palette, controlled roughness, moderate normals, readable wear decals and limited shared material instances. Remove/hide modern flat screens, contemporary electronics, pool accessories and non-period signage from placed scenes. Do not alter source files or redistribute derivative packages beyond the license.
+
+### Phase D — gap production
+Only after inventory and geometry approval may original project-specific meshes be commissioned/created for gaps: Raven Motel sign artwork, ROOM 13 unique clock/photo/diary narrative props, secret panel geometry, custom gameplay interaction proxies and any fit-dependent architecture. Existing assets are not to be recreated without a documented gap justification.
+
+### Status definitions
+SHORTLISTED_NOT_ACQUIRED; ACQUIRED_LICENSE_PENDING_REVIEW; LICENSE_VERIFIED; SOURCE_INVENTORIED; IMPORT_TEST_REQUIRED; IMPORTED; ENGINE_VERIFIED; ACCEPTED; REJECTED. Listing presence is not acquisition. Acquisition is not compatibility. Import is not acceptance.
