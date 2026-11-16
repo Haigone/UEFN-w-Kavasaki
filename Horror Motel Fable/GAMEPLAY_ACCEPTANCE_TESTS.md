@@ -121,3 +121,5 @@ Release only when all critical tests pass in solo and relevant co-op party sizes
 | GAT-068 | Checkpoint restore after flashlight use | Each player's charge returns to the exact checkpoint snapshot; no free refill or duplicate battery claim |
 | GAT-069 | Battery pickup in co-op | Each player can claim the same authored spawn once where supported; one player's claim does not remove access for others |
 | GAT-070 | Vote timer | Co-op ending vote resolves immediately on valid quorum or applies END-A01 after max 20 seconds; solo never waits for timer |
+
+| GAT-071 | New Guest invitation availability | FinaleReady opens the invitation option while NewGuestAccepted is still false; only unanimous explicit acceptance sets NewGuestAccepted and commits THE_NEW_GUEST |
