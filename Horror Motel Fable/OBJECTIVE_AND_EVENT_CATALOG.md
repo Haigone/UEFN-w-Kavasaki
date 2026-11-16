@@ -87,7 +87,8 @@ Legacy Verse enum labels may map to these six IDs but must not create a competin
 | GatePowered / ServiceRouteReady | PuzzleManager | IN-018 | Service Key + power; service control opens the route and commits both flags |
 | CarKeysObtained / CarKeys | InventoryManager | IN-028 | Team pickup transaction commits |
 | FinaleReady | GameManager | Derived state | PowerRestored AND ServiceKeyObtained AND GatePowered AND ServiceRouteReady AND Room13RevealComplete; unlocks final choice point without requiring CarKeys |
-| VehicleIgnitionSucceeded | GameManager | IN-019 | FinaleReady AND CarKeys; successful ignition commits this source flag |\n| CoreEscapeReady | GameManager | Derived state | FinaleReady AND CarKeysObtained AND VehicleIgnitionSucceeded; never directly written |
+| VehicleIgnitionSucceeded | GameManager | IN-019 | FinaleReady AND CarKeys; successful ignition commits this source flag |
+| CoreEscapeReady | GameManager | Derived state | FinaleReady AND CarKeysObtained AND VehicleIgnitionSucceeded; never directly written |
 | MissingGuestEvidenceFound | EvidenceManager/GameManager | IN-029 | Room 06 archive inspected |
 | TruthChainComplete | GameManager | derived state only | END-A02 approved formula; recompute whenever one of the three evidence flags changes |
 | NewGuestAccepted | EndingManager | explicit invitation interaction and END-A01 team confirmation | Every currently connected eligible player explicitly accepts |
