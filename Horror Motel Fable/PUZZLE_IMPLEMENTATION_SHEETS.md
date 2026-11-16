@@ -61,16 +61,16 @@ All interactions are server-authoritative, retryable and idempotent. The values 
 
 ## PZ-05 — FINAL ESCAPE MECHANISM
 **Act:** VI. **Position:** service route gate control and exterior vehicle.  
-**Prerequisites:** PowerRestored; ServiceKey; CarKeys.  
-**Required objects:** ServiceKey and CarKeys. Screwdriver is not consumed and is not a gate prerequisite.  
-**Interaction:** unlock service control with ServiceKey; activate powered gate; return to vehicle and interact with ignition using CarKeys.  
-**Solution:** use ServiceKey at service control, activate gate, then use CarKeys at vehicle.  
+**Prerequisites:** PowerRestored and ServiceKey for service control; CarKeys only if the team selects ESCAPE.  
+**Required objects:** ServiceKey for service control. CarKeys are required only for the ESCAPE vehicle ignition. Screwdriver is not consumed and is not a gate prerequisite.  
+**Interaction:** unlock service control with ServiceKey and activate the powered gate. This establishes FinaleReady. If the team selects ESCAPE, obtain CarKeys and interact with vehicle ignition to establish CoreEscapeReady. THE_TRUTH and THE_NEW_GUEST do not require CarKeys or vehicle ignition.  
+**Solution:** use ServiceKey at service control and activate gate; use CarKeys at vehicle only for ESCAPE.  
 **Success:** GatePowered=true and ServiceRouteReady=true after ServiceKey validation and service-control activation; CoreEscapeReady=true only after CarKeys are used at the vehicle ignition; final pursuit/ending choice follows the authored flow.  
 **Failure:** show exact missing prerequisite; do not consume keys; player can leave and return.  
-**Fallback:** if physical key prop is missing but team flag exists, use an alternate keyhole proxy; if gate control fails, a clearly signposted manual service lever performs the same state transition after validation.  
+**Fallback:** if physical ServiceKey prop is missing but team flag exists, use an alternate keyhole proxy; if gate control fails, a clearly signposted manual service lever performs the same validated transition. CarKeys proxy is required only if ESCAPE is selected.  
 **Multiplayer:** shared key flags; all players can participate; ending choice is team-wide and deterministic.  
 **Completion:** gate and vehicle route states are true; Ending remains NONE until selected.  
-**Tests:** solo; missing each prerequisite; wrong interaction order; gate and ending triggers overlap; repeat activation; disconnect during final sequence.
+**Tests:** solo/co-op; missing ServiceKey or PowerRestored; each ending with/without CarKeys; wrong interaction order; gate and ending triggers overlap; repeat activation; disconnect during final sequence.
 
 ## Cross-puzzle implementation requirements
 - Puzzle state: LOCKED, AVAILABLE, IN_PROGRESS, SOLVED.
