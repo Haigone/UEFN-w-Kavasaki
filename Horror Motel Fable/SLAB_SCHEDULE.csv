@@ -1,6 +1,6 @@
 Slab_ID,Level,Polygon_ID,Polygon_Vertices_XY_m,Underside_Z_m,Top_Z_m,Thickness_m,Openings_or_Voids,Collision,Status,Notes
-GF-SLAB,Ground,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",-0.20,0.00,0.20,None,Walkable,PROPOSED CORRECTION,Single U-shaped polygon; thickness 0.20 m inherited from EBD and requires owner approval
-UF-SLAB,Upper,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",3.35,3.60,0.25,UF-STAIR-OPENING,Walkable,PROPOSED CORRECTION,Single U-shaped polygon; stairwell opening excluded; courtyard excluded
-ROOF-SLAB,Roof,U_FOOTPRINT,"8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60",6.40,6.65,0.25,None,Solid,PROPOSED CORRECTION,Flat roof over U footprint only; courtyard remains open to sky
-COURTYARD-VOID,Void,COURTYARD,"20 18;64 18;64 48;20 48",NA,NA,0,None,No collision,FIXED REQUIREMENT,No upper slab or roof over courtyard
-UF-STAIR-OPENING,Void,STAIR_CORE,"22.50 52.30;25.50 52.30;25.50 56.32;22.50 56.32",3.35,3.60,0,None,No collision,PROPOSED CORRECTION,3.00×4.02 m slab cut around the stair assembly; owner approval and editor clearance test required
+GF-SLAB,Ground,U_FOOTPRINT,8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60,-0.20,0.00,0.20,None,Walkable,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING,Single U-shaped polygon; thickness 0.20 m inherited from EBD and requires owner approval
+UF-SLAB,Upper,U_FOOTPRINT,8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60,3.35,3.60,0.25,UF-STAIR-OPENING,Walkable,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING,Owner-approved U-shaped slab; courtyard void and stair opening excluded; balcony turn pads clipped to slab boundary.
+ROOF-SLAB,Roof,U_FOOTPRINT,8 18;20 18;20 48;64 48;64 18;76 18;76 60;8 60,6.40,6.65,0.25,None,Solid,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING,Flat roof over U footprint only; courtyard remains open to sky
+COURTYARD-VOID,Void,COURTYARD,20 18;64 18;64 48;20 48,NA,NA,0,None,No collision,FIXED REQUIREMENT,No upper slab or roof over courtyard
+UF-STAIR-OPENING,Void,STAIR_CORE,22.50 52.30;25.50 52.30;25.50 56.32;22.50 56.32,3.35,3.60,0,None,No collision,OWNER APPROVED R2.3 — ENGINE VERIFICATION PENDING,3.00×4.02 m slab cut around the stair assembly; owner approval and editor clearance test required
