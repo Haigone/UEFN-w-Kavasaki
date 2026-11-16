@@ -106,14 +106,13 @@ Guard every transition:
 
 ## 4. Capture / rescue exact targets
 - Capture starts only when THE GUEST reaches a valid target and capture is enabled.
-- Brief capture presentation; use verified UEFN-compatible camera/animation methods only.
-- Captured player remains in a recoverable state.
-- Rescue interaction range: 2 m.
-- Rescue duration: 5 seconds.
-- Post-rescue protection target: 8 seconds.
-- Emergency assistance threshold: 90 seconds; use assistance/recovery, never automatic death.
-- Solo self-rescue: alternate escape interaction or short route that does not require another player.
-- If all players captured: defeat state → latest checkpoint.
+- Brief capture presentation; use verified UEFN-compatible camera/animation methods only. Target duration: 2 seconds.
+- Captured player remains in a recoverable state; quest inventory is unchanged.
+- Teammate rescue range: 2 m; duration: 5 uninterrupted seconds; cancel on range break, rescuer/target disconnect or rescuer capture.
+- Post-rescue protection: 8 seconds.
+- Solo: after the 2-second capture presentation, enable a local 5-second self-rescue interaction/route; no item or teammate required.
+- Co-op: after 90 seconds captured, enable the same 5-second emergency self-recovery interaction for the captured player.
+- If every connected player is CAPTURED, restore the latest checkpoint immediately. If solo recovery is unavailable or the player remains captured for 90 seconds, restore the latest checkpoint. Never use death/game over as the recovery mechanism.
 - Only one unscripted capture transition should be processed at a time unless a deliberately authored sequence is implemented and tested.
 
 ## 5. Difficulty controller
