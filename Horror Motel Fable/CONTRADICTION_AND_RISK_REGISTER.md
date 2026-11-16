@@ -33,3 +33,7 @@ Exact duplicate content was confirmed by matching Git blob SHA. No duplicate has
 
 ## Risk acceptance rule
 No critical geometry or implementation risk may be accepted by wording alone. Close it with a revised source artifact and the evidence defined in MASTER_TASK_REGISTER.md. Never mark an asset, Verse system, device or island feature complete from a specification.
+
+
+## Execution responsibility clarification
+Risks requiring UEFN/editor inspection or testing must be assigned to Claude for execution. ChatGPT prepares the procedure and acceptance/evidence requirements only; it must not report an editor test as performed. The project owner retains approval authority for design choices and publication. The repository is Claude's reference specification, not proof that the island has been implemented. See `CLAUDE_EXECUTION_PROTOCOL.md`.
