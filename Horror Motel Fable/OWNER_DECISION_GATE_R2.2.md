@@ -7,7 +7,7 @@ Status: **WAITING FOR PROJECT OWNER — NO GEOMETRY APPROVAL IMPLIED**
 This document turns the open R2.2 geometry and ending decisions into one explicit approval gate. It does not silently select creative or structural alternatives. Claude must not build final geometry from R2.2 until the owner approves this package or supplies a revised choice.
 
 ## Decision method
-The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner may approve the geometry only after GEO-A01–A21 are resolved and the objective register corrections A-01/A-02 in that packet are applied. Reply **APPROVE R2.2** only when the proposal and all added gate items are accepted, or **APPROVE WITH EXCEPTIONS** with item IDs and replacement values. Silence is not approval.
+The detailed final review and recommendations are in LD_GEO_R2.2_FINAL_OWNER_APPROVAL_PACKET.md. The owner may approve the geometry only after GEO-A01–A21 are resolved and the remaining objective register correction A-02 in that packet is applied; A-01 (COURTYARD schema) is already corrected in main. Reply **APPROVE R2.2** only when the proposal and all added gate items are accepted, or **APPROVE WITH EXCEPTIONS** with item IDs and replacement values. Silence is not approval.
 
 ## A. Geometry decisions
 
@@ -57,8 +57,8 @@ Detailed dimensions, diagrams and recommendations: LD_GEO_R2.2_FINAL_OWNER_APPRO
 
 ## A3. Objective register corrections — no design choice required
 
-- ROOM_COORDINATE_REGISTER.csv / COURTYARD: add the missing Material_Asset_ID placeholder (NA) so the row has 16 fields and Verification_Status remains FIXED REQUIREMENT.
-- ROOM_COORDINATE_REGISTER.csv / VEST-13: change Length_m from 1.50 to the derived 1.65 m from Y=47.55–49.20. The other R2.2 documents already specify 1.65 m.
+- ROOM_COORDINATE_REGISTER.csv / COURTYARD: RESOLVED in main. The Material_Asset_ID placeholder NA is present; the row has 16 fields and Verification_Status remains FIXED REQUIREMENT.
+- ROOM_COORDINATE_REGISTER.csv / VEST-13: change Length_m from 1.50 to the derived 1.65 m from Y=47.55–49.20. The other R2.2 documents already specify 1.65 m. This is the only remaining objective register correction.
 - GEOMETRY_VALIDATION_REPORT.md: correct the previous claim that every ROOM_COORDINATE_REGISTER row matches the 16-column header and include the final-review findings.
 
 
