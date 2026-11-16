@@ -280,3 +280,7 @@ A final live check after the R2.1 document updates supersedes the PR mergeabilit
 - The PR still declares LD-GEO R2.0 as its candidate reference, while main's R2.1 index/brief explicitly supersede R2.0. Its placement and execution plans therefore remain stale even though GitHub reports no merge conflict.
 
 **Decision:** do not merge in the current state. The reason is stale geometry authority, unreviewed/draft status and unresolved data/placement defects, not a reported Git conflict. Reauthor against R2.1, rerun the register checks, obtain review and owner approval, then reassess.
+
+
+## 16. Final mergeability status correction
+The next live check after section 15 returned `mergeable=false` again. The latest comparison at that point was 49 commits ahead / 100 behind main, DIVERGED. PR #1 remains OPEN/DRAFT with no reviews, comments or status checks. GitHub's mergeability result has fluctuated between true and false during the re-audit; use the most recent value (false) and recheck immediately before any integration action. The production recommendation is unchanged: do not merge until the branch is reauthored against R2.1, all CSV/placement issues are corrected, and review/owner approval are recorded.
