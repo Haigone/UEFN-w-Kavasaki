@@ -1,4 +1,8 @@
-# MASTER TASK REGISTER — THE MOTEL: ROOM 13
+# MASTER TASK REGISTER
+
+> **CURRENT AUTHORITY ADDENDUM — 2026-11-16:** The owner's express delegation “prendi tu le decisione” has been exercised. NCP-A01–A09 and END-A02 are APPROVED; END-A01 remains APPROVED. Canonical sources: OWNER_DECISION_GATE_R2.2.md, OWNER_DECISION_PACKET_R1.md, NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md, ENDING_IMPLEMENTATION_SPEC.md, OBJECTIVE_AND_EVENT_CATALOG.md and INTERACTION_EXECUTION_SPEC.md. Older rows below that still say narrative approval is pending, geometry is unapproved, or the current execution packet is R2.2 are historical and superseded. Current interaction range is IN-001–IN-032. This does not mark any UEFN/editor implementation or test as complete.
+
+ — THE MOTEL: ROOM 13
 **Baseline:** repository main, audit 2026-11-16  
 **Status vocabulary:** COMPLETATO CON EVIDENZA / PRESENTE MA NON VERIFICATO / INCOMPLETO / BLOCCATO  
 **Priority:** P0 = blocks production / P1 = critical path / P2 = required downstream / P3 = polish
@@ -168,3 +172,12 @@ The older "First 20 production tasks" list remains a historical ordering snapsho
 
 | DOC-007 | Cinematics | Define sequence lifecycle, co-op presentation and fallback behaviour | P1 | Ending and narrative proposals | CINEMATIC_AND_PRESENTATION_SPEC.md | PRESENTE — narrative approval and UEFN capability verification pending | Every sequence has unique ID, trigger, duration, lock, cleanup, fallback and acceptance tests | Sequence test evidence and owner approval | Cinematic / Gameplay |
 | DOC-008 | Asset pipeline | Define source, license, import and acceptance workflow | P1 | Asset manifest and GUEST_MODEL_SPEC | ASSET_PRODUCTION_PIPELINE_SPEC.md | PRESENTE — actual source/import work pending | Every published asset has source/license, metadata, target import and measured acceptance | License archive and UEFN import/performance evidence | Art / Technical Art |
+
+
+## Current narrative decision closure — 2026-11-16
+| Task | Current status | Canonical decision / acceptance |
+|---|---|---|
+| NAR-001 | COMPLETE — DOCUMENTATION / CANON APPROVED | NCP-A01–A09 exact English content approved in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md; story register synchronized. UEFN prop/VO/subtitle implementation remains separate. |
+| END-002 | COMPLETE — DESIGN DECISION | END-A02 approved: exactly DiaryFound AND ChildRoomClueFound AND MissingGuestEvidenceFound for THE_TRUTH only; THE_TRUTH sequence/consequence approved; IN-032 Night Audit added. Runtime implementation/tests remain separate. |
+| DOC-001 | COMPLETE — DELEGATED DECISION RECORDED | OWNER_DECISION_PACKET_R1.md and OWNER_DECISION_GATE_R2.2.md record delegated approval. |
+| DOC-003 | DOCUMENT PRESENT — IN-001–IN-032 | Objective/event and interaction contracts include the approved evidence gate and Night Audit. Cross-register/editor verification remains separate. |
