@@ -79,3 +79,54 @@ Check silhouette readability at target distance; test shadows and material cost 
 - Animations play without root drift or foot sliding.
 - Multiplayer replication and NPC locomotion tested.
 - If any requirement is unsupported, document the limitation and a UEFN-compatible fallback.
+
+
+## UEFN production execution addendum — R1
+
+### A. Deliverable package and naming
+
+Deliver the following source package under one immutable character revision:
+- GUEST_TURNAROUND_FRONT.png, GUEST_TURNAROUND_SIDE.png, GUEST_TURNAROUND_BACK.png.
+- GUEST_HERO_3Q.png, GUEST_FACE_CLOSEUP.png, GUEST_HAND_CLOSEUP.png, GUEST_SCALE_180.png.
+- GUEST_RIG_APOSE.png and GUEST_BONE_HIERARCHY.png.
+- GUEST_MATERIAL_CALLOUT.png.
+- Source mesh, UV layout, texture sources, skeleton file, animation source files and export settings.
+- Imported asset paths and UEFN screenshots for skeletal mesh, skeleton tree, animation preview and NPC Character Definition.
+
+Use stable names: SK_GUEST_LOD0, SK_GUEST_LOD1, SK_GUEST_LOD2, SKEL_GUEST, MI_GUEST_SKIN, MI_GUEST_SHIRT, MI_GUEST_TROUSERS, MI_GUEST_SHOES and AN_GUEST_[STATE]. The manifest Asset_ID remains the immutable join key; filenames may change only through manifest revision.
+
+### B. Build and rig order
+
+1. Lock the approved concept and dimensions before sculpting.
+2. Build neutral base mesh in A-pose; confirm 2.60 m from sole to crown.
+3. Separate material zones and establish clean deformation topology at shoulders, elbows, wrists, hips, knees, ankles, neck and jaw.
+4. UV unwrap; keep face/hands highest texel density; avoid unique mirrored marks.
+5. Rig root/pelvis/spine/chest/neck/head/clavicles/upper arms/lower arms/hands/fingers/upper legs/lower legs/feet/toes. Use consistent naming and documented retarget pose.
+6. Skin weights: test deep crouch, reach, fast run, head turn and capture reach; no collapsing elbows/knees or stretched shoulder seams.
+7. Author animation clips in the order Idle, Walk, HeadTurn, Investigate, Chase, Capture, Search, Retreat, BalconySilhouette, OwnerReveal.
+8. Keep root motion disabled unless the target NPC behavior proof specifically requires and supports it. Default to in-place clips with navigation driving translation.
+9. Export mesh and animations using one compatible skeleton and one documented unit/axis convention.
+10. Import into a clean UEFN test project. Confirm mesh, skeleton, materials, animation assets and device/character definition workflow.
+11. Attach the mesh to the selected NPC Character Definition and behavior script; test animation transitions while navigating.
+12. Only then integrate with motel geometry.
+
+### C. Platform capability status
+
+Epic documents skeletal mesh and animation import/playback in UEFN, including the Animated Mesh device. Epic also documents custom NPC Character Definitions and NPC behavior scripts. NPC Spawner is Beta. These references establish the availability of an import and NPC implementation route, not proof that this exact mesh, rig, animation set or NPC behavior works in the island.
+
+The combined proof is mandatory: imported SK_GUEST + NPC Character Definition + custom behavior + navigatable movement + each required animation state. Record exact UEFN build, import settings, compile output, screenshots and solo/2P/4P results. See UEFN_VERIFIED_REFERENCE_REGISTER_R1.md.
+
+### D. Acceptance gates
+
+- GUEST-A01 concept dimensions and identity locked.
+- GUEST-A02 mesh dimensions measured at 2.60 m in editor.
+- GUEST-A03 topology and material slots reviewed.
+- GUEST-A04 skeleton hierarchy and bind pose reviewed.
+- GUEST-A05 every animation clip plays on the same skeleton.
+- GUEST-A06 no root drift or foot sliding outside approved tolerance.
+- GUEST-A07 capsule fits all approved doors and stair route.
+- GUEST-A08 NPC navigates ground and upper floors including stair without clipping/stuck state.
+- GUEST-A09 capture animation aligns with the capture transaction; animation failure uses deterministic fallback.
+- GUEST-A10 LOD silhouette remains consistent at 5/10/15 m.
+- GUEST-A11 memory/performance measured in target island.
+- GUEST-A12 1/2/4 player replication tested.
