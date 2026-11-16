@@ -79,6 +79,8 @@ The repository includes:
 - UEFN feature compatibility matrix, official reference register, device binding register and explicit fallback routes.
 - Audio, lighting, cinematic, asset pipeline, room fit-out and service-control location specifications.
 - QA acceptance suites, performance/release baseline and R3 static integrity report.
+- Claude autonomous execution addendum with explicit decision hierarchy, batch loop, stop conditions and missing THE GUEST model/rig/animation production route.
+- GitHub Actions workflow for repeatable static repository validation on pushes and pull requests.
 
 Presence of a document closes only the corresponding documentation-authoring gap. It does not close implementation or evidence gates.
 
