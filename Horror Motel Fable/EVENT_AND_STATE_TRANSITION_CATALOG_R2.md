@@ -58,7 +58,7 @@ Never trust a client-supplied success flag. Client input requests a transaction;
 | EVT-016 | OwnerRevealPresented(player_set, presentation_id) | CinematicManager→GameManager handshake | PZ-04 solved; presentation or fallback text visible | Room13RevealComplete=true; OwnerIdentityRevealed=true | commit only on completion acknowledgement; retry fallback |
 | EVT-017 | ServiceKeyGranted(player, grant_token) | InventoryManager | Room13RevealComplete; key not granted | ServiceKeyObtained=true | one-shot grant |
 | EVT-018 | ServiceGateActivated(player) | PuzzleManager | ServiceKeyObtained AND PowerRestored | GatePowered=true; ServiceRouteReady=true | one-shot; lever proxy same validation |
-| EVT-019 | VehicleIgnitionSucceeded(player) | GameManager | FinaleReady AND CarKeysObtained | CoreEscapeReady=true | only needed for ESCAPE |
+| EVT-019 | VehicleIgnitionSucceeded(player) | GameManager | FinaleReady AND CarKeysObtained | VehicleIgnitionSucceeded=true; CoreEscapeReady is derived | only needed for ESCAPE |
 | EVT-020 | EndingVoteCommitted(player, ending_id, vote) | EndingManager | eligible ending; resolver open; player eligible | vote stored; recompute quorum | one vote/player/round; changed vote replaces own vote until lock |
 | EVT-021 | EndingSelected(ending_id, electorate, vote_snapshot) | GameManager | quorum satisfied; ending eligible; ending lock free | EndingSelected set once; AI disabled; final sequence begins | atomic compare-and-set; competing ending rejected |
 | EVT-022 | NewGuestInvitationAccepted(player) | EndingManager | FinaleReady; invitation explicitly displayed | player affirmative stored | no default consent; timeout is no |
@@ -136,7 +136,7 @@ The following events complete the mapping to IN-001–IN-032. They extend the ex
 | EVT-046 | ElectricalPanelCoverOpened(player) | PuzzleManager | IN-010; Screwdriver team-owned; panel not already open | PanelCoverOpen=true; screwdriver remains in inventory |
 | EVT-047 | HidingStateChanged(player, hidden) | PlayerStateManager | IN-021; player NORMAL and hiding spot available; valid exit if currently hidden | Set/clear player-local hidden state; clear on capture/disconnect/reset |
 | EVT-048 | ScrewdriverPickupClaimed(player, grant_token) | InventoryManager | IN-027; Screwdriver not already granted | ScrewdriverObtained=true; grant once; reusable |
-| EVT-049 | CarKeysPickupClaimed(player, grant_token) | InventoryManager | IN-028; Act VI; ESCAPE route eligible/selected according to authored flow | CarKeysObtained=true; grant once; never required by THE_TRUTH or THE_NEW_GUEST |
+| EVT-049 | CarKeysPickupClaimed(player, grant_token) | InventoryManager | IN-028; Act VI AND FinaleReady; optional vehicle-route pickup | CarKeysObtained=true; grant once; pickup is not an ending selection; never required by THE_TRUTH or THE_NEW_GUEST |
 | EVT-050 | CRTFeedViewed(player, feed_id) | EvidenceManager | IN-030; CRT visual feed presented | CRTFeedSeen=true; repeat view allowed, discovery flag one-shot |
 | EVT-051 | Room04RecordingPresented(player, recording_id, transcript_presented) | EvidenceManager | IN-031; transcript presented; audio may be unavailable | Room04RecordingHeard=true and Room04TranscriptRead=true only when readable transcript is visible |
 
