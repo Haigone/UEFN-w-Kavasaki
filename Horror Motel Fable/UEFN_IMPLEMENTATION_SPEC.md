@@ -308,3 +308,8 @@ Before full implementation, Claude must return a target-version feasibility tabl
 - [AUDIO_CUE_SHEET.csv](AUDIO_CUE_SHEET.csv) maps authored game events to audio assets, priorities, cooldowns, concurrency groups, spatial policy and fallback.
 - [LIGHTING_CUE_SHEET.csv](LIGHTING_CUE_SHEET.csv) maps act/gameplay events to lighting states and readability constraints.
 - [AUDIO_REGISTER.csv](AUDIO_REGISTER.csv) and [LIGHTING_REGISTER.csv](LIGHTING_REGISTER.csv) remain the asset/emitter source registers. Cue sheets do not prove assets have been created or imported.
+
+
+### Cinematic and asset production references
+- [CINEMATIC_AND_PRESENTATION_SPEC.md](CINEMATIC_AND_PRESENTATION_SPEC.md) defines sequence lifecycle, co-op synchronization, capture/reveal/ending presentation, subtitles and fallback behaviour. It is not proof of camera/sequencer/NPC animation support.
+- [ASSET_PRODUCTION_PIPELINE_SPEC.md](ASSET_PRODUCTION_PIPELINE_SPEC.md) defines source/licensing, naming, metadata, import, collision, LOD, performance and acceptance. The asset manifest records target assets; it does not mean they have been sourced or imported.
