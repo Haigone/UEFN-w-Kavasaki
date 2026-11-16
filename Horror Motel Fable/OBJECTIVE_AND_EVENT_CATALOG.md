@@ -1,7 +1,7 @@
 # OBJECTIVE & EVENT CATALOG
 ## THE MOTEL: ROOM 13
 Revision: 1.0 — 2026-11-16
-Status: **CANONICAL GAMEPLAY LOGIC PROPOSAL — NARRATIVE APPROVAL DEPENDENCIES NOTED**
+Status: **CANONICAL APPROVED GAMEPLAY LOGIC — OWNER DECISION DEPENDENCIES CLOSED — EDITOR VERIFICATION REQUIRED**
 Authority: GameManager / PuzzleManager / Interaction register
 Implementation: UEFN/Verse API-neutral contract; target-editor verification required.
 
