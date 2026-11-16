@@ -1,17 +1,17 @@
 # OWNER DECISION PACKET R1
 ## THE MOTEL: ROOM 13
 Date: 2026-11-16
-Status: **ONE CONSOLIDATED CREATIVE APPROVAL REQUEST — NOT YET APPROVED**
+Status: **DECIDED AND APPROVED UNDER EXPRESS OWNER DELEGATION — 2026-11-16**
 
 ## Purpose
 
-This packet consolidates the remaining owner-facing creative choices so production does not repeatedly stop for small isolated approvals. It recommends one coherent baseline. Approval applies only to the exact content listed below; it does not approve geometry changes, UEFN implementation claims, engine assumptions or publication.
+This packet records the consolidated creative decisions made under the owner's express instruction to take the remaining decisions. NCP-A01–A09 and END-A02 are approved as written below. This approval does not approve geometry changes, UEFN implementation claims, engine assumptions, asset rights or publication.
 
 ## Recommended single decision
 
-**Approve NARRATIVE_CONTENT_PROPOSAL_PACK_R1 as the player-facing narrative/puzzle copy baseline, with the END-A02 evidence gate defined in Section 2 below.**
+**DECISION: APPROVE NARRATIVE_CONTENT_PROPOSAL_PACK_R1 as the canonical player-facing narrative/puzzle copy baseline, with the END-A02 evidence gate defined in Section 2 below.**
 
-This approval would cover NCP-A01 through NCP-A09. NCP-A10's co-op quorum is superseded by END-A01, already approved separately; it must not reopen or alter that decision.
+This approval covers NCP-A01 through NCP-A09. NCP-A10's co-op quorum is superseded by END-A01, already approved separately; it must not reopen or alter that decision.
 
 ### Included content
 
@@ -41,7 +41,7 @@ Formula: `TruthChainComplete = DiaryFound AND ChildRoomClueFound AND MissingGues
 
 Keep SecretPanelOpened, PhotoSequenceSolved and OwnerIdentityRevealed / Room13RevealComplete as independent progression/reveal requirements. They are not additional evidence pickups and must not be duplicated inside TruthChainComplete.
 
-This choice is also detailed in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. If approved, all three clues must be recoverable, session-shared, idempotent and available as readable/journal text. ESCAPE remains available when the evidence chain is incomplete.
+This choice is also detailed in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. All three clues must be recoverable, session-shared, idempotent and available as readable/journal text. ESCAPE remains available when the evidence chain is incomplete.
 
 ## 3. Conditions that remain unchanged
 
@@ -64,11 +64,9 @@ This choice is also detailed in END_A02_TRUTH_EVIDENCE_DECISION_PROPOSAL.md. If 
 - Any asset is acquired, licensed or imported.
 - Any test is passed or publication authorized.
 
-## 5. Owner response
+## 5. Recorded delegated decision
 
-To approve the complete recommended package without further fragmentation, reply:
+**DECIDED: APPROVED IN FULL — 2026-11-16.** The owner expressly instructed ChatGPT to take the remaining decisions (“prendi tu le decisione”). Acting as delegated Creative/Narrative Director, this packet is approved in full: NCP-A01–A09 and END-A02. No further owner response is required for these items. END-A01 remains the separately approved, unchanged multiplayer quorum.
 
-**APPROVO OWNER DECISION PACKET R1**
-
-To reject or modify it, identify only the NCP/END-A02 IDs and the replacement text or rule. Unmentioned entries remain pending; no silence is treated as consent.
+Implementation boundary: use the exact English text and rules in NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md. This decision does not claim that the text has been imported, voiced, tested or implemented in UEFN.
 
