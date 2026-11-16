@@ -23,7 +23,7 @@ LD-GEO R2.3 is the single canonical geometry baseline. It consolidates the R2.2 
 7. Vertical stack: GF slab −0.20/0.00; GF clear ceiling 3.00; UF slab 3.35/3.60; UF clear ceiling 6.40; roof slab 6.40/6.65; parapet top 7.10 m.
 8. ROOM 12 → ROOM 13 secret route: D-13A, VEST-13 5.90×1.65 m, D-13C, east balcony leg, north balcony crossbar, D-13B. All three doors clear 0.90×2.10 m.
 9. Two GF north pockets sealed/no-access/no-navmesh; structural floor collision retained.
-10. Upper west reserve sealed by UF-W-SEALED-RESERVE-WEST. Upper east L-shaped reserve registered as two sealed components. Both no-access/no-navmesh.
+10. Upper west reserve sealed by UF-W-SEALED-RESERVE-WEST. Upper east L-shaped reserve registered as two sealed components and closed by UF-E-SEALED-RESERVE-WEST. Both no-access/no-navmesh.
 11. U-SERVICE sealed/no-access/no-navmesh; no new door.
 12. Balcony turn pads clipped to slab polygon: west X17.15–20.00, east X64.00–66.85, Y47.00–50.80. No floor collision over courtyard void; continuous path target ≥2.50 m clear.
 13. Roof flat, non-playable/no access; concealed 1.0% falls to coordinated perimeter drainage. Exact outlets and hydraulic sizing remain technical coordination.
@@ -34,7 +34,7 @@ LD-GEO R2.3 is the single canonical geometry baseline. It consolidates the R2.2 
 
 - ROOM_COORDINATE_REGISTER.csv: VEST-13 Length_m = 1.65; five sealed reserve components added; turning pad bounds corrected; U-SERVICE collision/navmesh policy corrected.
 - coordinate_schedule.csv: five sealed reserve components added; U-SERVICE marked no-navmesh; turning pad bounds corrected.
-- wall_schedule.csv: new wall UF-W-SEALED-RESERVE-WEST added, joining existing north wall runs; no opening.
+- wall_schedule.csv: two new walls UF-W-SEALED-RESERVE-WEST and UF-E-SEALED-RESERVE-WEST added, joining existing north wall runs; no openings.
 - DOOR_WINDOW_SCHEDULE.csv: 51 existing openings retained; no new access openings added for sealed reserves.
 - SLAB_SCHEDULE.csv: U-shaped slab polygons retained; courtyard and stair void remain excluded.
 - Ground and upper SVGs updated to show sealed reserves and clipped turning pads.
