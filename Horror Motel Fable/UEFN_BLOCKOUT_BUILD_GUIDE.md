@@ -1,9 +1,9 @@
-# UEFN BLOCKOUT BUILD GUIDE — LD-GEO R2.2
+# UEFN BLOCKOUT BUILD GUIDE — LD-GEO R2.3
 Purpose: geometry-specific greybox handoff for Claude. Greybox only; not authorization for final environmental art.
-Status: R2.2 PROPOSAL — NOT OWNER-APPROVED — NOT UEFN-VERIFIED.
+Status: R2.3 OWNER-APPROVED DESIGN — GREYBOX BLOCKED UNTIL CLD-001/CLD-002 PASS — NOT UEFN-VERIFIED.
 
 ## Source and conversion
-Use LEVEL_DESIGN_GEOMETRY.md R2.2 as the candidate geometry authority. Read ROOM_COORDINATE_REGISTER.csv, coordinate_schedule.csv, DOOR_WINDOW_SCHEDULE.csv, door_window_schedule.csv (mirror only), wall_schedule.csv, SLAB_SCHEDULE.csv, LEVEL_SECTIONS.md and both R2.2 floor plans. Convert metres to Unreal cm by multiplying X/Y/Z by 100. Origin SW; +X east, +Y north, +Z up. Owner approval is required before geometry freeze.
+Use LD_GEO_R2.3_APPROVAL_RECORD.md and LEVEL_DESIGN_R2.3_INDEX.md as the geometry authority. Read LEVEL_DESIGN_GEOMETRY.md R2.3 and every controlled register/schedule/plan named by the R2.3 index. Treat legacy R2.2/R2.1 plan images and old dossier coordinates as historical wherever they conflict. Convert metres to Unreal cm by multiplying X/Y/Z by 100. Origin SW; +X east, +Y north, +Z up. The owner approved R2.3 design geometry; CLD-001 backup/baseline and CLD-002 integrity PASS are still mandatory before any greybox write. Implemented geometry requires separate editor evidence and owner acceptance.
 
 ## Build order
 1. Create site datum, origin marker, 1 m minor / 5 m major grid.
@@ -36,4 +36,4 @@ Use LEVEL_DESIGN_GEOMETRY.md R2.2 as the candidate geometry authority. Read ROOM
 Continuous floors at thresholds; no duplicate collision in U corners; wall collision only except scheduled openings; glass collision intentional; door/panel collision synced to state; continuous balcony rail collision; stairwell opening guarded on west/east/north edges and open on south approach; stair collision tested for players and THE GUEST; secret route no snagging seams; roof inaccessible.
 
 ## Required test evidence
-Record UEFN version/build, map revision R2.2, test player count, NPC implementation, route, expected result, actual result, screenshots/video and pass/fail. Never label ENGINE-VERIFIED without evidence. If owner approval is not yet recorded, mark build geometry PROPOSED and do not finalise environmental art.
+Record UEFN version/build, map revision R2.3, test player count, NPC implementation, route, expected result, actual result, screenshots/video and pass/fail. Never label ENGINE-VERIFIED without evidence. Mark geometry OWNER-APPROVED DESIGN but EDITOR-VERIFICATION REQUIRED until all tests pass; do not finalise environmental art before implemented geometry is accepted.
