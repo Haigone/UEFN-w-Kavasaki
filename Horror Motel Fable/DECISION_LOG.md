@@ -78,3 +78,7 @@ Latest live metadata reports PR #1 `mergeable=true`, not mergeable=false. The no
 
 ### DEC-021 final status correction
 The latest live check returned `mergeable=false` (earlier metadata had returned true); compare was 49 ahead / 100 behind main. Maintain the no-merge decision. Regardless of the fluctuating flag, PR #1 remains draft/unreviewed and based on R2.0 rather than R2.1.
+
+
+### DEC-021 / DEC-022 latest branch delta
+Latest Environment Art branch is 52 commits ahead / 106 behind main and PR #1 is OPEN/DRAFT, latest mergeable=false. Asset register now has 120 rows. Six west wardrobes are blocked with no coordinates; three upper-east wardrobes remain out of R2.1 bounds and F12_SECRET_PANEL remains 1.35 m offset from D-13A. This supersedes earlier 9-active-wardrobe/119-row counts. Do not merge until the PR is reauthored against R2.1 and revalidated.
