@@ -284,3 +284,13 @@ A final live check after the R2.1 document updates supersedes the PR mergeabilit
 
 ## 16. Final mergeability status correction
 The next live check after section 15 returned `mergeable=false` again. The latest comparison at that point was 49 commits ahead / 100 behind main, DIVERGED. PR #1 remains OPEN/DRAFT with no reviews, comments or status checks. GitHub's mergeability result has fluctuated between true and false during the re-audit; use the most recent value (false) and recheck immediately before any integration action. The production recommendation is unchanged: do not merge until the branch is reauthored against R2.1, all CSV/placement issues are corrected, and review/owner approval are recorded.
+
+
+## 17. Latest Environment Art branch delta — final snapshot
+The Environment Art branch advanced again during this audit. Latest branch head: `75013155a21717c02ad094c9c9d4238f0f9596e0`; main at the final check: `d8e99385557fe1314faed38a2c2f95765d503bd3`. Compare is DIVERGED, 52 commits ahead / 106 behind. PR #1 remains OPEN/DRAFT, latest GitHub metadata says `mergeable=false`, 12 changed files, zero reviews/comments/status checks.
+
+The latest placement-register revision has 24 columns and 286 rows. Statuses: 186 PROPOSED TARGET, 7 BLOCKED, 2 EDITOR-TEST REQUIRED, 91 UNPLACED. Six west-wing wardrobes (F01/F02/F03/F07/F08/F09) have now been changed to BLOCKED with blank coordinates; this is an improvement, so they are no longer active placed out-of-bounds props. Three upper-east wardrobes (F10/F11/F12) remain proposed at X=66.00, with footprints X≈65.70–66.30, outside R2.1 upper-east room minimum X=67.00. F12_SECRET_PANEL remains at X=68.60 versus D-13A X=69.95 (1.35 m offset); Y=47.55 matches.
+
+The latest asset register now contains 120 rows / unique IDs (112 NOT STARTED, 8 BLOCKED), while the PR description still says 119. The 20-row material register is unchanged. All placement Asset_ID and Material_ID references resolve against the current registers. The source register still has 8/10 malformed rows and GQ-007 remains malformed, so the PR description's “CSV schemas normalized” claim remains inaccurate. The Environment Art execution plan still declares R2.0 as its authority, while main is R2.1.
+
+This latest snapshot supersedes the nine-active-wardrobe and 119-asset-row counts in section 14.4 and the 49/94 or 49/100 branch comparisons in sections 15–16. Recheck again before any merge because the branch is actively changing.
