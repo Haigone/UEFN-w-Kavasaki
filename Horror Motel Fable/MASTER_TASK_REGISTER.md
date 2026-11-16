@@ -1,5 +1,7 @@
 # MASTER TASK REGISTER
 
+> **CURRENT AUTHORITY — 2026-11-16:** [R3_CURRENT_STATUS_AND_REMAINING_WORK.md](R3_CURRENT_STATUS_AND_REMAINING_WORK.md) is the consolidated current status and dependency order. Historical rows below preserve the original audit trail; where their status or counts conflict with the R3 current status and canonical sources, treat them as superseded snapshots. Do not mark any implementation gate complete without the required evidence.
+
 > **CURRENT AUTHORITY ADDENDUM — 2026-11-16:** The owner's express delegation “prendi tu le decisione” has been exercised. NCP-A01–A09 and END-A02 are APPROVED; END-A01 remains APPROVED. Canonical sources: OWNER_DECISION_GATE_R2.2.md, OWNER_DECISION_PACKET_R1.md, NARRATIVE_CONTENT_PROPOSAL_PACK_R1.md, ENDING_IMPLEMENTATION_SPEC.md, OBJECTIVE_AND_EVENT_CATALOG.md and INTERACTION_EXECUTION_SPEC.md. Older rows below that still say narrative approval is pending, geometry is unapproved, or the current execution packet is R2.2 are historical and superseded. Current interaction range is IN-001–IN-032. This does not mark any UEFN/editor implementation or test as complete.
 
  — THE MOTEL: ROOM 13
