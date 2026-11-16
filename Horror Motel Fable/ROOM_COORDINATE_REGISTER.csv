@@ -34,7 +34,7 @@ U-EAST-BALCONY,UF,Balcony,64.3,66.85,18.3,48.3,3.6,2.55,30,2.8,0,FLOOR-UPPER-01,
 U-WEST-TURN,UF,Balcony_Turn,17.15,20.15,47,50.8,3.6,3,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 U-EAST-TURN,UF,Balcony_Turn,63.85,66.85,47,50.8,3.6,3,3.8,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 U-NORTH-HALL,UF,Hall,19.7,64.3,48.3,50.8,3.6,44.6,2.5,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
-U-STAIR-LANDING,UF,Stair_Landing,20.15,28.7,51.1,59.7,3.6,8.55,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
+U-STAIR-LANDING,UF,Stair_Landing,20.15,28.7,51.1,59.7,3.6,8.55,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 U-SERVICE,UF,Service_Room,29,48.7,51.1,59.7,3.6,19.7,8.6,2.8,0,FLOOR-INT-01,Walkable,Spatial allocation,PROPOSED CORRECTION
 ROOM-13,UF,Secret_Room,49,63.7,51.1,59.7,3.6,14.7,8.6,2.8,0,FLOOR-UPPER-01,Walkable,Secret room; north connector,OWNER DECISION for location; dimensions proposed
 U-WEST-SERVICE-RESERVE,UF,Nonplayable_Reserve,8.3,19.85,51.1,59.7,3.6,11.55,8.6,2.8,0,FLOOR-UPPER-01,No access,Upper slab reserve; no door,OWNER APPROVAL REQUIRED
