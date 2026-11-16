@@ -87,3 +87,12 @@
 Release only when all critical tests pass in solo and relevant co-op party sizes; no mandatory item is permanently lost; all endings are reachable; no known softlock remains; Verse compiles in the target editor; device/API assumptions are verified; and evidence/results are attached to the build. Any failed test creates a tracked defect with severity, reproduction steps, owner and retest result.
 
 **Ownership reminder:** Claude performs all UEFN implementation and execution. ChatGPT prepares specifications and reviews evidence/results supplied by Claude.
+
+## 8. Register reconciliation regression tests
+| Test ID | Scenario | Expected result |
+|---|---|---|
+| GAT-048 | Collect Fuse A/B/C and Room 02 battery | FuseA/B/C are separate team-owned quest items; battery charge remains a separate personal resource; each pickup commits once |
+| GAT-049 | Collect Screwdriver; open electrical cover; later open ROOM 12 panel | One reusable team tool supports both interactions; it is not consumed or duplicated |
+| GAT-050 | Solve PZ-01 and PZ-04 without collecting the visible keys | Puzzles open their respective drawers/compartments; OfficeKey and ServiceKey are granted only by IN-006 and IN-017 |
+| GAT-051 | Collect CarKeys in Act VI and use vehicle ignition | CarKeys enters team inventory once; ignition remains unavailable until GatePowered and CarKeys are both true |
+| GAT-052 | Inspect Room 06 missing-guest photo board | MissingGuestEvidenceFound is recorded once and appears in the journal; it gates THE_TRUTH only if owner-approved as mandatory evidence |
