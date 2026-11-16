@@ -152,9 +152,9 @@ if missing_interactions:
 all_anchor_ids = {r.get("Anchor_ID", "") for r in data["INTERACTION_ANCHOR_SCHEDULE_R1.csv"][1]}
 all_anchor_ids |= {r.get("Anchor_ID", "") for r in data["AI_PATROL_AND_SPAWN_ANCHOR_SCHEDULE_R1.csv"][1]}
 logical_aliases = {
-    "AUDIO_GLOBAL_EXT", "IA-002", "DYNAMIC_PLAYER_LOCATION",
-    "SVC-DOOR-READER", "UI_OBJECTIVE_TRACKER", "UI_JOURNAL",
-    "UI_EVIDENCE", "UI_ENDING_SELECTOR", "UI_INTERACTION_PROMPT",
+    "AUDIO_GLOBAL_EXT", "IA-002", "DYNAMIC_PLAYER_LOCATION", "DYNAMIC_RECOVERY_ACTORS", "NONE",
+    "SVC-DOOR-READER", "UI_OBJECTIVE_TRACKER", "UI_HUD_OBJECTIVE",
+    "UI_JOURNAL", "UI_EVIDENCE", "UI_ENDING_SELECTOR", "UI_INTERACTION_PROMPT",
 }
 for row_no, row in enumerate(data["UEFN_DEVICE_BINDINGS.csv"][1], start=2):
     raw = row.get("Anchor_IDs", "")
