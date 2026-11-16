@@ -78,6 +78,17 @@ The existing coordinates are preliminary design targets, not an approved executa
 
 Use `PRODUCTION_DETAIL_REQUIREMENTS.md` as a mandatory production specification. You must create and maintain:
 - `coordinate_schedule.csv`
+- `wall_schedule.csv`
+- `door_window_schedule.csv`
+- `room_furnishing_schedule.csv`
+- `EXECUTIVE_FLOORPLANS.md`
+- `GUEST_MODEL_SPEC.md`
+- `GEOMETRY_VALIDATION_REPORT.md`
+- `QA_ACCEPTANCE_MATRIX.md`
+- `ASSET_MANIFEST_EXECUTIVE.csv`
+- `UEFN_DEVICE_BINDINGS.csv`
+- `exterior_prop_schedule.csv`
+- `lighting_audio_schedule.csv`
 - `room_furnishing_schedule.csv`
 - `door_window_schedule.csv`
 - `asset_manifest.csv`
