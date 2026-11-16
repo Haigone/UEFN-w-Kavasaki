@@ -12,6 +12,7 @@ Status: PROPOSED CANONICAL GEOMETRY — NOT OWNER-APPROVED — NOT UEFN-VERIFIED
 - `DOOR_WINDOW_SCHEDULE.csv` — authoritative opening centre-lines and clear sizes.
 - `door_window_schedule.csv` — legacy-format mirror; not an independent authority.
 - `wall_schedule.csv` — unique wall centre-lines, thicknesses, levels and opening IDs.
+- `SLAB_SCHEDULE.csv` — U-shaped ground/upper/roof slab polygons and courtyard void.
 - `FINAL_GROUND_FLOOR_PLAN.md` / `FINAL_UPPER_FLOOR_PLAN.md` — written plans.
 - `GROUND_FLOOR_PLAN_R2.svg` / `UPPER_FLOOR_PLAN_R2.svg` — plan drawings.
 - `LEVEL_SECTIONS.md` / `SECTIONS_R2.2.svg` — vertical sections and stair/secret route.
