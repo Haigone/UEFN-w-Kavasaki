@@ -94,6 +94,36 @@ def prop(bp_name, label, x0, x1, y0, y1, z0, z1, folder):
     a.tags = [TAG]
     return {'refPath': a.get_path_name()}
 
+# LIGHTING_REGISTER.csv lights (R3 batch 01d). (verse field, label, x, y, z, colour RGB, intensity %, size %, shadows, rhythm)
+REG_LIGHTS = [
+    ('L_ParkA', 'LREG L_EXT_PARK_01', 25, 12, 3.5, (0.55, 0.70, 1.0), 30, 100, 'True', 'Constant'),
+    ('L_ParkB', 'LREG L_EXT_PARK_02', 59, 12, 3.5, (0.55, 0.70, 1.0), 30, 100, 'True', 'Constant'),
+    ('L_CourtA', 'LREG L_COURTYARD_01', 25, 43, 3.5, (0.55, 0.70, 1.0), 20, 85, 'True', 'Constant'),
+    ('L_CourtB', 'LREG L_COURTYARD_02', 59, 43, 3.5, (0.55, 0.70, 1.0), 20, 85, 'True', 'Constant'),
+    ('L_ReceptionMain', 'LREG L_RECEPTION_MAIN', 31, 54.5, 2.8, (1.0, 0.72, 0.42), 65, 70, 'False', 'Constant'),
+    ('L_CorridorW', 'LREG L_CORRIDOR_W', 9.55, 33, 2.7, (0.60, 0.80, 1.0), 15, 60, 'False', 'Constant'),
+    ('L_CorridorE', 'LREG L_CORRIDOR_E', 74.45, 33, 2.7, (0.60, 0.80, 1.0), 15, 60, 'False', 'Constant'),
+    ('L_Room13Red', 'LREG L_ROOM13_RED', 56, 55, 5.8, (1.0, 0.08, 0.05), 40, 45, 'True', 'Wave'),
+    ('L_EscapeRed', 'LREG L_ESCAPE_RED', 42, 18, 2.5, (1.0, 0.05, 0.03), 35, 75, 'True', 'Constant'),
+    ('L_Neon', 'LREG L_NEON_SIGN', 42, 15, 2.2, (1.0, 0.15, 0.25), 80, 35, 'False', 'Wave'),
+]
+
+
+async def place_register_lights():
+    have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    done = []
+    for field, label, x, y, z, rgb, inten, size, shadows, rhythm in REG_LIGHTS:
+        if label in have:
+            continue
+        ref = await place(A_LIGHT, x, y, z, label, 'LightsRegister')
+        for k, v in (('LightColor', '(R=%f,G=%f,B=%f,A=1.000000)' % rgb), ('LightIntensityPercentage', '%0.1f' % inten),
+                     ('LightSizePercentage', '%0.1f' % size), ('CastShadows', shadows), ('RhythmPreset', rhythm),
+                     ('InitialState', 'False')):
+            await opt(ref, k, v)
+        done.append(label)
+    return done
+
+
 async def place_missing_buttons():
     # adds Button devices that are in BUTTONS but not yet in the level (keeps existing actors and bindings)
     have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
@@ -120,6 +150,7 @@ async def wire():
     pairs += [('light%02d' % i, 'LIGHT %02d' % i) for i in range(len(LIGHTS))]
     pairs += [('guestprop', 'THE GUEST proxy'), ('endgame', 'END GAME'), ('flashlightgranter', 'FLASHLIGHT GRANTER'),
               ('flashlightremover', 'FLASHLIGHT REMOVER'), ('flashlightinput', 'FLASHLIGHT TOGGLE INPUT')]
+    pairs += [(f.lower(), lab) for f, lab, *_ in REG_LIGHTS]
     ok, bad = 0, []
     for key, label in pairs:
         try:

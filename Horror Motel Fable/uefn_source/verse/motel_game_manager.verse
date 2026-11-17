@@ -128,6 +128,16 @@ motel_game_manager := class(creative_device):
     # QA only: ending exercised by the self-test (1 ESCAPE, 2 THE TRUTH, 3 THE NEW GUEST).
     @editable SelfTestEnding:int = 2
     @editable EndGame:end_game_device = end_game_device{}
+    @editable L_ParkA:customizable_light_device = customizable_light_device{}
+    @editable L_ParkB:customizable_light_device = customizable_light_device{}
+    @editable L_CourtA:customizable_light_device = customizable_light_device{}
+    @editable L_CourtB:customizable_light_device = customizable_light_device{}
+    @editable L_ReceptionMain:customizable_light_device = customizable_light_device{}
+    @editable L_CorridorW:customizable_light_device = customizable_light_device{}
+    @editable L_CorridorE:customizable_light_device = customizable_light_device{}
+    @editable L_Room13Red:customizable_light_device = customizable_light_device{}
+    @editable L_EscapeRed:customizable_light_device = customizable_light_device{}
+    @editable L_Neon:customizable_light_device = customizable_light_device{}
     @editable FlashlightGranter:item_granter_device = item_granter_device{}
     @editable FlashlightRemover:item_remover_device = item_remover_device{}
     @editable FlashlightInput:input_trigger_device = input_trigger_device{}
@@ -334,6 +344,7 @@ motel_game_manager := class(creative_device):
             L.TurnOff()
         RefreshObjective()
         FlashlightInput.PressedEvent.Subscribe(OnFlashlightKey)
+        LightingStart()
         spawn{ FlashlightLoop() }
         spawn{ TickLoop() }
         spawn{ GuestLoop() }
@@ -674,6 +685,9 @@ motel_game_manager := class(creative_device):
                     set PowerRestored = true
                     for (L : AllLights()):
                         L.TurnOn()
+                    # LCS-004: emergency corridor state ends once; normal corridor practicals are in AllLights
+                    L_CorridorW.TurnOff()
+                    L_CorridorE.TurnOff()
                     ToastAll("POWER RESTORED")
                 else:
                     Missing(Pl)
@@ -1025,6 +1039,9 @@ motel_game_manager := class(creative_device):
         ToastAll("Night audit complete.")
         set GuestActive = false
         GuestProp.Hide()
+        # LCS-009: interior practicals out room by room; parking, courtyard and neon stay on at 02:13
+        for (L : array{L_ReceptionMain, L_CorridorW, L_CorridorE, L_Room13Red, L_EscapeRed}):
+            L.TurnOff()
         for (L : AllLights()):
             L.TurnOff()
             Sleep(0.4)
@@ -1049,6 +1066,7 @@ motel_game_manager := class(creative_device):
             if (GameOver?):
                 break
             T := Now()
+            LightingTick()
             if (not ReceptionEntered?):
                 for (Pl -> D : Players, FC := Pl.GetFortCharacter[]):
                     L := FC.GetTransform().Translation
@@ -1057,6 +1075,7 @@ motel_game_manager := class(creative_device):
                     if (L.X >= A.X, L.X <= B.X, L.Y >= A.Y, L.Y <= B.Y):
                         set ReceptionEntered = true
                 if (ReceptionEntered?):
+                    L_ReceptionMain.TurnOn()
                     RefreshObjective()
             # capture recovery and rescue (IN-022)
             var AnyFree:logic = false
@@ -1182,6 +1201,37 @@ motel_game_manager := class(creative_device):
             set D.RescueProgress = 0.0
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
             ReaderTo(Pl, "YOU HAVE BEEN TAKEN\n\nA teammate can free you. Otherwise the motel lets go in time.", 8.0)
+
+    # ================= lighting cues (LIGHTING_CUE_SHEET.csv) =================
+    var Room13Lit:logic = false
+    var EscapeLit:logic = false
+
+    # LCS-001/002/005: exterior, courtyard and neon on at session start; LCS-004 corridors in emergency state before power.
+    LightingStart():void =
+        for (L : array{L_ParkA, L_ParkB, L_CourtA, L_CourtB, L_Neon, L_CorridorW, L_CorridorE}):
+            L.TurnOn()
+        for (L : array{L_ReceptionMain, L_Room13Red, L_EscapeRed}):
+            L.TurnOff()
+
+    # LCS-006 while any player is inside ROOM 13; LCS-007 once the finale route is ready.
+    LightingTick():void =
+        if (Ending = 0):
+            var Inside:logic = false
+            A := P(49.0, 51.1, 3.0)
+            B := P(63.7, 59.7, 3.0)
+            for (Pl -> D : Players, FC := Pl.GetFortCharacter[]):
+                L := FC.GetTransform().Translation
+                if (L.X >= A.X, L.X <= B.X, L.Y >= A.Y, L.Y <= B.Y, L.Z > A.Z):
+                    set Inside = true
+            if (Inside?, not Room13Lit?):
+                set Room13Lit = true
+                L_Room13Red.TurnOn()
+            else if (not Inside?, Room13Lit?):
+                set Room13Lit = false
+                L_Room13Red.TurnOff()
+            if (not EscapeLit?, FinaleReady[]):
+                set EscapeLit = true
+                L_EscapeRed.TurnOn()
 
     # ================= IN-009 personal flashlight =================
     # R3-DEC-013: Fortnite "Torcia" item (WID_Ranged_Flashlight) granted while the light is ON and removed when OFF or empty.
@@ -1341,6 +1391,13 @@ motel_game_manager := class(creative_device):
             Dump("T15 ESCAPE vote without vehicle (expect ending=0)")
             Press(Pl, array{33, 34})
             Dump("T16 car keys + ignition (expect ckeys=1 ign=1)")
+            Print("[R3-TEST] L01 finale lighting: escapeRed={B2S(EscapeLit)} room13Red={B2S(Room13Lit)} (expect escapeRed=1 room13Red=0)")
+            if (FC.TeleportTo[P(56.0, 55.5, 3.75), IdentityRotation()]) {}
+            Sleep(1.5)
+            Print("[R3-TEST] L02 inside ROOM 13: room13Red={B2S(Room13Lit)} (expect 1)")
+            if (FC.TeleportTo[P(52.0, 57.0, 0.3), IdentityRotation()]) {}
+            Sleep(1.5)
+            Print("[R3-TEST] L03 left ROOM 13: room13Red={B2S(Room13Lit)} (expect 0)")
             # capture and solo recovery: stand on the Guest route
             if (FC.TeleportTo[P(52.0, 51.0, 0.3), IdentityRotation()]) {}
             var Waited:float = 0.0
