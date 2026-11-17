@@ -124,6 +124,16 @@ async def place_register_lights():
     return done
 
 
+async def place_journal_input():
+    have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    if 'JOURNAL INPUT' in have:
+        return 'exists'
+    ref = await place('/CRD_InputTrigger/SetupAssets/PID_Device_InputTrigger.PID_Device_InputTrigger', 52, 2, 1.0, 'JOURNAL INPUT', 'Core')
+    await opt(ref, 'CreativeInput', 'Custom 12 (Harvesting Tool)')
+    await opt(ref, 'HUD Description', 'Journal')
+    return 'placed'
+
+
 async def place_missing_buttons():
     # adds Button devices that are in BUTTONS but not yet in the level (keeps existing actors and bindings)
     have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
@@ -151,6 +161,7 @@ async def wire():
     pairs += [('guestprop', 'THE GUEST proxy'), ('endgame', 'END GAME'), ('flashlightgranter', 'FLASHLIGHT GRANTER'),
               ('flashlightremover', 'FLASHLIGHT REMOVER'), ('flashlightinput', 'FLASHLIGHT TOGGLE INPUT')]
     pairs += [(f.lower(), lab) for f, lab, *_ in REG_LIGHTS]
+    pairs += [('journalinput', 'JOURNAL INPUT'), ('guestspawner', 'GUEST NPC SPAWNER')]
     ok, bad = 0, []
     for key, label in pairs:
         try:

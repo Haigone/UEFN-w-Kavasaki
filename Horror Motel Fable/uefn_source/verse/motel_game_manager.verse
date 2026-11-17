@@ -32,6 +32,7 @@ motel_player := class:
     var LightOn:logic = false
     var LowWarned:logic = false
     var Claimed:[int]logic = map{}
+    var JournalPage:int = 0
 
 motel_hud := class:
     Canvas:canvas
@@ -145,6 +146,7 @@ motel_game_manager := class(creative_device):
     @editable FlashlightGranter:item_granter_device = item_granter_device{}
     @editable FlashlightRemover:item_remover_device = item_remover_device{}
     @editable FlashlightInput:input_trigger_device = input_trigger_device{}
+    @editable JournalInput:input_trigger_device = input_trigger_device{}
     @editable Light00:customizable_light_device = customizable_light_device{}
     @editable Light01:customizable_light_device = customizable_light_device{}
     @editable Light02:customizable_light_device = customizable_light_device{}
@@ -348,6 +350,7 @@ motel_game_manager := class(creative_device):
             L.TurnOff()
         RefreshObjective()
         FlashlightInput.PressedEvent.Subscribe(OnFlashlightKey)
+        JournalInput.PressedEvent.Subscribe(OnJournalKey)
         LightingStart()
         if (NpcNavProof?):
             GuestSpawner.SpawnedEvent.Subscribe(OnProofNpcSpawned)
@@ -438,6 +441,7 @@ motel_game_manager := class(creative_device):
             H.ToastText.SetText(M(""))
 
     ToastAll(S:string):void =
+        PushEvent(S)
         for (Pl -> D : Players):
             ToastTo(Pl, S)
 
@@ -820,7 +824,9 @@ motel_game_manager := class(creative_device):
                 ReaderTo(Pl, Room06Archive, 40.0)
                 Evidence(Pl, 2)
             45 => ToastTo(Pl, "The CRT shows the corridor outside this room. It is empty.")
-            46 => ReaderTo(Pl, Room04Transcript, 30.0)
+            46 =>
+                set Room04TranscriptRead = true
+                ReaderTo(Pl, Room04Transcript, 30.0)
             _ => {}
 
     ShowDials(Pl:player):void =
@@ -1209,6 +1215,125 @@ motel_game_manager := class(creative_device):
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
             ReaderTo(Pl, "YOU HAVE BEEN TAKEN\n\nA teammate can free you. Otherwise the motel lets go in time.", 8.0)
 
+    # ================= Journal (GAMEPLAY_UI_UX_SPEC §5) =================
+    # R3-DEC-016: one key (Harvesting Tool) cycles Overview -> Evidence -> Items & Access -> full text of each
+    # discovered document -> closed. Per-player view of shared state; it never changes progression or pauses threat.
+    var Room04TranscriptRead:logic = false
+    var RecentEvents:[]string = array{}
+
+    PushEvent(S:string):void =
+        var Keep:[]string = array{S}
+        for (I -> E : RecentEvents, I < 9):
+            set Keep += array{E}
+        set RecentEvents = Keep
+
+    Mark(B:logic):string =
+        if (B?):
+            "SECURED"
+        else:
+            "not found"
+
+    FuseState(Have:logic, Slot:logic):string =
+        if (Slot?):
+            "INSTALLED"
+        else if (Have?):
+            "SECURED"
+        else:
+            "not found"
+
+    Access(B:logic):string =
+        if (B?):
+            "OPEN"
+        else:
+            "LOCKED"
+
+    JournalDocs():[]string =
+        var Docs:[]string = array{}
+        if (RegisterCluesSeen?):
+            set Docs += array{Register}
+        if (PhoneMessageHeard?):
+            set Docs += array{"RECEPTION TELEPHONE\n\n" + PhoneWelcome}
+        if (UpperFloorAccessGranted?):
+            set Docs += array{"OWNER'S OFFICE PHOTOGRAPHS\n\n" + OfficePhoto(1974) + "\n\n" + OfficePhoto(1978) + "\n\n" + OfficePhoto(1982) + "\n\n" + OfficePhoto(1986)}
+        if (Room04TranscriptRead?):
+            set Docs += array{Room04Transcript}
+        if (MissingGuestEvidenceFound?):
+            set Docs += array{Room06Archive}
+        if (DiaryFound?):
+            set Docs += array{DiaryA, DiaryB}
+        if (ChildRoomClueFound?):
+            set Docs += array{ChildDrawing}
+        if (PhotoSequenceSolved?):
+            set Docs += array{"ROOM 13 PHOTOGRAPHS\n\n" + Room13Photo(1968) + "\n\n" + Room13Photo(1974) + "\n\n" + Room13Photo(1981) + "\n\n" + Room13Photo(1986)}
+        Docs
+
+    JournalOverview():string =
+        var S:string = "JOURNAL - OVERVIEW   (journal key: next page)\n\nCURRENT OBJECTIVE\n{ObjTitle(CurrentObjective)}\n{ObjBody(CurrentObjective)}\n\nTruth evidence: {TruthFound()}/3\n\nRECENT EVENTS"
+        if (RecentEvents.Length = 0):
+            set S += "\n(none yet)"
+        for (E : RecentEvents):
+            set S += "\n- " + E
+        S
+
+    JournalEvidence():string =
+        var S:string = "JOURNAL - EVIDENCE\n"
+        var N:int = 0
+        if (RegisterCluesSeen?):
+            set S += "\n- Night register (Reception)"
+            set N += 1
+        if (PhoneMessageHeard?):
+            set S += "\n- Reception telephone"
+            set N += 1
+        if (UpperFloorAccessGranted?):
+            set S += "\n- Owner's office photographs"
+            set N += 1
+        if (Room04TranscriptRead?):
+            set S += "\n- Recorded Telephone Message (Room 04)"
+            set N += 1
+        if (MissingGuestEvidenceFound?):
+            set S += "\n- Missing Guest Photographs (Room 06)"
+            set N += 1
+        if (DiaryFound?):
+            set S += "\n- Night Manager's Diary (Room 09)"
+            set N += 1
+        if (ChildRoomClueFound?):
+            set S += "\n- The Child's Drawing (Room 11)"
+            set N += 1
+        if (PhotoSequenceSolved?):
+            set S += "\n- ROOM 13 photographs"
+            set N += 1
+        if (N = 0):
+            set S += "\nNo evidence recorded yet."
+        set S += "\n\nTruth evidence: {TruthFound()}/3\nFull texts follow on the next pages."
+        S
+
+    JournalItems():string =
+        "JOURNAL - ITEMS & ACCESS (team)\n\nRoom 13 key: {Mark(Room13Key)}\nOffice key: {Mark(OfficeKey)}\nScrewdriver: {Mark(Screwdriver)}\nService key: {Mark(ServiceKey)}\nCar keys: {Mark(CarKeys)}\n\nFuse A: {FuseState(FuseA, SlotA)}\nFuse B: {FuseState(FuseB, SlotB)}\nFuse C: {FuseState(FuseC, SlotC)}\nPower: {Access(PowerRestored)}\n\nOffice: {Access(OfficeOpen)}\nUpper floor: {Access(UpperFloorAccessGranted)}\nROOM 13: {Access(Room13Unlocked)}\nService gate: {Access(GatePowered)}"
+
+    OnJournalKey(Agent:agent):void =
+        if (Pl := player[Agent], D := Players[Pl]):
+            Docs := JournalDocs()
+            Total := 3 + Docs.Length
+            set D.JournalPage = D.JournalPage + 1
+            if (D.JournalPage > Total):
+                set D.JournalPage = 0
+            ShowJournal(Pl, D, Docs)
+
+    ShowJournal(Pl:player, D:motel_player, Docs:[]string):void =
+        if (D.JournalPage = 0):
+            if (H := Huds[Pl]):
+                set D.ReaderSerial += 1
+                H.ReaderBack.SetVisibility(widget_visibility.Collapsed)
+                H.ReaderText.SetVisibility(widget_visibility.Collapsed)
+        else if (D.JournalPage = 1):
+            ReaderTo(Pl, JournalOverview(), 600.0)
+        else if (D.JournalPage = 2):
+            ReaderTo(Pl, JournalEvidence(), 600.0)
+        else if (D.JournalPage = 3):
+            ReaderTo(Pl, JournalItems(), 600.0)
+        else if (Doc := Docs[D.JournalPage - 4]):
+            ReaderTo(Pl, Doc, 600.0)
+
     # ================= GATE D: NPC Spawner navigation proof =================
     NpcProofStart()<suspends>:void =
         Sleep(4.0)
@@ -1435,6 +1560,18 @@ motel_game_manager := class(creative_device):
             Dump("T15 ESCAPE vote without vehicle (expect ending=0)")
             Press(Pl, array{33, 34})
             Dump("T16 car keys + ignition (expect ckeys=1 ign=1)")
+            if (DJ := Players[Pl]):
+                set DJ.JournalPage = 0
+                var Pages:int = 0
+                loop:
+                    OnJournalKey(Pl)
+                    if (DJ.JournalPage = 0):
+                        break
+                    set Pages += 1
+                    if (Pages > 30):
+                        break
+                Print("[R3-TEST] J01 journal pages={Pages} docs={JournalDocs().Length} events={RecentEvents.Length} (expect pages = 3 + docs, docs 9, events 10)")
+                Print("[R3-TEST] J02 items page: {JournalItems()}")
             Print("[R3-TEST] L01 finale lighting: escapeRed={B2S(EscapeLit)} room13Red={B2S(Room13Lit)} (expect escapeRed=1 room13Red=0)")
             if (FC.TeleportTo[P(56.0, 55.5, 3.75), IdentityRotation()]) {}
             Sleep(1.5)
