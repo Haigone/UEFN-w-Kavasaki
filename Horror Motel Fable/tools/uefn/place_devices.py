@@ -1,6 +1,6 @@
 # R3 GATE E device map for THE MOTEL: ROOM 13. Runs inside the UEFN editor Python interpreter.
 # Idempotent: removes every actor tagged R3_DEVICE first. Button order == interaction index in motel_game_manager.verse.
-import json, unreal, toolset_registry, asyncio
+import json, os, unreal, toolset_registry, asyncio
 
 DT = 'ValkyrieFortniteToolset.DeviceToolset'
 PROJ = '/1b9a97d9-c7de-416c-b046-aeb97e125690'
@@ -134,6 +134,35 @@ async def place_journal_input():
     return 'placed'
 
 
+_HERE = os.path.dirname(__file__) if '__file__' in globals() else 'C:/Users/utente/AppData/Local/Temp/claude/3c5725dd4b11b696/8a0d6a33-3541-4d51-a0c1-4135f1b817d3/scratchpad/uefn_tools'
+exec(open(os.path.join(_HERE, 'audio_map.py'), encoding='utf-8').read())
+A_AUDIO = '/CRD_AudioPlayer/SetupAssets/PID_CP_Devices_CRD_AudioPlayer.PID_CP_Devices_CRD_AudioPlayer'
+
+
+async def place_audio():
+    have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    done = []
+    for field, label, x, y, z, cue, vol, loop, heard, spatial, mn, fo in AUDIO:
+        if label in have:
+            continue
+        ref = await place(A_AUDIO, x, y, z, label, 'Audio')
+        vals = (await toolset_registry.execute_tool(DT, 'GetClassicDeviceOptionValues',
+                                                    {'devicePath': ref, 'optionName': 'Audio', 'labelFilter': ''}))['returnValue']
+        v = [o['value'] for o in vals if o['value'].endswith('.' + cue)]
+        if not v:
+            done.append(label + ' NO-SOUND ' + cue)
+            continue
+        for k, val in (('Audio', v[0]), ('Volume', '%0.2f' % vol), ('LoopAudio', loop), ('Can Be Heard By', heard),
+                       ('Enable Spatialization', spatial), ('Enable Volume Attenuation', spatial),
+                       ('Attenuation Min Distance', '%0.1f' % mn), ('Attenuation Falloff Distance', '%0.1f' % fo)):
+            try:
+                await opt(ref, k, val)
+            except Exception as e:
+                done.append('%s opt %s failed: %s' % (label, k, str(e)[:80]))
+        done.append(label)
+    return done
+
+
 async def place_missing_buttons():
     # adds Button devices that are in BUTTONS but not yet in the level (keeps existing actors and bindings)
     have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
@@ -162,6 +191,7 @@ async def wire():
               ('flashlightremover', 'FLASHLIGHT REMOVER'), ('flashlightinput', 'FLASHLIGHT TOGGLE INPUT')]
     pairs += [(f.lower(), lab) for f, lab, *_ in REG_LIGHTS]
     pairs += [('journalinput', 'JOURNAL INPUT'), ('guestspawner', 'GUEST NPC SPAWNER')]
+    pairs += [(f.lower(), lab) for f, lab, *_ in AUDIO]
     ok, bad = 0, []
     for key, label in pairs:
         try:

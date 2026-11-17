@@ -8,6 +8,7 @@ using { /Fortnite.com/Game }
 using { /Fortnite.com/Playspaces }
 using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
+using { /Verse.org/Random }
 using { /Verse.org/Colors }
 using { /UnrealEngine.com/Temporary/Diagnostics }
 using { /UnrealEngine.com/Temporary/SpatialMath }
@@ -33,6 +34,7 @@ motel_player := class:
     var LowWarned:logic = false
     var Claimed:[int]logic = map{}
     var JournalPage:int = 0
+    var HeartAt:float = 0.0
 
 motel_hud := class:
     Canvas:canvas
@@ -140,6 +142,22 @@ motel_game_manager := class(creative_device):
     @editable L_Room13Red:customizable_light_device = customizable_light_device{}
     @editable L_EscapeRed:customizable_light_device = customizable_light_device{}
     @editable L_Neon:customizable_light_device = customizable_light_device{}
+    @editable Aud_Wind:audio_player_device = audio_player_device{}
+    @editable Aud_Neon:audio_player_device = audio_player_device{}
+    @editable Aud_Room13:audio_player_device = audio_player_device{}
+    @editable Aud_Thunder:audio_player_device = audio_player_device{}
+    @editable Aud_Threat:audio_player_device = audio_player_device{}
+    @editable Aud_Capture:audio_player_device = audio_player_device{}
+    @editable Aud_Power:audio_player_device = audio_player_device{}
+    @editable Aud_Gate:audio_player_device = audio_player_device{}
+    @editable Aud_Reveal:audio_player_device = audio_player_device{}
+    @editable Aud_Evidence:audio_player_device = audio_player_device{}
+    @editable Aud_Pickup:audio_player_device = audio_player_device{}
+    @editable Aud_Fail:audio_player_device = audio_player_device{}
+    @editable Aud_EndEscape:audio_player_device = audio_player_device{}
+    @editable Aud_EndTruth:audio_player_device = audio_player_device{}
+    @editable Aud_EndNewGuest:audio_player_device = audio_player_device{}
+    @editable Aud_Heartbeat:audio_player_device = audio_player_device{}
     @editable GuestSpawner:npc_spawner_device = npc_spawner_device{}
     # QA only (GATE D): spawn one NPC and walk it across the R2.3 route including both stair flights.
     @editable NpcNavProof:logic = false
@@ -352,6 +370,7 @@ motel_game_manager := class(creative_device):
         FlashlightInput.PressedEvent.Subscribe(OnFlashlightKey)
         JournalInput.PressedEvent.Subscribe(OnJournalKey)
         LightingStart()
+        AudioStart()
         if (NpcNavProof?):
             GuestSpawner.SpawnedEvent.Subscribe(OnProofNpcSpawned)
             spawn{ NpcProofStart() }
@@ -635,6 +654,7 @@ motel_game_manager := class(creative_device):
                 else:
                     set Room13Key = true
                     ToastAll("ROOM 13 key - added to group inventory.")
+                    Aud_Pickup.Play()
             3 =>
                 set RegisterCluesSeen = true
                 ReaderTo(Pl, Register, 25.0)
@@ -655,6 +675,7 @@ motel_game_manager := class(creative_device):
                     ToastAll("Puzzle solved. The desk drawer opens.")
                 else:
                     ToastTo(Pl, "That combination is incorrect.")
+                    Aud_Fail.Play(Pl)
             8 =>
                 if (not RegisterSolved?):
                     Missing(Pl)
@@ -663,6 +684,7 @@ motel_game_manager := class(creative_device):
                 else:
                     set OfficeKey = true
                     ToastAll("Office Key - added to group inventory.")
+                    Aud_Pickup.Play()
             9 =>
                 if (not OfficeKey?):
                     Missing(Pl)
@@ -699,6 +721,7 @@ motel_game_manager := class(creative_device):
                     # LCS-004: emergency corridor state ends once; normal corridor practicals are in AllLights
                     L_CorridorW.TurnOff()
                     L_CorridorE.TurnOff()
+                    Aud_Power.Play()
                     ToastAll("POWER RESTORED")
                 else:
                     Missing(Pl)
@@ -751,6 +774,7 @@ motel_game_manager := class(creative_device):
                 else:
                     set ServiceKey = true
                     ToastAll("Service Key - added to group inventory.")
+                    Aud_Pickup.Play()
             31 =>
                 if (not ServiceKey?):
                     Missing(Pl)
@@ -763,6 +787,7 @@ motel_game_manager := class(creative_device):
                     ToastTo(Pl, "Already recorded.")
                 else if (PowerRestored?, ServiceKey?, Room13RevealComplete?):
                     set GatePowered = true
+                    Aud_Gate.Play()
                     set ServiceRouteReady = true
                     ToastAll("Service route unlocked.")
                 else:
@@ -773,6 +798,7 @@ motel_game_manager := class(creative_device):
                 else if (FinaleReady[]):
                     set CarKeys = true
                     ToastAll("Car Keys - added to group inventory.")
+                    Aud_Pickup.Play()
                 else:
                     Missing(Pl)
             34 =>
@@ -800,6 +826,7 @@ motel_game_manager := class(creative_device):
                     set FuseA = true
                     ReaderTo(Pl, FuseTagA, 6.0)
                     ToastAll("Fuse A - added to group inventory.")
+                    Aud_Pickup.Play()
             41 =>
                 if (FuseB?):
                     ToastTo(Pl, "Already secured by the group.")
@@ -807,6 +834,7 @@ motel_game_manager := class(creative_device):
                     set FuseB = true
                     ReaderTo(Pl, FuseTagB, 6.0)
                     ToastAll("Fuse B - added to group inventory.")
+                    Aud_Pickup.Play()
             42 =>
                 if (FuseC?):
                     ToastTo(Pl, "Already secured by the group.")
@@ -814,12 +842,14 @@ motel_game_manager := class(creative_device):
                     set FuseC = true
                     ReaderTo(Pl, FuseTagC, 6.0)
                     ToastAll("Fuse C - added to group inventory.")
+                    Aud_Pickup.Play()
             43 =>
                 if (Screwdriver?):
                     ToastTo(Pl, "Already secured by the group.")
                 else:
                     set Screwdriver = true
                     ToastAll("Screwdriver - added to group inventory.")
+                    Aud_Pickup.Play()
             44 =>
                 ReaderTo(Pl, Room06Archive, 40.0)
                 Evidence(Pl, 2)
@@ -845,6 +875,7 @@ motel_game_manager := class(creative_device):
             set MissingGuestEvidenceFound = true
             set First = true
         if (First?):
+            Aud_Evidence.Play()
             ToastAll("Evidence added to journal. Truth evidence: {TruthFound()}/3")
 
     OfficePhotoPress(Pl:player, Year:int, Order:int):void =
@@ -869,6 +900,7 @@ motel_game_manager := class(creative_device):
                 set OfficePhotoProgress = 0
             ReaderTo(Pl, OfficePhoto(Year), 8.0)
             ToastAll("The photographs do not fit.")
+            Aud_Fail.Play(Pl)
 
     Room13PhotoPress(Pl:player, Year:int, Order:int):void =
         if (not Room13Unlocked?):
@@ -891,6 +923,7 @@ motel_game_manager := class(creative_device):
                 set Room13PhotoProgress = 0
             ReaderTo(Pl, Room13Photo(Year), 10.0)
             ToastAll("The photographs do not fit.")
+            Aud_Fail.Play(Pl)
 
     InstallFuse(Pl:player, Slot:int):void =
         if (not PanelCoverOpen?):
@@ -919,6 +952,7 @@ motel_game_manager := class(creative_device):
                 ToastAll("Fuse installed.")
             else if (FuseA? or FuseB? or FuseC?):
                 ToastTo(Pl, "That fuse does not fit this socket.")
+                Aud_Fail.Play(Pl)
             else:
                 Missing(Pl)
 
@@ -942,6 +976,7 @@ motel_game_manager := class(creative_device):
         # The silhouette mark is used only while THE GUEST is not already roaming; a visible Guest is never teleported.
         if (not GuestActive?, GuestProp.TeleportTo[RevealPos, IdentityRotation()]):
             GuestProp.Show()
+        Aud_Reveal.Play()
         ReaderAll(Room13Photo(1986), 9.0)
         Sleep(9.0)
         if (not GuestActive?):
@@ -1028,11 +1063,14 @@ motel_game_manager := class(creative_device):
             set Ending = Which
             set VoteOpenedAt = -1.0
             if (Which = 1):
+                Aud_EndEscape.Play()
                 spawn{ EscapeSequence() }
             else if (Which = 2):
+                Aud_EndTruth.Play()
                 ReaderAll(TruthRecorder, 30.0)
                 ToastAll("THE TRUTH")
             else:
+                Aud_EndNewGuest.Play()
                 spawn{ NewGuestSequence() }
 
     FinishGame(Title:string)<suspends>:void =
@@ -1080,6 +1118,7 @@ motel_game_manager := class(creative_device):
                 break
             T := Now()
             LightingTick()
+            HeartbeatTick(T)
             if (not ReceptionEntered?):
                 for (Pl -> D : Players, FC := Pl.GetFortCharacter[]):
                     L := FC.GetTransform().Translation
@@ -1210,6 +1249,7 @@ motel_game_manager := class(creative_device):
     Capture(Pl:player):void =
         if (D := Players[Pl], FC := Pl.GetFortCharacter[]):
             set D.Captured = true
+            Aud_Capture.Play(Pl)
             set D.CapturedAt = Now()
             set D.RescueProgress = 0.0
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
@@ -1371,6 +1411,28 @@ motel_game_manager := class(creative_device):
         else:
             Print("[R3-NPC] FAIL no fort_character or navigatable on spawned NPC")
 
+    # ================= audio cues (AUDIO_CUE_SHEET.csv, first-party Fortnite sounds) =================
+    # R3-DEC-017: beds and stingers use the Audio Player device's built-in Fortnite sound list.
+    AudioStart():void =
+        Aud_Wind.Play()
+        Aud_Neon.Play()
+        spawn{ ThunderLoop() }
+
+    ThunderLoop()<suspends>:void =
+        loop:
+            Sleep(GetRandomFloat(45.0, 90.0))
+            if (GameOver?):
+                break
+            Aud_Thunder.Play()
+
+    HeartbeatTick(T:float):void =
+        if (GuestActive?):
+            for (Pl -> D : Players, not D.Captured?, T >= D.HeartAt, FC := Pl.GetFortCharacter[]):
+                L := FC.GetTransform().Translation
+                if (Distance(L, GuestPos) < 800.0, Abs(L.Z - GuestPos.Z) < 250.0):
+                    set D.HeartAt = T + 8.0
+                    Aud_Heartbeat.Play(Pl)
+
     # ================= lighting cues (LIGHTING_CUE_SHEET.csv) =================
     var Room13Lit:logic = false
     var EscapeLit:logic = false
@@ -1395,12 +1457,15 @@ motel_game_manager := class(creative_device):
             if (Inside?, not Room13Lit?):
                 set Room13Lit = true
                 L_Room13Red.TurnOn()
+                Aud_Room13.Play()
             else if (not Inside?, Room13Lit?):
                 set Room13Lit = false
                 L_Room13Red.TurnOff()
+                Aud_Room13.Stop()
             if (not EscapeLit?, FinaleReady[]):
                 set EscapeLit = true
                 L_EscapeRed.TurnOn()
+                Aud_Threat.Play()
 
     # ================= IN-009 personal flashlight =================
     # R3-DEC-013: Fortnite "Torcia" item (WID_Ranged_Flashlight) granted while the light is ON and removed when OFF or empty.
