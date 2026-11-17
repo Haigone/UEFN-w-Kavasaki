@@ -42,6 +42,7 @@ Test environment: one UEFN play-in-client session, **one player (solo)**.
 | R3-DEC-008 | Ending selector = four world buttons in GF-SERVICE-BAY; END-A01 quorum implemented in Verse; 20 s timeout | IA-020 is a logical UI anchor; world buttons are the documented fallback |
 | R3-DEC-009 | Optional documents implemented only where approved copy exists (ROOM 03, 04, 06 fragments, fuse tags). DOC-R01/R02/R05 omitted | NCP forbids invented text |
 | R3-DEC-010 | Long texts are shown in a timed HUD reading panel (no modal input) | Works on every input device |
+| R3-DEC-012 | Showers F04, F06, F07, F08, F09 moved away from the entry door so each keeps 1.2 m clear in front of the door (X 71.4 east ground rooms, X 15.4 west upper rooms). These five rooms are mirrored but their bathroom was not, which put the shower 0.15 m from the door | Furniture change only; no wall, opening or slab moved |
 | R3-DEC-011 | Upper-floor interactions also check `UpperFloorAccessGranted` in logic, not only through the stair gate | Defence in depth after self-test run 1 |
 
 ## 4. Interaction index (Button device order = Verse index)
@@ -59,9 +60,19 @@ The manager has a QA-only `SelfTest` switch. With it on, the first connected pla
 | 1 | THE TRUTH | 20/22 steps as expected. **FAIL T06**: PZ-02 could not be solved after a wrong attempt that ended on the first photograph (reset bug). Defect R3-DEF-001, fixed. |
 | 2 | THE TRUTH | 22/22 as expected; `ENDING COMMITTED: THE TRUTH` |
 | 3 | ESCAPE | all steps as expected; `ENDING COMMITTED: ESCAPE` |
-| 4 | THE NEW GUEST | see `evidence/GATE_E_selftest_run4_NEW_GUEST_verse_output.log` |
+| 4 | THE NEW GUEST | decline with LEAVE THE KEY keeps ending=0, unanimous ACCEPT commits ending=3 |
+| 5 | THE TRUTH (after furnishing + material fix) | all steps as expected; `ENDING COMMITTED: THE TRUTH`; 0 Verse errors |
 
 Covered by the script: every prerequisite refusal, wrong register code, wrong photo order (both puzzles), fuse before cover, wrong socket, power, three truth clues, panel, Room 13 door, key refused before the reveal completes, service door and gate, ESCAPE refused without ignition, car keys and ignition, capture by THE GUEST, 15 s solo recovery, hide toggle, vote and ending commit, Night Audit one-shot.
+
+## 5b. Batch 01b (2026-11-17)
+
+- MCP link to the editor was lost overnight and restored; work resumed through MCP.
+- All 183 rows of `room_furnishing_schedule.csv` placed as blockout boxes (`tools/uefn/place_furnishing.py`, tag `R3_FURNISH`). Orientation checked in editor on F01 bed, wardrobe and desk.
+- R3-DEF-003 FIXED: the nine R3 materials lacked the Nanite usage flag, so in game every greybox surface fell back to the default material. Flag set, materials recompiled and saved.
+- R3-DEF-004 FIXED: five showers blocked their room's entry door (R3-DEC-012).
+- Static clearance checks: no colliding furniture inside a 1 m zone in front of any door, inside the stair assembly or its approaches, or on the service-bay route.
+- Collision traversal check: line traces at 0.35 m, 1.0 m and 1.75 m along 24 walking routes (courtyard to reception, every ground and upper room entry, office/storage/electrical/service bay, both stair flights and landing, the balcony network, Room 12 panel to vestibule, Room 13 door). 24/24 clear with state doors open. This is a geometric proxy, not a player walk.
 
 ## 6. Open defects and blockers
 
