@@ -43,6 +43,7 @@ Test environment: one UEFN play-in-client session, **one player (solo)**.
 | R3-DEC-009 | Optional documents implemented only where approved copy exists (ROOM 03, 04, 06 fragments, fuse tags). DOC-R01/R02/R05 omitted | NCP forbids invented text |
 | R3-DEC-010 | Long texts are shown in a timed HUD reading panel (no modal input) | Works on every input device |
 | R3-DEC-012 | Showers F04, F06, F07, F08, F09 moved away from the entry door so each keeps 1.2 m clear in front of the door (X 71.4 east ground rooms, X 15.4 west upper rooms). These five rooms are mirrored but their bathroom was not, which put the shower 0.15 m from the door | Furniture change only; no wall, opening or slab moved |
+| R3-DEC-013 | IN-009 flashlight: the Fortnite creative item `WID_Ranged_Flashlight` ("Torcia") is granted while the light is ON and removed when OFF or empty; an Input Trigger on the Place Marker key toggles it, so charge (180 s, per player) drains only in active use. HUD line bottom-left shows charge, ON/OFF and LOW below 15 %. Three batteries: Room 02 (IA-009), Storage, Room 10 desk; each can be taken once per player and restores only that player's charge. Start: full charge, light off | Compatibility-matrix route "flashlight item per player if supported". The item's beam cannot be made to flicker from Verse, so below 15 % the warning is text only (deviation from the flicker target) |
 | R3-DEC-011 | Upper-floor interactions also check `UpperFloorAccessGranted` in logic, not only through the stair gate | Defence in depth after self-test run 1 |
 
 ## 4. Interaction index (Button device order = Verse index)
@@ -62,6 +63,7 @@ The manager has a QA-only `SelfTest` switch. With it on, the first connected pla
 | 3 | ESCAPE | all steps as expected; `ENDING COMMITTED: ESCAPE` |
 | 4 | THE NEW GUEST | decline with LEAVE THE KEY keeps ending=0, unanimous ACCEPT commits ending=3 |
 | 5 | THE TRUTH (after furnishing + material fix) | all steps as expected; `ENDING COMMITTED: THE TRUTH`; 0 Verse errors |
+| 6 | THE TRUTH + flashlight F01–F08 | light on drains 1 %/s of 180 s, off keeps charge, battery restores 100 %, same battery refused, second and third batteries work, empty light cannot be switched on; full path and ending still pass; 0 Verse errors |
 
 Covered by the script: every prerequisite refusal, wrong register code, wrong photo order (both puzzles), fuse before cover, wrong socket, power, three truth clues, panel, Room 13 door, key refused before the reveal completes, service door and gate, ESCAPE refused without ignition, car keys and ignition, capture by THE GUEST, 15 s solo recovery, hide toggle, vote and ending commit, Night Audit one-shot.
 
@@ -82,7 +84,7 @@ Covered by the script: every prerequisite refusal, wrong register code, wrong ph
 | R3-DEF-002 | `INTERACTION_ANCHOR_SCHEDULE_R1.csv` row IA-020 (per-player UI anchor in a room area) failed the numeric check; this was the only real cause of the red GitHub Actions runs | FIXED in `tools/validate_r3_repository.py` |
 | R3-BLK-001 | THE GUEST model, rig, LODs and animations do not exist. No modelling/rigging tool is available to the executor. The Guest is a 0.6 × 0.4 × 2.1 m dark box | BLOCKED — needs an authored or licensed skeletal mesh |
 | R3-BLK-002 | Audio: none of the 24 audio IDs is sourced. The game is silent apart from Fortnite defaults | BLOCKED — needs sourced/licensed audio |
-| R3-BLK-003 | Flashlight and battery (IN-009): no per-player flashlight system implemented; the battery pickup is not placed | INCOMPLETE |
+| R3-BLK-003 | Flashlight and battery (IN-009) | IMPLEMENTED (R3-DEC-013); low-charge flicker and audio cue not implemented; key choice and beam strength need a human check |
 | R3-BLK-004 | 2-player and 4-player tests, disconnect/reconnect tests | NOT RUN — only one client available |
 | R3-BLK-005 | Human walk-through: door widths, stair steps, guardrails, button reach, text legibility, Guest fairness | NOT RUN — no player input available to the executor |
 | R3-BLK-006 | Furnishing (183 rows), exterior props beyond sign and car, service gate geometry, cinematics, VFX, rain | NOT STARTED |

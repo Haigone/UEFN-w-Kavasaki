@@ -44,6 +44,8 @@ BUTTONS = [
     ('IN-021 hide R07', 10.4, 26.1, 4.6, 1), ('IN-021 hide R08', 10.4, 35.1, 4.6, 1), ('IN-021 hide R09', 10.4, 45.4, 4.6, 1),
     ('IN-021 hide R10', 67.3, 26.1, 4.6, 1), ('IN-021 hide R11', 67.3, 35.1, 4.6, 1), ('IN-021 hide R12', 67.3, 45.4, 4.6, 1),
     ('IN-021 hide R13', 53.5, 58.1, 4.6, 1),
+    ('IN-009 battery R02', 17.2, 30.2, 0.9, 1), ('IN-009 battery STORAGE', 49.2, 52.6, 0.95, 1),
+    ('IN-009 battery R10', 71.4, 20.75, 4.45, 1),
 ]
 
 # (label, x0, x1, y0, y1, z0, z1)
@@ -92,6 +94,21 @@ def prop(bp_name, label, x0, x1, y0, y1, z0, z1, folder):
     a.tags = [TAG]
     return {'refPath': a.get_path_name()}
 
+async def place_missing_buttons():
+    # adds Button devices that are in BUTTONS but not yet in the level (keeps existing actors and bindings)
+    have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    made = []
+    for label, x, y, z, hold in BUTTONS:
+        if 'BTN ' + label in have:
+            continue
+        ref = await place(A_BUTTON, x, y, z, 'BTN ' + label, 'Buttons')
+        await opt(ref, 'InteractionRadius', '1.6')
+        if hold:
+            await opt(ref, 'InteractTime', '%0.1f' % hold)
+        made.append(label)
+    return made
+
+
 async def wire():
     """Re-binds every placed R3 device to the manager by label (UEFN tool cannot set Verse arrays, so fields are individual)."""
     acts = {a.get_actor_label(): a for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
@@ -101,7 +118,8 @@ async def wire():
     pairs = [('btn%02d' % i, 'BTN ' + b[0]) for i, b in enumerate(BUTTONS)]
     pairs += [('door%02d' % i, d[0]) for i, d in enumerate(DOORS)]
     pairs += [('light%02d' % i, 'LIGHT %02d' % i) for i in range(len(LIGHTS))]
-    pairs += [('guestprop', 'THE GUEST proxy'), ('endgame', 'END GAME')]
+    pairs += [('guestprop', 'THE GUEST proxy'), ('endgame', 'END GAME'), ('flashlightgranter', 'FLASHLIGHT GRANTER'),
+              ('flashlightremover', 'FLASHLIGHT REMOVER'), ('flashlightinput', 'FLASHLIGHT TOGGLE INPUT')]
     ok, bad = 0, []
     for key, label in pairs:
         try:

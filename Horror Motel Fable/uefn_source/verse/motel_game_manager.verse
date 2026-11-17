@@ -26,6 +26,11 @@ motel_player := class:
     var ToastSerial:int = 0
     var ReaderSerial:int = 0
     var DiaryPage:int = 0
+    # IN-009 personal flashlight (GAMEPLAY_SYSTEMS_SPEC §5): seconds of light left, on/off, battery spawns claimed
+    var Charge:float = 180.0
+    var LightOn:logic = false
+    var LowWarned:logic = false
+    var Claimed:[int]logic = map{}
 
 motel_hud := class:
     Canvas:canvas
@@ -34,6 +39,7 @@ motel_hud := class:
     ToastText:text_block
     ReaderBack:color_block
     ReaderText:text_block
+    LightText:text_block
 
 button_handler := class:
     Manager:motel_game_manager
@@ -105,7 +111,10 @@ motel_game_manager := class(creative_device):
     @editable Btn57:button_device = button_device{}
     @editable Btn58:button_device = button_device{}
     @editable Btn59:button_device = button_device{}
-    AllButtons()<transacts>:[]button_device = array{Btn00, Btn01, Btn02, Btn03, Btn04, Btn05, Btn06, Btn07, Btn08, Btn09, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15, Btn16, Btn17, Btn18, Btn19, Btn20, Btn21, Btn22, Btn23, Btn24, Btn25, Btn26, Btn27, Btn28, Btn29, Btn30, Btn31, Btn32, Btn33, Btn34, Btn35, Btn36, Btn37, Btn38, Btn39, Btn40, Btn41, Btn42, Btn43, Btn44, Btn45, Btn46, Btn47, Btn48, Btn49, Btn50, Btn51, Btn52, Btn53, Btn54, Btn55, Btn56, Btn57, Btn58, Btn59}
+    @editable Btn60:button_device = button_device{}
+    @editable Btn61:button_device = button_device{}
+    @editable Btn62:button_device = button_device{}
+    AllButtons()<transacts>:[]button_device = array{Btn00, Btn01, Btn02, Btn03, Btn04, Btn05, Btn06, Btn07, Btn08, Btn09, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15, Btn16, Btn17, Btn18, Btn19, Btn20, Btn21, Btn22, Btn23, Btn24, Btn25, Btn26, Btn27, Btn28, Btn29, Btn30, Btn31, Btn32, Btn33, Btn34, Btn35, Btn36, Btn37, Btn38, Btn39, Btn40, Btn41, Btn42, Btn43, Btn44, Btn45, Btn46, Btn47, Btn48, Btn49, Btn50, Btn51, Btn52, Btn53, Btn54, Btn55, Btn56, Btn57, Btn58, Btn59, Btn60, Btn61, Btn62}
     # 0 D-G08 office door, 1 stair gate, 2 D-13A Room 12 panel, 3 D-13B Room 13 door, 4 D-G16 service door
     @editable Door00:creative_prop = creative_prop{}
     @editable Door01:creative_prop = creative_prop{}
@@ -119,6 +128,9 @@ motel_game_manager := class(creative_device):
     # QA only: ending exercised by the self-test (1 ESCAPE, 2 THE TRUTH, 3 THE NEW GUEST).
     @editable SelfTestEnding:int = 2
     @editable EndGame:end_game_device = end_game_device{}
+    @editable FlashlightGranter:item_granter_device = item_granter_device{}
+    @editable FlashlightRemover:item_remover_device = item_remover_device{}
+    @editable FlashlightInput:input_trigger_device = input_trigger_device{}
     @editable Light00:customizable_light_device = customizable_light_device{}
     @editable Light01:customizable_light_device = customizable_light_device{}
     @editable Light02:customizable_light_device = customizable_light_device{}
@@ -321,6 +333,8 @@ motel_game_manager := class(creative_device):
         for (L : AllLights()):
             L.TurnOff()
         RefreshObjective()
+        FlashlightInput.PressedEvent.Subscribe(OnFlashlightKey)
+        spawn{ FlashlightLoop() }
         spawn{ TickLoop() }
         spawn{ GuestLoop() }
         Print("[R3] OnBegin buttons={AllButtons().Length} doors={AllDoors().Length} lights={AllLights().Length}")
@@ -349,6 +363,7 @@ motel_game_manager := class(creative_device):
             T3 := text_block{DefaultText := M(""), DefaultTextColor := NamedColors.White, DefaultJustification := text_justification.Center}
             RB := color_block{DefaultColor := NamedColors.Black, DefaultOpacity := 0.85}
             RT := text_block{DefaultText := M(""), DefaultTextColor := NamedColors.White}
+            LT := text_block{DefaultText := M("FLASHLIGHT 100%  [OFF]"), DefaultTextColor := NamedColors.White}
             RB.SetVisibility(widget_visibility.Collapsed)
             RT.SetVisibility(widget_visibility.Collapsed)
             C := canvas:
@@ -383,8 +398,14 @@ motel_game_manager := class(creative_device):
                         Alignment := vector2{X := 0.0, Y := 0.0}
                         SizeToContent := true
                         Widget := RT
+                    canvas_slot:
+                        Anchors := anchors{Minimum := vector2{X := 0.02, Y := 0.90}, Maximum := vector2{X := 0.02, Y := 0.90}}
+                        Offsets := margin{Left := 0.0, Top := 0.0, Right := 0.0, Bottom := 0.0}
+                        Alignment := vector2{X := 0.0, Y := 0.0}
+                        SizeToContent := true
+                        Widget := LT
             UI.AddWidget(C)
-            if (set Huds[Pl] = motel_hud{Canvas := C, TitleText := T1, BodyText := T2, ToastText := T3, ReaderBack := RB, ReaderText := RT}) {}
+            if (set Huds[Pl] = motel_hud{Canvas := C, TitleText := T1, BodyText := T2, ToastText := T3, ReaderBack := RB, ReaderText := RT, LightText := LT}) {}
 
     # ================= presentation helpers =================
     ToastTo(Pl:player, S:string):void =
@@ -552,6 +573,9 @@ motel_game_manager := class(creative_device):
             44 => "Inspect the missing-guest photographs"
             45 => "Watch the CRT"
             46 => "Listen to the recording / Read transcript"
+            60 => "Collect the battery"
+            61 => "Collect the battery"
+            62 => "Collect the battery"
             _ => "Hide / Leave hiding place"
 
     # ================= interactions =================
@@ -559,6 +583,8 @@ motel_game_manager := class(creative_device):
         if (Pl := player[Agent], D := Players[Pl], not GameOver?):
             if (D.Captured?):
                 ToastTo(Pl, "You cannot do that right now.")
+            else if (I >= 60):
+                BatteryPickup(Pl, D, I)
             else if (I >= 47):
                 ToggleHide(Pl, D)
             else if (D.Hidden?):
@@ -1157,6 +1183,81 @@ motel_game_manager := class(creative_device):
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
             ReaderTo(Pl, "YOU HAVE BEEN TAKEN\n\nA teammate can free you. Otherwise the motel lets go in time.", 8.0)
 
+    # ================= IN-009 personal flashlight =================
+    # R3-DEC-013: Fortnite "Torcia" item (WID_Ranged_Flashlight) granted while the light is ON and removed when OFF or empty.
+    # The input trigger (Place Marker key) toggles it, so charge drains only during active use.
+    LightPct(D:motel_player)<transacts>:int =
+        if (V := Int[D.Charge * 100.0 / 180.0]):
+            V
+        else:
+            0
+
+    ShowLight(Pl:player, D:motel_player):void =
+        if (H := Huds[Pl]):
+            Pct := LightPct(D)
+            var State:string = "OFF"
+            if (D.LightOn?):
+                set State = "ON"
+            if (D.Charge <= 0.0):
+                H.LightText.SetText(M("FLASHLIGHT EMPTY - find a battery"))
+            else if (Pct < 15):
+                H.LightText.SetText(M("FLASHLIGHT {Pct}%  [{State}]  - LOW"))
+            else:
+                H.LightText.SetText(M("FLASHLIGHT {Pct}%  [{State}]"))
+
+    SetLight(Pl:player, D:motel_player, On:logic):void =
+        if (On?):
+            if (D.Charge > 0.0, not D.Captured?, not D.Hidden?):
+                set D.LightOn = true
+                FlashlightGranter.GrantItem(Pl)
+        else:
+            set D.LightOn = false
+            FlashlightRemover.Remove(Pl)
+        ShowLight(Pl, D)
+
+    OnFlashlightKey(Agent:agent):void =
+        if (Pl := player[Agent], D := Players[Pl], not GameOver?):
+            if (D.LightOn?):
+                SetLight(Pl, D, false)
+            else if (D.Charge <= 0.0):
+                ToastTo(Pl, "The flashlight is empty.")
+                ShowLight(Pl, D)
+            else:
+                SetLight(Pl, D, true)
+
+    FlashlightLoop()<suspends>:void =
+        loop:
+            Sleep(1.0)
+            if (GameOver?):
+                break
+            for (Pl -> D : Players):
+                if (D.LightOn?):
+                    if (D.Captured? or D.Hidden?):
+                        SetLight(Pl, D, false)
+                    else:
+                        set D.Charge = Max(0.0, D.Charge - 1.0)
+                        if (D.Charge <= 0.0):
+                            SetLight(Pl, D, false)
+                            ToastTo(Pl, "The flashlight went out.")
+                        else:
+                            if (LightPct(D) < 15, not D.LowWarned?):
+                                set D.LowWarned = true
+                                ToastTo(Pl, "Flashlight battery low.")
+                            ShowLight(Pl, D)
+
+    # One claim per player per authored battery spawn; only the collector's charge changes (UI-015).
+    BatteryPickup(Pl:player, D:motel_player, I:int):void =
+        if (D.Claimed[I]):
+            ToastTo(Pl, "You already took this battery.")
+        else if (D.Charge >= 180.0):
+            ToastTo(Pl, "Flashlight already fully charged.")
+        else:
+            if (set D.Claimed[I] = true) {}
+            set D.Charge = 180.0
+            set D.LowWarned = false
+            ToastTo(Pl, "Flashlight fully charged.")
+            ShowLight(Pl, D)
+
     # ================= QA self-test (GATE D/E runtime evidence) =================
     B2S(B:logic):string =
         if (B?):
@@ -1188,6 +1289,28 @@ motel_game_manager := class(creative_device):
             if (FC.TeleportTo[P(29.0, 53.0, 0.3), IdentityRotation()]) {}
             Sleep(2.0)
             Dump("T02 reception entered (expect rec=1 obj=2)")
+            if (D0 := Players[Pl]):
+                OnFlashlightKey(Pl)
+                Sleep(3.2)
+                Print("[R3-TEST] F01 light on after 3s: on={B2S(D0.LightOn)} charge={D0.Charge} (expect on=1 charge 176-177)")
+                OnFlashlightKey(Pl)
+                Sleep(2.0)
+                Print("[R3-TEST] F02 light off: on={B2S(D0.LightOn)} charge={D0.Charge} (expect on=0, charge unchanged)")
+                HandleInteraction(Pl, 60)
+                Print("[R3-TEST] F03 battery: charge={D0.Charge} (expect 180)")
+                set D0.Charge = 10.0
+                HandleInteraction(Pl, 60)
+                Print("[R3-TEST] F04 same battery again: charge={D0.Charge} (expect 10, already taken)")
+                HandleInteraction(Pl, 61)
+                Print("[R3-TEST] F05 second battery: charge={D0.Charge} (expect 180)")
+                set D0.Charge = 2.0
+                OnFlashlightKey(Pl)
+                Sleep(3.2)
+                Print("[R3-TEST] F06 run empty: on={B2S(D0.LightOn)} charge={D0.Charge} (expect on=0 charge=0)")
+                OnFlashlightKey(Pl)
+                Print("[R3-TEST] F07 key while empty: on={B2S(D0.LightOn)} (expect 0)")
+                HandleInteraction(Pl, 62)
+                Print("[R3-TEST] F08 third battery: charge={D0.Charge} (expect 180)")
             Press(Pl, array{0, 1, 2, 3, 7})
             Dump("T03 wrong code (expect reg=0)")
             Press(Pl, array{4, 5, 5, 5, 6, 6, 7, 7, 8, 8})
