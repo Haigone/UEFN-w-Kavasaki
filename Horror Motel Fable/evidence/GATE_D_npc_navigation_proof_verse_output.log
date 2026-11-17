@@ -1,0 +1,32 @@
+12:28:03 Normal [R3-NPC] spawning proof NPC
+12:28:03 Normal [R3-NPC] spawned
+12:28:05 Normal [R3-NPC] leg reception: Unreachable in 0.033394s, miss 1353.141072cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg stair foot: Unreachable in 0.066789s, miss 1963.674046cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg landing: Unreachable in 0.066791s, miss 1852.869871cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg upper landing: Unreachable in 0.066791s, miss 1837.086759cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg north balcony: Unreachable in 0.066790s, miss 1965.289485cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg east balcony N: Unreachable in 0.066790s, miss 2403.323274cm, z=463.399998
+12:28:05 Normal [R3-NPC] leg east balcony S: Unreachable in 0.066789s, miss 3956.761651cm, z=463.399998
+12:28:06 Normal [R3-NPC] leg west balcony S: Unreachable in 0.066791s, miss 4015.963491cm, z=463.399998
+12:28:06 Normal [R3-NPC] leg back to stair top: Unreachable in 0.066791s, miss 1837.086759cm, z=463.399998
+12:28:06 Normal [R3-NPC] leg back to ground: Unreachable in 0.066789s, miss 1963.674046cm, z=463.399998
+12:28:06 Normal [R3-NPC] leg storage: Unreachable in 0.066796s, miss 1054.035464cm, z=463.399998
+12:28:06 Normal [R3-NPC] leg east corridor: Unreachable in 0.066792s, miss 3937.513906cm, z=463.399998
+12:28:06 Normal [R3-NPC] DONE reached 0/12
+12:32:17 Normal [R3-NPC] spawning proof NPC
+12:32:17 Normal [R3-NPC] spawned
+12:32:19 Normal [R3-NPC] leg reception: Unreachable in 0.033394s, miss 1353.141072cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg stair foot: Unreachable in 0.066801s, miss 1963.674046cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg landing: Unreachable in 0.066797s, miss 1852.869871cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg upper landing: Unreachable in 0.066797s, miss 1837.086759cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg north balcony: Unreachable in 0.066790s, miss 1965.289485cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg east balcony N: Unreachable in 0.066789s, miss 2403.323274cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg east balcony S: Unreachable in 0.066797s, miss 3956.761651cm, z=463.399998
+12:32:19 Normal [R3-NPC] leg west balcony S: Unreachable in 0.066790s, miss 4015.963491cm, z=463.399998
+12:32:20 Normal [R3-NPC] leg back to stair top: Unreachable in 0.066788s, miss 1837.086759cm, z=463.399998
+12:32:20 Normal [R3-NPC] leg back to ground: Unreachable in 0.066795s, miss 1963.674046cm, z=463.399998
+12:32:20 Normal [R3-NPC] leg storage: Unreachable in 0.066797s, miss 1054.035464cm, z=463.399998
+12:32:20 Normal [R3-NPC] leg east corridor: Unreachable in 0.066788s, miss 3937.513906cm, z=463.399998
+12:32:20 Normal [R3-NPC] DONE reached 0/12
+
+World navigation_system_config = NullNavSysConfig. Assigning AthenaNavSystemConfig spawned FortNavMesh/FortNavigationGraph actors; UEFN project validation rejected them as disallowed references (editor log 2026-11-17 12:35). Change reverted; push validated again at 12:40.

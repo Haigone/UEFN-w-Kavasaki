@@ -2,6 +2,7 @@
 # One writer per progression flag: every flag below is written only inside this device.
 # Interaction indices are the placement order used by tools/uefn/place_devices.py (R3 device map).
 using { /Fortnite.com/Devices }
+using { /Fortnite.com/AI }
 using { /Fortnite.com/Characters }
 using { /Fortnite.com/Game }
 using { /Fortnite.com/Playspaces }
@@ -138,6 +139,9 @@ motel_game_manager := class(creative_device):
     @editable L_Room13Red:customizable_light_device = customizable_light_device{}
     @editable L_EscapeRed:customizable_light_device = customizable_light_device{}
     @editable L_Neon:customizable_light_device = customizable_light_device{}
+    @editable GuestSpawner:npc_spawner_device = npc_spawner_device{}
+    # QA only (GATE D): spawn one NPC and walk it across the R2.3 route including both stair flights.
+    @editable NpcNavProof:logic = false
     @editable FlashlightGranter:item_granter_device = item_granter_device{}
     @editable FlashlightRemover:item_remover_device = item_remover_device{}
     @editable FlashlightInput:input_trigger_device = input_trigger_device{}
@@ -345,6 +349,9 @@ motel_game_manager := class(creative_device):
         RefreshObjective()
         FlashlightInput.PressedEvent.Subscribe(OnFlashlightKey)
         LightingStart()
+        if (NpcNavProof?):
+            GuestSpawner.SpawnedEvent.Subscribe(OnProofNpcSpawned)
+            spawn{ NpcProofStart() }
         spawn{ FlashlightLoop() }
         spawn{ TickLoop() }
         spawn{ GuestLoop() }
@@ -1201,6 +1208,43 @@ motel_game_manager := class(creative_device):
             set D.RescueProgress = 0.0
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
             ReaderTo(Pl, "YOU HAVE BEEN TAKEN\n\nA teammate can free you. Otherwise the motel lets go in time.", 8.0)
+
+    # ================= GATE D: NPC Spawner navigation proof =================
+    NpcProofStart()<suspends>:void =
+        Sleep(4.0)
+        Print("[R3-NPC] spawning proof NPC")
+        GuestSpawner.Enable()
+        GuestSpawner.Spawn()
+
+    OnProofNpcSpawned(Npc:agent):void =
+        spawn{ NpcProofRun(Npc) }
+
+    NpcProofRun(Npc:agent)<suspends>:void =
+        Print("[R3-NPC] spawned")
+        Sleep(2.0)
+        if (FC := Npc.GetFortCharacter[], Nav := FC.GetNavigatable[]):
+            Names:[]string = array{"reception", "stair foot", "landing", "upper landing", "north balcony", "east balcony N", "east balcony S", "west balcony S", "back to stair top", "back to ground", "storage", "east corridor"}
+            Pts:[]vector3 = array{P(29.0, 55.0, 0.0), P(23.25, 51.7, 0.0), P(24.0, 55.6, 1.8), P(24.75, 51.7, 3.6), P(24.0, 49.5, 3.6), P(65.6, 49.5, 3.6), P(65.6, 23.5, 3.6), P(18.4, 23.5, 3.6), P(24.75, 51.7, 3.6), P(23.25, 51.7, 0.0), P(52.0, 51.0, 0.0), P(74.45, 32.5, 0.0)}
+            var Ok:int = 0
+            for (I -> Target : Pts, Name := Names[I]):
+                Start := Now()
+                R := Nav.NavigateTo(MakeNavigationTarget(Target), ?MovementType := movement_type.Running, ?ReachRadius := 80.0)
+                Pos := FC.GetTransform().Translation
+                Miss := Distance(Pos, Target)
+                var Res:string = "other"
+                case (R):
+                    navigation_result.Reached => set Res = "Reached"
+                    navigation_result.PartiallyReached => set Res = "PartiallyReached"
+                    navigation_result.Blocked => set Res = "Blocked"
+                    navigation_result.Unreachable => set Res = "Unreachable"
+                    navigation_result.Interrupted => set Res = "Interrupted"
+                    _ => {}
+                if (Res = "Reached"):
+                    set Ok += 1
+                Print("[R3-NPC] leg {Name}: {Res} in {Now() - Start}s, miss {Miss}cm, z={Pos.Z}")
+            Print("[R3-NPC] DONE reached {Ok}/{Pts.Length}")
+        else:
+            Print("[R3-NPC] FAIL no fort_character or navigatable on spawned NPC")
 
     # ================= lighting cues (LIGHTING_CUE_SHEET.csv) =================
     var Room13Lit:logic = false
