@@ -158,6 +158,23 @@ motel_game_manager := class(creative_device):
     @editable Aud_EndTruth:audio_player_device = audio_player_device{}
     @editable Aud_EndNewGuest:audio_player_device = audio_player_device{}
     @editable Aud_Heartbeat:audio_player_device = audio_player_device{}
+    @editable Aud_Rain:audio_player_device = audio_player_device{}
+    @editable Aud_Fluor:audio_player_device = audio_player_device{}
+    @editable Aud_CRT:audio_player_device = audio_player_device{}
+    @editable Aud_Generator:audio_player_device = audio_player_device{}
+    @editable Aud_Breaker:audio_player_device = audio_player_device{}
+    @editable Aud_GuestBreath:audio_player_device = audio_player_device{}
+    @editable Aud_Whisper:audio_player_device = audio_player_device{}
+    @editable Aud_Page:audio_player_device = audio_player_device{}
+    @editable Aud_Keypad:audio_player_device = audio_player_device{}
+    @editable Aud_Door:audio_player_device = audio_player_device{}
+    @editable Vfx_Lightning:vfx_spawner_device = vfx_spawner_device{}
+    @editable Vfx_RevealGhosts:vfx_spawner_device = vfx_spawner_device{}
+    @editable Vfx_GuestAppear:vfx_spawner_device = vfx_spawner_device{}
+    @editable Pp_Capture:post_process_device = post_process_device{}
+    @editable Pp_Reveal:post_process_device = post_process_device{}
+    @editable Pp_Truth:post_process_device = post_process_device{}
+    @editable Pp_NewGuest:post_process_device = post_process_device{}
     @editable GuestSpawner:npc_spawner_device = npc_spawner_device{}
     # QA only (GATE D): spawn one NPC and walk it across the R2.3 route including both stair flights.
     @editable NpcNavProof:logic = false
@@ -266,7 +283,7 @@ motel_game_manager := class(creative_device):
     Dial3Values:[]int = array{74, 13, 86, 68}
 
     Path():[]vector3 = array:
-        P(29.0, 55.0, 0.0)
+        P(26.9, 56.6, 0.0)
         P(27.0, 51.5, 0.0)
         P(21.5, 51.5, 0.0)
         P(20.0, 54.0, 0.0)
@@ -317,13 +334,13 @@ motel_game_manager := class(creative_device):
         P(23.25, 52.0, 0.0)
         P(21.5, 51.5, 0.0)
         P(27.0, 51.5, 0.0)
-        P(29.0, 55.0, 0.0)
+        P(26.9, 56.6, 0.0)
         P(37.0, 54.0, 0.0)
         P(37.85, 54.0, 0.0)
         P(42.5, 54.0, 0.0)
         P(42.5, 51.0, 0.0)
         P(47.15, 51.0, 0.0)
-        P(52.0, 51.0, 0.0)
+        P(52.0, 52.4, 0.0)
         P(57.15, 51.0, 0.0)
         P(65.0, 54.0, 0.0)
         P(73.05, 54.0, 0.0)
@@ -339,7 +356,7 @@ motel_game_manager := class(creative_device):
         P(73.05, 54.0, 0.0)
         P(65.0, 54.0, 0.0)
         P(57.15, 51.0, 0.0)
-        P(52.0, 51.0, 0.0)
+        P(52.0, 52.4, 0.0)
         P(47.15, 51.0, 0.0)
         P(42.5, 51.0, 0.0)
         P(42.5, 54.0, 0.0)
@@ -467,6 +484,7 @@ motel_game_manager := class(creative_device):
     ReaderTo(Pl:player, S:string, Seconds:float):void =
         if (H := Huds[Pl], D := Players[Pl]):
             set D.ReaderSerial += 1
+            Aud_Page.Play(Pl)
             H.ReaderText.SetText(M(S))
             H.ReaderBack.SetVisibility(widget_visibility.Visible)
             H.ReaderText.SetVisibility(widget_visibility.Visible)
@@ -555,8 +573,15 @@ motel_game_manager := class(creative_device):
             set N += 1
         N
 
+    StopAfter(A:audio_player_device, T:float)<suspends>:void =
+        Sleep(T)
+        A.Stop()
+
     OpenDoor(I:int):void =
         if (D := AllDoors()[I]):
+            if (Aud_Door.TeleportTo[D.GetTransform().Translation, IdentityRotation()]) {}
+            Aud_Door.Play()
+            spawn{ StopAfter(Aud_Door, 2.5) }
             D.Hide()
 
     Pad(N:int):string =
@@ -722,6 +747,8 @@ motel_game_manager := class(creative_device):
                     L_CorridorW.TurnOff()
                     L_CorridorE.TurnOff()
                     Aud_Power.Play()
+                    Aud_Breaker.Play()
+                    Aud_Generator.Play()
                     ToastAll("POWER RESTORED")
                 else:
                     Missing(Pl)
@@ -860,6 +887,7 @@ motel_game_manager := class(creative_device):
             _ => {}
 
     ShowDials(Pl:player):void =
+        Aud_Keypad.Play()
         if (A := Dial1Values[Dial1], B := Dial2Values[Dial2], C := Dial3Values[Dial3]):
             ToastAll("{Pad(A)} - {Pad(B)} - {Pad(C)}")
 
@@ -972,13 +1000,18 @@ motel_game_manager := class(creative_device):
     # ================= ROOM 13 reveal =================
     RevealSequence()<suspends>:void =
         # Reveal presentation must finish before Room13RevealComplete commits (PZ-04 contract).
-        RevealPos := P(56.5, 55.5, 4.65)
+        RevealPos := P(56.5, 55.5, 3.6)
         # The silhouette mark is used only while THE GUEST is not already roaming; a visible Guest is never teleported.
         if (not GuestActive?, GuestProp.TeleportTo[RevealPos, IdentityRotation()]):
             GuestProp.Show()
         Aud_Reveal.Play()
+        Aud_Whisper.Play()
+        Pp_Reveal.BlendInForAll()
+        Vfx_RevealGhosts.Enable()
         ReaderAll(Room13Photo(1986), 9.0)
         Sleep(9.0)
+        Pp_Reveal.BlendOutForAll()
+        Vfx_RevealGhosts.Disable()
         if (not GuestActive?):
             GuestProp.Hide()
         set Room13RevealComplete = true
@@ -1067,6 +1100,7 @@ motel_game_manager := class(creative_device):
                 spawn{ EscapeSequence() }
             else if (Which = 2):
                 Aud_EndTruth.Play()
+                Pp_Truth.BlendInForAll()
                 ReaderAll(TruthRecorder, 30.0)
                 ToastAll("THE TRUTH")
             else:
@@ -1090,6 +1124,7 @@ motel_game_manager := class(creative_device):
         ToastAll("Night audit complete.")
         set GuestActive = false
         GuestProp.Hide()
+        Aud_GuestBreath.Stop()
         # LCS-009: interior practicals out room by room; parking, courtyard and neon stay on at 02:13
         for (L : array{L_ReceptionMain, L_CorridorW, L_CorridorE, L_Room13Red, L_EscapeRed}):
             L.TurnOff()
@@ -1101,8 +1136,10 @@ motel_game_manager := class(creative_device):
         FinishGame("THE TRUTH")
 
     NewGuestSequence()<suspends>:void =
+        Pp_NewGuest.BlendInForAll()
         set GuestActive = false
         GuestProp.Hide()
+        Aud_GuestBreath.Stop()
         for (L : AllLights()):
             L.TurnOn()
             Sleep(0.4)
@@ -1156,6 +1193,7 @@ motel_game_manager := class(creative_device):
 
     Release(Pl:player, D:motel_player, ToCheckpoint:logic):void =
         set D.Captured = false
+        Pp_Capture.BlendOut(Pl)
         set D.RescueProgress = 0.0
         set D.ProtectedUntil = Now() + 8.0
         if (FC := Pl.GetFortCharacter[]):
@@ -1175,8 +1213,12 @@ motel_game_manager := class(creative_device):
             set GuestPos = Start
             set GuestNode = 55
             set GuestActive = true
-            if (GuestProp.TeleportTo[Start + vector3{X := 0.0, Y := 0.0, Z := 105.0}, IdentityRotation()]) {}
+            if (GuestProp.TeleportTo[Start, IdentityRotation()]) {}
             GuestProp.Show()
+            if (Aud_GuestBreath.TeleportTo[Start + vector3{X := 0.0, Y := 0.0, Z := 180.0}, IdentityRotation()]) {}
+            Aud_GuestBreath.Play()
+            if (Vfx_GuestAppear.TeleportTo[Start, IdentityRotation()]) {}
+            Vfx_GuestAppear.Restart()
             loop:
                 if (GameOver? or not GuestActive?):
                     break
@@ -1244,12 +1286,14 @@ motel_game_manager := class(creative_device):
         if (Len > 1.0):
             set Yaw = RadiansToDegrees(ArcTan(Delta.Y, Delta.X))
         set GuestPos = NewPos
-        GuestProp.MoveTo(NewPos + vector3{X := 0.0, Y := 0.0, Z := 105.0}, MakeRotationFromYawPitchRollDegrees(Yaw, 0.0, 0.0), Dt)
+        if (Aud_GuestBreath.TeleportTo[NewPos + vector3{X := 0.0, Y := 0.0, Z := 180.0}, IdentityRotation()]) {}
+        GuestProp.MoveTo(NewPos, MakeRotationFromYawPitchRollDegrees(Yaw + 90.0, 0.0, 0.0), Dt)
 
     Capture(Pl:player):void =
         if (D := Players[Pl], FC := Pl.GetFortCharacter[]):
             set D.Captured = true
             Aud_Capture.Play(Pl)
+            Pp_Capture.BlendIn(Pl)
             set D.CapturedAt = Now()
             set D.RescueProgress = 0.0
             FC.PutInStasis(stasis_args{AllowTurning := true, AllowFalling := false, AllowEmotes := false})
@@ -1389,7 +1433,7 @@ motel_game_manager := class(creative_device):
         Sleep(2.0)
         if (FC := Npc.GetFortCharacter[], Nav := FC.GetNavigatable[]):
             Names:[]string = array{"reception", "stair foot", "landing", "upper landing", "north balcony", "east balcony N", "east balcony S", "west balcony S", "back to stair top", "back to ground", "storage", "east corridor"}
-            Pts:[]vector3 = array{P(29.0, 55.0, 0.0), P(23.25, 51.7, 0.0), P(24.0, 55.6, 1.8), P(24.75, 51.7, 3.6), P(24.0, 49.5, 3.6), P(65.6, 49.5, 3.6), P(65.6, 23.5, 3.6), P(18.4, 23.5, 3.6), P(24.75, 51.7, 3.6), P(23.25, 51.7, 0.0), P(52.0, 51.0, 0.0), P(74.45, 32.5, 0.0)}
+            Pts:[]vector3 = array{P(26.9, 56.6, 0.0), P(23.25, 51.7, 0.0), P(24.0, 55.6, 1.8), P(24.75, 51.7, 3.6), P(24.0, 49.5, 3.6), P(65.6, 49.5, 3.6), P(65.6, 23.5, 3.6), P(18.4, 23.5, 3.6), P(24.75, 51.7, 3.6), P(23.25, 51.7, 0.0), P(52.0, 52.4, 0.0), P(74.45, 32.5, 0.0)}
             var Ok:int = 0
             for (I -> Target : Pts, Name := Names[I]):
                 Start := Now()
@@ -1416,6 +1460,9 @@ motel_game_manager := class(creative_device):
     AudioStart():void =
         Aud_Wind.Play()
         Aud_Neon.Play()
+        Aud_Rain.Play()
+        Aud_Fluor.Play()
+        Aud_CRT.Play()
         spawn{ ThunderLoop() }
 
     ThunderLoop()<suspends>:void =
@@ -1423,6 +1470,8 @@ motel_game_manager := class(creative_device):
             Sleep(GetRandomFloat(45.0, 90.0))
             if (GameOver?):
                 break
+            Vfx_Lightning.Enable()
+            Sleep(GetRandomFloat(0.4, 1.6))
             Aud_Thunder.Play()
 
     HeartbeatTick(T:float):void =

@@ -1,0 +1,852 @@
+{
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Bed_01": {
+"cx": 93.8,
+"cy": 118.7,
+"cz": 75.6,
+"ex": 193.9,
+"ey": 246.7,
+"ez": 151.3,
+"cls": "Apollo_Suburban_Bed_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_NightStand_01": {
+"cx": 0.3,
+"cy": 19.0,
+"cz": 41.5,
+"ex": 55.6,
+"ey": 43.4,
+"ez": 83.0,
+"cls": "Apollo_Suburban_NightStand_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Wardrobe": {
+"cx": -0.2,
+"cy": 5.4,
+"cz": 106.7,
+"ex": 233.6,
+"ey": 90.6,
+"ez": 214.8,
+"cls": "Apollo_Suburban_Wardrobe_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Desk_01_NoLight": {
+"cx": 1.1,
+"cy": 0.5,
+"cz": 66.5,
+"ex": 164.6,
+"ey": 88.3,
+"ez": 133.1,
+"cls": "Apollo_Suburban_Desk_01_NoLight_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Desk_02": {
+"cx": -0.2,
+"cy": -0.4,
+"cz": 81.8,
+"ex": 165.4,
+"ey": 105.9,
+"ez": 164.5,
+"cls": "Apollo_Suburban_Desk_02_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_TV_01": {
+"cx": 1.9,
+"cy": -12.9,
+"cz": 76.1,
+"ex": 113.6,
+"ey": 77.1,
+"ez": 152.0,
+"cls": "Apollo_Suburban_TV_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_TV_02": {
+"cx": -0.0,
+"cy": 0.1,
+"cz": 34.5,
+"ex": 113.6,
+"ey": 77.2,
+"ez": 69.0,
+"cls": "Apollo_Suburban_TV_02_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_TV_03": {
+"cx": -0.1,
+"cy": -0.1,
+"cz": 25.4,
+"ex": 70.3,
+"ey": 47.1,
+"ez": 50.5,
+"cls": "Apollo_Suburban_TV_03_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_DiningChair_01": {
+"cx": 0.0,
+"cy": 4.2,
+"cz": 60.0,
+"ex": 53.2,
+"ey": 61.4,
+"ez": 118.9,
+"cls": "Apollo_Suburban_DiningChair_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_EasyChair_01": {
+"cx": 0.2,
+"cy": -4.7,
+"cz": 55.5,
+"ex": 138.0,
+"ey": 86.9,
+"ez": 110.7,
+"cls": "Apollo_Suburban_EasyChair_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Light_02_Off": {
+"cx": 0.6,
+"cy": 0.1,
+"cz": 82.6,
+"ex": 42.9,
+"ey": 43.1,
+"ez": 165.1,
+"cls": "Apollo_Suburban_Light_02_Off_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Toilet_01": {
+"cx": -1.4,
+"cy": -4.4,
+"cz": 44.1,
+"ex": 61.0,
+"ey": 93.6,
+"ez": 88.1,
+"cls": "Apollo_Suburban_Toilet_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Shower_01": {
+"cx": 64.5,
+"cy": 66.4,
+"cz": 102.1,
+"ex": 129.0,
+"ey": 132.7,
+"ez": 204.2,
+"cls": "Apollo_Suburban_Shower_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Sink_01": {
+"cx": 0.0,
+"cy": 35.2,
+"cz": 54.5,
+"ex": 91.7,
+"ey": 70.5,
+"ez": 109.0,
+"cls": "Apollo_Suburban_Sink_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_MedicineCabinet_01": {
+"cx": 0.0,
+"cy": 9.7,
+"cz": 40.5,
+"ex": 66.0,
+"ey": 19.3,
+"ez": 81.1,
+"cls": "Apollo_Suburban_MedicineCabinet_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Picture_Frame_01": {
+"cx": 0.0,
+"cy": 3.9,
+"cz": 0.0,
+"ex": 71.5,
+"ey": 7.7,
+"ez": 92.9,
+"cls": "Apollo_Suburban_Picture_Frame_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Picture_Frame_04": {
+"cx": -0.0,
+"cy": 5.8,
+"cz": -1.2,
+"ex": 180.0,
+"ey": 11.6,
+"ez": 114.6,
+"cls": "Apollo_Suburban_Picture_Frame_04_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Dresser_01": {
+"cx": 1.0,
+"cy": 24.8,
+"cz": 59.0,
+"ex": 161.2,
+"ey": 59.3,
+"ez": 118.0,
+"cls": "Apollo_Suburban_Dresser_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Rug_01": {
+"cx": 0.2,
+"cy": -1.4,
+"cz": 2.3,
+"ex": 384.4,
+"ey": 272.4,
+"ez": 4.5,
+"cls": "Apollo_Suburban_Rug_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/BP_Suburban_Vanity_A": {
+"cx": 0.5,
+"cy": 29.1,
+"cz": 111.0,
+"ex": 76.1,
+"ey": 65.6,
+"ez": 221.6,
+"cls": "BP_Suburban_Vanity_A_C",
+"nsm": 2
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_EndTable_01": {
+"cx": 0.0,
+"cy": 0.0,
+"cz": 34.9,
+"ex": 65.4,
+"ey": 88.3,
+"ez": 69.5,
+"cls": "Apollo_Suburban_EndTable_01_C",
+"nsm": 1
+},
+"/Game/Athena/Artemis/Environments/BuildingActors/Suburban/Props/Artemis_Suburban_LampModern_A": {
+"cx": 0.2,
+"cy": -0.0,
+"cz": 57.8,
+"ex": 54.0,
+"ey": 54.3,
+"ez": 117.7,
+"cls": "Artemis_Suburban_LampModern_A_C",
+"nsm": 1
+},
+"/Game/Athena/Artemis/Environments/BuildingActors/Suburban/Props/Artemis_Suburban_ToyPiles_A": {
+"cx": 4.8,
+"cy": 6.2,
+"cz": 11.0,
+"ex": 129.2,
+"ey": 148.7,
+"ez": 22.6,
+"cls": "Artemis_Suburban_ToyPiles_A_C",
+"nsm": 1
+},
+"/Game/Athena/Artemis/Environments/BuildingActors/Suburban/Props/Artemis_Suburban_StuffedAnimalPiles_A": {
+"cx": 0.2,
+"cy": -0.2,
+"cz": 21.6,
+"ex": 77.8,
+"ey": 83.1,
+"ez": 45.9,
+"cls": "Artemis_Suburban_StuffedAnimalPiles_A_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_SingleBed": {
+"cx": -86.4,
+"cy": 122.6,
+"cz": 64.9,
+"ex": 179.2,
+"ey": 254.4,
+"ez": 129.8,
+"cls": "NeoTilted_SingleBed_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_TV": {
+"cx": -12.6,
+"cy": -8.3,
+"cz": 48.5,
+"ex": 102.6,
+"ey": 26.5,
+"ez": 96.7,
+"cls": "NeoTilted_TV_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_HopeChest": {
+"cx": -1.3,
+"cy": -0.5,
+"cz": 38.2,
+"ex": 108.5,
+"ey": 71.1,
+"ez": 76.1,
+"cls": "NeoTilted_HopeChest_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_PaintingFrame_05": {
+"cx": -0.6,
+"cy": 4.7,
+"cz": -1.7,
+"ex": 130.0,
+"ey": 9.7,
+"ez": 89.2,
+"cls": "NeoTilted_PaintingFrame_05_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_TallLamp": {
+"cx": -1.0,
+"cy": 0.8,
+"cz": 95.6,
+"ex": 47.2,
+"ey": 47.8,
+"ez": 192.3,
+"cls": "NeoTilted_TallLamp_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_Nightstand": {
+"cx": -0.1,
+"cy": -17.9,
+"cz": 52.1,
+"ex": 114.2,
+"ey": 76.0,
+"ez": 104.1,
+"cls": "NeoTilted_Nightstand_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_QueenBed": {
+"cx": 105.9,
+"cy": 148.5,
+"cz": 87.9,
+"ex": 267.2,
+"ey": 297.0,
+"ez": 175.7,
+"cls": "NeoTilted_QueenBed_C",
+"nsm": 1
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_Storage_Suitcases_01": {
+"cx": -0.0,
+"cy": 0.7,
+"cz": 17.5,
+"ex": 93.0,
+"ey": 72.3,
+"ez": 35.5,
+"cls": "Athena_Prop_Storage_Suitcases_01_C",
+"nsm": 1
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_Bedroom_HopeChest_02": {
+"cx": 0.0,
+"cy": -0.4,
+"cz": 52.4,
+"ex": 155.1,
+"ey": 99.3,
+"ez": 104.8,
+"cls": "Athena_Prop_Bedroom_HopeChest_02_C",
+"nsm": 1
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_Living_Television_01": {
+"cx": -0.8,
+"cy": 4.7,
+"cz": 82.0,
+"ex": 100.6,
+"ey": 73.0,
+"ez": 164.1,
+"cls": "Athena_Prop_Living_Television_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Office/Props/Apollo_Office_Clock_01": {
+"cx": 0.0,
+"cy": 25.0,
+"cz": -0.0,
+"ex": 17.2,
+"ey": 50.0,
+"ez": 34.8,
+"cls": "Apollo_Office_Clock_01_C",
+"nsm": 5
+},
+"/WildEstate/Environment/Props/TrendyBully/TrendyBully_ToyBox_A/Blueprints/BP_TrendyBully_ToyBox_A": {
+"cx": 0.0,
+"cy": 0.0,
+"cz": 25.5,
+"ex": 125.9,
+"ey": 61.4,
+"ez": 51.0,
+"cls": "BP_TrendyBully_ToyBox_A_C",
+"nsm": 2
+},
+"/CRG_Props/SetupAssets/Blueprints/CP_PhoneItIn_01": {
+"cx": 0.0,
+"cy": 2.1,
+"cz": 3.7,
+"ex": 17.5,
+"ey": 34.5,
+"ez": 56.4,
+"cls": "CP_PhoneItIn_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Tinfoil/Props/Apollo_Tinfoil_Wardrobe_01": {
+"cx": -0.0,
+"cy": 36.4,
+"cz": 112.8,
+"ex": 128.3,
+"ey": 74.1,
+"ez": 225.6,
+"cls": "Apollo_Tinfoil_Wardrobe_01_C",
+"nsm": 1
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_Bedroom_Nightstand_01": {
+"cx": 0.0,
+"cy": 31.9,
+"cz": 73.6,
+"ex": 64.7,
+"ey": 63.4,
+"ez": 147.0,
+"cls": "Athena_Prop_Bedroom_Nightstand_01_C",
+"nsm": 1
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_Living_GrandfatherClock": {
+"cx": 0.0,
+"cy": -0.8,
+"cz": 113.3,
+"ex": 102.4,
+"ey": 58.7,
+"ez": 226.4,
+"cls": "Athena_Prop_Living_GrandfatherClock_C",
+"nsm": 5
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Apollo_Agency_DeskLamp_01": {
+"cx": 0.0,
+"cy": 0.5,
+"cz": 22.7,
+"ex": 68.7,
+"ey": 34.7,
+"ez": 45.5,
+"cls": "Apollo_Agency_DeskLamp_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Office/Props/Apollo_Office_Reception_01": {
+"cx": 0.0,
+"cy": 84.6,
+"cz": 65.3,
+"ex": 351.0,
+"ey": 180.9,
+"ez": 130.6,
+"cls": "Apollo_Office_Reception_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Tinfoil/Props/Apollo_Tinfoil_Dresser_01": {
+"cx": 0.0,
+"cy": 28.3,
+"cz": 48.4,
+"ex": 188.2,
+"ey": 66.3,
+"ez": 96.7,
+"cls": "Apollo_Tinfoil_Dresser_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Tinfoil/Props/Apollo_Tinfoil_NightStand_01": {
+"cx": -0.5,
+"cy": 29.0,
+"cz": 37.5,
+"ex": 91.4,
+"ey": 67.1,
+"ez": 75.0,
+"cls": "Apollo_Tinfoil_NightStand_01_C",
+"nsm": 1
+},
+"/Game/Creative/BuildingActors/Props/CP_Prop_Commerce_CashRegister": {
+"cx": 0.4,
+"cy": 1.5,
+"cz": 25.5,
+"ex": 56.1,
+"ey": 57.9,
+"ez": 51.1,
+"cls": "CP_Prop_Commerce_CashRegister_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Prop/Car_StationWagon": {
+"cx": -0.0,
+"cy": 4.5,
+"cz": 72.2,
+"ex": 182.0,
+"ey": 487.3,
+"ez": 144.7,
+"cls": "Car_StationWagon_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_Dumpster": {
+"cx": 0.5,
+"cy": -0.8,
+"cz": 84.2,
+"ex": 207.1,
+"ey": 149.4,
+"ez": 168.6,
+"cls": "NeoTilted_Dumpster_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_VendingMachine": {
+"cx": 11.5,
+"cy": 2.8,
+"cz": 116.3,
+"ex": 156.5,
+"ey": 98.4,
+"ez": 232.7,
+"cls": "NeoTilted_VendingMachine_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Prop/Streetlight_Suburban01": {
+"cx": 7.2,
+"cy": 4.8,
+"cz": 197.3,
+"ex": 66.2,
+"ey": 51.5,
+"ez": 394.7,
+"cls": "Streetlight_Suburban01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Industrial/Props/Apollo_Industrial_ElectricalBox_01": {
+"cx": -0.0,
+"cy": 28.0,
+"cz": 81.8,
+"ex": 111.0,
+"ey": 56.0,
+"ez": 163.6,
+"cls": "Apollo_Industrial_ElectricalBox_01_C",
+"nsm": 1
+},
+"/Game/Creative/BuildingActors/Props/Oak/BP_Oak_Prop_Industrial_Fusebox_01": {
+"cx": -6.3,
+"cy": 7.2,
+"cz": 84.7,
+"ex": 66.5,
+"ey": 40.4,
+"ez": 169.3,
+"cls": "BP_Oak_Prop_Industrial_Fusebox_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Apollo_Agency_Midas_Book_02": {
+"cx": -0.0,
+"cy": 1.2,
+"cz": 12.2,
+"ex": 6.1,
+"ey": 18.6,
+"ez": 24.4,
+"cls": "Apollo_Agency_Midas_Book_02_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/CarpetStain/CarpetStain_WallClock_A/Blueprints/BP_CarpetStain_WallClock_A": {
+"cx": -0.1,
+"cy": 5.2,
+"cz": 28.9,
+"ex": 57.9,
+"ey": 10.6,
+"ez": 57.8,
+"cls": "BP_CarpetStain_WallClock_A_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/Commerce/Commerce_WallClock_A/Blueprints/BP_Commerce_WallClock_A": {
+"cx": -0.0,
+"cy": 4.0,
+"cz": 26.0,
+"ex": 52.3,
+"ey": 8.0,
+"ez": 52.0,
+"cls": "BP_Commerce_WallClock_A_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/PalletJack/PalletJack_BoardPortraits_A/Blueprints/BP_PalletJack_BoardPortraits_A": {
+"cx": 0.0,
+"cy": 1.7,
+"cz": 24.9,
+"ex": 376.0,
+"ey": 3.5,
+"ez": 49.9,
+"cls": "BP_PalletJack_BoardPortraits_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Picture_Frame_02": {
+"cx": 0.0,
+"cy": 3.0,
+"cz": 0.0,
+"ex": 78.2,
+"ey": 6.0,
+"ez": 113.2,
+"cls": "Apollo_Suburban_Picture_Frame_02_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Picture_Frame_03": {
+"cx": 0.0,
+"cy": 1.8,
+"cz": 0.0,
+"ex": 167.7,
+"ey": 3.5,
+"ez": 96.9,
+"cls": "Apollo_Suburban_Picture_Frame_03_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/Office/Office_DeskProps_A/Blueprints/BP_Office_Folder_A": {
+"cx": -0.0,
+"cy": -0.9,
+"cz": 17.8,
+"ex": 11.5,
+"ey": 28.2,
+"ez": 35.7,
+"cls": "BP_Office_Folder_A_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/TightSweater/TightSweater_BedroomPortrait_A/Blueprints/BP_TightSweater_BedroomPortrait_A": {
+"cx": 0.0,
+"cy": 0.8,
+"cz": 35.5,
+"ex": 65.2,
+"ey": 5.0,
+"ez": 71.0,
+"cls": "BP_TightSweater_BedroomPortrait_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Commerce/Props/Apollo_Commerce_Counter_01": {
+"cx": 256.0,
+"cy": 44.4,
+"cz": 56.0,
+"ex": 512.0,
+"ey": 88.8,
+"ez": 112.0,
+"cls": "Apollo_Commerce_Counter_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Office/Props/Apollo_Office_Desk_01": {
+"cx": -118.7,
+"cy": 78.4,
+"cz": 68.7,
+"ex": 225.8,
+"ey": 136.1,
+"ez": 137.7,
+"cls": "Apollo_Office_Desk_01_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_RollingChair": {
+"cx": -0.1,
+"cy": 0.4,
+"cz": 67.1,
+"ex": 97.4,
+"ey": 84.1,
+"ez": 130.0,
+"cls": "NeoTilted_RollingChair_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/Office/Office_CorkBoard_A/Blueprints/BP_Office_CorkBoard_A": {
+"cx": -4.1,
+"cy": 2.2,
+"cz": -3.2,
+"ex": 136.9,
+"ey": 6.2,
+"ez": 88.4,
+"cls": "BP_Office_CorkBoard_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Apollo_Agency_FileCabinet_01": {
+"cx": 0.0,
+"cy": -0.4,
+"cz": 72.3,
+"ex": 58.8,
+"ey": 69.7,
+"ez": 144.6,
+"cls": "Apollo_Agency_FileCabinet_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Shared/Props/Apollo_Shared_Shelving_01A": {
+"cx": -0.1,
+"cy": -0.2,
+"cz": 104.8,
+"ex": 146.5,
+"ey": 88.1,
+"ez": 209.1,
+"cls": "Apollo_Shared_Shelving_01A_C",
+"nsm": 1
+},
+"/Game/Creative/Items/PropHunt/Creative_Prop_ToolBox_NoLoot": {
+"cx": 0.0,
+"cy": 0.0,
+"cz": 56.7,
+"ex": 94.2,
+"ey": 59.2,
+"ez": 113.0,
+"cls": "Creative_Prop_ToolBox_NoLoot_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/Street/Street_CautionSign_A/Blueprints/BP_Street_CautionSign_A": {
+"cx": 0.0,
+"cy": 0.1,
+"cz": 35.4,
+"ex": 51.8,
+"ey": 46.3,
+"ez": 70.9,
+"cls": "BP_Street_CautionSign_A_C",
+"nsm": 1
+},
+"/Hermes/Props/Utility/Utility_CircuitBreaker_A/Blueprints/BP_Utility_CircuitBreaker_A": {
+"cx": -0.0,
+"cy": 4.2,
+"cz": 155.6,
+"ex": 175.2,
+"ey": 174.7,
+"ez": 311.1,
+"cls": "BP_Utility_CircuitBreaker_A_C",
+"nsm": 1
+},
+"/Game/Creative/BuildingActors/Props/Oak/BP_Oak_Prop_Generator_SM": {
+"cx": -0.1,
+"cy": -0.0,
+"cz": 79.2,
+"ex": 132.6,
+"ey": 249.7,
+"ez": 158.5,
+"cls": "BP_Oak_Prop_Generator_SM_C",
+"nsm": 1
+},
+"/Game/Environments/Asteria/Props/Commerce/Commerce_LobbyChair_A/Blueprints/BP_Commerce_LobbyChair_A_A": {
+"cx": -0.0,
+"cy": -0.1,
+"cz": 39.6,
+"ex": 89.4,
+"ey": 110.1,
+"ez": 79.3,
+"cls": "BP_Commerce_LobbyChair_A_A_C",
+"nsm": 1
+},
+"/Game/Environments/Asteria/Props/Commerce/Commerce_LobbySideTable_A/Blueprints/BP_Commerce_LobbySideTable_A_A": {
+"cx": -0.0,
+"cy": 0.0,
+"cz": 26.4,
+"ex": 86.7,
+"ey": 86.7,
+"ez": 52.8,
+"cls": "BP_Commerce_LobbySideTable_A_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Shared/Props/Apollo_Shared_Trashcan_01": {
+"cx": 1.6,
+"cy": 36.0,
+"cz": 62.3,
+"ex": 73.0,
+"ey": 73.3,
+"ez": 124.7,
+"cls": "Apollo_Shared_Trashcan_01_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Agency_Planter_01": {
+"cx": 7.9,
+"cy": -3.6,
+"cz": 145.1,
+"ex": 162.8,
+"ey": 166.7,
+"ez": 290.2,
+"cls": "Agency_Planter_01_C",
+"nsm": 1
+},
+"/Game/Environments/Helios/Props/Street/Street_ParkingGate_A/Blueprints/BP_Street_ParkingGate_A": {
+"cx": 133.9,
+"cy": -9.9,
+"cz": 55.7,
+"ex": 310.5,
+"ey": 42.6,
+"ez": 111.4,
+"cls": "BP_Street_ParkingGate_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Constr/Props/Apollo_OilDrum_Barrel_01": {
+"cx": 0.2,
+"cy": 0.2,
+"cz": 53.6,
+"ex": 68.6,
+"ey": 66.6,
+"ez": 107.6,
+"cls": "Apollo_OilDrum_Barrel_01_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_Pallets": {
+"cx": 0.0,
+"cy": 0.0,
+"cz": 21.8,
+"ex": 241.8,
+"ey": 134.2,
+"ez": 45.0,
+"cls": "NeoTilted_Pallets_C",
+"nsm": 1
+},
+"/WildEstate/Environment/Props/Commerce/Commerce_CorkBoard_A/Blueprints/BP_Commerce_CorkBoard_A": {
+"cx": -0.8,
+"cy": 5.2,
+"cz": 65.8,
+"ex": 95.0,
+"ey": 10.4,
+"ez": 131.9,
+"cls": "BP_Commerce_CorkBoard_A_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Shared/Props/Apollo_Shared_Shelving_02A": {
+"cx": 0.0,
+"cy": -0.2,
+"cz": 220.9,
+"ex": 351.8,
+"ey": 202.3,
+"ez": 441.9,
+"cls": "Apollo_Shared_Shelving_02A_C",
+"nsm": 1
+},
+"/Game/Environments/Helios/Props/LightSource/LightSource_UtilityCeilingLight_A/Blueprints/BP_LightSource_UtilityCeilingLight_A": {
+"cx": 0.0,
+"cy": 0.0,
+"cz": -58.5,
+"ex": 276.3,
+"ey": 89.1,
+"ez": 139.0,
+"cls": "BP_LightSource_UtilityCeilingLight_A_C",
+"nsm": 3
+},
+"/Game/Athena/BuildingActors/Props/Building/ActorBlueprints/Containers/Athena_Prop_WildWest_WallClock_01": {
+"cx": -1.1,
+"cy": 16.1,
+"cz": 88.9,
+"ex": 112.0,
+"ey": 32.3,
+"ez": 177.2,
+"cls": "Athena_Prop_WildWest_WallClock_01_C",
+"nsm": 3
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Apollo_Agency_Picture_Frame_02": {
+"cx": 0.0,
+"cy": 7.0,
+"cz": 0.0,
+"ex": 107.7,
+"ey": 13.9,
+"ez": 260.9,
+"cls": "Apollo_Agency_Picture_Frame_02_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Agency/Props/Apollo_Agency_Picture_Frame_03": {
+"cx": 0.0,
+"cy": 4.6,
+"cz": 5.1,
+"ex": 71.1,
+"ey": 9.2,
+"ez": 93.0,
+"cls": "Apollo_Agency_Picture_Frame_03_C",
+"nsm": 1
+},
+"/Game/Building/ActorBlueprints/Neo/Props/NeoTilted_ConstructionSign": {
+"cx": 3.4,
+"cy": 0.0,
+"cz": 96.0,
+"ex": 126.3,
+"ey": 55.2,
+"ez": 193.3,
+"cls": "NeoTilted_ConstructionSign_C",
+"nsm": 1
+},
+"/Game/Creative/BuildingActors/Props/Oak/BP_Oak_Prop_Industrial_Fusebox_02": {
+"cx": -0.0,
+"cy": 18.5,
+"cz": 0.0,
+"ex": 206.2,
+"ey": 56.8,
+"ez": 109.0,
+"cls": "BP_Oak_Prop_Industrial_Fusebox_02_C",
+"nsm": 1
+},
+"/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Picture_Frame_04_Wood": {
+"cx": -0.0,
+"cy": 5.8,
+"cz": -1.2,
+"ex": 180.0,
+"ey": 11.6,
+"ez": 114.6,
+"cls": "Apollo_Suburban_Picture_Frame_04_Wood_C",
+"nsm": 1
+}
+}

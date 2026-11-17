@@ -175,3 +175,12 @@ The static checks above remain documentary/data checks. No UEFN project opening,
 - Windows warning: six filename pairs differ only by case (`DOOR_WINDOW_SCHEDULE.csv`/`door_window_schedule.csv`, `ROOM_FURNISHING_SCHEDULE.csv`/`room_furnishing_schedule.csv`, `UEFN_DEVICE_BINDINGS.csv`/`uefn_device_bindings.csv`, `GEOMETRY_VALIDATION_REPORT.md`, `GUEST_MODEL_SPEC.md`, `QA_ACCEPTANCE_MATRIX.md` and their lowercase twins). A default Windows clone keeps only one file per pair and the validator then reports 53 false errors. Recommended follow-up (not done, needs owner agreement because historical files would move): relocate the non-authoritative twin of each pair into a `historical/` folder.
 - Editor build check of the geometry schedules: the greybox generator consumed all 72 wall rows and all 51 opening rows without an out-of-wall or overlapping opening.
 - Still not verified: furniture footprints against built geometry, door swings, player-capsule clearances.
+
+## Addendum — R3 batch 02 (2026-11-17)
+
+- room_furnishing_schedule.csv: still 183 rows. 28 rows corrected (13 CRTs placed on their desks, 13 phones shifted on the desk, F02_SUITCASE +0.25 m X, F11_CHILD_BED moved, F09_DIARY moved onto the Room 09 desk) plus F13_CLOCK turned into a standing clock; R3-DEC-018, 019 and 023.
+- INTERACTION_ANCHOR_SCHEDULE_R1.csv: IA-013, IA-030 and IA-031 moved with their props (still 58 anchors).
+- New area_dressing_schedule_R1.csv (51 rows) and EPIC_FIRST_PARTY_ASSET_REGISTER_R3.csv (72 rows). ASSET_SOURCE_AND_RIGHTS_REGISTER_R1.csv keeps 99 rows; 45 marked SUBSTITUTED.
+- exterior_prop_schedule.csv EXT_DUMPSTER (72, 22) lies inside ROOM-04; the placed dumpster is at (77.8, 22) per R3-DEC-019 (the CSV row is kept as the historical target).
+- Editor integrity after batch 02: door zones 26/26, button reach 63/63, wall penetration 0, overlaps 0, stair zone clear, Guest route clear.
+- Static validator: 0 errors.

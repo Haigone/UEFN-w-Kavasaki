@@ -27,7 +27,7 @@ BUTTONS = [
     ('IN-008 R03 note', 15.8, 38.75, 0.9, 0), ('IN-008 R04 note', 70.8, 20.75, 0.9, 0), ('IN-008 R06 note', 64.6, 40.3, 1.4, 0),
     ('IN-010 panel cover', 64.0, 59.4, 1.15, 1), ('IN-011 socket A', 65.0, 59.4, 1.2, 2), ('IN-011 socket B', 65.85, 59.4, 1.2, 2),
     ('IN-011 socket C', 66.7, 59.4, 1.2, 2), ('IN-012 breaker', 68.4, 59.4, 1.2, 1),
-    ('IN-013 diary', 16.0, 43.2, 4.5, 0), ('IN-014 drawing', 71.2, 35.7, 4.9, 0), ('IN-015 secret panel', 68.6, 47.2, 4.7, 2),
+    ('IN-013 diary', 15.94, 40.22, 4.5, 0), ('IN-014 drawing', 71.2, 35.7, 4.9, 0), ('IN-015 secret panel', 68.6, 47.2, 4.7, 2),
     ('D-13B room13 door', 57.3, 50.6, 4.7, 0),
     ('IN-016 photo 1981', 51.0, 59.55, 5.0, 0), ('IN-016 photo 1968', 52.0, 59.55, 5.0, 0),
     ('IN-016 photo 1986', 53.0, 59.55, 5.0, 0), ('IN-016 photo 1974', 54.0, 59.55, 5.0, 0),
@@ -37,8 +37,8 @@ BUTTONS = [
     ('IN-020 vote NEW GUEST', 52.8, 59.4, 1.2, 0), ('IN-020 leave the key', 53.6, 59.4, 1.2, 0),
     ('IN-032 night audit', 54.6, 59.4, 1.1, 2),
     ('IN-024 fuse A', 16.8, 34.2, 0.5, 1), ('IN-025 fuse B', 52.0, 49.0, 0.95, 1), ('IN-026 fuse C', 68.0, 44.6, 0.95, 1),
-    ('IN-027 screwdriver', 60.2, 55.2, 1.05, 1), ('IN-029 archive', 64.75, 41.5, 1.5, 0), ('IN-030 CRT', 15.8, 21.25, 0.8, 0),
-    ('IN-031 R04 recording', 71.4, 20.75, 0.9, 0),
+    ('IN-027 screwdriver', 60.2, 55.2, 1.05, 1), ('IN-029 archive', 64.75, 41.5, 1.5, 0), ('IN-030 CRT', 15.55, 21.0, 1.0, 0),
+    ('IN-031 R04 recording', 71.75, 20.75, 0.9, 0),
     ('IN-021 hide R01', 11.7, 26.1, 1.0, 1), ('IN-021 hide R02', 11.7, 35.1, 1.0, 1), ('IN-021 hide R03', 11.7, 44.1, 1.0, 1),
     ('IN-021 hide R04', 66.0, 26.1, 1.0, 1), ('IN-021 hide R05', 66.0, 35.1, 1.0, 1), ('IN-021 hide R06', 66.0, 44.1, 1.0, 1),
     ('IN-021 hide R07', 10.4, 26.1, 4.6, 1), ('IN-021 hide R08', 10.4, 35.1, 4.6, 1), ('IN-021 hide R09', 10.4, 45.4, 4.6, 1),
@@ -146,13 +146,17 @@ async def place_audio():
         if label in have:
             continue
         ref = await place(A_AUDIO, x, y, z, label, 'Audio')
-        vals = (await toolset_registry.execute_tool(DT, 'GetClassicDeviceOptionValues',
-                                                    {'devicePath': ref, 'optionName': 'Audio', 'labelFilter': ''}))['returnValue']
-        v = [o['value'] for o in vals if o['value'].endswith('.' + cue)]
+        if cue.startswith('/'):
+            await set_audio_asset(ref, cue)
+            v = [None]
+        else:
+            vals = (await toolset_registry.execute_tool(DT, 'GetClassicDeviceOptionValues',
+                                                        {'devicePath': ref, 'optionName': 'Audio', 'labelFilter': ''}))['returnValue']
+            v = [o['value'] for o in vals if o['value'].endswith('.' + cue)]
         if not v:
             done.append(label + ' NO-SOUND ' + cue)
             continue
-        for k, val in (('Audio', v[0]), ('Volume', '%0.2f' % vol), ('LoopAudio', loop), ('Can Be Heard By', heard),
+        for k, val in ((('Audio', v[0]),) if v[0] else ()) + (('Volume', '%0.2f' % vol), ('LoopAudio', loop), ('Can Be Heard By', heard),
                        ('Enable Spatialization', spatial), ('Enable Volume Attenuation', spatial),
                        ('Attenuation Min Distance', '%0.1f' % mn), ('Attenuation Falloff Distance', '%0.1f' % fo)):
             try:
@@ -160,6 +164,27 @@ async def place_audio():
             except Exception as e:
                 done.append('%s opt %s failed: %s' % (label, k, str(e)[:80]))
         done.append(label)
+    return done
+
+
+async def set_audio_asset(ref, cue):
+    """R3-DEC-020: point an Audio Player at a first-party sound asset (cue = package path) via its 'audio' property."""
+    path = cue + '.' + cue.split('/')[-1]
+    assert unreal.load_asset(path), path
+    await toolset_registry.execute_tool('EditorToolset.ObjectToolset', 'SetProperties',
+                                        {'instance': {'refPath': ref['refPath']}, 'values': json.dumps({'audio': {'refPath': path}})})
+
+
+async def retarget_audio():
+    """Applies asset cues to Audio Players that already exist (batch 02 upgrade of batch 01 devices)."""
+    acts = {a.get_actor_label(): a for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    done = []
+    for field, label, x, y, z, cue, vol, *_ in AUDIO:
+        if cue.startswith('/') and label in acts:
+            ref = {'refPath': acts[label].get_path_name()}
+            await set_audio_asset(ref, cue)
+            await opt(ref, 'Volume', '%0.2f' % vol)
+            done.append(label)
     return done
 
 
@@ -192,6 +217,7 @@ async def wire():
     pairs += [(f.lower(), lab) for f, lab, *_ in REG_LIGHTS]
     pairs += [('journalinput', 'JOURNAL INPUT'), ('guestspawner', 'GUEST NPC SPAWNER')]
     pairs += [(f.lower(), lab) for f, lab, *_ in AUDIO]
+    pairs += [(f.lower(), lab) for f, lab, *_ in VFX + VFX_BURST + PP if f]
     ok, bad = 0, []
     for key, label in pairs:
         try:
@@ -228,3 +254,48 @@ async def build_all():
     out.append('buttons=%d doors=%d lights=%d guest=%s end=%s' % (len(got.get('buttons', [])), len(got.get('doors', [])),
                len(got.get('lights', [])), bool(got.get('guestProp')), bool(got.get('endGame'))))
     return ' '.join(out)
+
+
+exec(open(os.path.join(_HERE, 'vfx_map.py'), encoding='utf-8').read())
+A_VFX = '/CRD_VFX_Spawner/SetupAssets/PID_Device_VFX_Spawner_V2.PID_Device_VFX_Spawner_V2'
+A_PP = '/CRD_PostProcess/SetupAssets/PID_CP_Devices_PostProcess.PID_CP_Devices_PostProcess'
+
+
+async def _try(ref, label, k, v, log):
+    try:
+        await opt(ref, k, v)
+    except Exception as e:
+        log.append('%s %s=%s failed: %s' % (label, k, v, str(e)[:90]))
+
+
+async def place_vfx():
+    have = {a.get_actor_label() for a in EAS.get_all_level_actors() if TAG in [str(t) for t in a.tags]}
+    log = []
+    for field, label, x, y, z, preset, on, etime in VFX:
+        if label in have:
+            continue
+        ref = await place(A_VFX, x, y, z, label, 'VFX')
+        await _try(ref, label, 'EffectType', 'CONTINUO', log)
+        await _try(ref, label, 'Visual_Effect', preset, log)
+        await _try(ref, label, 'EnableOnReset', 'SÌ' if on else 'NO', log)
+        if etime:
+            await _try(ref, label, 'EnabledTime', etime, log)
+        log.append(label)
+    for field, label, x, y, z, preset in VFX_BURST:
+        if label in have:
+            continue
+        ref = await place(A_VFX, x, y, z, label, 'VFX')
+        await _try(ref, label, 'EffectType', 'RAFFICA', log)
+        await _try(ref, label, 'BurstVisualEffect', preset, log)
+        await _try(ref, label, 'EnableOnReset', 'SÌ', log)
+        log.append(label)
+    for field, label, preset, s0, s1, tin, tout, prio in PP:
+        if label in have:
+            continue
+        ref = await place(A_PP, 42, 4, 1, label, 'PostProcess')
+        await _try(ref, label, 'PostProcessEffect', preset, log)
+        for k, v in (('StartingStrength', s0), ('BlendInStrength', s1), ('BlendInDuration', tin),
+                     ('BlendOutDuration', tout), ('Priority', prio)):
+            await _try(ref, label, k, ('%g' % v), log)
+        log.append(label)
+    return log
