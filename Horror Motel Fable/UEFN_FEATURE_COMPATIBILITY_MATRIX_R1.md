@@ -97,3 +97,8 @@ The current platform reference review is recorded in UEFN_VERIFIED_REFERENCE_REG
 - Interactable UI widgets: https://dev.epicgames.com/documentation/fortnite/making-widgets-interactable-in-unreal-editor-for-fortnite
 
 Do not change any matrix row to ENGINE-VERIFIED, EDITOR-VERIFIED or TEST-PASS until the exact project proof and target UEFN build evidence are attached.
+
+
+## Project test result — NPC navigation (R3 batch 01, 2026-11-17)
+
+Tested in `MotelHorrorFable` (UEFN 43.10): NPC Spawner spawns and the NPC is controllable from Verse, but `NavigateTo` returns Unreachable for every target because the map's navigation system is `NullNavSysConfig`. Enabling `AthenaNavSystemConfig` in world settings is rejected by UEFN validation (disallowed `FortNavMesh`/`FortNavigationGraph`). Status: **PROJECT TEST FAILED — use the authored-waypoint fallback.** See `R3_BATCH_01_EXECUTION_REPORT.md` R3-DEC-015.

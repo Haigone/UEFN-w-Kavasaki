@@ -18,7 +18,7 @@ IA-011-A,IN-011,Fuse socket A,ELECTRICAL,65,58.95,1.2,270,PROP_FUSE_SOCKET_A,ELE
 IA-011-B,IN-011,Fuse socket B,ELECTRICAL,65.85,58.95,1.2,270,PROP_FUSE_SOCKET_B,ELECTRICAL panel target,PROPOSED TARGET,Atomic slot assignment; matching fuse only.
 IA-011-C,IN-011,Fuse socket C,ELECTRICAL,66.7,58.95,1.2,270,PROP_FUSE_SOCKET_C,ELECTRICAL panel target,PROPOSED TARGET,Atomic slot assignment; matching fuse only.
 IA-012,IN-012,Main breaker,ELECTRICAL,68.4,58.95,1.2,270,PROP_MAIN_BREAKER,ELECTRICAL panel target,PROPOSED TARGET,Disabled until A/B/C slots committed.
-IA-013,IN-013,Night manager diary,ROOM-09,16,43.2,4.35,0,F09_DIARY,room_furnishing_schedule.csv:F09_DIARY,SCHEDULE LINK,Readable diary; journal flag DiaryFound.
+IA-013,IN-013,Night manager diary,ROOM-09,15.94,40.22,4.35,0,F09_DIARY,room_furnishing_schedule.csv:F09_DIARY,SCHEDULE LINK,Readable diary; journal flag DiaryFound.
 IA-014,IN-014,Child drawing,ROOM-11,71.2,35.82,5.05,180,PROP_CHILD_DRAWING,ROOM 11 north wall bounds,PROPOSED TARGET,Readable caption; journal flag ChildRoomClueFound.
 IA-015,IN-015,ROOM 12 secret panel,ROOM-12,68.6,47.25,4.65,0,F12_SECRET_PANEL,room_furnishing_schedule.csv:F12_SECRET_PANEL,SCHEDULE LINK,Do not block VEST-13 route.
 IA-016,IN-016,ROOM 13 chronology board,ROOM-13,52.5,59.55,5,180,F13_PHOTO_1..4,room_furnishing_schedule.csv:F13_PHOTO_1..4,SCHEDULE LINK,Four photo slots; chronology 1968/1974/1981/1986.
@@ -50,8 +50,8 @@ IA-026,IN-026,Fuse C pickup,ROOM-06,68,44.6,0.95,0,PROP_ROOM06_MAINTENANCE_CABIN
 IA-027,IN-027,Screwdriver pickup,ELECTRICAL,60.2,55.2,1.05,0,PROP_TOOL_BOARD_SCREWDRIVER,ELECTRICAL bounds; tool board target,PROPOSED TARGET,Reusable team tool.
 IA-028,IN-028,Car Keys pickup,SITE,37,8,0.8,90,EXT_CAR_KEYS,exterior_prop_schedule.csv:EXT_CAR_KEYS,SCHEDULE LINK,Optional after FinaleReady; pickup does not select ESCAPE.
 IA-029,IN-029,Missing guest archive,ROOM-06,64.45,41.5,1.65,90,F06_PHOTO_WALL,room_furnishing_schedule.csv:F06_PHOTO_WALL,SCHEDULE LINK,Truth evidence only; separate from Fuse C actor.
-IA-030,IN-030,CRT feed,ROOM-01,15.799999999999999,21.25,0.65,0,F01_CRT,room_furnishing_schedule.csv:F01_CRT,SCHEDULE LINK,Optional supporting discovery; not a gate.
-IA-031,IN-031,Room 04 recording,ROOM-04,71.39999999999999,20.75,0.76,0,F04_PHONE,room_furnishing_schedule.csv:F04_PHONE,SCHEDULE LINK,Audio and transcript; transcript sufficient.
+IA-030,IN-030,CRT feed,ROOM-01,15.55,21.0,1.0,0,F01_CRT,room_furnishing_schedule.csv:F01_CRT,SCHEDULE LINK,Optional supporting discovery; not a gate.
+IA-031,IN-031,Room 04 recording,ROOM-04,71.75,20.75,0.76,0,F04_PHONE,room_furnishing_schedule.csv:F04_PHONE,SCHEDULE LINK,Audio and transcript; transcript sufficient.
 IA-032,IN-032,Night Audit breaker,GF-SERVICE-BAY,54.6,58.95,1.1,270,SVC-NIGHT-AUDIT,SERVICE_CONTROL_BAY_LOCATION_AND_INTERACTION_SPEC_R1.md,SCHEDULE LINK,Only after EndingSelected=THE_TRUTH; hold 2s.
 SPN-01,NONE,Player start 01,SITE,28,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; maintain 1.5m clear from car and neon trigger.
 SPN-02,NONE,Player start 02,SITE,32,12,0.1,90,DEV_SPAWN_01,South parking clear area; site envelope,PROPOSED TARGET,Facing north toward motel; party spawn slot.

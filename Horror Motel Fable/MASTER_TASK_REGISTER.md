@@ -274,3 +274,22 @@ DOC-022 and QA-002 close documentation/tool-authoring gaps only. They do not clo
 These tasks close planning/automation authoring only. Native UEFN project discovery, editor implementation and runtime/release evidence remain separate gates.
 
 | DOC-024 | Production handoff | Create a single paste-ready autonomous start prompt | P0 | CLAUDE_START_HERE_PROMPT_R3.md | DOCUMENTATION PRESENT | Claude reads canonical R3 documents, begins at GATE A, works in batches and asks only for owner-only approvals |
+
+## R3 batch 02 execution — 2026-11-17
+
+Status vocabulary for these rows: COMPLETED / PARTIAL / BLOCKED / NOT RUN. Evidence and file lists: [R3_BATCH_02_EXECUTION_REPORT.md](R3_BATCH_02_EXECUTION_REPORT.md) section 3.
+
+| ID | Description | Status | Dependencies | Files / actors | Evidence | Tests | Blocks | Next |
+|---|---|---|---|---|---|---|---|---|
+| B02-02 | Replace 183 furnishing blockouts with first-party props | COMPLETED | B02-01 | 169 `R3_PROPS`, tools/uefn/place_props.py | evidence/B02/*.png | door, reach, wall, overlap checks | — | QA-B03-01 |
+| B02-04 | Dress non-room areas | COMPLETED (first pass) | B02-02 | area_dressing_schedule_R1.csv, 51 `R3_DRESSING` | evidence/B02/*.png | same checks | — | human look pass |
+| B02-06 | THE GUEST interim body | PARTIAL | — | BP_R3_Guest, M_R3_GuestSkin, Verse | evidence/B02/B02_guest_vs_180cm_*.png | self-test run 10 | R3-BLK-001 | ART-B03-01 |
+| B02-07 | NPC navigation re-check | BLOCKED | — | — | batch 02 report section 3 | — | R3-BLK-010 | R3-PROP-001 |
+| B02-08 | Audio gaps | PARTIAL | — | 10 audio players, audio_map.py, Verse | batch 02 report section 6 | build + run 10 | R3-BLK-002 | AUD-B03-01 |
+| B02-09 | VFX and post-process | COMPLETED (first pass) | — | 12 VFX + 5 post-process devices, vfx_map.py, Verse | batch 02 report section 6 | build + run 10 | — | human look pass |
+| B02-10 | Island validation | COMPLETED | B02-02, B02-04 | refused classes replaced | evidence/B02_uefn_validation_and_asset_policy.md | 3 pushes | R3-BLK-011 | — |
+| B02-11 | Scripted solo regression | COMPLETED | B02-10 | — | evidence/B02/B02_selftest_run10.log | run 10 | — | QA-B03-03 |
+| B02-12 | Performance sample | PARTIAL | B02-10 | — | evidence/B02/B02_spatial_profiler_stats.json | Spatial Profiler | server frame time, UObjects | PERF-B03-01 |
+| B02-13 | Asset and rights registration | COMPLETED | B02-02..09 | EPIC_FIRST_PARTY_ASSET_REGISTER_R3.csv; 45 R1 rows SUBSTITUTED | validator 0 errors | — | 54 R1 rows unsourced | ART/AUD-B03 |
+| QA-B03-01 | Human solo play-through and legibility | NOT RUN | B02 | — | — | — | needs a human player | — |
+| QA-B03-02 | 2P/4P, disconnect/rejoin, join in progress | NOT RUN | B02 | — | — | — | needs extra clients | — |

@@ -238,3 +238,16 @@ Use CLAUDE_CANONICAL_EXECUTION_BRIEF_R3.md as the exact current sequence. Curren
 7. Solo/2P/4P QA, memory/performance, island validation and owner release approval (P0 final).
 
 No calendar completion estimate is claimed. No editor-dependent gate passes from documentation alone.
+
+## R3 Batch 03 plan (after batch 02, 2026-11-17)
+
+Ordered by dependency and priority; details in [R3_BATCH_02_EXECUTION_REPORT.md](R3_BATCH_02_EXECUTION_REPORT.md) section 11.
+
+1. QA-B03-01 (P0) human solo play-through, legibility, fairness.
+2. QA-B03-02 (P0) 2P/4P, disconnect/rejoin, join in progress — needs extra clients.
+3. QA-B03-03 (P1) re-run the scripted ESCAPE and NEW GUEST endings after the batch 02 hooks.
+4. PERF-B03-01 (P1) compare server frame time and UObject count with an empty template island; memory snapshot.
+5. R3-PROP-001 (P1) NPC navigation through a navigable template level — structural proposal before any migration.
+6. ART-B03-01 (P1) THE GUEST final character ([GUEST_PRODUCTION_PACKAGE_R3.md](GUEST_PRODUCTION_PACKAGE_R3.md)).
+7. AUD-B03-01 (P2) owner-sourced phone ring, voice lines, desk bell, door and fuse foley.
+8. LD-B03-01 (P2) visual polish pass after human QA.

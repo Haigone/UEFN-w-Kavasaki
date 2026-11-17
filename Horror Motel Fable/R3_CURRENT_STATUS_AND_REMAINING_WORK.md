@@ -7,9 +7,13 @@ Authority: this file consolidates current documentary status. It does not replac
 ## 1. Executive status
 
 **DOCUMENTATION BASELINE: substantially complete for the defined game systems.**
-**NATIVE UEFN IMPLEMENTATION: NOT EVIDENCED.**
-**VERSE COMPILE / EDITOR TEST / PLAYTEST / PERFORMANCE / ISLAND VALIDATION: NOT RUN OR NOT EVIDENCED IN THIS repository.**
+**NATIVE UEFN IMPLEMENTATION: PARTIAL — playable solo build with full critical path, three endings, first-party furniture in every room and area, interim THE GUEST body, rain/fog/lightning and expanded audio (R3 batches 01–02, 2026-11-16/17). See [R3_BATCH_02_EXECUTION_REPORT.md](R3_BATCH_02_EXECUTION_REPORT.md), [R3_BATCH_01_EXECUTION_REPORT.md](R3_BATCH_01_EXECUTION_REPORT.md) and [CLAUDE_ENVIRONMENT_BASELINE.md](CLAUDE_ENVIRONMENT_BASELINE.md).**
+**VERSE COMPILE: PASS (0 errors, build 43.10). SCRIPTED SOLO SELF-TEST: PASS (run 10, THE TRUTH, 2026-11-17; ESCAPE and NEW GUEST last passed in batch 01). UEFN ISLAND VALIDATION: PASS (batch 02, third push).**
+**HUMAN PLAY-THROUGH / 2P / 4P / DISCONNECT-REJOIN: NOT RUN. PERFORMANCE: client PASS; local server frame time and UObject count OPEN.**
+**THE GUEST FINAL CHARACTER (mesh/rig/animations): BLOCKED — interim mannequin body in game; brief in [GUEST_PRODUCTION_PACKAGE_R3.md](GUEST_PRODUCTION_PACKAGE_R3.md). NPC NAVIGATION: BLOCKED (waypoint fallback). AUDIO: PARTIAL (no phone ring, voice lines or some foley).**
 **PUBLICATION: NOT AUTHORIZED.**
+
+Gate summary after batch 02: A PASS · B PASS · C BUILT (editor-side clearance checks PASS; human traversal NOT RUN) · D PARTIAL (navigation BLOCKED) · E IMPLEMENTED, scripted solo PASS · F PARTIAL · G OPEN. QA detail: [R3_B02_QA_ACCEPTANCE_REPORT.md](R3_B02_QA_ACCEPTANCE_REPORT.md).
 
 The repository is the production specification and execution plan. It is not the native UEFN project and must not be represented as a playable island.
 
@@ -21,6 +25,8 @@ The following are current static repository counts. Re-run the integrity checks 
 |---|---:|---|
 | ROOM_COORDINATE_REGISTER.csv | 57 data rows | R2.3 coordinate authority |
 | room_furnishing_schedule.csv | 183 data rows | Current furnishing placement schedule; lowercase filename is intentional |
+| area_dressing_schedule_R1.csv | 51 data rows | Batch 02 dressing of reception, office, storage, electrical, service bay, lobby and exterior |
+| EPIC_FIRST_PARTY_ASSET_REGISTER_R3.csv | 72 data rows | First-party Epic assets actually placed or used, accepted by UEFN validation |
 | DOOR_WINDOW_SCHEDULE.csv | 51 openings | R2.3 opening schedule; uppercase filename is intentional |
 | wall_schedule.csv | 72 rows | Wall register |
 | INTERACTION_MASTER_REGISTER.csv | 32 interactions | IN-001–IN-032 |

@@ -279,3 +279,15 @@ The R3 follow-up also corrected the PZ-05 circular prerequisite and reconciled t
 MD-080 closes the ambiguity in the autonomous handoff instructions. MD-081 automates the static checks; neither constitutes native UEFN implementation or runtime validation.
 
 | MD-082 | Paste-ready R3 start prompt that directs Claude to begin at GATE A and execute the canonical plan autonomously | PRESENT — CLAUDE_START_HERE_PROMPT_R3.md | Use this prompt with Claude Code/Claude connected to the native UEFN project |
+
+## R3 batch 02 updates — 2026-11-17
+
+| ID | Deliverable | Current status | Remaining work |
+|---|---|---|---|
+| MD-083 | Room fit-out of the 183 scheduled items with real props | COMPLETED — 169 first-party props (13 headboards merged, 2 blockouts kept on purpose) | Human look and legibility pass |
+| MD-084 | Reception, office, storage, electrical, service bay, lobby and exterior dressing | COMPLETED (first pass) — area_dressing_schedule_R1.csv, 51 props | Human look pass; corridor dressing |
+| MD-085 | THE GUEST visible character | PARTIAL — interim mannequin body; final mesh, rig and animations BLOCKED | External production per GUEST_PRODUCTION_PACKAGE_R3.md |
+| MD-086 | Rain, fog, lightning, reveal/capture/ending screen effects | COMPLETED (first pass) — VFX Spawner and Post Process devices | Visual tuning by a human |
+| MD-087 | Missing audio | PARTIAL — rain, hum, CRT, generator, breaker, Guest footsteps, whispers, doors, keypad, document cues from the Creative sound library | Phone ring, all voice lines, desk bell, player and cloth foley need sourced audio |
+| MD-088 | First-party asset register | COMPLETED — EPIC_FIRST_PARTY_ASSET_REGISTER_R3.csv (72 rows) | Keep in sync with the level |
+| MD-089 | QA evidence for batch 02 | COMPLETED (scripted and editor-side) — R3_B02_QA_ACCEPTANCE_REPORT.md | Human and multiplayer evidence NOT RUN |

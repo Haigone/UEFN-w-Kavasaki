@@ -1,0 +1,46 @@
+R3 batch 02 - automated self-test run 10 (SelfTest=true, SelfTestEnding=2 THE TRUTH)
+Source: UEFN SessionToolset.GetVerseOutput, runId 0eb9099b-4cd9-005d-d364-9c9e30ecb4df, 2026-11-17 17:34-17:35 UTC
+Build: UEFN 6.0.0-60458657 (Release-43.10); Verse diagnostics 0 errors / 13 deprecation warnings (disabled NPC proof only)
+Content: 169 room props + 51 area dressing props, BP_R3_Guest mannequin body, 26 audio players, 12 VFX spawners, 5 post-process devices
+Verse runtime errors in this run: 0
+SCOPE: scripted single-player self-test. NOT a human play-through and NOT a multiplayer test.
+
+[R3] OnBegin buttons=63 doors=5 lights=30
+T00 start obj=1 (all flags 0)
+T01 negative-prereq (expect all 0) -> all 0                                              PASS
+T02 reception entered (expect rec=1 obj=2) -> rec=1 obj=2                                PASS
+F01 light on after 3s: on=1 charge=177 (expect on=1 charge 176-177)                      PASS
+F02 light off: on=0 charge=177 (expect on=0, charge unchanged)                           PASS
+F03 battery: charge=180 (expect 180)                                                     PASS
+F04 same battery again: charge=10 (expect 10, already taken)                            PASS
+F05 second battery: charge=180 (expect 180)                                              PASS
+F06 run empty: on=0 charge=0 (expect on=0 charge=0)                                      PASS
+F07 key while empty: on=0 (expect 0)                                                     PASS
+F08 third battery: charge=180 (expect 180)                                               PASS
+T03 wrong code (expect reg=0) -> reg=0                                                   PASS
+T04 PZ-01 02-13-86 + office key (expect reg=1 okey=1 cp=1 obj=3) -> reg=1 okey=1 cp=1 obj=3   PASS
+T05 PZ-02 wrong order (expect up=0) -> up=0                                              PASS
+T06 PZ-02 solved (expect up=1 obj=4) -> up=1 obj=4                                      PASS
+T07 fuse without cover (expect sA=0) -> sA=0                                             PASS
+T08 wrong socket B with only fuse A (expect sB=0 cov=1) -> sB=0 cov=1                    PASS
+T09 PZ-03 power (expect pwr=1 cp=2 obj=5) -> pwr=1 cp=3 obj=5   PASS (cp=3: CP03 upper landing already reached by the scripted route, same as run 9)
+T10 truth evidence (expect truth=3) -> truth=3                                           PASS
+T11 panel + room 13 (expect panel=1 r13=1 obj=6) -> panel=1 r13=1 obj=6                 PASS
+T12 PZ-04 wrong order (expect pz4=0) -> pz4=0                                            PASS
+T13 PZ-04 solved, key before reveal (expect pz4=1 reveal=0 skey=0) -> pz4=1 reveal=0 skey=0   PASS
+T14 reveal + service route (expect reveal=1 skey=1 sdoor=1 gate=1 cp=4 obj=8) -> all as expected   PASS (reveal now plays whispers + spooky grade + ghosts)
+T15 ESCAPE vote without vehicle (expect ending=0) -> ending=0                           PASS
+T16 car keys + ignition (expect ckeys=1 ign=1) -> ckeys=1 ign=1                         PASS
+J01 journal pages=11 docs=8 events=10 (expect pages = 3 + docs; 8 docs because the scripted run never reads the Room 04 transcript)   PASS
+J02 items page lists 5 keys SECURED, 3 fuses INSTALLED, power/office/upper/ROOM 13/service gate OPEN   PASS
+L01 finale lighting: escapeRed=1 room13Red=0                                             PASS
+L02 inside ROOM 13: room13Red=1                                                          PASS
+L03 left ROOM 13: room13Red=0                                                            PASS
+T17 captured after 1.0 s; guest=(1458.57, 1003.34, 386.0)  (Guest pivot now on the floor datum Z=386 with the mannequin body)   PASS
+T18 solo recovery after 16.0 s (expect about 15 s)                                       PASS
+T19 hide toggle                                                                           PASS
+T20 THE TRUTH committed (expect ending=2 audit=0) -> ending=2 audit=0                   PASS
+T21 night audit activated (expect audit=1)                                               PASS
+[R3] ENDING COMMITTED: THE TRUTH (Ending=2)                                              PASS
+
+Client log (GetClientLogEntries, content-related warnings/errors): 2x "CreativeAudioComponent ... Audio hasn't loaded. Retry playing once the audio loaded." at match start (engine retries; no error).

@@ -1,0 +1,52 @@
+Dressing_ID,Area,X_m,Y_m,Z_m,Yaw_deg,Width_m,Depth_m,Height_m,Collision,Prop_Key,Supports_Anchor,Purpose,Status
+RCP_COUNTER,RECEPTION,29.0,54.95,0,0,3.2,0.6,1.0,Yes,Apollo_Commerce_Counter_01,IA-002;IA-004;IA-005;IA-006,Reception counter; register phone keypad and drawer sit on/in it; staff side faces north,PLACED R3 B02
+RCP_CRT,RECEPTION,27.7,55.0,1.0,0,0.5,0.45,0.45,Yes,Apollo_Suburban_TV_03,,Security CRT on counter,PLACED R3 B02
+RCP_LAMP,RECEPTION,30.4,55.0,1.0,0,0.35,0.2,0.4,No,Apollo_Agency_DeskLamp_01,,Counter lamp,PLACED R3 B02
+RCP_KEY_CABINET,RECEPTION,31.2,57.3,0,180,0.6,0.6,1.3,Yes,Apollo_Agency_FileCabinet_01,IA-003,Cabinet under the key rack,PLACED R3 B02
+RCP_KEY_RACK,RECEPTION,31.2,57.0,1.3,180,0.6,0.15,0.6,No,Apollo_Suburban_MedicineCabinet_01,IA-003,Key box (ROOM 13 key hook),PLACED R3 B02
+RCP_CLOCK,RECEPTION,33.5,59.35,0,180,0.8,0.35,1.8,Yes,Athena_Prop_WildWest_WallClock_01,,Standing clock,PLACED R3 B02
+RCP_SHELF,RECEPTION,35.5,59.2,0,180,1.4,0.6,2.0,Yes,Apollo_Shared_Shelving_01A,,Back-office shelving,PLACED R3 B02
+RCP_CHAIR_1,RECEPTION,34.0,49.2,0,0,0.95,0.75,0.85,Yes,Apollo_Suburban_EasyChair_01,,Waiting chair,PLACED R3 B02
+RCP_CHAIR_2,RECEPTION,35.2,49.2,0,0,0.95,0.75,0.85,Yes,Apollo_Suburban_EasyChair_01,,Waiting chair,PLACED R3 B02
+RCP_SIDE_TABLE,RECEPTION,36.4,49.2,0,0,0.6,0.6,0.5,Yes,BP_Commerce_LobbySideTable_A_A,,Waiting side table,PLACED R3 B02
+RCP_PLANTER,RECEPTION,21.0,49.2,0,0,0.8,0.8,1.6,Yes,Agency_Planter_01,,Dead planter,PLACED R3 B02
+RCP_TRASH,RECEPTION,31.0,49.0,0,0,0.5,0.5,0.8,Yes,Apollo_Shared_Trashcan_01,,Bin,PLACED R3 B02
+OFF_PHOTO_BOARD,OWNER-OFFICE,42.5,59.62,1.15,180,1.6,0.06,1.0,No,Apollo_Suburban_Picture_Frame_04_Wood,IA-007,Four-photo board,PLACED R3 B02
+OFF_DESK,OWNER-OFFICE,40.0,51.0,0,90,1.8,0.9,0.78,Yes,Apollo_Office_Desk_01,,Owner desk,PLACED R3 B02
+OFF_CHAIR,OWNER-OFFICE,39.1,51.0,0,90,0.6,0.6,1.0,Yes,NeoTilted_RollingChair,,Owner chair,PLACED R3 B02
+OFF_LAMP,OWNER-OFFICE,40.0,51.6,0.78,90,0.35,0.2,0.4,No,Apollo_Agency_DeskLamp_01,,Desk lamp,PLACED R3 B02
+OFF_FILE_1,OWNER-OFFICE,46.6,55.0,0,270,0.6,0.7,1.45,Yes,Apollo_Agency_FileCabinet_01,,Filing cabinet,PLACED R3 B02
+OFF_FILE_2,OWNER-OFFICE,46.6,55.8,0,270,0.6,0.7,1.45,Yes,Apollo_Agency_FileCabinet_01,,Filing cabinet,PLACED R3 B02
+OFF_SHELF,OWNER-OFFICE,46.55,52.5,0,270,1.4,0.6,2.0,Yes,Apollo_Shared_Shelving_01A,,Office shelving,PLACED R3 B02
+STO_FUSE_B_CABINET,STORAGE,52.0,51.2,0,0,0.6,0.6,0.9,Yes,Apollo_Agency_FileCabinet_01,IA-025,Low cabinet under Fuse B,PLACED R3 B02
+STO_BATTERY_CABINET,STORAGE,49.2,52.6,0,0,0.6,0.6,0.9,Yes,Apollo_Agency_FileCabinet_01,IN-009 storage battery,Low cabinet under the storage battery,PLACED R3 B02
+STO_CAUTION,STORAGE,51.0,50.4,0,0,0.6,0.4,0.9,Yes,NeoTilted_ConstructionSign,IA-025,Caution sign beside Fuse B,PLACED R3 B02
+STO_SHELF_S1,STORAGE,50.0,48.75,0,0,1.4,0.6,2.0,Yes,Apollo_Shared_Shelving_01A,,Storage shelving,PLACED R3 B02
+STO_SHELF_S2,STORAGE,54.0,48.75,0,0,1.4,0.6,2.0,Yes,Apollo_Shared_Shelving_01A,,Storage shelving,PLACED R3 B02
+STO_TOOLBOX,STORAGE,55.8,53.2,0,180,0.8,0.5,1.0,Yes,Creative_Prop_ToolBox_NoLoot,,Toolbox (no loot),PLACED R3 B02
+STO_BARREL,STORAGE,56.3,49.0,0,0,0.65,0.65,1.0,Yes,Apollo_OilDrum_Barrel_01,,Drum,PLACED R3 B02
+ELE_PANEL_1,ELECTRICAL,65.85,59.42,0.65,180,2.1,0.45,1.1,Yes,BP_Oak_Prop_Industrial_Fusebox_02,IA-010;IA-011-A;IA-011-B;IA-011-C,Wall fuse panel (sockets A B C),PLACED R3 B02
+ELE_BREAKER,ELECTRICAL,68.4,59.45,0,180,0.66,0.4,1.7,Yes,BP_Oak_Prop_Industrial_Fusebox_01,IA-012,Main breaker cabinet,PLACED R3 B02
+ELE_TOOL_CHEST,ELECTRICAL,60.2,55.2,0,0,0.9,0.55,1.0,Yes,Creative_Prop_ToolBox_NoLoot,IA-027,Tool chest under the screwdriver,PLACED R3 B02
+ELE_GENERATOR,ELECTRICAL,70.2,57.5,0,90,0.8,1.4,1.2,Yes,BP_Oak_Prop_Generator_SM,EXT_GENERATOR,Generator (exterior_prop_schedule EXT_GENERATOR position),PLACED R3 B02
+ELE_BARREL_1,ELECTRICAL,58.2,58.9,0,0,0.65,0.65,1.0,Yes,Apollo_OilDrum_Barrel_01,,Drum,PLACED R3 B02
+ELE_BARREL_2,ELECTRICAL,58.95,58.9,0,0,0.65,0.65,1.0,Yes,Apollo_OilDrum_Barrel_01,,Drum,PLACED R3 B02
+ELE_PALLETS,ELECTRICAL,61.5,49.2,0,0,2.4,1.3,0.45,Yes,NeoTilted_Pallets,,Pallets,PLACED R3 B02
+SVC_CONSOLE,GF-SERVICE-BAY,49.7,59.4,0,180,1.0,0.5,1.0,Yes,BP_Oak_Prop_Industrial_Fusebox_02,IA-018,Service gate console body,PLACED R3 B02
+SVC_AUDIT_BREAKER,GF-SERVICE-BAY,54.6,59.45,0,180,0.66,0.4,1.7,Yes,BP_Oak_Prop_Industrial_Fusebox_01,IA-032,NIGHT AUDIT breaker cabinet,PLACED R3 B02
+SVC_SHELF,GF-SERVICE-BAY,56.3,57.0,0,270,1.4,0.6,2.0,Yes,Apollo_Shared_Shelving_01A,,Service shelving,PLACED R3 B02
+LOB_VENDING,GF-W-LOBBY,12.0,58.9,0,180,1.2,0.8,1.9,Yes,NeoTilted_VendingMachine,,Dead vending machine,PLACED R3 B02
+LOB_CHAIR_1,GF-W-LOBBY,14.5,49.0,0,0,0.95,0.75,0.85,Yes,Apollo_Suburban_EasyChair_01,,Lobby chair,PLACED R3 B02
+LOB_CHAIR_2,GF-W-LOBBY,15.7,49.0,0,0,0.95,0.75,0.85,Yes,Apollo_Suburban_EasyChair_01,,Lobby chair,PLACED R3 B02
+LOB_SIDE_TABLE,GF-W-LOBBY,16.9,49.0,0,0,0.6,0.6,0.5,Yes,BP_Commerce_LobbySideTable_A_A,,Lobby side table,PLACED R3 B02
+LOB_TRASH,GF-W-LOBBY,18.8,58.9,0,180,0.5,0.5,0.8,Yes,Apollo_Shared_Trashcan_01,,Bin,PLACED R3 B02
+LOB_PLANTER,GF-W-LOBBY,19.0,49.0,0,0,0.8,0.8,1.6,Yes,Agency_Planter_01,,Dead planter,PLACED R3 B02
+EXT_GATE,SITE,42.0,18.0,0,0,4.0,0.4,1.2,Yes,BP_Street_ParkingGate_A,,Drive barrier (exterior_prop_schedule EXT_GATE; walk-around),PLACED R3 B02
+EXT_VENDING,SITE,22.5,27.0,0,90,1.2,0.8,1.9,Yes,NeoTilted_VendingMachine,,Courtyard vending (exterior_prop_schedule EXT_VENDING),PLACED R3 B02
+EXT_DUMPSTER,SITE,77.8,22.0,0,270,2.0,1.0,1.4,Yes,NeoTilted_Dumpster,,Dumpster moved outside the east wing (R3-DEC-019),PLACED R3 B02
+EXT_LAMP_01,SITE,25.0,12.0,0,0,0.6,0.5,4.0,Yes,Streetlight_Suburban01,,Parking lamp,PLACED R3 B02
+EXT_LAMP_02,SITE,59.0,12.0,0,0,0.6,0.5,4.0,Yes,Streetlight_Suburban01,,Parking lamp,PLACED R3 B02
+EXT_LAMP_03,SITE,25.0,43.0,0,0,0.6,0.5,4.0,Yes,Streetlight_Suburban01,,Courtyard lamp,PLACED R3 B02
+EXT_LAMP_04,SITE,59.0,43.0,0,0,0.6,0.5,4.0,Yes,Streetlight_Suburban01,,Courtyard lamp,PLACED R3 B02
+EXT_TRASH_1,SITE,30.0,20.0,0,0,0.5,0.5,0.8,Yes,Apollo_Shared_Trashcan_01,,Courtyard bin,PLACED R3 B02
+EXT_TRASH_2,SITE,54.0,20.0,0,0,0.5,0.5,0.8,Yes,Apollo_Shared_Trashcan_01,,Courtyard bin,PLACED R3 B02
