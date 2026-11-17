@@ -85,5 +85,5 @@ Covered by the script: every prerequisite refusal, wrong register code, wrong ph
 2. Repeat with 2 and 4 players; test rescue, vote quorum, disconnect during vote.
 3. Replace the Guest proxy: obtain a rigged character with rights, then try NPC Spawner with a Verse behaviour; keep the prop route as fallback.
 4. Source audio and wire the 25 cues; add flashlight item and battery.
-5. Furnish rooms from `room_furnishing_schedule.csv` using first-party props where they match; register every asset in the rights register.
+5. Run `tools/uefn/place_furnishing.py` (prepared after the UEFN MCP connection dropped; not yet run or verified, yaw convention to be checked on the first wardrobe) to block out all 183 furnishing rows, then furnish rooms from `room_furnishing_schedule.csv` using first-party props where they match; register every asset in the rights register.
 6. Set `SelfTest` to false before any release build (already false in the saved project) and run island validation.
