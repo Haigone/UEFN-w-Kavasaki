@@ -166,3 +166,12 @@ These checks validate coordinate references and area envelopes only. They do not
 - CLAUDE_EXECUTION_PROTOCOL.md was reconciled to R3: R2.3 is approved as design (not editor-verified), GATE A is native project discovery/backup, current device register is 50 rows, and the current rights register is 99 rows NOT SOURCED.
 
 The static checks above remain documentary/data checks. No UEFN project opening, Verse compile, editor placement, runtime, multiplayer, performance or island validation is claimed.
+
+
+## R3 batch 01 addendum — 2026-11-16 (executor re-run)
+
+- Re-ran `python tools/validate_r3_repository.py` on a case-sensitive checkout of `main` at `0e39cd1`: **1 error** — `INTERACTION_ANCHOR_SCHEDULE_R1.csv:28` (IA-020, per-player UI anchor listed under room `GF-SERVICE-BAY` with non-numeric coordinates). This single error is why every recent `R3 Static Repository Validation` Actions run concluded `failure`.
+- Correction: the validator now skips the room-bounds check for rows whose `Status` starts with `LOGICAL UI ANCHOR`. No CSV row and no R2.3 geometry value was changed. Result after the fix: **0 errors**, all 18 register counts unchanged.
+- Windows warning: six filename pairs differ only by case (`DOOR_WINDOW_SCHEDULE.csv`/`door_window_schedule.csv`, `ROOM_FURNISHING_SCHEDULE.csv`/`room_furnishing_schedule.csv`, `UEFN_DEVICE_BINDINGS.csv`/`uefn_device_bindings.csv`, `GEOMETRY_VALIDATION_REPORT.md`, `GUEST_MODEL_SPEC.md`, `QA_ACCEPTANCE_MATRIX.md` and their lowercase twins). A default Windows clone keeps only one file per pair and the validator then reports 53 false errors. Recommended follow-up (not done, needs owner agreement because historical files would move): relocate the non-authoritative twin of each pair into a `historical/` folder.
+- Editor build check of the geometry schedules: the greybox generator consumed all 72 wall rows and all 51 opening rows without an out-of-wall or overlapping opening.
+- Still not verified: furniture footprints against built geometry, door swings, player-capsule clearances.

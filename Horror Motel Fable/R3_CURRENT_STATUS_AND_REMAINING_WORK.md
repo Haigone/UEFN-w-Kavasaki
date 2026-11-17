@@ -7,9 +7,13 @@ Authority: this file consolidates current documentary status. It does not replac
 ## 1. Executive status
 
 **DOCUMENTATION BASELINE: substantially complete for the defined game systems.**
-**NATIVE UEFN IMPLEMENTATION: NOT EVIDENCED.**
-**VERSE COMPILE / EDITOR TEST / PLAYTEST / PERFORMANCE / ISLAND VALIDATION: NOT RUN OR NOT EVIDENCED IN THIS repository.**
+**NATIVE UEFN IMPLEMENTATION: PARTIAL — playable solo greybox with full critical path and three endings (R3 batch 01, 2026-11-16). See [R3_BATCH_01_EXECUTION_REPORT.md](R3_BATCH_01_EXECUTION_REPORT.md) and [CLAUDE_ENVIRONMENT_BASELINE.md](CLAUDE_ENVIRONMENT_BASELINE.md).**
+**VERSE COMPILE: PASS (0 diagnostics, build 43.10). SCRIPTED SOLO LOGIC SELF-TEST: PASS for THE TRUTH, ESCAPE and THE NEW GUEST.**
+**HUMAN PLAY-THROUGH / 2P / 4P / PERFORMANCE / ISLAND VALIDATION: NOT RUN.**
+**ASSETS, THE GUEST MODEL, AUDIO, FURNISHING: NOT DONE (GATE F open).**
 **PUBLICATION: NOT AUTHORIZED.**
+
+Gate summary after batch 01: A PASS · B PASS (static, case-sensitive checkout) · C BUILT, traversal unverified · D PARTIAL · E IMPLEMENTED, logic-tested solo · F OPEN · G OPEN.
 
 The repository is the production specification and execution plan. It is not the native UEFN project and must not be represented as a playable island.
 

@@ -1,0 +1,89 @@
+# R3 BATCH 01 — EXECUTION REPORT
+Project: THE MOTEL: ROOM 13
+Date: 2026-11-16
+Executor: Claude (autonomous R3 run, owner delegation "decide everything, do not ask")
+UEFN build: `6.0.0-60458657+++Fortnite+Release-43.10` — project `MotelHorrorFable` (`1b9a97d9-c7de-416c-b046-aeb97e125690`)
+Test environment: one UEFN play-in-client session, **one player (solo)**.
+
+**Honest headline: the island is now a playable solo greybox with the full critical path and all three endings implemented and logic-tested. It is NOT release-ready. GATE F (assets, THE GUEST model, audio) and GATE G (human play-through, 2P/4P, performance, island validation) are open. Nothing was published.**
+
+## 1. Gate status
+
+| Gate | State | Evidence |
+|---|---|---|
+| A — project baseline and backup | PASS | `CLAUDE_ENVIRONMENT_BASELINE.md` |
+| B — static repository integrity | PASS (0 errors) on a case-sensitive checkout | validator output below; `R3_INTEGRATION_INTEGRITY_REPORT.md` addendum |
+| C — R2.3 greybox | BUILT, **traversal NOT verified by a player** | `evidence/GATE_C_aerial_south.png`, `evidence/GATE_C_topdown_ortho.png`, `tools/uefn/build_greybox.py` |
+| D — capability proofs | PARTIAL: Verse compile, device binding, custom UI, prop Hide/MoveTo, stasis, teleport, end-game proven at runtime. NPC Spawner / skeletal Guest NOT attempted | Verse output logs in `evidence/` |
+| E — integrated gameplay | IMPLEMENTED; logic self-test PASS solo, all three endings | `evidence/GATE_E_selftest_*.log` |
+| F — assets | NOT STARTED except first-party Epic props and flat-colour materials | section 6 |
+| G — QA / release | NOT STARTED | section 7 |
+
+## 2. What exists in the native project now
+
+- **Geometry (236 actors, tag `R3_GREYBOX`)** generated from `ROOM_COORDINATE_REGISTER.csv`, `wall_schedule.csv`, `DOOR_WINDOW_SCHEDULE.csv`, `SLAB_SCHEDULE.csv` and `STAIR_PLAN_R2.md`: three slabs (GF, UF with stair opening, roof), all 72 walls/guardrails/parapets, all 51 openings cut at rough dimensions, 18 glazing panes, the 20-riser U-turn stair with landing. No structural dimension was changed.
+- **Materials**: nine flat-colour project materials under `R3/Materials`.
+- **Devices (tag `R3_DEVICE`)**: 60 Button devices (interaction map below), 5 door/gate props, 30 Customizable Lights, End Game device, First Person camera device, the Verse `motel_game_manager` device, THE GUEST proxy prop. 4 player spawn pads at SPN-01…04.
+- **Exterior**: Epic `Sign_Motel_SimpleB` at the sign anchor, Epic `Car_StationWagon` at the vehicle anchor.
+- **Island Settings**: 4 players max, cooperative team, time of day 02:00, building disabled, environment damage off, light 40 %, black fog 20 %, "Horror Film" camera filter, overview map hidden.
+- **Verse**: `motel_game_manager.verse`, `motel_text.verse` (copies in `uefn_source/verse/`). Compiles with 0 diagnostics.
+
+## 3. Technical decisions taken under delegation
+
+| ID | Decision | Reason |
+|---|---|---|
+| R3-DEC-001 | Design X(east)→engine Y, design Y(north)→engine X, 1 m = 100 uu, site centre (42,36) at engine origin, floor datum Z = 386 | Preserves plan handedness; 2 cm above template asphalt avoids z-fighting |
+| R3-DEC-002 | Openings cut at Rough_Width/Rough_Height, no door frames yet | Rough size is the structural hole; frames belong to GATE F |
+| R3-DEC-003 | Only five state-controlled barriers have physical leaves: D-G08, stair gate, D-13A, D-13B, D-G16. All other doors are open doorways in this build | Minimum set that enforces the progression graph |
+| R3-DEC-004 | PZ-01 uses three world-space dials plus an "Enter" button instead of a keypad widget | Documented fallback "UI input limitation → world-space actors"; no UI focus risk |
+| R3-DEC-005 | PZ-02 / PZ-04 are solved by pressing the four dated photographs in ascending order; a wrong press resets | Same player-facing contract (chronological order, neutral reset) without drag-and-drop UI |
+| R3-DEC-006 | THE GUEST is a `creative_prop` proxy moved along the authored anchors (79-node closed route over both floors and the stair), detection radius 12 m same floor, lunge under 4 m, capture at 1.4 m | Documented NPC fallback "authored waypoint patrol"; NPC Spawner is Beta and no rigged model exists |
+| R3-DEC-007 | Capture = stasis in place; rescue = free teammate within 2 m for 5 s; self-recovery 90 s; if nobody is free, recovery to last checkpoint after 15 s; 8 s protection | IN-022 contract plus a solo-safe rule |
+| R3-DEC-008 | Ending selector = four world buttons in GF-SERVICE-BAY; END-A01 quorum implemented in Verse; 20 s timeout | IA-020 is a logical UI anchor; world buttons are the documented fallback |
+| R3-DEC-009 | Optional documents implemented only where approved copy exists (ROOM 03, 04, 06 fragments, fuse tags). DOC-R01/R02/R05 omitted | NCP forbids invented text |
+| R3-DEC-010 | Long texts are shown in a timed HUD reading panel (no modal input) | Works on every input device |
+| R3-DEC-011 | Upper-floor interactions also check `UpperFloorAccessGranted` in logic, not only through the stair gate | Defence in depth after self-test run 1 |
+
+## 4. Interaction index (Button device order = Verse index)
+
+0 IN-001 · 1 IN-002 · 2 IN-003 · 3 IN-004 · 4–7 IN-005 (three dials, enter) · 8 IN-006 · 9 D-G08 reader · 10–13 IN-007 photos (1982, 1974, 1986, 1978 left to right) · 14–16 IN-008 notes R03/R04/R06 · 17 IN-010 · 18–20 IN-011 A/B/C · 21 IN-012 · 22 IN-013 · 23 IN-014 · 24 IN-015 · 25 D-13B Room 13 door · 26–29 IN-016 photos (1981, 1968, 1986, 1974) · 30 IN-017 · 31 SVC-DOOR-READER · 32 IN-018 · 33 IN-028 · 34 IN-019 · 35–38 IN-020 (ESCAPE, THE TRUTH, ACCEPT THE ROOM, LEAVE THE KEY) · 39 IN-032 · 40–42 IN-024/025/026 · 43 IN-027 · 44 IN-029 · 45 IN-030 · 46 IN-031 · 47–59 IN-021 hide spots R01–R13.
+
+Exact coordinates: `tools/uefn/place_devices.py`.
+
+## 5. Test results (runtime, solo, scripted)
+
+The manager has a QA-only `SelfTest` switch. With it on, the first connected player is driven through the whole graph by calling the same handler the buttons call, and every step prints the flag state. It tests **logic and runtime API behaviour**, not walking, collision or readability.
+
+| Run | Ending | Result |
+|---|---|---|
+| 1 | THE TRUTH | 20/22 steps as expected. **FAIL T06**: PZ-02 could not be solved after a wrong attempt that ended on the first photograph (reset bug). Defect R3-DEF-001, fixed. |
+| 2 | THE TRUTH | 22/22 as expected; `ENDING COMMITTED: THE TRUTH` |
+| 3 | ESCAPE | all steps as expected; `ENDING COMMITTED: ESCAPE` |
+| 4 | THE NEW GUEST | see `evidence/GATE_E_selftest_run4_NEW_GUEST_verse_output.log` |
+
+Covered by the script: every prerequisite refusal, wrong register code, wrong photo order (both puzzles), fuse before cover, wrong socket, power, three truth clues, panel, Room 13 door, key refused before the reveal completes, service door and gate, ESCAPE refused without ignition, car keys and ignition, capture by THE GUEST, 15 s solo recovery, hide toggle, vote and ending commit, Night Audit one-shot.
+
+## 6. Open defects and blockers
+
+| ID | Item | State |
+|---|---|---|
+| R3-DEF-001 | Photo puzzles unrecoverable after a wrong press on the first photo | FIXED, retested run 2 |
+| R3-DEF-002 | `INTERACTION_ANCHOR_SCHEDULE_R1.csv` row IA-020 (per-player UI anchor in a room area) failed the numeric check; this was the only real cause of the red GitHub Actions runs | FIXED in `tools/validate_r3_repository.py` |
+| R3-BLK-001 | THE GUEST model, rig, LODs and animations do not exist. No modelling/rigging tool is available to the executor. The Guest is a 0.6 × 0.4 × 2.1 m dark box | BLOCKED — needs an authored or licensed skeletal mesh |
+| R3-BLK-002 | Audio: none of the 24 audio IDs is sourced. The game is silent apart from Fortnite defaults | BLOCKED — needs sourced/licensed audio |
+| R3-BLK-003 | Flashlight and battery (IN-009): no per-player flashlight system implemented; the battery pickup is not placed | INCOMPLETE |
+| R3-BLK-004 | 2-player and 4-player tests, disconnect/reconnect tests | NOT RUN — only one client available |
+| R3-BLK-005 | Human walk-through: door widths, stair steps, guardrails, button reach, text legibility, Guest fairness | NOT RUN — no player input available to the executor |
+| R3-BLK-006 | Furnishing (183 rows), exterior props beyond sign and car, service gate geometry, cinematics, VFX, rain | NOT STARTED |
+| R3-BLK-007 | Asset rights register: 99 rows still NOT SOURCED. Only first-party Epic content shipped with UEFN and original flat materials are used in the project | OPEN |
+| R3-BLK-008 | Performance, memory and island validation | NOT RUN |
+| R3-BLK-009 | GitHub push: `gh` is installed but not logged in, so repository changes are committed locally only | NEEDS OWNER LOGIN |
+
+## 7. Next dependency-ready tasks
+
+1. Owner (or any player) walks the full route once in the running session and reports where the capsule, stairs, buttons or texts fail. Fix geometry defects as defects; any structural change goes to an R2.4 proposal.
+2. Repeat with 2 and 4 players; test rescue, vote quorum, disconnect during vote.
+3. Replace the Guest proxy: obtain a rigged character with rights, then try NPC Spawner with a Verse behaviour; keep the prop route as fallback.
+4. Source audio and wire the 25 cues; add flashlight item and battery.
+5. Furnish rooms from `room_furnishing_schedule.csv` using first-party props where they match; register every asset in the rights register.
+6. Set `SelfTest` to false before any release build (already false in the saved project) and run island validation.

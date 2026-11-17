@@ -173,6 +173,8 @@ for filename in ("INTERACTION_ANCHOR_SCHEDULE_R1.csv", "AI_PATROL_AND_SPAWN_ANCH
         area = row.get("Area_or_Room", "")
         if area not in rooms:
             continue  # e.g. UI/dynamic or stair logical anchor; reported separately by audit
+        if row.get("Status", "").startswith("LOGICAL UI ANCHOR"):
+            continue  # per-player UI anchor (e.g. IA-020): no world coordinate by design
         try:
             x, y = float(row["X_m"]), float(row["Y_m"])
             room = rooms[area]

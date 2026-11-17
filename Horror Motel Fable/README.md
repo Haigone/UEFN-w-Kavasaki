@@ -101,3 +101,9 @@ Use OWNER-APPROVED DESIGN, CANONICAL DOCUMENT, PROPOSED, ENGINE-VERIFIED, EDITOR
 - Use uppercase UEFN_DEVICE_BINDINGS.csv for the current 50-row, 8-column device/anchor register. Lowercase uefn_device_bindings.csv is an older draft.
 - lighting_audio_schedule.csv is a historical combined schedule with malformed/obsolete rows; use AUDIO_REGISTER.csv, AUDIO_CUE_SHEET.csv, LIGHTING_REGISTER.csv and LIGHTING_CUE_SHEET.csv.
 - Do not normalize filename case or merge these historical mirrors automatically. Current exact filenames are intentional.
+
+
+## R3 implementation batch 01 (2026-11-16)
+- [CLAUDE_ENVIRONMENT_BASELINE.md](CLAUDE_ENVIRONMENT_BASELINE.md) — native project identity, backup and restore points.
+- [R3_BATCH_01_EXECUTION_REPORT.md](R3_BATCH_01_EXECUTION_REPORT.md) — what was built in UEFN, decisions, test results, defects and blockers.
+- 	ools/uefn/ — editor scripts that rebuild the greybox and device map; uefn_source/verse/ — Verse source copy; evidence/ — captures and runtime logs.
